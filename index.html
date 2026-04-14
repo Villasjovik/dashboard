@@ -14,38 +14,30 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
 :root {
-  --bg:          oklch(9%  0.018 140);
-  --bg2:         oklch(12% 0.016 138);
-  --bg3:         oklch(15% 0.014 135);
-  --card:        oklch(13% 0.015 138);
-  --card-h:      oklch(17% 0.013 138);
-
-  --border:      oklch(22% 0.012 138);
-  --border-hi:   oklch(70% 0.120 78 / 0.55);
-
-  --gold:        oklch(72% 0.120 78);
-  --gold2:       oklch(82% 0.095 82);
-  --gold-dim:    oklch(72% 0.120 78 / 0.10);
-
-  --green:       oklch(60% 0.180 145);
-  --green-lt:    oklch(74% 0.155 145);
-  --green-dim:   oklch(60% 0.180 145 / 0.14);
-  --red:         oklch(52% 0.200 24);
-  --red-dim:     oklch(52% 0.200 24 / 0.12);
-  --blue:        oklch(62% 0.160 240);
-  --blue-dim:    oklch(62% 0.160 240 / 0.12);
-  --orange:      oklch(68% 0.175 55);
-  --orange-dim:  oklch(68% 0.175 55 / 0.12);
-  --purple:      oklch(62% 0.160 300);
-
-  --ink:         oklch(94% 0.010 80);
-  --muted:       oklch(58% 0.010 80);
-  --dim:         oklch(36% 0.008 80);
-
-  --sp1:4px; --sp2:8px; --sp3:12px; --sp4:16px;
-  --sp5:24px; --sp6:32px; --sp7:48px; --sp8:64px; --sp9:96px;
-
-  --ease-out: cubic-bezier(0.16,1,0.3,1);
+  --bg:         oklch(8.5% 0.020 140);
+  --bg2:        oklch(11.5% 0.018 138);
+  --bg3:        oklch(14.5% 0.016 136);
+  --card:       oklch(12.5% 0.017 138);
+  --card-h:     oklch(17% 0.015 136);
+  --border:     oklch(22% 0.013 138);
+  --border-hi:  oklch(72% 0.130 78 / 0.55);
+  --gold:       oklch(72% 0.130 78);
+  --gold2:      oklch(83% 0.100 83);
+  --gold-dim:   oklch(72% 0.130 78 / 0.12);
+  --gold-glow:  oklch(72% 0.130 78 / 0.25);
+  --green:      oklch(58% 0.190 145);
+  --green-lt:   oklch(73% 0.165 145);
+  --green-dim:  oklch(58% 0.190 145 / 0.18);
+  --red:        oklch(52% 0.210 24);
+  --red-dim:    oklch(52% 0.210 24 / 0.14);
+  --blue:       oklch(63% 0.165 240);
+  --blue-dim:   oklch(63% 0.165 240 / 0.14);
+  --orange:     oklch(68% 0.180 55);
+  --orange-dim: oklch(68% 0.180 55 / 0.14);
+  --ink:        oklch(94% 0.010 80);
+  --muted:      oklch(58% 0.010 80);
+  --dim:        oklch(36% 0.008 80);
+  --ease:       cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 html { scroll-behavior:smooth }
@@ -58,58 +50,79 @@ body {
   overflow-x:hidden;
 }
 
-/* ── Background ── */
+/* ── Background layers ── */
+#bg-canvas { position:fixed; inset:0; z-index:0; pointer-events:none }
+
 body::before {
   content:'';
-  position:fixed;
-  inset:0;
-  z-index:0;
+  position:fixed; inset:0; z-index:0;
   background-image:
-    linear-gradient(oklch(22% 0.012 138 / 0.35) 1px, transparent 1px),
-    linear-gradient(90deg, oklch(22% 0.012 138 / 0.35) 1px, transparent 1px);
-  background-size:72px 72px;
+    linear-gradient(oklch(22% 0.013 138 / 0.30) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(22% 0.013 138 / 0.30) 1px, transparent 1px);
+  background-size:64px 64px;
   pointer-events:none;
 }
 
-/* Subtle corner vignette */
 body::after {
   content:'';
-  position:fixed;
-  inset:0;
-  z-index:0;
-  background:radial-gradient(ellipse 120% 80% at 50% 0%, transparent 40%, oklch(7% 0.016 140 / 0.7) 100%);
+  position:fixed; inset:0; z-index:0;
+  background:radial-gradient(ellipse 100% 60% at 50% 0%, oklch(72% 0.130 78 / 0.04) 0%, transparent 70%);
   pointer-events:none;
 }
 
+#spotlight {
+  position:fixed; inset:0; z-index:1; pointer-events:none;
+  background:radial-gradient(600px circle at var(--mx,50%) var(--my,50%), oklch(72% 0.130 78 / 0.04), transparent 55%);
+}
+
+#noise {
+  position:fixed; inset:0; z-index:9997; pointer-events:none; opacity:0.025;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:140px 140px;
+}
+
+/* ── Layout ── */
 .wrap {
   max-width:1400px;
   margin:0 auto;
-  padding:var(--sp7) var(--sp6) var(--sp9);
+  padding:48px 32px 96px;
   position:relative;
-  z-index:1;
+  z-index:2;
 }
+
+/* ── Reveal animation (IntersectionObserver-based — works everywhere) ── */
+.reveal {
+  opacity:0;
+  transform:translateY(22px);
+  transition:opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible { opacity:1; transform:none }
+
+.reveal-left {
+  opacity:0; transform:translateX(-16px);
+  transition:opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal-left.visible { opacity:1; transform:none }
 
 /* ── Util ── */
 .label {
-  font-size:10px;
-  font-weight:600;
-  letter-spacing:0.20em;
-  text-transform:uppercase;
+  font-size:10px; font-weight:700;
+  letter-spacing:0.22em; text-transform:uppercase;
   color:var(--gold);
 }
 
+.label.muted { color:var(--muted) }
+
 hr.rule {
-  border:none;
-  height:1px;
+  border:none; height:1px;
   background:var(--border);
-  margin:var(--sp7) 0;
+  margin:52px 0;
 }
 
-hr.rule-accent {
-  border:none;
-  height:1px;
-  background:linear-gradient(90deg, var(--gold) 0%, oklch(72% 0.120 78 / 0.2) 40%, transparent 70%);
-  margin:var(--sp6) 0 var(--sp7);
+hr.rule-gold {
+  border:none; height:1px;
+  background:linear-gradient(90deg, var(--gold) 0%, oklch(72% 0.130 78 / 0.15) 50%, transparent 80%);
+  margin:32px 0 48px;
 }
 
 /* ── Header ── */
@@ -117,563 +130,610 @@ hr.rule-accent {
   display:grid;
   grid-template-columns:1fr auto;
   align-items:start;
-  gap:var(--sp6);
-  margin-bottom:var(--sp6);
+  gap:32px;
+  margin-bottom:40px;
 }
 
 .header-eye {
-  display:flex;
-  align-items:center;
-  gap:var(--sp3);
-  margin-bottom:var(--sp4);
-  overflow:hidden;
+  display:flex; align-items:center;
+  gap:12px; margin-bottom:16px;
 }
 
-.header-dot {
-  width:7px; height:7px;
-  border-radius:50%;
+.live-dot {
+  width:8px; height:8px; border-radius:50%;
   background:var(--green-lt);
-  box-shadow:0 0 12px oklch(74% 0.155 145 / 0.6);
-  animation:blink 2.5s ease-in-out infinite;
-  flex-shrink:0;
+  box-shadow:0 0 14px oklch(73% 0.165 145 / 0.7);
+  animation:livePulse 2.5s ease-in-out infinite;
 }
-
-@keyframes blink {
-  0%,100%{opacity:1; box-shadow:0 0 12px oklch(74% 0.155 145 / 0.6)}
-  50%    {opacity:0.4; box-shadow:0 0 4px oklch(74% 0.155 145 / 0.2)}
+@keyframes livePulse {
+  0%,100%{opacity:1;box-shadow:0 0 14px oklch(73% 0.165 145 / 0.7)}
+  50%{opacity:0.5;box-shadow:0 0 4px oklch(73% 0.165 145 / 0.3)}
 }
 
 .header h1 {
   font-family:'Gloock',Georgia,serif;
-  font-size:clamp(56px,8vw,104px);
-  font-weight:400;
-  line-height:0.88;
-  letter-spacing:-0.025em;
-  overflow:hidden;
+  font-size:clamp(60px,9vw,110px);
+  font-weight:400; line-height:0.87;
+  letter-spacing:-0.03em;
 }
 
 .header h1 em { font-style:italic; color:var(--gold) }
 
-.word { display:inline-block }
-
 .header-meta {
-  text-align:right;
-  padding-top:var(--sp3);
-  display:flex;
-  flex-direction:column;
-  gap:var(--sp2);
-  align-items:flex-end;
+  text-align:right; padding-top:6px;
 }
 
 .header-date {
-  font-size:11px;
-  font-weight:500;
-  color:var(--muted);
-  letter-spacing:0.04em;
+  font-size:11px; font-weight:500;
+  color:var(--muted); letter-spacing:0.04em;
+  margin-bottom:6px;
 }
 
 .header-total {
   font-family:'Gloock',serif;
-  font-size:13px;
-  color:var(--dim);
+  font-size:13px; color:var(--dim);
 }
 
-/* ── Goal Strip ── */
-.goal-strip {
+/* ── Hero numbers ── */
+.hero-numbers {
+  display:grid;
+  grid-template-columns:1fr 1px 1fr 1px 1fr;
+  align-items:center;
   background:var(--card);
   border:1px solid var(--border);
-  border-radius:18px;
-  padding:var(--sp6) var(--sp7);
-  margin-bottom:var(--sp7);
-  display:grid;
-  grid-template-columns:auto 1fr auto;
-  gap:var(--sp7);
-  align-items:center;
-  opacity:0;
-  transform:translateY(20px);
+  border-radius:20px;
+  overflow:hidden;
+  margin-bottom:24px;
+  position:relative;
 }
 
-.goal-figure { display:flex; flex-direction:column; gap:var(--sp2) }
+.hero-numbers::before {
+  content:'';
+  position:absolute; inset:-1px;
+  border-radius:20px;
+  background:linear-gradient(135deg, oklch(72% 0.130 78 / 0.08), transparent 50%, oklch(58% 0.190 145 / 0.05));
+  pointer-events:none;
+}
 
-.goal-amount {
+.hn-item {
+  padding:32px 40px;
+  position:relative;
+}
+
+.hn-divider {
+  width:1px; height:80px;
+  background:linear-gradient(180deg, transparent, var(--border), transparent);
+}
+
+.hn-label {
+  font-size:10px; font-weight:700;
+  letter-spacing:0.20em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:10px;
+}
+
+.hn-value {
   font-family:'Gloock',serif;
-  font-size:52px;
-  line-height:1;
+  font-size:clamp(28px,4vw,48px);
+  font-weight:400; line-height:1;
+  letter-spacing:-0.02em;
+}
+
+.hn-value.gold { color:var(--gold) }
+
+.hn-sub {
+  font-size:11px; color:var(--muted);
+  margin-top:6px; letter-spacing:0.03em;
+}
+
+/* ── Goal + KPI section ── */
+.goal-kpi {
+  display:grid;
+  grid-template-columns:260px 1fr;
+  gap:24px;
+  margin-bottom:52px;
+  align-items:start;
+}
+
+/* Goal ring card */
+.goal-card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:32px 28px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+  position:relative;
+  overflow:hidden;
+  transition:border-color 0.4s;
+}
+
+.goal-card:hover { border-color:var(--border-hi) }
+
+.goal-card::before {
+  content:'';
+  position:absolute;
+  top:-40px; left:-40px;
+  width:180px; height:180px;
+  background:radial-gradient(circle, oklch(72% 0.130 78 / 0.06), transparent 70%);
+  pointer-events:none;
+}
+
+.goal-ring-wrap { position:relative; width:180px; height:180px }
+
+.goal-ring-wrap svg {
+  width:100%; height:100%;
+  transform:rotate(-90deg);
+}
+
+.ring-bg {
+  fill:none;
+  stroke:oklch(22% 0.013 138);
+  stroke-width:12;
+}
+
+.ring-fill {
+  fill:none;
+  stroke:url(#ringGrad);
+  stroke-width:12;
+  stroke-linecap:round;
+  stroke-dasharray:503;
+  stroke-dashoffset:503;
+  transition:stroke-dashoffset 2.4s var(--ease);
+  filter:drop-shadow(0 0 8px oklch(72% 0.130 78 / 0.4));
+}
+
+.ring-center {
+  position:absolute; inset:0;
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  gap:2px;
+}
+
+.ring-pct {
+  font-family:'Gloock',serif;
+  font-size:38px; line-height:1;
   color:var(--gold);
   letter-spacing:-0.02em;
 }
 
-.goal-sub {
-  font-size:11px;
+.ring-sub {
+  font-size:9px; font-weight:700;
+  letter-spacing:0.16em; text-transform:uppercase;
   color:var(--muted);
-  letter-spacing:0.04em;
 }
 
-.goal-bar-wrap { display:flex; flex-direction:column; gap:var(--sp3) }
+.goal-stats { width:100% }
+
+.goal-stat {
+  display:flex; align-items:baseline;
+  justify-content:space-between;
+  padding:8px 0;
+  border-bottom:1px solid var(--border);
+}
+
+.goal-stat:last-child { border-bottom:none }
+
+.goal-stat-lbl {
+  font-size:9px; font-weight:700;
+  letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--muted);
+}
+
+.goal-stat-val {
+  font-family:'Gloock',serif;
+  font-size:18px; color:var(--ink);
+}
+
+/* Goal progress bar */
+.goal-bar-wrap { width:100% }
 
 .goal-bar-track {
-  height:6px;
-  background:var(--border);
-  border-radius:3px;
+  height:4px; background:var(--border);
+  border-radius:2px; overflow:visible;
   position:relative;
 }
 
 .goal-bar-fill {
-  height:100%;
-  border-radius:3px;
-  background:linear-gradient(90deg, var(--green), var(--green-lt) 60%, var(--gold));
-  width:0%;
-  transition:width 2.2s var(--ease-out);
+  height:100%; border-radius:2px;
+  background:linear-gradient(90deg, var(--green), var(--green-lt) 55%, var(--gold));
+  width:0%; transition:width 2.4s var(--ease);
   position:relative;
 }
 
 .goal-bar-fill::after {
-  content:'';
-  position:absolute;
-  right:-1px; top:50%;
-  transform:translateY(-50%);
-  width:14px; height:14px;
-  border-radius:50%;
-  background:var(--gold);
-  border:2px solid var(--bg);
-  box-shadow:0 0 20px oklch(72% 0.120 78 / 0.55);
+  content:''; position:absolute;
+  right:-1px; top:50%; transform:translateY(-50%);
+  width:12px; height:12px; border-radius:50%;
+  background:var(--gold); border:2px solid var(--bg);
+  box-shadow:0 0 18px oklch(72% 0.130 78 / 0.6);
 }
 
-.goal-markers {
-  display:flex;
-  justify-content:space-between;
-  font-size:9px;
-  color:var(--dim);
-  letter-spacing:0.06em;
-}
-
-.goal-stats {
+/* KPI grid */
+.kpi-grid {
   display:grid;
-  grid-template-rows:1fr 1fr;
-  gap:var(--sp5);
-}
-
-.goal-stat { display:flex; flex-direction:column; gap:var(--sp1) }
-
-.goal-stat-val {
-  font-family:'Gloock',serif;
-  font-size:24px;
-  color:var(--ink);
-}
-
-.goal-stat-lbl {
-  font-size:9px;
-  font-weight:600;
-  letter-spacing:0.12em;
-  text-transform:uppercase;
-  color:var(--muted);
-}
-
-/* ── KPI Row ── */
-.kpi-row {
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:1px;
-  background:var(--border);
-  border:1px solid var(--border);
-  border-radius:18px;
-  overflow:hidden;
-  margin-bottom:var(--sp7);
+  grid-template-columns:repeat(2,1fr);
+  grid-template-rows:repeat(2,1fr);
+  gap:16px;
 }
 
 .kpi {
   background:var(--card);
-  padding:var(--sp6) var(--sp6) var(--sp5);
-  position:relative;
-  transition:background 0.25s;
-  opacity:0;
-  transform:translateY(16px);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:24px 24px 20px;
+  position:relative; overflow:hidden;
+  cursor:default;
+  transition:border-color 0.35s, box-shadow 0.35s, transform 0.4s var(--ease);
+  transform-style:preserve-3d;
 }
 
-.kpi:hover { background:var(--card-h) }
+.kpi:hover {
+  border-color:var(--border-hi);
+  box-shadow:0 10px 40px oklch(0% 0 0 / 0.35), 0 0 60px oklch(72% 0.130 78 / 0.04);
+}
 
-.kpi .label { display:block; margin-bottom:var(--sp4) }
+.kpi-shine {
+  position:absolute; inset:0; border-radius:18px;
+  opacity:0; pointer-events:none;
+  background:radial-gradient(350px circle at var(--x,50%) var(--y,50%), oklch(72% 0.130 78 / 0.10), transparent 65%);
+  transition:opacity 0.35s;
+}
+
+.kpi:hover .kpi-shine { opacity:1 }
+
+.kpi .label { display:block; margin-bottom:14px }
 
 .kpi-value {
   font-family:'Gloock',serif;
-  font-size:42px;
-  font-weight:400;
-  line-height:1;
-  letter-spacing:-0.02em;
-  margin-bottom:var(--sp3);
+  font-size:clamp(30px,3vw,40px);
+  font-weight:400; line-height:1;
+  letter-spacing:-0.02em; margin-bottom:10px;
 }
 
 .kpi-value .unit {
   font-family:'Epilogue',sans-serif;
-  font-size:13px;
-  font-weight:400;
-  color:var(--muted);
-  margin-left:4px;
+  font-size:13px; font-weight:400;
+  color:var(--muted); margin-left:4px;
 }
 
 .kpi-sub {
-  font-size:11px;
-  color:var(--muted);
-  margin-bottom:var(--sp3);
-  min-height:16px;
+  font-size:11px; color:var(--muted);
+  min-height:16px; margin-bottom:10px;
 }
 
 .kpi-trend {
-  display:inline-flex;
-  align-items:center;
-  gap:4px;
-  font-size:9px;
-  font-weight:700;
-  letter-spacing:0.08em;
-  padding:3px 10px;
-  border-radius:100px;
-  min-height:20px;
+  display:inline-flex; align-items:center;
+  gap:4px; font-size:9px; font-weight:700;
+  letter-spacing:0.08em; padding:3px 10px;
+  border-radius:100px; min-height:20px;
 }
 
-.kpi-trend.up      { background:var(--green-dim); color:var(--green-lt) }
-.kpi-trend.neutral { background:var(--gold-dim);  color:var(--gold) }
+.kpi-trend.up { background:var(--green-dim); color:var(--green-lt) }
+.kpi-trend.neutral { background:var(--gold-dim); color:var(--gold) }
 
-/* ── Section head ── */
+.kpi-bar {
+  position:absolute; bottom:0; left:0;
+  height:3px; border-radius:0 2px 0 0;
+  transition:width 2s var(--ease);
+}
+
+/* ── Section heading ── */
 .sec-head {
-  display:flex;
-  align-items:baseline;
-  gap:var(--sp4);
-  margin-bottom:var(--sp5);
+  display:flex; align-items:baseline;
+  gap:16px; margin-bottom:20px;
 }
 
 .sec-head h2 {
   font-family:'Gloock',serif;
-  font-size:30px;
-  font-weight:400;
+  font-size:32px; font-weight:400;
   letter-spacing:-0.015em;
 }
 
 .sec-head h2 em { color:var(--gold); font-style:italic }
 
-/* ── Split layout ── */
-.split {
+/* ── Showcase cards ── */
+.showcase {
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:var(--sp5);
-  margin-bottom:var(--sp7);
-  align-items:start;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-bottom:52px;
 }
 
-/* ── Closed Deals List ── */
-.deals-list {
-  background:var(--card);
+.sc-card {
+  background:linear-gradient(145deg, oklch(14% 0.016 138 / 0.95), oklch(11% 0.014 138 / 0.8));
   border:1px solid var(--border);
-  border-radius:16px;
-  overflow:hidden;
+  border-radius:20px; padding:28px;
+  position:relative; overflow:hidden;
+  cursor:default;
+  transition:border-color 0.4s, box-shadow 0.45s, transform 0.45s var(--ease);
+  transform-style:preserve-3d;
 }
 
-.deal-item {
-  padding:var(--sp5) var(--sp6);
-  border-bottom:1px solid var(--border);
-  display:grid;
-  grid-template-columns:44px 1fr auto;
-  gap:var(--sp4);
-  align-items:center;
-  transition:background 0.2s;
-  opacity:0;
-  transform:translateY(12px);
+.sc-card:hover {
+  border-color:var(--border-hi);
+  box-shadow:0 16px 56px oklch(0% 0 0 / 0.45), 0 0 80px oklch(72% 0.130 78 / 0.05);
 }
 
-.deal-item:last-child { border-bottom:none }
-.deal-item:hover { background:var(--card-h) }
+.sc-shine {
+  position:absolute; inset:0; border-radius:20px;
+  opacity:0; pointer-events:none;
+  background:radial-gradient(400px circle at var(--x,50%) var(--y,50%), oklch(72% 0.130 78 / 0.10), transparent 65%);
+  transition:opacity 0.35s;
+}
 
-.deal-initial {
-  width:44px; height:44px;
-  border-radius:10px;
-  background:var(--bg3);
-  border:1px solid var(--border);
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.sc-card:hover .sc-shine { opacity:1 }
+
+.sc-shimmer {
+  position:absolute; top:0; left:-100%;
+  width:100%; height:100%;
+  background:linear-gradient(90deg, transparent, oklch(72% 0.130 78 / 0.06), transparent);
+  animation:shimmer 5s ease-in-out infinite;
+  pointer-events:none;
+}
+@keyframes shimmer { 0%{left:-100%} 60%{left:100%} 100%{left:100%} }
+
+.sc-badge {
+  position:absolute; top:16px; right:16px;
+  padding:4px 12px; border-radius:100px;
+  font-size:9px; font-weight:700;
+  letter-spacing:0.10em; text-transform:uppercase;
+  background:var(--green-dim); color:var(--green-lt);
+  border:1px solid oklch(73% 0.165 145 / 0.15);
+}
+
+.sc-header {
+  display:flex; align-items:center;
+  gap:14px; margin-bottom:18px;
+}
+
+.sc-avatar {
+  width:52px; height:52px; border-radius:14px;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Gloock',serif; font-size:22px;
+  color:var(--ink); flex-shrink:0;
+  position:relative; overflow:hidden;
+}
+
+.sc-avatar.green { background:var(--green-dim); color:var(--green-lt) }
+.sc-avatar.gold  { background:var(--gold-dim);  color:var(--gold) }
+.sc-avatar.blue  { background:var(--blue-dim);  color:var(--blue) }
+
+.sc-info h3 {
   font-family:'Gloock',serif;
-  font-size:19px;
-  color:var(--gold);
-  flex-shrink:0;
-}
-
-.deal-info h4 {
-  font-size:14px;
-  font-weight:500;
-  color:var(--ink);
+  font-size:18px; font-weight:400;
   margin-bottom:2px;
 }
 
-.deal-info p {
-  font-size:11px;
-  color:var(--muted);
+.sc-info p {
+  font-size:10px; letter-spacing:0.08em;
+  text-transform:uppercase; color:var(--muted);
 }
 
-.deal-info .deal-meta {
-  font-size:10px;
-  color:var(--dim);
-  margin-top:2px;
-}
-
-.deal-value {
+.sc-value {
   font-family:'Gloock',serif;
-  font-size:20px;
-  color:var(--green-lt);
-  text-align:right;
-  white-space:nowrap;
+  font-size:34px; font-weight:400;
+  margin-bottom:6px;
+  letter-spacing:-0.02em;
 }
 
-.deal-value.barter {
-  font-family:'Epilogue',sans-serif;
-  font-size:10px;
-  font-weight:700;
-  color:var(--blue);
-  text-transform:uppercase;
-  letter-spacing:0.10em;
+.sc-value.gold-v { color:var(--gold) }
+.sc-value.green-v { color:var(--green-lt) }
+.sc-value.blue-v { color:var(--blue); font-size:16px; font-family:'Epilogue',sans-serif; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-top:8px }
+
+.sc-desc {
+  font-size:12px; color:var(--muted);
+  line-height:1.55; margin-bottom:14px;
 }
 
-/* ── Pipeline Panel ── */
-.pipeline-panel {
+.sc-meta {
+  display:flex; gap:14px;
+  font-size:10px; color:var(--dim);
+  letter-spacing:0.04em;
+}
+
+/* ── Pipeline + chart split ── */
+.mid-split {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-bottom:52px;
+}
+
+.pipeline-card {
   background:var(--card);
   border:1px solid var(--border);
-  border-radius:16px;
-  overflow:hidden;
+  border-radius:20px; overflow:hidden;
 }
 
-.pipeline-head {
-  padding:var(--sp5) var(--sp6);
+.card-head {
+  padding:20px 24px;
   border-bottom:1px solid var(--border);
 }
 
-.funnel-stages {
-  display:flex;
-  flex-direction:column;
-  gap:1px;
+.funnel-wrap { padding:8px 0 }
+
+.funnel-stage {
+  padding:16px 24px;
+  display:grid;
+  grid-template-columns:12px 1fr auto 90px;
+  gap:12px; align-items:center;
+  transition:background 0.2s;
+  position:relative; overflow:hidden;
+}
+
+.funnel-stage:hover { background:oklch(17% 0.015 136 / 0.6) }
+
+.funnel-stage::after {
+  content:'';
+  position:absolute; left:0; bottom:0;
+  height:1px; width:100%;
   background:var(--border);
 }
 
-.funnel-stage {
-  background:var(--card);
-  padding:var(--sp5) var(--sp6);
-  display:grid;
-  grid-template-columns:10px 1fr auto 80px;
-  gap:var(--sp4);
-  align-items:center;
-  transition:background 0.2s;
-  opacity:0;
-  transform:translateX(-8px);
-}
+.funnel-stage:last-child::after { display:none }
 
-.funnel-stage:hover { background:var(--card-h) }
-
-.funnel-dot {
-  width:10px; height:10px;
-  border-radius:50%;
+.f-dot {
+  width:12px; height:12px; border-radius:50%;
   flex-shrink:0;
+  box-shadow:0 0 8px currentColor;
 }
 
-.funnel-name {
-  font-size:12px;
-  font-weight:500;
-  color:var(--ink);
+.f-name {
+  font-size:13px; font-weight:500; color:var(--ink);
 }
 
-.funnel-count {
+.f-count {
   font-family:'Gloock',serif;
-  font-size:30px;
-  color:var(--muted);
+  font-size:32px; color:var(--muted);
+  line-height:1; text-align:right;
+}
+
+.f-amount {
+  font-size:11px; color:var(--dim);
   text-align:right;
 }
 
-.funnel-amount {
-  font-size:11px;
-  color:var(--dim);
-  text-align:right;
-}
-
-/* ── Charts ── */
-.chart-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:var(--sp5);
-  margin-bottom:var(--sp7);
-}
-
+/* Chart card */
 .chart-card {
   background:var(--card);
   border:1px solid var(--border);
-  border-radius:16px;
-  padding:var(--sp6);
-  opacity:0;
-  transform:translateY(16px);
-  transition:border-color 0.25s;
+  border-radius:20px; padding:24px;
+  transition:border-color 0.3s;
 }
 
-.chart-card:hover { border-color:oklch(28% 0.014 138) }
+.chart-card:hover { border-color:oklch(28% 0.015 138) }
 
 .chart-title {
-  font-size:10px;
-  font-weight:600;
-  letter-spacing:0.20em;
-  text-transform:uppercase;
-  color:var(--gold);
-  margin-bottom:var(--sp5);
-  display:flex;
-  align-items:center;
-  gap:var(--sp3);
+  font-size:10px; font-weight:700;
+  letter-spacing:0.20em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:20px;
+  display:flex; align-items:center; gap:10px;
 }
 
 .chart-title::before {
-  content:'';
-  width:18px; height:1px;
-  background:var(--gold);
-  flex-shrink:0;
+  content:''; width:20px; height:1px;
+  background:var(--gold); flex-shrink:0;
 }
 
 .chart-wrap { position:relative; height:260px }
 
-/* ── Leads Strip ── */
+/* ── Charts row ── */
+.chart-row {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-bottom:52px;
+}
+
+/* ── Leads strip ── */
 .leads-strip {
   display:grid;
   grid-template-columns:repeat(5,1fr);
-  gap:1px;
-  background:var(--border);
+  gap:1px; background:var(--border);
   border:1px solid var(--border);
-  border-radius:16px;
-  overflow:hidden;
-  margin-bottom:var(--sp7);
+  border-radius:18px; overflow:hidden;
+  margin-bottom:52px;
 }
 
 .lead-cell {
   background:var(--card);
-  padding:var(--sp5) var(--sp5);
-  text-align:center;
+  padding:22px 20px; text-align:center;
   transition:background 0.2s;
-  opacity:0;
-  transform:translateY(12px);
+  position:relative;
 }
 
 .lead-cell:hover { background:var(--card-h) }
 
 .lead-num {
   font-family:'Gloock',serif;
-  font-size:38px;
-  color:var(--ink);
-  margin-bottom:var(--sp2);
-  line-height:1;
+  font-size:42px; line-height:1;
+  color:var(--ink); margin-bottom:6px;
 }
 
 .lead-lbl {
-  font-size:9px;
-  font-weight:600;
-  letter-spacing:0.14em;
-  text-transform:uppercase;
+  font-size:9px; font-weight:700;
+  letter-spacing:0.14em; text-transform:uppercase;
   color:var(--muted);
 }
 
-/* ── Deal Table ── */
+/* ── Table ── */
 .table-section {
   background:var(--card);
   border:1px solid var(--border);
-  border-radius:16px;
-  overflow:hidden;
-  margin-bottom:var(--sp7);
+  border-radius:20px; overflow:hidden;
+  margin-bottom:52px;
 }
 
 .table-header {
-  padding:var(--sp5) var(--sp6);
+  padding:20px 28px;
   border-bottom:1px solid var(--border);
-  display:flex;
-  align-items:center;
+  display:flex; align-items:center;
   justify-content:space-between;
-  flex-wrap:wrap;
-  gap:var(--sp4);
+  flex-wrap:wrap; gap:12px;
 }
 
-.filter-pills { display:flex; gap:var(--sp2) }
+.filter-pills { display:flex; gap:8px }
 
 .pill {
-  padding:6px 14px;
-  border-radius:100px;
-  font-size:9px;
-  font-weight:700;
-  letter-spacing:0.12em;
-  text-transform:uppercase;
-  border:1px solid var(--border);
-  color:var(--muted);
-  cursor:pointer;
-  background:transparent;
-  transition:all 0.2s;
-  font-family:'Epilogue',sans-serif;
+  padding:6px 15px; border-radius:100px;
+  font-size:9px; font-weight:700;
+  letter-spacing:0.12em; text-transform:uppercase;
+  border:1px solid var(--border); color:var(--muted);
+  cursor:pointer; background:transparent;
+  transition:all 0.2s; font-family:'Epilogue',sans-serif;
 }
 
 .pill:hover, .pill.active {
-  border-color:var(--gold);
-  color:var(--gold);
+  border-color:var(--gold); color:var(--gold);
   background:var(--gold-dim);
 }
 
 table { width:100%; border-collapse:collapse }
 
 th {
-  text-align:left;
-  padding:12px var(--sp6);
-  font-size:9px;
-  font-weight:700;
-  letter-spacing:0.16em;
-  text-transform:uppercase;
-  color:var(--dim);
-  border-bottom:1px solid var(--border);
+  text-align:left; padding:12px 28px;
+  font-size:9px; font-weight:700;
+  letter-spacing:0.16em; text-transform:uppercase;
+  color:var(--dim); border-bottom:1px solid var(--border);
   font-family:'Epilogue',sans-serif;
 }
 
 td {
-  padding:15px var(--sp6);
-  border-bottom:1px solid oklch(22% 0.012 138 / 0.5);
-  font-size:13px;
-  color:var(--muted);
-  transition:background 0.15s;
+  padding:15px 28px;
+  border-bottom:1px solid oklch(22% 0.013 138 / 0.5);
+  font-size:13px; color:var(--muted);
+  transition:background 0.15s, padding-left 0.25s;
 }
 
 tr:last-child td { border-bottom:none }
-tr:hover td { background:oklch(17% 0.013 138 / 0.6) }
+tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
 
 .td-company {
-  color:var(--ink);
-  font-weight:500;
-  display:flex;
-  align-items:center;
-  gap:var(--sp3);
+  color:var(--ink); font-weight:500;
+  display:flex; align-items:center; gap:10px;
 }
 
 .co-dot {
-  width:8px; height:8px;
-  border-radius:50%;
-  flex-shrink:0;
+  width:8px; height:8px; border-radius:50%; flex-shrink:0;
 }
 
 .td-value {
   font-family:'Gloock',serif;
-  font-size:15px;
-  color:var(--ink);
+  font-size:15px; color:var(--ink);
 }
 
 .status-badge {
-  display:inline-flex;
-  align-items:center;
-  gap:5px;
-  padding:4px 12px;
-  border-radius:100px;
-  font-size:9px;
-  font-weight:700;
-  letter-spacing:0.10em;
-  text-transform:uppercase;
+  display:inline-flex; align-items:center;
+  gap:5px; padding:4px 12px; border-radius:100px;
+  font-size:9px; font-weight:700;
+  letter-spacing:0.10em; text-transform:uppercase;
   font-family:'Epilogue',sans-serif;
 }
 
 .status-badge::before {
-  content:'';
-  width:5px; height:5px;
-  border-radius:50%;
+  content:''; width:5px; height:5px; border-radius:50%;
 }
 
 .status-closed  { background:var(--green-dim); color:var(--green-lt) }
@@ -686,130 +746,122 @@ tr:hover td { background:oklch(17% 0.013 138 / 0.6) }
 .status-declined::before{ background:var(--red) }
 
 .td-link {
-  color:var(--gold);
-  text-decoration:none;
-  font-size:11px;
-  font-weight:600;
-  opacity:0.6;
-  transition:opacity 0.2s;
-  letter-spacing:0.04em;
+  color:var(--gold); text-decoration:none;
+  font-size:11px; font-weight:600;
+  opacity:0.6; transition:opacity 0.2s;
 }
-
 .td-link:hover { opacity:1 }
 
 /* ── Timeline ── */
 .timeline {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:16px;
-  overflow:hidden;
-  margin-bottom:var(--sp7);
-  display:flex;
-  flex-direction:column;
-  gap:1px;
-  background-color:var(--border);
+  position:relative; padding-left:36px;
+  margin-bottom:52px;
+}
+
+.timeline::before {
+  content:''; position:absolute;
+  left:14px; top:8px; bottom:8px; width:1px;
+  background:linear-gradient(180deg, var(--gold), var(--green-lt), transparent);
 }
 
 .tl-item {
-  background:var(--card);
-  padding:var(--sp5) var(--sp6);
-  display:grid;
-  grid-template-columns:110px 1fr;
-  gap:var(--sp5);
-  align-items:start;
-  transition:background 0.2s;
-  opacity:0;
-  transform:translateX(-10px);
+  position:relative; padding:12px 0 20px;
+  transition:0.2s;
 }
 
-.tl-item:hover { background:var(--card-h) }
+.tl-item::before {
+  content:''; position:absolute;
+  left:-27px; top:17px;
+  width:10px; height:10px; border-radius:50%;
+  border:2px solid var(--border);
+  background:var(--bg); transition:0.3s;
+}
+
+.tl-item.closed::before {
+  background:var(--green-lt); border-color:var(--green-lt);
+  box-shadow:0 0 12px oklch(73% 0.165 145 / 0.4);
+}
+
+.tl-item:hover::before {
+  border-color:var(--gold);
+  box-shadow:0 0 10px oklch(72% 0.130 78 / 0.3);
+}
 
 .tl-date {
-  font-size:10px;
-  font-weight:600;
-  letter-spacing:0.10em;
-  text-transform:uppercase;
-  color:var(--muted);
-  padding-top:2px;
+  font-size:10px; font-weight:700;
+  letter-spacing:0.12em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:4px;
 }
 
 .tl-item.closed .tl-date { color:var(--green-lt) }
 
-.tl-text {
-  font-size:13px;
-  color:var(--muted);
-  line-height:1.55;
-}
-
+.tl-text { font-size:13px; color:var(--muted); line-height:1.55 }
 .tl-text strong { color:var(--ink); font-weight:500 }
 
 /* ── Footer ── */
 .footer {
-  padding:var(--sp7) 0 var(--sp4);
+  padding:52px 0 16px;
   border-top:1px solid var(--border);
-  display:flex;
-  align-items:center;
+  display:flex; align-items:center;
   justify-content:space-between;
 }
 
 .footer-brand {
   font-family:'Gloock',serif;
-  font-size:16px;
-  color:var(--muted);
+  font-size:16px; color:var(--muted);
 }
-
 .footer-brand em { color:var(--gold); font-style:italic }
 
 .footer-info {
-  font-size:10px;
-  color:var(--dim);
-  letter-spacing:0.04em;
-  text-align:right;
+  font-size:10px; color:var(--dim);
+  letter-spacing:0.04em; text-align:right;
 }
 
 /* ── Responsive ── */
 @media(max-width:1100px){
-  .split        { grid-template-columns:1fr }
-  .chart-grid   { grid-template-columns:1fr }
-  .kpi-row      { grid-template-columns:repeat(2,1fr) }
-  .goal-strip   { grid-template-columns:1fr; gap:var(--sp5) }
-  .goal-stats   { grid-template-rows:unset; grid-template-columns:repeat(2,auto) }
+  .goal-kpi  { grid-template-columns:1fr }
+  .kpi-grid  { grid-template-columns:repeat(4,1fr) }
+  .mid-split { grid-template-columns:1fr }
+  .chart-row { grid-template-columns:1fr }
+  .showcase  { grid-template-columns:1fr }
+  .hero-numbers { grid-template-columns:1fr }
+  .hn-divider { display:none }
 }
 
-@media(max-width:640px){
-  .kpi-row      { grid-template-columns:1fr }
-  .leads-strip  { grid-template-columns:repeat(3,1fr) }
+@media(max-width:700px){
+  .kpi-grid { grid-template-columns:repeat(2,1fr) }
+  .leads-strip { grid-template-columns:repeat(3,1fr) }
   .filter-pills { display:none }
-  .header       { grid-template-columns:1fr }
-  .header-meta  { display:none }
-  .tl-item      { grid-template-columns:1fr; gap:var(--sp2) }
-  .footer       { flex-direction:column; gap:var(--sp4); text-align:center }
-  .footer-info  { text-align:center }
-  .funnel-stage { grid-template-columns:10px 1fr auto }
-  .funnel-amount{ display:none }
+  .header { grid-template-columns:1fr }
+  .header-meta { display:none }
 }
 
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after { animation-duration:0.01ms!important; transition-duration:0.01ms!important }
+  #bg-canvas,#spotlight { display:none }
 }
 </style>
 </head>
 <body>
 
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="spotlight" aria-hidden="true"></div>
+<div id="noise" aria-hidden="true"></div>
+
 <!-- ── Login Gate ── -->
-<div id="login-gate" style="position:fixed;inset:0;z-index:99999;background:oklch(9% 0.018 140);display:flex;align-items:center;justify-content:center">
-  <div style="text-align:center;max-width:360px;padding:48px 40px">
-    <p style="font-family:'Epilogue',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:oklch(36% 0.008 80);margin-bottom:var(--sp4)">Villa Sjövik</p>
-    <h1 style="font-family:'Gloock',Georgia,serif;font-size:38px;font-weight:400;line-height:1;color:oklch(94% 0.010 80);margin-bottom:var(--sp3)">Sales <em style="color:oklch(72% 0.120 78);font-style:italic">Dashboard</em></h1>
-    <p style="font-size:12px;color:oklch(36% 0.008 80);margin-bottom:var(--sp7);letter-spacing:0.03em">Ange lösenord för att fortsätta</p>
+<div id="login-gate" style="position:fixed;inset:0;z-index:99999;background:oklch(8.5% 0.020 140);display:flex;align-items:center;justify-content:center">
+  <div style="text-align:center;max-width:380px;padding:52px 40px">
+    <p style="font-family:'Epilogue',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:oklch(36% 0.008 80);margin-bottom:14px">Villa Sjövik</p>
+    <h1 style="font-family:'Gloock',Georgia,serif;font-size:40px;font-weight:400;line-height:0.9;color:oklch(94% 0.010 80);margin-bottom:10px">Sales <em style="color:oklch(72% 0.130 78);font-style:italic">Dashboard</em></h1>
+    <p style="font-size:12px;color:oklch(36% 0.008 80);margin-bottom:36px;letter-spacing:0.03em;margin-top:12px">Ange lösenord för att fortsätta</p>
     <form id="login-form" autocomplete="off" style="display:flex;flex-direction:column;gap:10px">
       <input id="login-pw" type="password" placeholder="Lösenord" autofocus
-        style="background:oklch(13% 0.015 138);border:1px solid oklch(22% 0.012 138);border-radius:10px;padding:14px 18px;color:oklch(94% 0.010 80);font-family:'Epilogue',sans-serif;font-size:14px;outline:none;transition:border-color .2s;width:100%"
-        onfocus="this.style.borderColor='oklch(72% 0.120 78 / 0.6)'" onblur="this.style.borderColor='oklch(22% 0.012 138)'"/>
+        style="background:oklch(12.5% 0.017 138);border:1px solid oklch(22% 0.013 138);border-radius:10px;padding:14px 18px;color:oklch(94% 0.010 80);font-family:'Epilogue',sans-serif;font-size:14px;outline:none;transition:border-color .2s;width:100%"
+        onfocus="this.style.borderColor='oklch(72% 0.130 78 / 0.7)'" onblur="this.style.borderColor='oklch(22% 0.013 138)'"/>
       <button type="submit"
-        style="background:var(--gold,oklch(72% 0.120 78));color:oklch(9% 0.018 140);border:none;border-radius:10px;padding:14px;font-family:'Epilogue',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.10em;text-transform:uppercase;cursor:pointer;transition:opacity .2s"
+        style="background:oklch(72% 0.130 78);color:oklch(8.5% 0.020 140);border:none;border-radius:10px;padding:14px;font-family:'Epilogue',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.10em;text-transform:uppercase;cursor:pointer;transition:opacity .2s"
         onmouseover="this.style.opacity='0.82'" onmouseout="this.style.opacity='1'">Logga in</button>
-      <p id="login-err" style="color:oklch(52% 0.200 24);font-size:12px;min-height:18px;font-family:'Epilogue',sans-serif"></p>
+      <p id="login-err" style="color:oklch(52% 0.210 24);font-size:12px;min-height:18px;font-family:'Epilogue',sans-serif"></p>
     </form>
   </div>
 </div>
@@ -837,19 +889,16 @@ tr:hover td { background:oklch(17% 0.013 138 / 0.6) }
 <div class="wrap">
 
 <!-- HEADER -->
-<header class="header" id="hdr">
+<header class="header">
   <div>
     <div class="header-eye">
-      <span class="label" style="color:oklch(58% 0.010 80)">Villa Sjövik</span>
-      <span style="color:oklch(36% 0.008 80);font-size:10px">·</span>
-      <span class="label" style="color:oklch(36% 0.008 80)">Pipeline 2026</span>
-      <span class="header-dot"></span>
-      <span style="font-size:10px;font-weight:500;color:var(--green-lt);letter-spacing:0.04em" id="live-label">Aktiv</span>
+      <span class="label muted">Villa Sjövik</span>
+      <span style="color:var(--dim);font-size:10px">·</span>
+      <span class="label muted">Pipeline 2026</span>
+      <span class="live-dot"></span>
+      <span style="font-size:10px;font-weight:600;color:var(--green-lt);letter-spacing:0.04em">Aktiv</span>
     </div>
-    <h1>
-      <span class="word">Sales</span><br>
-      <em class="word">Dashboard</em>
-    </h1>
+    <h1>Sales<br><em>Dashboard</em></h1>
   </div>
   <div class="header-meta">
     <p class="header-date" id="date-now"></p>
@@ -857,164 +906,224 @@ tr:hover td { background:oklch(17% 0.013 138 / 0.6) }
   </div>
 </header>
 
-<hr class="rule-accent"/>
+<hr class="rule-gold"/>
 
-<!-- GOAL STRIP -->
-<div class="goal-strip" id="goal-strip">
-  <div class="goal-figure">
-    <span class="label" style="margin-bottom:var(--sp2)">Stängt · april</span>
-    <p class="goal-amount" id="goal-closed-val">— kr</p>
-    <p class="goal-sub">av 100 000 kr månadsmål</p>
+<!-- HERO NUMBERS -->
+<div class="hero-numbers reveal" style="transition-delay:0.05s">
+  <div class="hn-item">
+    <p class="hn-label">Stängt · april</p>
+    <p class="hn-value gold" id="hn-closed">— kr</p>
+    <p class="hn-sub" id="hn-closed-sub"></p>
   </div>
-
-  <div class="goal-bar-wrap">
-    <div class="goal-bar-track">
-      <div class="goal-bar-fill" id="goal-fill"></div>
-    </div>
-    <div class="goal-markers">
-      <span>0</span><span>25k</span><span>50k</span><span>75k</span><span>100k</span>
-    </div>
+  <div class="hn-divider"></div>
+  <div class="hn-item">
+    <p class="hn-label">I pipeline</p>
+    <p class="hn-value" id="hn-pipeline">— kr</p>
+    <p class="hn-sub" id="hn-pipeline-sub"></p>
   </div>
-
-  <div class="goal-stats">
-    <div class="goal-stat">
-      <span class="goal-stat-val" id="goal-pipe-val">—</span>
-      <span class="goal-stat-lbl">I pipeline</span>
-    </div>
-    <div class="goal-stat">
-      <span class="goal-stat-val" id="goal-remain-val">—</span>
-      <span class="goal-stat-lbl">Kvar till mål</span>
-    </div>
+  <div class="hn-divider"></div>
+  <div class="hn-item">
+    <p class="hn-label">Kvar till mål</p>
+    <p class="hn-value" id="hn-remain">— kr</p>
+    <p class="hn-sub">av 100 000 kr månadsm.</p>
   </div>
 </div>
 
-<!-- KPI ROW -->
-<div class="kpi-row">
-  <div class="kpi">
-    <span class="label">Stängt värde</span>
-    <p class="kpi-value" id="kpi-closed">—<span class="unit">kr</span></p>
-    <p class="kpi-sub" id="kpi-closed-sub"></p>
-    <span class="kpi-trend up" id="kpi-closed-trend"></span>
+<!-- GOAL RING + KPIS -->
+<div class="goal-kpi">
+  <div class="goal-card reveal" style="transition-delay:0.10s">
+    <div class="goal-ring-wrap">
+      <svg viewBox="0 0 180 180">
+        <defs>
+          <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%"   stop-color="oklch(58% 0.190 145)"/>
+            <stop offset="45%"  stop-color="oklch(73% 0.165 145)"/>
+            <stop offset="100%" stop-color="oklch(72% 0.130 78)"/>
+          </linearGradient>
+        </defs>
+        <circle class="ring-bg" cx="90" cy="90" r="80"/>
+        <circle class="ring-fill" id="goal-ring" cx="90" cy="90" r="80"/>
+      </svg>
+      <div class="ring-center">
+        <span class="ring-pct" id="ring-pct">0%</span>
+        <span class="ring-sub">av mål</span>
+      </div>
+    </div>
+
+    <div class="goal-stats">
+      <div class="goal-stat">
+        <span class="goal-stat-lbl">Stängt</span>
+        <span class="goal-stat-val" id="gs-closed">—</span>
+      </div>
+      <div class="goal-stat">
+        <span class="goal-stat-lbl">Pipeline</span>
+        <span class="goal-stat-val" id="gs-pipe">—</span>
+      </div>
+      <div class="goal-stat">
+        <span class="goal-stat-lbl">Mål</span>
+        <span class="goal-stat-val" style="color:var(--dim)">100 000 kr</span>
+      </div>
+    </div>
+
+    <div class="goal-bar-wrap">
+      <div class="goal-bar-track">
+        <div class="goal-bar-fill" id="goal-fill"></div>
+      </div>
+    </div>
   </div>
-  <div class="kpi">
-    <span class="label">Pipeline</span>
-    <p class="kpi-value" id="kpi-pipeline">—<span class="unit">kr</span></p>
-    <p class="kpi-sub" id="kpi-pipeline-sub"></p>
-    <span class="kpi-trend neutral" id="kpi-pipeline-trend"></span>
-  </div>
-  <div class="kpi">
-    <span class="label">Konvertering</span>
-    <p class="kpi-value" id="kpi-conv">—<span class="unit">%</span></p>
-    <p class="kpi-sub">Stängda / alla kontaktade</p>
-  </div>
-  <div class="kpi">
-    <span class="label">Aktiva leads</span>
-    <p class="kpi-value" id="kpi-leads">—<span class="unit">st</span></p>
-    <p class="kpi-sub" id="kpi-leads-sub"></p>
+
+  <div class="kpi-grid">
+    <div class="kpi reveal" data-tilt style="transition-delay:0.10s">
+      <div class="kpi-shine"></div>
+      <span class="label">Stängt värde</span>
+      <p class="kpi-value" id="kpi-closed">—<span class="unit">kr</span></p>
+      <p class="kpi-sub" id="kpi-closed-sub"></p>
+      <span class="kpi-trend up" id="kpi-closed-trend"></span>
+      <div class="kpi-bar" id="kpi-closed-bar" style="background:var(--gold)"></div>
+    </div>
+    <div class="kpi reveal" data-tilt style="transition-delay:0.17s">
+      <div class="kpi-shine"></div>
+      <span class="label">Pipeline</span>
+      <p class="kpi-value" id="kpi-pipeline">—<span class="unit">kr</span></p>
+      <p class="kpi-sub" id="kpi-pipeline-sub"></p>
+      <span class="kpi-trend neutral" id="kpi-pipeline-trend"></span>
+      <div class="kpi-bar" id="kpi-pipeline-bar" style="background:var(--blue)"></div>
+    </div>
+    <div class="kpi reveal" data-tilt style="transition-delay:0.24s">
+      <div class="kpi-shine"></div>
+      <span class="label">Konvertering</span>
+      <p class="kpi-value" id="kpi-conv">—<span class="unit">%</span></p>
+      <p class="kpi-sub">Stängda / alla kontaktade</p>
+      <div class="kpi-bar" id="kpi-conv-bar" style="background:var(--green-lt)"></div>
+    </div>
+    <div class="kpi reveal" data-tilt style="transition-delay:0.31s">
+      <div class="kpi-shine"></div>
+      <span class="label">Aktiva leads</span>
+      <p class="kpi-value" id="kpi-leads">—<span class="unit">st</span></p>
+      <p class="kpi-sub" id="kpi-leads-sub"></p>
+      <div class="kpi-bar" id="kpi-leads-bar" style="background:var(--orange)"></div>
+    </div>
   </div>
 </div>
 
 <hr class="rule"/>
 
-<!-- SPLIT: Closed Deals + Pipeline -->
-<div class="split">
-  <div>
-    <div class="sec-head"><h2>Stängda <em>samarbeten</em></h2></div>
-    <div class="deals-list">
-      <div class="deal-item">
-        <div class="deal-initial">S</div>
-        <div class="deal-info">
-          <h4>Sioo:x</h4>
-          <p>Sofie Källström · Trädgård &amp; Utomhus</p>
-          <p class="deal-meta">Stängd 7 april · WoodScan, del 1/3 filmad</p>
-        </div>
-        <div class="deal-value">48 000 kr</div>
-      </div>
-      <div class="deal-item">
-        <div class="deal-initial">G</div>
-        <div class="deal-info">
-          <h4>Guldkannan AB</h4>
-          <p>Klara Lövberg · Trädgård &amp; Utomhus</p>
-          <p class="deal-meta">Stängd 12 april · 10 foton + 3 film</p>
-        </div>
-        <div class="deal-value">10 000 kr</div>
-      </div>
-      <div class="deal-item">
-        <div class="deal-initial">H</div>
-        <div class="deal-info">
-          <h4>Hillerstorp</h4>
-          <p>Trädgård &amp; Utomhus</p>
-          <p class="deal-meta">April 2026 · Produktutbyte</p>
-        </div>
-        <div class="deal-value barter">Produktutbyte</div>
-      </div>
+<!-- CLOSED DEALS SHOWCASE -->
+<div class="sec-head"><h2>Stängda <em>samarbeten</em></h2></div>
+<div class="showcase">
+  <div class="sc-card reveal" data-tilt style="transition-delay:0.05s">
+    <div class="sc-shine"></div>
+    <div class="sc-shimmer"></div>
+    <span class="sc-badge">Stängd</span>
+    <div class="sc-header">
+      <div class="sc-avatar green">S</div>
+      <div class="sc-info"><h3>Sioo:x</h3><p>Trädgård &amp; Utomhus</p></div>
+    </div>
+    <p class="sc-value gold-v">48 000 kr</p>
+    <p class="sc-desc">Avtal signerat via Scrive. Del 1 av 3 filmad. WoodScan-kampanj med rabattkod.</p>
+    <div class="sc-meta">
+      <span>Stängd 7 april</span>
+      <span>Sofie Källström</span>
     </div>
   </div>
-
-  <div>
-    <div class="sec-head"><h2>Pipeline <em>status</em></h2></div>
-    <div class="pipeline-panel">
-      <div class="pipeline-head">
-        <span class="label">Steg i pipeline</span>
-      </div>
-      <div class="funnel-stages">
-        <div class="funnel-stage">
-          <span class="funnel-dot" style="background:var(--green-lt)"></span>
-          <span class="funnel-name">Stängda</span>
-          <span class="funnel-count" id="f-closed-n">—</span>
-          <span class="funnel-amount" id="f-closed-kr"></span>
-        </div>
-        <div class="funnel-stage">
-          <span class="funnel-dot" style="background:var(--blue)"></span>
-          <span class="funnel-name">Möten bokade</span>
-          <span class="funnel-count" id="f-meeting-n">—</span>
-          <span class="funnel-amount" id="f-meeting-kr"></span>
-        </div>
-        <div class="funnel-stage">
-          <span class="funnel-dot" style="background:var(--orange)"></span>
-          <span class="funnel-name">Offerter skickade</span>
-          <span class="funnel-count" id="f-pitched-n">—</span>
-          <span class="funnel-amount" id="f-pitched-kr"></span>
-        </div>
-        <div class="funnel-stage">
-          <span class="funnel-dot" style="background:var(--red)"></span>
-          <span class="funnel-name">Avböjda</span>
-          <span class="funnel-count" id="f-declined-n">—</span>
-          <span class="funnel-amount" id="f-declined-kr"></span>
-        </div>
-      </div>
+  <div class="sc-card reveal" data-tilt style="transition-delay:0.12s">
+    <div class="sc-shine"></div>
+    <div class="sc-shimmer"></div>
+    <span class="sc-badge">Stängd</span>
+    <div class="sc-header">
+      <div class="sc-avatar gold">G</div>
+      <div class="sc-info"><h3>Guldkannan AB</h3><p>Trädgård &amp; Utomhus</p></div>
+    </div>
+    <p class="sc-value gold-v">10 000 kr</p>
+    <p class="sc-desc">10 foton + 3 filmklipp + 1 redigerad film. Full nyttjanderätt. Ekologisk växtnäring.</p>
+    <div class="sc-meta">
+      <span>Stängd 12 april</span>
+      <span>Klara Lövberg</span>
+    </div>
+  </div>
+  <div class="sc-card reveal" data-tilt style="transition-delay:0.19s">
+    <div class="sc-shine"></div>
+    <div class="sc-shimmer"></div>
+    <span class="sc-badge" style="background:var(--blue-dim);color:var(--blue);border-color:oklch(63% 0.165 240 / 0.15)">Produktutbyte</span>
+    <div class="sc-header">
+      <div class="sc-avatar blue">H</div>
+      <div class="sc-info"><h3>Hillerstorp</h3><p>Trädgård &amp; Utomhus</p></div>
+    </div>
+    <p class="sc-value blue-v">Produktutbyte</p>
+    <p class="sc-desc">Trädgårdsmöbler och utemiljö. Samarbete via produktleverans. April 2026.</p>
+    <div class="sc-meta">
+      <span>April 2026</span>
+      <span>Produktutbyte</span>
     </div>
   </div>
 </div>
 
-<!-- CHARTS -->
-<div class="chart-grid">
-  <div class="chart-card">
+<hr class="rule"/>
+
+<!-- PIPELINE + CHART -->
+<div class="mid-split">
+  <div class="pipeline-card reveal">
+    <div class="card-head"><span class="label">Pipeline-status</span></div>
+    <div class="funnel-wrap">
+      <div class="funnel-stage">
+        <span class="f-dot" style="color:var(--green-lt);background:var(--green-lt)"></span>
+        <span class="f-name">Stängda</span>
+        <span class="f-count" id="f-closed-n">—</span>
+        <span class="f-amount" id="f-closed-kr"></span>
+      </div>
+      <div class="funnel-stage">
+        <span class="f-dot" style="color:var(--blue);background:var(--blue)"></span>
+        <span class="f-name">Möten bokade</span>
+        <span class="f-count" id="f-meeting-n">—</span>
+        <span class="f-amount" id="f-meeting-kr"></span>
+      </div>
+      <div class="funnel-stage">
+        <span class="f-dot" style="color:var(--orange);background:var(--orange)"></span>
+        <span class="f-name">Offerter skickade</span>
+        <span class="f-count" id="f-pitched-n">—</span>
+        <span class="f-amount" id="f-pitched-kr"></span>
+      </div>
+      <div class="funnel-stage">
+        <span class="f-dot" style="color:var(--red);background:var(--red)"></span>
+        <span class="f-name">Avböjda</span>
+        <span class="f-count" id="f-declined-n">—</span>
+        <span class="f-amount" id="f-declined-kr"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card reveal">
     <p class="chart-title">Pipeline-fördelning</p>
     <div class="chart-wrap"><canvas id="chart-pipeline"></canvas></div>
   </div>
-  <div class="chart-card">
+</div>
+
+<!-- CHART ROW -->
+<div class="chart-row">
+  <div class="chart-card reveal">
     <p class="chart-title">Värde per status</p>
     <div class="chart-wrap"><canvas id="chart-value"></canvas></div>
   </div>
+  <div class="chart-card reveal" style="transition-delay:0.12s">
+    <p class="chart-title">Leads-status</p>
+    <div class="chart-wrap"><canvas id="chart-leads"></canvas></div>
+  </div>
 </div>
 
-<!-- LEADS STRIP -->
-<div class="sec-head" style="margin-bottom:var(--sp5)">
-  <h2>Leads <em>översikt</em></h2>
-</div>
+<!-- LEADS -->
+<div class="sec-head"><h2>Leads <em>översikt</em></h2></div>
 <div class="leads-strip">
-  <div class="lead-cell"><p class="lead-num" id="lead-total">—</p><p class="lead-lbl">Totala leads</p></div>
-  <div class="lead-cell"><p class="lead-num" id="lead-new">—</p><p class="lead-lbl">Nya</p></div>
-  <div class="lead-cell"><p class="lead-num" id="lead-contacted">—</p><p class="lead-lbl">Kontaktade</p></div>
-  <div class="lead-cell"><p class="lead-num" id="lead-ni">—</p><p class="lead-lbl">Ej intresserade</p></div>
-  <div class="lead-cell"><p class="lead-num" id="lead-ready" style="color:var(--gold)">—</p><p class="lead-lbl">Redo att kontakta</p></div>
+  <div class="lead-cell reveal"><p class="lead-num" id="lead-total">—</p><p class="lead-lbl">Totala leads</p></div>
+  <div class="lead-cell reveal" style="transition-delay:0.07s"><p class="lead-num" id="lead-new">—</p><p class="lead-lbl">Nya</p></div>
+  <div class="lead-cell reveal" style="transition-delay:0.14s"><p class="lead-num" id="lead-contacted">—</p><p class="lead-lbl">Kontaktade</p></div>
+  <div class="lead-cell reveal" style="transition-delay:0.21s"><p class="lead-num" id="lead-ni">—</p><p class="lead-lbl">Ej intresserade</p></div>
+  <div class="lead-cell reveal" style="transition-delay:0.28s"><p class="lead-num" id="lead-ready" style="color:var(--gold)">—</p><p class="lead-lbl">Redo att kontakta</p></div>
 </div>
 
 <hr class="rule"/>
 
-<!-- DEAL TABLE -->
-<div class="table-section">
+<!-- TABLE -->
+<div class="table-section reveal">
   <div class="table-header">
     <span class="label">Alla affärer</span>
     <div class="filter-pills">
@@ -1028,12 +1137,8 @@ tr:hover td { background:oklch(17% 0.013 138 / 0.6) }
   <table>
     <thead>
       <tr>
-        <th>Företag</th>
-        <th>Kategori</th>
-        <th>Status</th>
-        <th>Värde</th>
-        <th>Kontaktad</th>
-        <th>Pitch</th>
+        <th>Företag</th><th>Kategori</th><th>Status</th>
+        <th>Värde</th><th>Kontaktad</th><th>Pitch</th>
       </tr>
     </thead>
     <tbody id="deal-tbody"></tbody>
@@ -1043,31 +1148,29 @@ tr:hover td { background:oklch(17% 0.013 138 / 0.6) }
 <hr class="rule"/>
 
 <!-- TIMELINE -->
-<div class="sec-head" style="margin-bottom:var(--sp5)">
-  <h2>Aktivitets<em>logg</em></h2>
-</div>
+<div class="sec-head"><h2>Aktivitets<em>logg</em></h2></div>
 <div class="timeline" id="timeline">
-  <div class="tl-item closed">
+  <div class="tl-item closed reveal">
     <p class="tl-date">12 apr 2026</p>
     <p class="tl-text"><strong>Guldkannan AB</strong> — avtal stängt. 10 000 kr. 10 foton + 3 filmklipp + 1 redigerad film.</p>
   </div>
-  <div class="tl-item closed">
+  <div class="tl-item closed reveal" style="transition-delay:0.07s">
     <p class="tl-date">7 apr 2026</p>
     <p class="tl-text"><strong>Sioo:x</strong> — avtal signerat via Scrive. 48 000 kr. WoodScan-kampanj, del 1 filmad.</p>
   </div>
-  <div class="tl-item">
+  <div class="tl-item reveal" style="transition-delay:0.14s">
     <p class="tl-date">7 apr 2026</p>
     <p class="tl-text"><strong>VELUX</strong> — positiv respons. Möte bokat 22 april. 3-pack (48 000 kr) på bordet.</p>
   </div>
-  <div class="tl-item">
+  <div class="tl-item reveal" style="transition-delay:0.21s">
     <p class="tl-date">12 apr 2026</p>
     <p class="tl-text"><strong>Villaägarna</strong> — kallt mail skickat. Offert 28 500 kr. Break-even 50 signups.</p>
   </div>
-  <div class="tl-item">
+  <div class="tl-item reveal" style="transition-delay:0.28s">
     <p class="tl-date">10 apr 2026</p>
     <p class="tl-text"><strong>NIBE</strong> — kampanjförslag skickat. Möte bokat. 45 000 kr.</p>
   </div>
-  <div class="tl-item">
+  <div class="tl-item reveal" style="transition-delay:0.35s">
     <p class="tl-date">9 apr 2026</p>
     <p class="tl-text"><strong>JAPE</strong> — pitch skickad via GitHub Pages. Inväntar svar.</p>
   </div>
@@ -1079,7 +1182,7 @@ tr:hover td { background:oklch(17% 0.013 138 / 0.6) }
   <p class="footer-info">Sales Dashboard · deals.json · Claude + Qwen · <span id="footer-date"></span></p>
 </footer>
 
-</div>
+</div><!-- /wrap -->
 
 <script>
 'use strict';
@@ -1088,28 +1191,28 @@ tr:hover td { background:oklch(17% 0.013 138 / 0.6) }
    DATA
 ══════════════════════════════════════════ */
 const DATA = {
-  meta: { updated:"2026-04-14", monthly_goal:100000 },
-  deals: [
-    { id:"sioox",          company:"Sioo:x",            contact:"Sofie Källström",  category:"Trädgård & Utomhus",    status:"closed",   value:48000, date_contacted:"2026-03-20", date_closed:"2026-04-07", pitch_url:null,                                        notes:"Avtal signerat. Del 1/3 filmad." },
-    { id:"hillerstorp",    company:"Hillerstorp",        contact:null,               category:"Trädgård & Utomhus",    status:"closed",   value:0,     date_contacted:null,         date_closed:"2026-04-01", pitch_url:null,                                        notes:"Gratissamarbete (produktutbyte)." },
-    { id:"guldkannan",     company:"Guldkannan AB",      contact:"Klara Lövberg",    category:"Trädgård & Utomhus",    status:"closed",   value:10000, date_contacted:"2026-03-23", date_closed:"2026-04-12", pitch_url:null,                                        notes:"10 foton + 3 film + 1 redigerad film." },
-    { id:"velux",          company:"VELUX",              contact:"Audingas Sumskas", category:"Smarta Hem",            status:"meeting",  value:48000, date_contacted:"2026-04-07", date_closed:null,         pitch_url:"https://villasjovik.github.io/velux/",          notes:"Möte 22 april. 3-pack (48k)." },
-    { id:"nibe",           company:"NIBE",               contact:null,               category:"Smarta Hem & Appar",    status:"meeting",  value:45000, date_contacted:"2026-04-10", date_closed:null,         pitch_url:"https://villasjovik.github.io/nibe/",           notes:"Kampanjförslag 2026." },
-    { id:"jape",           company:"JAPE",               contact:null,               category:"Trädgård & Utomhus",    status:"pitched",  value:null,  date_contacted:"2026-04-09", date_closed:null,         pitch_url:"https://villasjovik.github.io/jape/",           notes:"Inväntar svar." },
-    { id:"thefriendlyhome",company:"The Friendly Home",  contact:null,               category:"Inredning & Dekor",     status:"pitched",  value:null,  date_contacted:"2026-04-10", date_closed:null,         pitch_url:"https://villasjovik.github.io/thefriendlyhome/",notes:"Inväntar svar." },
-    { id:"klinta",         company:"Klinta",             contact:"Shkurte Makoli",   category:"Inredning & Dekor",     status:"pitched",  value:null,  date_contacted:"2026-04-14", date_closed:null,         pitch_url:"https://villasjovik.github.io/klinta/",         notes:"Positiv respons." },
-    { id:"villaagarna",    company:"Villaägarna",        contact:null,               category:"Tjänster & Medlemskap", status:"pitched",  value:28500, date_contacted:"2026-04-12", date_closed:null,         pitch_url:"https://villasjovik.github.io/villaagarna/",    notes:"Kallt mail. Break-even 50 signups." },
-    { id:"tergent",        company:"Tergent",            contact:"Sandra Jeppsson",  category:"Rengöring & Hemvård",   status:"declined", value:9000,  date_contacted:"2026-04-01", date_closed:null,         pitch_url:"https://villasjovik.github.io/tergent/",        notes:"Avböjt, möjligt höst 2026." },
-    { id:"tibber",         company:"Tibber",             contact:null,               category:"Smarta Hem & Appar",    status:"declined", value:null,  date_contacted:"2026-04-01", date_closed:null,         pitch_url:null,                                        notes:"Tackade nej." }
+  meta:{ updated:"2026-04-14", monthly_goal:100000 },
+  deals:[
+    {id:"sioox",         company:"Sioo:x",           contact:"Sofie Källström", category:"Trädgård & Utomhus",    status:"closed",   value:48000, date_contacted:"2026-03-20", date_closed:"2026-04-07", pitch_url:null,                                         notes:"Avtal signerat. Del 1/3 filmad."},
+    {id:"hillerstorp",   company:"Hillerstorp",       contact:null,              category:"Trädgård & Utomhus",    status:"closed",   value:0,     date_contacted:null,         date_closed:"2026-04-01", pitch_url:null,                                         notes:"Gratissamarbete (produktutbyte)."},
+    {id:"guldkannan",    company:"Guldkannan AB",     contact:"Klara Lövberg",   category:"Trädgård & Utomhus",    status:"closed",   value:10000, date_contacted:"2026-03-23", date_closed:"2026-04-12", pitch_url:null,                                         notes:"10 foton + 3 film + 1 redigerad film."},
+    {id:"velux",         company:"VELUX",             contact:"Audingas Sumskas",category:"Smarta Hem",            status:"meeting",  value:48000, date_contacted:"2026-04-07", date_closed:null,         pitch_url:"https://villasjovik.github.io/velux/",         notes:"Möte 22 april. 3-pack (48k)."},
+    {id:"nibe",          company:"NIBE",              contact:null,              category:"Smarta Hem & Appar",    status:"meeting",  value:45000, date_contacted:"2026-04-10", date_closed:null,         pitch_url:"https://villasjovik.github.io/nibe/",          notes:"Kampanjförslag 2026."},
+    {id:"jape",          company:"JAPE",              contact:null,              category:"Trädgård & Utomhus",    status:"pitched",  value:null,  date_contacted:"2026-04-09", date_closed:null,         pitch_url:"https://villasjovik.github.io/jape/",          notes:"Inväntar svar."},
+    {id:"thefriendlyhome",company:"The Friendly Home",contact:null,              category:"Inredning & Dekor",     status:"pitched",  value:null,  date_contacted:"2026-04-10", date_closed:null,         pitch_url:"https://villasjovik.github.io/thefriendlyhome/",notes:"Inväntar svar."},
+    {id:"klinta",        company:"Klinta",            contact:"Shkurte Makoli",  category:"Inredning & Dekor",     status:"pitched",  value:null,  date_contacted:"2026-04-14", date_closed:null,         pitch_url:"https://villasjovik.github.io/klinta/",        notes:"Positiv respons."},
+    {id:"villaagarna",   company:"Villaägarna",       contact:null,              category:"Tjänster & Medlemskap", status:"pitched",  value:28500, date_contacted:"2026-04-12", date_closed:null,         pitch_url:"https://villasjovik.github.io/villaagarna/",   notes:"Kallt mail. Break-even 50 signups."},
+    {id:"tergent",       company:"Tergent",           contact:"Sandra Jeppsson", category:"Rengöring & Hemvård",   status:"declined", value:9000,  date_contacted:"2026-04-01", date_closed:null,         pitch_url:"https://villasjovik.github.io/tergent/",       notes:"Avböjt, möjligt höst 2026."},
+    {id:"tibber",        company:"Tibber",            contact:null,              category:"Smarta Hem & Appar",    status:"declined", value:null,  date_contacted:"2026-04-01", date_closed:null,         pitch_url:null,                                         notes:"Tackade nej."}
   ],
-  leads_summary: { total:135, new:68, contacted:40, not_interested:25, ready_to_contact:8 }
+  leads_summary:{total:135, new:68, contacted:40, not_interested:25, ready_to_contact:8}
 };
 
 const STATUS_MAP = {
-  closed:  { label:'Stängd',  cls:'status-closed',   color:'oklch(74% 0.155 145)' },
-  meeting: { label:'Möte',    cls:'status-meeting',   color:'oklch(62% 0.160 240)' },
-  pitched: { label:'Offert',  cls:'status-pitched',   color:'oklch(68% 0.175 55)'  },
-  declined:{ label:'Avböjd',  cls:'status-declined',  color:'oklch(52% 0.200 24)'  }
+  closed:  {label:'Stängd',  cls:'status-closed',  color:'oklch(73% 0.165 145)'},
+  meeting: {label:'Möte',    cls:'status-meeting',  color:'oklch(63% 0.165 240)'},
+  pitched: {label:'Offert',  cls:'status-pitched',  color:'oklch(68% 0.180 55)' },
+  declined:{label:'Avböjd',  cls:'status-declined', color:'oklch(52% 0.210 24)' }
 };
 
 const fmt  = n => n == null ? '—' : n.toLocaleString('sv-SE');
@@ -1118,173 +1221,205 @@ const fmtK = n => n >= 1000 ? (n/1000).toFixed(0)+'k' : fmt(n);
 /* ══════════════════════════════════════════
    DATE
 ══════════════════════════════════════════ */
-const dateStr = new Date().toLocaleDateString('sv-SE',{year:'numeric',month:'long',day:'numeric'});
-document.getElementById('date-now').textContent = dateStr;
-document.getElementById('footer-date').textContent = dateStr;
+const ds = new Date().toLocaleDateString('sv-SE',{year:'numeric',month:'long',day:'numeric'});
+document.getElementById('date-now').textContent = ds;
+document.getElementById('footer-date').textContent = ds;
 
 /* ══════════════════════════════════════════
    COMPUTED VALUES
 ══════════════════════════════════════════ */
-const closed   = DATA.deals.filter(d => d.status==='closed');
-const meetings = DATA.deals.filter(d => d.status==='meeting');
-const pitched  = DATA.deals.filter(d => d.status==='pitched');
-const declined = DATA.deals.filter(d => d.status==='declined');
+const closed   = DATA.deals.filter(d=>d.status==='closed');
+const meetings = DATA.deals.filter(d=>d.status==='meeting');
+const pitched  = DATA.deals.filter(d=>d.status==='pitched');
+const declined = DATA.deals.filter(d=>d.status==='declined');
 
 const closedValue   = closed.reduce((s,d)=>s+(d.value||0),0);
 const meetingValue  = meetings.reduce((s,d)=>s+(d.value||0),0);
 const pitchedValue  = pitched.reduce((s,d)=>s+(d.value||0),0);
 const pipelineValue = meetingValue + pitchedValue;
-const convRate      = DATA.deals.length > 0 ? (closed.length / DATA.deals.length * 100) : 0;
+const convRate      = DATA.deals.length > 0 ? (closed.length/DATA.deals.length*100) : 0;
 
-document.getElementById('header-total').textContent = fmt(closedValue + pipelineValue) + ' kr i spel';
+document.getElementById('header-total').textContent = fmt(closedValue+pipelineValue)+' kr i spel';
+
+/* ══════════════════════════════════════════
+   PARTICLES (canvas)
+══════════════════════════════════════════ */
+(function(){
+  const c = document.getElementById('bg-canvas');
+  const ctx = c.getContext('2d');
+  let W, H, pts = [];
+  const N = 55;
+
+  function resize(){ W=c.width=innerWidth; H=c.height=innerHeight }
+  resize();
+  addEventListener('resize', resize);
+
+  for(let i=0;i<N;i++){
+    const g = Math.random()<0.4;
+    pts.push({
+      x:Math.random()*W, y:Math.random()*H,
+      vx:(Math.random()-.5)*0.18, vy:(Math.random()-.5)*0.18,
+      r:Math.random()*1.8+0.4,
+      c: g ? `oklch(73% 0.165 145 / ${(Math.random()*0.10+0.03).toFixed(2)})`
+           : `oklch(72% 0.130 78 / ${(Math.random()*0.08+0.03).toFixed(2)})`
+    });
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    pts.forEach(p=>{
+      p.x+=p.vx; p.y+=p.vy;
+      if(p.x<-10)p.x=W+10; if(p.x>W+10)p.x=-10;
+      if(p.y<-10)p.y=H+10; if(p.y>H+10)p.y=-10;
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=p.c;
+      ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ══════════════════════════════════════════
+   SPOTLIGHT
+══════════════════════════════════════════ */
+document.addEventListener('mousemove', e=>{
+  document.getElementById('spotlight').style.setProperty('--mx', e.clientX+'px');
+  document.getElementById('spotlight').style.setProperty('--my', e.clientY+'px');
+  document.querySelectorAll('[data-tilt]').forEach(card=>{
+    const r=card.getBoundingClientRect();
+    card.querySelector('.kpi-shine, .sc-shine')?.style.setProperty('--x',(e.clientX-r.left)+'px');
+    card.querySelector('.kpi-shine, .sc-shine')?.style.setProperty('--y',(e.clientY-r.top)+'px');
+  });
+});
+
+/* ══════════════════════════════════════════
+   3D CARD TILT
+══════════════════════════════════════════ */
+document.querySelectorAll('[data-tilt]').forEach(card=>{
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect();
+    const x=(e.clientX-r.left)/r.width-.5;
+    const y=(e.clientY-r.top)/r.height-.5;
+    card.style.transform=`perspective(700px) rotateX(${-y*7}deg) rotateY(${x*7}deg) translateZ(6px)`;
+  });
+  card.addEventListener('mouseleave',()=>{
+    card.style.transform='perspective(700px) rotateX(0) rotateY(0) translateZ(0)';
+  });
+});
+
+/* ══════════════════════════════════════════
+   INTERSECTION OBSERVER (reliable scroll reveal)
+══════════════════════════════════════════ */
+const revealObserver = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, { threshold:0.08 });
+
+document.querySelectorAll('.reveal, .reveal-left').forEach(el=>revealObserver.observe(el));
 
 /* ══════════════════════════════════════════
    COUNT-UP
 ══════════════════════════════════════════ */
-function countUp(el, target, suffix, duration=1400){
+function countUp(el, target, suffix, duration=1600){
   if(!el) return;
-  const t0 = performance.now();
+  // Instant fallback after 100ms in case rAF is throttled
+  const fallback = setTimeout(()=>{ el.innerHTML=fmt(target)+(suffix?'<span class="unit">'+suffix+'</span>':'') }, 100);
+  const t0=performance.now();
   (function tick(now){
-    const p    = Math.min((now-t0)/duration, 1);
-    const ease = 1 - Math.pow(1-p, 4);
-    const v    = Math.round(ease * target);
-    el.innerHTML = fmt(v) + (suffix ? '<span class="unit">'+suffix+'</span>' : '');
-    if(p < 1) requestAnimationFrame(tick);
+    const p=Math.min((now-t0)/duration,1);
+    const ease=1-Math.pow(1-p,4);
+    const v=Math.round(ease*target);
+    el.innerHTML=fmt(v)+(suffix?'<span class="unit">'+suffix+'</span>':'');
+    if(p<1) requestAnimationFrame(tick);
+    else clearTimeout(fallback);
   })(t0);
 }
 
 /* ══════════════════════════════════════════
-   GSAP ANIMATIONS
+   POPULATE DATA
 ══════════════════════════════════════════ */
-gsap.registerPlugin(ScrollTrigger);
+// Hero numbers
+document.getElementById('hn-closed').textContent    = fmt(closedValue)+' kr';
+document.getElementById('hn-pipeline').textContent  = fmt(pipelineValue)+' kr';
+document.getElementById('hn-remain').textContent    = fmt(Math.max(DATA.meta.monthly_goal-closedValue,0))+' kr';
+document.getElementById('hn-closed-sub').textContent  = closed.length+' stängda affärer';
+document.getElementById('hn-pipeline-sub').textContent = (meetings.length+pitched.length)+' aktiva';
 
-// Header visible immediately — scroll animations handle the rest
-
-// Goal strip
-gsap.to('#goal-strip', {
-  y:0, opacity:1, duration:.85, ease:'power2.out',
-  scrollTrigger:{ trigger:'#goal-strip', start:'top 88%', once:true }
-});
-
-// KPI cards
-gsap.utils.toArray('.kpi').forEach((el,i) => {
-  gsap.to(el, {
-    y:0, opacity:1, duration:.6, delay:i*0.08, ease:'power2.out',
-    scrollTrigger:{ trigger:el, start:'top 90%', once:true }
-  });
-});
-
-// Deal items
-gsap.utils.toArray('.deal-item').forEach((el,i) => {
-  gsap.to(el, {
-    y:0, opacity:1, duration:.55, delay:i*0.07, ease:'power2.out',
-    scrollTrigger:{ trigger:el, start:'top 92%', once:true }
-  });
-});
-
-// Funnel stages
-gsap.utils.toArray('.funnel-stage').forEach((el,i) => {
-  gsap.to(el, {
-    x:0, opacity:1, duration:.55, delay:i*0.08, ease:'power2.out',
-    scrollTrigger:{ trigger:'.pipeline-panel', start:'top 85%', once:true }
-  });
-});
-
-// Charts
-gsap.utils.toArray('.chart-card').forEach((el,i) => {
-  gsap.to(el, {
-    y:0, opacity:1, duration:.65, delay:i*0.12, ease:'power2.out',
-    scrollTrigger:{ trigger:el, start:'top 88%', once:true }
-  });
-});
-
-// Leads cells
-gsap.utils.toArray('.lead-cell').forEach((el,i) => {
-  gsap.to(el, {
-    y:0, opacity:1, duration:.5, delay:i*0.06, ease:'power2.out',
-    scrollTrigger:{ trigger:'.leads-strip', start:'top 88%', once:true }
-  });
-});
-
-// Timeline
-gsap.utils.toArray('.tl-item').forEach((el,i) => {
-  gsap.to(el, {
-    x:0, opacity:1, duration:.5, delay:i*0.06, ease:'power2.out',
-    scrollTrigger:{ trigger:'#timeline', start:'top 82%', once:true }
-  });
-});
-
-/* ══════════════════════════════════════════
-   GOAL + KPI UPDATES
-══════════════════════════════════════════ */
+// Goal ring + bar
+const pct = Math.min(closedValue/DATA.meta.monthly_goal*100,100);
 setTimeout(()=>{
-  // Goal
-  const pct = Math.min(closedValue / DATA.meta.monthly_goal * 100, 100);
-  document.getElementById('goal-fill').style.width = pct + '%';
-  document.getElementById('goal-closed-val').textContent = fmt(closedValue) + ' kr';
-  document.getElementById('goal-pipe-val').textContent   = fmt(pipelineValue) + ' kr';
-  document.getElementById('goal-remain-val').textContent = fmt(Math.max(DATA.meta.monthly_goal - closedValue, 0)) + ' kr';
+  const circumference = 2*Math.PI*80;
+  document.getElementById('goal-ring').style.strokeDashoffset = circumference*(1-pct/100);
+  document.getElementById('ring-pct').textContent = Math.round(pct)+'%';
+  document.getElementById('goal-fill').style.width = pct+'%';
+  document.getElementById('gs-closed').textContent = fmt(closedValue)+' kr';
+  document.getElementById('gs-pipe').textContent   = fmt(pipelineValue)+' kr';
+}, 400);
 
-  // KPIs
+// KPIs
+setTimeout(()=>{
   countUp(document.getElementById('kpi-closed'), closedValue, 'kr');
-  document.getElementById('kpi-closed-sub').textContent    = closed.length + ' stängda affärer';
-  document.getElementById('kpi-closed-trend').textContent  = '↑ ' + Math.round(closedValue/DATA.meta.monthly_goal*100) + '% av mål';
+  document.getElementById('kpi-closed-sub').textContent   = closed.length+' stängda affärer';
+  document.getElementById('kpi-closed-trend').textContent = '↑ '+Math.round(closedValue/DATA.meta.monthly_goal*100)+'% av mål';
+  document.getElementById('kpi-closed-bar').style.width   = Math.min(closedValue/DATA.meta.monthly_goal*100,100)+'%';
 
   countUp(document.getElementById('kpi-pipeline'), pipelineValue, 'kr');
-  document.getElementById('kpi-pipeline-sub').textContent   = (meetings.length+pitched.length) + ' aktiva i pipeline';
-  document.getElementById('kpi-pipeline-trend').textContent = '◆ ' + (meetings.length+pitched.length) + ' deals';
+  document.getElementById('kpi-pipeline-sub').textContent   = (meetings.length+pitched.length)+' aktiva deals';
+  document.getElementById('kpi-pipeline-trend').textContent = '◆ '+(meetings.length+pitched.length)+' deals';
+  document.getElementById('kpi-pipeline-bar').style.width   = Math.min(pipelineValue/200000*100,100)+'%';
 
   countUp(document.getElementById('kpi-conv'), Math.round(convRate*10)/10, '%');
+  document.getElementById('kpi-conv-bar').style.width = convRate+'%';
 
   countUp(document.getElementById('kpi-leads'), DATA.leads_summary.total, 'st');
-  document.getElementById('kpi-leads-sub').textContent = DATA.leads_summary.ready_to_contact + ' redo att kontakta';
-}, 500);
-
-/* ══════════════════════════════════════════
-   FUNNEL
-══════════════════════════════════════════ */
-setTimeout(()=>{
-  const sets = [
-    { n:'closed',  data:closed,   value:closedValue },
-    { n:'meeting', data:meetings, value:meetingValue },
-    { n:'pitched', data:pitched,  value:pitchedValue },
-    { n:'declined',data:declined, value:declined.reduce((s,d)=>s+(d.value||0),0) }
-  ];
-  sets.forEach(s => {
-    const nEl  = document.getElementById('f-'+s.n+'-n');
-    const krEl = document.getElementById('f-'+s.n+'-kr');
-    if(nEl)  countUp(nEl, s.data.length, '', 800);
-    if(krEl) krEl.textContent = s.value > 0 ? fmt(s.value)+' kr' : '';
-  });
+  document.getElementById('kpi-leads-sub').textContent = DATA.leads_summary.ready_to_contact+' redo att kontakta';
+  document.getElementById('kpi-leads-bar').style.width = (DATA.leads_summary.ready_to_contact/DATA.leads_summary.total*100)+'%';
 }, 600);
 
-/* ══════════════════════════════════════════
-   LEADS
-══════════════════════════════════════════ */
+// Funnel
 setTimeout(()=>{
-  const ids  = ['lead-total','lead-new','lead-contacted','lead-ni','lead-ready'];
-  const vals = [DATA.leads_summary.total, DATA.leads_summary.new, DATA.leads_summary.contacted, DATA.leads_summary.not_interested, DATA.leads_summary.ready_to_contact];
-  ids.forEach((id,i) => countUp(document.getElementById(id), vals[i], '', 1000));
+  [{n:'closed',d:closed,v:closedValue},{n:'meeting',d:meetings,v:meetingValue},
+   {n:'pitched',d:pitched,v:pitchedValue},{n:'declined',d:declined,v:declined.reduce((s,d)=>s+(d.value||0),0)}
+  ].forEach(s=>{
+    const nEl=document.getElementById('f-'+s.n+'-n');
+    const kEl=document.getElementById('f-'+s.n+'-kr');
+    if(nEl) countUp(nEl, s.d.length, '', 900);
+    if(kEl) kEl.textContent = s.v>0 ? fmt(s.v)+' kr' : '';
+  });
+}, 500);
+
+// Leads
+setTimeout(()=>{
+  ['lead-total','lead-new','lead-contacted','lead-ni','lead-ready'].forEach((id,i)=>{
+    const vals=[DATA.leads_summary.total,DATA.leads_summary.new,DATA.leads_summary.contacted,DATA.leads_summary.not_interested,DATA.leads_summary.ready_to_contact];
+    countUp(document.getElementById(id), vals[i], '', 1200);
+  });
 }, 700);
 
 /* ══════════════════════════════════════════
    CHARTS
 ══════════════════════════════════════════ */
-Chart.defaults.font.family = 'Epilogue';
+Chart.defaults.font.family='Epilogue';
 
 const TT = {
-  backgroundColor: 'oklch(13% 0.015 138)',
-  titleColor:      'oklch(94% 0.010 80)',
-  bodyColor:       'oklch(58% 0.010 80)',
-  borderColor:     'oklch(72% 0.120 78 / 0.25)',
+  backgroundColor:'oklch(12.5% 0.017 138)',
+  titleColor:'oklch(94% 0.010 80)',
+  bodyColor:'oklch(58% 0.010 80)',
+  borderColor:'oklch(72% 0.130 78 / 0.25)',
   borderWidth:1, padding:14, cornerRadius:10,
-  titleFont:{ family:'Gloock', size:14 },
-  bodyFont: { family:'Epilogue', size:11 }
+  titleFont:{family:'Gloock',size:14},
+  bodyFont:{family:'Epilogue',size:11}
 };
 
 const LEGEND = {
   position:'bottom',
-  labels:{ color:'oklch(58% 0.010 80)', font:{ family:'Epilogue', size:11 }, padding:16, usePointStyle:true, pointStyleWidth:8 }
+  labels:{color:'oklch(58% 0.010 80)', font:{family:'Epilogue',size:11}, padding:18, usePointStyle:true, pointStyleWidth:8}
 };
 
 new Chart(document.getElementById('chart-pipeline'),{
@@ -1293,51 +1428,62 @@ new Chart(document.getElementById('chart-pipeline'),{
     labels:['Stängda ('+closed.length+')','Möten ('+meetings.length+')','Offerter ('+pitched.length+')','Avböjda ('+declined.length+')'],
     datasets:[{
       data:[closed.length, meetings.length, pitched.length, declined.length],
-      backgroundColor:['oklch(74% 0.155 145)','oklch(62% 0.160 240)','oklch(68% 0.175 55)','oklch(52% 0.200 24)'],
-      borderColor:'oklch(13% 0.015 138)',
-      borderWidth:4,
-      hoverBorderColor:'oklch(72% 0.120 78 / 0.4)',
-      hoverOffset:14
+      backgroundColor:['oklch(73% 0.165 145)','oklch(63% 0.165 240)','oklch(68% 0.180 55)','oklch(52% 0.210 24)'],
+      borderColor:'oklch(12.5% 0.017 138)', borderWidth:5,
+      hoverBorderColor:'oklch(72% 0.130 78 / 0.5)', hoverOffset:16
     }]
   },
   options:{
-    responsive:true, maintainAspectRatio:false, cutout:'68%',
-    plugins:{
-      legend:LEGEND,
-      tooltip:{ ...TT, callbacks:{ label: ctx => ctx.label+' — '+Math.round(ctx.parsed/DATA.deals.length*100)+'%' }}
-    },
-    animation:{ duration:1200, easing:'easeOutQuart' }
+    responsive:true, maintainAspectRatio:false, cutout:'65%',
+    plugins:{legend:LEGEND, tooltip:{...TT, callbacks:{label:ctx=>ctx.label+' — '+Math.round(ctx.parsed/DATA.deals.length*100)+'%'}}},
+    animation:{duration:2000, easing:'easeOutQuart',
+      animateRotate:true, animateScale:true}
   }
 });
 
-const groups = [
-  { label:'Stängt',   value:closedValue,            color:'oklch(74% 0.155 145)' },
-  { label:'Möten',    value:meetingValue,            color:'oklch(62% 0.160 240)' },
-  { label:'Offerter', value:pitchedValue,            color:'oklch(68% 0.175 55)'  },
-  { label:'Mål',      value:DATA.meta.monthly_goal,  color:'oklch(72% 0.120 78 / 0.18)' }
+const groups=[
+  {label:'Stängt',  value:closedValue,           color:'oklch(73% 0.165 145)'},
+  {label:'Möten',   value:meetingValue,           color:'oklch(63% 0.165 240)'},
+  {label:'Offerter',value:pitchedValue,           color:'oklch(68% 0.180 55)' },
+  {label:'Mål',     value:DATA.meta.monthly_goal, color:'oklch(72% 0.130 78 / 0.20)'}
 ];
 
 new Chart(document.getElementById('chart-value'),{
   type:'bar',
   data:{
-    labels: groups.map(g=>g.label),
+    labels:groups.map(g=>g.label),
     datasets:[{
-      data: groups.map(g=>g.value),
-      backgroundColor: groups.map(g=>g.color),
-      borderRadius:8, borderSkipped:false, barPercentage:.55
+      data:groups.map(g=>g.value),
+      backgroundColor:groups.map(g=>g.color),
+      borderRadius:10, borderSkipped:false, barPercentage:0.55
     }]
   },
   options:{
     responsive:true, maintainAspectRatio:false,
-    plugins:{
-      legend:{ display:false },
-      tooltip:{ ...TT, callbacks:{ label: ctx => fmt(ctx.parsed.y)+' kr' }}
-    },
+    plugins:{legend:{display:false}, tooltip:{...TT, callbacks:{label:ctx=>fmt(ctx.parsed.y)+' kr'}}},
     scales:{
-      x:{ grid:{display:false}, ticks:{ color:'oklch(36% 0.008 80)', font:{size:10}}, border:{display:false} },
-      y:{ grid:{ color:'oklch(22% 0.012 138 / 0.6)' }, ticks:{ color:'oklch(36% 0.008 80)', font:{size:10}, callback:v=>fmtK(v) }, border:{display:false} }
+      x:{grid:{display:false}, ticks:{color:'oklch(36% 0.008 80)',font:{size:10}}, border:{display:false}},
+      y:{grid:{color:'oklch(22% 0.013 138 / 0.7)'}, ticks:{color:'oklch(36% 0.008 80)',font:{size:10},callback:v=>fmtK(v)}, border:{display:false}}
     },
-    animation:{ duration:1200, easing:'easeOutQuart' }
+    animation:{duration:2000, easing:'easeOutQuart'}
+  }
+});
+
+new Chart(document.getElementById('chart-leads'),{
+  type:'polarArea',
+  data:{
+    labels:['Totalt','Nya','Kontaktade','Ej int.','Redo'],
+    datasets:[{
+      data:[DATA.leads_summary.total, DATA.leads_summary.new, DATA.leads_summary.contacted, DATA.leads_summary.not_interested, DATA.leads_summary.ready_to_contact],
+      backgroundColor:['oklch(72% 0.130 78 / 0.65)','oklch(73% 0.165 145 / 0.65)','oklch(63% 0.165 240 / 0.65)','oklch(52% 0.210 24 / 0.50)','oklch(73% 0.165 145 / 0.90)'],
+      borderColor:'oklch(12.5% 0.017 138)', borderWidth:3
+    }]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    plugins:{legend:LEGEND, tooltip:{...TT}},
+    scales:{r:{grid:{color:'oklch(22% 0.013 138 / 0.7)'}, ticks:{display:false}, pointLabels:{display:false}}},
+    animation:{duration:2000, easing:'easeOutQuart'}
   }
 });
 
@@ -1347,18 +1493,17 @@ new Chart(document.getElementById('chart-value'),{
 function renderTable(filter){
   const deals = filter==='all' ? DATA.deals : DATA.deals.filter(d=>d.status===filter);
   const tbody = document.getElementById('deal-tbody');
-  tbody.innerHTML = '';
-  deals.forEach(d => {
-    const s  = STATUS_MAP[d.status];
-    const tr = document.createElement('tr');
-    tr.dataset.status = d.status;
-    tr.innerHTML = `
-      <td><span class="td-company"><span class="co-dot" style="background:${s.color}"></span>${d.company}</span></td>
+  tbody.innerHTML='';
+  deals.forEach(d=>{
+    const s=STATUS_MAP[d.status];
+    const tr=document.createElement('tr');
+    tr.innerHTML=`
+      <td><span class="td-company"><span class="co-dot" style="background:${s.color};box-shadow:0 0 6px ${s.color}"></span>${d.company}</span></td>
       <td>${d.category}</td>
       <td><span class="status-badge ${s.cls}">${s.label}</span></td>
-      <td class="td-value">${d.value ? fmt(d.value)+' kr' : '—'}</td>
-      <td>${d.date_contacted ? d.date_contacted.slice(5).split('-').reverse().join('/') : '—'}</td>
-      <td>${d.pitch_url ? '<a href="'+d.pitch_url+'" target="_blank" class="td-link">Visa →</a>' : '—'}</td>
+      <td class="td-value">${d.value?fmt(d.value)+' kr':'—'}</td>
+      <td>${d.date_contacted?d.date_contacted.slice(5).split('-').reverse().join('/'):'—'}</td>
+      <td>${d.pitch_url?'<a href="'+d.pitch_url+'" target="_blank" class="td-link">Visa →</a>':'—'}</td>
     `;
     tbody.appendChild(tr);
   });
@@ -1366,12 +1511,23 @@ function renderTable(filter){
 
 renderTable('all');
 
-document.querySelectorAll('.pill').forEach(pill => {
-  pill.addEventListener('click', ()=>{
-    document.querySelectorAll('.pill').forEach(p=>p.classList.remove('active'));
-    pill.classList.add('active');
-    renderTable(pill.dataset.f);
+document.querySelectorAll('.pill').forEach(p=>{
+  p.addEventListener('click',()=>{
+    document.querySelectorAll('.pill').forEach(x=>x.classList.remove('active'));
+    p.classList.add('active');
+    renderTable(p.dataset.f);
   });
+});
+
+/* ══════════════════════════════════════════
+   GSAP — extra polish for real browsers
+══════════════════════════════════════════ */
+gsap.registerPlugin(ScrollTrigger);
+
+// Stagger-in GSAP for timeline items (on top of CSS reveal)
+gsap.utils.toArray('.tl-item').forEach((el,i)=>{
+  gsap.from(el,{x:-12, duration:.5, delay:i*.07, ease:'power2.out',
+    scrollTrigger:{trigger:'#timeline', start:'top 82%', once:true}});
 });
 
 </script>

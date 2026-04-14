@@ -30,6 +30,18 @@
       "notes": "Gratissamarbete (produktutbyte). Detaljer okända."
     },
     {
+      "id": "guldkannan",
+      "company": "Guldkannan AB",
+      "contact": "Klara Lövberg",
+      "category": "Trädgård & Utomhus",
+      "status": "closed",
+      "value": 10000,
+      "date_contacted": "2026-03-23",
+      "date_closed": "2026-04-12",
+      "pitch_url": null,
+      "notes": "10 foton + 3 filmklipp + 1 redigerad film. Full nyttjanderätt."
+    },
+    {
       "id": "velux",
       "company": "VELUX",
       "contact": "Audingas Sumskas",

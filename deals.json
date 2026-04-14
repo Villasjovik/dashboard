@@ -102,6 +102,18 @@
       "notes": "Kallt mail skickat till info@villaagarna.se. Break-even 50 signups."
     },
     {
+      "id": "klinta",
+      "company": "Klinta",
+      "contact": "Shkurte Makoli",
+      "category": "Inredning & Dekor",
+      "status": "pitched",
+      "value": null,
+      "date_contacted": "2026-04-14",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/klinta/",
+      "notes": "Pitch skickad 2026-04-14. Inväntar svar från Shkurte. Paket: 18 500 / 39 000 / 14 500 per mån."
+    },
+    {
       "id": "tergent",
       "company": "Tergent",
       "contact": "Sandra Jeppsson",

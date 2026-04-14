@@ -276,6 +276,43 @@ tr:last-child td{border-bottom:none}
 </head>
 <body>
 
+<!-- ── Login Gate ── -->
+<div id="login-gate" style="position:fixed;inset:0;z-index:99999;background:var(--bg);display:flex;align-items:center;justify-content:center">
+  <div style="text-align:center;max-width:360px;padding:32px">
+    <h1 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;margin-bottom:6px;color:var(--ink)">Villa <em style="color:var(--gold);font-style:italic">Sjövik</em></h1>
+    <p style="font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:32px">Sales Dashboard</p>
+    <form id="login-form" autocomplete="off" style="display:flex;flex-direction:column;gap:12px">
+      <input id="login-pw" type="password" placeholder="Lösenord" autofocus
+        style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px 18px;color:var(--ink);font-family:'Inter',sans-serif;font-size:14px;outline:none;transition:border .2s"
+        onfocus="this.style.borderColor='var(--border-hi)'" onblur="this.style.borderColor='var(--border)'"/>
+      <button type="submit"
+        style="background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--bg);border:none;border-radius:8px;padding:14px;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;transition:opacity .2s"
+        onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Logga in</button>
+      <p id="login-err" style="color:var(--red);font-size:12px;min-height:18px"></p>
+    </form>
+  </div>
+</div>
+<script>
+(function(){
+  const HASH='16d1551686f4cb08f88335d39d505708f5618bd8762c62fba9f9d1d3f3bdb850';
+  if(sessionStorage.getItem('vs_auth')==='1'){document.getElementById('login-gate').style.display='none'}
+  document.getElementById('login-form').addEventListener('submit',async function(e){
+    e.preventDefault();
+    const pw=document.getElementById('login-pw').value;
+    const buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(pw));
+    const hex=[...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');
+    if(hex===HASH){
+      sessionStorage.setItem('vs_auth','1');
+      document.getElementById('login-gate').style.display='none';
+    }else{
+      document.getElementById('login-err').textContent='Fel lösenord';
+      document.getElementById('login-pw').value='';
+      document.getElementById('login-pw').focus();
+    }
+  });
+})();
+</script>
+
 <canvas id="particles" aria-hidden="true"></canvas>
 <div id="spotlight" aria-hidden="true"></div>
 <div id="noise" aria-hidden="true"></div>

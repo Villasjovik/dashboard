@@ -6,289 +6,810 @@
 <title>Villa Sjövik — Sales Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet"/>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#0a0f0c;
-  --bg2:#111a14;
-  --bg3:#162019;
-  --card:#131d16;
-  --card-hover:#1a2a1f;
-  --border:rgba(212,168,75,.10);
-  --border-hi:rgba(212,168,75,.35);
-  --gold:#D4A84B;
-  --gold2:#F0C878;
-  --gold-dim:rgba(212,168,75,.08);
-  --green:#018E47;
-  --green-lt:#2ecc71;
-  --green-dim:rgba(1,142,71,.2);
-  --red:#c0392b;
-  --red-dim:rgba(192,57,43,.15);
-  --orange:#e67e22;
-  --orange-dim:rgba(230,126,34,.15);
-  --blue:#3498db;
-  --blue-dim:rgba(52,152,219,.15);
-  --purple:#9b59b6;
-  --purple-dim:rgba(155,89,182,.15);
-  --ink:#F2EDE4;
-  --muted:rgba(242,237,228,.5);
-  --dim:rgba(242,237,228,.22);
-  --ease:cubic-bezier(.16,1,.3,1);
-  --ease2:cubic-bezier(.76,0,.24,1);
+
+:root {
+  --bg:          oklch(9%  0.018 140);
+  --bg2:         oklch(12% 0.016 138);
+  --bg3:         oklch(15% 0.014 135);
+  --card:        oklch(13% 0.015 138);
+  --card-h:      oklch(17% 0.013 138);
+
+  --border:      oklch(22% 0.012 138);
+  --border-hi:   oklch(70% 0.120 78 / 0.55);
+
+  --gold:        oklch(72% 0.120 78);
+  --gold2:       oklch(82% 0.095 82);
+  --gold-dim:    oklch(72% 0.120 78 / 0.10);
+
+  --green:       oklch(60% 0.180 145);
+  --green-lt:    oklch(74% 0.155 145);
+  --green-dim:   oklch(60% 0.180 145 / 0.14);
+  --red:         oklch(52% 0.200 24);
+  --red-dim:     oklch(52% 0.200 24 / 0.12);
+  --blue:        oklch(62% 0.160 240);
+  --blue-dim:    oklch(62% 0.160 240 / 0.12);
+  --orange:      oklch(68% 0.175 55);
+  --orange-dim:  oklch(68% 0.175 55 / 0.12);
+  --purple:      oklch(62% 0.160 300);
+
+  --ink:         oklch(94% 0.010 80);
+  --muted:       oklch(58% 0.010 80);
+  --dim:         oklch(36% 0.008 80);
+
+  --sp1:4px; --sp2:8px; --sp3:12px; --sp4:16px;
+  --sp5:24px; --sp6:32px; --sp7:48px; --sp8:64px; --sp9:96px;
+
+  --ease-out: cubic-bezier(0.16,1,0.3,1);
 }
-html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;overflow-x:hidden;cursor:default}
 
-/* ── Particle Canvas ── */
-#particles{position:fixed;inset:0;z-index:0;pointer-events:none}
+html { scroll-behavior:smooth }
 
-/* ── Mouse Spotlight ── */
-#spotlight{position:fixed;inset:0;z-index:1;pointer-events:none;
-  background:radial-gradient(800px circle at var(--mx,50%) var(--my,50%),rgba(212,168,75,.03),transparent 60%);
-  transition:background .15s}
+body {
+  font-family:'Epilogue',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  min-height:100vh;
+  overflow-x:hidden;
+}
 
-/* ── Noise ── */
-#noise{position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.02;
-background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-background-size:160px 160px}
+/* ── Background ── */
+body::before {
+  content:'';
+  position:fixed;
+  inset:0;
+  z-index:0;
+  background-image:
+    linear-gradient(oklch(22% 0.012 138 / 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(22% 0.012 138 / 0.35) 1px, transparent 1px);
+  background-size:72px 72px;
+  pointer-events:none;
+}
 
-/* ── Layout ── */
-.wrap{max-width:1320px;margin:0 auto;padding:40px 28px 80px;position:relative;z-index:2}
+/* Subtle corner vignette */
+body::after {
+  content:'';
+  position:fixed;
+  inset:0;
+  z-index:0;
+  background:radial-gradient(ellipse 120% 80% at 50% 0%, transparent 40%, oklch(7% 0.016 140 / 0.7) 100%);
+  pointer-events:none;
+}
 
-/* ── Gold Dividers ── */
-.gd{height:1px;background:linear-gradient(90deg,transparent,rgba(212,168,75,.5),transparent);margin:12px 0;opacity:0;transform:scaleX(0)}
+.wrap {
+  max-width:1400px;
+  margin:0 auto;
+  padding:var(--sp7) var(--sp6) var(--sp9);
+  position:relative;
+  z-index:1;
+}
 
-/* ── Section titles ── */
-.section-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.section-label::before{content:'';width:28px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
+/* ── Util ── */
+.label {
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:0.20em;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+
+hr.rule {
+  border:none;
+  height:1px;
+  background:var(--border);
+  margin:var(--sp7) 0;
+}
+
+hr.rule-accent {
+  border:none;
+  height:1px;
+  background:linear-gradient(90deg, var(--gold) 0%, oklch(72% 0.120 78 / 0.2) 40%, transparent 70%);
+  margin:var(--sp6) 0 var(--sp7);
+}
 
 /* ── Header ── */
-.header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:52px;flex-wrap:wrap}
-.header-left{display:flex;flex-direction:column;gap:8px}
-.header h1{font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,52px);font-weight:400;line-height:1.05;overflow:hidden}
-.header h1 em{font-style:italic;color:var(--gold);display:inline-block}
-.header h1 .word{display:inline-block;transform:translateY(100%);opacity:0}
-.header-sub{font-size:13px;color:var(--muted);letter-spacing:.03em;opacity:0}
-.header-date{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px;opacity:0}
-.header-date::before{content:'';width:28px;height:1px;background:var(--gold)}
-.pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;animation:pulse 2.5s ease-in-out infinite;box-shadow:0 0 12px rgba(1,142,71,.4)}
-@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 4px rgba(1,142,71,.5)}50%{opacity:.6;box-shadow:0 0 16px rgba(1,142,71,.3)}}
+.header {
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:start;
+  gap:var(--sp6);
+  margin-bottom:var(--sp6);
+}
 
-/* ── Goal Ring + Bar ── */
-.goal-section{display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:center;
-  background:linear-gradient(135deg,rgba(19,29,22,.9),rgba(19,29,22,.6));
-  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-  border:1px solid var(--border);border-radius:20px;padding:32px;margin-bottom:36px;
-  position:relative;overflow:hidden}
-.goal-section::before{content:'';position:absolute;inset:-1px;border-radius:20px;
-  background:conic-gradient(from 0deg,transparent,rgba(212,168,75,.15),transparent,rgba(1,142,71,.1),transparent);
-  z-index:-1;animation:borderRotate 8s linear infinite}
-@keyframes borderRotate{to{transform:rotate(360deg)}}
-.goal-ring-wrap{position:relative;width:160px;height:160px}
-.goal-ring-wrap svg{width:100%;height:100%;transform:rotate(-90deg)}
-.goal-ring-bg{fill:none;stroke:rgba(255,255,255,.04);stroke-width:10}
-.goal-ring-fill{fill:none;stroke:url(#goalGrad);stroke-width:10;stroke-linecap:round;
-  stroke-dasharray:440;stroke-dashoffset:440;transition:stroke-dashoffset 2s var(--ease)}
-.goal-ring-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.goal-ring-pct{font-family:'Playfair Display',serif;font-size:36px;font-weight:500;color:var(--gold)}
-.goal-ring-lbl{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
-.goal-right{display:flex;flex-direction:column;gap:14px}
-.goal-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:400}
-.goal-title em{color:var(--gold);font-style:italic}
-.goal-amounts{display:flex;gap:24px}
-.goal-amt{display:flex;flex-direction:column;gap:2px}
-.goal-amt-val{font-family:'Playfair Display',serif;font-size:20px;color:var(--ink)}
-.goal-amt-lbl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.goal-track{height:20px;background:rgba(0,0,0,.3);border-radius:10px;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,.03)}
-.goal-fill{height:100%;border-radius:10px;position:relative;width:0%;transition:width 2s var(--ease);
-  background:linear-gradient(90deg,var(--green),var(--green-lt),var(--gold))}
-.goal-fill::after{content:'';position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(255,255,255,.18),transparent);border-radius:10px}
-.goal-glow{position:absolute;right:-2px;top:50%;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;
-  background:var(--gold);filter:blur(10px);opacity:.7;animation:goalPulse 2.5s ease-in-out infinite}
-@keyframes goalPulse{0%,100%{opacity:.7;transform:translateY(-50%) scale(1)}50%{opacity:.3;transform:translateY(-50%) scale(.7)}}
-.goal-markers{display:flex;justify-content:space-between;margin-top:6px;font-size:9px;color:var(--dim);letter-spacing:.04em}
+.header-eye {
+  display:flex;
+  align-items:center;
+  gap:var(--sp3);
+  margin-bottom:var(--sp4);
+  overflow:hidden;
+}
+
+.header-dot {
+  width:7px; height:7px;
+  border-radius:50%;
+  background:var(--green-lt);
+  box-shadow:0 0 12px oklch(74% 0.155 145 / 0.6);
+  animation:blink 2.5s ease-in-out infinite;
+  flex-shrink:0;
+}
+
+@keyframes blink {
+  0%,100%{opacity:1; box-shadow:0 0 12px oklch(74% 0.155 145 / 0.6)}
+  50%    {opacity:0.4; box-shadow:0 0 4px oklch(74% 0.155 145 / 0.2)}
+}
+
+.header h1 {
+  font-family:'Gloock',Georgia,serif;
+  font-size:clamp(56px,8vw,104px);
+  font-weight:400;
+  line-height:0.88;
+  letter-spacing:-0.025em;
+  overflow:hidden;
+}
+
+.header h1 em { font-style:italic; color:var(--gold) }
+
+.word { display:inline-block }
+
+.header-meta {
+  text-align:right;
+  padding-top:var(--sp3);
+  display:flex;
+  flex-direction:column;
+  gap:var(--sp2);
+  align-items:flex-end;
+}
+
+.header-date {
+  font-size:11px;
+  font-weight:500;
+  color:var(--muted);
+  letter-spacing:0.04em;
+}
+
+.header-total {
+  font-family:'Gloock',serif;
+  font-size:13px;
+  color:var(--dim);
+}
+
+/* ── Goal Strip ── */
+.goal-strip {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:var(--sp6) var(--sp7);
+  margin-bottom:var(--sp7);
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:var(--sp7);
+  align-items:center;
+  opacity:0;
+  transform:translateY(20px);
+}
+
+.goal-figure { display:flex; flex-direction:column; gap:var(--sp2) }
+
+.goal-amount {
+  font-family:'Gloock',serif;
+  font-size:52px;
+  line-height:1;
+  color:var(--gold);
+  letter-spacing:-0.02em;
+}
+
+.goal-sub {
+  font-size:11px;
+  color:var(--muted);
+  letter-spacing:0.04em;
+}
+
+.goal-bar-wrap { display:flex; flex-direction:column; gap:var(--sp3) }
+
+.goal-bar-track {
+  height:6px;
+  background:var(--border);
+  border-radius:3px;
+  position:relative;
+}
+
+.goal-bar-fill {
+  height:100%;
+  border-radius:3px;
+  background:linear-gradient(90deg, var(--green), var(--green-lt) 60%, var(--gold));
+  width:0%;
+  transition:width 2.2s var(--ease-out);
+  position:relative;
+}
+
+.goal-bar-fill::after {
+  content:'';
+  position:absolute;
+  right:-1px; top:50%;
+  transform:translateY(-50%);
+  width:14px; height:14px;
+  border-radius:50%;
+  background:var(--gold);
+  border:2px solid var(--bg);
+  box-shadow:0 0 20px oklch(72% 0.120 78 / 0.55);
+}
+
+.goal-markers {
+  display:flex;
+  justify-content:space-between;
+  font-size:9px;
+  color:var(--dim);
+  letter-spacing:0.06em;
+}
+
+.goal-stats {
+  display:grid;
+  grid-template-rows:1fr 1fr;
+  gap:var(--sp5);
+}
+
+.goal-stat { display:flex; flex-direction:column; gap:var(--sp1) }
+
+.goal-stat-val {
+  font-family:'Gloock',serif;
+  font-size:24px;
+  color:var(--ink);
+}
+
+.goal-stat-lbl {
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
 
 /* ── KPI Row ── */
-.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:36px}
-.kpi{background:linear-gradient(135deg,rgba(19,29,22,.85),rgba(19,29,22,.5));
-  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-  border:1px solid var(--border);border-radius:18px;padding:26px;position:relative;overflow:hidden;
-  transition:border-color .4s,transform .35s var(--ease),box-shadow .4s;transform-style:preserve-3d;perspective:600px}
-.kpi:hover{border-color:var(--border-hi);box-shadow:0 8px 40px rgba(0,0,0,.3),inset 0 0 60px rgba(212,168,75,.03)}
-.kpi-shine{position:absolute;inset:0;border-radius:18px;opacity:0;transition:opacity .4s;
-  background:radial-gradient(300px circle at var(--x,50%) var(--y,50%),rgba(212,168,75,.08),transparent 60%);pointer-events:none}
-.kpi:hover .kpi-shine{opacity:1}
-.kpi-icon{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:17px;
-  position:relative;overflow:hidden}
-.kpi-icon::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,.1));border-radius:12px}
-.kpi-icon.gold{background:rgba(212,168,75,.1)}.kpi-icon.green{background:var(--green-dim)}
-.kpi-icon.blue{background:var(--blue-dim)}.kpi-icon.purple{background:var(--purple-dim)}
-.kpi-label{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
-.kpi-value{font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,42px);font-weight:500;line-height:1}
-.kpi-value .unit{font-family:'Inter',sans-serif;font-size:13px;font-weight:400;color:var(--muted);margin-left:4px}
-.kpi-sub{font-size:10px;color:var(--dim);margin-top:8px}
-.kpi-bar{position:absolute;bottom:0;left:0;height:3px;border-radius:0 3px 0 0;transition:width 1.5s var(--ease)}
-.kpi-trend{display:inline-flex;align-items:center;gap:3px;font-size:10px;padding:2px 8px;border-radius:100px;margin-top:8px}
-.kpi-trend.up{background:var(--green-dim);color:var(--green-lt)}
-.kpi-trend.neutral{background:var(--gold-dim);color:var(--gold)}
+.kpi-row {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:var(--border);
+  border:1px solid var(--border);
+  border-radius:18px;
+  overflow:hidden;
+  margin-bottom:var(--sp7);
+}
 
-/* ── Closed Deals Showcase ── */
-.showcase{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:36px}
-.showcase-card{background:linear-gradient(145deg,rgba(19,29,22,.9),rgba(15,22,17,.7));
-  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-  border:1px solid var(--border);border-radius:20px;padding:28px;position:relative;overflow:hidden;
-  transition:transform .45s var(--ease),border-color .4s,box-shadow .4s;transform-style:preserve-3d}
-.showcase-card:hover{border-color:var(--border-hi);box-shadow:0 12px 48px rgba(0,0,0,.4),0 0 80px rgba(212,168,75,.04)}
-.showcase-card .kpi-shine{border-radius:20px}
-.showcase-card:hover .kpi-shine{opacity:1}
-.sc-header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
-.sc-avatar{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;
-  font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--ink);position:relative;overflow:hidden}
-.sc-avatar::before{content:'';position:absolute;inset:0;opacity:.15;border-radius:14px}
-.sc-avatar.green{background:var(--green-dim)}.sc-avatar.green::before{background:var(--green)}
-.sc-avatar.gold{background:var(--gold-dim)}.sc-avatar.gold::before{background:var(--gold)}
-.sc-avatar.blue{background:var(--blue-dim)}.sc-avatar.blue::before{background:var(--blue)}
-.sc-info h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:500;margin-bottom:2px}
-.sc-info p{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.sc-value{font-family:'Playfair Display',serif;font-size:32px;font-weight:500;margin-bottom:4px}
-.sc-value.gold-text{color:var(--gold)}
-.sc-value.green-text{color:var(--green-lt)}
-.sc-desc{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:16px}
-.sc-meta{display:flex;gap:16px;font-size:10px;color:var(--dim);letter-spacing:.04em}
-.sc-meta span{display:flex;align-items:center;gap:4px}
-.sc-badge{position:absolute;top:16px;right:16px;padding:4px 12px;border-radius:100px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;
-  background:var(--green-dim);color:var(--green-lt);border:1px solid rgba(46,204,113,.15)}
-.sc-shimmer{position:absolute;top:0;left:-100%;width:100%;height:100%;
-  background:linear-gradient(90deg,transparent,rgba(212,168,75,.04),transparent);
-  animation:shimmer 4s ease-in-out infinite;pointer-events:none}
-@keyframes shimmer{0%{left:-100%}50%{left:100%}100%{left:100%}}
+.kpi {
+  background:var(--card);
+  padding:var(--sp6) var(--sp6) var(--sp5);
+  position:relative;
+  transition:background 0.25s;
+  opacity:0;
+  transform:translateY(16px);
+}
 
-/* ── Chart Grid ── */
-.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:36px}
-.chart-card{background:linear-gradient(135deg,rgba(19,29,22,.85),rgba(19,29,22,.5));
-  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-  border:1px solid var(--border);border-radius:18px;padding:26px;
-  transition:border-color .4s,box-shadow .4s;position:relative;overflow:hidden}
-.chart-card:hover{border-color:var(--border-hi);box-shadow:0 8px 40px rgba(0,0,0,.25)}
-.chart-title{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:flex;align-items:center;gap:8px}
-.chart-title::before{content:'';width:22px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
-.chart-wrap{position:relative;height:280px}
+.kpi:hover { background:var(--card-h) }
 
-/* ── Funnel ── */
-.funnel-section{margin-bottom:36px}
-.funnel{display:flex;align-items:stretch;gap:3px;height:120px;border-radius:16px;overflow:hidden}
-.funnel-stage{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
-  position:relative;transition:flex .6s var(--ease),opacity .3s}
-.funnel-stage:hover{flex:1.5}
-.funnel-stage .f-val{font-family:'Playfair Display',serif;font-size:28px;font-weight:500;color:var(--ink)}
-.funnel-stage .f-lbl{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7)}
-.funnel-stage .f-kr{font-size:11px;color:rgba(255,255,255,.5);margin-top:2px}
-.funnel-arrow{width:20px;display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:16px}
+.kpi .label { display:block; margin-bottom:var(--sp4) }
 
-/* ── Leads Row ── */
-.leads-row{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:36px}
-.lead-card{background:linear-gradient(135deg,rgba(19,29,22,.8),rgba(19,29,22,.4));
-  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-  border:1px solid var(--border);border-radius:14px;padding:20px;text-align:center;
-  transition:border-color .3s,transform .35s var(--ease)}
-.lead-card:hover{border-color:var(--border-hi);transform:translateY(-3px)}
-.lead-num{font-family:'Playfair Display',serif;font-size:30px;color:var(--ink);margin-bottom:4px}
-.lead-lbl{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.kpi-value {
+  font-family:'Gloock',serif;
+  font-size:42px;
+  font-weight:400;
+  line-height:1;
+  letter-spacing:-0.02em;
+  margin-bottom:var(--sp3);
+}
 
-/* ── Pipeline Table ── */
-.table-section{background:linear-gradient(135deg,rgba(19,29,22,.85),rgba(19,29,22,.5));
-  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-  border:1px solid var(--border);border-radius:20px;overflow:hidden;margin-bottom:36px}
-.table-header{padding:22px 28px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
-.table-title{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:8px}
-.table-title::before{content:'';width:22px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
-.filter-pills{display:flex;gap:6px}
-.pill{padding:6px 16px;border-radius:100px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--border);
-  color:var(--muted);cursor:pointer;transition:all .25s;background:transparent;position:relative;overflow:hidden}
-.pill::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(212,168,75,.08),transparent);opacity:0;transition:opacity .25s}
-.pill:hover::before,.pill.active::before{opacity:1}
-.pill:hover,.pill.active{border-color:var(--gold);color:var(--gold)}
-table{width:100%;border-collapse:collapse}
-th{text-align:left;padding:14px 28px;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);border-bottom:1px solid var(--border);font-weight:500}
-td{padding:16px 28px;border-bottom:1px solid rgba(255,255,255,.02);font-size:13px;color:var(--muted);transition:background .2s,padding-left .3s}
-tr{transition:background .2s}
-tr:hover td{background:rgba(212,168,75,.02);padding-left:32px}
-tr:last-child td{border-bottom:none}
-.td-company{color:var(--ink);font-weight:500;display:flex;align-items:center;gap:10px}
-.td-company .co-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.td-value{font-family:'Playfair Display',serif;font-size:16px;color:var(--ink)}
-.status-badge{display:inline-flex;align-items:center;gap:5px;padding:5px 14px;border-radius:100px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
-.status-badge::before{content:'';width:6px;height:6px;border-radius:50%}
-.status-closed{background:var(--green-dim);color:var(--green-lt)}.status-closed::before{background:var(--green-lt)}
-.status-meeting{background:var(--blue-dim);color:var(--blue)}.status-meeting::before{background:var(--blue)}
-.status-pitched{background:var(--orange-dim);color:var(--orange)}.status-pitched::before{background:var(--orange)}
-.status-declined{background:var(--red-dim);color:#e74c3c}.status-declined::before{background:#e74c3c}
-.td-link{color:var(--gold);text-decoration:none;font-size:11px;opacity:.6;transition:opacity .25s}
-.td-link:hover{opacity:1}
+.kpi-value .unit {
+  font-family:'Epilogue',sans-serif;
+  font-size:13px;
+  font-weight:400;
+  color:var(--muted);
+  margin-left:4px;
+}
+
+.kpi-sub {
+  font-size:11px;
+  color:var(--muted);
+  margin-bottom:var(--sp3);
+  min-height:16px;
+}
+
+.kpi-trend {
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:0.08em;
+  padding:3px 10px;
+  border-radius:100px;
+  min-height:20px;
+}
+
+.kpi-trend.up      { background:var(--green-dim); color:var(--green-lt) }
+.kpi-trend.neutral { background:var(--gold-dim);  color:var(--gold) }
+
+/* ── Section head ── */
+.sec-head {
+  display:flex;
+  align-items:baseline;
+  gap:var(--sp4);
+  margin-bottom:var(--sp5);
+}
+
+.sec-head h2 {
+  font-family:'Gloock',serif;
+  font-size:30px;
+  font-weight:400;
+  letter-spacing:-0.015em;
+}
+
+.sec-head h2 em { color:var(--gold); font-style:italic }
+
+/* ── Split layout ── */
+.split {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:var(--sp5);
+  margin-bottom:var(--sp7);
+  align-items:start;
+}
+
+/* ── Closed Deals List ── */
+.deals-list {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+}
+
+.deal-item {
+  padding:var(--sp5) var(--sp6);
+  border-bottom:1px solid var(--border);
+  display:grid;
+  grid-template-columns:44px 1fr auto;
+  gap:var(--sp4);
+  align-items:center;
+  transition:background 0.2s;
+  opacity:0;
+  transform:translateY(12px);
+}
+
+.deal-item:last-child { border-bottom:none }
+.deal-item:hover { background:var(--card-h) }
+
+.deal-initial {
+  width:44px; height:44px;
+  border-radius:10px;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:'Gloock',serif;
+  font-size:19px;
+  color:var(--gold);
+  flex-shrink:0;
+}
+
+.deal-info h4 {
+  font-size:14px;
+  font-weight:500;
+  color:var(--ink);
+  margin-bottom:2px;
+}
+
+.deal-info p {
+  font-size:11px;
+  color:var(--muted);
+}
+
+.deal-info .deal-meta {
+  font-size:10px;
+  color:var(--dim);
+  margin-top:2px;
+}
+
+.deal-value {
+  font-family:'Gloock',serif;
+  font-size:20px;
+  color:var(--green-lt);
+  text-align:right;
+  white-space:nowrap;
+}
+
+.deal-value.barter {
+  font-family:'Epilogue',sans-serif;
+  font-size:10px;
+  font-weight:700;
+  color:var(--blue);
+  text-transform:uppercase;
+  letter-spacing:0.10em;
+}
+
+/* ── Pipeline Panel ── */
+.pipeline-panel {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+}
+
+.pipeline-head {
+  padding:var(--sp5) var(--sp6);
+  border-bottom:1px solid var(--border);
+}
+
+.funnel-stages {
+  display:flex;
+  flex-direction:column;
+  gap:1px;
+  background:var(--border);
+}
+
+.funnel-stage {
+  background:var(--card);
+  padding:var(--sp5) var(--sp6);
+  display:grid;
+  grid-template-columns:10px 1fr auto 80px;
+  gap:var(--sp4);
+  align-items:center;
+  transition:background 0.2s;
+  opacity:0;
+  transform:translateX(-8px);
+}
+
+.funnel-stage:hover { background:var(--card-h) }
+
+.funnel-dot {
+  width:10px; height:10px;
+  border-radius:50%;
+  flex-shrink:0;
+}
+
+.funnel-name {
+  font-size:12px;
+  font-weight:500;
+  color:var(--ink);
+}
+
+.funnel-count {
+  font-family:'Gloock',serif;
+  font-size:30px;
+  color:var(--muted);
+  text-align:right;
+}
+
+.funnel-amount {
+  font-size:11px;
+  color:var(--dim);
+  text-align:right;
+}
+
+/* ── Charts ── */
+.chart-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:var(--sp5);
+  margin-bottom:var(--sp7);
+}
+
+.chart-card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:var(--sp6);
+  opacity:0;
+  transform:translateY(16px);
+  transition:border-color 0.25s;
+}
+
+.chart-card:hover { border-color:oklch(28% 0.014 138) }
+
+.chart-title {
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:0.20em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:var(--sp5);
+  display:flex;
+  align-items:center;
+  gap:var(--sp3);
+}
+
+.chart-title::before {
+  content:'';
+  width:18px; height:1px;
+  background:var(--gold);
+  flex-shrink:0;
+}
+
+.chart-wrap { position:relative; height:260px }
+
+/* ── Leads Strip ── */
+.leads-strip {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:1px;
+  background:var(--border);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  margin-bottom:var(--sp7);
+}
+
+.lead-cell {
+  background:var(--card);
+  padding:var(--sp5) var(--sp5);
+  text-align:center;
+  transition:background 0.2s;
+  opacity:0;
+  transform:translateY(12px);
+}
+
+.lead-cell:hover { background:var(--card-h) }
+
+.lead-num {
+  font-family:'Gloock',serif;
+  font-size:38px;
+  color:var(--ink);
+  margin-bottom:var(--sp2);
+  line-height:1;
+}
+
+.lead-lbl {
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+/* ── Deal Table ── */
+.table-section {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  margin-bottom:var(--sp7);
+}
+
+.table-header {
+  padding:var(--sp5) var(--sp6);
+  border-bottom:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:var(--sp4);
+}
+
+.filter-pills { display:flex; gap:var(--sp2) }
+
+.pill {
+  padding:6px 14px;
+  border-radius:100px;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  border:1px solid var(--border);
+  color:var(--muted);
+  cursor:pointer;
+  background:transparent;
+  transition:all 0.2s;
+  font-family:'Epilogue',sans-serif;
+}
+
+.pill:hover, .pill.active {
+  border-color:var(--gold);
+  color:var(--gold);
+  background:var(--gold-dim);
+}
+
+table { width:100%; border-collapse:collapse }
+
+th {
+  text-align:left;
+  padding:12px var(--sp6);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  color:var(--dim);
+  border-bottom:1px solid var(--border);
+  font-family:'Epilogue',sans-serif;
+}
+
+td {
+  padding:15px var(--sp6);
+  border-bottom:1px solid oklch(22% 0.012 138 / 0.5);
+  font-size:13px;
+  color:var(--muted);
+  transition:background 0.15s;
+}
+
+tr:last-child td { border-bottom:none }
+tr:hover td { background:oklch(17% 0.013 138 / 0.6) }
+
+.td-company {
+  color:var(--ink);
+  font-weight:500;
+  display:flex;
+  align-items:center;
+  gap:var(--sp3);
+}
+
+.co-dot {
+  width:8px; height:8px;
+  border-radius:50%;
+  flex-shrink:0;
+}
+
+.td-value {
+  font-family:'Gloock',serif;
+  font-size:15px;
+  color:var(--ink);
+}
+
+.status-badge {
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  padding:4px 12px;
+  border-radius:100px;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:0.10em;
+  text-transform:uppercase;
+  font-family:'Epilogue',sans-serif;
+}
+
+.status-badge::before {
+  content:'';
+  width:5px; height:5px;
+  border-radius:50%;
+}
+
+.status-closed  { background:var(--green-dim); color:var(--green-lt) }
+.status-closed::before  { background:var(--green-lt) }
+.status-meeting { background:var(--blue-dim);  color:var(--blue) }
+.status-meeting::before { background:var(--blue) }
+.status-pitched { background:var(--orange-dim);color:var(--orange) }
+.status-pitched::before { background:var(--orange) }
+.status-declined{ background:var(--red-dim);   color:var(--red) }
+.status-declined::before{ background:var(--red) }
+
+.td-link {
+  color:var(--gold);
+  text-decoration:none;
+  font-size:11px;
+  font-weight:600;
+  opacity:0.6;
+  transition:opacity 0.2s;
+  letter-spacing:0.04em;
+}
+
+.td-link:hover { opacity:1 }
 
 /* ── Timeline ── */
-.timeline{position:relative;padding-left:32px;margin-bottom:36px}
-.timeline::before{content:'';position:absolute;left:12px;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--gold),var(--green),transparent)}
-.tl-item{position:relative;padding:12px 0 24px;opacity:0;transform:translateX(-10px)}
-.tl-item::before{content:'';position:absolute;left:-25px;top:16px;width:10px;height:10px;border-radius:50%;border:2px solid var(--gold);background:var(--bg)}
-.tl-item.closed::before{background:var(--green-lt);border-color:var(--green-lt);box-shadow:0 0 10px rgba(46,204,113,.3)}
-.tl-date{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
-.tl-text{font-size:13px;color:var(--muted);line-height:1.5}
-.tl-text strong{color:var(--ink)}
+.timeline {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  margin-bottom:var(--sp7);
+  display:flex;
+  flex-direction:column;
+  gap:1px;
+  background-color:var(--border);
+}
+
+.tl-item {
+  background:var(--card);
+  padding:var(--sp5) var(--sp6);
+  display:grid;
+  grid-template-columns:110px 1fr;
+  gap:var(--sp5);
+  align-items:start;
+  transition:background 0.2s;
+  opacity:0;
+  transform:translateX(-10px);
+}
+
+.tl-item:hover { background:var(--card-h) }
+
+.tl-date {
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:0.10em;
+  text-transform:uppercase;
+  color:var(--muted);
+  padding-top:2px;
+}
+
+.tl-item.closed .tl-date { color:var(--green-lt) }
+
+.tl-text {
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.55;
+}
+
+.tl-text strong { color:var(--ink); font-weight:500 }
 
 /* ── Footer ── */
-.footer{text-align:center;padding:48px 0;border-top:1px solid var(--border);position:relative}
-.footer::before{content:'';position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:60px;height:2px;background:var(--gold);border-radius:1px}
-.footer p{font-size:10px;color:var(--dim);letter-spacing:.06em}
-.footer-logo{font-family:'Playfair Display',serif;font-size:14px;color:var(--muted);margin-bottom:8px}
-.footer-logo em{color:var(--gold);font-style:italic}
+.footer {
+  padding:var(--sp7) 0 var(--sp4);
+  border-top:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.footer-brand {
+  font-family:'Gloock',serif;
+  font-size:16px;
+  color:var(--muted);
+}
+
+.footer-brand em { color:var(--gold); font-style:italic }
+
+.footer-info {
+  font-size:10px;
+  color:var(--dim);
+  letter-spacing:0.04em;
+  text-align:right;
+}
 
 /* ── Responsive ── */
-@media(max-width:1000px){
-  .showcase{grid-template-columns:1fr}
-  .kpi-row{grid-template-columns:repeat(2,1fr)}
-  .chart-grid{grid-template-columns:1fr}
-  .leads-row{grid-template-columns:repeat(3,1fr)}
-  .goal-section{grid-template-columns:1fr;justify-items:center;text-align:center}
-  .goal-amounts{justify-content:center}
-}
-@media(max-width:600px){
-  .kpi-row{grid-template-columns:1fr}
-  .leads-row{grid-template-columns:repeat(2,1fr)}
-  .filter-pills{display:none}
-  .showcase{gap:12px}
-  .funnel{height:auto;flex-direction:column;gap:0}
-  .funnel-stage{padding:16px}
-  .funnel-arrow{transform:rotate(90deg)}
+@media(max-width:1100px){
+  .split        { grid-template-columns:1fr }
+  .chart-grid   { grid-template-columns:1fr }
+  .kpi-row      { grid-template-columns:repeat(2,1fr) }
+  .goal-strip   { grid-template-columns:1fr; gap:var(--sp5) }
+  .goal-stats   { grid-template-rows:unset; grid-template-columns:repeat(2,auto) }
 }
 
-/* ── Reduced motion ── */
+@media(max-width:640px){
+  .kpi-row      { grid-template-columns:1fr }
+  .leads-strip  { grid-template-columns:repeat(3,1fr) }
+  .filter-pills { display:none }
+  .header       { grid-template-columns:1fr }
+  .header-meta  { display:none }
+  .tl-item      { grid-template-columns:1fr; gap:var(--sp2) }
+  .footer       { flex-direction:column; gap:var(--sp4); text-align:center }
+  .footer-info  { text-align:center }
+  .funnel-stage { grid-template-columns:10px 1fr auto }
+  .funnel-amount{ display:none }
+}
+
 @media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
-  #particles,#spotlight{display:none}
+  *,*::before,*::after { animation-duration:0.01ms!important; transition-duration:0.01ms!important }
 }
 </style>
 </head>
 <body>
 
 <!-- ── Login Gate ── -->
-<div id="login-gate" style="position:fixed;inset:0;z-index:99999;background:var(--bg);display:flex;align-items:center;justify-content:center">
-  <div style="text-align:center;max-width:360px;padding:32px">
-    <h1 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;margin-bottom:6px;color:var(--ink)">Villa <em style="color:var(--gold);font-style:italic">Sjövik</em></h1>
-    <p style="font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:32px">Sales Dashboard</p>
-    <form id="login-form" autocomplete="off" style="display:flex;flex-direction:column;gap:12px">
+<div id="login-gate" style="position:fixed;inset:0;z-index:99999;background:oklch(9% 0.018 140);display:flex;align-items:center;justify-content:center">
+  <div style="text-align:center;max-width:360px;padding:48px 40px">
+    <p style="font-family:'Epilogue',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:oklch(36% 0.008 80);margin-bottom:var(--sp4)">Villa Sjövik</p>
+    <h1 style="font-family:'Gloock',Georgia,serif;font-size:38px;font-weight:400;line-height:1;color:oklch(94% 0.010 80);margin-bottom:var(--sp3)">Sales <em style="color:oklch(72% 0.120 78);font-style:italic">Dashboard</em></h1>
+    <p style="font-size:12px;color:oklch(36% 0.008 80);margin-bottom:var(--sp7);letter-spacing:0.03em">Ange lösenord för att fortsätta</p>
+    <form id="login-form" autocomplete="off" style="display:flex;flex-direction:column;gap:10px">
       <input id="login-pw" type="password" placeholder="Lösenord" autofocus
-        style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px 18px;color:var(--ink);font-family:'Inter',sans-serif;font-size:14px;outline:none;transition:border .2s"
-        onfocus="this.style.borderColor='var(--border-hi)'" onblur="this.style.borderColor='var(--border)'"/>
+        style="background:oklch(13% 0.015 138);border:1px solid oklch(22% 0.012 138);border-radius:10px;padding:14px 18px;color:oklch(94% 0.010 80);font-family:'Epilogue',sans-serif;font-size:14px;outline:none;transition:border-color .2s;width:100%"
+        onfocus="this.style.borderColor='oklch(72% 0.120 78 / 0.6)'" onblur="this.style.borderColor='oklch(22% 0.012 138)'"/>
       <button type="submit"
-        style="background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--bg);border:none;border-radius:8px;padding:14px;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;transition:opacity .2s"
-        onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Logga in</button>
-      <p id="login-err" style="color:var(--red);font-size:12px;min-height:18px"></p>
+        style="background:var(--gold,oklch(72% 0.120 78));color:oklch(9% 0.018 140);border:none;border-radius:10px;padding:14px;font-family:'Epilogue',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.10em;text-transform:uppercase;cursor:pointer;transition:opacity .2s"
+        onmouseover="this.style.opacity='0.82'" onmouseout="this.style.opacity='1'">Logga in</button>
+      <p id="login-err" style="color:oklch(52% 0.200 24);font-size:12px;min-height:18px;font-family:'Epilogue',sans-serif"></p>
     </form>
   </div>
 </div>
@@ -313,199 +834,158 @@ tr:last-child td{border-bottom:none}
 })();
 </script>
 
-<canvas id="particles" aria-hidden="true"></canvas>
-<div id="spotlight" aria-hidden="true"></div>
-<div id="noise" aria-hidden="true"></div>
-
 <div class="wrap">
 
 <!-- HEADER -->
-<div class="header" id="header">
-  <div class="header-left">
-    <p class="header-date" id="header-date"><span class="pulse-dot"></span> Uppdaterad: <span id="date-now"></span></p>
-    <h1><span class="word">Sales</span> <em class="word">Dashboard</em></h1>
-    <p class="header-sub" id="header-sub">Villa Sjövik — Influencer-samarbeten & Pipeline 2026</p>
+<header class="header" id="hdr">
+  <div>
+    <div class="header-eye">
+      <span class="label" style="color:oklch(58% 0.010 80)">Villa Sjövik</span>
+      <span style="color:oklch(36% 0.008 80);font-size:10px">·</span>
+      <span class="label" style="color:oklch(36% 0.008 80)">Pipeline 2026</span>
+      <span class="header-dot"></span>
+      <span style="font-size:10px;font-weight:500;color:var(--green-lt);letter-spacing:0.04em" id="live-label">Aktiv</span>
+    </div>
+    <h1>
+      <span class="word">Sales</span><br>
+      <em class="word">Dashboard</em>
+    </h1>
   </div>
-</div>
+  <div class="header-meta">
+    <p class="header-date" id="date-now"></p>
+    <p class="header-total" id="header-total"></p>
+  </div>
+</header>
 
-<!-- GOAL PROGRESS -->
-<div class="goal-section" id="goal-section">
-  <div class="goal-ring-wrap">
-    <svg viewBox="0 0 160 160">
-      <defs>
-        <linearGradient id="goalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#018E47"/>
-          <stop offset="50%" stop-color="#2ecc71"/>
-          <stop offset="100%" stop-color="#D4A84B"/>
-        </linearGradient>
-      </defs>
-      <circle class="goal-ring-bg" cx="80" cy="80" r="70"/>
-      <circle class="goal-ring-fill" id="goal-ring" cx="80" cy="80" r="70"/>
-    </svg>
-    <div class="goal-ring-center">
-      <span class="goal-ring-pct" id="goal-pct">0%</span>
-      <span class="goal-ring-lbl">av malet</span>
-    </div>
+<hr class="rule-accent"/>
+
+<!-- GOAL STRIP -->
+<div class="goal-strip" id="goal-strip">
+  <div class="goal-figure">
+    <span class="label" style="margin-bottom:var(--sp2)">Stängt · april</span>
+    <p class="goal-amount" id="goal-closed-val">— kr</p>
+    <p class="goal-sub">av 100 000 kr månadsmål</p>
   </div>
-  <div class="goal-right">
-    <p class="goal-title">Månadsmål: <em>100 000 kr</em></p>
-    <div class="goal-amounts">
-      <div class="goal-amt">
-        <span class="goal-amt-val" id="goal-closed-val">0 kr</span>
-        <span class="goal-amt-lbl">Stängt</span>
-      </div>
-      <div class="goal-amt">
-        <span class="goal-amt-val" id="goal-pipe-val">0 kr</span>
-        <span class="goal-amt-lbl">I pipeline</span>
-      </div>
-      <div class="goal-amt">
-        <span class="goal-amt-val" id="goal-remain-val">0 kr</span>
-        <span class="goal-amt-lbl">Kvar till mål</span>
-      </div>
-    </div>
-    <div class="goal-track">
-      <div class="goal-fill" id="goal-fill">
-        <div class="goal-glow"></div>
-      </div>
+
+  <div class="goal-bar-wrap">
+    <div class="goal-bar-track">
+      <div class="goal-bar-fill" id="goal-fill"></div>
     </div>
     <div class="goal-markers">
       <span>0</span><span>25k</span><span>50k</span><span>75k</span><span>100k</span>
+    </div>
+  </div>
+
+  <div class="goal-stats">
+    <div class="goal-stat">
+      <span class="goal-stat-val" id="goal-pipe-val">—</span>
+      <span class="goal-stat-lbl">I pipeline</span>
+    </div>
+    <div class="goal-stat">
+      <span class="goal-stat-val" id="goal-remain-val">—</span>
+      <span class="goal-stat-lbl">Kvar till mål</span>
     </div>
   </div>
 </div>
 
 <!-- KPI ROW -->
 <div class="kpi-row">
-  <div class="kpi" data-tilt>
-    <div class="kpi-shine"></div>
-    <div class="kpi-icon gold">💰</div>
-    <p class="kpi-label">Stängt värde</p>
-    <p class="kpi-value" id="kpi-closed">0<span class="unit">kr</span></p>
+  <div class="kpi">
+    <span class="label">Stängt värde</span>
+    <p class="kpi-value" id="kpi-closed">—<span class="unit">kr</span></p>
     <p class="kpi-sub" id="kpi-closed-sub"></p>
     <span class="kpi-trend up" id="kpi-closed-trend"></span>
-    <div class="kpi-bar" id="kpi-closed-bar" style="width:0%;background:var(--gold)"></div>
   </div>
-  <div class="kpi" data-tilt>
-    <div class="kpi-shine"></div>
-    <div class="kpi-icon blue">📋</div>
-    <p class="kpi-label">Pipeline</p>
-    <p class="kpi-value" id="kpi-pipeline">0<span class="unit">kr</span></p>
+  <div class="kpi">
+    <span class="label">Pipeline</span>
+    <p class="kpi-value" id="kpi-pipeline">—<span class="unit">kr</span></p>
     <p class="kpi-sub" id="kpi-pipeline-sub"></p>
     <span class="kpi-trend neutral" id="kpi-pipeline-trend"></span>
-    <div class="kpi-bar" style="width:0%;background:var(--blue)" id="kpi-pipeline-bar"></div>
   </div>
-  <div class="kpi" data-tilt>
-    <div class="kpi-shine"></div>
-    <div class="kpi-icon green">📊</div>
-    <p class="kpi-label">Konverteringsgrad</p>
-    <p class="kpi-value" id="kpi-conv">0<span class="unit">%</span></p>
+  <div class="kpi">
+    <span class="label">Konvertering</span>
+    <p class="kpi-value" id="kpi-conv">—<span class="unit">%</span></p>
     <p class="kpi-sub">Stängda / alla kontaktade</p>
-    <div class="kpi-bar" style="width:0%;background:var(--green)" id="kpi-conv-bar"></div>
   </div>
-  <div class="kpi" data-tilt>
-    <div class="kpi-shine"></div>
-    <div class="kpi-icon purple">🎯</div>
-    <p class="kpi-label">Aktiva leads</p>
-    <p class="kpi-value" id="kpi-leads">0<span class="unit">st</span></p>
+  <div class="kpi">
+    <span class="label">Aktiva leads</span>
+    <p class="kpi-value" id="kpi-leads">—<span class="unit">st</span></p>
     <p class="kpi-sub" id="kpi-leads-sub"></p>
-    <div class="kpi-bar" style="width:0%;background:var(--purple)" id="kpi-leads-bar"></div>
   </div>
 </div>
 
-<div class="gd"></div>
+<hr class="rule"/>
 
-<!-- CLOSED DEALS SHOWCASE -->
-<p class="section-label">Stängda samarbeten</p>
-<div class="showcase" id="showcase">
-  <div class="showcase-card" data-tilt>
-    <div class="kpi-shine"></div>
-    <div class="sc-shimmer"></div>
-    <span class="sc-badge">Stängd</span>
-    <div class="sc-header">
-      <div class="sc-avatar green">S</div>
-      <div class="sc-info">
-        <h3>Sioo:x</h3>
-        <p>Trädgård & Utomhus</p>
+<!-- SPLIT: Closed Deals + Pipeline -->
+<div class="split">
+  <div>
+    <div class="sec-head"><h2>Stängda <em>samarbeten</em></h2></div>
+    <div class="deals-list">
+      <div class="deal-item">
+        <div class="deal-initial">S</div>
+        <div class="deal-info">
+          <h4>Sioo:x</h4>
+          <p>Sofie Källström · Trädgård &amp; Utomhus</p>
+          <p class="deal-meta">Stängd 7 april · WoodScan, del 1/3 filmad</p>
+        </div>
+        <div class="deal-value">48 000 kr</div>
       </div>
-    </div>
-    <p class="sc-value gold-text">48 000 kr</p>
-    <p class="sc-desc">Avtal signerat via Scrive. Del 1 av 3 filmad. WoodScan-kampanj med rabattkod.</p>
-    <div class="sc-meta">
-      <span>📅 Stängd 7 april</span>
-      <span>👤 Sofie Källström</span>
+      <div class="deal-item">
+        <div class="deal-initial">G</div>
+        <div class="deal-info">
+          <h4>Guldkannan AB</h4>
+          <p>Klara Lövberg · Trädgård &amp; Utomhus</p>
+          <p class="deal-meta">Stängd 12 april · 10 foton + 3 film</p>
+        </div>
+        <div class="deal-value">10 000 kr</div>
+      </div>
+      <div class="deal-item">
+        <div class="deal-initial">H</div>
+        <div class="deal-info">
+          <h4>Hillerstorp</h4>
+          <p>Trädgård &amp; Utomhus</p>
+          <p class="deal-meta">April 2026 · Produktutbyte</p>
+        </div>
+        <div class="deal-value barter">Produktutbyte</div>
+      </div>
     </div>
   </div>
-  <div class="showcase-card" data-tilt>
-    <div class="kpi-shine"></div>
-    <div class="sc-shimmer"></div>
-    <span class="sc-badge">Stängd</span>
-    <div class="sc-header">
-      <div class="sc-avatar gold">G</div>
-      <div class="sc-info">
-        <h3>Guldkannan AB</h3>
-        <p>Trädgård & Utomhus</p>
+
+  <div>
+    <div class="sec-head"><h2>Pipeline <em>status</em></h2></div>
+    <div class="pipeline-panel">
+      <div class="pipeline-head">
+        <span class="label">Steg i pipeline</span>
       </div>
-    </div>
-    <p class="sc-value gold-text">10 000 kr</p>
-    <p class="sc-desc">10 foton + 3 filmklipp + 1 redigerad film. Full nyttjanderätt. Ekologisk växtnäring.</p>
-    <div class="sc-meta">
-      <span>📅 Stängd 12 april</span>
-      <span>👤 Klara Lövberg</span>
-    </div>
-  </div>
-  <div class="showcase-card" data-tilt>
-    <div class="kpi-shine"></div>
-    <div class="sc-shimmer"></div>
-    <span class="sc-badge" style="background:var(--blue-dim);color:var(--blue);border-color:rgba(52,152,219,.15)">Produktutbyte</span>
-    <div class="sc-header">
-      <div class="sc-avatar blue">H</div>
-      <div class="sc-info">
-        <h3>Hillerstorp</h3>
-        <p>Trädgård & Utomhus</p>
+      <div class="funnel-stages">
+        <div class="funnel-stage">
+          <span class="funnel-dot" style="background:var(--green-lt)"></span>
+          <span class="funnel-name">Stängda</span>
+          <span class="funnel-count" id="f-closed-n">—</span>
+          <span class="funnel-amount" id="f-closed-kr"></span>
+        </div>
+        <div class="funnel-stage">
+          <span class="funnel-dot" style="background:var(--blue)"></span>
+          <span class="funnel-name">Möten bokade</span>
+          <span class="funnel-count" id="f-meeting-n">—</span>
+          <span class="funnel-amount" id="f-meeting-kr"></span>
+        </div>
+        <div class="funnel-stage">
+          <span class="funnel-dot" style="background:var(--orange)"></span>
+          <span class="funnel-name">Offerter skickade</span>
+          <span class="funnel-count" id="f-pitched-n">—</span>
+          <span class="funnel-amount" id="f-pitched-kr"></span>
+        </div>
+        <div class="funnel-stage">
+          <span class="funnel-dot" style="background:var(--red)"></span>
+          <span class="funnel-name">Avböjda</span>
+          <span class="funnel-count" id="f-declined-n">—</span>
+          <span class="funnel-amount" id="f-declined-kr"></span>
+        </div>
       </div>
-    </div>
-    <p class="sc-value green-text">Gratissamarbete</p>
-    <p class="sc-desc">Produktutbyte — trädgårdsmöbler och utemiljö. Samarbete via produktleverans.</p>
-    <div class="sc-meta">
-      <span>📅 April 2026</span>
-      <span>🤝 Produktutbyte</span>
     </div>
   </div>
 </div>
-
-<div class="gd"></div>
-
-<!-- PIPELINE FUNNEL -->
-<p class="section-label">Pipeline-tratt</p>
-<div class="funnel-section">
-  <div class="funnel" id="funnel">
-    <div class="funnel-stage" style="background:linear-gradient(180deg,rgba(46,204,113,.25),rgba(46,204,113,.1))" id="f-closed">
-      <span class="f-val" id="f-closed-n">0</span>
-      <span class="f-lbl">Stängda</span>
-      <span class="f-kr" id="f-closed-kr">0 kr</span>
-    </div>
-    <div class="funnel-arrow">→</div>
-    <div class="funnel-stage" style="background:linear-gradient(180deg,rgba(52,152,219,.25),rgba(52,152,219,.1))" id="f-meeting">
-      <span class="f-val" id="f-meeting-n">0</span>
-      <span class="f-lbl">Möten</span>
-      <span class="f-kr" id="f-meeting-kr">0 kr</span>
-    </div>
-    <div class="funnel-arrow">→</div>
-    <div class="funnel-stage" style="background:linear-gradient(180deg,rgba(230,126,34,.25),rgba(230,126,34,.1))" id="f-pitched">
-      <span class="f-val" id="f-pitched-n">0</span>
-      <span class="f-lbl">Offerter</span>
-      <span class="f-kr" id="f-pitched-kr">0 kr</span>
-    </div>
-    <div class="funnel-arrow">→</div>
-    <div class="funnel-stage" style="background:linear-gradient(180deg,rgba(192,57,43,.25),rgba(192,57,43,.1))" id="f-declined">
-      <span class="f-val" id="f-declined-n">0</span>
-      <span class="f-lbl">Avböjda</span>
-      <span class="f-kr" id="f-declined-kr">0 kr</span>
-    </div>
-  </div>
-</div>
-
-<div class="gd"></div>
 
 <!-- CHARTS -->
 <div class="chart-grid">
@@ -519,24 +999,24 @@ tr:last-child td{border-bottom:none}
   </div>
 </div>
 
-<div class="gd"></div>
-
-<!-- LEADS SUMMARY -->
-<p class="section-label">Leads-översikt</p>
-<div class="leads-row">
-  <div class="lead-card"><p class="lead-num" id="lead-total">0</p><p class="lead-lbl">Totala leads</p></div>
-  <div class="lead-card"><p class="lead-num" id="lead-new">0</p><p class="lead-lbl">Nya</p></div>
-  <div class="lead-card"><p class="lead-num" id="lead-contacted">0</p><p class="lead-lbl">Kontaktade</p></div>
-  <div class="lead-card"><p class="lead-num" id="lead-ni">0</p><p class="lead-lbl">Ej intresserade</p></div>
-  <div class="lead-card"><p class="lead-num" id="lead-ready" style="color:var(--gold)">0</p><p class="lead-lbl">Redo att kontakta</p></div>
+<!-- LEADS STRIP -->
+<div class="sec-head" style="margin-bottom:var(--sp5)">
+  <h2>Leads <em>översikt</em></h2>
+</div>
+<div class="leads-strip">
+  <div class="lead-cell"><p class="lead-num" id="lead-total">—</p><p class="lead-lbl">Totala leads</p></div>
+  <div class="lead-cell"><p class="lead-num" id="lead-new">—</p><p class="lead-lbl">Nya</p></div>
+  <div class="lead-cell"><p class="lead-num" id="lead-contacted">—</p><p class="lead-lbl">Kontaktade</p></div>
+  <div class="lead-cell"><p class="lead-num" id="lead-ni">—</p><p class="lead-lbl">Ej intresserade</p></div>
+  <div class="lead-cell"><p class="lead-num" id="lead-ready" style="color:var(--gold)">—</p><p class="lead-lbl">Redo att kontakta</p></div>
 </div>
 
-<div class="gd"></div>
+<hr class="rule"/>
 
 <!-- DEAL TABLE -->
 <div class="table-section">
   <div class="table-header">
-    <p class="table-title">Alla affärer</p>
+    <span class="label">Alla affärer</span>
     <div class="filter-pills">
       <span class="pill active" data-f="all">Alla</span>
       <span class="pill" data-f="closed">Stängda</span>
@@ -547,325 +1027,264 @@ tr:last-child td{border-bottom:none}
   </div>
   <table>
     <thead>
-      <tr><th>Företag</th><th>Kategori</th><th>Status</th><th>Värde</th><th>Kontaktad</th><th>Pitch</th></tr>
+      <tr>
+        <th>Företag</th>
+        <th>Kategori</th>
+        <th>Status</th>
+        <th>Värde</th>
+        <th>Kontaktad</th>
+        <th>Pitch</th>
+      </tr>
     </thead>
     <tbody id="deal-tbody"></tbody>
   </table>
 </div>
 
-<div class="gd"></div>
+<hr class="rule"/>
 
 <!-- TIMELINE -->
-<p class="section-label">Aktivitetslogg</p>
+<div class="sec-head" style="margin-bottom:var(--sp5)">
+  <h2>Aktivitets<em>logg</em></h2>
+</div>
 <div class="timeline" id="timeline">
   <div class="tl-item closed">
-    <p class="tl-date">12 april 2026</p>
-    <p class="tl-text"><strong>Guldkannan AB</strong> — avtal stängt. 10 000 kr. 10 foton + 3 film + 1 redigerad film.</p>
+    <p class="tl-date">12 apr 2026</p>
+    <p class="tl-text"><strong>Guldkannan AB</strong> — avtal stängt. 10 000 kr. 10 foton + 3 filmklipp + 1 redigerad film.</p>
   </div>
   <div class="tl-item closed">
-    <p class="tl-date">7 april 2026</p>
+    <p class="tl-date">7 apr 2026</p>
     <p class="tl-text"><strong>Sioo:x</strong> — avtal signerat via Scrive. 48 000 kr. WoodScan-kampanj, del 1 filmad.</p>
   </div>
   <div class="tl-item">
-    <p class="tl-date">7 april 2026</p>
+    <p class="tl-date">7 apr 2026</p>
     <p class="tl-text"><strong>VELUX</strong> — positiv respons. Möte bokat 22 april. 3-pack (48 000 kr) på bordet.</p>
   </div>
   <div class="tl-item">
-    <p class="tl-date">12 april 2026</p>
-    <p class="tl-text"><strong>Villaägarna</strong> — kallt mail skickat till info@villaagarna.se. Offert 28 500 kr.</p>
+    <p class="tl-date">12 apr 2026</p>
+    <p class="tl-text"><strong>Villaägarna</strong> — kallt mail skickat. Offert 28 500 kr. Break-even 50 signups.</p>
   </div>
   <div class="tl-item">
-    <p class="tl-date">10 april 2026</p>
+    <p class="tl-date">10 apr 2026</p>
     <p class="tl-text"><strong>NIBE</strong> — kampanjförslag skickat. Möte bokat. 45 000 kr.</p>
   </div>
   <div class="tl-item">
-    <p class="tl-date">9 april 2026</p>
+    <p class="tl-date">9 apr 2026</p>
     <p class="tl-text"><strong>JAPE</strong> — pitch skickad via GitHub Pages. Inväntar svar.</p>
   </div>
 </div>
 
 <!-- FOOTER -->
-<div class="footer">
-  <p class="footer-logo">Villa <em>Sjövik</em></p>
-  <p>Sales Dashboard · Data uppdateras via deals.json · Byggd av Claude + Qwen</p>
-</div>
+<footer class="footer">
+  <p class="footer-brand">Villa <em>Sjövik</em></p>
+  <p class="footer-info">Sales Dashboard · deals.json · Claude + Qwen · <span id="footer-date"></span></p>
+</footer>
 
 </div>
 
 <script>
 'use strict';
 
-/* ══════════════════════════════════════
+/* ══════════════════════════════════════════
    DATA
-   ══════════════════════════════════════ */
+══════════════════════════════════════════ */
 const DATA = {
-  meta: { updated: "2026-04-14", monthly_goal: 100000 },
+  meta: { updated:"2026-04-14", monthly_goal:100000 },
   deals: [
-    { id:"sioox", company:"Sioo:x", contact:"Sofie Källström", category:"Trädgård & Utomhus", status:"closed", value:48000, date_contacted:"2026-03-20", date_closed:"2026-04-07", pitch_url:null, notes:"Avtal signerat. Del 1/3 filmad." },
-    { id:"hillerstorp", company:"Hillerstorp", contact:null, category:"Trädgård & Utomhus", status:"closed", value:0, date_contacted:null, date_closed:"2026-04-01", pitch_url:null, notes:"Gratissamarbete (produktutbyte)." },
-    { id:"guldkannan", company:"Guldkannan AB", contact:"Klara Lövberg", category:"Trädgård & Utomhus", status:"closed", value:10000, date_contacted:"2026-03-23", date_closed:"2026-04-12", pitch_url:null, notes:"10 foton + 3 film + 1 redigerad film." },
-    { id:"velux", company:"VELUX", contact:"Audingas Sumskas", category:"Smarta Hem", status:"meeting", value:48000, date_contacted:"2026-04-07", date_closed:null, pitch_url:"https://villasjovik.github.io/velux/", notes:"Möte 22 april. 3-pack (48k)." },
-    { id:"nibe", company:"NIBE", contact:null, category:"Smarta Hem & Appar", status:"meeting", value:45000, date_contacted:"2026-04-10", date_closed:null, pitch_url:"https://villasjovik.github.io/nibe/", notes:"Kampanjförslag 2026." },
-    { id:"jape", company:"JAPE", contact:null, category:"Trädgård & Utomhus", status:"pitched", value:null, date_contacted:"2026-04-09", date_closed:null, pitch_url:"https://villasjovik.github.io/jape/", notes:"Inväntar svar." },
-    { id:"thefriendlyhome", company:"The Friendly Home", contact:null, category:"Inredning & Dekor", status:"pitched", value:null, date_contacted:"2026-04-10", date_closed:null, pitch_url:"https://villasjovik.github.io/thefriendlyhome/", notes:"Inväntar svar." },
-    { id:"villaagarna", company:"Villaägarna", contact:null, category:"Tjänster & Medlemskap", status:"pitched", value:28500, date_contacted:"2026-04-12", date_closed:null, pitch_url:"https://villasjovik.github.io/villaagarna/", notes:"Kallt mail. Break-even 50 signups." },
-    { id:"tergent", company:"Tergent", contact:"Sandra Jeppsson", category:"Rengöring & Hemvård", status:"declined", value:9000, date_contacted:"2026-04-01", date_closed:null, pitch_url:"https://villasjovik.github.io/tergent/", notes:"Avböjt, möjligt höst 2026." },
-    { id:"tibber", company:"Tibber", contact:null, category:"Smarta Hem & Appar", status:"declined", value:null, date_contacted:"2026-04-01", date_closed:null, pitch_url:null, notes:"Tackade nej." }
+    { id:"sioox",          company:"Sioo:x",            contact:"Sofie Källström",  category:"Trädgård & Utomhus",    status:"closed",   value:48000, date_contacted:"2026-03-20", date_closed:"2026-04-07", pitch_url:null,                                        notes:"Avtal signerat. Del 1/3 filmad." },
+    { id:"hillerstorp",    company:"Hillerstorp",        contact:null,               category:"Trädgård & Utomhus",    status:"closed",   value:0,     date_contacted:null,         date_closed:"2026-04-01", pitch_url:null,                                        notes:"Gratissamarbete (produktutbyte)." },
+    { id:"guldkannan",     company:"Guldkannan AB",      contact:"Klara Lövberg",    category:"Trädgård & Utomhus",    status:"closed",   value:10000, date_contacted:"2026-03-23", date_closed:"2026-04-12", pitch_url:null,                                        notes:"10 foton + 3 film + 1 redigerad film." },
+    { id:"velux",          company:"VELUX",              contact:"Audingas Sumskas", category:"Smarta Hem",            status:"meeting",  value:48000, date_contacted:"2026-04-07", date_closed:null,         pitch_url:"https://villasjovik.github.io/velux/",          notes:"Möte 22 april. 3-pack (48k)." },
+    { id:"nibe",           company:"NIBE",               contact:null,               category:"Smarta Hem & Appar",    status:"meeting",  value:45000, date_contacted:"2026-04-10", date_closed:null,         pitch_url:"https://villasjovik.github.io/nibe/",           notes:"Kampanjförslag 2026." },
+    { id:"jape",           company:"JAPE",               contact:null,               category:"Trädgård & Utomhus",    status:"pitched",  value:null,  date_contacted:"2026-04-09", date_closed:null,         pitch_url:"https://villasjovik.github.io/jape/",           notes:"Inväntar svar." },
+    { id:"thefriendlyhome",company:"The Friendly Home",  contact:null,               category:"Inredning & Dekor",     status:"pitched",  value:null,  date_contacted:"2026-04-10", date_closed:null,         pitch_url:"https://villasjovik.github.io/thefriendlyhome/",notes:"Inväntar svar." },
+    { id:"klinta",         company:"Klinta",             contact:"Shkurte Makoli",   category:"Inredning & Dekor",     status:"pitched",  value:null,  date_contacted:"2026-04-14", date_closed:null,         pitch_url:"https://villasjovik.github.io/klinta/",         notes:"Positiv respons." },
+    { id:"villaagarna",    company:"Villaägarna",        contact:null,               category:"Tjänster & Medlemskap", status:"pitched",  value:28500, date_contacted:"2026-04-12", date_closed:null,         pitch_url:"https://villasjovik.github.io/villaagarna/",    notes:"Kallt mail. Break-even 50 signups." },
+    { id:"tergent",        company:"Tergent",            contact:"Sandra Jeppsson",  category:"Rengöring & Hemvård",   status:"declined", value:9000,  date_contacted:"2026-04-01", date_closed:null,         pitch_url:"https://villasjovik.github.io/tergent/",        notes:"Avböjt, möjligt höst 2026." },
+    { id:"tibber",         company:"Tibber",             contact:null,               category:"Smarta Hem & Appar",    status:"declined", value:null,  date_contacted:"2026-04-01", date_closed:null,         pitch_url:null,                                        notes:"Tackade nej." }
   ],
   leads_summary: { total:135, new:68, contacted:40, not_interested:25, ready_to_contact:8 }
 };
 
 const STATUS_MAP = {
-  closed:  { label:'Stängd',  cls:'status-closed',  color:'#2ecc71' },
-  meeting: { label:'Möte',    cls:'status-meeting',  color:'#3498db' },
-  pitched: { label:'Offert',  cls:'status-pitched',  color:'#e67e22' },
-  declined:{ label:'Avböjd',  cls:'status-declined', color:'#e74c3c' }
+  closed:  { label:'Stängd',  cls:'status-closed',   color:'oklch(74% 0.155 145)' },
+  meeting: { label:'Möte',    cls:'status-meeting',   color:'oklch(62% 0.160 240)' },
+  pitched: { label:'Offert',  cls:'status-pitched',   color:'oklch(68% 0.175 55)'  },
+  declined:{ label:'Avböjd',  cls:'status-declined',  color:'oklch(52% 0.200 24)'  }
 };
 
-const fmt = n => n == null ? '—' : n.toLocaleString('sv-SE');
+const fmt  = n => n == null ? '—' : n.toLocaleString('sv-SE');
 const fmtK = n => n >= 1000 ? (n/1000).toFixed(0)+'k' : fmt(n);
 
-/* ══════════════════════════════════════
-   PARTICLES (Canvas)
-   ══════════════════════════════════════ */
-(function(){
-  const c = document.getElementById('particles');
-  const ctx = c.getContext('2d');
-  let W, H, particles = [];
-  const COUNT = 60;
-
-  function resize(){ W = c.width = innerWidth; H = c.height = innerHeight; }
-  resize();
-  addEventListener('resize', resize);
-
-  for(let i = 0; i < COUNT; i++){
-    const isGold = Math.random() < .35;
-    particles.push({
-      x: Math.random()*W, y: Math.random()*H,
-      vx: (Math.random()-.5)*.15, vy: (Math.random()-.5)*.15,
-      r: Math.random()*2 + .5,
-      color: isGold ? `rgba(212,168,75,${Math.random()*.12+.04})` : `rgba(1,142,71,${Math.random()*.08+.02})`,
-      glow: isGold ? 'rgba(212,168,75,.06)' : 'rgba(1,142,71,.03)'
-    });
-  }
-
-  function draw(){
-    ctx.clearRect(0,0,W,H);
-    for(const p of particles){
-      p.x += p.vx; p.y += p.vy;
-      if(p.x < -10) p.x = W+10;
-      if(p.x > W+10) p.x = -10;
-      if(p.y < -10) p.y = H+10;
-      if(p.y > H+10) p.y = -10;
-
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r+4, 0, Math.PI*2);
-      ctx.fillStyle = p.glow;
-      ctx.fill();
-
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
-      ctx.fillStyle = p.color;
-      ctx.fill();
-    }
-    requestAnimationFrame(draw);
-  }
-  draw();
-})();
-
-/* ══════════════════════════════════════
-   MOUSE SPOTLIGHT
-   ══════════════════════════════════════ */
-document.addEventListener('mousemove', e => {
-  document.getElementById('spotlight').style.setProperty('--mx', e.clientX+'px');
-  document.getElementById('spotlight').style.setProperty('--my', e.clientY+'px');
-
-  // KPI & showcase card shine
-  document.querySelectorAll('[data-tilt]').forEach(card => {
-    const r = card.getBoundingClientRect();
-    const x = e.clientX - r.left;
-    const y = e.clientY - r.top;
-    card.querySelector('.kpi-shine')?.style.setProperty('--x', x+'px');
-    card.querySelector('.kpi-shine')?.style.setProperty('--y', y+'px');
-  });
-});
-
-/* ══════════════════════════════════════
-   3D CARD TILT
-   ══════════════════════════════════════ */
-document.querySelectorAll('[data-tilt]').forEach(card => {
-  card.addEventListener('mousemove', e => {
-    const r = card.getBoundingClientRect();
-    const x = (e.clientX - r.left) / r.width - .5;
-    const y = (e.clientY - r.top) / r.height - .5;
-    card.style.transform = `perspective(600px) rotateX(${-y*8}deg) rotateY(${x*8}deg) translateZ(4px)`;
-  });
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = 'perspective(600px) rotateX(0) rotateY(0) translateZ(0)';
-  });
-});
-
-/* ══════════════════════════════════════
+/* ══════════════════════════════════════════
    DATE
-   ══════════════════════════════════════ */
-document.getElementById('date-now').textContent = new Date().toLocaleDateString('sv-SE',{year:'numeric',month:'long',day:'numeric'});
+══════════════════════════════════════════ */
+const dateStr = new Date().toLocaleDateString('sv-SE',{year:'numeric',month:'long',day:'numeric'});
+document.getElementById('date-now').textContent = dateStr;
+document.getElementById('footer-date').textContent = dateStr;
 
-/* ══════════════════════════════════════
-   GSAP ANIMATIONS
-   ══════════════════════════════════════ */
-gsap.registerPlugin(ScrollTrigger);
-
-// Header entrance
-const tl = gsap.timeline({ defaults: { ease: 'power3.out' }});
-tl.from('#header-date', { y: 20, opacity: 0, duration: .6 }, .1)
-  .to('#header-date', { opacity: 1, duration: .6 }, .1)
-  .from('.word', { y: '100%', opacity: 0, duration: .8, stagger: .12 }, .2)
-  .to('.word', { y: 0, opacity: 1, duration: .8, stagger: .12 }, .2)
-  .from('#header-sub', { y: 10, opacity: 0, duration: .5 }, .7)
-  .to('#header-sub', { opacity: 1, duration: .5 }, .7);
-
-// Scroll-triggered sections
-gsap.utils.toArray('.kpi, .showcase-card, .lead-card, .chart-card').forEach(el => {
-  gsap.from(el, {
-    y: 30, opacity: 0, duration: .7, ease: 'power2.out',
-    scrollTrigger: { trigger: el, start: 'top 88%', once: true }
-  });
-});
-
-// Gold dividers
-gsap.utils.toArray('.gd').forEach(el => {
-  gsap.to(el, {
-    scaleX: 1, opacity: 1, duration: 1.2, ease: 'power2.inOut',
-    scrollTrigger: { trigger: el, start: 'top 90%', once: true }
-  });
-});
-
-// Goal section
-gsap.from('#goal-section', {
-  y: 40, opacity: 0, duration: .9, ease: 'power2.out',
-  scrollTrigger: { trigger: '#goal-section', start: 'top 85%', once: true }
-});
-
-// Funnel stages
-gsap.utils.toArray('.funnel-stage').forEach((el, i) => {
-  gsap.from(el, {
-    scaleY: 0, opacity: 0, duration: .6, delay: i*.12, ease: 'back.out(1.4)',
-    scrollTrigger: { trigger: '#funnel', start: 'top 85%', once: true }
-  });
-});
-
-// Timeline items
-gsap.utils.toArray('.tl-item').forEach((el, i) => {
-  gsap.to(el, {
-    x: 0, opacity: 1, duration: .5, delay: i*.08, ease: 'power2.out',
-    scrollTrigger: { trigger: '#timeline', start: 'top 80%', once: true }
-  });
-});
-
-/* ══════════════════════════════════════
+/* ══════════════════════════════════════════
    COMPUTED VALUES
-   ══════════════════════════════════════ */
-const closed = DATA.deals.filter(d=>d.status==='closed');
-const meetings = DATA.deals.filter(d=>d.status==='meeting');
-const pitched = DATA.deals.filter(d=>d.status==='pitched');
-const declined = DATA.deals.filter(d=>d.status==='declined');
+══════════════════════════════════════════ */
+const closed   = DATA.deals.filter(d => d.status==='closed');
+const meetings = DATA.deals.filter(d => d.status==='meeting');
+const pitched  = DATA.deals.filter(d => d.status==='pitched');
+const declined = DATA.deals.filter(d => d.status==='declined');
 
-const closedValue = closed.reduce((s,d)=>s+(d.value||0),0);
-const meetingValue = meetings.reduce((s,d)=>s+(d.value||0),0);
-const pitchedValue = pitched.reduce((s,d)=>s+(d.value||0),0);
+const closedValue   = closed.reduce((s,d)=>s+(d.value||0),0);
+const meetingValue  = meetings.reduce((s,d)=>s+(d.value||0),0);
+const pitchedValue  = pitched.reduce((s,d)=>s+(d.value||0),0);
 const pipelineValue = meetingValue + pitchedValue;
-const totalContacted = DATA.deals.length;
-const convRate = totalContacted > 0 ? (closed.length / totalContacted * 100) : 0;
+const convRate      = DATA.deals.length > 0 ? (closed.length / DATA.deals.length * 100) : 0;
 
-/* ══════════════════════════════════════
-   ANIMATED COUNT-UP
-   ══════════════════════════════════════ */
+document.getElementById('header-total').textContent = fmt(closedValue + pipelineValue) + ' kr i spel';
+
+/* ══════════════════════════════════════════
+   COUNT-UP
+══════════════════════════════════════════ */
 function countUp(el, target, suffix, duration=1400){
+  if(!el) return;
   const t0 = performance.now();
   (function tick(now){
-    const p = Math.min((now-t0)/duration,1);
-    const ease = 1-Math.pow(1-p,4);
-    const v = Math.round(ease*target);
+    const p    = Math.min((now-t0)/duration, 1);
+    const ease = 1 - Math.pow(1-p, 4);
+    const v    = Math.round(ease * target);
     el.innerHTML = fmt(v) + (suffix ? '<span class="unit">'+suffix+'</span>' : '');
-    if(p<1) requestAnimationFrame(tick);
+    if(p < 1) requestAnimationFrame(tick);
   })(t0);
 }
 
-/* ══════════════════════════════════════
-   KPI UPDATES
-   ══════════════════════════════════════ */
+/* ══════════════════════════════════════════
+   GSAP ANIMATIONS
+══════════════════════════════════════════ */
+gsap.registerPlugin(ScrollTrigger);
+
+// Header visible immediately — scroll animations handle the rest
+
+// Goal strip
+gsap.to('#goal-strip', {
+  y:0, opacity:1, duration:.85, ease:'power2.out',
+  scrollTrigger:{ trigger:'#goal-strip', start:'top 88%', once:true }
+});
+
+// KPI cards
+gsap.utils.toArray('.kpi').forEach((el,i) => {
+  gsap.to(el, {
+    y:0, opacity:1, duration:.6, delay:i*0.08, ease:'power2.out',
+    scrollTrigger:{ trigger:el, start:'top 90%', once:true }
+  });
+});
+
+// Deal items
+gsap.utils.toArray('.deal-item').forEach((el,i) => {
+  gsap.to(el, {
+    y:0, opacity:1, duration:.55, delay:i*0.07, ease:'power2.out',
+    scrollTrigger:{ trigger:el, start:'top 92%', once:true }
+  });
+});
+
+// Funnel stages
+gsap.utils.toArray('.funnel-stage').forEach((el,i) => {
+  gsap.to(el, {
+    x:0, opacity:1, duration:.55, delay:i*0.08, ease:'power2.out',
+    scrollTrigger:{ trigger:'.pipeline-panel', start:'top 85%', once:true }
+  });
+});
+
+// Charts
+gsap.utils.toArray('.chart-card').forEach((el,i) => {
+  gsap.to(el, {
+    y:0, opacity:1, duration:.65, delay:i*0.12, ease:'power2.out',
+    scrollTrigger:{ trigger:el, start:'top 88%', once:true }
+  });
+});
+
+// Leads cells
+gsap.utils.toArray('.lead-cell').forEach((el,i) => {
+  gsap.to(el, {
+    y:0, opacity:1, duration:.5, delay:i*0.06, ease:'power2.out',
+    scrollTrigger:{ trigger:'.leads-strip', start:'top 88%', once:true }
+  });
+});
+
+// Timeline
+gsap.utils.toArray('.tl-item').forEach((el,i) => {
+  gsap.to(el, {
+    x:0, opacity:1, duration:.5, delay:i*0.06, ease:'power2.out',
+    scrollTrigger:{ trigger:'#timeline', start:'top 82%', once:true }
+  });
+});
+
+/* ══════════════════════════════════════════
+   GOAL + KPI UPDATES
+══════════════════════════════════════════ */
 setTimeout(()=>{
+  // Goal
+  const pct = Math.min(closedValue / DATA.meta.monthly_goal * 100, 100);
+  document.getElementById('goal-fill').style.width = pct + '%';
+  document.getElementById('goal-closed-val').textContent = fmt(closedValue) + ' kr';
+  document.getElementById('goal-pipe-val').textContent   = fmt(pipelineValue) + ' kr';
+  document.getElementById('goal-remain-val').textContent = fmt(Math.max(DATA.meta.monthly_goal - closedValue, 0)) + ' kr';
+
+  // KPIs
   countUp(document.getElementById('kpi-closed'), closedValue, 'kr');
-  document.getElementById('kpi-closed-sub').textContent = closed.length + ' stängda affärer';
-  document.getElementById('kpi-closed-bar').style.width = Math.min(closedValue/DATA.meta.monthly_goal*100,100)+'%';
-  document.getElementById('kpi-closed-trend').textContent = '↑ ' + Math.round(closedValue/DATA.meta.monthly_goal*100) + '% av mål';
+  document.getElementById('kpi-closed-sub').textContent    = closed.length + ' stängda affärer';
+  document.getElementById('kpi-closed-trend').textContent  = '↑ ' + Math.round(closedValue/DATA.meta.monthly_goal*100) + '% av mål';
 
   countUp(document.getElementById('kpi-pipeline'), pipelineValue, 'kr');
-  document.getElementById('kpi-pipeline-sub').textContent = (meetings.length+pitched.length)+' aktiva i pipeline';
-  document.getElementById('kpi-pipeline-bar').style.width = Math.min(pipelineValue/200000*100,100)+'%';
+  document.getElementById('kpi-pipeline-sub').textContent   = (meetings.length+pitched.length) + ' aktiva i pipeline';
   document.getElementById('kpi-pipeline-trend').textContent = '◆ ' + (meetings.length+pitched.length) + ' deals';
 
   countUp(document.getElementById('kpi-conv'), Math.round(convRate*10)/10, '%');
-  document.getElementById('kpi-conv-bar').style.width = convRate+'%';
 
   countUp(document.getElementById('kpi-leads'), DATA.leads_summary.total, 'st');
-  document.getElementById('kpi-leads-sub').textContent = DATA.leads_summary.ready_to_contact+' redo att kontakta';
-  document.getElementById('kpi-leads-bar').style.width = (DATA.leads_summary.ready_to_contact/DATA.leads_summary.total*100)+'%';
+  document.getElementById('kpi-leads-sub').textContent = DATA.leads_summary.ready_to_contact + ' redo att kontakta';
 }, 500);
 
-/* ══════════════════════════════════════
-   GOAL RING + BAR
-   ══════════════════════════════════════ */
-setTimeout(()=>{
-  const pct = Math.min(closedValue/DATA.meta.monthly_goal*100,100);
-  const circumference = 2 * Math.PI * 70; // ~440
-  document.getElementById('goal-ring').style.strokeDashoffset = circumference - (circumference * pct / 100);
-  document.getElementById('goal-pct').textContent = Math.round(pct)+'%';
-  document.getElementById('goal-fill').style.width = pct+'%';
-  document.getElementById('goal-closed-val').textContent = fmt(closedValue)+' kr';
-  document.getElementById('goal-pipe-val').textContent = fmt(pipelineValue)+' kr';
-  document.getElementById('goal-remain-val').textContent = fmt(Math.max(DATA.meta.monthly_goal - closedValue, 0))+' kr';
-}, 800);
-
-/* ══════════════════════════════════════
+/* ══════════════════════════════════════════
    FUNNEL
-   ══════════════════════════════════════ */
+══════════════════════════════════════════ */
 setTimeout(()=>{
   const sets = [
-    { n: 'closed', data: closed, value: closedValue },
-    { n: 'meeting', data: meetings, value: meetingValue },
-    { n: 'pitched', data: pitched, value: pitchedValue },
-    { n: 'declined', data: declined, value: declined.reduce((s,d)=>s+(d.value||0),0) }
+    { n:'closed',  data:closed,   value:closedValue },
+    { n:'meeting', data:meetings, value:meetingValue },
+    { n:'pitched', data:pitched,  value:pitchedValue },
+    { n:'declined',data:declined, value:declined.reduce((s,d)=>s+(d.value||0),0) }
   ];
   sets.forEach(s => {
-    const nEl = document.getElementById('f-'+s.n+'-n');
+    const nEl  = document.getElementById('f-'+s.n+'-n');
     const krEl = document.getElementById('f-'+s.n+'-kr');
-    if(nEl) countUp(nEl, s.data.length, '', 800);
-    if(krEl) krEl.textContent = fmt(s.value)+' kr';
+    if(nEl)  countUp(nEl, s.data.length, '', 800);
+    if(krEl) krEl.textContent = s.value > 0 ? fmt(s.value)+' kr' : '';
   });
 }, 600);
 
-/* ══════════════════════════════════════
+/* ══════════════════════════════════════════
    LEADS
-   ══════════════════════════════════════ */
+══════════════════════════════════════════ */
 setTimeout(()=>{
-  const ids = ['lead-total','lead-new','lead-contacted','lead-ni','lead-ready'];
+  const ids  = ['lead-total','lead-new','lead-contacted','lead-ni','lead-ready'];
   const vals = [DATA.leads_summary.total, DATA.leads_summary.new, DATA.leads_summary.contacted, DATA.leads_summary.not_interested, DATA.leads_summary.ready_to_contact];
-  ids.forEach((id,i)=>countUp(document.getElementById(id), vals[i], '', 1000));
+  ids.forEach((id,i) => countUp(document.getElementById(id), vals[i], '', 1000));
 }, 700);
 
-/* ══════════════════════════════════════
+/* ══════════════════════════════════════════
    CHARTS
-   ══════════════════════════════════════ */
-const chartDefaults = {
-  responsive:true, maintainAspectRatio:false,
-  plugins:{
-    legend:{position:'bottom',labels:{color:'rgba(242,237,228,.45)',font:{family:'Inter',size:11},padding:16,usePointStyle:true,pointStyleWidth:8}},
-    tooltip:{backgroundColor:'rgba(19,29,22,.95)',titleColor:'#F2EDE4',bodyColor:'rgba(242,237,228,.7)',
-      borderColor:'rgba(212,168,75,.2)',borderWidth:1,padding:14,cornerRadius:10,
-      titleFont:{family:'Playfair Display',size:14},bodyFont:{family:'Inter',size:12}}
-  },
-  animation:{ duration:1200, easing:'easeOutQuart' }
+══════════════════════════════════════════ */
+Chart.defaults.font.family = 'Epilogue';
+
+const TT = {
+  backgroundColor: 'oklch(13% 0.015 138)',
+  titleColor:      'oklch(94% 0.010 80)',
+  bodyColor:       'oklch(58% 0.010 80)',
+  borderColor:     'oklch(72% 0.120 78 / 0.25)',
+  borderWidth:1, padding:14, cornerRadius:10,
+  titleFont:{ family:'Gloock', size:14 },
+  bodyFont: { family:'Epilogue', size:11 }
+};
+
+const LEGEND = {
+  position:'bottom',
+  labels:{ color:'oklch(58% 0.010 80)', font:{ family:'Epilogue', size:11 }, padding:16, usePointStyle:true, pointStyleWidth:8 }
 };
 
 new Chart(document.getElementById('chart-pipeline'),{
@@ -874,70 +1293,87 @@ new Chart(document.getElementById('chart-pipeline'),{
     labels:['Stängda ('+closed.length+')','Möten ('+meetings.length+')','Offerter ('+pitched.length+')','Avböjda ('+declined.length+')'],
     datasets:[{
       data:[closed.length, meetings.length, pitched.length, declined.length],
-      backgroundColor:['#2ecc71','#3498db','#e67e22','#e74c3c'],
-      borderColor:'rgba(19,29,22,.8)', borderWidth:4,
-      hoverBorderColor:'rgba(212,168,75,.3)', hoverOffset:12
+      backgroundColor:['oklch(74% 0.155 145)','oklch(62% 0.160 240)','oklch(68% 0.175 55)','oklch(52% 0.200 24)'],
+      borderColor:'oklch(13% 0.015 138)',
+      borderWidth:4,
+      hoverBorderColor:'oklch(72% 0.120 78 / 0.4)',
+      hoverOffset:14
     }]
   },
-  options:{...chartDefaults, cutout:'65%',
-    plugins:{...chartDefaults.plugins,
-      tooltip:{...chartDefaults.plugins.tooltip,
-        callbacks:{label:ctx=>ctx.label+' — '+Math.round(ctx.parsed/DATA.deals.length*100)+'%'}}}}
-});
-
-const statusGroups = [
-  {label:'Stängt',value:closedValue,color:'#2ecc71'},
-  {label:'Möten',value:meetingValue,color:'#3498db'},
-  {label:'Offerter',value:pitchedValue,color:'#e67e22'},
-  {label:'Mål',value:DATA.meta.monthly_goal,color:'rgba(212,168,75,.2)'}
-];
-new Chart(document.getElementById('chart-value'),{
-  type:'bar',
-  data:{
-    labels:statusGroups.map(g=>g.label),
-    datasets:[{data:statusGroups.map(g=>g.value),backgroundColor:statusGroups.map(g=>g.color),
-      borderRadius:10,borderSkipped:false,barPercentage:.55}]
-  },
-  options:{...chartDefaults,
-    plugins:{...chartDefaults.plugins,legend:{display:false},
-      tooltip:{...chartDefaults.plugins.tooltip,callbacks:{label:ctx=>fmt(ctx.parsed.y)+' kr'}}},
-    scales:{
-      x:{grid:{display:false},ticks:{color:'rgba(242,237,228,.3)',font:{family:'Inter',size:10}},border:{display:false}},
-      y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'rgba(242,237,228,.2)',font:{family:'Inter',size:10},callback:v=>fmtK(v)},border:{display:false}}
-    }
+  options:{
+    responsive:true, maintainAspectRatio:false, cutout:'68%',
+    plugins:{
+      legend:LEGEND,
+      tooltip:{ ...TT, callbacks:{ label: ctx => ctx.label+' — '+Math.round(ctx.parsed/DATA.deals.length*100)+'%' }}
+    },
+    animation:{ duration:1200, easing:'easeOutQuart' }
   }
 });
 
-/* ══════════════════════════════════════
-   TABLE
-   ══════════════════════════════════════ */
+const groups = [
+  { label:'Stängt',   value:closedValue,            color:'oklch(74% 0.155 145)' },
+  { label:'Möten',    value:meetingValue,            color:'oklch(62% 0.160 240)' },
+  { label:'Offerter', value:pitchedValue,            color:'oklch(68% 0.175 55)'  },
+  { label:'Mål',      value:DATA.meta.monthly_goal,  color:'oklch(72% 0.120 78 / 0.18)' }
+];
+
+new Chart(document.getElementById('chart-value'),{
+  type:'bar',
+  data:{
+    labels: groups.map(g=>g.label),
+    datasets:[{
+      data: groups.map(g=>g.value),
+      backgroundColor: groups.map(g=>g.color),
+      borderRadius:8, borderSkipped:false, barPercentage:.55
+    }]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    plugins:{
+      legend:{ display:false },
+      tooltip:{ ...TT, callbacks:{ label: ctx => fmt(ctx.parsed.y)+' kr' }}
+    },
+    scales:{
+      x:{ grid:{display:false}, ticks:{ color:'oklch(36% 0.008 80)', font:{size:10}}, border:{display:false} },
+      y:{ grid:{ color:'oklch(22% 0.012 138 / 0.6)' }, ticks:{ color:'oklch(36% 0.008 80)', font:{size:10}, callback:v=>fmtK(v) }, border:{display:false} }
+    },
+    animation:{ duration:1200, easing:'easeOutQuart' }
+  }
+});
+
+/* ══════════════════════════════════════════
+   DEAL TABLE
+══════════════════════════════════════════ */
 function renderTable(filter){
-  const tbody = document.getElementById('deal-tbody');
   const deals = filter==='all' ? DATA.deals : DATA.deals.filter(d=>d.status===filter);
-  tbody.innerHTML = deals.map(d=>{
-    const s = STATUS_MAP[d.status];
-    return `<tr>
-      <td class="td-company"><span class="co-dot" style="background:${s.color}"></span>${d.company}</td>
+  const tbody = document.getElementById('deal-tbody');
+  tbody.innerHTML = '';
+  deals.forEach(d => {
+    const s  = STATUS_MAP[d.status];
+    const tr = document.createElement('tr');
+    tr.dataset.status = d.status;
+    tr.innerHTML = `
+      <td><span class="td-company"><span class="co-dot" style="background:${s.color}"></span>${d.company}</span></td>
       <td>${d.category}</td>
       <td><span class="status-badge ${s.cls}">${s.label}</span></td>
       <td class="td-value">${d.value ? fmt(d.value)+' kr' : '—'}</td>
-      <td>${d.date_contacted || '—'}</td>
-      <td>${d.pitch_url ? '<a href="'+d.pitch_url+'" target="_blank" rel="noopener" class="td-link">Visa pitch →</a>' : '—'}</td>
-    </tr>`;
-  }).join('');
-
-  // Animate rows in
-  gsap.from('#deal-tbody tr', { y:12, opacity:0, duration:.35, stagger:.04, ease:'power2.out' });
+      <td>${d.date_contacted ? d.date_contacted.slice(5).split('-').reverse().join('/') : '—'}</td>
+      <td>${d.pitch_url ? '<a href="'+d.pitch_url+'" target="_blank" class="td-link">Visa →</a>' : '—'}</td>
+    `;
+    tbody.appendChild(tr);
+  });
 }
+
 renderTable('all');
 
-document.querySelectorAll('.pill').forEach(pill=>{
-  pill.addEventListener('click',()=>{
+document.querySelectorAll('.pill').forEach(pill => {
+  pill.addEventListener('click', ()=>{
     document.querySelectorAll('.pill').forEach(p=>p.classList.remove('active'));
     pill.classList.add('active');
     renderTable(pill.dataset.f);
   });
 });
+
 </script>
 </body>
 </html>

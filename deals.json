@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "updated": "2026-04-14",
+    "monthly_goal": 100000,
+    "currency": "SEK"
+  },
+  "deals": [
+    {
+      "id": "sioox",
+      "company": "Sioo:x",
+      "contact": "Sofie Källström",
+      "category": "Trädgård & Utomhus",
+      "status": "closed",
+      "value": 48000,
+      "date_contacted": "2026-03-20",
+      "date_closed": "2026-04-07",
+      "pitch_url": null,
+      "notes": "Avtal signerat via Scrive. Del 1 av 3 filmad. WoodScan-kampanj."
+    },
+    {
+      "id": "hillerstorp",
+      "company": "Hillerstorp",
+      "contact": null,
+      "category": "Trädgård & Utomhus",
+      "status": "closed",
+      "value": 0,
+      "date_contacted": null,
+      "date_closed": "2026-04-01",
+      "pitch_url": null,
+      "notes": "Gratissamarbete (produktutbyte). Detaljer okända."
+    },
+    {
+      "id": "velux",
+      "company": "VELUX",
+      "contact": "Audingas Sumskas",
+      "category": "Smarta Hem",
+      "status": "meeting",
+      "value": 48000,
+      "date_contacted": "2026-04-07",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/velux/",
+      "notes": "Möte 22 april. 3-pack (48k) på bordet."
+    },
+    {
+      "id": "nibe",
+      "company": "NIBE",
+      "contact": null,
+      "category": "Smarta Hem & Appar",
+      "status": "meeting",
+      "value": 45000,
+      "date_contacted": "2026-04-10",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/nibe/",
+      "notes": "Kampanjförslag 2026. Uppföljning på tidigare samarbete."
+    },
+    {
+      "id": "jape",
+      "company": "JAPE",
+      "contact": null,
+      "category": "Trädgård & Utomhus",
+      "status": "pitched",
+      "value": null,
+      "date_contacted": "2026-04-09",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/jape/",
+      "notes": "Pitch skickad, inväntar svar."
+    },
+    {
+      "id": "thefriendlyhome",
+      "company": "The Friendly Home",
+      "contact": null,
+      "category": "Inredning & Dekor",
+      "status": "pitched",
+      "value": null,
+      "date_contacted": "2026-04-10",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/thefriendlyhome/",
+      "notes": "Pitch skickad, inväntar svar."
+    },
+    {
+      "id": "villaagarna",
+      "company": "Villaägarna",
+      "contact": null,
+      "category": "Tjänster & Medlemskap",
+      "status": "pitched",
+      "value": 28500,
+      "date_contacted": "2026-04-12",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/villaagarna/",
+      "notes": "Kallt mail skickat till info@villaagarna.se. Break-even 50 signups."
+    },
+    {
+      "id": "tergent",
+      "company": "Tergent",
+      "contact": "Sandra Jeppsson",
+      "category": "Rengöring & Hemvård",
+      "status": "declined",
+      "value": 9000,
+      "date_contacted": "2026-04-01",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/tergent/",
+      "notes": "Avböjt pga budget. Möjligt samarbete höst 2026."
+    },
+    {
+      "id": "tibber",
+      "company": "Tibber",
+      "contact": null,
+      "category": "Smarta Hem & Appar",
+      "status": "declined",
+      "value": null,
+      "date_contacted": "2026-04-01",
+      "date_closed": null,
+      "pitch_url": null,
+      "notes": "Tackade nej."
+    }
+  ],
+  "leads_summary": {
+    "total": 135,
+    "new": 68,
+    "contacted": 40,
+    "not_interested": 25,
+    "ready_to_contact": 8
+  }
+}

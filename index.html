@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Villa Sjövik — Sales Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0f0c;
+  --bg2:#111a14;
+  --bg3:#162019;
+  --card:#151f18;
+  --card-hover:#1a2a1f;
+  --border:rgba(212,168,75,.12);
+  --border-hi:rgba(212,168,75,.3);
+  --gold:#D4A84B;
+  --gold2:#F0C878;
+  --green:#018E47;
+  --green-dim:rgba(1,142,71,.25);
+  --red:#c0392b;
+  --red-dim:rgba(192,57,43,.2);
+  --orange:#e67e22;
+  --orange-dim:rgba(230,126,34,.2);
+  --blue:#3498db;
+  --blue-dim:rgba(52,152,219,.2);
+  --purple:#9b59b6;
+  --purple-dim:rgba(155,89,182,.2);
+  --ink:#F2EDE4;
+  --muted:rgba(242,237,228,.5);
+  --dim:rgba(242,237,228,.25);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;overflow-x:hidden}
+
+/* Noise */
+#noise{position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.018;
+background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+background-size:160px 160px}
+
+/* Layout */
+.wrap{max-width:1280px;margin:0 auto;padding:32px 24px 80px}
+
+/* Header */
+.header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:48px;flex-wrap:wrap}
+.header-left{display:flex;flex-direction:column;gap:6px}
+.header h1{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:400;line-height:1.1}
+.header h1 em{font-style:italic;color:var(--gold)}
+.header-sub{font-size:13px;color:var(--muted);letter-spacing:.03em}
+.header-date{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:8px}
+.header-date::before{content:'';width:24px;height:1px;background:var(--gold)}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(1,142,71,.5)}50%{opacity:.7;box-shadow:0 0 0 6px rgba(1,142,71,0)}}
+
+/* KPI row */
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px}
+.kpi{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;position:relative;overflow:hidden;transition:border-color .3s,transform .25s var(--ease)}
+.kpi:hover{border-color:var(--border-hi);transform:translateY(-2px)}
+.kpi-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:16px}
+.kpi-icon.gold{background:rgba(212,168,75,.12)}
+.kpi-icon.green{background:var(--green-dim)}
+.kpi-icon.blue{background:var(--blue-dim)}
+.kpi-icon.purple{background:var(--purple-dim)}
+.kpi-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.kpi-value{font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,40px);font-weight:500;line-height:1}
+.kpi-value .unit{font-family:'Inter',sans-serif;font-size:14px;font-weight:400;color:var(--muted);margin-left:4px}
+.kpi-sub{font-size:11px;color:var(--dim);margin-top:6px}
+.kpi-bar{position:absolute;bottom:0;left:0;height:3px;border-radius:0 3px 0 0;transition:width 1.2s var(--ease)}
+
+/* Goal progress */
+.goal-section{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;margin-bottom:32px}
+.goal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.goal-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:400}
+.goal-title em{color:var(--gold);font-style:italic}
+.goal-amount{font-family:'Playfair Display',serif;font-size:24px;color:var(--gold)}
+.goal-track{height:28px;background:var(--bg);border-radius:14px;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,.04)}
+.goal-fill{height:100%;border-radius:14px;position:relative;transition:width 1.5s var(--ease);
+background:linear-gradient(90deg,var(--green),#2ecc71,var(--gold))}
+.goal-fill::after{content:'';position:absolute;inset:0;
+background:linear-gradient(180deg,rgba(255,255,255,.15),transparent);border-radius:14px}
+.goal-markers{display:flex;justify-content:space-between;margin-top:8px;font-size:10px;color:var(--dim);letter-spacing:.05em}
+.goal-glow{position:absolute;right:-2px;top:50%;transform:translateY(-50%);width:20px;height:20px;border-radius:50%;
+background:var(--gold);filter:blur(8px);opacity:.6;animation:goalGlow 2s ease-in-out infinite}
+@keyframes goalGlow{0%,100%{opacity:.6}50%{opacity:.3}}
+
+/* Chart grid */
+.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px}
+.chart-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;transition:border-color .3s}
+.chart-card:hover{border-color:var(--border-hi)}
+.chart-title{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.chart-title::before{content:'';width:20px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
+.chart-wrap{position:relative;height:260px}
+
+/* Pipeline table */
+.table-section{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:32px}
+.table-header{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.table-title{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:8px}
+.table-title::before{content:'';width:20px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
+.filter-pills{display:flex;gap:6px}
+.pill{padding:5px 14px;border-radius:100px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--border);color:var(--muted);cursor:pointer;transition:all .2s;background:transparent}
+.pill:hover,.pill.active{border-color:var(--gold);color:var(--gold);background:rgba(212,168,75,.06)}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;padding:12px 24px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);border-bottom:1px solid var(--border);font-weight:500}
+td{padding:14px 24px;border-bottom:1px solid rgba(255,255,255,.03);font-size:13px;color:var(--muted);transition:background .15s}
+tr:hover td{background:rgba(212,168,75,.02)}
+tr:last-child td{border-bottom:none}
+.td-company{color:var(--ink);font-weight:500}
+.td-value{font-family:'Playfair Display',serif;font-size:15px;color:var(--ink)}
+.status-badge{display:inline-flex;align-items:center;gap:5px;padding:4px 12px;border-radius:100px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.status-badge::before{content:'';width:6px;height:6px;border-radius:50%}
+.status-closed{background:var(--green-dim);color:#2ecc71}.status-closed::before{background:#2ecc71}
+.status-meeting{background:var(--blue-dim);color:var(--blue)}.status-meeting::before{background:var(--blue)}
+.status-pitched{background:var(--orange-dim);color:var(--orange)}.status-pitched::before{background:var(--orange)}
+.status-declined{background:var(--red-dim);color:#e74c3c}.status-declined::before{background:#e74c3c}
+.td-link{color:var(--gold);text-decoration:none;font-size:11px;opacity:.7;transition:opacity .2s}
+.td-link:hover{opacity:1}
+
+/* Leads summary */
+.leads-row{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:32px}
+.lead-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px;text-align:center;transition:border-color .3s}
+.lead-card:hover{border-color:var(--border-hi)}
+.lead-num{font-family:'Playfair Display',serif;font-size:28px;color:var(--ink);margin-bottom:4px}
+.lead-lbl{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Footer */
+.footer{text-align:center;padding:40px 0;border-top:1px solid var(--border)}
+.footer p{font-size:11px;color:var(--dim);letter-spacing:.05em}
+
+/* Gold divider */
+.gd{height:1px;background:linear-gradient(90deg,transparent,rgba(212,168,75,.4),transparent);margin:8px 0}
+
+/* Responsive */
+@media(max-width:900px){
+  .kpi-row{grid-template-columns:repeat(2,1fr)}
+  .chart-grid{grid-template-columns:1fr}
+  .leads-row{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:600px){
+  .kpi-row{grid-template-columns:1fr}
+  .leads-row{grid-template-columns:repeat(2,1fr)}
+  .filter-pills{display:none}
+}
+
+/* Animations */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.animate{animation:fadeUp .6s var(--ease) both}
+.animate.d1{animation-delay:.05s}.animate.d2{animation-delay:.1s}
+.animate.d3{animation-delay:.15s}.animate.d4{animation-delay:.2s}
+.animate.d5{animation-delay:.25s}.animate.d6{animation-delay:.3s}
+</style>
+</head>
+<body>
+<div id="noise" aria-hidden="true"></div>
+
+<div class="wrap">
+
+<!-- HEADER -->
+<div class="header animate">
+  <div class="header-left">
+    <p class="header-date"><span class="pulse"></span> Uppdaterad: <span id="date-now"></span></p>
+    <h1>Sales <em>Dashboard</em></h1>
+    <p class="header-sub">Villa Sjövik — Influencer-samarbeten & Pipeline 2026</p>
+  </div>
+</div>
+
+<!-- GOAL PROGRESS -->
+<div class="goal-section animate d1">
+  <div class="goal-header">
+    <p class="goal-title">Månadsmål: <em>100 000 kr</em> stängda affärer</p>
+    <p class="goal-amount" id="goal-display">0 kr</p>
+  </div>
+  <div class="goal-track">
+    <div class="goal-fill" id="goal-fill" style="width:0%">
+      <div class="goal-glow"></div>
+    </div>
+  </div>
+  <div class="goal-markers">
+    <span>0 kr</span>
+    <span>25 000</span>
+    <span>50 000</span>
+    <span>75 000</span>
+    <span>100 000 kr</span>
+  </div>
+</div>
+
+<!-- KPI ROW -->
+<div class="kpi-row">
+  <div class="kpi animate d1">
+    <div class="kpi-icon gold">💰</div>
+    <p class="kpi-label">Stängt värde</p>
+    <p class="kpi-value" id="kpi-closed">0<span class="unit">kr</span></p>
+    <p class="kpi-sub" id="kpi-closed-sub"></p>
+    <div class="kpi-bar" id="kpi-closed-bar" style="width:0%;background:var(--gold)"></div>
+  </div>
+  <div class="kpi animate d2">
+    <div class="kpi-icon blue">📋</div>
+    <p class="kpi-label">Pipeline (möten + offerter)</p>
+    <p class="kpi-value" id="kpi-pipeline">0<span class="unit">kr</span></p>
+    <p class="kpi-sub" id="kpi-pipeline-sub"></p>
+    <div class="kpi-bar" style="width:0%;background:var(--blue)" id="kpi-pipeline-bar"></div>
+  </div>
+  <div class="kpi animate d3">
+    <div class="kpi-icon green">📊</div>
+    <p class="kpi-label">Konverteringsgrad</p>
+    <p class="kpi-value" id="kpi-conv">0<span class="unit">%</span></p>
+    <p class="kpi-sub">Stängda / alla kontaktade</p>
+    <div class="kpi-bar" style="width:0%;background:var(--green)" id="kpi-conv-bar"></div>
+  </div>
+  <div class="kpi animate d4">
+    <div class="kpi-icon purple">🎯</div>
+    <p class="kpi-label">Aktiva leads</p>
+    <p class="kpi-value" id="kpi-leads">0<span class="unit">st</span></p>
+    <p class="kpi-sub" id="kpi-leads-sub"></p>
+    <div class="kpi-bar" style="width:0%;background:var(--purple)" id="kpi-leads-bar"></div>
+  </div>
+</div>
+
+<div class="gd"></div>
+
+<!-- CHARTS -->
+<div class="chart-grid">
+  <div class="chart-card animate d3">
+    <p class="chart-title">Pipeline-fördelning</p>
+    <div class="chart-wrap"><canvas id="chart-pipeline"></canvas></div>
+  </div>
+  <div class="chart-card animate d4">
+    <p class="chart-title">Värde per status</p>
+    <div class="chart-wrap"><canvas id="chart-value"></canvas></div>
+  </div>
+</div>
+
+<div class="gd"></div>
+
+<!-- LEADS SUMMARY -->
+<div class="leads-row">
+  <div class="lead-card animate d1">
+    <p class="lead-num" id="lead-total">0</p>
+    <p class="lead-lbl">Totala leads</p>
+  </div>
+  <div class="lead-card animate d2">
+    <p class="lead-num" id="lead-new">0</p>
+    <p class="lead-lbl">Nya</p>
+  </div>
+  <div class="lead-card animate d3">
+    <p class="lead-num" id="lead-contacted">0</p>
+    <p class="lead-lbl">Kontaktade</p>
+  </div>
+  <div class="lead-card animate d4">
+    <p class="lead-num" id="lead-ni">0</p>
+    <p class="lead-lbl">Ej intresserade</p>
+  </div>
+  <div class="lead-card animate d5">
+    <p class="lead-num" id="lead-ready" style="color:var(--gold)">0</p>
+    <p class="lead-lbl">Redo att kontakta</p>
+  </div>
+</div>
+
+<div class="gd"></div>
+
+<!-- DEAL TABLE -->
+<div class="table-section animate d5">
+  <div class="table-header">
+    <p class="table-title">Alla affärer</p>
+    <div class="filter-pills">
+      <span class="pill active" data-f="all">Alla</span>
+      <span class="pill" data-f="closed">Stängda</span>
+      <span class="pill" data-f="meeting">Möten</span>
+      <span class="pill" data-f="pitched">Offerter</span>
+      <span class="pill" data-f="declined">Avböjda</span>
+    </div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Företag</th>
+        <th>Kategori</th>
+        <th>Status</th>
+        <th>Värde</th>
+        <th>Kontaktad</th>
+        <th>Pitch</th>
+      </tr>
+    </thead>
+    <tbody id="deal-tbody"></tbody>
+  </table>
+</div>
+
+<div class="footer">
+  <p>Villa Sjövik Sales Dashboard · Data uppdateras manuellt via deals.json · Byggd av Claude + Qwen</p>
+</div>
+
+</div>
+
+<script>
+'use strict';
+
+/* ── DATA ── */
+const DATA = {
+  meta: { updated: "2026-04-14", monthly_goal: 100000 },
+  deals: [
+    { id:"sioox", company:"Sioo:x", contact:"Sofie Källström", category:"Trädgård & Utomhus", status:"closed", value:48000, date_contacted:"2026-03-20", date_closed:"2026-04-07", pitch_url:null, notes:"Avtal signerat. Del 1/3 filmad." },
+    { id:"hillerstorp", company:"Hillerstorp", contact:null, category:"Trädgård & Utomhus", status:"closed", value:0, date_contacted:null, date_closed:"2026-04-01", pitch_url:null, notes:"Gratissamarbete (produktutbyte)." },
+    { id:"velux", company:"VELUX", contact:"Audingas Sumskas", category:"Smarta Hem", status:"meeting", value:48000, date_contacted:"2026-04-07", date_closed:null, pitch_url:"https://villasjovik.github.io/velux/", notes:"Möte 22 april. 3-pack (48k)." },
+    { id:"nibe", company:"NIBE", contact:null, category:"Smarta Hem & Appar", status:"meeting", value:45000, date_contacted:"2026-04-10", date_closed:null, pitch_url:"https://villasjovik.github.io/nibe/", notes:"Kampanjförslag 2026." },
+    { id:"jape", company:"JAPE", contact:null, category:"Trädgård & Utomhus", status:"pitched", value:null, date_contacted:"2026-04-09", date_closed:null, pitch_url:"https://villasjovik.github.io/jape/", notes:"Inväntar svar." },
+    { id:"thefriendlyhome", company:"The Friendly Home", contact:null, category:"Inredning & Dekor", status:"pitched", value:null, date_contacted:"2026-04-10", date_closed:null, pitch_url:"https://villasjovik.github.io/thefriendlyhome/", notes:"Inväntar svar." },
+    { id:"villaagarna", company:"Villaägarna", contact:null, category:"Tjänster & Medlemskap", status:"pitched", value:28500, date_contacted:"2026-04-12", date_closed:null, pitch_url:"https://villasjovik.github.io/villaagarna/", notes:"Kallt mail. Break-even 50 signups." },
+    { id:"tergent", company:"Tergent", contact:"Sandra Jeppsson", category:"Rengöring & Hemvård", status:"declined", value:9000, date_contacted:"2026-04-01", date_closed:null, pitch_url:"https://villasjovik.github.io/tergent/", notes:"Avböjt, möjligt höst 2026." },
+    { id:"tibber", company:"Tibber", contact:null, category:"Smarta Hem & Appar", status:"declined", value:null, date_contacted:"2026-04-01", date_closed:null, pitch_url:null, notes:"Tackade nej." }
+  ],
+  leads_summary: { total:135, new:68, contacted:40, not_interested:25, ready_to_contact:8 }
+};
+
+const STATUS_MAP = {
+  closed:  { label:'Stängd',  class:'status-closed',  color:'#2ecc71' },
+  meeting: { label:'Möte',    class:'status-meeting',  color:'#3498db' },
+  pitched: { label:'Offert',  class:'status-pitched',  color:'#e67e22' },
+  declined:{ label:'Avböjd',  class:'status-declined', color:'#e74c3c' }
+};
+
+/* ── HELPERS ── */
+const fmt = n => n == null ? '—' : n.toLocaleString('sv-SE');
+const fmtK = n => n >= 1000 ? (n/1000).toFixed(0)+'k' : fmt(n);
+
+/* ── DATE ── */
+document.getElementById('date-now').textContent = new Date().toLocaleDateString('sv-SE',{year:'numeric',month:'long',day:'numeric'});
+
+/* ── KPIs ── */
+const closed = DATA.deals.filter(d=>d.status==='closed');
+const meetings = DATA.deals.filter(d=>d.status==='meeting');
+const pitched = DATA.deals.filter(d=>d.status==='pitched');
+const declined = DATA.deals.filter(d=>d.status==='declined');
+
+const closedValue = closed.reduce((s,d)=>s+(d.value||0),0);
+const meetingValue = meetings.reduce((s,d)=>s+(d.value||0),0);
+const pitchedValue = pitched.reduce((s,d)=>s+(d.value||0),0);
+const pipelineValue = meetingValue + pitchedValue;
+const totalContacted = DATA.deals.length;
+const convRate = totalContacted > 0 ? (closed.length / totalContacted * 100) : 0;
+
+// Animate count-up
+function countUp(el, target, suffix, duration=1200){
+  const t0 = performance.now();
+  (function tick(now){
+    const p = Math.min((now-t0)/duration,1);
+    const ease = 1-Math.pow(1-p,3);
+    const v = Math.round(ease*target);
+    el.innerHTML = fmt(v) + (suffix ? '<span class="unit">'+suffix+'</span>' : '');
+    if(p<1) requestAnimationFrame(tick);
+  })(t0);
+}
+
+setTimeout(()=>{
+  countUp(document.getElementById('kpi-closed'), closedValue, 'kr');
+  document.getElementById('kpi-closed-sub').textContent = closed.length + ' stängda affärer';
+  document.getElementById('kpi-closed-bar').style.width = Math.min(closedValue/DATA.meta.monthly_goal*100,100)+'%';
+
+  countUp(document.getElementById('kpi-pipeline'), pipelineValue, 'kr');
+  document.getElementById('kpi-pipeline-sub').textContent = (meetings.length+pitched.length)+' aktiva i pipeline';
+  document.getElementById('kpi-pipeline-bar').style.width = Math.min(pipelineValue/200000*100,100)+'%';
+
+  countUp(document.getElementById('kpi-conv'), Math.round(convRate*10)/10, '%');
+  document.getElementById('kpi-conv-bar').style.width = convRate+'%';
+
+  countUp(document.getElementById('kpi-leads'), DATA.leads_summary.total, 'st');
+  document.getElementById('kpi-leads-sub').textContent = DATA.leads_summary.ready_to_contact+' redo att kontakta';
+  document.getElementById('kpi-leads-bar').style.width = (DATA.leads_summary.ready_to_contact/DATA.leads_summary.total*100)+'%';
+}, 300);
+
+/* ── GOAL BAR ── */
+setTimeout(()=>{
+  const pct = Math.min(closedValue/DATA.meta.monthly_goal*100,100);
+  document.getElementById('goal-fill').style.width = pct+'%';
+  document.getElementById('goal-display').textContent = fmt(closedValue)+' / '+fmt(DATA.meta.monthly_goal)+' kr';
+},500);
+
+/* ── LEADS ── */
+setTimeout(()=>{
+  const ids = ['lead-total','lead-new','lead-contacted','lead-ni','lead-ready'];
+  const vals = [DATA.leads_summary.total, DATA.leads_summary.new, DATA.leads_summary.contacted, DATA.leads_summary.not_interested, DATA.leads_summary.ready_to_contact];
+  ids.forEach((id,i)=>countUp(document.getElementById(id), vals[i], '', 1000));
+},400);
+
+/* ── CHARTS ── */
+const chartDefaults = {
+  responsive:true,
+  maintainAspectRatio:false,
+  plugins:{
+    legend:{position:'bottom',labels:{color:'rgba(242,237,228,.5)',font:{family:'Inter',size:11},padding:16,usePointStyle:true,pointStyleWidth:8}},
+    tooltip:{backgroundColor:'#1a2a1f',titleColor:'#F2EDE4',bodyColor:'rgba(242,237,228,.7)',borderColor:'rgba(212,168,75,.2)',borderWidth:1,padding:12,cornerRadius:8,
+      titleFont:{family:'Playfair Display',size:14},bodyFont:{family:'Inter',size:12}}
+  }
+};
+
+// Pipeline doughnut
+new Chart(document.getElementById('chart-pipeline'),{
+  type:'doughnut',
+  data:{
+    labels:['Stängda ('+closed.length+')','Möten ('+meetings.length+')','Offerter ('+pitched.length+')','Avböjda ('+declined.length+')'],
+    datasets:[{
+      data:[closed.length, meetings.length, pitched.length, declined.length],
+      backgroundColor:['#2ecc71','#3498db','#e67e22','#e74c3c'],
+      borderColor:'#151f18',
+      borderWidth:3,
+      hoverBorderColor:'rgba(212,168,75,.4)',
+      hoverOffset:8
+    }]
+  },
+  options:{
+    ...chartDefaults,
+    cutout:'62%',
+    plugins:{
+      ...chartDefaults.plugins,
+      tooltip:{
+        ...chartDefaults.plugins.tooltip,
+        callbacks:{label:ctx=>ctx.label+' — '+Math.round(ctx.parsed/DATA.deals.length*100)+'%'}
+      }
+    }
+  }
+});
+
+// Value bar chart
+const statusGroups = [
+  {label:'Stängt',value:closedValue,color:'#2ecc71'},
+  {label:'Möten',value:meetingValue,color:'#3498db'},
+  {label:'Offerter',value:pitchedValue,color:'#e67e22'},
+  {label:'Mål',value:DATA.meta.monthly_goal,color:'rgba(212,168,75,.25)'}
+];
+new Chart(document.getElementById('chart-value'),{
+  type:'bar',
+  data:{
+    labels:statusGroups.map(g=>g.label),
+    datasets:[{
+      data:statusGroups.map(g=>g.value),
+      backgroundColor:statusGroups.map(g=>g.color),
+      borderRadius:8,
+      borderSkipped:false,
+      barPercentage:.6
+    }]
+  },
+  options:{
+    ...chartDefaults,
+    plugins:{...chartDefaults.plugins,legend:{display:false},
+      tooltip:{...chartDefaults.plugins.tooltip,callbacks:{label:ctx=>fmt(ctx.parsed.y)+' kr'}}
+    },
+    scales:{
+      x:{grid:{display:false},ticks:{color:'rgba(242,237,228,.35)',font:{family:'Inter',size:10}},border:{display:false}},
+      y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'rgba(242,237,228,.25)',font:{family:'Inter',size:10},callback:v=>fmtK(v)},border:{display:false}}
+    }
+  }
+});
+
+/* ── TABLE ── */
+function renderTable(filter){
+  const tbody = document.getElementById('deal-tbody');
+  const deals = filter==='all' ? DATA.deals : DATA.deals.filter(d=>d.status===filter);
+  tbody.innerHTML = deals.map(d=>{
+    const s = STATUS_MAP[d.status];
+    return `<tr>
+      <td class="td-company">${d.company}</td>
+      <td>${d.category}</td>
+      <td><span class="status-badge ${s.class}">${s.label}</span></td>
+      <td class="td-value">${d.value ? fmt(d.value)+' kr' : '—'}</td>
+      <td>${d.date_contacted || '—'}</td>
+      <td>${d.pitch_url ? '<a href="'+d.pitch_url+'" target="_blank" class="td-link">Visa pitch →</a>' : '—'}</td>
+    </tr>`;
+  }).join('');
+}
+renderTable('all');
+
+// Filter pills
+document.querySelectorAll('.pill').forEach(pill=>{
+  pill.addEventListener('click',()=>{
+    document.querySelectorAll('.pill').forEach(p=>p.classList.remove('active'));
+    pill.classList.add('active');
+    renderTable(pill.dataset.f);
+  });
+});
+</script>
+</body>
+</html>

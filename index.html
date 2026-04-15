@@ -424,10 +424,6 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 <div class="sec"><h2>Stängda <em>samarbeten</em></h2></div>
 <div class="showcase" id="showcase"></div>
 
-<hr class="sep"/>
-
-<hr class="sep"/>
-
 <div class="mid">
   <div class="pipe glass reveal"><div class="shine"></div>
     <div class="pipe-hd"><span class="label">Pipeline-status</span></div>
@@ -712,24 +708,26 @@ document.addEventListener('mousemove',e=>{
   requestAnimationFrame(orbLoop);
 })();
 
-/* ═══ 3D TILT — smooth, damped perspective ═══ */
+/* ═══ 3D TILT — responsive with smooth edges ═══ */
 document.querySelectorAll('.bento-kpi,.sc,.cc,.rev-card,.pipe,.bento-goal').forEach(c=>{
   let tiltX=0,tiltY=0,targetX=0,targetY=0,raf=null,active=false;
-  function lerp(){
-    tiltX+=(targetX-tiltX)*.12;tiltY+=(targetY-tiltY)*.12;
-    c.style.transform='perspective(800px) rotateX('+tiltY.toFixed(2)+'deg) rotateY('+tiltX.toFixed(2)+'deg) translateZ(4px) scale(1.01)';
-    c.style.boxShadow='inset 0 1px 0 rgba(52,211,153,0.06),0 '+(16+Math.abs(tiltY)*1.5).toFixed(0)+'px '+(40+Math.abs(tiltX)*2).toFixed(0)+'px rgba(0,0,0,0.4)';
-    if(active||Math.abs(tiltX-targetX)>.01||Math.abs(tiltY-targetY)>.01)raf=requestAnimationFrame(lerp);
-    else raf=null;
+  function tick(){
+    tiltX+=(targetX-tiltX)*.28;tiltY+=(targetY-tiltY)*.28;
+    c.style.transform='perspective(700px) rotateX('+tiltY.toFixed(2)+'deg) rotateY('+tiltX.toFixed(2)+'deg) translateZ(6px) scale(1.012)';
+    c.style.boxShadow='inset 0 1px 0 rgba(52,211,153,0.06),0 '+(18+Math.abs(tiltY)*2).toFixed(0)+'px '+(44+Math.abs(tiltX)*3).toFixed(0)+'px rgba(0,0,0,0.4)';
+    if(active||Math.abs(tiltX-targetX)>.02||Math.abs(tiltY-targetY)>.02)raf=requestAnimationFrame(tick);
+    else{raf=null;if(!active){c.style.transform='';c.style.boxShadow=''}}
   }
   c.addEventListener('mousemove',e=>{
     const r=c.getBoundingClientRect(),nx=(e.clientX-r.left)/r.width-.5,ny=(e.clientY-r.top)/r.height-.5;
-    targetX=nx*6;targetY=-ny*6;
-    if(!raf){active=true;raf=requestAnimationFrame(lerp)}
+    // Dampen near edges to prevent jumps
+    const edgeFade=Math.min(1,Math.max(0,(0.5-Math.max(Math.abs(nx),Math.abs(ny)))*4));
+    targetX=nx*8*edgeFade;targetY=-ny*8*edgeFade;
+    if(!raf){active=true;raf=requestAnimationFrame(tick)}
   });
   c.addEventListener('mouseleave',()=>{
     active=false;targetX=0;targetY=0;
-    if(!raf)raf=requestAnimationFrame(lerp);
+    if(!raf)raf=requestAnimationFrame(tick);
   });
 });
 

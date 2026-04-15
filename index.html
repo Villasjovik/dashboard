@@ -1234,9 +1234,7 @@ const convRate       = DATA.deals.length > 0 ? (closed.length/DATA.deals.length*
 
 const headerMin = closedValue + pipelineMin;
 const headerMax = closedValue + pipelineMax;
-document.getElementById('header-total').textContent = headerMin < headerMax
-  ? fmtK(headerMin)+' – '+fmtK(headerMax)+' kr i spel'
-  : fmt(headerMax)+' kr i spel';
+document.getElementById('header-total').textContent = 'Pipeline: '+fmtK(pipelineMin)+(pipelineMin<pipelineMax ? ' – '+fmtK(pipelineMax) : '')+' kr';
 
 /* ══════════════════════════════════════════
    PARTICLES (canvas)
@@ -1343,7 +1341,7 @@ function countUp(el, target, suffix, duration=1600){
 ══════════════════════════════════════════ */
 // Hero numbers
 document.getElementById('hn-closed').textContent    = fmt(closedValue)+' kr';
-document.getElementById('hn-pipeline').innerHTML = fmt(pipelineMin)+' kr'+(pipelineMin<pipelineMax ? '<span style="font-size:11px;opacity:.5;margin-left:6px;font-family:Epilogue,sans-serif">(upp till '+fmtK(pipelineMax)+')</span>' : '');
+document.getElementById('hn-pipeline').innerHTML = fmtK(pipelineMin)+'<span style="font-size:11px;opacity:.5;margin-left:4px;font-family:Epilogue,sans-serif">kr'+(pipelineMin<pipelineMax ? ' (upp till '+fmtK(pipelineMax)+')' : '')+'</span>';
 document.getElementById('hn-remain').textContent    = fmt(Math.max(DATA.meta.monthly_goal-closedValue,0))+' kr';
 document.getElementById('hn-closed-sub').textContent  = closed.length+' stängda affärer';
 document.getElementById('hn-pipeline-sub').textContent = (meetings.length+pitched.length)+' aktiva';

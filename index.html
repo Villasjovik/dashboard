@@ -1065,12 +1065,16 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
     if(idx===current)return;
     current=idx;
     clearTimeout(dotTimer);
-    /* Animate label width: lock current → set new text → measure → animate to new */
-    const oldW=label.scrollWidth;
+    /* Animate label width: lock current → set new text → measure natural → animate */
+    const oldW=label.offsetWidth;
     label.style.maxWidth=oldW+'px';
     label.textContent=sections[idx].dataset.label;
+    /* Remove max-width to measure true natural width of new text */
+    label.style.maxWidth='none';
     const newW=label.scrollWidth;
-    label.offsetWidth; /* force reflow */
+    /* Lock back to old width, force reflow, then animate to new */
+    label.style.maxWidth=oldW+'px';
+    label.offsetWidth;
     label.style.maxWidth=newW+'px';
     /* Delay dot highlight swap until island has finished resizing (500ms matches CSS transition) */
     dotTimer=setTimeout(()=>{

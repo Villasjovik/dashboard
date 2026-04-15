@@ -1225,7 +1225,11 @@ const pipelineMin    = [...meetings,...pitched].reduce((s,d)=>s+(d.value_min||d.
 const pipelineValue  = pipelineMax;
 const convRate       = DATA.deals.length > 0 ? (closed.length/DATA.deals.length*100) : 0;
 
-document.getElementById('header-total').textContent = fmt(closedValue+pipelineValue)+' kr i spel';
+const headerMin = closedValue + pipelineMin;
+const headerMax = closedValue + pipelineMax;
+document.getElementById('header-total').textContent = headerMin < headerMax
+  ? fmtK(headerMin)+' – '+fmtK(headerMax)+' kr i spel'
+  : fmt(headerMax)+' kr i spel';
 
 /* ══════════════════════════════════════════
    PARTICLES (canvas)
@@ -1481,8 +1485,10 @@ new Chart(document.getElementById('chart-leads'),{
 /* ══════════════════════════════════════════
    DEAL TABLE
 ══════════════════════════════════════════ */
+const STATUS_ORDER = {closed:0, meeting:1, pitched:2, declined:3};
 function renderTable(filter){
-  const deals = filter==='all' ? DATA.deals : DATA.deals.filter(d=>d.status===filter);
+  const raw   = filter==='all' ? DATA.deals : DATA.deals.filter(d=>d.status===filter);
+  const deals = [...raw].sort((a,b)=>(STATUS_ORDER[a.status]??9)-(STATUS_ORDER[b.status]??9));
   const tbody = document.getElementById('deal-tbody');
   tbody.innerHTML='';
   deals.forEach(d=>{

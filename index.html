@@ -1060,19 +1060,23 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
   /* Set initial label width */
   label.style.maxWidth=label.scrollWidth+'px';
 
+  let dotTimer=0;
   function updateNav(idx){
     if(idx===current)return;
     current=idx;
+    clearTimeout(dotTimer);
     /* Animate label width: lock current → set new text → measure → animate to new */
     const oldW=label.scrollWidth;
     label.style.maxWidth=oldW+'px';
     label.textContent=sections[idx].dataset.label;
     const newW=label.scrollWidth;
-    /* Force reflow so browser registers the old max-width before transitioning */
-    label.offsetWidth;
+    label.offsetWidth; /* force reflow */
     label.style.maxWidth=newW+'px';
-    dots.forEach((d,i)=>d.classList.toggle('active',i===idx));
-    wraps.forEach((w,i)=>w.classList.toggle('is-active',i===idx));
+    /* Delay dot highlight swap until island has finished resizing (500ms matches CSS transition) */
+    dotTimer=setTimeout(()=>{
+      dots.forEach((d,i)=>d.classList.toggle('active',i===idx));
+      wraps.forEach((w,i)=>w.classList.toggle('is-active',i===idx));
+    },500);
   }
 
   /* Track active section via IntersectionObserver */

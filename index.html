@@ -308,9 +308,12 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .footer-info{font-size:10px;color:var(--dim);letter-spacing:.03em;text-align:right}
 
 /* ═══ SNAP SECTIONS ═══ */
-.snap{min-height:100dvh;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:center;position:relative;padding:40px 0}
-.snap:first-child{justify-content:flex-start;padding-top:48px}
+.snap{min-height:100dvh;scroll-snap-align:start;display:flex;flex-direction:column;position:relative;padding:40px 0}
+.snap::before,.snap::after{content:'';flex:1 0 0px}
+.snap:first-child{padding-top:48px}
+.snap:first-child::before{flex:0}
 .snap:last-child{padding-bottom:80px}
+.snap-long::before,.snap-long::after{flex:0}
 .snap>:last-child{margin-bottom:0}
 .snap .bento{margin-bottom:0}
 .snap .mid{margin-bottom:0;margin-top:20px}
@@ -341,6 +344,8 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .snap-dot-name{display:inline-block;max-width:0;opacity:0;overflow:hidden;white-space:nowrap;font-family:'Outfit',sans-serif;font-size:10px;font-weight:600;letter-spacing:.04em;color:var(--muted);transition:max-width .45s var(--ease),opacity .35s var(--ease),margin .35s var(--ease);margin-left:0}
 .snap-nav:hover .snap-dot-name{max-width:100px;opacity:1;margin-left:6px}
 .snap-nav:hover .snap-dot-wrap.is-active .snap-dot-name{color:var(--gold-b)}
+.snap-dot-wrap:hover .snap-dot-name{color:var(--gold-b)!important;text-shadow:0 0 12px rgba(200,164,78,0.4)}
+.snap-dot-wrap:hover .snap-dot{background:var(--gold)!important;box-shadow:0 0 8px var(--gold),0 0 20px rgba(200,164,78,0.25);transform:scale(1.4)}
 
 /* Activity log upgrade */
 .tl-filters{display:flex;gap:6px;margin-bottom:24px;flex-wrap:wrap}
@@ -489,7 +494,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 </section>
 </section>
 
-<section class="snap" data-label="Samarbeten & Pipeline">
+<section class="snap snap-long" data-label="Samarbeten & Pipeline">
 <div class="sec"><h2>Stängda <em>samarbeten</em></h2></div>
 <div class="showcase" id="showcase"></div>
 <div class="mid">
@@ -507,7 +512,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 </div>
 </section>
 
-<section class="snap" data-label="Intäkter & Analys">
+<section class="snap snap-long" data-label="Intäkter & Analys">
 <div class="rev">
   <div class="sec"><h2>Intäkts<em>tidslinje</em></h2></div>
   <div class="rev-card glass reveal"><div class="shine"></div><p class="cc-label">Kumulativ intäkt · april 2026</p><div class="rev-area"><canvas id="ch-rev"></canvas></div></div>

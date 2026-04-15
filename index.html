@@ -106,6 +106,7 @@ body::after{
 /* ═══ REVEAL ═══ */
 .reveal{opacity:0;transform:translateY(40px) scale(0.97);filter:blur(6px);transition:opacity .9s var(--ease),transform 1s var(--ease),filter .7s var(--ease)}
 .reveal.vis{opacity:1;transform:translateY(0) scale(1);filter:none}
+.hdr h1,.hdr-eye,.hdr-right,.sep-gold{opacity:0}
 
 /* ═══ LOGIN GATE ═══ */
 #login-gate{
@@ -706,7 +707,7 @@ document.getElementById('h-pipe-sub').textContent=(meets.length+pitched.length)+
 /* ═══ SECTION ANIMATION TRIGGERS ═══ */
 const _seen=new Set(),_sfn={};
 function regSec(i,fn){if(!_sfn[i])_sfn[i]=[];_sfn[i].push(fn)}
-function fireSec(i){if(_seen.has(i))return;_seen.add(i);(_sfn[i]||[]).forEach(fn=>fn())}
+function fireSec(i){if(_seen.has(i))return;_seen.add(i);const delay=i>0?500:0;setTimeout(()=>{(_sfn[i]||[]).forEach(fn=>fn())},delay)}
 
 /* Progress bar */
 regSec(0,()=>{setTimeout(()=>{
@@ -923,17 +924,25 @@ tlEl.querySelectorAll('.tl-pill').forEach(pill=>{
 
 /* ═══ INTERSECTION OBSERVER — runs AFTER all dynamic content ═══ */
 const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');revObs.unobserve(e.target)}})},{threshold:0.1});
-document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
+document.querySelectorAll('.reveal').forEach(el=>{if(!el.closest('.snap:first-of-type'))revObs.observe(el)});
 // First section reveals + anims deferred until after login
 whenAuth(()=>{
-  document.querySelectorAll('.snap:first-of-type .reveal').forEach(el=>el.classList.add('vis'));
+  document.querySelectorAll('.snap:first-of-type .reveal').forEach((el,i)=>{
+    setTimeout(()=>el.classList.add('vis'),i*80);
+  });
   fireSec(0);
 });
 
 /* ═══ SECTION OBSERVER — fires all animations on first scroll to each section ═══ */
 const secSnaps=document.querySelectorAll('.snap[data-label]');
 const secObs=new IntersectionObserver(entries=>{entries.forEach(e=>{
-  if(e.isIntersecting){const idx=[...secSnaps].indexOf(e.target);if(idx>=0)fireSec(idx)}
+  if(e.isIntersecting){
+    const idx=[...secSnaps].indexOf(e.target);
+    if(idx>=0){
+      e.target.querySelectorAll('.reveal:not(.vis)').forEach((el,j)=>{setTimeout(()=>el.classList.add('vis'),j*60)});
+      fireSec(idx);
+    }
+  }
 })},{threshold:0.15});
 secSnaps.forEach(s=>secObs.observe(s));
 
@@ -986,10 +995,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Header entrance — deferred until after login
 whenAuth(()=>{
-  gsap.from('.hdr h1',{y:80,opacity:0,scale:.92,filter:'blur(8px)',duration:1.6,ease:'expo.out',delay:.3});
-  gsap.from('.hdr-eye',{y:24,opacity:0,duration:1,ease:'expo.out',delay:.1});
-  gsap.from('.hdr-right',{x:30,opacity:0,duration:1,ease:'expo.out',delay:.6});
-  gsap.from('.sep-gold',{scaleX:0,transformOrigin:'left',duration:2,ease:'expo.out',delay:.7});
+  gsap.fromTo('.hdr h1',{y:80,opacity:0,scale:.92,filter:'blur(8px)'},{y:0,opacity:1,scale:1,filter:'none',duration:1.6,ease:'expo.out',delay:.3});
+  gsap.fromTo('.hdr-eye',{y:24,opacity:0},{y:0,opacity:1,duration:1,ease:'expo.out',delay:.1});
+  gsap.fromTo('.hdr-right',{x:30,opacity:0},{x:0,opacity:1,duration:1,ease:'expo.out',delay:.6});
+  gsap.fromTo('.sep-gold',{scaleX:0,transformOrigin:'left'},{scaleX:1,transformOrigin:'left',duration:2,ease:'expo.out',delay:.7});
 });
 
 // Separators — draw themselves on scroll
@@ -1200,20 +1209,18 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
     if(idx===current)return;
     current=idx;
     clearTimeout(dotTimer);
-    /* Animate label width: disable transition → measure → re-enable → animate */
+    /* Animate label width with GSAP for smooth shrink + grow */
     const oldW=label.offsetWidth;
-    label.style.transition='none';
     label.textContent=sections[idx].dataset.label;
     label.style.maxWidth='none';
     const newW=label.scrollWidth;
-    label.style.maxWidth=oldW+'px';
-    void label.offsetWidth; /* reflow with transition off */
-    label.style.transition=''; /* re-enable CSS transition */
-    /* Double-rAF ensures browser fully commits the transition state before animating */
-    requestAnimationFrame(()=>{requestAnimationFrame(()=>{
-      label.style.maxWidth=newW+'px';
-    })});
-    /* Delay dot highlight swap until island has finished resizing (500ms matches CSS transition) */
+    label.style.width=oldW+'px';
+    label.style.overflow='hidden';
+    label.style.transition='none';
+    gsap.to(label,{width:newW,duration:.5,ease:'expo.out',onComplete:()=>{
+      label.style.width='';label.style.maxWidth=newW+'px';label.style.transition='';label.style.overflow='';
+    }});
+    /* Delay dot highlight swap until island has finished resizing */
     dotTimer=setTimeout(()=>{
       dots.forEach((d,i)=>d.classList.toggle('active',i===idx));
       wraps.forEach((w,i)=>w.classList.toggle('is-active',i===idx));

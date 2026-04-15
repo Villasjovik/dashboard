@@ -308,22 +308,20 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .footer-info{font-size:10px;color:var(--dim);letter-spacing:.03em;text-align:right}
 
 /* ═══ SNAP SECTIONS ═══ */
-.snap{min-height:200dvh;scroll-snap-align:start;display:flex;flex-direction:column;position:relative;padding:40px 0}
-.snap::before,.snap::after{content:'';flex:1 0 0px}
-.snap:first-child{padding-top:48px;min-height:105dvh}
-.snap:first-child::before{flex:0}
-.snap:last-child{padding-bottom:80px}
-.snap-long::before,.snap-long::after{flex:0}
+.snap{min-height:200dvh;scroll-snap-align:start;display:flex;flex-direction:column;position:relative;padding:8dvh 0}
+.snap:first-of-type{padding-top:48px}
+.snap:last-of-type{padding-bottom:80px}
 .snap>:last-child{margin-bottom:0}
+.snap .sec{margin-bottom:20px}
 .snap .bento{margin-bottom:0}
-.snap .mid{margin-bottom:0;margin-top:20px}
-.snap .rev{margin-top:0;margin-bottom:0}
+.snap .showcase{margin-bottom:0;margin-top:24px}
+.snap .mid{margin-bottom:0;margin-top:24px}
+.snap .rev{margin-top:24px;margin-bottom:0}
 .snap .rev .sec{margin-bottom:14px}
-.snap .chart-row{margin-bottom:0;margin-top:20px}
-.snap .leads{margin-bottom:0;margin-top:0}
-.snap .tbl{margin-bottom:0;margin-top:28px}
+.snap .chart-row{margin-bottom:0;margin-top:24px}
+.snap .leads{margin-bottom:0;margin-top:8px}
+.snap .tbl{margin-bottom:0;margin-top:24px}
 .snap .tl{margin-bottom:0}
-.snap .showcase{margin-bottom:0}
 
 /* ═══ DYNAMIC ISLAND ═══ */
 .snap-nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:9998;display:flex;align-items:center;gap:16px;background:rgba(12,48,32,0.65);backdrop-filter:blur(28px) saturate(1.5);-webkit-backdrop-filter:blur(28px) saturate(1.5);border:1px solid rgba(52,211,153,0.14);border-radius:100px;padding:10px 24px;transition:all .6s var(--ease);box-shadow:0 4px 24px rgba(0,0,0,0.35),0 0 0 1px rgba(0,0,0,0.1)}
@@ -336,8 +334,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .snap-dot.active{background:var(--gold-b);box-shadow:0 0 10px var(--gold),0 0 28px rgba(200,164,78,0.3);transform:scale(1.5)}
 .snap-dot:hover:not(.active){background:rgba(240,235,227,0.4);transform:scale(1.3)}
 
-/* Long sections — free scroll, top-aligned */
-.snap-long{min-height:100dvh;justify-content:flex-start;padding-top:60px;padding-bottom:60px}
+/* Long sections — same height, no special override */
 
 /* Dynamic Island — Apple hover expand */
 .snap-dot-wrap{display:flex;align-items:center;gap:0;cursor:pointer}
@@ -803,7 +800,7 @@ tlEl.querySelectorAll('.tl-pill').forEach(pill=>{
 const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');revObs.unobserve(e.target)}})},{threshold:0,rootMargin:'200px 0px 200px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
 // Force first section visible immediately (snap scroll can prevent observer from firing)
-requestAnimationFrame(()=>{document.querySelectorAll('.snap:first-child .reveal').forEach(el=>el.classList.add('vis'))});
+requestAnimationFrame(()=>{document.querySelectorAll('.snap:first-of-type .reveal').forEach(el=>el.classList.add('vis'))});
 // Fallback: guarantee all reveals fire within 1.5s
 setTimeout(()=>{document.querySelectorAll('.reveal:not(.vis)').forEach(el=>el.classList.add('vis'))},1500);
 

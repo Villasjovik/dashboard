@@ -50,7 +50,7 @@
 
   /* Glass tokens */
   --glass-bg:      oklch(11% 0.012 200 / 0.55);
-  --glass-border:  oklch(100% 0 0 / 0.06);
+  --glass-border:  oklch(100% 0 0 / 0.09);
   --glass-shine:   oklch(100% 0 0 / 0.04);
   --glass-blur:    20px;
 }
@@ -137,16 +137,18 @@ body::after {
 /* ── Reveal animations ── */
 .reveal {
   opacity:0;
-  transform:translateY(28px);
-  transition:opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+  transform:translateY(36px) scale(0.97);
+  filter:blur(6px);
+  transition:opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out), filter 0.6s var(--ease-out);
 }
-.reveal.visible { opacity:1; transform:none }
+.reveal.visible { opacity:1; transform:none; filter:none }
 
 .reveal-left {
-  opacity:0; transform:translateX(-20px);
-  transition:opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+  opacity:0; transform:translateX(-24px);
+  filter:blur(4px);
+  transition:opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out), filter 0.5s var(--ease-out);
 }
-.reveal-left.visible { opacity:1; transform:none }
+.reveal-left.visible { opacity:1; transform:none; filter:none }
 
 /* ── Glass utility ── */
 .glass {
@@ -212,7 +214,20 @@ hr.rule-gold {
   letter-spacing:-0.035em;
 }
 
-.header h1 em { font-style:italic; color:var(--gold) }
+.header h1 em {
+  font-style:italic;
+  background:linear-gradient(135deg, oklch(74% 0.135 78), oklch(85% 0.110 80), oklch(74% 0.135 78));
+  background-size:200% auto;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  animation:goldShimmer 5s ease-in-out infinite;
+}
+@keyframes goldShimmer {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
 
 .header-meta {
   text-align:right; padding-top:8px;
@@ -282,7 +297,10 @@ hr.rule-gold {
   font-variant-numeric:tabular-nums;
 }
 
-.hn-value.gold { color:var(--gold) }
+.hn-value.gold {
+  color:var(--gold);
+  text-shadow:0 0 40px oklch(74% 0.135 78 / 0.35), 0 0 80px oklch(74% 0.135 78 / 0.12);
+}
 
 .hn-sub {
   font-size:11px; color:var(--muted);
@@ -377,6 +395,7 @@ hr.rule-gold {
   color:var(--gold);
   letter-spacing:-0.02em;
   font-variant-numeric:tabular-nums;
+  text-shadow:0 0 30px oklch(74% 0.135 78 / 0.4);
 }
 
 .ring-sub {
@@ -522,7 +541,10 @@ hr.rule-gold {
   letter-spacing:-0.02em;
 }
 
-.sec-head h2 em { color:var(--gold); font-style:italic }
+.sec-head h2 em {
+  color:var(--gold); font-style:italic;
+  text-shadow:0 0 30px oklch(74% 0.135 78 / 0.3);
+}
 
 /* ── Showcase cards ── */
 .showcase {
@@ -668,7 +690,12 @@ hr.rule-gold {
 .f-dot {
   width:10px; height:10px; border-radius:50%;
   flex-shrink:0;
-  box-shadow:0 0 10px currentColor;
+  box-shadow:0 0 10px currentColor, 0 0 25px currentColor;
+  animation:dotPulse 2.5s ease-in-out infinite;
+}
+@keyframes dotPulse {
+  0%,100%{box-shadow:0 0 10px currentColor, 0 0 25px currentColor}
+  50%{box-shadow:0 0 6px currentColor, 0 0 12px currentColor}
 }
 
 .f-name {
@@ -1866,33 +1893,11 @@ gsap.from('.rule-gold', {
   scaleX:0, transformOrigin:'left', duration:1.2, ease:'expo.out', delay:0.6
 });
 
-// Showcase cards stagger
-gsap.utils.toArray('.sc-card').forEach((el,i)=>{
+// Section dividers — draw in from left on scroll
+gsap.utils.toArray('hr.rule').forEach(el=>{
   gsap.from(el,{
-    y:30, opacity:0, scale:0.96, duration:0.7, delay:i*0.1, ease:'expo.out',
-    scrollTrigger:{trigger:'.showcase', start:'top 82%', once:true}
-  });
-});
-
-// Timeline items stagger
-gsap.utils.toArray('.tl-item').forEach((el,i)=>{
-  gsap.from(el,{x:-16, opacity:0, duration:0.5, delay:i*0.08, ease:'power2.out',
-    scrollTrigger:{trigger:'#timeline', start:'top 82%', once:true}});
-});
-
-// Chart cards entrance
-gsap.utils.toArray('.chart-card, .revenue-card').forEach((el,i)=>{
-  gsap.from(el,{
-    y:24, opacity:0, duration:0.6, delay:i*0.08, ease:'expo.out',
-    scrollTrigger:{trigger:el, start:'top 85%', once:true}
-  });
-});
-
-// Leads strip stagger
-gsap.utils.toArray('.lead-cell').forEach((el,i)=>{
-  gsap.from(el,{
-    y:20, opacity:0, duration:0.5, delay:i*0.06, ease:'expo.out',
-    scrollTrigger:{trigger:'.leads-strip', start:'top 85%', once:true}
+    scaleX:0, transformOrigin:'left', duration:1, ease:'expo.out',
+    scrollTrigger:{trigger:el, start:'top 92%', once:true}
   });
 });
 

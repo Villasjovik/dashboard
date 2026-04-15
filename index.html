@@ -797,12 +797,10 @@ tlEl.querySelectorAll('.tl-pill').forEach(pill=>{
 });
 
 /* ═══ INTERSECTION OBSERVER — runs AFTER all dynamic content ═══ */
-const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');revObs.unobserve(e.target)}})},{threshold:0,rootMargin:'200px 0px 200px 0px'});
+const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');revObs.unobserve(e.target)}})},{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
-// Force first section visible immediately (snap scroll can prevent observer from firing)
+// Only first section reveals immediately — rest wait for scroll
 requestAnimationFrame(()=>{document.querySelectorAll('.snap:first-of-type .reveal').forEach(el=>el.classList.add('vis'))});
-// Fallback: guarantee all reveals fire within 1.5s
-setTimeout(()=>{document.querySelectorAll('.reveal:not(.vis)').forEach(el=>el.classList.add('vis'))},1500);
 
 }); // end fetch
 
@@ -1065,16 +1063,15 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
     if(idx===current)return;
     current=idx;
     clearTimeout(dotTimer);
-    /* Animate label width: lock current → set new text → measure natural → animate */
+    /* Animate label width: disable transition → measure → re-enable → animate */
     const oldW=label.offsetWidth;
-    label.style.maxWidth=oldW+'px';
+    label.style.transition='none';
     label.textContent=sections[idx].dataset.label;
-    /* Remove max-width to measure true natural width of new text */
     label.style.maxWidth='none';
     const newW=label.scrollWidth;
-    /* Lock back to old width, force reflow, then animate to new */
     label.style.maxWidth=oldW+'px';
-    label.offsetWidth;
+    label.offsetWidth; /* reflow with transition off */
+    label.style.transition=''; /* re-enable CSS transition */
     label.style.maxWidth=newW+'px';
     /* Delay dot highlight swap until island has finished resizing (500ms matches CSS transition) */
     dotTimer=setTimeout(()=>{

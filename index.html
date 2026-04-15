@@ -39,7 +39,7 @@
   --ease:cubic-bezier(0.22,1,0.36,1);
 }
 
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-snap-type:y mandatory}
 body{
   font-family:'Outfit',system-ui,sans-serif;
   background:var(--bg);
@@ -81,7 +81,7 @@ body::after{
 #noise{position:fixed;inset:0;z-index:9997;pointer-events:none;opacity:0.02;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px}
 
 /* ═══ LAYOUT ═══ */
-.wrap{max-width:1280px;margin:0 auto;padding:48px 44px 80px;position:relative;z-index:2}
+.wrap{max-width:1280px;margin:0 auto;padding:0 44px;position:relative;z-index:2}
 
 /* ═══ GLASS ═══ */
 .glass{
@@ -249,6 +249,7 @@ body::after{
 
 /* Revenue — 3D depth card */
 .rev{margin-bottom:44px;margin-top:72px}.rev .sec{margin-bottom:14px}
+.snap .sep-gold{margin-bottom:32px}
 .rev-card{border-radius:24px;padding:30px;position:relative;overflow:hidden;transform-style:preserve-3d}
 .rev-card::after{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(145deg,rgba(52,211,153,0.06) 0%,transparent 35%,rgba(110,231,183,0.03) 80%);pointer-events:none}
 .rev-area{height:250px;position:relative}
@@ -306,6 +307,32 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .footer-brand em{color:var(--gold);font-style:italic}
 .footer-info{font-size:10px;color:var(--dim);letter-spacing:.03em;text-align:right}
 
+/* ═══ SNAP SECTIONS ═══ */
+.snap{min-height:100dvh;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:center;position:relative;padding:40px 0}
+.snap:first-child{justify-content:flex-start;padding-top:48px}
+.snap:last-child{padding-bottom:80px}
+.snap>:last-child{margin-bottom:0}
+.snap .bento{margin-bottom:0}
+.snap .mid{margin-bottom:0}
+.snap .rev{margin-top:0;margin-bottom:0}
+.snap .rev .sec{margin-bottom:14px}
+.snap .chart-row{margin-bottom:0}
+.snap .leads{margin-bottom:0;margin-top:0}
+.snap .tbl{margin-bottom:0}
+.snap .tl{margin-bottom:0}
+.snap .showcase{margin-bottom:0}
+
+/* ═══ DYNAMIC ISLAND ═══ */
+.snap-nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:9998;display:flex;align-items:center;gap:16px;background:rgba(12,48,32,0.65);backdrop-filter:blur(28px) saturate(1.5);-webkit-backdrop-filter:blur(28px) saturate(1.5);border:1px solid rgba(52,211,153,0.14);border-radius:100px;padding:10px 24px;transition:all .6s var(--ease);box-shadow:0 4px 24px rgba(0,0,0,0.35),0 0 0 1px rgba(0,0,0,0.1)}
+.snap-nav:hover{background:rgba(12,48,32,0.88);border-color:rgba(52,211,153,0.30);box-shadow:0 8px 40px rgba(0,0,0,0.45),0 0 50px rgba(52,211,153,0.06)}
+.snap-label{font-family:'Gloock',serif;font-size:13px;color:var(--gold-b);white-space:nowrap;min-width:70px;transition:color .4s}
+.snap-dots{display:flex;gap:10px;align-items:center}
+.snap-dot{width:7px;height:7px;border-radius:50%;background:rgba(240,235,227,0.16);transition:all .4s var(--ease);cursor:pointer;border:none;padding:0;position:relative}
+.snap-dot::after{content:attr(aria-label);position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);font-family:'Outfit',sans-serif;font-size:10px;font-weight:600;letter-spacing:.04em;color:var(--gold-b);white-space:nowrap;opacity:0;transition:opacity .3s;pointer-events:none;background:rgba(12,48,32,0.90);padding:4px 10px;border-radius:8px;border:1px solid rgba(52,211,153,0.15)}
+.snap-dot:hover::after{opacity:1}
+.snap-dot.active{background:var(--gold-b);box-shadow:0 0 10px var(--gold),0 0 28px rgba(200,164,78,0.3);transform:scale(1.6)}
+.snap-dot:hover:not(.active){background:rgba(240,235,227,0.4);transform:scale(1.3)}
+
 /* ═══ RESPONSIVE ═══ */
 @media(max-width:1100px){
   .bento{grid-template-columns:1fr 1fr}.bento-goal{grid-row:auto}
@@ -314,6 +341,9 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   .hero{grid-template-columns:1fr}.h-div{display:none}
 }
 @media(max-width:700px){
+  html{scroll-snap-type:none}
+  .snap{min-height:auto;scroll-snap-align:none;display:block;padding:24px 0}
+  .snap-nav{display:none}
   .wrap{padding:28px 16px 56px}
   .bento{grid-template-columns:1fr}
   .leads{grid-template-columns:repeat(3,1fr)}
@@ -360,6 +390,12 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 
 <div class="wrap">
 
+<nav class="snap-nav" id="snap-nav" aria-label="Sektionsnavigation">
+  <span class="snap-label" id="snap-label">Överblick</span>
+  <div class="snap-dots" id="snap-dots"></div>
+</nav>
+
+<section class="snap" data-label="Överblick">
 <header class="hdr">
   <div class="hdr-left">
     <div class="hdr-eye">
@@ -418,12 +454,14 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   <div class="bento-kpi glass reveal" style="transition-delay:.25s"><div class="shine"></div><span class="kpi-label">Konvertering</span><p class="kpi-val" id="k-conv">—</p><p class="kpi-sub">Stängda / alla kontaktade</p><div class="kpi-bar" id="k-conv-bar" style="background:linear-gradient(90deg,var(--emerald-b),var(--gold))"></div></div>
   <div class="bento-kpi glass reveal" style="transition-delay:.30s"><div class="shine"></div><span class="kpi-label">Aktiva leads</span><p class="kpi-val" id="k-leads">—</p><p class="kpi-sub" id="k-leads-sub"></p><div class="kpi-bar" id="k-leads-bar" style="background:linear-gradient(90deg,var(--amber),rgba(251,191,36,0.3))"></div></div>
 </section>
+</section>
 
-<hr class="sep"/>
-
+<section class="snap" data-label="Samarbeten">
 <div class="sec"><h2>Stängda <em>samarbeten</em></h2></div>
 <div class="showcase" id="showcase"></div>
+</section>
 
+<section class="snap" data-label="Pipeline">
 <div class="mid">
   <div class="pipe glass reveal"><div class="shine"></div>
     <div class="pipe-hd"><span class="label">Pipeline-status</span></div>
@@ -437,19 +475,23 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   </div>
   <div class="cc glass reveal" style="transition-delay:.08s"><div class="shine"></div><p class="cc-label">Pipeline-fördelning</p><div class="cc-area"><canvas id="ch-pipe"></canvas></div></div>
 </div>
+</section>
 
+<section class="snap" data-label="Intäkter">
 <div class="rev">
   <div class="sec"><h2>Intäkts<em>tidslinje</em></h2></div>
   <div class="rev-card glass reveal"><div class="shine"></div><p class="cc-label">Kumulativ intäkt · april 2026</p><div class="rev-area"><canvas id="ch-rev"></canvas></div></div>
 </div>
+</section>
 
+<section class="snap" data-label="Analys">
 <div class="chart-row">
   <div class="cc glass reveal"><div class="shine"></div><p class="cc-label">Värde per status</p><div class="cc-area"><canvas id="ch-val"></canvas></div></div>
   <div class="cc glass reveal" style="transition-delay:.08s"><div class="shine"></div><p class="cc-label">Leads-status</p><div class="cc-area"><canvas id="ch-leads"></canvas></div></div>
 </div>
+</section>
 
-<hr class="sep"/>
-
+<section class="snap" data-label="Leads">
 <div class="sec"><h2>Leads <em>översikt</em></h2></div>
 <div class="leads">
   <div class="lead-c reveal"><p class="lead-n" id="ln-total">—</p><p class="lead-l">Totala</p></div>
@@ -458,16 +500,16 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   <div class="lead-c reveal" style="transition-delay:.15s"><p class="lead-n" id="ln-ni">—</p><p class="lead-l">Ej intresserade</p></div>
   <div class="lead-c reveal" style="transition-delay:.20s"><p class="lead-n" id="ln-ready" style="color:var(--gold-b)">—</p><p class="lead-l">Redo</p></div>
 </div>
+</section>
 
-<hr class="sep"/>
-
+<section class="snap" data-label="Affärer">
 <div class="tbl glass reveal">
   <div class="tbl-hd"><span class="label">Alla affärer</span><div class="pills"><span class="pill on" data-f="all">Alla</span><span class="pill" data-f="closed">Stängda</span><span class="pill" data-f="meeting">Möten</span><span class="pill" data-f="pitched">Offerter</span><span class="pill" data-f="declined">Avböjda</span></div></div>
   <table><thead><tr><th>Företag</th><th>Kategori</th><th>Status</th><th>Värde</th><th>Kontaktad</th><th>Pitch</th></tr></thead><tbody id="tbody"></tbody></table>
 </div>
+</section>
 
-<hr class="sep"/>
-
+<section class="snap" data-label="Aktivitet">
 <div class="sec"><h2>Aktivitets<em>logg</em></h2></div>
 <div class="tl" id="tl"><div class="tl-line" id="tl-line"></div></div>
 
@@ -475,6 +517,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   <p class="footer-brand">Villa <em>Sjövik</em></p>
   <p class="footer-info">Sales Dashboard · deals.json · Claude + Qwen · <span id="f-date"></span></p>
 </footer>
+</section>
 
 </div>
 
@@ -911,6 +954,45 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
   window.addEventListener('resize',()=>{
     const positions=[[.15,.22],[.82,.60],[.70,.15],[.22,.72],[.50,.42],[.90,.25],[.08,.50]];
     shapes.forEach((sh,i)=>{sh.cx=W*positions[i][0];sh.cy=H*positions[i][1]});
+  });
+})();
+
+/* ═══ SNAP NAV — Dynamic Island ═══ */
+(function(){
+  const nav=document.getElementById('snap-nav');
+  const label=document.getElementById('snap-label');
+  const dotsWrap=document.getElementById('snap-dots');
+  const sections=document.querySelectorAll('.snap[data-label]');
+  if(!sections.length||!nav)return;
+
+  sections.forEach((s,i)=>{
+    const dot=document.createElement('button');
+    dot.className='snap-dot'+(i===0?' active':'');
+    dot.setAttribute('aria-label',s.dataset.label);
+    dot.addEventListener('click',()=>s.scrollIntoView({behavior:'smooth'}));
+    dotsWrap.appendChild(dot);
+  });
+
+  const dots=dotsWrap.querySelectorAll('.snap-dot');
+  let current=0;
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const idx=[...sections].indexOf(e.target);
+        if(idx>=0&&idx!==current){
+          current=idx;
+          label.textContent=e.target.dataset.label;
+          dots.forEach((d,i)=>d.classList.toggle('active',i===idx));
+        }
+      }
+    });
+  },{threshold:0.35});
+  sections.forEach(s=>obs.observe(s));
+
+  // Keyboard nav — arrow up/down to switch sections
+  document.addEventListener('keydown',e=>{
+    if(e.key==='ArrowDown'&&current<sections.length-1){e.preventDefault();sections[current+1].scrollIntoView({behavior:'smooth'})}
+    if(e.key==='ArrowUp'&&current>0){e.preventDefault();sections[current-1].scrollIntoView({behavior:'smooth'})}
   });
 })();
 </script>

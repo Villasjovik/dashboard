@@ -1217,11 +1217,13 @@ const meetings = DATA.deals.filter(d=>d.status==='meeting');
 const pitched  = DATA.deals.filter(d=>d.status==='pitched');
 const declined = DATA.deals.filter(d=>d.status==='declined');
 
-const closedValue   = closed.reduce((s,d)=>s+(d.value||0),0);
-const meetingValue  = meetings.reduce((s,d)=>s+(d.value||0),0);
-const pitchedValue  = pitched.reduce((s,d)=>s+(d.value||0),0);
-const pipelineValue = meetingValue + pitchedValue;
-const convRate      = DATA.deals.length > 0 ? (closed.length/DATA.deals.length*100) : 0;
+const closedValue    = closed.reduce((s,d)=>s+(d.value||0),0);
+const meetingValue   = meetings.reduce((s,d)=>s+(d.value||0),0);
+const pitchedValue   = pitched.reduce((s,d)=>s+(d.value||0),0);
+const pipelineMax    = meetingValue + pitchedValue;
+const pipelineMin    = [...meetings,...pitched].reduce((s,d)=>s+(d.value_min||d.value||0),0);
+const pipelineValue  = pipelineMax;
+const convRate       = DATA.deals.length > 0 ? (closed.length/DATA.deals.length*100) : 0;
 
 document.getElementById('header-total').textContent = fmt(closedValue+pipelineValue)+' kr i spel';
 
@@ -1353,10 +1355,15 @@ setTimeout(()=>{
   document.getElementById('kpi-closed-trend').textContent = '↑ '+Math.round(closedValue/DATA.meta.monthly_goal*100)+'% av mål';
   document.getElementById('kpi-closed-bar').style.width   = Math.min(closedValue/DATA.meta.monthly_goal*100,100)+'%';
 
-  countUp(document.getElementById('kpi-pipeline'), pipelineValue, 'kr');
+  const pipelineEl = document.getElementById('kpi-pipeline');
+  if(pipelineMin < pipelineMax){
+    pipelineEl.innerHTML = fmtK(pipelineMin)+'<span style="color:var(--muted);font-size:.6em;margin:0 4px">–</span>'+fmtK(pipelineMax)+'<span class="unit">kr</span>';
+  } else {
+    countUp(pipelineEl, pipelineMax, 'kr');
+  }
   document.getElementById('kpi-pipeline-sub').textContent   = (meetings.length+pitched.length)+' aktiva deals';
   document.getElementById('kpi-pipeline-trend').textContent = '◆ '+(meetings.length+pitched.length)+' deals';
-  document.getElementById('kpi-pipeline-bar').style.width   = Math.min(pipelineValue/200000*100,100)+'%';
+  document.getElementById('kpi-pipeline-bar').style.width   = Math.min(pipelineMax/300000*100,100)+'%';
 
   countUp(document.getElementById('kpi-conv'), Math.round(convRate*10)/10, '%');
   document.getElementById('kpi-conv-bar').style.width = convRate+'%';

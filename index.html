@@ -392,6 +392,13 @@ hr.rule-gold {
   letter-spacing:-0.02em; margin-bottom:10px;
 }
 
+.kpi-upside {
+  display:block;
+  font-family:'Epilogue',sans-serif;
+  font-size:11px; font-weight:400;
+  color:var(--dim); opacity:.7;
+  margin-top:4px; letter-spacing:.03em;
+}
 .kpi-value .unit {
   font-family:'Epilogue',sans-serif;
   font-size:13px; font-weight:400;
@@ -1361,7 +1368,7 @@ setTimeout(()=>{
 
   const pipelineEl = document.getElementById('kpi-pipeline');
   if(pipelineMin < pipelineMax){
-    pipelineEl.innerHTML = fmtK(pipelineMin)+'<span style="color:var(--muted);font-size:.6em;margin:0 4px">–</span>'+fmtK(pipelineMax)+'<span class="unit">kr</span>';
+    pipelineEl.innerHTML = fmtK(pipelineMin)+'<span class="unit">kr</span><span class="kpi-upside">(upp till '+fmtK(pipelineMax)+')</span>';
   } else {
     countUp(pipelineEl, pipelineMax, 'kr');
   }

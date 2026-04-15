@@ -1214,14 +1214,18 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
     if(idx===current)return;
     current=idx;
     clearTimeout(dotTimer);
-    /* Animate label width with GSAP for smooth shrink + grow */
+    /* Kill any running animation + disable CSS transition BEFORE touching DOM */
+    gsap.killTweensOf(label);
+    label.style.transition='none';
+    /* Lock current visual width so textContent swap causes no flash */
     const oldW=label.offsetWidth;
-    label.textContent=sections[idx].dataset.label;
-    label.style.maxWidth='none';
-    const newW=label.scrollWidth;
     label.style.width=oldW+'px';
     label.style.overflow='hidden';
-    label.style.transition='none';
+    label.style.maxWidth='none';
+    /* Now swap text (element stays at oldW because width is pixel-locked) */
+    label.textContent=sections[idx].dataset.label;
+    const newW=label.scrollWidth;
+    /* Animate to new width */
     gsap.to(label,{width:newW,duration:.5,ease:'expo.out',onComplete:()=>{
       label.style.width='';label.style.maxWidth=newW+'px';label.style.transition='';label.style.overflow='';
     }});

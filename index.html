@@ -326,7 +326,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 /* ═══ DYNAMIC ISLAND ═══ */
 .snap-nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:9998;display:flex;align-items:center;gap:16px;background:rgba(12,48,32,0.65);backdrop-filter:blur(28px) saturate(1.5);-webkit-backdrop-filter:blur(28px) saturate(1.5);border:1px solid rgba(52,211,153,0.14);border-radius:100px;padding:10px 24px;transition:all .6s var(--ease);box-shadow:0 4px 24px rgba(0,0,0,0.35),0 0 0 1px rgba(0,0,0,0.1)}
 .snap-nav:hover{background:rgba(12,48,32,0.88);border-color:rgba(52,211,153,0.30);box-shadow:0 8px 40px rgba(0,0,0,0.45),0 0 50px rgba(52,211,153,0.06)}
-.snap-label{font-family:'Gloock',serif;font-size:13px;color:var(--gold-b);white-space:nowrap;min-width:70px;transition:color .4s}
+.snap-label{font-family:'Gloock',serif;font-size:13px;color:var(--gold-b);white-space:nowrap;display:inline-block;overflow:hidden;transition:max-width .5s var(--ease),color .4s}
 .snap-dots{display:flex;gap:10px;align-items:center}
 .snap-dot{width:7px;height:7px;border-radius:50%;background:rgba(240,235,227,0.16);transition:all .4s var(--ease);cursor:pointer;border:none;padding:0;position:relative}
 .snap-dot::after{content:attr(aria-label);position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);font-family:'Outfit',sans-serif;font-size:10px;font-weight:600;letter-spacing:.04em;color:var(--gold-b);white-space:nowrap;opacity:0;transition:opacity .3s;pointer-events:none;background:rgba(12,48,32,0.90);padding:4px 10px;border-radius:8px;border:1px solid rgba(52,211,153,0.15)}
@@ -1057,10 +1057,20 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
   const wraps=dotsWrap.querySelectorAll('.snap-dot-wrap');
 
   let current=0;
+  /* Set initial label width */
+  label.style.maxWidth=label.scrollWidth+'px';
+
   function updateNav(idx){
     if(idx===current)return;
     current=idx;
+    /* Animate label width: lock current → set new text → measure → animate to new */
+    const oldW=label.scrollWidth;
+    label.style.maxWidth=oldW+'px';
     label.textContent=sections[idx].dataset.label;
+    const newW=label.scrollWidth;
+    /* Force reflow so browser registers the old max-width before transitioning */
+    label.offsetWidth;
+    label.style.maxWidth=newW+'px';
     dots.forEach((d,i)=>d.classList.toggle('active',i===idx));
     wraps.forEach((w,i)=>w.classList.toggle('is-active',i===idx));
   }

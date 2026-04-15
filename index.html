@@ -778,7 +778,7 @@ evts.forEach((ev,i)=>{
   const co=coMatch?coMatch[1]:'';
   const desc=ev.text.replace(/<strong>.*?<\/strong>\s*—\s*/,'');
   // Find category
-  const deal=deals.find(dd=>dd.company===co);
+  const deal=D.deals.find(dd=>dd.company===co);
   const cat=deal?deal.category:'';
   card.innerHTML='<div class="tl-card-top"><span class="tl-card-co">'+co+'</span><span class="tl-card-date">'+dateStr+'</span></div>'+
     '<p class="tl-card-desc">'+desc+'</p>'+

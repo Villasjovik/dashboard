@@ -114,6 +114,18 @@
       "notes": "Pitch skickad 2026-04-14. Paket: 18 500 / 39 000 / 87 000 (6 mån). Inväntar svar från Shkurte."
     },
     {
+      "id": "brunngard",
+      "company": "Brunngård",
+      "contact": "Elinne Sutt",
+      "category": "Hälsa & Livsstil",
+      "status": "pitched",
+      "value": 28500,
+      "date_contacted": "2026-04-15",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/brunngard/",
+      "notes": "Pitch skickad 2026-04-15. Bildpaket 18 500 kr / Komplett 28 500 kr. Bildproduktion + publicering."
+    },
+    {
       "id": "sunseeker",
       "company": "Sunseeker",
       "contact": "Aaron",

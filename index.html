@@ -110,7 +110,7 @@ body::after{
 .hdr-eye{display:flex;align-items:center;gap:10px;margin-bottom:20px}
 .live-dot{width:7px;height:7px;border-radius:50%;background:var(--emerald-b);box-shadow:0 0 10px var(--emerald),0 0 24px rgba(52,211,153,0.35);animation:pulse 2.5s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
-.hdr h1{font-family:'Gloock',Georgia,serif;font-size:clamp(56px,8.5vw,110px);font-weight:400;line-height:.88;letter-spacing:-.04em}
+.hdr h1{font-family:'Gloock',Georgia,serif;font-size:clamp(52px,8vw,100px);font-weight:400;line-height:.90;letter-spacing:-.04em;overflow:visible}
 .hdr h1 em{font-style:italic;background:linear-gradient(135deg,var(--gold-b),var(--gold),#b8944a,var(--gold-b));background-size:300% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:goldFlow 5s ease-in-out infinite}
 @keyframes goldFlow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .hdr-right{text-align:right;padding-top:8px;flex-shrink:0}
@@ -302,6 +302,7 @@ tr:hover td{background:rgba(200,164,78,0.02);padding-left:32px}
 </head>
 <body>
 
+<canvas id="particles" aria-hidden="true" style="position:fixed;inset:0;z-index:0;pointer-events:none"></canvas>
 <div id="noise" aria-hidden="true"></div>
 
 <!-- Login Gate -->
@@ -617,20 +618,22 @@ function renderTbl(f){
 renderTbl('all');
 document.querySelectorAll('.pill').forEach(p=>p.addEventListener('click',()=>{document.querySelectorAll('.pill').forEach(x=>x.classList.remove('on'));p.classList.add('on');renderTbl(p.dataset.f)}));
 
-/* ═══ TIMELINE — COLOR-CODED ═══ */
-const evts=[...D.deals].filter(d=>d.date_contacted||d.date_closed).map(d=>{
-  const date=d.date_closed||d.date_contacted;
-  const isClosed=d.status==='closed';
-  const isDeclined=d.status==='declined';
-  let mood='t-amber'; // default: pitched/neutral
-  if(isClosed)mood='t-green';
-  else if(isDeclined)mood='t-red';
-  let text='<strong>'+d.company+'</strong> — ';
-  if(isClosed)text+='avtal stängt.'+(d.value?' '+fmt(d.value)+' kr.':'')+(d.notes?' '+d.notes:'');
-  else if(isDeclined)text+='avböjt.'+(d.notes?' '+d.notes:'');
-  else text+='pitch skickad.'+(d.value_label?' '+d.value_label+' kr.':'')+(d.notes?' '+d.notes:'');
-  return{date,mood,text};
-}).sort((a,b)=>new Date(b.date)-new Date(a.date));
+/* ═══ TIMELINE — COLOR-CODED, MULTIPLE EVENTS PER DEAL ═══ */
+const evts=[];
+D.deals.forEach(d=>{
+  // Event 1: pitch/contact sent
+  if(d.date_contacted){
+    evts.push({date:d.date_contacted,mood:'t-amber',text:'<strong>'+d.company+'</strong> — pitch skickad.'+(d.value_label?' '+d.value_label+' kr.':'')});
+  }
+  // Event 2: outcome (closed or declined)
+  if(d.status==='closed'&&(d.date_closed||d.date_contacted)){
+    evts.push({date:d.date_closed||d.date_contacted,mood:'t-green',text:'<strong>'+d.company+'</strong> — avtal stängt.'+(d.value?' '+fmt(d.value)+' kr.':'')+(d.notes?' '+d.notes:'')});
+  }else if(d.status==='declined'){
+    const dd=d.date_closed||d.date_contacted;
+    if(dd)evts.push({date:dd,mood:'t-red',text:'<strong>'+d.company+'</strong> — avböjt.'+(d.notes?' '+d.notes:'')});
+  }
+});
+evts.sort((a,b)=>new Date(b.date)-new Date(a.date));
 
 const tlEl=document.getElementById('tl');
 const lineEl=document.getElementById('tl-line');
@@ -685,6 +688,88 @@ gsap.from('.hdr-right',{y:18,opacity:0,duration:.8,ease:'expo.out',delay:.4});
 gsap.from('.sep-gold',{scaleX:0,transformOrigin:'left',duration:1.5,ease:'expo.out',delay:.5});
 gsap.utils.toArray('hr.sep').forEach(el=>{gsap.from(el,{scaleX:0,transformOrigin:'left',duration:1,ease:'expo.out',scrollTrigger:{trigger:el,start:'top 92%',once:true}})});
 gsap.utils.toArray('.sec').forEach(el=>{gsap.from(el,{y:25,opacity:0,duration:.8,ease:'expo.out',scrollTrigger:{trigger:el,start:'top 90%',once:true}})});
+
+/* ═══ PARTICLE CONSTELLATION BACKGROUND ═══ */
+(function(){
+  const cv=document.getElementById('particles');
+  const ctx=cv.getContext('2d');
+  let W,H;
+  const COUNT=70;
+  const CONNECT_DIST=140;
+  const particles=[];
+
+  function resize(){W=cv.width=window.innerWidth;H=cv.height=window.innerHeight}
+  resize();
+  window.addEventListener('resize',resize);
+
+  // Colors: warm gold and emerald tones
+  const colors=['rgba(200,164,78,','rgba(52,211,153,','rgba(110,231,183,','rgba(45,212,191,'];
+
+  for(let i=0;i<COUNT;i++){
+    const c=colors[Math.floor(Math.random()*colors.length)];
+    particles.push({
+      x:Math.random()*W,
+      y:Math.random()*H,
+      vx:(Math.random()-.5)*.25,
+      vy:(Math.random()-.5)*.25,
+      r:Math.random()*1.8+.6,
+      color:c,
+      alpha:.15+Math.random()*.25,
+      pulse:Math.random()*Math.PI*2,
+      pulseSpeed:.003+Math.random()*.004
+    });
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+
+    // Draw connections first
+    for(let i=0;i<COUNT;i++){
+      const a=particles[i];
+      for(let j=i+1;j<COUNT;j++){
+        const b=particles[j];
+        const dx=a.x-b.x,dy=a.y-b.y;
+        const dist=Math.sqrt(dx*dx+dy*dy);
+        if(dist<CONNECT_DIST){
+          const opacity=(.08*(1-dist/CONNECT_DIST)).toFixed(3);
+          ctx.beginPath();
+          ctx.moveTo(a.x,a.y);
+          ctx.lineTo(b.x,b.y);
+          ctx.strokeStyle='rgba(200,164,78,'+opacity+')';
+          ctx.lineWidth=.5;
+          ctx.stroke();
+        }
+      }
+    }
+
+    // Draw particles
+    particles.forEach(p=>{
+      p.pulse+=p.pulseSpeed;
+      const a=(p.alpha+Math.sin(p.pulse)*.08).toFixed(3);
+      const r=p.r+Math.sin(p.pulse)*.3;
+
+      // Glow
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,r*3,0,Math.PI*2);
+      ctx.fillStyle=p.color+(a*.3).toFixed(3)+')';
+      ctx.fill();
+
+      // Core
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,r,0,Math.PI*2);
+      ctx.fillStyle=p.color+a+')';
+      ctx.fill();
+
+      // Move
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<-10)p.x=W+10;if(p.x>W+10)p.x=-10;
+      if(p.y<-10)p.y=H+10;if(p.y>H+10)p.y=-10;
+    });
+
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
 </script>
 </body>
 </html>

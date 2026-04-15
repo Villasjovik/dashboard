@@ -403,7 +403,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .tl-card.tc-red::before{background:var(--rose);box-shadow:0 0 12px rgba(251,113,133,0.4)}
 .tl-card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
 .tl-card-co{font-weight:600;font-size:14px;color:var(--ink)}
-.tl-card-logo{height:22px;max-width:120px;object-fit:contain;filter:brightness(0) invert(1);opacity:.85}
+.tl-card-logo{height:18px;max-width:100px;object-fit:contain;filter:brightness(0) invert(1);opacity:.85}
 .tl-card-date{font-size:10px;font-weight:600;letter-spacing:.10em;text-transform:uppercase}
 .tc-green .tl-card-date{color:var(--emerald-b)}
 .tc-amber .tl-card-date{color:var(--amber)}
@@ -851,7 +851,7 @@ regSec(3,()=>{
 document.querySelectorAll('.pill').forEach(p=>p.addEventListener('click',()=>{document.querySelectorAll('.pill').forEach(x=>x.classList.remove('on'));p.classList.add('on');renderTbl(p.dataset.f)}));
 
 /* ═══ LOGO MAP ═══ */
-const LOGOS={brunngard:'logos/brunngard.png',beslagonline:'logos/beslagonline.png',klinta:'logos/klinta.avif',velux:'logos/velux.png',jape:'logos/jape.webp',thefriendlyhome:'logos/thefriendlyhome.jpg',tergent:'logos/tergent.jpg'};
+const LOGOS={brunngard:'logos/brunngard.png',beslagonline:'logos/beslagonline.png',klinta:'logos/klinta.avif',jape:'logos/jape.webp'};
 
 /* ═══ TIMELINE — COLOR-CODED, MULTIPLE EVENTS PER DEAL ═══ */
 const evts=[];

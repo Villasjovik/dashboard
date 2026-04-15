@@ -285,7 +285,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .td-link:hover{opacity:1}
 
 /* ═══ TIMELINE — COLOR-CODED ═══ */
-.tl{position:relative;padding-left:48px;margin-bottom:44px}
+.tl{position:relative;margin-bottom:44px}
 .tl-line{position:absolute;left:18px;top:0;bottom:0;width:3px;border-radius:2px;overflow:hidden}
 .tl-seg{width:100%;position:absolute;left:0;transition:height .6s var(--ease)}
 .tl-item{position:relative;padding:14px 0 22px}
@@ -313,12 +313,12 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .snap:last-child{padding-bottom:80px}
 .snap>:last-child{margin-bottom:0}
 .snap .bento{margin-bottom:0}
-.snap .mid{margin-bottom:0}
+.snap .mid{margin-bottom:0;margin-top:20px}
 .snap .rev{margin-top:0;margin-bottom:0}
 .snap .rev .sec{margin-bottom:14px}
-.snap .chart-row{margin-bottom:0}
+.snap .chart-row{margin-bottom:0;margin-top:20px}
 .snap .leads{margin-bottom:0;margin-top:0}
-.snap .tbl{margin-bottom:0}
+.snap .tbl{margin-bottom:0;margin-top:28px}
 .snap .tl{margin-bottom:0}
 .snap .showcase{margin-bottom:0}
 
@@ -330,8 +330,41 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .snap-dot{width:7px;height:7px;border-radius:50%;background:rgba(240,235,227,0.16);transition:all .4s var(--ease);cursor:pointer;border:none;padding:0;position:relative}
 .snap-dot::after{content:attr(aria-label);position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);font-family:'Outfit',sans-serif;font-size:10px;font-weight:600;letter-spacing:.04em;color:var(--gold-b);white-space:nowrap;opacity:0;transition:opacity .3s;pointer-events:none;background:rgba(12,48,32,0.90);padding:4px 10px;border-radius:8px;border:1px solid rgba(52,211,153,0.15)}
 .snap-dot:hover::after{opacity:1}
-.snap-dot.active{background:var(--gold-b);box-shadow:0 0 10px var(--gold),0 0 28px rgba(200,164,78,0.3);transform:scale(1.6)}
+.snap-dot.active{background:var(--gold-b);box-shadow:0 0 10px var(--gold),0 0 28px rgba(200,164,78,0.3);transform:scale(1.5)}
 .snap-dot:hover:not(.active){background:rgba(240,235,227,0.4);transform:scale(1.3)}
+
+/* Long sections — free scroll, top-aligned */
+.snap-long{min-height:100dvh;justify-content:flex-start;padding-top:60px;padding-bottom:60px}
+
+/* Dynamic Island — Apple hover expand */
+.snap-dot-wrap{display:flex;align-items:center;gap:0;cursor:pointer}
+.snap-dot-name{display:inline-block;max-width:0;opacity:0;overflow:hidden;white-space:nowrap;font-family:'Outfit',sans-serif;font-size:10px;font-weight:600;letter-spacing:.04em;color:var(--muted);transition:max-width .45s var(--ease),opacity .35s var(--ease),margin .35s var(--ease);margin-left:0}
+.snap-nav:hover .snap-dot-name{max-width:100px;opacity:1;margin-left:6px}
+.snap-nav:hover .snap-dot-wrap.is-active .snap-dot-name{color:var(--gold-b)}
+
+/* Activity log upgrade */
+.tl-filters{display:flex;gap:6px;margin-bottom:24px;flex-wrap:wrap}
+.tl-pill{padding:5px 14px;border-radius:100px;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--border);color:var(--muted);cursor:pointer;background:transparent;transition:all .3s var(--ease);font-family:'Outfit',sans-serif}
+.tl-pill:hover,.tl-pill.on{border-color:var(--gold);color:var(--gold-b);background:var(--gold-dim)}
+.tl-card{background:linear-gradient(145deg,rgba(12,56,36,0.45),rgba(8,44,28,0.35));border:1px solid var(--border);border-radius:16px;padding:18px 22px;margin-bottom:10px;transition:all .3s var(--ease);position:relative;overflow:hidden}
+.tl-card:hover{border-color:var(--border-hi);transform:translateX(4px)}
+.tl-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:2px}
+.tl-card.tc-green::before{background:var(--emerald-b);box-shadow:0 0 12px rgba(52,211,153,0.4)}
+.tl-card.tc-amber::before{background:var(--amber);box-shadow:0 0 12px rgba(251,191,36,0.4)}
+.tl-card.tc-red::before{background:var(--rose);box-shadow:0 0 12px rgba(251,113,133,0.4)}
+.tl-card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.tl-card-co{font-weight:600;font-size:14px;color:var(--ink)}
+.tl-card-date{font-size:10px;font-weight:600;letter-spacing:.10em;text-transform:uppercase}
+.tc-green .tl-card-date{color:var(--emerald-b)}
+.tc-amber .tl-card-date{color:var(--amber)}
+.tc-red .tl-card-date{color:var(--rose)}
+.tl-card-desc{font-size:12px;color:var(--muted);line-height:1.6}
+.tl-card-desc strong{color:var(--ink);font-weight:500}
+.tl-card-cat{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:100px;font-size:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:rgba(200,164,78,0.08);color:var(--gold);margin-top:8px}
+.tl-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:28px}
+.tl-stat{text-align:center;padding:16px;border-radius:16px;background:linear-gradient(145deg,rgba(12,56,36,0.50),rgba(8,44,28,0.38));border:1px solid var(--border)}
+.tl-stat-n{font-family:'Gloock',serif;font-size:28px;margin-bottom:4px;font-variant-numeric:tabular-nums}
+.tl-stat-l{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 
 /* ═══ RESPONSIVE ═══ */
 @media(max-width:1100px){
@@ -456,12 +489,9 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 </section>
 </section>
 
-<section class="snap" data-label="Samarbeten">
+<section class="snap" data-label="Samarbeten & Pipeline">
 <div class="sec"><h2>Stängda <em>samarbeten</em></h2></div>
 <div class="showcase" id="showcase"></div>
-</section>
-
-<section class="snap" data-label="Pipeline">
 <div class="mid">
   <div class="pipe glass reveal"><div class="shine"></div>
     <div class="pipe-hd"><span class="label">Pipeline-status</span></div>
@@ -477,21 +507,18 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 </div>
 </section>
 
-<section class="snap" data-label="Intäkter">
+<section class="snap" data-label="Intäkter & Analys">
 <div class="rev">
   <div class="sec"><h2>Intäkts<em>tidslinje</em></h2></div>
   <div class="rev-card glass reveal"><div class="shine"></div><p class="cc-label">Kumulativ intäkt · april 2026</p><div class="rev-area"><canvas id="ch-rev"></canvas></div></div>
 </div>
-</section>
-
-<section class="snap" data-label="Analys">
 <div class="chart-row">
   <div class="cc glass reveal"><div class="shine"></div><p class="cc-label">Värde per status</p><div class="cc-area"><canvas id="ch-val"></canvas></div></div>
   <div class="cc glass reveal" style="transition-delay:.08s"><div class="shine"></div><p class="cc-label">Leads-status</p><div class="cc-area"><canvas id="ch-leads"></canvas></div></div>
 </div>
 </section>
 
-<section class="snap" data-label="Leads">
+<section class="snap snap-long" data-label="Leads & Affärer">
 <div class="sec"><h2>Leads <em>översikt</em></h2></div>
 <div class="leads">
   <div class="lead-c reveal"><p class="lead-n" id="ln-total">—</p><p class="lead-l">Totala</p></div>
@@ -500,18 +527,15 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   <div class="lead-c reveal" style="transition-delay:.15s"><p class="lead-n" id="ln-ni">—</p><p class="lead-l">Ej intresserade</p></div>
   <div class="lead-c reveal" style="transition-delay:.20s"><p class="lead-n" id="ln-ready" style="color:var(--gold-b)">—</p><p class="lead-l">Redo</p></div>
 </div>
-</section>
-
-<section class="snap" data-label="Affärer">
 <div class="tbl glass reveal">
   <div class="tbl-hd"><span class="label">Alla affärer</span><div class="pills"><span class="pill on" data-f="all">Alla</span><span class="pill" data-f="closed">Stängda</span><span class="pill" data-f="meeting">Möten</span><span class="pill" data-f="pitched">Offerter</span><span class="pill" data-f="declined">Avböjda</span></div></div>
   <table><thead><tr><th>Företag</th><th>Kategori</th><th>Status</th><th>Värde</th><th>Kontaktad</th><th>Pitch</th></tr></thead><tbody id="tbody"></tbody></table>
 </div>
 </section>
 
-<section class="snap" data-label="Aktivitet">
+<section class="snap snap-long" data-label="Aktivitet">
 <div class="sec"><h2>Aktivitets<em>logg</em></h2></div>
-<div class="tl" id="tl"><div class="tl-line" id="tl-line"></div></div>
+<div class="tl" id="tl"></div>
 
 <footer class="footer">
   <p class="footer-brand">Villa <em>Sjövik</em></p>
@@ -706,24 +730,68 @@ D.deals.forEach(d=>{
 evts.sort((a,b)=>new Date(b.date)-new Date(a.date));
 
 const tlEl=document.getElementById('tl');
-const lineEl=document.getElementById('tl-line');
 const moodColors={'t-green':'#34d399','t-amber':'#fbbf24','t-red':'#fb7185'};
+const moodMap={'t-green':'tc-green','t-amber':'tc-amber','t-red':'tc-red'};
 
-// Build colored segments for the timeline bar
-let segHtml='';
-const segH=100/Math.max(evts.length,1);
-evts.forEach((ev,i)=>{
-  segHtml+='<div class="tl-seg" style="top:'+(i*segH)+'%;height:'+segH+'%;background:'+moodColors[ev.mood]+'"></div>';
-});
-lineEl.innerHTML=segHtml;
+// Summary stats
+const nGreen=evts.filter(e=>e.mood==='t-green').length;
+const nAmber=evts.filter(e=>e.mood==='t-amber').length;
+const nRed=evts.filter(e=>e.mood==='t-red').length;
+const summaryHtml='<div class="tl-summary reveal">'+
+  '<div class="tl-stat"><p class="tl-stat-n" style="color:var(--emerald-b)">'+nGreen+'</p><p class="tl-stat-l">Stängda</p></div>'+
+  '<div class="tl-stat"><p class="tl-stat-n" style="color:var(--amber)">'+nAmber+'</p><p class="tl-stat-l">Pitchade</p></div>'+
+  '<div class="tl-stat"><p class="tl-stat-n" style="color:var(--rose)">'+nRed+'</p><p class="tl-stat-l">Avböjda</p></div>'+
+'</div>';
 
+// Filter pills
+const filterHtml='<div class="tl-filters">'+
+  '<span class="tl-pill on" data-tf="all">Alla</span>'+
+  '<span class="tl-pill" data-tf="tc-green">Stängda</span>'+
+  '<span class="tl-pill" data-tf="tc-amber">Pitchade</span>'+
+  '<span class="tl-pill" data-tf="tc-red">Avböjda</span>'+
+'</div>';
+
+// Remove old tl-line if present
+const oldLine=document.getElementById('tl-line');
+if(oldLine)oldLine.remove();
+
+// Insert summary + filters before cards
+tlEl.insertAdjacentHTML('afterbegin',summaryHtml+filterHtml);
+
+// Build cards
+const cardsWrap=document.createElement('div');
+cardsWrap.id='tl-cards';
 evts.forEach((ev,i)=>{
-  const item=document.createElement('div');
-  item.className='tl-item '+ev.mood+' reveal';
-  item.style.transitionDelay=(i*.05)+'s';
+  const card=document.createElement('div');
+  const tcClass=moodMap[ev.mood]||'tc-amber';
+  card.className='tl-card '+tcClass+' reveal';
+  card.style.transitionDelay=(i*.04)+'s';
   const d=new Date(ev.date);
-  item.innerHTML='<p class="tl-date">'+d.getDate()+' '+d.toLocaleDateString('sv-SE',{month:'short'})+' '+d.getFullYear()+'</p><p class="tl-text">'+ev.text+'</p>';
-  tlEl.appendChild(item);
+  const dateStr=d.getDate()+' '+d.toLocaleDateString('sv-SE',{month:'short'})+' '+d.getFullYear();
+  // Extract company name from the text
+  const coMatch=ev.text.match(/<strong>(.*?)<\/strong>/);
+  const co=coMatch?coMatch[1]:'';
+  const desc=ev.text.replace(/<strong>.*?<\/strong>\s*—\s*/,'');
+  // Find category
+  const deal=deals.find(dd=>dd.company===co);
+  const cat=deal?deal.category:'';
+  card.innerHTML='<div class="tl-card-top"><span class="tl-card-co">'+co+'</span><span class="tl-card-date">'+dateStr+'</span></div>'+
+    '<p class="tl-card-desc">'+desc+'</p>'+
+    (cat?'<span class="tl-card-cat">'+cat+'</span>':'');
+  cardsWrap.appendChild(card);
+});
+tlEl.appendChild(cardsWrap);
+
+// Filter logic
+tlEl.querySelectorAll('.tl-pill').forEach(pill=>{
+  pill.addEventListener('click',()=>{
+    tlEl.querySelectorAll('.tl-pill').forEach(p=>p.classList.remove('on'));
+    pill.classList.add('on');
+    const f=pill.dataset.tf;
+    cardsWrap.querySelectorAll('.tl-card').forEach(c=>{
+      c.style.display=(f==='all'||c.classList.contains(f))?'':'none';
+    });
+  });
 });
 
 /* ═══ INTERSECTION OBSERVER — runs AFTER all dynamic content ═══ */
@@ -957,7 +1025,7 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
   });
 })();
 
-/* ═══ SNAP NAV — Dynamic Island ═══ */
+/* ═══ SNAP NAV — Dynamic Island (Apple expand) ═══ */
 (function(){
   const nav=document.getElementById('snap-nav');
   const label=document.getElementById('snap-label');
@@ -965,15 +1033,23 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
   const sections=document.querySelectorAll('.snap[data-label]');
   if(!sections.length||!nav)return;
 
+  // Build dot-wrappers with expandable labels
   sections.forEach((s,i)=>{
+    const wrap=document.createElement('div');
+    wrap.className='snap-dot-wrap'+(i===0?' is-active':'');
     const dot=document.createElement('button');
     dot.className='snap-dot'+(i===0?' active':'');
-    dot.setAttribute('aria-label',s.dataset.label);
-    dot.addEventListener('click',()=>s.scrollIntoView({behavior:'smooth'}));
-    dotsWrap.appendChild(dot);
+    const nameSpan=document.createElement('span');
+    nameSpan.className='snap-dot-name';
+    nameSpan.textContent=s.dataset.label;
+    wrap.appendChild(dot);
+    wrap.appendChild(nameSpan);
+    wrap.addEventListener('click',()=>s.scrollIntoView({behavior:'smooth'}));
+    dotsWrap.appendChild(wrap);
   });
 
   const dots=dotsWrap.querySelectorAll('.snap-dot');
+  const wraps=dotsWrap.querySelectorAll('.snap-dot-wrap');
   let current=0;
   const obs=new IntersectionObserver(entries=>{
     entries.forEach(e=>{
@@ -983,13 +1059,13 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
           current=idx;
           label.textContent=e.target.dataset.label;
           dots.forEach((d,i)=>d.classList.toggle('active',i===idx));
+          wraps.forEach((w,i)=>w.classList.toggle('is-active',i===idx));
         }
       }
     });
-  },{threshold:0.35});
+  },{threshold:0.25});
   sections.forEach(s=>obs.observe(s));
 
-  // Keyboard nav — arrow up/down to switch sections
   document.addEventListener('keydown',e=>{
     if(e.key==='ArrowDown'&&current<sections.length-1){e.preventDefault();sections[current+1].scrollIntoView({behavior:'smooth'})}
     if(e.key==='ArrowUp'&&current>0){e.preventDefault();sections[current-1].scrollIntoView({behavior:'smooth'})}

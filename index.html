@@ -403,6 +403,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .tl-card.tc-red::before{background:var(--rose);box-shadow:0 0 12px rgba(251,113,133,0.4)}
 .tl-card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
 .tl-card-co{font-weight:600;font-size:14px;color:var(--ink)}
+.tl-card-logo{height:22px;max-width:120px;object-fit:contain;filter:brightness(0) invert(1);opacity:.85}
 .tl-card-date{font-size:10px;font-weight:600;letter-spacing:.10em;text-transform:uppercase}
 .tc-green .tl-card-date{color:var(--emerald-b)}
 .tc-amber .tl-card-date{color:var(--amber)}
@@ -661,10 +662,6 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 <div class="sec"><h2>Aktivitets<em>logg</em></h2></div>
 <div class="tl" id="tl"></div>
 
-<footer class="footer">
-  <p class="footer-brand">Villa <em>Sjövik</em></p>
-  <p class="footer-info">Sales Dashboard · deals.json · Claude + Qwen · <span id="f-date"></span></p>
-</footer>
 </section>
 
 </div>
@@ -679,7 +676,6 @@ const fK=n=>n>=1000?(n/1000).toFixed(0)+'k':fmt(n);
 
 const ds=new Date().toLocaleDateString('sv-SE',{year:'numeric',month:'long',day:'numeric'});
 document.getElementById('date-now').textContent=ds;
-document.getElementById('f-date').textContent=ds;
 
 const closed=D.deals.filter(d=>d.status==='closed');
 const meets=D.deals.filter(d=>d.status==='meeting');
@@ -854,6 +850,9 @@ regSec(3,()=>{
 });
 document.querySelectorAll('.pill').forEach(p=>p.addEventListener('click',()=>{document.querySelectorAll('.pill').forEach(x=>x.classList.remove('on'));p.classList.add('on');renderTbl(p.dataset.f)}));
 
+/* ═══ LOGO MAP ═══ */
+const LOGOS={brunngard:'logos/brunngard.png',beslagonline:'logos/beslagonline.png',klinta:'logos/klinta.avif',velux:'logos/velux.png',jape:'logos/jape.webp',thefriendlyhome:'logos/thefriendlyhome.jpg',tergent:'logos/tergent.jpg'};
+
 /* ═══ TIMELINE — COLOR-CODED, MULTIPLE EVENTS PER DEAL ═══ */
 const evts=[];
 D.deals.forEach(d=>{
@@ -914,10 +913,12 @@ evts.forEach((ev,i)=>{
   const coMatch=ev.text.match(/<strong>(.*?)<\/strong>/);
   const co=coMatch?coMatch[1]:'';
   const desc=ev.text.replace(/<strong>.*?<\/strong>\s*—\s*/,'');
-  // Find category
+  // Find deal + logo
   const deal=D.deals.find(dd=>dd.company===co);
   const cat=deal?deal.category:'';
-  card.innerHTML='<div class="tl-card-top"><span class="tl-card-co">'+co+'</span><span class="tl-card-date">'+dateStr+'</span></div>'+
+  const logoSrc=deal&&LOGOS[deal.id]?LOGOS[deal.id]:null;
+  const coHtml=logoSrc?'<img src="'+logoSrc+'" alt="'+co+'" class="tl-card-logo">':'<span class="tl-card-co">'+co+'</span>';
+  card.innerHTML='<div class="tl-card-top">'+coHtml+'<span class="tl-card-date">'+dateStr+'</span></div>'+
     '<p class="tl-card-desc">'+desc+'</p>'+
     (cat?'<span class="tl-card-cat">'+cat+'</span>':'');
   cardsWrap.appendChild(card);

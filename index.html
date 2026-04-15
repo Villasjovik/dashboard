@@ -13,31 +13,46 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
+/* ── Animated gradient property ── */
+@property --border-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
 :root {
-  --bg:         oklch(8.5% 0.020 140);
-  --bg2:        oklch(11.5% 0.018 138);
-  --bg3:        oklch(14.5% 0.016 136);
-  --card:       oklch(12.5% 0.017 138);
-  --card-h:     oklch(17% 0.015 136);
-  --border:     oklch(22% 0.013 138);
-  --border-hi:  oklch(72% 0.130 78 / 0.55);
-  --gold:       oklch(72% 0.130 78);
+  --bg:         oklch(7.5% 0.018 200);
+  --bg2:        oklch(10.5% 0.016 198);
+  --bg3:        oklch(13.5% 0.014 196);
+  --card:       oklch(11% 0.014 200 / 0.65);
+  --card-solid: oklch(11% 0.014 200);
+  --card-h:     oklch(15% 0.012 198 / 0.7);
+  --border:     oklch(20% 0.010 200);
+  --border-hi:  oklch(72% 0.130 78 / 0.50);
+  --gold:       oklch(74% 0.135 78);
   --gold2:      oklch(83% 0.100 83);
-  --gold-dim:   oklch(72% 0.130 78 / 0.12);
-  --gold-glow:  oklch(72% 0.130 78 / 0.25);
-  --green:      oklch(58% 0.190 145);
-  --green-lt:   oklch(73% 0.165 145);
-  --green-dim:  oklch(58% 0.190 145 / 0.18);
-  --red:        oklch(52% 0.210 24);
-  --red-dim:    oklch(52% 0.210 24 / 0.14);
-  --blue:       oklch(63% 0.165 240);
-  --blue-dim:   oklch(63% 0.165 240 / 0.14);
-  --orange:     oklch(68% 0.180 55);
-  --orange-dim: oklch(68% 0.180 55 / 0.14);
-  --ink:        oklch(94% 0.010 80);
-  --muted:      oklch(58% 0.010 80);
-  --dim:        oklch(36% 0.008 80);
+  --gold-dim:   oklch(74% 0.135 78 / 0.10);
+  --gold-glow:  oklch(74% 0.135 78 / 0.25);
+  --green:      oklch(62% 0.190 150);
+  --green-lt:   oklch(75% 0.165 148);
+  --green-dim:  oklch(62% 0.190 150 / 0.14);
+  --red:        oklch(55% 0.200 25);
+  --red-dim:    oklch(55% 0.200 25 / 0.12);
+  --blue:       oklch(65% 0.160 245);
+  --blue-dim:   oklch(65% 0.160 245 / 0.12);
+  --orange:     oklch(70% 0.175 55);
+  --orange-dim: oklch(70% 0.175 55 / 0.12);
+  --ink:        oklch(95% 0.008 80);
+  --muted:      oklch(60% 0.008 80);
+  --dim:        oklch(38% 0.006 80);
   --ease:       cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out:   cubic-bezier(0.25, 1, 0.5, 1);
+
+  /* Glass tokens */
+  --glass-bg:      oklch(11% 0.012 200 / 0.55);
+  --glass-border:  oklch(100% 0 0 / 0.06);
+  --glass-shine:   oklch(100% 0 0 / 0.04);
+  --glass-blur:    20px;
 }
 
 html { scroll-behavior:smooth }
@@ -50,59 +65,99 @@ body {
   overflow-x:hidden;
 }
 
-/* ── Background layers ── */
-#bg-canvas { position:fixed; inset:0; z-index:0; pointer-events:none }
+/* ── Floating gradient orbs (mesh gradient feel) ── */
+.orb {
+  position:fixed;
+  border-radius:50%;
+  pointer-events:none;
+  z-index:0;
+  will-change:transform;
+}
+.orb-1 {
+  width:600px; height:600px;
+  top:-15%; left:-8%;
+  background:radial-gradient(circle, oklch(74% 0.135 78 / 0.07), transparent 70%);
+  filter:blur(80px);
+}
+.orb-2 {
+  width:500px; height:500px;
+  top:35%; right:-12%;
+  background:radial-gradient(circle, oklch(62% 0.190 150 / 0.06), transparent 70%);
+  filter:blur(90px);
+}
+.orb-3 {
+  width:450px; height:450px;
+  bottom:-5%; left:25%;
+  background:radial-gradient(circle, oklch(65% 0.160 245 / 0.05), transparent 70%);
+  filter:blur(100px);
+}
 
+/* ── Subtle grid overlay ── */
 body::before {
   content:'';
   position:fixed; inset:0; z-index:0;
   background-image:
-    linear-gradient(oklch(22% 0.013 138 / 0.30) 1px, transparent 1px),
-    linear-gradient(90deg, oklch(22% 0.013 138 / 0.30) 1px, transparent 1px);
-  background-size:64px 64px;
+    linear-gradient(oklch(20% 0.010 200 / 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(20% 0.010 200 / 0.18) 1px, transparent 1px);
+  background-size:72px 72px;
   pointer-events:none;
+  mask-image:radial-gradient(ellipse 70% 50% at 50% 30%, black 0%, transparent 100%);
+  -webkit-mask-image:radial-gradient(ellipse 70% 50% at 50% 30%, black 0%, transparent 100%);
 }
 
+/* ── Top gradient wash ── */
 body::after {
   content:'';
   position:fixed; inset:0; z-index:0;
-  background:radial-gradient(ellipse 100% 60% at 50% 0%, oklch(72% 0.130 78 / 0.04) 0%, transparent 70%);
+  background:radial-gradient(ellipse 100% 50% at 50% 0%, oklch(74% 0.135 78 / 0.035) 0%, transparent 65%);
   pointer-events:none;
 }
 
 #spotlight {
   position:fixed; inset:0; z-index:1; pointer-events:none;
-  background:radial-gradient(600px circle at var(--mx,50%) var(--my,50%), oklch(72% 0.130 78 / 0.04), transparent 55%);
+  background:radial-gradient(700px circle at var(--mx,50%) var(--my,50%), oklch(74% 0.135 78 / 0.035), transparent 50%);
+  transition:background 0.15s;
 }
 
 #noise {
-  position:fixed; inset:0; z-index:9997; pointer-events:none; opacity:0.025;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size:140px 140px;
+  position:fixed; inset:0; z-index:9997; pointer-events:none; opacity:0.022;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:150px 150px;
 }
 
 /* ── Layout ── */
 .wrap {
   max-width:1400px;
   margin:0 auto;
-  padding:48px 32px 96px;
+  padding:56px 36px 96px;
   position:relative;
   z-index:2;
 }
 
-/* ── Reveal animation (IntersectionObserver-based — works everywhere) ── */
+/* ── Reveal animations ── */
 .reveal {
   opacity:0;
-  transform:translateY(22px);
-  transition:opacity 0.65s ease, transform 0.65s ease;
+  transform:translateY(28px);
+  transition:opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
 }
 .reveal.visible { opacity:1; transform:none }
 
 .reveal-left {
-  opacity:0; transform:translateX(-16px);
-  transition:opacity 0.55s ease, transform 0.55s ease;
+  opacity:0; transform:translateX(-20px);
+  transition:opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
 }
 .reveal-left.visible { opacity:1; transform:none }
+
+/* ── Glass utility ── */
+.glass {
+  background:var(--glass-bg);
+  backdrop-filter:blur(var(--glass-blur)) saturate(1.3);
+  -webkit-backdrop-filter:blur(var(--glass-blur)) saturate(1.3);
+  border:1px solid var(--glass-border);
+  box-shadow:
+    inset 0 1px 0 var(--glass-shine),
+    0 8px 32px oklch(0% 0 0 / 0.25);
+}
 
 /* ── Util ── */
 .label {
@@ -115,14 +170,14 @@ body::after {
 
 hr.rule {
   border:none; height:1px;
-  background:var(--border);
-  margin:52px 0;
+  background:linear-gradient(90deg, var(--border), transparent);
+  margin:56px 0;
 }
 
 hr.rule-gold {
   border:none; height:1px;
-  background:linear-gradient(90deg, var(--gold) 0%, oklch(72% 0.130 78 / 0.15) 50%, transparent 80%);
-  margin:32px 0 48px;
+  background:linear-gradient(90deg, var(--gold), oklch(74% 0.135 78 / 0.12) 50%, transparent 85%);
+  margin:36px 0 52px;
 }
 
 /* ── Header ── */
@@ -131,36 +186,36 @@ hr.rule-gold {
   grid-template-columns:1fr auto;
   align-items:start;
   gap:32px;
-  margin-bottom:40px;
+  margin-bottom:44px;
 }
 
 .header-eye {
   display:flex; align-items:center;
-  gap:12px; margin-bottom:16px;
+  gap:12px; margin-bottom:18px;
 }
 
 .live-dot {
   width:8px; height:8px; border-radius:50%;
   background:var(--green-lt);
-  box-shadow:0 0 14px oklch(73% 0.165 145 / 0.7);
+  box-shadow:0 0 16px oklch(75% 0.165 148 / 0.7);
   animation:livePulse 2.5s ease-in-out infinite;
 }
 @keyframes livePulse {
-  0%,100%{opacity:1;box-shadow:0 0 14px oklch(73% 0.165 145 / 0.7)}
-  50%{opacity:0.5;box-shadow:0 0 4px oklch(73% 0.165 145 / 0.3)}
+  0%,100%{opacity:1;box-shadow:0 0 16px oklch(75% 0.165 148 / 0.7)}
+  50%{opacity:0.5;box-shadow:0 0 4px oklch(75% 0.165 148 / 0.25)}
 }
 
 .header h1 {
   font-family:'Gloock',Georgia,serif;
-  font-size:clamp(60px,9vw,110px);
+  font-size:clamp(56px,8.5vw,105px);
   font-weight:400; line-height:0.87;
-  letter-spacing:-0.03em;
+  letter-spacing:-0.035em;
 }
 
 .header h1 em { font-style:italic; color:var(--gold) }
 
 .header-meta {
-  text-align:right; padding-top:6px;
+  text-align:right; padding-top:8px;
 }
 
 .header-date {
@@ -174,35 +229,43 @@ hr.rule-gold {
   font-size:13px; color:var(--dim);
 }
 
-/* ── Hero numbers ── */
+/* ── Hero numbers — animated gradient border ── */
 .hero-numbers {
   display:grid;
   grid-template-columns:1fr 1px 1fr 1px 1fr;
   align-items:center;
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:20px;
+  border-radius:22px;
   overflow:hidden;
-  margin-bottom:24px;
+  margin-bottom:28px;
   position:relative;
+  /* Animated gradient border */
+  border:1px solid transparent;
+  background:
+    linear-gradient(var(--card-solid), var(--card-solid)) padding-box,
+    conic-gradient(from var(--border-angle), oklch(74% 0.135 78 / 0.3), oklch(62% 0.190 150 / 0.15), oklch(65% 0.160 245 / 0.1), oklch(74% 0.135 78 / 0.3)) border-box;
+  animation:rotateBorder 8s linear infinite;
+}
+
+@keyframes rotateBorder {
+  to { --border-angle: 360deg; }
 }
 
 .hero-numbers::before {
   content:'';
-  position:absolute; inset:-1px;
-  border-radius:20px;
-  background:linear-gradient(135deg, oklch(72% 0.130 78 / 0.08), transparent 50%, oklch(58% 0.190 145 / 0.05));
+  position:absolute; inset:0;
+  border-radius:22px;
+  background:linear-gradient(135deg, oklch(74% 0.135 78 / 0.06), transparent 50%, oklch(62% 0.190 150 / 0.04));
   pointer-events:none;
 }
 
 .hn-item {
-  padding:32px 40px;
+  padding:36px 44px;
   position:relative;
 }
 
 .hn-divider {
   width:1px; height:80px;
-  background:linear-gradient(180deg, transparent, var(--border), transparent);
+  background:linear-gradient(180deg, transparent, oklch(74% 0.135 78 / 0.2), transparent);
 }
 
 .hn-label {
@@ -216,6 +279,7 @@ hr.rule-gold {
   font-size:clamp(28px,4vw,48px);
   font-weight:400; line-height:1;
   letter-spacing:-0.02em;
+  font-variant-numeric:tabular-nums;
 }
 
 .hn-value.gold { color:var(--gold) }
@@ -228,39 +292,43 @@ hr.rule-gold {
 /* ── Goal + KPI section ── */
 .goal-kpi {
   display:grid;
-  grid-template-columns:260px 1fr;
+  grid-template-columns:280px 1fr;
   gap:24px;
-  margin-bottom:52px;
+  margin-bottom:56px;
   align-items:start;
 }
 
-/* Goal ring card */
+/* Goal ring card — glass */
 .goal-card {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:20px;
-  padding:32px 28px;
+  border-radius:22px;
+  padding:34px 30px;
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:20px;
+  gap:22px;
   position:relative;
   overflow:hidden;
-  transition:border-color 0.4s;
+  transition:border-color 0.4s, box-shadow 0.4s;
 }
 
-.goal-card:hover { border-color:var(--border-hi) }
+.goal-card:hover {
+  border-color:oklch(74% 0.135 78 / 0.15);
+  box-shadow:
+    inset 0 1px 0 var(--glass-shine),
+    0 12px 40px oklch(0% 0 0 / 0.3),
+    0 0 60px oklch(74% 0.135 78 / 0.04);
+}
 
 .goal-card::before {
   content:'';
   position:absolute;
-  top:-40px; left:-40px;
-  width:180px; height:180px;
-  background:radial-gradient(circle, oklch(72% 0.130 78 / 0.06), transparent 70%);
+  top:-50px; left:-50px;
+  width:200px; height:200px;
+  background:radial-gradient(circle, oklch(74% 0.135 78 / 0.05), transparent 70%);
   pointer-events:none;
 }
 
-.goal-ring-wrap { position:relative; width:180px; height:180px }
+.goal-ring-wrap { position:relative; width:190px; height:190px }
 
 .goal-ring-wrap svg {
   width:100%; height:100%;
@@ -269,19 +337,31 @@ hr.rule-gold {
 
 .ring-bg {
   fill:none;
-  stroke:oklch(22% 0.013 138);
-  stroke-width:12;
+  stroke:oklch(20% 0.010 200);
+  stroke-width:10;
 }
 
 .ring-fill {
   fill:none;
   stroke:url(#ringGrad);
-  stroke-width:12;
+  stroke-width:10;
   stroke-linecap:round;
   stroke-dasharray:503;
   stroke-dashoffset:503;
-  transition:stroke-dashoffset 2.4s var(--ease);
-  filter:drop-shadow(0 0 8px oklch(72% 0.130 78 / 0.4));
+  transition:stroke-dashoffset 2.6s var(--ease);
+  filter:drop-shadow(0 0 10px oklch(74% 0.135 78 / 0.45));
+}
+
+.ring-glow {
+  fill:none;
+  stroke:url(#ringGrad);
+  stroke-width:18;
+  stroke-linecap:round;
+  stroke-dasharray:503;
+  stroke-dashoffset:503;
+  transition:stroke-dashoffset 2.6s var(--ease);
+  opacity:0.15;
+  filter:blur(8px);
 }
 
 .ring-center {
@@ -293,9 +373,10 @@ hr.rule-gold {
 
 .ring-pct {
   font-family:'Gloock',serif;
-  font-size:38px; line-height:1;
+  font-size:40px; line-height:1;
   color:var(--gold);
   letter-spacing:-0.02em;
+  font-variant-numeric:tabular-nums;
 }
 
 .ring-sub {
@@ -309,8 +390,8 @@ hr.rule-gold {
 .goal-stat {
   display:flex; align-items:baseline;
   justify-content:space-between;
-  padding:8px 0;
-  border-bottom:1px solid var(--border);
+  padding:9px 0;
+  border-bottom:1px solid oklch(20% 0.010 200 / 0.6);
 }
 
 .goal-stat:last-child { border-bottom:none }
@@ -324,13 +405,14 @@ hr.rule-gold {
 .goal-stat-val {
   font-family:'Gloock',serif;
   font-size:18px; color:var(--ink);
+  font-variant-numeric:tabular-nums;
 }
 
 /* Goal progress bar */
 .goal-bar-wrap { width:100% }
 
 .goal-bar-track {
-  height:4px; background:var(--border);
+  height:4px; background:oklch(20% 0.010 200);
   border-radius:2px; overflow:visible;
   position:relative;
 }
@@ -338,7 +420,7 @@ hr.rule-gold {
 .goal-bar-fill {
   height:100%; border-radius:2px;
   background:linear-gradient(90deg, var(--green), var(--green-lt) 55%, var(--gold));
-  width:0%; transition:width 2.4s var(--ease);
+  width:0%; transition:width 2.6s var(--ease);
   position:relative;
 }
 
@@ -347,7 +429,7 @@ hr.rule-gold {
   right:-1px; top:50%; transform:translateY(-50%);
   width:12px; height:12px; border-radius:50%;
   background:var(--gold); border:2px solid var(--bg);
-  box-shadow:0 0 18px oklch(72% 0.130 78 / 0.6);
+  box-shadow:0 0 20px oklch(74% 0.135 78 / 0.6);
 }
 
 /* KPI grid */
@@ -359,26 +441,27 @@ hr.rule-gold {
 }
 
 .kpi {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:18px;
-  padding:24px 24px 20px;
+  border-radius:20px;
+  padding:26px 26px 22px;
   position:relative; overflow:hidden;
   cursor:default;
-  transition:border-color 0.35s, box-shadow 0.35s, transform 0.4s var(--ease);
+  transition:border-color 0.35s, box-shadow 0.4s, transform 0.45s var(--ease);
   transform-style:preserve-3d;
 }
 
 .kpi:hover {
-  border-color:var(--border-hi);
-  box-shadow:0 10px 40px oklch(0% 0 0 / 0.35), 0 0 60px oklch(72% 0.130 78 / 0.04);
+  border-color:oklch(74% 0.135 78 / 0.15);
+  box-shadow:
+    inset 0 1px 0 var(--glass-shine),
+    0 14px 44px oklch(0% 0 0 / 0.35),
+    0 0 70px oklch(74% 0.135 78 / 0.04);
 }
 
 .kpi-shine {
-  position:absolute; inset:0; border-radius:18px;
+  position:absolute; inset:0; border-radius:20px;
   opacity:0; pointer-events:none;
-  background:radial-gradient(350px circle at var(--x,50%) var(--y,50%), oklch(72% 0.130 78 / 0.10), transparent 65%);
-  transition:opacity 0.35s;
+  background:radial-gradient(400px circle at var(--x,50%) var(--y,50%), oklch(74% 0.135 78 / 0.08), transparent 60%);
+  transition:opacity 0.4s;
 }
 
 .kpi:hover .kpi-shine { opacity:1 }
@@ -387,9 +470,10 @@ hr.rule-gold {
 
 .kpi-value {
   font-family:'Gloock',serif;
-  font-size:clamp(30px,3vw,40px);
+  font-size:clamp(28px,3vw,40px);
   font-weight:400; line-height:1;
   letter-spacing:-0.02em; margin-bottom:10px;
+  font-variant-numeric:tabular-nums;
 }
 
 .kpi-upside {
@@ -423,19 +507,19 @@ hr.rule-gold {
 .kpi-bar {
   position:absolute; bottom:0; left:0;
   height:3px; border-radius:0 2px 0 0;
-  transition:width 2s var(--ease);
+  transition:width 2.2s var(--ease);
 }
 
 /* ── Section heading ── */
 .sec-head {
   display:flex; align-items:baseline;
-  gap:16px; margin-bottom:20px;
+  gap:16px; margin-bottom:22px;
 }
 
 .sec-head h2 {
   font-family:'Gloock',serif;
-  font-size:32px; font-weight:400;
-  letter-spacing:-0.015em;
+  font-size:34px; font-weight:400;
+  letter-spacing:-0.02em;
 }
 
 .sec-head h2 em { color:var(--gold); font-style:italic }
@@ -445,29 +529,30 @@ hr.rule-gold {
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:18px;
-  margin-bottom:52px;
+  margin-bottom:56px;
 }
 
 .sc-card {
-  background:linear-gradient(145deg, oklch(14% 0.016 138 / 0.95), oklch(11% 0.014 138 / 0.8));
-  border:1px solid var(--border);
-  border-radius:20px; padding:28px;
+  border-radius:22px; padding:30px;
   position:relative; overflow:hidden;
   cursor:default;
-  transition:border-color 0.4s, box-shadow 0.45s, transform 0.45s var(--ease);
+  transition:border-color 0.4s, box-shadow 0.5s, transform 0.5s var(--ease);
   transform-style:preserve-3d;
 }
 
 .sc-card:hover {
-  border-color:var(--border-hi);
-  box-shadow:0 16px 56px oklch(0% 0 0 / 0.45), 0 0 80px oklch(72% 0.130 78 / 0.05);
+  border-color:oklch(74% 0.135 78 / 0.15);
+  box-shadow:
+    inset 0 1px 0 var(--glass-shine),
+    0 20px 60px oklch(0% 0 0 / 0.4),
+    0 0 90px oklch(74% 0.135 78 / 0.05);
 }
 
 .sc-shine {
-  position:absolute; inset:0; border-radius:20px;
+  position:absolute; inset:0; border-radius:22px;
   opacity:0; pointer-events:none;
-  background:radial-gradient(400px circle at var(--x,50%) var(--y,50%), oklch(72% 0.130 78 / 0.10), transparent 65%);
-  transition:opacity 0.35s;
+  background:radial-gradient(450px circle at var(--x,50%) var(--y,50%), oklch(74% 0.135 78 / 0.08), transparent 60%);
+  transition:opacity 0.4s;
 }
 
 .sc-card:hover .sc-shine { opacity:1 }
@@ -475,11 +560,11 @@ hr.rule-gold {
 .sc-shimmer {
   position:absolute; top:0; left:-100%;
   width:100%; height:100%;
-  background:linear-gradient(90deg, transparent, oklch(72% 0.130 78 / 0.06), transparent);
-  animation:shimmer 5s ease-in-out infinite;
+  background:linear-gradient(90deg, transparent, oklch(74% 0.135 78 / 0.04), transparent);
+  animation:shimmer 6s ease-in-out infinite;
   pointer-events:none;
 }
-@keyframes shimmer { 0%{left:-100%} 60%{left:100%} 100%{left:100%} }
+@keyframes shimmer { 0%{left:-100%} 55%{left:100%} 100%{left:100%} }
 
 .sc-badge {
   position:absolute; top:16px; right:16px;
@@ -487,7 +572,7 @@ hr.rule-gold {
   font-size:9px; font-weight:700;
   letter-spacing:0.10em; text-transform:uppercase;
   background:var(--green-dim); color:var(--green-lt);
-  border:1px solid oklch(73% 0.165 145 / 0.15);
+  border:1px solid oklch(75% 0.165 148 / 0.12);
 }
 
 .sc-header {
@@ -523,6 +608,7 @@ hr.rule-gold {
   font-size:34px; font-weight:400;
   margin-bottom:6px;
   letter-spacing:-0.02em;
+  font-variant-numeric:tabular-nums;
 }
 
 .sc-value.gold-v { color:var(--gold) }
@@ -545,46 +631,44 @@ hr.rule-gold {
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:18px;
-  margin-bottom:52px;
+  margin-bottom:56px;
 }
 
 .pipeline-card {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:20px; overflow:hidden;
+  border-radius:22px; overflow:hidden;
 }
 
 .card-head {
-  padding:20px 24px;
-  border-bottom:1px solid var(--border);
+  padding:22px 26px;
+  border-bottom:1px solid oklch(20% 0.010 200 / 0.5);
 }
 
 .funnel-wrap { padding:8px 0 }
 
 .funnel-stage {
-  padding:16px 24px;
+  padding:18px 26px;
   display:grid;
-  grid-template-columns:12px 1fr auto 90px;
-  gap:12px; align-items:center;
+  grid-template-columns:12px 1fr auto 100px;
+  gap:14px; align-items:center;
   transition:background 0.2s;
   position:relative; overflow:hidden;
 }
 
-.funnel-stage:hover { background:oklch(17% 0.015 136 / 0.6) }
+.funnel-stage:hover { background:oklch(15% 0.012 198 / 0.5) }
 
 .funnel-stage::after {
   content:'';
-  position:absolute; left:0; bottom:0;
-  height:1px; width:100%;
-  background:var(--border);
+  position:absolute; left:26px; right:26px; bottom:0;
+  height:1px;
+  background:oklch(20% 0.010 200 / 0.4);
 }
 
 .funnel-stage:last-child::after { display:none }
 
 .f-dot {
-  width:12px; height:12px; border-radius:50%;
+  width:10px; height:10px; border-radius:50%;
   flex-shrink:0;
-  box-shadow:0 0 8px currentColor;
+  box-shadow:0 0 10px currentColor;
 }
 
 .f-name {
@@ -593,35 +677,86 @@ hr.rule-gold {
 
 .f-count {
   font-family:'Gloock',serif;
-  font-size:32px; color:var(--muted);
+  font-size:34px; color:var(--muted);
   line-height:1; text-align:right;
+  font-variant-numeric:tabular-nums;
 }
 
 .f-amount {
   font-size:11px; color:var(--dim);
   text-align:right;
+  font-variant-numeric:tabular-nums;
+}
+
+/* Funnel bar visualization */
+.funnel-bar-wrap {
+  padding:0 26px 20px;
+}
+
+.funnel-bar {
+  display:flex; align-items:center;
+  gap:10px; margin-bottom:8px;
+}
+
+.funnel-bar:last-child { margin-bottom:0 }
+
+.fb-label {
+  font-size:9px; font-weight:700;
+  letter-spacing:0.10em; text-transform:uppercase;
+  color:var(--muted); width:65px; flex-shrink:0;
+}
+
+.fb-track {
+  flex:1; height:8px;
+  background:oklch(20% 0.010 200 / 0.5);
+  border-radius:4px; overflow:hidden;
+  position:relative;
+}
+
+.fb-fill {
+  height:100%; border-radius:4px;
+  width:0%; transition:width 2s var(--ease);
+  position:relative;
+}
+
+.fb-fill::after {
+  content:'';
+  position:absolute; inset:0;
+  background:linear-gradient(90deg, transparent 50%, oklch(100% 0 0 / 0.15));
+  border-radius:4px;
+}
+
+.fb-val {
+  font-size:10px; font-weight:600;
+  color:var(--muted); width:50px;
+  text-align:right; flex-shrink:0;
+  font-variant-numeric:tabular-nums;
 }
 
 /* Chart card */
 .chart-card {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:20px; padding:24px;
-  transition:border-color 0.3s;
+  border-radius:22px; padding:26px;
+  transition:border-color 0.3s, box-shadow 0.3s;
 }
 
-.chart-card:hover { border-color:oklch(28% 0.015 138) }
+.chart-card:hover {
+  border-color:oklch(25% 0.012 200);
+  box-shadow:
+    inset 0 1px 0 var(--glass-shine),
+    0 10px 36px oklch(0% 0 0 / 0.25);
+}
 
 .chart-title {
   font-size:10px; font-weight:700;
   letter-spacing:0.20em; text-transform:uppercase;
-  color:var(--gold); margin-bottom:20px;
+  color:var(--gold); margin-bottom:22px;
   display:flex; align-items:center; gap:10px;
 }
 
 .chart-title::before {
-  content:''; width:20px; height:1px;
-  background:var(--gold); flex-shrink:0;
+  content:''; width:22px; height:1px;
+  background:linear-gradient(90deg, var(--gold), transparent);
+  flex-shrink:0;
 }
 
 .chart-wrap { position:relative; height:260px }
@@ -631,32 +766,46 @@ hr.rule-gold {
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:18px;
-  margin-bottom:52px;
+  margin-bottom:56px;
+}
+
+/* ── Revenue area chart (full width) ── */
+.revenue-section {
+  margin-bottom:56px;
+}
+
+.revenue-card {
+  border-radius:22px; padding:26px;
+}
+
+.revenue-chart-wrap {
+  position:relative; height:240px;
 }
 
 /* ── Leads strip ── */
 .leads-strip {
   display:grid;
   grid-template-columns:repeat(5,1fr);
-  gap:1px; background:var(--border);
+  gap:1px; background:oklch(20% 0.010 200 / 0.4);
   border:1px solid var(--border);
-  border-radius:18px; overflow:hidden;
-  margin-bottom:52px;
+  border-radius:20px; overflow:hidden;
+  margin-bottom:56px;
 }
 
 .lead-cell {
-  background:var(--card);
-  padding:22px 20px; text-align:center;
-  transition:background 0.2s;
+  background:var(--card-solid);
+  padding:24px 20px; text-align:center;
+  transition:background 0.25s;
   position:relative;
 }
 
-.lead-cell:hover { background:var(--card-h) }
+.lead-cell:hover { background:oklch(13% 0.012 200) }
 
 .lead-num {
   font-family:'Gloock',serif;
-  font-size:42px; line-height:1;
+  font-size:44px; line-height:1;
   color:var(--ink); margin-bottom:6px;
+  font-variant-numeric:tabular-nums;
 }
 
 .lead-lbl {
@@ -667,14 +816,14 @@ hr.rule-gold {
 
 /* ── Table ── */
 .table-section {
-  background:var(--card);
+  background:var(--card-solid);
   border:1px solid var(--border);
-  border-radius:20px; overflow:hidden;
-  margin-bottom:52px;
+  border-radius:22px; overflow:hidden;
+  margin-bottom:56px;
 }
 
 .table-header {
-  padding:20px 28px;
+  padding:22px 28px;
   border-bottom:1px solid var(--border);
   display:flex; align-items:center;
   justify-content:space-between;
@@ -689,18 +838,20 @@ hr.rule-gold {
   letter-spacing:0.12em; text-transform:uppercase;
   border:1px solid var(--border); color:var(--muted);
   cursor:pointer; background:transparent;
-  transition:all 0.2s; font-family:'Epilogue',sans-serif;
+  transition:all 0.25s var(--ease-out);
+  font-family:'Epilogue',sans-serif;
 }
 
 .pill:hover, .pill.active {
   border-color:var(--gold); color:var(--gold);
   background:var(--gold-dim);
+  box-shadow:0 0 20px oklch(74% 0.135 78 / 0.08);
 }
 
 table { width:100%; border-collapse:collapse }
 
 th {
-  text-align:left; padding:12px 28px;
+  text-align:left; padding:13px 28px;
   font-size:9px; font-weight:700;
   letter-spacing:0.16em; text-transform:uppercase;
   color:var(--dim); border-bottom:1px solid var(--border);
@@ -708,14 +859,14 @@ th {
 }
 
 td {
-  padding:15px 28px;
-  border-bottom:1px solid oklch(22% 0.013 138 / 0.5);
+  padding:16px 28px;
+  border-bottom:1px solid oklch(20% 0.010 200 / 0.4);
   font-size:13px; color:var(--muted);
-  transition:background 0.15s, padding-left 0.25s;
+  transition:background 0.2s, padding-left 0.3s var(--ease-out);
 }
 
 tr:last-child td { border-bottom:none }
-tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
+tr:hover td { background:oklch(14% 0.012 200 / 0.5); padding-left:34px }
 
 .td-company {
   color:var(--ink); font-weight:500;
@@ -729,6 +880,7 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
 .td-value {
   font-family:'Gloock',serif;
   font-size:15px; color:var(--ink);
+  font-variant-numeric:tabular-nums;
 }
 
 .status-badge {
@@ -755,43 +907,49 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
 .td-link {
   color:var(--gold); text-decoration:none;
   font-size:11px; font-weight:600;
-  opacity:0.6; transition:opacity 0.2s;
+  opacity:0.55; transition:opacity 0.25s;
+  position:relative;
+}
+.td-link::after {
+  content:''; position:absolute;
+  bottom:-2px; left:0; width:0; height:1px;
+  background:var(--gold); transition:width 0.3s var(--ease-out);
 }
 .td-link:hover { opacity:1 }
+.td-link:hover::after { width:100% }
 
 /* ── Timeline ── */
 .timeline {
-  position:relative; padding-left:36px;
-  margin-bottom:52px;
+  position:relative; padding-left:40px;
+  margin-bottom:56px;
 }
 
 .timeline::before {
   content:''; position:absolute;
-  left:14px; top:8px; bottom:8px; width:1px;
-  background:linear-gradient(180deg, var(--gold), var(--green-lt), transparent);
+  left:15px; top:8px; bottom:8px; width:1px;
+  background:linear-gradient(180deg, var(--gold), var(--green-lt) 60%, oklch(65% 0.160 245 / 0.3), transparent);
 }
 
 .tl-item {
-  position:relative; padding:12px 0 20px;
-  transition:0.2s;
+  position:relative; padding:14px 0 22px;
 }
 
 .tl-item::before {
   content:''; position:absolute;
-  left:-27px; top:17px;
+  left:-30px; top:19px;
   width:10px; height:10px; border-radius:50%;
-  border:2px solid var(--border);
-  background:var(--bg); transition:0.3s;
+  border:2px solid oklch(20% 0.010 200);
+  background:var(--bg); transition:0.35s var(--ease-out);
 }
 
 .tl-item.closed::before {
   background:var(--green-lt); border-color:var(--green-lt);
-  box-shadow:0 0 12px oklch(73% 0.165 145 / 0.4);
+  box-shadow:0 0 14px oklch(75% 0.165 148 / 0.45);
 }
 
 .tl-item:hover::before {
   border-color:var(--gold);
-  box-shadow:0 0 10px oklch(72% 0.130 78 / 0.3);
+  box-shadow:0 0 12px oklch(74% 0.135 78 / 0.35);
 }
 
 .tl-date {
@@ -807,7 +965,7 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
 
 /* ── Footer ── */
 .footer {
-  padding:52px 0 16px;
+  padding:56px 0 16px;
   border-top:1px solid var(--border);
   display:flex; align-items:center;
   justify-content:space-between;
@@ -836,6 +994,7 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
 }
 
 @media(max-width:700px){
+  .wrap { padding:32px 18px 64px }
   .kpi-grid { grid-template-columns:repeat(2,1fr) }
   .leads-strip { grid-template-columns:repeat(3,1fr) }
   .filter-pills { display:none }
@@ -844,31 +1003,41 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
 }
 
 @media(prefers-reduced-motion:reduce){
-  *,*::before,*::after { animation-duration:0.01ms!important; transition-duration:0.01ms!important }
-  #bg-canvas,#spotlight { display:none }
+  *,*::before,*::after {
+    animation-duration:0.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:0.01ms!important;
+  }
+  .orb { display:none }
+  #spotlight { display:none }
+  .sc-shimmer { display:none }
 }
 </style>
 </head>
 <body>
 
-<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<!-- Floating gradient orbs -->
+<div class="orb orb-1" aria-hidden="true"></div>
+<div class="orb orb-2" aria-hidden="true"></div>
+<div class="orb orb-3" aria-hidden="true"></div>
+
 <div id="spotlight" aria-hidden="true"></div>
 <div id="noise" aria-hidden="true"></div>
 
 <!-- ── Login Gate ── -->
-<div id="login-gate" style="position:fixed;inset:0;z-index:99999;background:oklch(8.5% 0.020 140);display:flex;align-items:center;justify-content:center">
+<div id="login-gate" style="position:fixed;inset:0;z-index:99999;background:oklch(7.5% 0.018 200);display:flex;align-items:center;justify-content:center">
   <div style="text-align:center;max-width:380px;padding:52px 40px">
-    <p style="font-family:'Epilogue',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:oklch(36% 0.008 80);margin-bottom:14px">Villa Sjövik</p>
-    <h1 style="font-family:'Gloock',Georgia,serif;font-size:40px;font-weight:400;line-height:0.9;color:oklch(94% 0.010 80);margin-bottom:10px">Sales <em style="color:oklch(72% 0.130 78);font-style:italic">Dashboard</em></h1>
-    <p style="font-size:12px;color:oklch(36% 0.008 80);margin-bottom:36px;letter-spacing:0.03em;margin-top:12px">Ange lösenord för att fortsätta</p>
+    <p style="font-family:'Epilogue',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:oklch(38% 0.006 80);margin-bottom:14px">Villa Sjövik</p>
+    <h1 style="font-family:'Gloock',Georgia,serif;font-size:40px;font-weight:400;line-height:0.9;color:oklch(95% 0.008 80);margin-bottom:10px">Sales <em style="color:oklch(74% 0.135 78);font-style:italic">Dashboard</em></h1>
+    <p style="font-size:12px;color:oklch(38% 0.006 80);margin-bottom:36px;letter-spacing:0.03em;margin-top:12px">Ange lösenord för att fortsätta</p>
     <form id="login-form" autocomplete="off" style="display:flex;flex-direction:column;gap:10px">
       <input id="login-pw" type="password" placeholder="Lösenord" autofocus
-        style="background:oklch(12.5% 0.017 138);border:1px solid oklch(22% 0.013 138);border-radius:10px;padding:14px 18px;color:oklch(94% 0.010 80);font-family:'Epilogue',sans-serif;font-size:14px;outline:none;transition:border-color .2s;width:100%"
-        onfocus="this.style.borderColor='oklch(72% 0.130 78 / 0.7)'" onblur="this.style.borderColor='oklch(22% 0.013 138)'"/>
+        style="background:oklch(11% 0.014 200);border:1px solid oklch(20% 0.010 200);border-radius:12px;padding:14px 18px;color:oklch(95% 0.008 80);font-family:'Epilogue',sans-serif;font-size:14px;outline:none;transition:border-color .25s,box-shadow .25s;width:100%"
+        onfocus="this.style.borderColor='oklch(74% 0.135 78 / 0.6)';this.style.boxShadow='0 0 20px oklch(74% 0.135 78 / 0.08)'" onblur="this.style.borderColor='oklch(20% 0.010 200)';this.style.boxShadow='none'"/>
       <button type="submit"
-        style="background:oklch(72% 0.130 78);color:oklch(8.5% 0.020 140);border:none;border-radius:10px;padding:14px;font-family:'Epilogue',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.10em;text-transform:uppercase;cursor:pointer;transition:opacity .2s"
-        onmouseover="this.style.opacity='0.82'" onmouseout="this.style.opacity='1'">Logga in</button>
-      <p id="login-err" style="color:oklch(52% 0.210 24);font-size:12px;min-height:18px;font-family:'Epilogue',sans-serif"></p>
+        style="background:linear-gradient(135deg,oklch(74% 0.135 78),oklch(70% 0.140 65));color:oklch(7.5% 0.018 200);border:none;border-radius:12px;padding:14px;font-family:'Epilogue',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.10em;text-transform:uppercase;cursor:pointer;transition:opacity .2s,transform .15s"
+        onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Logga in</button>
+      <p id="login-err" style="color:oklch(55% 0.200 25);font-size:12px;min-height:18px;font-family:'Epilogue',sans-serif"></p>
     </form>
   </div>
 </div>
@@ -883,7 +1052,10 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
     const hex=[...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');
     if(hex===HASH){
       sessionStorage.setItem('vs_auth','1');
-      document.getElementById('login-gate').style.display='none';
+      const gate=document.getElementById('login-gate');
+      gate.style.transition='opacity 0.5s';
+      gate.style.opacity='0';
+      setTimeout(()=>gate.style.display='none',500);
     }else{
       document.getElementById('login-err').textContent='Fel lösenord';
       document.getElementById('login-pw').value='';
@@ -938,17 +1110,18 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
 
 <!-- GOAL RING + KPIS -->
 <div class="goal-kpi">
-  <div class="goal-card reveal" style="transition-delay:0.10s">
+  <div class="goal-card glass reveal" style="transition-delay:0.10s">
     <div class="goal-ring-wrap">
       <svg viewBox="0 0 180 180">
         <defs>
           <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%"   stop-color="oklch(58% 0.190 145)"/>
-            <stop offset="45%"  stop-color="oklch(73% 0.165 145)"/>
-            <stop offset="100%" stop-color="oklch(72% 0.130 78)"/>
+            <stop offset="0%"   stop-color="oklch(62% 0.190 150)"/>
+            <stop offset="50%"  stop-color="oklch(75% 0.165 148)"/>
+            <stop offset="100%" stop-color="oklch(74% 0.135 78)"/>
           </linearGradient>
         </defs>
         <circle class="ring-bg" cx="90" cy="90" r="80"/>
+        <circle class="ring-glow" id="goal-ring-glow" cx="90" cy="90" r="80"/>
         <circle class="ring-fill" id="goal-ring" cx="90" cy="90" r="80"/>
       </svg>
       <div class="ring-center">
@@ -980,35 +1153,35 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
   </div>
 
   <div class="kpi-grid">
-    <div class="kpi reveal" data-tilt style="transition-delay:0.10s">
+    <div class="kpi glass reveal" data-tilt style="transition-delay:0.10s">
       <div class="kpi-shine"></div>
       <span class="label">Stängt värde</span>
       <p class="kpi-value" id="kpi-closed">—<span class="unit">kr</span></p>
       <p class="kpi-sub" id="kpi-closed-sub"></p>
       <span class="kpi-trend up" id="kpi-closed-trend"></span>
-      <div class="kpi-bar" id="kpi-closed-bar" style="background:var(--gold)"></div>
+      <div class="kpi-bar" id="kpi-closed-bar" style="background:linear-gradient(90deg,var(--green),var(--gold))"></div>
     </div>
-    <div class="kpi reveal" data-tilt style="transition-delay:0.17s">
+    <div class="kpi glass reveal" data-tilt style="transition-delay:0.17s">
       <div class="kpi-shine"></div>
       <span class="label">Pipeline</span>
       <p class="kpi-value" id="kpi-pipeline">—<span class="unit">kr</span></p>
       <p class="kpi-sub" id="kpi-pipeline-sub"></p>
       <span class="kpi-trend neutral" id="kpi-pipeline-trend"></span>
-      <div class="kpi-bar" id="kpi-pipeline-bar" style="background:var(--blue)"></div>
+      <div class="kpi-bar" id="kpi-pipeline-bar" style="background:linear-gradient(90deg,var(--blue),oklch(70% 0.140 230))"></div>
     </div>
-    <div class="kpi reveal" data-tilt style="transition-delay:0.24s">
+    <div class="kpi glass reveal" data-tilt style="transition-delay:0.24s">
       <div class="kpi-shine"></div>
       <span class="label">Konvertering</span>
       <p class="kpi-value" id="kpi-conv">—<span class="unit">%</span></p>
       <p class="kpi-sub">Stängda / alla kontaktade</p>
-      <div class="kpi-bar" id="kpi-conv-bar" style="background:var(--green-lt)"></div>
+      <div class="kpi-bar" id="kpi-conv-bar" style="background:linear-gradient(90deg,var(--green-lt),oklch(80% 0.150 130))"></div>
     </div>
-    <div class="kpi reveal" data-tilt style="transition-delay:0.31s">
+    <div class="kpi glass reveal" data-tilt style="transition-delay:0.31s">
       <div class="kpi-shine"></div>
       <span class="label">Aktiva leads</span>
       <p class="kpi-value" id="kpi-leads">—<span class="unit">st</span></p>
       <p class="kpi-sub" id="kpi-leads-sub"></p>
-      <div class="kpi-bar" id="kpi-leads-bar" style="background:var(--orange)"></div>
+      <div class="kpi-bar" id="kpi-leads-bar" style="background:linear-gradient(90deg,var(--orange),oklch(75% 0.160 60))"></div>
     </div>
   </div>
 </div>
@@ -1018,7 +1191,7 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
 <!-- CLOSED DEALS SHOWCASE -->
 <div class="sec-head"><h2>Stängda <em>samarbeten</em></h2></div>
 <div class="showcase">
-  <div class="sc-card reveal" data-tilt style="transition-delay:0.05s">
+  <div class="sc-card glass reveal" data-tilt style="transition-delay:0.05s">
     <div class="sc-shine"></div>
     <div class="sc-shimmer"></div>
     <span class="sc-badge">Stängd</span>
@@ -1033,7 +1206,7 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
       <span>Sofie Källström</span>
     </div>
   </div>
-  <div class="sc-card reveal" data-tilt style="transition-delay:0.12s">
+  <div class="sc-card glass reveal" data-tilt style="transition-delay:0.12s">
     <div class="sc-shine"></div>
     <div class="sc-shimmer"></div>
     <span class="sc-badge">Stängd</span>
@@ -1048,10 +1221,10 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
       <span>Klara Lövberg</span>
     </div>
   </div>
-  <div class="sc-card reveal" data-tilt style="transition-delay:0.19s">
+  <div class="sc-card glass reveal" data-tilt style="transition-delay:0.19s">
     <div class="sc-shine"></div>
     <div class="sc-shimmer"></div>
-    <span class="sc-badge" style="background:var(--blue-dim);color:var(--blue);border-color:oklch(63% 0.165 240 / 0.15)">Produktutbyte</span>
+    <span class="sc-badge" style="background:var(--blue-dim);color:var(--blue);border-color:oklch(65% 0.160 245 / 0.12)">Produktutbyte</span>
     <div class="sc-header">
       <div class="sc-avatar blue">H</div>
       <div class="sc-info"><h3>Hillerstorp</h3><p>Trädgård &amp; Utomhus</p></div>
@@ -1069,7 +1242,7 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
 
 <!-- PIPELINE + CHART -->
 <div class="mid-split">
-  <div class="pipeline-card reveal">
+  <div class="pipeline-card glass reveal">
     <div class="card-head"><span class="label">Pipeline-status</span></div>
     <div class="funnel-wrap">
       <div class="funnel-stage">
@@ -1097,21 +1270,32 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
         <span class="f-amount" id="f-declined-kr"></span>
       </div>
     </div>
+    <!-- Visual funnel bars -->
+    <div class="funnel-bar-wrap" id="funnel-bars"></div>
   </div>
 
-  <div class="chart-card reveal">
+  <div class="chart-card glass reveal">
     <p class="chart-title">Pipeline-fördelning</p>
     <div class="chart-wrap"><canvas id="chart-pipeline"></canvas></div>
   </div>
 </div>
 
+<!-- REVENUE AREA CHART -->
+<div class="revenue-section">
+  <div class="sec-head"><h2>Intäkts<em>tidslinje</em></h2></div>
+  <div class="revenue-card glass reveal">
+    <p class="chart-title">Kumulativ intäkt · april 2026</p>
+    <div class="revenue-chart-wrap"><canvas id="chart-revenue"></canvas></div>
+  </div>
+</div>
+
 <!-- CHART ROW -->
 <div class="chart-row">
-  <div class="chart-card reveal">
+  <div class="chart-card glass reveal">
     <p class="chart-title">Värde per status</p>
     <div class="chart-wrap"><canvas id="chart-value"></canvas></div>
   </div>
-  <div class="chart-card reveal" style="transition-delay:0.12s">
+  <div class="chart-card glass reveal" style="transition-delay:0.12s">
     <p class="chart-title">Leads-status</p>
     <div class="chart-wrap"><canvas id="chart-leads"></canvas></div>
   </div>
@@ -1200,10 +1384,10 @@ tr:hover td { background:oklch(17% 0.015 136 / 0.6); padding-left:32px }
 fetch('./deals.json').then(r=>r.json()).then(DATA=>{
 
 const STATUS_MAP = {
-  closed:  {label:'Stängd',  cls:'status-closed',  color:'oklch(73% 0.165 145)'},
-  meeting: {label:'Möte',    cls:'status-meeting',  color:'oklch(63% 0.165 240)'},
-  pitched: {label:'Offert',  cls:'status-pitched',  color:'oklch(68% 0.180 55)' },
-  declined:{label:'Avböjd',  cls:'status-declined', color:'oklch(52% 0.210 24)' }
+  closed:  {label:'Stängd',  cls:'status-closed',  color:'oklch(75% 0.165 148)'},
+  meeting: {label:'Möte',    cls:'status-meeting',  color:'oklch(65% 0.160 245)'},
+  pitched: {label:'Offert',  cls:'status-pitched',  color:'oklch(70% 0.175 55)' },
+  declined:{label:'Avböjd',  cls:'status-declined', color:'oklch(55% 0.200 25)' }
 };
 
 const fmt  = n => n == null ? '—' : n.toLocaleString('sv-SE');
@@ -1227,6 +1411,7 @@ const declined = DATA.deals.filter(d=>d.status==='declined');
 const closedValue    = closed.reduce((s,d)=>s+(d.value||0),0);
 const meetingValue   = meetings.reduce((s,d)=>s+(d.value||0),0);
 const pitchedValue   = pitched.reduce((s,d)=>s+(d.value||0),0);
+const declinedValue  = declined.reduce((s,d)=>s+(d.value||0),0);
 const pipelineMax    = meetingValue + pitchedValue;
 const pipelineMin    = [...meetings,...pitched].reduce((s,d)=>s+(d.value_min||d.value||0),0);
 const pipelineValue  = pipelineMax;
@@ -1237,43 +1422,25 @@ const headerMax = closedValue + pipelineMax;
 document.getElementById('header-total').textContent = 'Pipeline: '+fmtK(pipelineMin)+(pipelineMin<pipelineMax ? ' – '+fmtK(pipelineMax) : '')+' kr';
 
 /* ══════════════════════════════════════════
-   PARTICLES (canvas)
+   FLOATING ORB ANIMATION
 ══════════════════════════════════════════ */
 (function(){
-  const c = document.getElementById('bg-canvas');
-  const ctx = c.getContext('2d');
-  let W, H, pts = [];
-  const N = 55;
-
-  function resize(){ W=c.width=innerWidth; H=c.height=innerHeight }
-  resize();
-  addEventListener('resize', resize);
-
-  for(let i=0;i<N;i++){
-    const g = Math.random()<0.4;
-    pts.push({
-      x:Math.random()*W, y:Math.random()*H,
-      vx:(Math.random()-.5)*0.18, vy:(Math.random()-.5)*0.18,
-      r:Math.random()*1.8+0.4,
-      c: g ? `oklch(73% 0.165 145 / ${(Math.random()*0.10+0.03).toFixed(2)})`
-           : `oklch(72% 0.130 78 / ${(Math.random()*0.08+0.03).toFixed(2)})`
+  const orbs = document.querySelectorAll('.orb');
+  const speed = [0.0003, 0.00025, 0.0002];
+  const amplitude = [30, 25, 20];
+  const phase = [0, 2.1, 4.2];
+  let t = 0;
+  function tick(){
+    t++;
+    orbs.forEach((orb,i)=>{
+      const x = Math.sin(t*speed[i]+phase[i])*amplitude[i];
+      const y = Math.cos(t*speed[i]*0.7+phase[i])*amplitude[i]*0.6;
+      const s = 1 + Math.sin(t*speed[i]*0.5)*0.08;
+      orb.style.transform = `translate(${x}px,${y}px) scale(${s})`;
     });
+    requestAnimationFrame(tick);
   }
-
-  function draw(){
-    ctx.clearRect(0,0,W,H);
-    pts.forEach(p=>{
-      p.x+=p.vx; p.y+=p.vy;
-      if(p.x<-10)p.x=W+10; if(p.x>W+10)p.x=-10;
-      if(p.y<-10)p.y=H+10; if(p.y>H+10)p.y=-10;
-      ctx.beginPath();
-      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-      ctx.fillStyle=p.c;
-      ctx.fill();
-    });
-    requestAnimationFrame(draw);
-  }
-  draw();
+  tick();
 })();
 
 /* ══════════════════════════════════════════
@@ -1297,15 +1464,15 @@ document.querySelectorAll('[data-tilt]').forEach(card=>{
     const r=card.getBoundingClientRect();
     const x=(e.clientX-r.left)/r.width-.5;
     const y=(e.clientY-r.top)/r.height-.5;
-    card.style.transform=`perspective(700px) rotateX(${-y*7}deg) rotateY(${x*7}deg) translateZ(6px)`;
+    card.style.transform=`perspective(800px) rotateX(${-y*6}deg) rotateY(${x*6}deg) translateZ(8px)`;
   });
   card.addEventListener('mouseleave',()=>{
-    card.style.transform='perspective(700px) rotateX(0) rotateY(0) translateZ(0)';
+    card.style.transform='perspective(800px) rotateX(0) rotateY(0) translateZ(0)';
   });
 });
 
 /* ══════════════════════════════════════════
-   INTERSECTION OBSERVER (reliable scroll reveal)
+   INTERSECTION OBSERVER
 ══════════════════════════════════════════ */
 const revealObserver = new IntersectionObserver(entries=>{
   entries.forEach(e=>{
@@ -1319,15 +1486,15 @@ const revealObserver = new IntersectionObserver(entries=>{
 document.querySelectorAll('.reveal, .reveal-left').forEach(el=>revealObserver.observe(el));
 
 /* ══════════════════════════════════════════
-   COUNT-UP
+   COUNT-UP with spring-like easing
 ══════════════════════════════════════════ */
-function countUp(el, target, suffix, duration=1600){
+function countUp(el, target, suffix, duration=1800){
   if(!el) return;
-  // Instant fallback after 100ms in case rAF is throttled
-  const fallback = setTimeout(()=>{ el.innerHTML=fmt(target)+(suffix?'<span class="unit">'+suffix+'</span>':'') }, 100);
+  const fallback = setTimeout(()=>{ el.innerHTML=fmt(target)+(suffix?'<span class="unit">'+suffix+'</span>':'') }, 120);
   const t0=performance.now();
   (function tick(now){
     const p=Math.min((now-t0)/duration,1);
+    // Quartic ease-out for smooth deceleration
     const ease=1-Math.pow(1-p,4);
     const v=Math.round(ease*target);
     el.innerHTML=fmt(v)+(suffix?'<span class="unit">'+suffix+'</span>':'');
@@ -1346,11 +1513,13 @@ document.getElementById('hn-remain').textContent    = fmt(Math.max(DATA.meta.mon
 document.getElementById('hn-closed-sub').textContent  = closed.length+' stängda affärer';
 document.getElementById('hn-pipeline-sub').textContent = (meetings.length+pitched.length)+' aktiva';
 
-// Goal ring + bar
+// Goal ring + bar + glow ring
 const pct = Math.min(closedValue/DATA.meta.monthly_goal*100,100);
 setTimeout(()=>{
   const circumference = 2*Math.PI*80;
-  document.getElementById('goal-ring').style.strokeDashoffset = circumference*(1-pct/100);
+  const offset = circumference*(1-pct/100);
+  document.getElementById('goal-ring').style.strokeDashoffset = offset;
+  document.getElementById('goal-ring-glow').style.strokeDashoffset = offset;
   document.getElementById('ring-pct').textContent = Math.round(pct)+'%';
   document.getElementById('goal-fill').style.width = pct+'%';
   document.getElementById('gs-closed').textContent = fmt(closedValue)+' kr';
@@ -1382,10 +1551,10 @@ setTimeout(()=>{
   document.getElementById('kpi-leads-bar').style.width = (DATA.leads_summary.ready_to_contact/DATA.leads_summary.total*100)+'%';
 }, 600);
 
-// Funnel
+// Funnel counts
 setTimeout(()=>{
   [{n:'closed',d:closed,v:closedValue},{n:'meeting',d:meetings,v:meetingValue},
-   {n:'pitched',d:pitched,v:pitchedValue},{n:'declined',d:declined,v:declined.reduce((s,d)=>s+(d.value||0),0)}
+   {n:'pitched',d:pitched,v:pitchedValue},{n:'declined',d:declined,v:declinedValue}
   ].forEach(s=>{
     const nEl=document.getElementById('f-'+s.n+'-n');
     const kEl=document.getElementById('f-'+s.n+'-kr');
@@ -1394,96 +1563,241 @@ setTimeout(()=>{
   });
 }, 500);
 
+// Funnel bar visualization
+setTimeout(()=>{
+  const maxVal = Math.max(closedValue, pitchedValue, meetingValue, declinedValue, 1);
+  const stages = [
+    {label:'Stängt', value:closedValue, color:'var(--green-lt)'},
+    {label:'Möten',  value:meetingValue, color:'var(--blue)'},
+    {label:'Offert', value:pitchedValue, color:'var(--orange)'},
+    {label:'Avböjd', value:declinedValue,color:'var(--red)'}
+  ];
+  const container = document.getElementById('funnel-bars');
+  stages.forEach((s,i)=>{
+    const row = document.createElement('div');
+    row.className='funnel-bar';
+    row.innerHTML=`
+      <span class="fb-label">${s.label}</span>
+      <div class="fb-track"><div class="fb-fill" style="background:${s.color}"></div></div>
+      <span class="fb-val">${s.value>0?fmtK(s.value):''}</span>
+    `;
+    container.appendChild(row);
+    // Animate width after append
+    setTimeout(()=>{
+      row.querySelector('.fb-fill').style.width = (s.value/maxVal*100)+'%';
+    }, 200 + i*120);
+  });
+}, 800);
+
 // Leads
 setTimeout(()=>{
   ['lead-total','lead-new','lead-contacted','lead-ni','lead-ready'].forEach((id,i)=>{
     const vals=[DATA.leads_summary.total,DATA.leads_summary.new,DATA.leads_summary.contacted,DATA.leads_summary.not_interested,DATA.leads_summary.ready_to_contact];
-    countUp(document.getElementById(id), vals[i], '', 1200);
+    countUp(document.getElementById(id), vals[i], '', 1400);
   });
 }, 700);
 
 /* ══════════════════════════════════════════
-   CHARTS
+   CHARTS — premium styling with gradients
 ══════════════════════════════════════════ */
 Chart.defaults.font.family='Epilogue';
 
 const TT = {
-  backgroundColor:'oklch(12.5% 0.017 138)',
-  titleColor:'oklch(94% 0.010 80)',
-  bodyColor:'oklch(58% 0.010 80)',
-  borderColor:'oklch(72% 0.130 78 / 0.25)',
-  borderWidth:1, padding:14, cornerRadius:10,
+  backgroundColor:'oklch(9% 0.012 200 / 0.95)',
+  titleColor:'oklch(95% 0.008 80)',
+  bodyColor:'oklch(60% 0.008 80)',
+  borderColor:'oklch(74% 0.135 78 / 0.20)',
+  borderWidth:1, padding:16, cornerRadius:12,
   titleFont:{family:'Gloock',size:14},
-  bodyFont:{family:'Epilogue',size:11}
+  bodyFont:{family:'Epilogue',size:11},
+  boxPadding:6,
+  caretSize:6,
+  displayColors:true,
+  usePointStyle:true
 };
 
 const LEGEND = {
   position:'bottom',
-  labels:{color:'oklch(58% 0.010 80)', font:{family:'Epilogue',size:11}, padding:18, usePointStyle:true, pointStyleWidth:8}
+  labels:{color:'oklch(60% 0.008 80)', font:{family:'Epilogue',size:11}, padding:20, usePointStyle:true, pointStyleWidth:8}
 };
 
-new Chart(document.getElementById('chart-pipeline'),{
+// ─── Pipeline doughnut ───
+const pipeCtx = document.getElementById('chart-pipeline').getContext('2d');
+new Chart(pipeCtx,{
   type:'doughnut',
   data:{
     labels:['Stängda ('+closed.length+')','Möten ('+meetings.length+')','Offerter ('+pitched.length+')','Avböjda ('+declined.length+')'],
     datasets:[{
       data:[closed.length, meetings.length, pitched.length, declined.length],
-      backgroundColor:['oklch(73% 0.165 145)','oklch(63% 0.165 240)','oklch(68% 0.180 55)','oklch(52% 0.210 24)'],
-      borderColor:'oklch(12.5% 0.017 138)', borderWidth:5,
-      hoverBorderColor:'oklch(72% 0.130 78 / 0.5)', hoverOffset:16
+      backgroundColor:[
+        'oklch(75% 0.165 148)',
+        'oklch(65% 0.160 245)',
+        'oklch(70% 0.175 55)',
+        'oklch(55% 0.200 25)'
+      ],
+      borderColor:'oklch(11% 0.014 200)', borderWidth:4,
+      hoverBorderColor:'oklch(74% 0.135 78 / 0.4)', hoverOffset:14,
+      hoverBorderWidth:2
     }]
   },
   options:{
-    responsive:true, maintainAspectRatio:false, cutout:'65%',
-    plugins:{legend:LEGEND, tooltip:{...TT, callbacks:{label:ctx=>ctx.label+' — '+Math.round(ctx.parsed/DATA.deals.length*100)+'%'}}},
-    animation:{duration:2000, easing:'easeOutQuart',
-      animateRotate:true, animateScale:true}
+    responsive:true, maintainAspectRatio:false, cutout:'68%',
+    plugins:{
+      legend:LEGEND,
+      tooltip:{...TT, callbacks:{label:ctx=>ctx.label+' — '+Math.round(ctx.parsed/DATA.deals.length*100)+'%'}}
+    },
+    animation:{
+      duration:2200,
+      easing:'easeOutQuart',
+      animateRotate:true,
+      animateScale:true
+    }
   }
 });
 
-const groups=[
-  {label:'Stängt',  value:closedValue,           color:'oklch(73% 0.165 145)'},
-  {label:'Möten',   value:meetingValue,           color:'oklch(63% 0.165 240)'},
-  {label:'Offerter',value:pitchedValue,           color:'oklch(68% 0.180 55)' },
-  {label:'Mål',     value:DATA.meta.monthly_goal, color:'oklch(72% 0.130 78 / 0.20)'}
+// ─── Revenue area chart (cumulative timeline) ───
+const revCtx = document.getElementById('chart-revenue').getContext('2d');
+const revGrad = revCtx.createLinearGradient(0,0,0,240);
+revGrad.addColorStop(0, 'oklch(74% 0.135 78 / 0.35)');
+revGrad.addColorStop(0.5, 'oklch(74% 0.135 78 / 0.10)');
+revGrad.addColorStop(1, 'oklch(74% 0.135 78 / 0.01)');
+
+const revLineGrad = revCtx.createLinearGradient(0,0,revCtx.canvas.clientWidth||600,0);
+revLineGrad.addColorStop(0, 'oklch(62% 0.190 150)');
+revLineGrad.addColorStop(0.5, 'oklch(75% 0.165 148)');
+revLineGrad.addColorStop(1, 'oklch(74% 0.135 78)');
+
+// Build cumulative revenue data from closed deals sorted by date
+const closedSorted = [...closed].filter(d=>d.date_closed).sort((a,b)=>new Date(a.date_closed)-new Date(b.date_closed));
+const revLabels = ['Start'];
+const revData = [0];
+let cumulative = 0;
+closedSorted.forEach(d=>{
+  cumulative += (d.value||0);
+  revLabels.push(d.company);
+  revData.push(cumulative);
+});
+// Add pipeline projection
+revLabels.push('Pipeline');
+revData.push(cumulative + pipelineMin);
+
+new Chart(revCtx,{
+  type:'line',
+  data:{
+    labels:revLabels,
+    datasets:[{
+      data:revData,
+      fill:true,
+      backgroundColor:revGrad,
+      borderColor:revLineGrad,
+      borderWidth:2.5,
+      tension:0.4,
+      pointRadius:revData.map((_,i)=>i===revData.length-1?6:4),
+      pointBackgroundColor:revData.map((_,i)=>i===revData.length-1?'oklch(74% 0.135 78)':'oklch(75% 0.165 148)'),
+      pointBorderColor:'oklch(11% 0.014 200)',
+      pointBorderWidth:2,
+      pointHoverRadius:8,
+      pointHoverBackgroundColor:'oklch(74% 0.135 78)',
+      pointHoverBorderColor:'oklch(95% 0.008 80)',
+      pointHoverBorderWidth:2
+    },{
+      // Goal line
+      data:revData.map(()=>DATA.meta.monthly_goal),
+      borderColor:'oklch(74% 0.135 78 / 0.20)',
+      borderDash:[6,6],
+      borderWidth:1,
+      pointRadius:0,
+      fill:false
+    }]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    plugins:{
+      legend:{display:false},
+      tooltip:{...TT, callbacks:{
+        label:ctx=>ctx.datasetIndex===0?fmt(ctx.parsed.y)+' kr':'Mål: '+fmt(ctx.parsed.y)+' kr'
+      }}
+    },
+    scales:{
+      x:{grid:{color:'oklch(20% 0.010 200 / 0.4)'}, ticks:{color:'oklch(38% 0.006 80)',font:{size:10}}, border:{display:false}},
+      y:{grid:{color:'oklch(20% 0.010 200 / 0.4)'}, ticks:{color:'oklch(38% 0.006 80)',font:{size:10},callback:v=>fmtK(v)}, border:{display:false},
+        suggestedMax:DATA.meta.monthly_goal*1.15}
+    },
+    animation:{duration:2400, easing:'easeOutQuart'}
+  }
+});
+
+// ─── Value bar chart with gradient fills ───
+const valCtx = document.getElementById('chart-value').getContext('2d');
+const barGrads = [
+  (()=>{ const g=valCtx.createLinearGradient(0,0,0,260); g.addColorStop(0,'oklch(75% 0.165 148)'); g.addColorStop(1,'oklch(62% 0.190 150 / 0.5)'); return g })(),
+  (()=>{ const g=valCtx.createLinearGradient(0,0,0,260); g.addColorStop(0,'oklch(65% 0.160 245)'); g.addColorStop(1,'oklch(65% 0.160 245 / 0.4)'); return g })(),
+  (()=>{ const g=valCtx.createLinearGradient(0,0,0,260); g.addColorStop(0,'oklch(70% 0.175 55)');  g.addColorStop(1,'oklch(70% 0.175 55 / 0.4)');  return g })(),
+  (()=>{ const g=valCtx.createLinearGradient(0,0,0,260); g.addColorStop(0,'oklch(74% 0.135 78 / 0.30)'); g.addColorStop(1,'oklch(74% 0.135 78 / 0.08)'); return g })()
 ];
 
-new Chart(document.getElementById('chart-value'),{
+const groups=[
+  {label:'Stängt',  value:closedValue},
+  {label:'Möten',   value:meetingValue},
+  {label:'Offerter',value:pitchedValue},
+  {label:'Mål',     value:DATA.meta.monthly_goal}
+];
+
+new Chart(valCtx,{
   type:'bar',
   data:{
     labels:groups.map(g=>g.label),
     datasets:[{
       data:groups.map(g=>g.value),
-      backgroundColor:groups.map(g=>g.color),
-      borderRadius:10, borderSkipped:false, barPercentage:0.55
+      backgroundColor:barGrads,
+      borderColor:['oklch(75% 0.165 148)','oklch(65% 0.160 245)','oklch(70% 0.175 55)','oklch(74% 0.135 78 / 0.25)'],
+      borderWidth:1,
+      borderRadius:12, borderSkipped:false, barPercentage:0.50
     }]
   },
   options:{
     responsive:true, maintainAspectRatio:false,
     plugins:{legend:{display:false}, tooltip:{...TT, callbacks:{label:ctx=>fmt(ctx.parsed.y)+' kr'}}},
     scales:{
-      x:{grid:{display:false}, ticks:{color:'oklch(36% 0.008 80)',font:{size:10}}, border:{display:false}},
-      y:{grid:{color:'oklch(22% 0.013 138 / 0.7)'}, ticks:{color:'oklch(36% 0.008 80)',font:{size:10},callback:v=>fmtK(v)}, border:{display:false}}
+      x:{grid:{display:false}, ticks:{color:'oklch(38% 0.006 80)',font:{size:10}}, border:{display:false}},
+      y:{grid:{color:'oklch(20% 0.010 200 / 0.5)'}, ticks:{color:'oklch(38% 0.006 80)',font:{size:10},callback:v=>fmtK(v)}, border:{display:false}}
     },
-    animation:{duration:2000, easing:'easeOutQuart'}
+    animation:{duration:2200, easing:'easeOutQuart', delay:ctx=>ctx.dataIndex*200}
   }
 });
 
-new Chart(document.getElementById('chart-leads'),{
-  type:'polarArea',
+// ─── Leads horizontal bar (replacing polar area for clarity) ───
+const leadCtx = document.getElementById('chart-leads').getContext('2d');
+const leadLabels = ['Nya','Kontaktade','Ej intresserade','Redo att kontakta'];
+const leadVals = [DATA.leads_summary.new, DATA.leads_summary.contacted, DATA.leads_summary.not_interested, DATA.leads_summary.ready_to_contact];
+const leadColors = [
+  (()=>{ const g=leadCtx.createLinearGradient(0,0,400,0); g.addColorStop(0,'oklch(75% 0.165 148 / 0.8)'); g.addColorStop(1,'oklch(75% 0.165 148 / 0.3)'); return g })(),
+  (()=>{ const g=leadCtx.createLinearGradient(0,0,400,0); g.addColorStop(0,'oklch(65% 0.160 245 / 0.8)'); g.addColorStop(1,'oklch(65% 0.160 245 / 0.3)'); return g })(),
+  (()=>{ const g=leadCtx.createLinearGradient(0,0,400,0); g.addColorStop(0,'oklch(55% 0.200 25 / 0.7)');  g.addColorStop(1,'oklch(55% 0.200 25 / 0.25)');  return g })(),
+  (()=>{ const g=leadCtx.createLinearGradient(0,0,400,0); g.addColorStop(0,'oklch(74% 0.135 78 / 0.9)');  g.addColorStop(1,'oklch(74% 0.135 78 / 0.35)');  return g })()
+];
+
+new Chart(leadCtx,{
+  type:'bar',
   data:{
-    labels:['Totalt','Nya','Kontaktade','Ej int.','Redo'],
+    labels:leadLabels,
     datasets:[{
-      data:[DATA.leads_summary.total, DATA.leads_summary.new, DATA.leads_summary.contacted, DATA.leads_summary.not_interested, DATA.leads_summary.ready_to_contact],
-      backgroundColor:['oklch(72% 0.130 78 / 0.65)','oklch(73% 0.165 145 / 0.65)','oklch(63% 0.165 240 / 0.65)','oklch(52% 0.210 24 / 0.50)','oklch(73% 0.165 145 / 0.90)'],
-      borderColor:'oklch(12.5% 0.017 138)', borderWidth:3
+      data:leadVals,
+      backgroundColor:leadColors,
+      borderColor:['oklch(75% 0.165 148)','oklch(65% 0.160 245)','oklch(55% 0.200 25)','oklch(74% 0.135 78)'],
+      borderWidth:1,
+      borderRadius:8, barPercentage:0.55
     }]
   },
   options:{
     responsive:true, maintainAspectRatio:false,
-    plugins:{legend:LEGEND, tooltip:{...TT}},
-    scales:{r:{grid:{color:'oklch(22% 0.013 138 / 0.7)'}, ticks:{display:false}, pointLabels:{display:false}}},
-    animation:{duration:2000, easing:'easeOutQuart'}
+    indexAxis:'y',
+    plugins:{legend:{display:false}, tooltip:{...TT, callbacks:{label:ctx=>ctx.parsed.x+' leads'}}},
+    scales:{
+      x:{grid:{color:'oklch(20% 0.010 200 / 0.5)'}, ticks:{color:'oklch(38% 0.006 80)',font:{size:10}}, border:{display:false}},
+      y:{grid:{display:false}, ticks:{color:'oklch(60% 0.008 80)',font:{size:11,weight:500}}, border:{display:false}}
+    },
+    animation:{duration:2000, easing:'easeOutQuart', delay:ctx=>ctx.dataIndex*150}
   }
 });
 
@@ -1496,18 +1810,26 @@ function renderTable(filter){
   const deals = [...raw].sort((a,b)=>(STATUS_ORDER[a.status]??9)-(STATUS_ORDER[b.status]??9));
   const tbody = document.getElementById('deal-tbody');
   tbody.innerHTML='';
-  deals.forEach(d=>{
+  deals.forEach((d,i)=>{
     const s=STATUS_MAP[d.status];
     const tr=document.createElement('tr');
+    tr.style.opacity='0';
+    tr.style.transform='translateY(8px)';
     tr.innerHTML=`
-      <td><span class="td-company"><span class="co-dot" style="background:${s.color};box-shadow:0 0 6px ${s.color}"></span>${d.company}</span></td>
+      <td><span class="td-company"><span class="co-dot" style="background:${s.color};box-shadow:0 0 8px ${s.color}"></span>${d.company}</span></td>
       <td>${d.category}</td>
       <td><span class="status-badge ${s.cls}">${s.label}</span></td>
       <td class="td-value">${d.value_label ? d.value_label+' kr' : d.value ? fmt(d.value)+' kr' : '—'}</td>
       <td>${d.date_contacted?d.date_contacted.slice(5).split('-').reverse().join('/'):'—'}</td>
-      <td>${d.pitch_url?'<a href="'+d.pitch_url+'" target="_blank" class="td-link">Visa →</a>':'—'}</td>
+      <td>${d.pitch_url?'<a href="'+d.pitch_url+'" target="_blank" rel="noopener" class="td-link">Visa →</a>':'—'}</td>
     `;
     tbody.appendChild(tr);
+    // Staggered row entrance
+    setTimeout(()=>{
+      tr.style.transition='opacity 0.4s cubic-bezier(0.25,1,0.5,1), transform 0.4s cubic-bezier(0.25,1,0.5,1)';
+      tr.style.opacity='1';
+      tr.style.transform='none';
+    }, 30 + i*40);
   });
 }
 
@@ -1524,14 +1846,54 @@ document.querySelectorAll('.pill').forEach(p=>{
 }); // end fetch
 
 /* ══════════════════════════════════════════
-   GSAP — extra polish for real browsers
+   GSAP — orchestrated entrance choreography
 ══════════════════════════════════════════ */
 gsap.registerPlugin(ScrollTrigger);
 
-// Stagger-in GSAP for timeline items (on top of CSS reveal)
+// Header entrance
+gsap.from('.header h1', {
+  y:40, opacity:0, duration:1, ease:'expo.out', delay:0.3
+});
+gsap.from('.header-eye', {
+  y:15, opacity:0, duration:0.7, ease:'expo.out', delay:0.15
+});
+gsap.from('.header-meta', {
+  y:15, opacity:0, duration:0.7, ease:'expo.out', delay:0.5
+});
+
+// Gold rule shimmer
+gsap.from('.rule-gold', {
+  scaleX:0, transformOrigin:'left', duration:1.2, ease:'expo.out', delay:0.6
+});
+
+// Showcase cards stagger
+gsap.utils.toArray('.sc-card').forEach((el,i)=>{
+  gsap.from(el,{
+    y:30, opacity:0, scale:0.96, duration:0.7, delay:i*0.1, ease:'expo.out',
+    scrollTrigger:{trigger:'.showcase', start:'top 82%', once:true}
+  });
+});
+
+// Timeline items stagger
 gsap.utils.toArray('.tl-item').forEach((el,i)=>{
-  gsap.from(el,{x:-12, duration:.5, delay:i*.07, ease:'power2.out',
+  gsap.from(el,{x:-16, opacity:0, duration:0.5, delay:i*0.08, ease:'power2.out',
     scrollTrigger:{trigger:'#timeline', start:'top 82%', once:true}});
+});
+
+// Chart cards entrance
+gsap.utils.toArray('.chart-card, .revenue-card').forEach((el,i)=>{
+  gsap.from(el,{
+    y:24, opacity:0, duration:0.6, delay:i*0.08, ease:'expo.out',
+    scrollTrigger:{trigger:el, start:'top 85%', once:true}
+  });
+});
+
+// Leads strip stagger
+gsap.utils.toArray('.lead-cell').forEach((el,i)=>{
+  gsap.from(el,{
+    y:20, opacity:0, duration:0.5, delay:i*0.06, ease:'expo.out',
+    scrollTrigger:{trigger:'.leads-strip', start:'top 85%', once:true}
+  });
 });
 
 </script>

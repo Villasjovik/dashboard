@@ -672,7 +672,7 @@ fetch('./deals.json').then(r=>r.json()).then(D=>{
 
 const ST={closed:{l:'Stängd',c:'b-closed',color:'#34d399'},meeting:{l:'Möte',c:'b-meeting',color:'#67e8f9'},pitched:{l:'Offert',c:'b-pitched',color:'#fbbf24'},declined:{l:'Avböjd',c:'b-declined',color:'#fb7185'}};
 const fmt=n=>n==null?'—':n.toLocaleString('sv-SE');
-const fK=n=>n>=1000?(n/1000).toFixed(0)+'k':fmt(n);
+const fK=fmt;
 
 const ds=new Date().toLocaleDateString('sv-SE',{year:'numeric',month:'long',day:'numeric'});
 document.getElementById('date-now').textContent=ds;

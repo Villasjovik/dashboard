@@ -800,8 +800,12 @@ tlEl.querySelectorAll('.tl-pill').forEach(pill=>{
 });
 
 /* ═══ INTERSECTION OBSERVER — runs AFTER all dynamic content ═══ */
-const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}})},{threshold:.05,rootMargin:'0px 0px -30px 0px'});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');revObs.unobserve(e.target)}})},{threshold:0,rootMargin:'200px 0px 200px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
+// Force first section visible immediately (snap scroll can prevent observer from firing)
+requestAnimationFrame(()=>{document.querySelectorAll('.snap:first-child .reveal').forEach(el=>el.classList.add('vis'))});
+// Fallback: guarantee all reveals fire within 1.5s
+setTimeout(()=>{document.querySelectorAll('.reveal:not(.vis)').forEach(el=>el.classList.add('vis'))},1500);
 
 }); // end fetch
 

@@ -39,7 +39,7 @@
   --ease:cubic-bezier(0.22,1,0.36,1);
 }
 
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-snap-type:y mandatory}
 body{
   font-family:'Outfit',system-ui,sans-serif;
   background:var(--bg);
@@ -308,7 +308,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .footer-info{font-size:10px;color:var(--dim);letter-spacing:.03em;text-align:right}
 
 /* ═══ SNAP SECTIONS ═══ */
-.snap{min-height:200dvh;display:flex;flex-direction:column;position:relative;padding:8dvh 0}
+.snap{min-height:200dvh;scroll-snap-align:start;display:flex;flex-direction:column;position:relative;padding:8dvh 0}
 .snap:first-of-type{padding-top:48px}
 .snap:last-of-type{padding-bottom:80px}
 .snap>:last-child{margin-bottom:0}

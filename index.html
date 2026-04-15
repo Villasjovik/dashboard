@@ -509,30 +509,31 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   const cE=[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]];
   const pV=[[1,-.6,1],[-1,-.6,1],[-1,-.6,-1],[1,-.6,-1],[0,1.2,0]];
   const pE=[[0,1],[1,2],[2,3],[3,0],[0,4],[1,4],[2,4],[3,4]];
-  /* Dollar sign — S-curve + vertical bar */
+  /* Original abstract shape (kept — user liked it) */
   const $V=[],$$E=[];
   (function(){
     const seg=12,r=.7,h=1.8;
-    // Top half-circle (curves right) — from top-center downward
     for(let i=0;i<=seg;i++){const a=Math.PI-Math.PI*(i/seg);$V.push([r*Math.cos(a),h*.25+r*.55*Math.sin(a)+h*.25,0])}
-    // Bottom half-circle (curves left) — continues downward
     for(let i=0;i<=seg;i++){const a=-Math.PI*(i/seg);$V.push([r*Math.cos(a),-h*.25+r*.55*Math.sin(a)-h*.25,0])}
-    // Connect S-curve edges
     const n=seg+1;
     for(let i=0;i<seg;i++)$$E.push([i,i+1]);
     for(let i=0;i<seg;i++)$$E.push([n+i,n+i+1]);
-    // Connect the two halves
     $$E.push([seg,n]);
-    // Vertical bar (two points top and bottom)
-    const vTop=$V.length;$V.push([0,h,0]);
-    const vBot=$V.length;$V.push([0,-h,0]);
-    $$E.push([vTop,vBot]);
-    // Second vertical bar offset for depth
-    const vTop2=$V.length;$V.push([0,h,.3]);
-    const vBot2=$V.length;$V.push([0,-h,.3]);
-    $$E.push([vTop2,vBot2]);
-    $$E.push([vTop,vTop2]);
-    $$E.push([vBot,vBot2]);
+    const vT=$V.length;$V.push([0,h,0]);const vB=$V.length;$V.push([0,-h,0]);$$E.push([vT,vB]);
+    const vT2=$V.length;$V.push([0,h,.3]);const vB2=$V.length;$V.push([0,-h,.3]);
+    $$E.push([vT2,vB2]);$$E.push([vT,vT2]);$$E.push([vB,vB2]);
+  })();
+  /* Proper dollar sign — sine S-curve + vertical bars */
+  const dlV=[],dlE=[];
+  (function(){
+    const n=24,xA=.7,yS=.45;
+    const tMn=-1.25*Math.PI,tMx=1.25*Math.PI;
+    for(let i=0;i<=n;i++){const t=tMn+(tMx-tMn)*(i/n);dlV.push([xA*Math.sin(t),yS*t,0])}
+    for(let i=0;i<n;i++)dlE.push([i,i+1]);
+    const yT=yS*tMx+.3,yB=yS*tMn-.3;
+    const vt=dlV.length;dlV.push([0,yT,0]);const vb=dlV.length;dlV.push([0,yB,0]);dlE.push([vt,vb]);
+    const vt2=dlV.length;dlV.push([0,yT,.25]);const vb2=dlV.length;dlV.push([0,yB,.25]);
+    dlE.push([vt2,vb2]);dlE.push([vt,vt2]);dlE.push([vb,vb2]);
   })();
   const sh=[
     {v:t1.v,e:t1.e,px:.15,py:.22,sc:55,rx:0,ry:0,drx:.003,dry:.005,a:.22},
@@ -542,6 +543,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
     {v:pV,e:pE,px:.50,py:.42,sc:32,rx:3,ry:0,drx:.005,dry:.007,a:.14},
     {v:$V,e:$$E,px:.88,py:.42,sc:30,rx:.5,ry:0,drx:.004,dry:.008,a:.20},
     {v:$V,e:$$E,px:.12,py:.48,sc:22,rx:2,ry:1.5,drx:-.003,dry:.005,a:.14},
+    {v:dlV,e:dlE,px:.06,py:.68,sc:28,rx:0,ry:.5,drx:.003,dry:.006,a:.22},
   ];
   const P=[];
   for(let i=0;i<50;i++){const cls=['200,164,78','180,130,55','224,190,106'];P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22,r:Math.random()*1.8+.5,c:cls[i%3],a:.12+Math.random()*.18,ph:Math.random()*6.28,ps:.003+Math.random()*.004})}
@@ -1100,7 +1102,7 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
   const diaV=[[1,0,0],[-1,0,0],[0,0,1],[0,0,-1],[0,1.8,0],[0,-1.8,0]];
   const diaE=[[0,2],[2,1],[1,3],[3,0],[0,4],[1,4],[2,4],[3,4],[0,5],[1,5],[2,5],[3,5]];
 
-  // Dollar sign — S-curve + vertical bar
+  // Abstract shape (original, kept)
   const dolV=[],dolE=[];
   (function(){
     const seg=12,r=.7,h=1.8;
@@ -1110,12 +1112,21 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
     for(let i=0;i<seg;i++)dolE.push([i,i+1]);
     for(let i=0;i<seg;i++)dolE.push([n+i,n+i+1]);
     dolE.push([seg,n]);
-    const vT=dolV.length;dolV.push([0,h,0]);
-    const vB=dolV.length;dolV.push([0,-h,0]);
-    dolE.push([vT,vB]);
-    const vT2=dolV.length;dolV.push([0,h,.3]);
-    const vB2=dolV.length;dolV.push([0,-h,.3]);
+    const vT=dolV.length;dolV.push([0,h,0]);const vB=dolV.length;dolV.push([0,-h,0]);dolE.push([vT,vB]);
+    const vT2=dolV.length;dolV.push([0,h,.3]);const vB2=dolV.length;dolV.push([0,-h,.3]);
     dolE.push([vT2,vB2]);dolE.push([vT,vT2]);dolE.push([vB,vB2]);
+  })();
+  // Proper dollar sign — sine S-curve + vertical bars
+  const dl2V=[],dl2E=[];
+  (function(){
+    const n=24,xA=.7,yS=.45;
+    const tMn=-1.25*Math.PI,tMx=1.25*Math.PI;
+    for(let i=0;i<=n;i++){const t=tMn+(tMx-tMn)*(i/n);dl2V.push([xA*Math.sin(t),yS*t,0])}
+    for(let i=0;i<n;i++)dl2E.push([i,i+1]);
+    const yT=yS*tMx+.3,yB=yS*tMn-.3;
+    const vt=dl2V.length;dl2V.push([0,yT,0]);const vb=dl2V.length;dl2V.push([0,yB,0]);dl2E.push([vt,vb]);
+    const vt2=dl2V.length;dl2V.push([0,yT,.25]);const vb2=dl2V.length;dl2V.push([0,yB,.25]);
+    dl2E.push([vt2,vb2]);dl2E.push([vt,vt2]);dl2E.push([vb,vb2]);
   })();
 
   // Shapes floating in space
@@ -1129,6 +1140,7 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
     {verts:diaV,edges:diaE,cx:W*.08,cy:H*.50,scale:30,rx:0,ry:1.5,drx:-.005,dry:.004,color:'200,164,78',alpha:.14,glowR:3},
     {verts:dolV,edges:dolE,cx:W*.88,cy:H*.38,scale:30,rx:.5,ry:0,drx:.004,dry:.008,color:'224,190,106',alpha:.22,glowR:4},
     {verts:dolV,edges:dolE,cx:W*.35,cy:H*.85,scale:24,rx:2,ry:1.5,drx:-.003,dry:.005,color:'200,164,78',alpha:.16,glowR:3},
+    {verts:dl2V,edges:dl2E,cx:W*.06,cy:H*.68,scale:28,rx:0,ry:.5,drx:.003,dry:.006,color:'224,190,106',alpha:.22,glowR:4},
   ];
 
   // Particles — more, brighter

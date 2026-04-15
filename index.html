@@ -4,6 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Villa Sjövik — Sales Dashboard</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💲</text></svg>"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -508,12 +509,39 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   const cE=[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]];
   const pV=[[1,-.6,1],[-1,-.6,1],[-1,-.6,-1],[1,-.6,-1],[0,1.2,0]];
   const pE=[[0,1],[1,2],[2,3],[3,0],[0,4],[1,4],[2,4],[3,4]];
+  /* Dollar sign — S-curve + vertical bar */
+  const $V=[],$$E=[];
+  (function(){
+    const seg=12,r=.7,h=1.8;
+    // Top half-circle (curves right) — from top-center downward
+    for(let i=0;i<=seg;i++){const a=Math.PI-Math.PI*(i/seg);$V.push([r*Math.cos(a),h*.25+r*.55*Math.sin(a)+h*.25,0])}
+    // Bottom half-circle (curves left) — continues downward
+    for(let i=0;i<=seg;i++){const a=-Math.PI*(i/seg);$V.push([r*Math.cos(a),-h*.25+r*.55*Math.sin(a)-h*.25,0])}
+    // Connect S-curve edges
+    const n=seg+1;
+    for(let i=0;i<seg;i++)$$E.push([i,i+1]);
+    for(let i=0;i<seg;i++)$$E.push([n+i,n+i+1]);
+    // Connect the two halves
+    $$E.push([seg,n]);
+    // Vertical bar (two points top and bottom)
+    const vTop=$V.length;$V.push([0,h,0]);
+    const vBot=$V.length;$V.push([0,-h,0]);
+    $$E.push([vTop,vBot]);
+    // Second vertical bar offset for depth
+    const vTop2=$V.length;$V.push([0,h,.3]);
+    const vBot2=$V.length;$V.push([0,-h,.3]);
+    $$E.push([vTop2,vBot2]);
+    $$E.push([vTop,vTop2]);
+    $$E.push([vBot,vBot2]);
+  })();
   const sh=[
     {v:t1.v,e:t1.e,px:.15,py:.22,sc:55,rx:0,ry:0,drx:.003,dry:.005,a:.22},
     {v:cV,e:cE,px:.82,py:.60,sc:48,rx:1,ry:0,drx:-.004,dry:.006,a:.20},
     {v:dV,e:dE,px:.70,py:.16,sc:38,rx:2,ry:1,drx:.006,dry:-.003,a:.18},
     {v:t1.v,e:t1.e,px:.22,py:.74,sc:44,rx:0,ry:2,drx:-.003,dry:.004,a:.16},
     {v:pV,e:pE,px:.50,py:.42,sc:32,rx:3,ry:0,drx:.005,dry:.007,a:.14},
+    {v:$V,e:$$E,px:.88,py:.42,sc:30,rx:.5,ry:0,drx:.004,dry:.008,a:.20},
+    {v:$V,e:$$E,px:.12,py:.48,sc:22,rx:2,ry:1.5,drx:-.003,dry:.005,a:.14},
   ];
   const P=[];
   for(let i=0;i<50;i++){const cls=['200,164,78','180,130,55','224,190,106'];P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22,r:Math.random()*1.8+.5,c:cls[i%3],a:.12+Math.random()*.18,ph:Math.random()*6.28,ps:.003+Math.random()*.004})}
@@ -1072,6 +1100,24 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
   const diaV=[[1,0,0],[-1,0,0],[0,0,1],[0,0,-1],[0,1.8,0],[0,-1.8,0]];
   const diaE=[[0,2],[2,1],[1,3],[3,0],[0,4],[1,4],[2,4],[3,4],[0,5],[1,5],[2,5],[3,5]];
 
+  // Dollar sign — S-curve + vertical bar
+  const dolV=[],dolE=[];
+  (function(){
+    const seg=12,r=.7,h=1.8;
+    for(let i=0;i<=seg;i++){const a=Math.PI-Math.PI*(i/seg);dolV.push([(r*Math.cos(a)),h*.25+r*.55*Math.sin(a)+h*.25,0])}
+    for(let i=0;i<=seg;i++){const a=-Math.PI*(i/seg);dolV.push([(r*Math.cos(a)),-h*.25+r*.55*Math.sin(a)-h*.25,0])}
+    const n=seg+1;
+    for(let i=0;i<seg;i++)dolE.push([i,i+1]);
+    for(let i=0;i<seg;i++)dolE.push([n+i,n+i+1]);
+    dolE.push([seg,n]);
+    const vT=dolV.length;dolV.push([0,h,0]);
+    const vB=dolV.length;dolV.push([0,-h,0]);
+    dolE.push([vT,vB]);
+    const vT2=dolV.length;dolV.push([0,h,.3]);
+    const vB2=dolV.length;dolV.push([0,-h,.3]);
+    dolE.push([vT2,vB2]);dolE.push([vT,vT2]);dolE.push([vB,vB2]);
+  })();
+
   // Shapes floating in space
   const shapes=[
     {verts:t1.v,edges:t1.e,cx:W*.15,cy:H*.22,scale:55,rx:0,ry:0,drx:.003,dry:.005,color:'200,164,78',alpha:.28,glowR:4},
@@ -1081,6 +1127,8 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
     {verts:pyrV,edges:pyrE,cx:W*.50,cy:H*.42,scale:36,rx:3,ry:0,drx:.005,dry:.007,color:'224,190,106',alpha:.18,glowR:3},
     {verts:cubeV,edges:cubeE,cx:W*.90,cy:H*.25,scale:28,rx:1.5,ry:3,drx:.005,dry:-.004,color:'180,140,60',alpha:.16,glowR:3},
     {verts:diaV,edges:diaE,cx:W*.08,cy:H*.50,scale:30,rx:0,ry:1.5,drx:-.005,dry:.004,color:'200,164,78',alpha:.14,glowR:3},
+    {verts:dolV,edges:dolE,cx:W*.88,cy:H*.38,scale:30,rx:.5,ry:0,drx:.004,dry:.008,color:'224,190,106',alpha:.22,glowR:4},
+    {verts:dolV,edges:dolE,cx:W*.35,cy:H*.85,scale:24,rx:2,ry:1.5,drx:-.003,dry:.005,color:'200,164,78',alpha:.16,glowR:3},
   ];
 
   // Particles — more, brighter

@@ -48,7 +48,8 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 /* Prevent horizontal scroll without clipping content */
-html{overflow-x:clip}
+html{overflow-x:clip;scrollbar-width:none}
+html::-webkit-scrollbar{display:none}
 
 /* ═══ RICH GRADIENT BACKGROUND — DARK CHOCOLATE ═══ */
 body::before{
@@ -1016,10 +1017,7 @@ gsap.utils.toArray('.sec').forEach(el=>{gsap.from(el,{x:-40,opacity:0,duration:1
 gsap.to('#particles',{y:-80,ease:'none',scrollTrigger:{trigger:'body',start:'top top',end:'bottom bottom',scrub:1.5}});
 gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'top top',end:'bottom bottom',scrub:2}});
 
-// Parallax tilt on chart cards while scrolling (3D depth effect)
-gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
-  gsap.to(el,{rotationX:2,transformPerspective:1000,ease:'none',scrollTrigger:{trigger:el,start:'top bottom',end:'bottom top',scrub:2}});
-});
+/* Scroll-parallax tilt removed — conflicts with JS hover tilt system */
 
 /* ═══ 3D WIREFRAME GEOMETRY + PARTICLES ═══ */
 (function(){

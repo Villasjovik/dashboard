@@ -39,7 +39,7 @@
   --ease:cubic-bezier(0.22,1,0.36,1);
 }
 
-html{scroll-behavior:auto}
+html{scroll-behavior:smooth;scroll-snap-type:y proximity}
 body{
   font-family:'Outfit',system-ui,sans-serif;
   background:var(--bg);
@@ -308,7 +308,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .footer-info{font-size:10px;color:var(--dim);letter-spacing:.03em;text-align:right}
 
 /* ═══ SNAP SECTIONS ═══ */
-.snap{min-height:100dvh;display:flex;flex-direction:column;position:relative;padding:48px 0}
+.snap{min-height:200dvh;scroll-snap-align:start;display:flex;flex-direction:column;position:relative;padding:8dvh 0}
 .snap:first-of-type{padding-top:48px}
 .snap:last-of-type{padding-bottom:80px}
 .snap>:last-child{margin-bottom:0}
@@ -376,7 +376,8 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   .hero{grid-template-columns:1fr}.h-div{display:none}
 }
 @media(max-width:700px){
-  .snap{min-height:auto;display:block;padding:24px 0}
+  html{scroll-snap-type:none}
+  .snap{min-height:auto;scroll-snap-align:none;display:block;padding:24px 0}
   .snap-nav{display:none}
   .wrap{padding:28px 16px 56px}
   .bento{grid-template-columns:1fr}
@@ -1031,7 +1032,7 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
 })();
 
 /* ═══ SNAP NAV — Dynamic Island (Apple expand) ═══ */
-/* ═══ FULLPAGE SCROLL CONTROLLER ═══ */
+/* ═══ DYNAMIC ISLAND + KEYBOARD NAV ═══ */
 (function(){
   const nav=document.getElementById('snap-nav');
   const label=document.getElementById('snap-label');
@@ -1039,7 +1040,6 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
   const sections=document.querySelectorAll('.snap[data-label]');
   if(!sections.length||!nav)return;
 
-  /* — Dynamic island dots — */
   sections.forEach((s,i)=>{
     const wrap=document.createElement('div');
     wrap.className='snap-dot-wrap'+(i===0?' is-active':'');
@@ -1050,17 +1050,13 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
     nameSpan.textContent=s.dataset.label;
     wrap.appendChild(dot);
     wrap.appendChild(nameSpan);
-    wrap.addEventListener('click',()=>goTo(i));
+    wrap.addEventListener('click',()=>s.scrollIntoView({behavior:'smooth'}));
     dotsWrap.appendChild(wrap);
   });
   const dots=dotsWrap.querySelectorAll('.snap-dot');
   const wraps=dotsWrap.querySelectorAll('.snap-dot-wrap');
 
-  /* — State — */
   let current=0;
-  let isAnimating=false;
-  let touchY=0;
-
   function updateNav(idx){
     if(idx===current)return;
     current=idx;
@@ -1069,98 +1065,22 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
     wraps.forEach((w,i)=>w.classList.toggle('is-active',i===idx));
   }
 
-  /* — Smooth scroll with easeOutQuint — */
-  function smoothTo(target,dur){
-    dur=dur||900;
-    isAnimating=true;
-    const start=window.scrollY;
-    const dist=target-start;
-    if(Math.abs(dist)<2){isAnimating=false;return}
-    const t0=performance.now();
-    function step(now){
-      const p=Math.min((now-t0)/dur,1);
-      const ease=1-Math.pow(1-p,5);
-      window.scrollTo(0,start+dist*ease);
-      if(p<1)requestAnimationFrame(step);
-      else isAnimating=false;
-    }
-    requestAnimationFrame(step);
-  }
-
-  function goTo(idx){
-    if(idx<0||idx>=sections.length||isAnimating)return;
-    updateNav(idx);
-    smoothTo(sections[idx].offsetTop,900);
-  }
-
-  /* — Which section are we in? — */
-  function detect(){
-    const sy=window.scrollY;
-    for(let i=sections.length-1;i>=0;i--){
-      if(sy>=sections[i].offsetTop-10)return i;
-    }
-    return 0;
-  }
-
-  /* — Can we scroll further inside current section? — */
-  function overflowsDown(idx){
-    const rect=sections[idx].getBoundingClientRect();
-    return rect.bottom>window.innerHeight+5;
-  }
-  function overflowsUp(idx){
-    const rect=sections[idx].getBoundingClientRect();
-    return rect.top<-5;
-  }
-
-  /* — Wheel — */
-  window.addEventListener('wheel',function(e){
-    e.preventDefault();
-    if(isAnimating)return;
-    const idx=detect();
-    updateNav(idx);
-    if(e.deltaY>0){
-      if(overflowsDown(idx)){
-        /* scroll within section, capped so we don't overshoot */
-        const max=sections[idx].getBoundingClientRect().bottom-window.innerHeight;
-        window.scrollBy(0,Math.min(Math.abs(e.deltaY)*1.5,max));
-      }else{
-        goTo(idx+1);
+  /* Track active section via IntersectionObserver */
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const idx=[...sections].indexOf(e.target);
+        if(idx>=0)updateNav(idx);
       }
-    }else{
-      if(overflowsUp(idx)){
-        const max=-sections[idx].getBoundingClientRect().top;
-        window.scrollBy(0,-Math.min(Math.abs(e.deltaY)*1.5,max));
-      }else{
-        goTo(idx-1);
-      }
-    }
-  },{passive:false});
+    });
+  },{threshold:0.2});
+  sections.forEach(s=>obs.observe(s));
 
-  /* — Touch — */
-  window.addEventListener('touchstart',function(e){touchY=e.touches[0].clientY},{passive:true});
-  window.addEventListener('touchend',function(e){
-    const dy=touchY-e.changedTouches[0].clientY;
-    if(Math.abs(dy)<40)return;
-    const idx=detect();
-    updateNav(idx);
-    if(dy>0&&!overflowsDown(idx))goTo(idx+1);
-    else if(dy<0&&!overflowsUp(idx))goTo(idx-1);
-  },{passive:true});
-
-  /* — Keyboard — */
-  document.addEventListener('keydown',function(e){
-    if(isAnimating)return;
-    const idx=detect();
-    if((e.key==='ArrowDown'||e.key==='PageDown')&&!overflowsDown(idx)){e.preventDefault();goTo(idx+1)}
-    else if((e.key==='ArrowUp'||e.key==='PageUp')&&!overflowsUp(idx)){e.preventDefault();goTo(idx-1)}
+  /* Keyboard */
+  document.addEventListener('keydown',e=>{
+    if(e.key==='ArrowDown'&&current<sections.length-1){e.preventDefault();sections[current+1].scrollIntoView({behavior:'smooth'})}
+    if(e.key==='ArrowUp'&&current>0){e.preventDefault();sections[current-1].scrollIntoView({behavior:'smooth'})}
   });
-
-  /* — Track scroll for nav highlight — */
-  let raf;
-  window.addEventListener('scroll',function(){
-    cancelAnimationFrame(raf);
-    raf=requestAnimationFrame(()=>updateNav(detect()));
-  },{passive:true});
 })();
 </script>
 </body>

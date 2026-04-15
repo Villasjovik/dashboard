@@ -16,8 +16,8 @@
 @property --border-angle{syntax:'<angle>';initial-value:0deg;inherits:false}
 
 :root{
-  --bg:#110e0a;
-  --bg2:#1e1913;
+  --bg:#18130e;
+  --bg2:#241d16;
   --surface:rgba(10,50,30,0.62);
   --surface-solid:#0c3020;
   --border:rgba(52,211,153,0.14);
@@ -59,7 +59,7 @@ body::before{
     radial-gradient(ellipse 80% 50% at 10% 55%,rgba(160,120,55,0.09),transparent 50%),
     radial-gradient(ellipse 60% 40% at 50% 45%,rgba(36,26,16,0.65),transparent 70%),
     radial-gradient(ellipse 40% 25% at 75% 20%,rgba(200,164,78,0.07),transparent 50%),
-    linear-gradient(165deg,#120f0a 0%,#1a1610 15%,#221c14 30%,#1e1812 50%,#1a1510 65%,#15110c 80%,#110e0a 100%);
+    linear-gradient(165deg,#16120c 0%,#1e1912 15%,#282016 30%,#221b14 50%,#1e1810 65%,#1a150e 80%,#18130e 100%);
 }
 /* Animated aurora bands — sweeping warm glow */
 body::after{
@@ -245,7 +245,7 @@ body::after{
 .cc-label{font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:22px;display:flex;align-items:center;gap:10px}
 .cc-label::before{content:'';width:18px;height:1px;background:var(--gold);box-shadow:0 0 8px var(--gold)}
 .cc-area{position:relative;height:270px}
-.chart-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:44px}
+.chart-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:56px}
 
 /* Revenue — 3D depth card */
 .rev{margin-bottom:44px;margin-top:32px}
@@ -332,14 +332,14 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 <div id="noise" aria-hidden="true"></div>
 
 <!-- Login Gate -->
-<div id="login-gate" style="position:fixed;inset:0;z-index:99999;background:#110e0a;display:flex;align-items:center;justify-content:center">
+<div id="login-gate" style="position:fixed;inset:0;z-index:99999;background:#18130e;display:flex;align-items:center;justify-content:center">
   <div style="text-align:center;max-width:360px;padding:48px 36px">
     <p style="font-family:'Outfit';font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--dim);margin-bottom:12px">Villa Sjövik</p>
     <h1 style="font-family:'Gloock',serif;font-size:40px;font-weight:400;line-height:.9;color:var(--ink);margin-bottom:10px">Sales <em style="color:var(--gold);font-style:italic">Dashboard</em></h1>
     <p style="font-size:12px;color:var(--dim);margin:14px 0 32px;letter-spacing:.03em">Ange lösenord</p>
     <form id="login-form" autocomplete="off" style="display:flex;flex-direction:column;gap:10px">
-      <input id="login-pw" type="password" placeholder="Lösenord" autofocus style="background:rgba(24,16,10,0.7);border:1px solid rgba(52,211,153,0.12);border-radius:14px;padding:15px 18px;color:var(--ink);font-family:'Outfit';font-size:14px;outline:none;transition:border-color .3s,box-shadow .3s;width:100%" onfocus="this.style.borderColor='rgba(52,211,153,0.4)';this.style.boxShadow='0 0 24px rgba(52,211,153,0.08)'" onblur="this.style.borderColor='rgba(52,211,153,0.12)';this.style.boxShadow='none'"/>
-      <button type="submit" style="background:linear-gradient(135deg,var(--emerald),var(--teal));color:#110e0a;border:none;border-radius:14px;padding:15px;font-family:'Outfit';font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Logga in</button>
+      <input id="login-pw" type="password" placeholder="Lösenord" autofocus style="background:rgba(30,22,14,0.7);border:1px solid rgba(52,211,153,0.12);border-radius:14px;padding:15px 18px;color:var(--ink);font-family:'Outfit';font-size:14px;outline:none;transition:border-color .3s,box-shadow .3s;width:100%" onfocus="this.style.borderColor='rgba(52,211,153,0.4)';this.style.boxShadow='0 0 24px rgba(52,211,153,0.08)'" onblur="this.style.borderColor='rgba(52,211,153,0.12)';this.style.boxShadow='none'"/>
+      <button type="submit" style="background:linear-gradient(135deg,var(--emerald),var(--teal));color:#18130e;border:none;border-radius:14px;padding:15px;font-family:'Outfit';font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Logga in</button>
       <p id="login-err" style="color:var(--rose);font-size:12px;min-height:16px;font-family:'Outfit'"></p>
     </form>
   </div>
@@ -423,6 +423,8 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 
 <div class="sec"><h2>Stängda <em>samarbeten</em></h2></div>
 <div class="showcase" id="showcase"></div>
+
+<hr class="sep"/>
 
 <hr class="sep"/>
 
@@ -596,12 +598,12 @@ setTimeout(()=>{
 /* ═══ CHARTS ═══ */
 Chart.defaults.font.family='Outfit';
 Chart.defaults.color='rgba(240,235,227,0.3)';
-const TT={backgroundColor:'rgba(17,14,10,0.95)',titleColor:'#f0ebe3',bodyColor:'rgba(240,235,227,0.55)',borderColor:'rgba(52,211,153,0.18)',borderWidth:1,padding:{x:16,y:12},cornerRadius:12,titleFont:{family:'Gloock',size:13,weight:400},bodyFont:{family:'Outfit',size:11},boxPadding:5,caretSize:5,usePointStyle:true};
+const TT={backgroundColor:'rgba(24,19,14,0.95)',titleColor:'#f0ebe3',bodyColor:'rgba(240,235,227,0.55)',borderColor:'rgba(52,211,153,0.18)',borderWidth:1,padding:{x:16,y:12},cornerRadius:12,titleFont:{family:'Gloock',size:13,weight:400},bodyFont:{family:'Outfit',size:11},boxPadding:5,caretSize:5,usePointStyle:true};
 const LEG={position:'bottom',labels:{color:'rgba(240,235,227,0.45)',font:{family:'Outfit',size:11},padding:20,usePointStyle:true,pointStyleWidth:8}};
 
 /* Doughnut — double ring with shadow */
 const pipeCtx=document.getElementById('ch-pipe');
-new Chart(pipeCtx,{type:'doughnut',data:{labels:['Stängda ('+closed.length+')','Möten ('+meets.length+')','Offerter ('+pitched.length+')','Avböjda ('+declined.length+')'],datasets:[{data:[closed.length,meets.length,pitched.length,declined.length],backgroundColor:['#34d399','#67e8f9','#fbbf24','#fb7185'],borderColor:'#1e1913',borderWidth:5,hoverOffset:18,hoverBorderColor:'rgba(200,164,78,0.3)'},{data:[closed.length,meets.length,pitched.length,declined.length],backgroundColor:['rgba(52,211,153,0.12)','rgba(103,232,249,0.12)','rgba(251,191,36,0.12)','rgba(251,113,133,0.12)'],borderColor:'transparent',borderWidth:0,weight:.4}]},options:{responsive:true,maintainAspectRatio:false,cutout:'65%',plugins:{legend:LEG,tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?ctx.label+' — '+Math.round(ctx.parsed/D.deals.length*100)+'%':''}}},animation:{duration:2800,easing:'easeOutQuart',animateRotate:true,animateScale:true}}});
+new Chart(pipeCtx,{type:'doughnut',data:{labels:['Stängda ('+closed.length+')','Möten ('+meets.length+')','Offerter ('+pitched.length+')','Avböjda ('+declined.length+')'],datasets:[{data:[closed.length,meets.length,pitched.length,declined.length],backgroundColor:['#34d399','#67e8f9','#fbbf24','#fb7185'],borderColor:'#241d16',borderWidth:5,hoverOffset:18,hoverBorderColor:'rgba(200,164,78,0.3)'},{data:[closed.length,meets.length,pitched.length,declined.length],backgroundColor:['rgba(52,211,153,0.12)','rgba(103,232,249,0.12)','rgba(251,191,36,0.12)','rgba(251,113,133,0.12)'],borderColor:'transparent',borderWidth:0,weight:.4}]},options:{responsive:true,maintainAspectRatio:false,cutout:'65%',plugins:{legend:LEG,tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?ctx.label+' — '+Math.round(ctx.parsed/D.deals.length*100)+'%':''}}},animation:{duration:2800,easing:'easeOutQuart',animateRotate:true,animateScale:true}}});
 
 /* Revenue line — rich gradient area */
 const rCtx=document.getElementById('ch-rev').getContext('2d');
@@ -610,7 +612,7 @@ const rL=rCtx.createLinearGradient(0,0,600,0);rL.addColorStop(0,'#34d399');rL.ad
 const cSorted=[...closed].filter(d=>d.date_closed).sort((a,b)=>new Date(a.date_closed)-new Date(b.date_closed));
 const rLabels=['Start'],rData=[0];let cum=0;cSorted.forEach(d=>{cum+=(d.value||0);rLabels.push(d.company);rData.push(cum)});
 
-new Chart(rCtx,{type:'line',data:{labels:rLabels,datasets:[{data:rData,fill:true,backgroundColor:rG,borderColor:rL,borderWidth:3.5,tension:.4,pointRadius:rData.map((_,i)=>i===rData.length-1?8:5),pointBackgroundColor:rData.map((_,i)=>i===rData.length-1?'#c8a44e':'#34d399'),pointBorderColor:'#1e1913',pointBorderWidth:3,pointHoverRadius:11,pointHoverBackgroundColor:'#e0be6a',pointHoverBorderColor:'rgba(200,164,78,0.4)',pointHoverBorderWidth:4},{data:rData.map(()=>goal),borderColor:'rgba(200,164,78,0.18)',borderDash:[6,6],borderWidth:1.5,pointRadius:0,fill:false}]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?fmt(ctx.parsed.y)+' kr':'Mål: '+fmt(ctx.parsed.y)+' kr'}}},scales:{x:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10,weight:500}},border:{display:false}},y:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10},callback:v=>fK(v)},border:{display:false},suggestedMax:goal*1.25}},animation:{duration:3000,easing:'easeOutQuart'}}});
+new Chart(rCtx,{type:'line',data:{labels:rLabels,datasets:[{data:rData,fill:true,backgroundColor:rG,borderColor:rL,borderWidth:3.5,tension:.4,pointRadius:rData.map((_,i)=>i===rData.length-1?8:5),pointBackgroundColor:rData.map((_,i)=>i===rData.length-1?'#c8a44e':'#34d399'),pointBorderColor:'#241d16',pointBorderWidth:3,pointHoverRadius:11,pointHoverBackgroundColor:'#e0be6a',pointHoverBorderColor:'rgba(200,164,78,0.4)',pointHoverBorderWidth:4},{data:rData.map(()=>goal),borderColor:'rgba(200,164,78,0.18)',borderDash:[6,6],borderWidth:1.5,pointRadius:0,fill:false}]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?fmt(ctx.parsed.y)+' kr':'Mål: '+fmt(ctx.parsed.y)+' kr'}}},scales:{x:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10,weight:500}},border:{display:false}},y:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10},callback:v=>fK(v)},border:{display:false},suggestedMax:goal*1.25}},animation:{duration:3000,easing:'easeOutQuart'}}});
 
 /* Value bars — richer gradient fills */
 const vCtx=document.getElementById('ch-val').getContext('2d');
@@ -773,24 +775,41 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
   function rotY(p,a){const c=Math.cos(a),s=Math.sin(a);return{x:p.x*c-p.z*s,y:p.y,z:p.x*s+p.z*c}}
   function rotX(p,a){const c=Math.cos(a),s=Math.sin(a);return{x:p.x,y:p.y*c-p.z*s,z:p.y*s+p.z*c}}
 
-  // Icosahedron vertices
-  const PHI=(1+Math.sqrt(5))/2;
-  const icoRaw=[[-1,PHI,0],[1,PHI,0],[-1,-PHI,0],[1,-PHI,0],[0,-1,PHI],[0,1,PHI],[0,-1,-PHI],[0,1,-PHI],[PHI,0,-1],[PHI,0,1],[-PHI,0,-1],[-PHI,0,1]];
-  const icoEdges=[[0,1],[0,5],[0,7],[0,10],[0,11],[1,5],[1,7],[1,8],[1,9],[2,3],[2,4],[2,6],[2,10],[2,11],[3,4],[3,6],[3,8],[3,9],[4,5],[4,9],[4,11],[5,9],[5,11],[6,7],[6,8],[6,10],[7,8],[7,10],[8,9],[10,11]];
+  // Shape generators
+  function genTorus(R,r,su,sv){
+    const v=[],e=[];
+    for(let i=0;i<su;i++)for(let j=0;j<sv;j++){
+      const u=i/su*6.2832,vv=j/sv*6.2832;
+      v.push([(R+r*Math.cos(vv))*Math.cos(u),(R+r*Math.cos(vv))*Math.sin(u),r*Math.sin(vv)]);
+      e.push([i*sv+j,i*sv+(j+1)%sv]);
+      e.push([i*sv+j,((i+1)%su)*sv+j]);
+    }
+    return{v,e};
+  }
+  const t1=genTorus(1,.35,10,6);
+  const t2=genTorus(1,.3,8,5);
 
-  // Octahedron vertices
-  const octRaw=[[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]];
-  const octEdges=[[0,2],[0,3],[0,4],[0,5],[1,2],[1,3],[1,4],[1,5],[2,4],[2,5],[3,4],[3,5]];
+  // Cube
+  const cubeV=[[1,1,1],[-1,1,1],[-1,-1,1],[1,-1,1],[1,1,-1],[-1,1,-1],[-1,-1,-1],[1,-1,-1]];
+  const cubeE=[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]];
 
-  // Shapes floating in space — prominent, living geometry
+  // Pyramid (square base + apex)
+  const pyrV=[[1,-.6,1],[-1,-.6,1],[-1,-.6,-1],[1,-.6,-1],[0,1.2,0]];
+  const pyrE=[[0,1],[1,2],[2,3],[3,0],[0,4],[1,4],[2,4],[3,4]];
+
+  // Diamond (bipyramid — elongated)
+  const diaV=[[1,0,0],[-1,0,0],[0,0,1],[0,0,-1],[0,1.8,0],[0,-1.8,0]];
+  const diaE=[[0,2],[2,1],[1,3],[3,0],[0,4],[1,4],[2,4],[3,4],[0,5],[1,5],[2,5],[3,5]];
+
+  // Shapes floating in space
   const shapes=[
-    {verts:icoRaw,edges:icoEdges,cx:W*.15,cy:H*.22,scale:65,rx:0,ry:0,drx:.004,dry:.006,color:'200,164,78',alpha:.30,glowR:5},
-    {verts:octRaw,edges:octEdges,cx:W*.82,cy:H*.60,scale:75,rx:1,ry:0,drx:-.005,dry:.007,color:'180,130,55',alpha:.26,glowR:6},
-    {verts:icoRaw,edges:icoEdges,cx:W*.70,cy:H*.15,scale:45,rx:2,ry:1,drx:.007,dry:-.004,color:'160,110,45',alpha:.22,glowR:4},
-    {verts:octRaw,edges:octEdges,cx:W*.22,cy:H*.72,scale:55,rx:0,ry:2,drx:-.004,dry:.005,color:'200,164,78',alpha:.24,glowR:5},
-    {verts:icoRaw,edges:icoEdges,cx:W*.50,cy:H*.42,scale:38,rx:3,ry:0,drx:.005,dry:.008,color:'224,190,106',alpha:.18,glowR:4},
-    {verts:octRaw,edges:octEdges,cx:W*.90,cy:H*.25,scale:35,rx:1.5,ry:3,drx:.006,dry:-.005,color:'180,140,60',alpha:.16,glowR:3},
-    {verts:icoRaw,edges:icoEdges,cx:W*.08,cy:H*.50,scale:30,rx:0,ry:1.5,drx:-.006,dry:.004,color:'200,164,78',alpha:.14,glowR:3},
+    {verts:t1.v,edges:t1.e,cx:W*.15,cy:H*.22,scale:55,rx:0,ry:0,drx:.003,dry:.005,color:'200,164,78',alpha:.28,glowR:4},
+    {verts:cubeV,edges:cubeE,cx:W*.82,cy:H*.60,scale:50,rx:1,ry:0,drx:-.004,dry:.006,color:'180,130,55',alpha:.24,glowR:5},
+    {verts:diaV,edges:diaE,cx:W*.70,cy:H*.15,scale:40,rx:2,ry:1,drx:.006,dry:-.003,color:'160,110,45',alpha:.22,glowR:4},
+    {verts:t2.v,edges:t2.e,cx:W*.22,cy:H*.72,scale:48,rx:0,ry:2,drx:-.003,dry:.004,color:'200,164,78',alpha:.22,glowR:4},
+    {verts:pyrV,edges:pyrE,cx:W*.50,cy:H*.42,scale:36,rx:3,ry:0,drx:.005,dry:.007,color:'224,190,106',alpha:.18,glowR:3},
+    {verts:cubeV,edges:cubeE,cx:W*.90,cy:H*.25,scale:28,rx:1.5,ry:3,drx:.005,dry:-.004,color:'180,140,60',alpha:.16,glowR:3},
+    {verts:diaV,edges:diaE,cx:W*.08,cy:H*.50,scale:30,rx:0,ry:1.5,drx:-.005,dry:.004,color:'200,164,78',alpha:.14,glowR:3},
   ];
 
   // Particles — more, brighter

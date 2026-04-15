@@ -404,6 +404,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .tl-card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
 .tl-card-co{font-weight:600;font-size:14px;color:var(--ink)}
 .tl-card-logo{height:18px;max-width:100px;object-fit:contain;filter:brightness(0) invert(1);opacity:.85}
+.tl-card-logo.raw{filter:none;height:20px;border-radius:4px;opacity:1}
 .tl-card-date{font-size:10px;font-weight:600;letter-spacing:.10em;text-transform:uppercase}
 .tc-green .tl-card-date{color:var(--emerald-b)}
 .tc-amber .tl-card-date{color:var(--amber)}
@@ -851,7 +852,7 @@ regSec(3,()=>{
 document.querySelectorAll('.pill').forEach(p=>p.addEventListener('click',()=>{document.querySelectorAll('.pill').forEach(x=>x.classList.remove('on'));p.classList.add('on');renderTbl(p.dataset.f)}));
 
 /* ═══ LOGO MAP ═══ */
-const LOGOS={brunngard:'logos/brunngard.png',beslagonline:'logos/beslagonline.png',klinta:'logos/klinta.avif',jape:'logos/jape.webp'};
+const LOGOS={brunngard:{src:'logos/brunngard.png'},beslagonline:{src:'logos/beslagonline.png'},klinta:{src:'logos/klinta.avif'},jape:{src:'logos/jape.webp'},velux:{src:'logos/velux.png',raw:true},thefriendlyhome:{src:'logos/thefriendlyhome.jpg',raw:true},tergent:{src:'logos/tergent.jpg',raw:true}};
 
 /* ═══ TIMELINE — COLOR-CODED, MULTIPLE EVENTS PER DEAL ═══ */
 const evts=[];
@@ -916,8 +917,8 @@ evts.forEach((ev,i)=>{
   // Find deal + logo
   const deal=D.deals.find(dd=>dd.company===co);
   const cat=deal?deal.category:'';
-  const logoSrc=deal&&LOGOS[deal.id]?LOGOS[deal.id]:null;
-  const coHtml=logoSrc?'<img src="'+logoSrc+'" alt="'+co+'" class="tl-card-logo">':'<span class="tl-card-co">'+co+'</span>';
+  const logoData=deal&&LOGOS[deal.id]?LOGOS[deal.id]:null;
+  const coHtml=logoData?'<img src="'+logoData.src+'" alt="'+co+'" class="tl-card-logo'+(logoData.raw?' raw':'')+'">':'<span class="tl-card-co">'+co+'</span>';
   card.innerHTML='<div class="tl-card-top">'+coHtml+'<span class="tl-card-date">'+dateStr+'</span></div>'+
     '<p class="tl-card-desc">'+desc+'</p>'+
     (cat?'<span class="tl-card-cat">'+cat+'</span>':'');

@@ -1343,7 +1343,7 @@ function countUp(el, target, suffix, duration=1600){
 ══════════════════════════════════════════ */
 // Hero numbers
 document.getElementById('hn-closed').textContent    = fmt(closedValue)+' kr';
-document.getElementById('hn-pipeline').textContent  = fmt(pipelineValue)+' kr';
+document.getElementById('hn-pipeline').innerHTML = fmt(pipelineMin)+' kr'+(pipelineMin<pipelineMax ? '<span style="font-size:11px;opacity:.5;margin-left:6px;font-family:Epilogue,sans-serif">(upp till '+fmtK(pipelineMax)+')</span>' : '');
 document.getElementById('hn-remain').textContent    = fmt(Math.max(DATA.meta.monthly_goal-closedValue,0))+' kr';
 document.getElementById('hn-closed-sub').textContent  = closed.length+' stängda affärer';
 document.getElementById('hn-pipeline-sub').textContent = (meetings.length+pitched.length)+' aktiva';
@@ -1356,7 +1356,7 @@ setTimeout(()=>{
   document.getElementById('ring-pct').textContent = Math.round(pct)+'%';
   document.getElementById('goal-fill').style.width = pct+'%';
   document.getElementById('gs-closed').textContent = fmt(closedValue)+' kr';
-  document.getElementById('gs-pipe').textContent   = fmt(pipelineValue)+' kr';
+  document.getElementById('gs-pipe').textContent   = fmt(pipelineMin)+' kr';
 }, 400);
 
 // KPIs

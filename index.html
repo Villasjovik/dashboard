@@ -107,6 +107,51 @@ body::after{
 .reveal{opacity:0;transform:translateY(40px) scale(0.97);filter:blur(6px);transition:opacity .9s var(--ease),transform 1s var(--ease),filter .7s var(--ease)}
 .reveal.vis{opacity:1;transform:translateY(0) scale(1);filter:none}
 
+/* ═══ LOGIN GATE ═══ */
+#login-gate{
+  position:fixed;inset:0;z-index:99999;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse 120% 70% at 50% -15%,rgba(200,164,78,0.18),rgba(160,120,60,0.06) 35%,transparent 60%),
+    radial-gradient(ellipse 90% 55% at 85% 75%,rgba(52,211,153,0.08),rgba(52,211,153,0.02) 50%,transparent 65%),
+    radial-gradient(ellipse 80% 50% at 10% 55%,rgba(160,120,55,0.07),transparent 50%),
+    radial-gradient(ellipse 60% 40% at 50% 45%,rgba(36,26,16,0.65),transparent 70%),
+    linear-gradient(165deg,#16120c 0%,#1e1912 15%,#282016 30%,#221b14 50%,#1a150e 80%,#18130e 100%);
+}
+#login-gate::before{
+  content:'';position:absolute;inset:-30%;pointer-events:none;
+  background:
+    radial-gradient(ellipse 50% 35% at 25% 15%,rgba(200,164,78,0.08),transparent 55%),
+    radial-gradient(ellipse 45% 30% at 75% 65%,rgba(52,211,153,0.06),transparent 50%),
+    radial-gradient(ellipse 60% 20% at 50% 40%,rgba(52,211,153,0.04),transparent 50%);
+  animation:auroraDrift 25s ease-in-out infinite alternate;
+}
+.gate-card{
+  position:relative;z-index:2;
+  text-align:center;max-width:400px;width:90%;
+  border-radius:28px;padding:52px 40px;
+}
+.gate-sep{width:48px;height:2px;margin:0 auto 28px;background:linear-gradient(90deg,var(--emerald),var(--gold));border-radius:2px}
+.gate-title{font-family:'Gloock',serif;font-size:44px;font-weight:400;line-height:.9;color:var(--ink);margin-bottom:10px}
+.gate-title em{font-style:italic;background:linear-gradient(135deg,var(--gold-b),var(--gold),#b8944a,var(--gold-b));background-size:300% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:goldFlow 5s ease-in-out infinite}
+.gate-sub{font-size:12px;color:var(--dim);margin:14px 0 32px;letter-spacing:.03em}
+.gate-form{display:flex;flex-direction:column;gap:12px}
+.gate-input{background:rgba(10,50,30,0.4);border:1px solid var(--border);border-radius:14px;padding:15px 18px;color:var(--ink);font-family:'Outfit';font-size:14px;outline:none;transition:border-color .3s var(--ease),box-shadow .3s var(--ease);width:100%}
+.gate-input:focus{border-color:rgba(52,211,153,0.4);box-shadow:0 0 24px rgba(52,211,153,0.08),0 0 60px rgba(52,211,153,0.03)}
+.gate-input::placeholder{color:var(--dim)}
+.gate-btn{background:linear-gradient(135deg,var(--emerald),var(--emerald-b));color:#18130e;border:none;border-radius:14px;padding:15px;font-family:'Outfit';font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:opacity .2s,transform .15s,box-shadow .3s;box-shadow:0 4px 20px rgba(52,211,153,0.2)}
+.gate-btn:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 6px 28px rgba(52,211,153,0.3)}
+.gate-btn:active{transform:translateY(0) scale(0.98)}
+.gate-err{color:var(--rose);font-size:12px;min-height:16px;font-family:'Outfit'}
+.gate-orb{position:absolute;border-radius:50%;pointer-events:none;filter:blur(60px);mix-blend-mode:screen}
+.gate-orb-1{width:300px;height:300px;top:-10%;right:-15%;background:radial-gradient(circle,rgba(52,211,153,0.10),transparent 60%);animation:gateFloat1 12s ease-in-out infinite alternate}
+.gate-orb-2{width:250px;height:250px;bottom:-10%;left:-10%;background:radial-gradient(circle,rgba(200,164,78,0.08),transparent 60%);animation:gateFloat2 15s ease-in-out infinite alternate}
+.gate-orb-3{width:180px;height:180px;top:40%;left:60%;background:radial-gradient(circle,rgba(52,211,153,0.05),transparent 60%);animation:gateFloat3 10s ease-in-out infinite alternate}
+@keyframes gateFloat1{0%{transform:translate(0,0)}100%{transform:translate(-20px,30px)}}
+@keyframes gateFloat2{0%{transform:translate(0,0)}100%{transform:translate(15px,-20px)}}
+@keyframes gateFloat3{0%{transform:translate(0,0) scale(1)}100%{transform:translate(-10px,15px) scale(1.3)}}
+
 /* ═══ LABELS ═══ */
 .label{font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
 .label-m{font-size:10px;font-weight:600;letter-spacing:.20em;text-transform:uppercase;color:var(--muted)}
@@ -397,27 +442,40 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 <div id="noise" aria-hidden="true"></div>
 
 <!-- Login Gate -->
-<div id="login-gate" style="position:fixed;inset:0;z-index:99999;background:#18130e;display:flex;align-items:center;justify-content:center">
-  <div style="text-align:center;max-width:360px;padding:48px 36px">
-    <p style="font-family:'Outfit';font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--dim);margin-bottom:12px">Villa Sjövik</p>
-    <h1 style="font-family:'Gloock',serif;font-size:40px;font-weight:400;line-height:.9;color:var(--ink);margin-bottom:10px">Sales <em style="color:var(--gold);font-style:italic">Dashboard</em></h1>
-    <p style="font-size:12px;color:var(--dim);margin:14px 0 32px;letter-spacing:.03em">Ange lösenord</p>
-    <form id="login-form" autocomplete="off" style="display:flex;flex-direction:column;gap:10px">
-      <input id="login-pw" type="password" placeholder="Lösenord" autofocus style="background:rgba(30,22,14,0.7);border:1px solid rgba(52,211,153,0.12);border-radius:14px;padding:15px 18px;color:var(--ink);font-family:'Outfit';font-size:14px;outline:none;transition:border-color .3s,box-shadow .3s;width:100%" onfocus="this.style.borderColor='rgba(52,211,153,0.4)';this.style.boxShadow='0 0 24px rgba(52,211,153,0.08)'" onblur="this.style.borderColor='rgba(52,211,153,0.12)';this.style.boxShadow='none'"/>
-      <button type="submit" style="background:linear-gradient(135deg,var(--emerald),var(--teal));color:#18130e;border:none;border-radius:14px;padding:15px;font-family:'Outfit';font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Logga in</button>
-      <p id="login-err" style="color:var(--rose);font-size:12px;min-height:16px;font-family:'Outfit'"></p>
+<div id="login-gate">
+  <div class="gate-orb gate-orb-1"></div>
+  <div class="gate-orb gate-orb-2"></div>
+  <div class="gate-orb gate-orb-3"></div>
+  <div class="gate-card glass">
+    <div class="gate-sep"></div>
+    <p class="label" style="margin-bottom:16px">Villa Sjövik</p>
+    <h1 class="gate-title">Sales <em>Dashboard</em></h1>
+    <p class="gate-sub">Ange lösenord</p>
+    <form id="login-form" autocomplete="off" class="gate-form">
+      <input id="login-pw" type="password" placeholder="Lösenord" autofocus class="gate-input"/>
+      <button type="submit" class="gate-btn">Logga in</button>
+      <p id="login-err" class="gate-err"></p>
     </form>
   </div>
 </div>
 <script>
 (function(){
   const H='16d1551686f4cb08f88335d39d505708f5618bd8762c62fba9f9d1d3f3bdb850';
-  if(sessionStorage.getItem('vs_auth')==='1')document.getElementById('login-gate').style.display='none';
+  const isAuth=sessionStorage.getItem('vs_auth')==='1';
+  /* Global auth callback — defers animations until login */
+  window._authQ=[];
+  window.whenAuth=function(fn){if(isAuth)requestAnimationFrame(fn);else window._authQ.push(fn)};
+  if(isAuth)document.getElementById('login-gate').style.display='none';
   document.getElementById('login-form').addEventListener('submit',async function(e){
     e.preventDefault();const pw=document.getElementById('login-pw').value;
     const buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(pw));
     const hex=[...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');
-    if(hex===H){sessionStorage.setItem('vs_auth','1');const g=document.getElementById('login-gate');g.style.transition='opacity .5s';g.style.opacity='0';setTimeout(()=>g.style.display='none',500)}
+    if(hex===H){
+      sessionStorage.setItem('vs_auth','1');
+      const g=document.getElementById('login-gate');
+      g.style.transition='opacity .6s var(--ease)';g.style.opacity='0';
+      setTimeout(()=>{g.style.display='none';window._authQ.forEach(fn=>fn());window._authQ=[]},600);
+    }
     else{document.getElementById('login-err').textContent='Fel lösenord';document.getElementById('login-pw').value='';document.getElementById('login-pw').focus()}
   });
 })();
@@ -804,8 +862,11 @@ tlEl.querySelectorAll('.tl-pill').forEach(pill=>{
 /* ═══ INTERSECTION OBSERVER — runs AFTER all dynamic content ═══ */
 const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');revObs.unobserve(e.target)}})},{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
-// Only first section reveals immediately — rest wait for scroll
-requestAnimationFrame(()=>{document.querySelectorAll('.snap:first-of-type .reveal').forEach(el=>el.classList.add('vis'))});
+// First section reveals + anims deferred until after login
+whenAuth(()=>{
+  document.querySelectorAll('.snap:first-of-type .reveal').forEach(el=>el.classList.add('vis'));
+  fireSec(0);
+});
 
 /* ═══ SECTION OBSERVER — fires all animations on first scroll to each section ═══ */
 const secSnaps=document.querySelectorAll('.snap[data-label]');
@@ -813,7 +874,6 @@ const secObs=new IntersectionObserver(entries=>{entries.forEach(e=>{
   if(e.isIntersecting){const idx=[...secSnaps].indexOf(e.target);if(idx>=0)fireSec(idx)}
 })},{threshold:0.15});
 secSnaps.forEach(s=>secObs.observe(s));
-requestAnimationFrame(()=>fireSec(0));
 
 }); // end fetch
 
@@ -862,11 +922,13 @@ document.querySelectorAll('.bento-kpi,.sc,.cc,.rev-card,.pipe,.bento-goal').forE
 /* ═══ GSAP — CINEMATIC CHOREOGRAPHY ═══ */
 gsap.registerPlugin(ScrollTrigger);
 
-// Header entrance — dramatic staggered reveal
-gsap.from('.hdr h1',{y:80,opacity:0,scale:.92,filter:'blur(8px)',duration:1.6,ease:'expo.out',delay:.3});
-gsap.from('.hdr-eye',{y:24,opacity:0,duration:1,ease:'expo.out',delay:.1});
-gsap.from('.hdr-right',{x:30,opacity:0,duration:1,ease:'expo.out',delay:.6});
-gsap.from('.sep-gold',{scaleX:0,transformOrigin:'left',duration:2,ease:'expo.out',delay:.7});
+// Header entrance — deferred until after login
+whenAuth(()=>{
+  gsap.from('.hdr h1',{y:80,opacity:0,scale:.92,filter:'blur(8px)',duration:1.6,ease:'expo.out',delay:.3});
+  gsap.from('.hdr-eye',{y:24,opacity:0,duration:1,ease:'expo.out',delay:.1});
+  gsap.from('.hdr-right',{x:30,opacity:0,duration:1,ease:'expo.out',delay:.6});
+  gsap.from('.sep-gold',{scaleX:0,transformOrigin:'left',duration:2,ease:'expo.out',delay:.7});
+});
 
 // Separators — draw themselves on scroll
 gsap.utils.toArray('hr.sep').forEach(el=>{gsap.from(el,{scaleX:0,transformOrigin:'left',duration:1.4,ease:'expo.out',scrollTrigger:{trigger:el,start:'top 92%',once:true}})});
@@ -1085,6 +1147,7 @@ gsap.utils.toArray('.cc,.rev-card,.pipe').forEach(el=>{
     label.style.maxWidth=oldW+'px';
     label.offsetWidth; /* reflow with transition off */
     label.style.transition=''; /* re-enable CSS transition */
+    void label.offsetWidth; /* CRITICAL: reflow after re-enabling so shrink animates */
     label.style.maxWidth=newW+'px';
     /* Delay dot highlight swap until island has finished resizing (500ms matches CSS transition) */
     dotTimer=setTimeout(()=>{

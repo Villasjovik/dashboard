@@ -16,12 +16,12 @@
 @property --border-angle{syntax:'<angle>';initial-value:0deg;inherits:false}
 
 :root{
-  --bg:#0c0806;
-  --bg2:#18120c;
-  --surface:rgba(14,38,26,0.48);
-  --surface-solid:#102820;
-  --border:rgba(52,211,153,0.09);
-  --border-hi:rgba(52,211,153,0.22);
+  --bg:#0b0a08;
+  --bg2:#16140f;
+  --surface:rgba(12,42,28,0.55);
+  --surface-solid:#0e2a1c;
+  --border:rgba(52,211,153,0.11);
+  --border-hi:rgba(52,211,153,0.25);
   --gold:#c8a44e;
   --gold-b:#e0be6a;
   --gold-dim:rgba(200,164,78,0.10);
@@ -50,24 +50,24 @@ body{
 /* Prevent horizontal scroll without clipping content */
 html{overflow-x:clip}
 
-/* ═══ RICH GRADIENT BACKGROUND — WARM CHOCOLATE ═══ */
+/* ═══ RICH GRADIENT BACKGROUND — DARK CHOCOLATE ═══ */
 body::before{
   content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(ellipse 120% 70% at 50% -15%,rgba(200,164,78,0.22),rgba(160,110,40,0.09) 35%,transparent 60%),
-    radial-gradient(ellipse 90% 55% at 85% 75%,rgba(140,90,30,0.14),rgba(100,65,20,0.04) 50%,transparent 65%),
-    radial-gradient(ellipse 80% 50% at 10% 55%,rgba(180,130,50,0.10),transparent 50%),
-    radial-gradient(ellipse 60% 40% at 50% 45%,rgba(40,24,10,0.65),transparent 70%),
-    radial-gradient(ellipse 40% 25% at 75% 20%,rgba(200,164,78,0.08),transparent 50%),
-    linear-gradient(165deg,#0e0a06 0%,#16100a 15%,#1e160e 30%,#1a1208 50%,#160e06 65%,#120a04 80%,#0c0806 100%);
+    radial-gradient(ellipse 120% 70% at 50% -15%,rgba(200,164,78,0.16),rgba(140,110,60,0.06) 35%,transparent 60%),
+    radial-gradient(ellipse 90% 55% at 85% 75%,rgba(120,90,45,0.10),rgba(80,60,30,0.03) 50%,transparent 65%),
+    radial-gradient(ellipse 80% 50% at 10% 55%,rgba(140,110,55,0.07),transparent 50%),
+    radial-gradient(ellipse 60% 40% at 50% 45%,rgba(30,22,14,0.60),transparent 70%),
+    radial-gradient(ellipse 40% 25% at 75% 20%,rgba(200,164,78,0.05),transparent 50%),
+    linear-gradient(165deg,#0d0c09 0%,#14120e 15%,#1a1712 30%,#18150f 50%,#14110d 65%,#100e0a 80%,#0b0a08 100%);
 }
 /* Animated aurora bands — sweeping warm glow */
 body::after{
   content:'';position:fixed;inset:-30%;z-index:0;pointer-events:none;
   background:
-    radial-gradient(ellipse 50% 35% at 25% 15%,rgba(200,164,78,0.14),transparent 55%),
-    radial-gradient(ellipse 45% 30% at 75% 65%,rgba(180,120,40,0.10),transparent 50%),
-    radial-gradient(ellipse 60% 20% at 50% 40%,rgba(52,211,153,0.04),transparent 50%);
+    radial-gradient(ellipse 50% 35% at 25% 15%,rgba(200,164,78,0.10),transparent 55%),
+    radial-gradient(ellipse 45% 30% at 75% 65%,rgba(160,120,50,0.07),transparent 50%),
+    radial-gradient(ellipse 60% 20% at 50% 40%,rgba(52,211,153,0.03),transparent 50%);
   animation:auroraDrift 25s ease-in-out infinite alternate;
 }
 @keyframes auroraDrift{
@@ -85,17 +85,17 @@ body::after{
 
 /* ═══ GLASS ═══ */
 .glass{
-  background:var(--surface);
-  backdrop-filter:blur(32px) saturate(1.4);
-  -webkit-backdrop-filter:blur(32px) saturate(1.4);
+  background:linear-gradient(145deg,rgba(14,48,32,0.58),rgba(10,38,24,0.45) 50%,rgba(12,42,28,0.52));
+  backdrop-filter:blur(32px) saturate(1.5);
+  -webkit-backdrop-filter:blur(32px) saturate(1.5);
   border:1px solid var(--border);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,0.04),0 8px 24px rgba(0,0,0,0.25),0 24px 64px rgba(0,0,0,0.35);
+  box-shadow:inset 0 1px 0 rgba(52,211,153,0.06),inset 0 -1px 0 rgba(52,211,153,0.02),0 8px 24px rgba(0,0,0,0.3),0 24px 64px rgba(0,0,0,0.4);
   transition:border-color .4s var(--ease),box-shadow .5s var(--ease),transform .5s var(--ease);
 }
-.glass:hover{border-color:var(--border-hi);box-shadow:inset 0 1px 0 rgba(255,255,255,0.07),0 12px 32px rgba(0,0,0,0.3),0 40px 90px rgba(0,0,0,0.45),0 0 30px rgba(52,211,153,0.05);transform:translateY(-4px) scale(1.008)}
+.glass:hover{border-color:var(--border-hi);box-shadow:inset 0 1px 0 rgba(52,211,153,0.08),0 12px 32px rgba(0,0,0,0.35),0 40px 90px rgba(0,0,0,0.5),0 0 40px rgba(52,211,153,0.06);transform:translateY(-4px) scale(1.008)}
 
 /* Animated border */
-.glow-border{position:relative;border:none!important;background:var(--surface-solid)}
+.glow-border{position:relative;border:none!important;background:linear-gradient(145deg,#103022,#0e2a1c 50%,#0c2618)}
 .glow-border::before{content:'';position:absolute;inset:-1px;border-radius:inherit;padding:1.5px;background:conic-gradient(from var(--border-angle),rgba(52,211,153,0.50),rgba(110,231,183,0.30),rgba(200,164,78,0.20),rgba(52,211,153,0.06),rgba(110,231,183,0.30),rgba(52,211,153,0.50));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:rotateBorder 5s linear infinite;pointer-events:none;z-index:-1}
 @keyframes rotateBorder{to{--border-angle:360deg}}
 
@@ -254,9 +254,9 @@ body::after{
 .rev-area{height:250px;position:relative}
 
 /* ═══ LEADS STRIP ═══ */
-.leads{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(200,164,78,0.03);border:1px solid var(--border);border-radius:24px;overflow:hidden;margin-bottom:44px}
-.lead-c{background:var(--surface-solid);padding:26px 18px;text-align:center;transition:background .3s}
-.lead-c:hover{background:rgba(16,44,30,0.75)}
+.leads{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(52,211,153,0.05);border:1px solid var(--border);border-radius:24px;overflow:hidden;margin-bottom:44px;margin-top:8px}
+.lead-c{background:linear-gradient(145deg,rgba(14,48,32,0.65),rgba(10,38,24,0.50));padding:26px 18px;text-align:center;transition:background .3s}
+.lead-c:hover{background:rgba(16,50,34,0.80)}
 .lead-n{font-family:'Gloock',serif;font-size:44px;line-height:1;margin-bottom:6px;font-variant-numeric:tabular-nums;text-shadow:0 0 20px rgba(200,164,78,0.15),0 2px 6px rgba(0,0,0,0.2)}
 .lead-l{font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 
@@ -332,14 +332,14 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 <div id="noise" aria-hidden="true"></div>
 
 <!-- Login Gate -->
-<div id="login-gate" style="position:fixed;inset:0;z-index:99999;background:#0c0806;display:flex;align-items:center;justify-content:center">
+<div id="login-gate" style="position:fixed;inset:0;z-index:99999;background:#0b0a08;display:flex;align-items:center;justify-content:center">
   <div style="text-align:center;max-width:360px;padding:48px 36px">
     <p style="font-family:'Outfit';font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--dim);margin-bottom:12px">Villa Sjövik</p>
     <h1 style="font-family:'Gloock',serif;font-size:40px;font-weight:400;line-height:.9;color:var(--ink);margin-bottom:10px">Sales <em style="color:var(--gold);font-style:italic">Dashboard</em></h1>
     <p style="font-size:12px;color:var(--dim);margin:14px 0 32px;letter-spacing:.03em">Ange lösenord</p>
     <form id="login-form" autocomplete="off" style="display:flex;flex-direction:column;gap:10px">
       <input id="login-pw" type="password" placeholder="Lösenord" autofocus style="background:rgba(24,16,10,0.7);border:1px solid rgba(52,211,153,0.12);border-radius:14px;padding:15px 18px;color:var(--ink);font-family:'Outfit';font-size:14px;outline:none;transition:border-color .3s,box-shadow .3s;width:100%" onfocus="this.style.borderColor='rgba(52,211,153,0.4)';this.style.boxShadow='0 0 24px rgba(52,211,153,0.08)'" onblur="this.style.borderColor='rgba(52,211,153,0.12)';this.style.boxShadow='none'"/>
-      <button type="submit" style="background:linear-gradient(135deg,var(--emerald),var(--teal));color:#0c0806;border:none;border-radius:14px;padding:15px;font-family:'Outfit';font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Logga in</button>
+      <button type="submit" style="background:linear-gradient(135deg,var(--emerald),var(--teal));color:#0b0a08;border:none;border-radius:14px;padding:15px;font-family:'Outfit';font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Logga in</button>
       <p id="login-err" style="color:var(--rose);font-size:12px;min-height:16px;font-family:'Outfit'"></p>
     </form>
   </div>
@@ -449,6 +449,8 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   <div class="cc glass reveal"><div class="shine"></div><p class="cc-label">Värde per status</p><div class="cc-area"><canvas id="ch-val"></canvas></div></div>
   <div class="cc glass reveal" style="transition-delay:.08s"><div class="shine"></div><p class="cc-label">Leads-status</p><div class="cc-area"><canvas id="ch-leads"></canvas></div></div>
 </div>
+
+<hr class="sep"/>
 
 <div class="sec"><h2>Leads <em>översikt</em></h2></div>
 <div class="leads">
@@ -599,7 +601,7 @@ const LEG={position:'bottom',labels:{color:'rgba(240,235,227,0.45)',font:{family
 
 /* Doughnut — double ring with shadow */
 const pipeCtx=document.getElementById('ch-pipe');
-new Chart(pipeCtx,{type:'doughnut',data:{labels:['Stängda ('+closed.length+')','Möten ('+meets.length+')','Offerter ('+pitched.length+')','Avböjda ('+declined.length+')'],datasets:[{data:[closed.length,meets.length,pitched.length,declined.length],backgroundColor:['#34d399','#67e8f9','#fbbf24','#fb7185'],borderColor:'#18120c',borderWidth:5,hoverOffset:18,hoverBorderColor:'rgba(200,164,78,0.3)'},{data:[closed.length,meets.length,pitched.length,declined.length],backgroundColor:['rgba(52,211,153,0.12)','rgba(103,232,249,0.12)','rgba(251,191,36,0.12)','rgba(251,113,133,0.12)'],borderColor:'transparent',borderWidth:0,weight:.4}]},options:{responsive:true,maintainAspectRatio:false,cutout:'65%',plugins:{legend:LEG,tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?ctx.label+' — '+Math.round(ctx.parsed/D.deals.length*100)+'%':''}}},animation:{duration:2800,easing:'easeOutQuart',animateRotate:true,animateScale:true}}});
+new Chart(pipeCtx,{type:'doughnut',data:{labels:['Stängda ('+closed.length+')','Möten ('+meets.length+')','Offerter ('+pitched.length+')','Avböjda ('+declined.length+')'],datasets:[{data:[closed.length,meets.length,pitched.length,declined.length],backgroundColor:['#34d399','#67e8f9','#fbbf24','#fb7185'],borderColor:'#16140f',borderWidth:5,hoverOffset:18,hoverBorderColor:'rgba(200,164,78,0.3)'},{data:[closed.length,meets.length,pitched.length,declined.length],backgroundColor:['rgba(52,211,153,0.12)','rgba(103,232,249,0.12)','rgba(251,191,36,0.12)','rgba(251,113,133,0.12)'],borderColor:'transparent',borderWidth:0,weight:.4}]},options:{responsive:true,maintainAspectRatio:false,cutout:'65%',plugins:{legend:LEG,tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?ctx.label+' — '+Math.round(ctx.parsed/D.deals.length*100)+'%':''}}},animation:{duration:2800,easing:'easeOutQuart',animateRotate:true,animateScale:true}}});
 
 /* Revenue line — rich gradient area */
 const rCtx=document.getElementById('ch-rev').getContext('2d');
@@ -608,7 +610,7 @@ const rL=rCtx.createLinearGradient(0,0,600,0);rL.addColorStop(0,'#34d399');rL.ad
 const cSorted=[...closed].filter(d=>d.date_closed).sort((a,b)=>new Date(a.date_closed)-new Date(b.date_closed));
 const rLabels=['Start'],rData=[0];let cum=0;cSorted.forEach(d=>{cum+=(d.value||0);rLabels.push(d.company);rData.push(cum)});
 
-new Chart(rCtx,{type:'line',data:{labels:rLabels,datasets:[{data:rData,fill:true,backgroundColor:rG,borderColor:rL,borderWidth:3.5,tension:.4,pointRadius:rData.map((_,i)=>i===rData.length-1?8:5),pointBackgroundColor:rData.map((_,i)=>i===rData.length-1?'#c8a44e':'#34d399'),pointBorderColor:'#18120c',pointBorderWidth:3,pointHoverRadius:11,pointHoverBackgroundColor:'#e0be6a',pointHoverBorderColor:'rgba(200,164,78,0.4)',pointHoverBorderWidth:4},{data:rData.map(()=>goal),borderColor:'rgba(200,164,78,0.18)',borderDash:[6,6],borderWidth:1.5,pointRadius:0,fill:false}]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?fmt(ctx.parsed.y)+' kr':'Mål: '+fmt(ctx.parsed.y)+' kr'}}},scales:{x:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10,weight:500}},border:{display:false}},y:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10},callback:v=>fK(v)},border:{display:false},suggestedMax:goal*1.25}},animation:{duration:3000,easing:'easeOutQuart'}}});
+new Chart(rCtx,{type:'line',data:{labels:rLabels,datasets:[{data:rData,fill:true,backgroundColor:rG,borderColor:rL,borderWidth:3.5,tension:.4,pointRadius:rData.map((_,i)=>i===rData.length-1?8:5),pointBackgroundColor:rData.map((_,i)=>i===rData.length-1?'#c8a44e':'#34d399'),pointBorderColor:'#16140f',pointBorderWidth:3,pointHoverRadius:11,pointHoverBackgroundColor:'#e0be6a',pointHoverBorderColor:'rgba(200,164,78,0.4)',pointHoverBorderWidth:4},{data:rData.map(()=>goal),borderColor:'rgba(200,164,78,0.18)',borderDash:[6,6],borderWidth:1.5,pointRadius:0,fill:false}]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?fmt(ctx.parsed.y)+' kr':'Mål: '+fmt(ctx.parsed.y)+' kr'}}},scales:{x:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10,weight:500}},border:{display:false}},y:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10},callback:v=>fK(v)},border:{display:false},suggestedMax:goal*1.25}},animation:{duration:3000,easing:'easeOutQuart'}}});
 
 /* Value bars — richer gradient fills */
 const vCtx=document.getElementById('ch-val').getContext('2d');

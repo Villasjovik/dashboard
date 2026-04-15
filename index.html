@@ -696,10 +696,10 @@ document.getElementById('hdr-pipe').textContent='Pipeline: '+fK(pipMin)+(pipMin<
 
 /* Hero */
 document.getElementById('h-closed').innerHTML=fmt(cV)+'<span class="u"> kr</span>';
-document.getElementById('h-pipe').innerHTML=fK(pipMin)+'<span class="u"> kr</span>'+(pipMin<pipMax?'<span class="extra">(upp till '+fK(pipMax)+')</span>':'');
+document.getElementById('h-pipe').innerHTML=fK(pipMin)+'<span class="u"> kr</span>';
 document.getElementById('h-remain').innerHTML=fmt(Math.max(goal-cV,0))+'<span class="u"> kr</span>';
 document.getElementById('h-closed-sub').textContent=closed.length+' stängda affärer';
-document.getElementById('h-pipe-sub').textContent=(meets.length+pitched.length)+' aktiva';
+document.getElementById('h-pipe-sub').innerHTML=(pipMin<pipMax?'upp till '+fK(pipMax)+' kr · ':'')+((meets.length+pitched.length)+' aktiva');
 
 /* ═══ SECTION ANIMATION TRIGGERS ═══ */
 const _seen=new Set(),_sfn={};

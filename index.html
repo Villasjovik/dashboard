@@ -1294,6 +1294,23 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
   },{threshold:0.2});
   sections.forEach(s=>obs.observe(s));
 
+  /* Force scroll to true top (0) when user scrolls into section 1.
+     Works around browsers that land at an intermediate scroll position
+     due to scroll-snap quirks with tall sections. */
+  let snapTimer=0,lastY=window.scrollY;
+  window.addEventListener('scroll',()=>{
+    clearTimeout(snapTimer);
+    snapTimer=setTimeout(()=>{
+      const y=window.scrollY;
+      const goingUp=y<lastY;
+      lastY=y;
+      const sec1Bot=sections[0].getBoundingClientRect().bottom;
+      if(goingUp&&y>0&&y<200&&sec1Bot>window.innerHeight*0.5){
+        window.scrollTo({top:0,behavior:'smooth'});
+      }
+    },180);
+  },{passive:true});
+
   /* Keyboard */
   document.addEventListener('keydown',e=>{
     if(e.key==='ArrowDown'&&current<sections.length-1){e.preventDefault();sections[current+1].scrollIntoView({behavior:'smooth'})}

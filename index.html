@@ -40,7 +40,7 @@
   --ease:cubic-bezier(0.22,1,0.36,1);
 }
 
-html{scroll-behavior:smooth;scroll-snap-type:y mandatory}
+html{scroll-behavior:smooth;scroll-snap-type:y proximity;scroll-padding-top:0}
 body{
   font-family:'Outfit',system-ui,sans-serif;
   background:var(--bg);
@@ -357,7 +357,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 
 /* ═══ SNAP SECTIONS ═══ */
 .snap{min-height:100dvh;scroll-snap-align:start;display:flex;flex-direction:column;position:relative;padding:48px 0 12dvh;margin-bottom:90dvh}
-.snap:first-of-type{padding-top:140px}
+.snap:first-of-type{padding-top:40px}
 .snap:last-of-type{margin-bottom:0;padding-bottom:80px}
 .snap>:last-child{margin-bottom:0}
 .snap .sec{margin-bottom:20px}

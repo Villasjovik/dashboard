@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-04-15",
+    "updated": "2026-04-16",
     "monthly_goal": 100000,
     "currency": "SEK"
   },
@@ -158,6 +158,20 @@
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/beslagonline/",
       "notes": "Pitch skickad 2026-04-15. Engångspaket 18 500 kr / Kampanjpaket 39 000 kr. Varm lead sedan jan 2026."
+    },
+    {
+      "id": "zaptec",
+      "company": "Zaptec",
+      "contact": "Jessica Nordengren",
+      "category": "Smarta Hem & Appar",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-04-16",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/zaptec/",
+      "notes": "Pitch skickad 2026-04-16. Regional Marketing Manager Northern Europe svarade positivt på Carins första utskick. Tre spår presenteras: Designintegration, Smart ekonomi, Powers Adventure. Carin har redan Zaptec Go installerad — autentisk vinkel."
     },
     {
       "id": "tergent",

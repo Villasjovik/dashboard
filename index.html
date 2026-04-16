@@ -357,7 +357,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 
 /* ═══ SNAP SECTIONS ═══ */
 .snap{min-height:100dvh;scroll-snap-align:start;display:flex;flex-direction:column;position:relative;padding:48px 0 12dvh;margin-bottom:90dvh}
-.snap:first-of-type{padding-top:80px}
+.snap:first-of-type{padding-top:140px}
 .snap:last-of-type{margin-bottom:0;padding-bottom:80px}
 .snap>:last-child{margin-bottom:0}
 .snap .sec{margin-bottom:20px}
@@ -1300,13 +1300,16 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
     if(e.key==='ArrowUp'&&current>0){e.preventDefault();sections[current-1].scrollIntoView({behavior:'smooth'})}
   });
 
-  /* Robust hover — keep island open while cursor is inside nav OR its extended hit zone */
+  /* Robust hover — document-level mouse tracking with generous hit zone */
+  const HIT_PAD=36;
   let closeTimer=0;
-  function openNav(){clearTimeout(closeTimer);nav.classList.add('nav-open')}
-  function scheduleClose(){clearTimeout(closeTimer);closeTimer=setTimeout(()=>nav.classList.remove('nav-open'),120)}
-  nav.addEventListener('mouseenter',openNav);
-  nav.addEventListener('mousemove',openNav);
-  nav.addEventListener('mouseleave',scheduleClose);
+  function closeNav(){nav.classList.remove('nav-open')}
+  document.addEventListener('pointermove',e=>{
+    const r=nav.getBoundingClientRect();
+    const inside=e.clientX>=r.left-HIT_PAD&&e.clientX<=r.right+HIT_PAD&&e.clientY>=r.top-HIT_PAD&&e.clientY<=r.bottom+HIT_PAD;
+    if(inside){clearTimeout(closeTimer);nav.classList.add('nav-open')}
+    else if(nav.classList.contains('nav-open')){clearTimeout(closeTimer);closeTimer=setTimeout(closeNav,150)}
+  });
 })();
 </script>
 </body>

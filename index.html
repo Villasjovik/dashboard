@@ -40,7 +40,7 @@
   --ease:cubic-bezier(0.22,1,0.36,1);
 }
 
-html{scroll-behavior:smooth;scroll-snap-type:y proximity;scroll-padding-top:0}
+html{scroll-behavior:smooth;scroll-snap-type:y mandatory;scroll-padding-top:0}
 body{
   font-family:'Outfit',system-ui,sans-serif;
   background:var(--bg);
@@ -1301,15 +1301,19 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
   });
 
   /* Robust hover — document-level mouse tracking with generous hit zone */
-  const HIT_PAD=36;
-  let closeTimer=0;
+  const HIT_PAD=80;
+  let closeTimer=0,outsideTs=0;
   function closeNav(){nav.classList.remove('nav-open')}
-  document.addEventListener('pointermove',e=>{
+  function check(e){
     const r=nav.getBoundingClientRect();
     const inside=e.clientX>=r.left-HIT_PAD&&e.clientX<=r.right+HIT_PAD&&e.clientY>=r.top-HIT_PAD&&e.clientY<=r.bottom+HIT_PAD;
-    if(inside){clearTimeout(closeTimer);nav.classList.add('nav-open')}
-    else if(nav.classList.contains('nav-open')){clearTimeout(closeTimer);closeTimer=setTimeout(closeNav,150)}
-  });
+    if(inside){clearTimeout(closeTimer);outsideTs=0;nav.classList.add('nav-open')}
+    else if(nav.classList.contains('nav-open')){
+      if(!outsideTs){outsideTs=Date.now();clearTimeout(closeTimer);closeTimer=setTimeout(closeNav,250)}
+    }
+  }
+  document.addEventListener('mousemove',check,{passive:true});
+  document.addEventListener('pointermove',check,{passive:true});
 })();
 </script>
 </body>

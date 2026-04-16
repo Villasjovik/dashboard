@@ -356,8 +356,8 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .footer-info{font-size:10px;color:var(--dim);letter-spacing:.03em;text-align:right}
 
 /* ═══ SNAP SECTIONS ═══ */
-.snap{min-height:100dvh;scroll-snap-align:start;scroll-snap-stop:always;scroll-margin-top:0;display:flex;flex-direction:column;position:relative;padding:48px 0 12dvh;margin-bottom:90dvh}
-.snap:first-of-type{padding-top:20px;scroll-margin-top:0}
+.snap{min-height:100dvh;scroll-snap-align:start;display:flex;flex-direction:column;position:relative;padding:48px 0 12dvh;margin-bottom:90dvh}
+.snap:first-of-type{padding-top:80px}
 .snap:last-of-type{margin-bottom:0;padding-bottom:80px}
 .snap>:last-child{margin-bottom:0}
 .snap .sec{margin-bottom:20px}
@@ -373,7 +373,10 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 
 /* ═══ DYNAMIC ISLAND ═══ */
 .snap-nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:9998;display:flex;align-items:center;gap:16px;background:rgba(12,48,32,0.65);backdrop-filter:blur(28px) saturate(1.5);-webkit-backdrop-filter:blur(28px) saturate(1.5);border:1px solid rgba(52,211,153,0.14);border-radius:100px;padding:10px 24px;transition:all .6s var(--ease);box-shadow:0 4px 24px rgba(0,0,0,0.35),0 0 0 1px rgba(0,0,0,0.1)}
-.snap-nav::before{content:'';position:absolute;inset:-24px;border-radius:200px;z-index:-1}
+.snap-nav::before{content:'';position:absolute;inset:-28px;border-radius:200px;pointer-events:auto}
+.snap-nav.nav-open{background:rgba(12,48,32,0.88);border-color:rgba(52,211,153,0.30);box-shadow:0 8px 40px rgba(0,0,0,0.45),0 0 50px rgba(52,211,153,0.06)}
+.snap-nav.nav-open .snap-dot-name{max-width:100px;opacity:1;margin-left:6px}
+.snap-nav.nav-open .snap-dot-wrap.is-active .snap-dot-name{color:var(--gold-b)}
 .snap-nav:hover{background:rgba(12,48,32,0.88);border-color:rgba(52,211,153,0.30);box-shadow:0 8px 40px rgba(0,0,0,0.45),0 0 50px rgba(52,211,153,0.06)}
 .snap-label{font-family:'Gloock',serif;font-size:13px;color:var(--gold-b);white-space:nowrap;display:inline-block;overflow:hidden;transition:max-width .5s var(--ease),color .4s}
 .snap-dots{display:flex;gap:10px;align-items:center}
@@ -1296,6 +1299,14 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
     if(e.key==='ArrowDown'&&current<sections.length-1){e.preventDefault();sections[current+1].scrollIntoView({behavior:'smooth'})}
     if(e.key==='ArrowUp'&&current>0){e.preventDefault();sections[current-1].scrollIntoView({behavior:'smooth'})}
   });
+
+  /* Robust hover — keep island open while cursor is inside nav OR its extended hit zone */
+  let closeTimer=0;
+  function openNav(){clearTimeout(closeTimer);nav.classList.add('nav-open')}
+  function scheduleClose(){clearTimeout(closeTimer);closeTimer=setTimeout(()=>nav.classList.remove('nav-open'),120)}
+  nav.addEventListener('mouseenter',openNav);
+  nav.addEventListener('mousemove',openNav);
+  nav.addEventListener('mouseleave',scheduleClose);
 })();
 </script>
 </body>

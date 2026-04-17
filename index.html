@@ -1326,11 +1326,9 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
       inside=!!(el&&(el===nav||nav.contains(el)));
     }
     if(inside){
-      clearTimeout(navCloseTimer);
       nav.classList.add('nav-open');
     }else if(nav.classList.contains('nav-open')){
-      clearTimeout(navCloseTimer);
-      navCloseTimer=setTimeout(()=>nav.classList.remove('nav-open'),200);
+      nav.classList.remove('nav-open');
     }
   },{passive:true});
 

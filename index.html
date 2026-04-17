@@ -1313,9 +1313,17 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
     if(e.key==='ArrowUp'&&current>0){e.preventDefault();sections[current-1].scrollIntoView({behavior:'smooth'})}
   });
 
-  /* Reliable hover — mouseenter/leave don't fire for child transitions */
-  nav.addEventListener('mouseenter',()=>nav.classList.add('nav-open'));
-  nav.addEventListener('mouseleave',()=>nav.classList.remove('nav-open'));
+  /* Reliable hover — mouseover/out with relatedTarget check handles child transitions and spurious events */
+  let navCloseTimer=0;
+  nav.addEventListener('mouseover',()=>{
+    clearTimeout(navCloseTimer);
+    nav.classList.add('nav-open');
+  });
+  nav.addEventListener('mouseout',e=>{
+    if(e.relatedTarget&&nav.contains(e.relatedTarget))return;
+    clearTimeout(navCloseTimer);
+    navCloseTimer=setTimeout(()=>nav.classList.remove('nav-open'),400);
+  });
 
 })();
 </script>

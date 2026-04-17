@@ -1313,18 +1313,24 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
     if(e.key==='ArrowUp'&&current>0){e.preventDefault();sections[current-1].scrollIntoView({behavior:'smooth'})}
   });
 
-  /* Pure position tracking — check mouse vs nav's bounding rect every mousemove.
-     Immune to child element event quirks, transitions, and layout shifts. */
+  /* Position tracking with rect + DOM containment fallback.
+     Rect check handles most cases; elementFromPoint catches cases
+     where CSS hit testing differs (e.g., text mid-characters). */
   let navCloseTimer=0;
   document.addEventListener('mousemove',e=>{
     const r=nav.getBoundingClientRect();
-    const inside=e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom;
+    const rectInside=e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom;
+    let inside=rectInside;
+    if(!inside){
+      const el=document.elementFromPoint(e.clientX,e.clientY);
+      inside=!!(el&&(el===nav||nav.contains(el)));
+    }
     if(inside){
       clearTimeout(navCloseTimer);
       nav.classList.add('nav-open');
     }else if(nav.classList.contains('nav-open')){
       clearTimeout(navCloseTimer);
-      navCloseTimer=setTimeout(()=>nav.classList.remove('nav-open'),300);
+      navCloseTimer=setTimeout(()=>nav.classList.remove('nav-open'),200);
     }
   },{passive:true});
 

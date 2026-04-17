@@ -1313,17 +1313,20 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
     if(e.key==='ArrowUp'&&current>0){e.preventDefault();sections[current-1].scrollIntoView({behavior:'smooth'})}
   });
 
-  /* Reliable hover — mouseover/out with relatedTarget check handles child transitions and spurious events */
+  /* Pure position tracking — check mouse vs nav's bounding rect every mousemove.
+     Immune to child element event quirks, transitions, and layout shifts. */
   let navCloseTimer=0;
-  nav.addEventListener('mouseover',()=>{
-    clearTimeout(navCloseTimer);
-    nav.classList.add('nav-open');
-  });
-  nav.addEventListener('mouseout',e=>{
-    if(e.relatedTarget&&nav.contains(e.relatedTarget))return;
-    clearTimeout(navCloseTimer);
-    navCloseTimer=setTimeout(()=>nav.classList.remove('nav-open'),400);
-  });
+  document.addEventListener('mousemove',e=>{
+    const r=nav.getBoundingClientRect();
+    const inside=e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom;
+    if(inside){
+      clearTimeout(navCloseTimer);
+      nav.classList.add('nav-open');
+    }else if(nav.classList.contains('nav-open')){
+      clearTimeout(navCloseTimer);
+      navCloseTimer=setTimeout(()=>nav.classList.remove('nav-open'),300);
+    }
+  },{passive:true});
 
 })();
 </script>

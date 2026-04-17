@@ -373,7 +373,6 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 
 /* ═══ DYNAMIC ISLAND ═══ */
 .snap-nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:9998;display:flex;align-items:center;gap:16px;background:rgba(12,48,32,0.65);backdrop-filter:blur(28px) saturate(1.5);-webkit-backdrop-filter:blur(28px) saturate(1.5);border:1px solid rgba(52,211,153,0.14);border-radius:100px;padding:10px 24px;transition:all .6s var(--ease);box-shadow:0 4px 24px rgba(0,0,0,0.35),0 0 0 1px rgba(0,0,0,0.1)}
-.snap-nav::before{content:'';position:absolute;inset:-28px;border-radius:200px;pointer-events:auto}
 .snap-nav.nav-open{background:rgba(12,48,32,0.88);border-color:rgba(52,211,153,0.30);box-shadow:0 8px 40px rgba(0,0,0,0.45),0 0 50px rgba(52,211,153,0.06)}
 .snap-nav.nav-open .snap-dot-name{max-width:100px;opacity:1;margin-left:6px}
 .snap-nav.nav-open .snap-dot-wrap.is-active .snap-dot-name{color:var(--gold-b)}
@@ -1317,20 +1316,22 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
     if(e.key==='ArrowUp'&&current>0){e.preventDefault();sections[current-1].scrollIntoView({behavior:'smooth'})}
   });
 
-  /* Robust hover — document-level mouse tracking with generous hit zone */
-  const HIT_PAD=80;
-  let closeTimer=0,outsideTs=0;
+  /* Island hover — mouseenter/leave on nav + extended hit zone via pointermove */
+  const HIT_PAD=60;
+  let closeTimer=0;
+  function openNav(){clearTimeout(closeTimer);nav.classList.add('nav-open')}
   function closeNav(){nav.classList.remove('nav-open')}
-  function check(e){
+  function scheduleClose(){clearTimeout(closeTimer);closeTimer=setTimeout(closeNav,300)}
+  /* Direct hover on the visual nav — bulletproof */
+  nav.addEventListener('mouseenter',openNav);
+  nav.addEventListener('mouseleave',scheduleClose);
+  /* Extended hit zone — keep open while cursor is within HIT_PAD px of nav */
+  document.addEventListener('pointermove',e=>{
     const r=nav.getBoundingClientRect();
-    const inside=e.clientX>=r.left-HIT_PAD&&e.clientX<=r.right+HIT_PAD&&e.clientY>=r.top-HIT_PAD&&e.clientY<=r.bottom+HIT_PAD;
-    if(inside){clearTimeout(closeTimer);outsideTs=0;nav.classList.add('nav-open')}
-    else if(nav.classList.contains('nav-open')){
-      if(!outsideTs){outsideTs=Date.now();clearTimeout(closeTimer);closeTimer=setTimeout(closeNav,250)}
+    if(e.clientX>=r.left-HIT_PAD&&e.clientX<=r.right+HIT_PAD&&e.clientY>=r.top-HIT_PAD&&e.clientY<=r.bottom+HIT_PAD){
+      openNav();
     }
-  }
-  document.addEventListener('mousemove',check,{passive:true});
-  document.addEventListener('pointermove',check,{passive:true});
+  },{passive:true});
 })();
 </script>
 </body>

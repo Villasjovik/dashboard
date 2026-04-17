@@ -373,7 +373,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 
 /* ═══ DYNAMIC ISLAND ═══ */
 .snap-nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:9998;display:flex;align-items:center;gap:16px;background:rgba(12,48,32,0.65);backdrop-filter:blur(28px) saturate(1.5);-webkit-backdrop-filter:blur(28px) saturate(1.5);border:1px solid rgba(52,211,153,0.14);border-radius:100px;padding:10px 24px;transition:all .6s var(--ease);box-shadow:0 4px 24px rgba(0,0,0,0.35),0 0 0 1px rgba(0,0,0,0.1)}
-.snap-nav:hover{background:rgba(12,48,32,0.88);border-color:rgba(52,211,153,0.30);box-shadow:0 8px 40px rgba(0,0,0,0.45),0 0 50px rgba(52,211,153,0.06)}
+.snap-nav:hover,.snap-nav.nav-open{background:rgba(12,48,32,0.88);border-color:rgba(52,211,153,0.30);box-shadow:0 8px 40px rgba(0,0,0,0.45),0 0 50px rgba(52,211,153,0.06)}
 .snap-label{font-family:'Gloock',serif;font-size:13px;color:var(--gold-b);white-space:nowrap;display:inline-block;overflow:hidden;transition:max-width .5s var(--ease),color .4s}
 .snap-dots{display:flex;gap:10px;align-items:center}
 .snap-dot{width:7px;height:7px;border-radius:50%;background:rgba(240,235,227,0.16);transition:all .4s var(--ease);cursor:pointer;border:none;padding:0;position:relative}
@@ -387,8 +387,8 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 /* Dynamic Island — Apple hover expand */
 .snap-dot-wrap{display:flex;align-items:center;gap:0;cursor:pointer}
 .snap-dot-name{display:inline-block;max-width:0;opacity:0;overflow:hidden;white-space:nowrap;font-family:'Outfit',sans-serif;font-size:10px;font-weight:600;letter-spacing:.04em;color:var(--muted);transition:max-width .45s var(--ease),opacity .35s var(--ease),margin .35s var(--ease);margin-left:0}
-.snap-nav:hover .snap-dot-name{max-width:100px;opacity:1;margin-left:6px}
-.snap-nav:hover .snap-dot-wrap.is-active .snap-dot-name{color:var(--gold-b)}
+.snap-nav:hover .snap-dot-name,.snap-nav.nav-open .snap-dot-name{max-width:100px;opacity:1;margin-left:6px}
+.snap-nav:hover .snap-dot-wrap.is-active .snap-dot-name,.snap-nav.nav-open .snap-dot-wrap.is-active .snap-dot-name{color:var(--gold-b)}
 .snap-dot-wrap:hover .snap-dot-name{color:var(--gold-b)!important;text-shadow:0 0 12px rgba(200,164,78,0.4)}
 .snap-dot-wrap:hover .snap-dot{background:var(--gold)!important;box-shadow:0 0 8px var(--gold),0 0 20px rgba(200,164,78,0.25);transform:scale(1.4)}
 
@@ -1312,6 +1312,10 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
     if(e.key==='ArrowDown'&&current<sections.length-1){e.preventDefault();sections[current+1].scrollIntoView({behavior:'smooth'})}
     if(e.key==='ArrowUp'&&current>0){e.preventDefault();sections[current-1].scrollIntoView({behavior:'smooth'})}
   });
+
+  /* Reliable hover — mouseenter/leave don't fire for child transitions */
+  nav.addEventListener('mouseenter',()=>nav.classList.add('nav-open'));
+  nav.addEventListener('mouseleave',()=>nav.classList.remove('nav-open'));
 
 })();
 </script>

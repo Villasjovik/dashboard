@@ -196,6 +196,19 @@
       "date_closed": null,
       "pitch_url": null,
       "notes": "Tackade nej."
+    },
+    {
+      "id": "micare",
+      "company": "Micare",
+      "contact": "Connie Engelbrekt Mikkelsen",
+      "category": "Rengöring & Hemvård",
+      "status": "pitched",
+      "value": 17700,
+      "value_label": "12 500 DKK (~17 700 SEK)",
+      "date_contacted": "2026-04-17",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/micare/",
+      "notes": "Dansk rengöring/underhåll (Naturren rensepasta, Balsam för zink/skiffer/metall). Inte aktiva på svensk marknad än — pitch formulerad som premiärsamarbete (12 500 DKK fokuspaket, 3-paket grayed out för framtida expansion). Connie svarade positivt och bad om upplägg + pris."
     }
   ],
   "leads_summary": {

@@ -438,6 +438,74 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+
+/* ═══ MOBILE OPTIMIZATION (desktop orörd) ═══ */
+@media(max-width:768px){
+  /* 1. Performance — kill tunga GPU-effekter */
+  #particles{display:none!important}
+  #scroll-orb{display:none!important}
+  #noise{display:none!important}
+  .snap-nav{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:rgba(12,48,32,0.92)!important}
+  .glass{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+  /* 2. Dämpa infinite-animationer (behåll pulse på live-dot men stäng av dyrare) */
+  .hdr h1 em,.gate-title em{animation:none!important;background-position:0 50%!important}
+  .h-val.gold{animation:none!important}
+  .progress-fill::before,.progress-fill::after,.kpi-bar::after{animation:none!important}
+  .r-glow,.ring-pct{animation:none!important}
+  .tl-item.t-green::before,.tl-item.t-amber::before,.tl-item.t-red::before{animation:none!important}
+  .f-dot{animation:none!important}
+  /* 3. Layout-fixar */
+  .wrap{padding:24px 14px 40px}
+  .hdr h1{font-size:clamp(32px,8vw,48px)}
+  .hero{padding:0}
+  .h-cell{padding:20px 14px!important}
+  .h-val{font-size:clamp(28px,8vw,40px)!important}
+  .bento{gap:14px}
+  .bento-kpi,.bento-goal{padding:20px 18px!important}
+  .sec h2{font-size:clamp(22px,5.5vw,30px)!important}
+  .cc-area{height:200px!important}
+  /* 4. Chart-cards mindre padding */
+  .cc{padding:18px!important}
+  /* 5. Reveal-transition snabbare på mobil */
+  .reveal{transition-duration:.4s!important}
+}
+
+@media(max-width:640px){
+  /* Tabell → stack-cards så "Visa →"-länken aldrig hamnar utanför skärmen */
+  .tbl{overflow:visible}
+  .tbl table,.tbl thead,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%;box-sizing:border-box}
+  .tbl thead{display:none}
+  .tbl tr{border-bottom:1px solid rgba(200,164,78,0.08);padding:14px 16px;margin-bottom:8px;background:rgba(255,255,255,0.015);border-radius:12px;position:relative}
+  .tbl tr:hover td{background:transparent!important;padding-left:inherit!important;box-shadow:none!important}
+  .tbl td{padding:4px 0!important;border:none!important;font-size:13px}
+  .tbl td::before{content:attr(data-label);display:inline-block;min-width:90px;font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);font-family:'Outfit',sans-serif;margin-right:10px}
+  .tbl td:first-child::before{content:""}
+  .tbl td:first-child{font-size:15px;font-weight:600;color:var(--ink);margin-bottom:4px}
+  .tbl .td-co{gap:8px}
+  .tbl .td-link{display:inline-flex;align-items:center;justify-content:center;min-width:72px;min-height:34px;padding:6px 14px;background:var(--gold-dim);border:1px solid rgba(200,164,78,0.3);border-radius:100px;opacity:1;font-size:11px;color:var(--gold-b)}
+  /* Tabell-filter pills synligt igen på smal (var display:none på 700px) */
+  .tbl .pills{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+  .tbl-hd{flex-direction:column;align-items:flex-start;gap:10px}
+}
+
+@media(max-width:480px){
+  .hero{grid-template-columns:1fr!important}
+  .h-div{display:none}
+  .leads{grid-template-columns:repeat(2,1fr)!important}
+  .lead-c{padding:16px 12px!important}
+  .hdr h1{font-size:clamp(28px,7.5vw,38px)}
+  .hdr-sub{font-size:12px!important}
+  .sec h2{font-size:clamp(20px,6vw,26px)!important}
+  .cc-area{height:180px!important}
+  .tl-item{padding:10px 0 16px}
+  .tl-item::before{left:-28px!important;width:10px!important;height:10px!important}
+}
+
+/* Touch devices — ingen hover-tilt/parallax-effekt */
+@media(pointer:coarse){
+  .glass:hover{transform:none!important}
+  tr:hover td{background:transparent!important;padding-left:inherit!important;box-shadow:none!important}
+}
 </style>
 </head>
 <body>
@@ -853,7 +921,7 @@ function renderTbl(f,animate){
   deals.forEach((d,i)=>{
     const s=ST[d.status];const tr=document.createElement('tr');
     tr.style.opacity='0';tr.style.transform='translateY(6px)';
-    tr.innerHTML='<td><span class="td-co"><span class="co-dot" style="color:'+s.color+';background:'+s.color+'"></span>'+d.company+'</span></td><td>'+d.category+'</td><td><span class="badge '+s.c+'">'+s.l+'</span></td><td class="td-val">'+(d.value_label?d.value_label+' kr':d.value?fmt(d.value)+' kr':'—')+'</td><td>'+(d.date_contacted?d.date_contacted.slice(5).split('-').reverse().join('/'):'—')+'</td><td>'+(d.pitch_url?'<a href="'+d.pitch_url+'" target="_blank" rel="noopener" class="td-link">Visa →</a>':'—')+'</td>';
+    tr.innerHTML='<td data-label="Företag"><span class="td-co"><span class="co-dot" style="color:'+s.color+';background:'+s.color+'"></span>'+d.company+'</span></td><td data-label="Kategori">'+d.category+'</td><td data-label="Status"><span class="badge '+s.c+'">'+s.l+'</span></td><td class="td-val" data-label="Värde">'+(d.value_label?d.value_label+' kr':d.value?fmt(d.value)+' kr':'—')+'</td><td data-label="Kontaktad">'+(d.date_contacted?d.date_contacted.slice(5).split('-').reverse().join('/'):'—')+'</td><td data-label="Pitch">'+(d.pitch_url?'<a href="'+d.pitch_url+'" target="_blank" rel="noopener" class="td-link">Visa →</a>':'—')+'</td>';
     tb.appendChild(tr);
     if(animate)setTimeout(()=>{tr.style.transition='opacity .4s var(--ease),transform .4s var(--ease)';tr.style.opacity='1';tr.style.transform='none'},25+i*40);
   });
@@ -1047,6 +1115,9 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
 
 /* ═══ 3D WIREFRAME GEOMETRY + PARTICLES ═══ */
 (function(){
+  // Mobile guard — skip tung canvas-animation helt på små skärmar/touch
+  const IS_MOBILE=window.matchMedia('(max-width:768px)').matches||window.matchMedia('(pointer:coarse)').matches;
+  if(IS_MOBILE)return;
   const cv=document.getElementById('particles');
   const ctx=cv.getContext('2d');
   let W,H,mx=0,my=0;

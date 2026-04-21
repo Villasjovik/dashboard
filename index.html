@@ -295,6 +295,34 @@ body::after{
 .cc-area{position:relative;height:270px}
 .chart-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:56px}
 
+/* ═══ INSIGHTS ═══ */
+.ins-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
+.ins-card{border-radius:22px;padding:26px 24px;position:relative;overflow:hidden}
+.ins-card::after{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(145deg,rgba(52,211,153,0.04) 0%,transparent 40%,rgba(200,164,78,0.02) 100%);pointer-events:none}
+.ins-label{font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.ins-label::before{content:'';width:16px;height:1px;background:var(--gold);box-shadow:0 0 8px var(--gold)}
+.ins-big{font-family:'Gloock',serif;font-size:clamp(28px,3vw,42px);font-weight:400;line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums;text-shadow:0 0 25px rgba(200,164,78,0.18),0 2px 6px rgba(0,0,0,0.15);margin-bottom:10px}
+.ins-big .u{font-family:'Outfit',sans-serif;font-size:13px;font-weight:400;color:var(--muted);margin-left:3px}
+.ins-big.green{color:var(--emerald-b)}
+.ins-big.gold{color:var(--gold-b)}
+.ins-sub{font-size:11px;color:var(--muted);line-height:1.45}
+.ins-twin{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:44px}
+.ins-list{border-radius:24px;padding:28px 26px;position:relative;overflow:hidden}
+.ins-list-hd{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:18px}
+.ins-list-title{font-family:'Gloock',serif;font-size:18px;color:var(--ink);font-style:italic}
+.ins-list-title em{color:var(--gold-b);font-style:normal;font-family:'Outfit';font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-left:8px}
+.ins-item{padding:14px 0;border-bottom:1px solid rgba(200,164,78,0.04);display:flex;flex-direction:column;gap:6px}
+.ins-item:last-child{border-bottom:none}
+.ins-item-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.ins-item-co{font-size:13px;color:var(--ink);font-weight:500;display:flex;align-items:center;gap:8px}
+.ins-item-co::before{content:'';width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.ins-item.rose .ins-item-co::before{background:var(--rose);box-shadow:0 0 8px var(--rose)}
+.ins-item.gold .ins-item-co::before{background:var(--gold);box-shadow:0 0 8px var(--gold)}
+.ins-item-meta{font-size:10px;color:var(--dim);font-variant-numeric:tabular-nums;letter-spacing:.03em;white-space:nowrap}
+.ins-item-reason{font-size:12px;color:var(--muted);line-height:1.55}
+.ins-empty{font-size:12px;color:var(--dim);font-style:italic;padding:12px 0}
+@media (max-width:900px){.ins-row{grid-template-columns:repeat(2,1fr)}.ins-twin{grid-template-columns:1fr}}
+
 /* Revenue — 3D depth card */
 .rev{margin-bottom:44px;margin-top:72px}.rev .sec{margin-bottom:14px}
 .snap .sep-gold{margin-bottom:12px}
@@ -729,6 +757,42 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 </div>
 </section>
 
+<section class="snap snap-long" data-label="Insikter">
+<div class="sec"><h2>Affärs<em>insikter</em></h2></div>
+<div class="ins-row">
+  <div class="ins-card glass reveal"><div class="shine"></div>
+    <p class="ins-label">Snitt tid till stängning</p>
+    <p class="ins-big gold" id="ins-dtc">—<span class="u"> d</span></p>
+    <p class="ins-sub" id="ins-dtc-sub">—</p>
+  </div>
+  <div class="ins-card glass reveal" style="transition-delay:.06s"><div class="shine"></div>
+    <p class="ins-label">Snittpris stängt</p>
+    <p class="ins-big green" id="ins-avg">—<span class="u"> kr</span></p>
+    <p class="ins-sub" id="ins-avg-sub">—</p>
+  </div>
+  <div class="ins-card glass reveal" style="transition-delay:.12s"><div class="shine"></div>
+    <p class="ins-label">Win rate</p>
+    <p class="ins-big gold" id="ins-win">—<span class="u"> %</span></p>
+    <p class="ins-sub" id="ins-win-sub">av avgjorda affärer</p>
+  </div>
+  <div class="ins-card glass reveal" style="transition-delay:.18s"><div class="shine"></div>
+    <p class="ins-label">Förhandlingsdelta</p>
+    <p class="ins-big" id="ins-delta">—<span class="u"> %</span></p>
+    <p class="ins-sub" id="ins-delta-sub">slutpris vs pitchat värde</p>
+  </div>
+</div>
+<div class="ins-twin">
+  <div class="ins-list glass reveal"><div class="shine"></div>
+    <div class="ins-list-hd"><p class="ins-list-title">Avböjnings<em>analys</em></p><span class="label-m" id="ins-rej-count">—</span></div>
+    <div id="ins-rej-list"></div>
+  </div>
+  <div class="ins-list glass reveal" style="transition-delay:.08s"><div class="shine"></div>
+    <div class="ins-list-hd"><p class="ins-list-title">Framtida <em>prospects</em></p><span class="label-m" id="ins-fu-count">—</span></div>
+    <div id="ins-fu-list"></div>
+  </div>
+</div>
+</section>
+
 <section class="snap snap-long" data-label="Leads & Affärer">
 <div class="sec"><h2>Leads <em>översikt</em></h2></div>
 <div class="leads">
@@ -869,10 +933,90 @@ regSec(1,()=>{setTimeout(()=>{
 },900)});
 
 /* Leads */
-regSec(3,()=>{setTimeout(()=>{
+regSec(4,()=>{setTimeout(()=>{
   const ls=D.leads_summary;
   [['ln-total',ls.total],['ln-new',ls.new],['ln-cont',ls.contacted],['ln-ni',ls.not_interested],['ln-ready',ls.ready_to_contact]].forEach(([id,v])=>countUp(document.getElementById(id),v,'',1400));
 },800)});
+
+/* ═══ INSIGHTS (feedback loop) ═══ */
+const signedDeals=D.deals.filter(d=>d.outcome==='signed');
+const rejectedDeals=D.deals.filter(d=>d.outcome==='rejected');
+const decidedDeals=[...signedDeals,...rejectedDeals,...D.deals.filter(d=>d.outcome==='product_trade')];
+const followupDeals=D.deals.filter(d=>d.followup_window);
+
+// Avg days to close (signed only, both dates present)
+const daysList=signedDeals.filter(d=>d.date_contacted&&d.date_closed).map(d=>{
+  const a=new Date(d.date_contacted),b=new Date(d.date_closed);
+  return Math.round((b-a)/86400000);
+});
+const avgDays=daysList.length?Math.round(daysList.reduce((s,n)=>s+n,0)/daysList.length):0;
+
+// Avg signed price (cash only, exclude product_trade/0)
+const pricedSigned=signedDeals.filter(d=>d.final_price>0);
+const avgPrice=pricedSigned.length?Math.round(pricedSigned.reduce((s,d)=>s+d.final_price,0)/pricedSigned.length):0;
+
+// Win rate = signed / (signed + rejected)
+const winPool=signedDeals.length+rejectedDeals.length;
+const winRate=winPool?Math.round(signedDeals.length/winPool*100):0;
+
+// Negotiation delta: avg (final_price / pitched value) across priced signed
+const deltaList=pricedSigned.filter(d=>d.value>0).map(d=>d.final_price/d.value);
+const avgDelta=deltaList.length?Math.round((deltaList.reduce((s,n)=>s+n,0)/deltaList.length)*100):100;
+
+regSec(3,()=>{setTimeout(()=>{
+  const dtcEl=document.getElementById('ins-dtc');
+  if(dtcEl){
+    if(avgDays>0){countUp(dtcEl,avgDays,'<span class="u"> d</span>',1400);}
+    else{dtcEl.innerHTML='—';}
+    document.getElementById('ins-dtc-sub').textContent=daysList.length?'baserat på '+daysList.length+' stängda affärer':'väntar på första stängning';
+  }
+  const avgEl=document.getElementById('ins-avg');
+  if(avgEl){
+    if(avgPrice>0){countUp(avgEl,avgPrice,'<span class="u"> kr</span>',1600);}
+    else{avgEl.innerHTML='—';}
+    document.getElementById('ins-avg-sub').textContent=pricedSigned.length?pricedSigned.length+' signade paket (ex. produktutbyten)':'inga signade ännu';
+  }
+  const winEl=document.getElementById('ins-win');
+  if(winEl){
+    if(winPool>0){countUp(winEl,winRate,'<span class="u"> %</span>',1400);}
+    else{winEl.innerHTML='—';}
+    document.getElementById('ins-win-sub').textContent=winPool?signedDeals.length+' signade / '+rejectedDeals.length+' avböjda':'inga avgjorda affärer än';
+  }
+  const deltaEl=document.getElementById('ins-delta');
+  if(deltaEl){
+    if(deltaList.length){
+      deltaEl.innerHTML=avgDelta+'<span class="u"> %</span>';
+      deltaEl.classList.add(avgDelta>=100?'green':'gold');
+      document.getElementById('ins-delta-sub').textContent=avgDelta>=100?'vi håller eller över pitchat pris':'vi prutas ned i snitt';
+    }else{
+      deltaEl.innerHTML='—';
+    }
+  }
+
+  // Rejection analysis list
+  const rList=document.getElementById('ins-rej-list');
+  document.getElementById('ins-rej-count').textContent=rejectedDeals.length+' st';
+  if(rejectedDeals.length){
+    rList.innerHTML=rejectedDeals.map(d=>{
+      const dt=d.date_closed||d.date_contacted;
+      const dtTxt=dt?dt.slice(5).split('-').reverse().join('/'):'—';
+      return '<div class="ins-item rose"><div class="ins-item-top"><span class="ins-item-co">'+d.company+'</span><span class="ins-item-meta">'+(d.value?fmt(d.value)+' kr · ':'')+dtTxt+'</span></div><p class="ins-item-reason">'+(d.close_reason||d.notes||'—')+'</p></div>';
+    }).join('');
+  }else{
+    rList.innerHTML='<p class="ins-empty">Inga avböjda affärer ännu.</p>';
+  }
+
+  // Followup prospects list
+  const fList=document.getElementById('ins-fu-list');
+  document.getElementById('ins-fu-count').textContent=followupDeals.length+' st';
+  if(followupDeals.length){
+    fList.innerHTML=followupDeals.map(d=>{
+      return '<div class="ins-item gold"><div class="ins-item-top"><span class="ins-item-co">'+d.company+'</span><span class="ins-item-meta">följ upp: '+d.followup_window+'</span></div><p class="ins-item-reason">'+(d.close_reason||'—')+'</p></div>';
+    }).join('');
+  }else{
+    fList.innerHTML='<p class="ins-empty">Inga framtida prospects taggade än.</p>';
+  }
+},500)});
 
 /* ═══ CHARTS ═══ */
 Chart.defaults.font.family='Outfit';
@@ -929,7 +1073,7 @@ function renderTbl(f,animate){
 /* Pre-create table rows for stable container height (no animation yet) */
 renderTbl('all',false);
 /* Animate rows when section scrolls into view */
-regSec(3,()=>{
+regSec(4,()=>{
   document.querySelectorAll('#tbody tr').forEach((tr,i)=>{
     setTimeout(()=>{tr.style.transition='opacity .4s var(--ease),transform .4s var(--ease)';tr.style.opacity='1';tr.style.transform='none'},25+i*40);
   });

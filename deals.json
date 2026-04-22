@@ -311,6 +311,25 @@
       "notes": "Carin skickade kallt mail 21/4. Peter svarade 22/4. Följer redan @villasjovik. Vänlig ton, 'man ska aldrig säga aldrig'. Draft skickad med bildproduktions-pivot."
     }
   ],
+    {
+      "id": "freshland",
+      "company": "Fresh.Land",
+      "contact": "Viktorija (support) → marknad okänd",
+      "category": "Mat & Livsstil",
+      "status": "follow_up",
+      "value": 28500,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-04-21",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Kallt mail skickat 21/4 via kontaktformulär. Support (Viktorija) svarade via Ticket [184932]: 'Skriv till oss på Instagram'. Marknadsavd. ej nådd. Nästa steg: Instagram DM för att hitta rätt kontakt. Draft: drafts/draft-freshland-1776863384590.md."
+    }
+  ],
   "leads_summary": {
     "total": 135,
     "new": 68,

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-04-21",
+    "updated": "2026-04-22",
     "monthly_goal": 100000,
     "currency": "SEK",
     "schema_version": 2,
@@ -92,18 +92,18 @@
       "company": "JAPE",
       "contact": "Jeanette Axelsson",
       "category": "Trädgård & Utomhus",
-      "status": "in_discussion",
+      "status": "closed",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 – 39 000",
       "date_contacted": "2026-04-09",
-      "date_closed": null,
+      "date_closed": "2026-04-22",
       "pitch_url": "https://villasjovik.github.io/jape/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
+      "outcome": "signed",
+      "final_price": 39000,
+      "close_reason": "3-delat paket accepterat efter call 22/4. Full pitch-pris utan prutning. Jeanette var redan varm efter pitch 10/4 — bollen låg hos henne genom hela Nordbygg-veckan och hon kom tillbaka med ja.",
       "followup_window": null,
-      "notes": "Call bekräftad 2026-04-22 kl 10:00 — Jeanette ringer. Call 21/4 föll bort (Nordbygg). Jeanette vill utveckla samarbetsidén och skriva ihop ett tekniskt manus (produkter, ytor). Pitch skickad 2026-04-10. Engångspaket 18 500 kr / 3-pack 39 000 kr."
+      "notes": "Signerat 2026-04-22 efter call kl 10:00. 3 videor à 39 000 kr exkl. moms. Pitch skickad 10/4, deal stängd 22/4 (13 dagar)."
     },
     {
       "id": "thefriendlyhome",

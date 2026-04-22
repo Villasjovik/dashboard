@@ -898,12 +898,22 @@ regSec(0,()=>{setTimeout(()=>{
   document.getElementById('k-leads-bar').style.width=(D.leads_summary.ready_to_contact/D.leads_summary.total*100)+'%';
 },700)});
 
-/* Showcase */
-const scData=[
-  {name:'Sioo:x',cat:'Trädgård & Utomhus',val:'48 000 kr',desc:'Avtal signerat via Scrive. Del 1 av 3 filmad. WoodScan-kampanj.',meta:'Stängd 7 apr · Sofie Källström',av:'S',ac:'green',badge:'Stängd',bc:'green'},
-  {name:'Guldkannan AB',cat:'Trädgård & Utomhus',val:'10 000 kr',desc:'10 foton + 3 filmklipp + 1 redigerad film. Full nyttjanderätt.',meta:'Stängd 12 apr · Klara Lövberg',av:'G',ac:'gold',badge:'Stängd',bc:'green'},
-  {name:'Hillerstorp',cat:'Trädgård & Utomhus',val:null,desc:'Trädgårdsmöbler och utemiljö. Samarbete via produktleverans.',meta:'April 2026 · Produktutbyte',av:'H',ac:'blue',badge:'Produktutbyte',bc:'blue'}
-];
+/* Showcase — auto-genererad från deals.json (status=closed) */
+const scPalette=['green','gold'];
+const fmtDate=iso=>iso?new Date(iso).toLocaleDateString('sv-SE',{day:'numeric',month:'short'}).replace('.',''):'';
+let signedIdx=0;
+const scData=closed.map(d=>{
+  const isProd=d.outcome==='product_trade';
+  const price=d.final_price||d.value||0;
+  const val=isProd||!price?null:fmt(price)+' kr';
+  const ac=isProd?'blue':scPalette[signedIdx++%scPalette.length];
+  const bc=isProd?'blue':'green';
+  const badge=isProd?'Produktutbyte':'Stängd';
+  const meta=isProd
+    ?(fmtDate(d.date_closed)||'April 2026')+' · Produktutbyte'
+    :'Stängd '+fmtDate(d.date_closed)+(d.contact?' · '+d.contact:'');
+  return{name:d.company,cat:d.category,val,desc:d.notes||d.close_reason||'',meta,av:d.company.charAt(0).toUpperCase(),ac,badge,bc};
+});
 const sc=document.getElementById('showcase');
 scData.forEach((d,i)=>{
   const c=document.createElement('div');c.className='sc glass reveal';c.style.transitionDelay=(i*.07)+'s';

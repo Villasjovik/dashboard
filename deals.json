@@ -180,16 +180,16 @@
       "company": "Sunseeker",
       "contact": "Aaron",
       "category": "Trädgård & Utomhus",
-      "status": "pitched",
+      "status": "declined",
       "value": 52000,
       "date_contacted": "2026-04-14",
-      "date_closed": null,
+      "date_closed": "2026-04-22",
       "pitch_url": "https://villasjovik.github.io/sunseeker/",
-      "outcome": null,
+      "outcome": "rejected",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "Ingen betald deal. Flera mail från olika avsändare/konton tyder på bred product-seeding-kampanj — Sunseeker letar influencers att skicka gräsklippare till, inte betalt samarbete. Inte en riktig lead för oss.",
       "followup_window": null,
-      "notes": "Inbound — Sunseeker kontaktade VS. Pitch skickad 2026-04-14. $5 000 USD (~52 000 kr). 1 video + Story + länk i bio 7 dagar."
+      "notes": "Avböjt 2026-04-22. Seeding-flow, inte paid collab. Lärdom: inbound från utländska hardware-brands med flera senders = troligtvis produktutskick."
     },
     {
       "id": "beslagonline",

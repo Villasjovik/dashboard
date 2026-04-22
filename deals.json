@@ -293,6 +293,22 @@
       "close_reason": null,
       "followup_window": null,
       "notes": "Dansk rengöring/underhåll (Naturren rensepasta, Balsam för zink/skiffer/metall). Inte aktiva på svensk marknad än — pitch formulerad som premiärsamarbete (12 500 DKK fokuspaket, 3-paket grayed out för framtida expansion). Connie svarade positivt och bad om upplägg + pris."
+    },
+    {
+      "id": "floramanufaktur",
+      "company": "FloraManufaktur / KlöverBlå",
+      "contact": "Peter",
+      "category": "Inredning & Dekor",
+      "status": "declined",
+      "value": 0,
+      "date_contacted": "2026-04-21",
+      "date_closed": "2026-04-22",
+      "pitch_url": null,
+      "outcome": "rejected",
+      "final_price": null,
+      "close_reason": "Policy: inga betalda sociala medie-samarbeten. Erbjuder produktsponsring istället. Peter motiverar det med autenticitet — äldre målgrupp, genomskådar betalda inlägg snabbt.",
+      "followup_window": null,
+      "notes": "Carin skickade kallt mail 21/4. Peter svarade 22/4. Följer redan @villasjovik. Öppna för produktsponsring om Carin genuint gillar produkterna — dörren inte stängd, bara ett annat spår."
     }
   ],
   "leads_summary": {

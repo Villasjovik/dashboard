@@ -85,7 +85,8 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": "Kampanjförslag 2026. Uppföljning på tidigare samarbete. 35k arvode + 15k Meta Ads."
+      "followup_expected_after": "2026-04-30",
+      "notes": "Kampanjförslag 2026. Uppföljning på tidigare samarbete. 35k arvode + 15k Meta Ads. NIBE sagt att de återkommer i slutet av april med svar — ingen follow-up behövs innan dess."
     },
     {
       "id": "jape",

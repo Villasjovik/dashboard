@@ -358,6 +358,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .b-discussion{background:rgba(200,164,78,0.12);color:var(--gold-b)}.b-discussion::before{background:var(--gold-b)}
 .b-pitched{background:rgba(251,191,36,0.10);color:var(--amber)}.b-pitched::before{background:var(--amber)}
 .b-declined{background:var(--rose-dim);color:var(--rose)}.b-declined::before{background:var(--rose)}
+.b-waiting{background:rgba(245,230,163,0.12);color:#e0be6a;text-transform:none;letter-spacing:0;font-size:10px}.b-waiting::before{background:#e0be6a}
 .td-link{color:var(--gold);text-decoration:none;font-size:11px;font-weight:600;opacity:.5;transition:opacity .3s}
 .td-link:hover{opacity:1}
 
@@ -1076,7 +1077,7 @@ function renderTbl(f,animate){
   deals.forEach((d,i)=>{
     const s=ST[d.status];const tr=document.createElement('tr');
     tr.style.opacity='0';tr.style.transform='translateY(6px)';
-    tr.innerHTML='<td data-label="Företag"><span class="td-co"><span class="co-dot" style="color:'+s.color+';background:'+s.color+'"></span>'+d.company+'</span></td><td data-label="Kategori">'+d.category+'</td><td data-label="Status"><span class="badge '+s.c+'">'+s.l+'</span></td><td class="td-val" data-label="Värde">'+(d.value_label?d.value_label+' kr':d.value?fmt(d.value)+' kr':'—')+'</td><td data-label="Kontaktad">'+(d.date_contacted?d.date_contacted.slice(5).split('-').reverse().join('/'):'—')+'</td><td data-label="Pitch">'+(d.pitch_url?'<a href="'+d.pitch_url+'" target="_blank" rel="noopener" class="td-link">Visa →</a>':'—')+'</td>';
+    tr.innerHTML='<td data-label="Företag"><span class="td-co"><span class="co-dot" style="color:'+s.color+';background:'+s.color+'"></span>'+d.company+'</span></td><td data-label="Kategori">'+d.category+'</td><td data-label="Status"><span class="badge '+s.c+'">'+s.l+'</span>'+(d.waiting_on?'<br><span class="badge b-waiting" style="margin-top:4px">⏳ '+d.waiting_on+'</span>':'')+'</td><td class="td-val" data-label="Värde">'+(d.value_label?d.value_label+' kr':d.value?fmt(d.value)+' kr':'—')+'</td><td data-label="Kontaktad">'+(d.date_contacted?d.date_contacted.slice(5).split('-').reverse().join('/'):'—')+'</td><td data-label="Pitch">'+(d.pitch_url?'<a href="'+d.pitch_url+'" target="_blank" rel="noopener" class="td-link">Visa →</a>':'—')+'</td>';
     tb.appendChild(tr);
     if(animate)setTimeout(()=>{tr.style.transition='opacity .4s var(--ease),transform .4s var(--ease)';tr.style.opacity='1';tr.style.transform='none'},25+i*40);
   });

@@ -254,10 +254,12 @@ body::after{
 .sc-badge.green{background:var(--emerald-dim);color:var(--emerald-b);border:1px solid rgba(52,211,153,0.12)}
 .sc-badge.blue{background:rgba(103,232,249,0.10);color:var(--blue);border:1px solid rgba(103,232,249,0.12)}
 .sc-top{display:flex;align-items:center;gap:14px;margin-bottom:18px}
-.sc-av{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:'Gloock',serif;font-size:20px;flex-shrink:0}
+.sc-av{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:'Gloock',serif;font-size:20px;flex-shrink:0;overflow:hidden}
 .sc-av.green{background:var(--emerald-dim);color:var(--emerald-b)}
 .sc-av.gold{background:var(--gold-dim);color:var(--gold-b)}
 .sc-av.blue{background:rgba(103,232,249,0.10);color:var(--blue)}
+.sc-av.has-logo{background:rgba(255,255,255,0.94);padding:5px}
+.sc-av img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
 .sc-name{font-family:'Gloock',serif;font-size:17px;margin-bottom:2px}
 .sc-cat{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .sc-val{font-family:'Gloock',serif;font-size:30px;color:var(--gold-b);margin-bottom:6px;font-variant-numeric:tabular-nums;text-shadow:0 0 30px rgba(200,164,78,0.3),0 2px 8px rgba(0,0,0,0.2)}
@@ -899,6 +901,9 @@ regSec(0,()=>{setTimeout(()=>{
   document.getElementById('k-leads-bar').style.width=(D.leads_summary.ready_to_contact/D.leads_summary.total*100)+'%';
 },700)});
 
+/* Logo map — used by showcase + activity log */
+const LOGOS={brunngard:{src:'logos/brunngard.png'},beslagonline:{src:'logos/beslagonline.png'},klinta:{src:'logos/klinta.avif'},jape:{src:'logos/jape.webp'},velux:{src:'logos/velux.png',raw:true},thefriendlyhome:{src:'logos/thefriendlyhome.jpg',raw:true},tergent:{src:'logos/tergent.jpg',raw:true},villaagarna:{src:'logos/villaagarna.svg'},nibe:{src:'logos/nibe.svg',raw:true}};
+
 /* Showcase — auto-genererad från deals.json (status=closed) */
 const scPalette=['green','gold'];
 const fmtDate=iso=>iso?new Date(iso).toLocaleDateString('sv-SE',{day:'numeric',month:'short'}).replace('.',''):'';
@@ -913,12 +918,14 @@ const scData=closed.map(d=>{
   const meta=isProd
     ?(fmtDate(d.date_closed)||'April 2026')+' · Produktutbyte'
     :'Stängd '+fmtDate(d.date_closed)+(d.contact?' · '+d.contact:'');
-  return{name:d.company,cat:d.category,val,desc:d.notes||d.close_reason||'',meta,av:d.company.charAt(0).toUpperCase(),ac,badge,bc};
+  return{name:d.company,cat:d.category,val,desc:d.notes||d.close_reason||'',meta,av:d.company.charAt(0).toUpperCase(),logo:LOGOS[d.id]||null,ac,badge,bc};
 });
 const sc=document.getElementById('showcase');
 scData.forEach((d,i)=>{
   const c=document.createElement('div');c.className='sc glass reveal';c.style.transitionDelay=(i*.07)+'s';
-  c.innerHTML='<div class="shine"></div><span class="sc-badge '+d.bc+'">'+d.badge+'</span><div class="sc-top"><div class="sc-av '+d.ac+'">'+d.av+'</div><div><p class="sc-name">'+d.name+'</p><p class="sc-cat">'+d.cat+'</p></div></div>'+(d.val?'<p class="sc-val">'+d.val+'</p>':'<p class="sc-val prod">Produktutbyte</p>')+'<p class="sc-desc">'+d.desc+'</p><p class="sc-meta">'+d.meta+'</p>';
+  const avInner=d.logo?'<img src="'+d.logo.src+'" alt="'+d.name+'">':d.av;
+  const avCls='sc-av '+(d.logo?'has-logo':d.ac);
+  c.innerHTML='<div class="shine"></div><span class="sc-badge '+d.bc+'">'+d.badge+'</span><div class="sc-top"><div class="'+avCls+'">'+avInner+'</div><div><p class="sc-name">'+d.name+'</p><p class="sc-cat">'+d.cat+'</p></div></div>'+(d.val?'<p class="sc-val">'+d.val+'</p>':'<p class="sc-val prod">Produktutbyte</p>')+'<p class="sc-desc">'+d.desc+'</p><p class="sc-meta">'+d.meta+'</p>';
   sc.appendChild(c);
 });
 
@@ -1091,9 +1098,6 @@ regSec(4,()=>{
   });
 });
 document.querySelectorAll('.pill').forEach(p=>p.addEventListener('click',()=>{document.querySelectorAll('.pill').forEach(x=>x.classList.remove('on'));p.classList.add('on');renderTbl(p.dataset.f)}));
-
-/* ═══ LOGO MAP ═══ */
-const LOGOS={brunngard:{src:'logos/brunngard.png'},beslagonline:{src:'logos/beslagonline.png'},klinta:{src:'logos/klinta.avif'},jape:{src:'logos/jape.webp'},velux:{src:'logos/velux.png',raw:true},thefriendlyhome:{src:'logos/thefriendlyhome.jpg',raw:true},tergent:{src:'logos/tergent.jpg',raw:true},villaagarna:{src:'logos/villaagarna.svg'},nibe:{src:'logos/nibe.svg',raw:true}};
 
 /* ═══ TIMELINE — COLOR-CODED, MULTIPLE EVENTS PER DEAL ═══ */
 const evts=[];

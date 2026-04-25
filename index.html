@@ -807,7 +807,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   <div class="lead-c reveal" style="transition-delay:.20s"><p class="lead-n" id="ln-ready" style="color:var(--gold-b)">—</p><p class="lead-l">Redo</p></div>
 </div>
 <div class="tbl glass reveal">
-  <div class="tbl-hd"><span class="label">Alla affärer</span><div class="pills"><span class="pill on" data-f="all">Alla</span><span class="pill" data-f="closed">Stängda</span><span class="pill" data-f="meeting">Möten</span><span class="pill" data-f="pitched">Offerter</span><span class="pill" data-f="declined">Avböjda</span></div></div>
+  <div class="tbl-hd"><span class="label">Alla affärer</span><div class="pills"><span class="pill on" data-f="all">Alla</span><span class="pill" data-f="closed">Stängda</span><span class="pill" data-f="meeting">Möten</span><span class="pill" data-f="pitched">Offerter</span><span class="pill" data-f="lead">Leads</span><span class="pill" data-f="declined">Avböjda</span></div></div>
   <table><thead><tr><th>Företag</th><th>Kategori</th><th>Status</th><th>Värde</th><th>Kontaktad</th><th>Pitch</th></tr></thead><tbody id="tbody"></tbody></table>
 </div>
 </section>
@@ -824,7 +824,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 'use strict';
 fetch('./deals.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(D=>{
 
-const ST={closed:{l:'Stängd',c:'b-closed',color:'#34d399'},meeting:{l:'Möte',c:'b-meeting',color:'#67e8f9'},in_discussion:{l:'Dialog',c:'b-discussion',color:'#e0be6a'},pitched:{l:'Offert',c:'b-pitched',color:'#fbbf24'},follow_up:{l:'Uppföljning',c:'b-discussion',color:'#e0be6a'},declined:{l:'Avböjd',c:'b-declined',color:'#fb7185'}};
+const ST={closed:{l:'Stängd',c:'b-closed',color:'#34d399'},meeting:{l:'Möte',c:'b-meeting',color:'#67e8f9'},in_discussion:{l:'Dialog',c:'b-discussion',color:'#e0be6a'},pitched:{l:'Offert',c:'b-pitched',color:'#fbbf24'},follow_up:{l:'Uppföljning',c:'b-discussion',color:'#e0be6a'},declined:{l:'Avböjd',c:'b-declined',color:'#fb7185'},lead:{l:'Lead',c:'b-pitched',color:'#a78bfa'}};
 const fmt=n=>n==null?'—':n.toLocaleString('sv-SE');
 const fK=fmt;
 

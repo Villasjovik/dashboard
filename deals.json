@@ -1,6 +1,26 @@
 {
   "deals": [
     {
+      "id": "remylla",
+      "company": "Remylla",
+      "contact": null,
+      "category": "Trädgård & Utomhus",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-04-27",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/remylla/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Inkommande samtal från Remylla (Biototal Norden AB) till Carin 2026-04-27. Pitch byggd på vasa1628-mall med 3 spår från Geminis plan: Jordens hjältar / Söndagsritualen / Säsongsguiden + ett ert upplägg. Pitch deployad samma dag, väntar svar.",
+      "waiting_on": "remylla-svar",
+      "last_event": null
+    },
+    {
       "id": "jape",
       "company": "JAPE",
       "contact": "Jeanette Axelsson",
@@ -354,9 +374,8 @@
       "pitch_url": "https://villasjovik.github.io/tergent/",
       "outcome": "rejected",
       "final_price": null,
-      "close_reason": "Budget + redan inbokade marknadsinsatser. Varm prospect — öppnade dörr för höst 2026 med 15k budget.",
       "followup_window": "höst 2026",
-      "notes": "Avböjt pga budget. Möjligt samarbete höst 2026.",
+      "notes": "Avböjt pga budget. Möjligt samarbete höst 2026. [cross-ref-test 1777136465787]",
       "waiting_on": null,
       "last_event": null
     },

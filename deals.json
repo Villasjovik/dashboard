@@ -276,9 +276,9 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": "Pitch skickad 2026-04-15. Engångspaket 18 500 kr / Kampanjpaket 39 000 kr. Varm lead sedan jan 2026.",
-      "waiting_on": null,
-      "last_event": null
+      "notes": "Cold outreach 2026-04-15 nådde aldrig fram (mailtrådsglapp). Elin följde upp 2026-04-28 — pitchen skickad i ny version samma dag. Startpaket 18 500 / Kampanjpaket 39 000. Produkter: Besticklåda Robur Ek, Lådmatta 500 Hasselnöt, källsortering, knoppar.",
+      "waiting_on": "Elins återkoppling efter granskning av pitch",
+      "last_event": "2026-04-28: Pitchen byggd om på stenbolaget-mall (4 produkter, nytt hero) och skickad till Elin efter hennes uppföljning."
     },
     {
       "id": "brunngard",

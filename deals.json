@@ -1,6 +1,26 @@
 {
   "deals": [
     {
+      "id": "studio-vintrafors",
+      "company": "Studio Vintrafors",
+      "contact": "Johanna Vintrafors (grundare/syster)",
+      "category": "Inredning & Dekor",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-04-29",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/studio-vintrafors/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Kallt utskick 2026-04-28 17:49 från Carin (via create-loopia-drafts.mjs). Johanna svarade positivt 2026-04-29 08:32 (UID 1851) — ber om priser och utökar scope explicit till multi-produkt (keramik, konstprints, målarböcker, kommande pussel utöver doftljus). Pitch-vinkel: 'Från två systrars studio i Råå till Villa Sjöviks vardag'. Fyra spår: 01 Doften som följer dagen (doftljus i keramik), 02 Stillhet på papper (målarbok + Studio Edition print), 03 Månsystrarnas återkomst (Signature Edition + keramik), 04 Ert upplägg. Spåren är produkt-baserade och plats-fria — videor följer föremål genom hela hemmet och trädgården. Paket 2 (39k) rekommenderas pga multi-produkt-scope. Beslutsfattare svarade direkt själv (Johanna + Katarina = systrar, Råå/Skåne) — snabb deal-cykel möjlig.",
+      "waiting_on": "studio-vintrafors-svar",
+      "last_event": "2026-04-29: pitch deployad + följemail med pitch-länk skapat (draft-vintrafors-pitch.md)"
+    },
+    {
       "id": "stenbolaget",
       "company": "Stenbolaget",
       "contact": "Josefine Sjögren (Digital Marketing Manager)",

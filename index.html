@@ -450,6 +450,16 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 .tl-stat-n{font-family:'Gloock',serif;font-size:28px;margin-bottom:4px;font-variant-numeric:tabular-nums}
 .tl-stat-l{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 
+/* ═══ MONTH PICKER ═══ */
+.month-picker{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:28px;margin-top:-8px}
+.month-picker-label{font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);flex-shrink:0}
+.month-pills{display:flex;gap:6px;flex-wrap:wrap}
+.mpill{padding:5px 16px;border-radius:100px;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--border);color:var(--muted);cursor:pointer;background:transparent;transition:all .3s var(--ease);font-family:'Outfit',sans-serif;white-space:nowrap}
+.mpill:hover,.mpill.on{border-color:var(--gold);color:var(--gold-b);background:var(--gold-dim)}
+.month-fade{transition:opacity .25s var(--ease)}
+.month-fade.fading{opacity:0}
+.no-month-data{padding:60px 0;text-align:center;font-size:14px;color:var(--dim);font-style:italic}
+
 /* ═══ RESPONSIVE ═══ */
 @media(max-width:1100px){
   .bento{grid-template-columns:1fr 1fr}.bento-goal{grid-row:auto}
@@ -691,19 +701,25 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 
 <hr class="sep-gold"/>
 
+<!-- Month picker -->
+<div class="month-picker" id="month-picker">
+  <span class="month-picker-label">Månad</span>
+  <div class="month-pills" id="month-pills"></div>
+</div>
+
 <!-- Hero metrics -->
 <div class="hero glow-border reveal" style="transition-delay:.05s">
-  <div class="h-cell"><p class="h-label">Stängt · april</p><p class="h-val gold" id="h-closed">—</p><p class="h-sub" id="h-closed-sub"></p></div>
+  <div class="h-cell"><p class="h-label" id="h-closed-label">Stängt · maj</p><p class="h-val gold" id="h-closed">—</p><p class="h-sub" id="h-closed-sub"></p></div>
   <div class="h-div"></div>
   <div class="h-cell"><p class="h-label">I pipeline</p><p class="h-val" id="h-pipe">—</p><p class="h-sub" id="h-pipe-sub"></p></div>
   <div class="h-div"></div>
-  <div class="h-cell"><p class="h-label">Kvar till mål</p><p class="h-val" id="h-remain">—</p><p class="h-sub">av 100 000 kr månadsmål</p></div>
+  <div class="h-cell"><p class="h-label">Kvar till mål</p><p class="h-val" id="h-remain">—</p><p class="h-sub" id="h-remain-sub">av 125 000 kr månadsmål</p></div>
 </div>
 
 <!-- Full-width progress -->
 <div class="progress-section reveal" style="transition-delay:.1s">
   <div class="progress-track"><div class="progress-fill" id="prog-fill"></div></div>
-  <div class="progress-labels"><span>0 kr</span><span class="gold" id="prog-label">—</span><span>100 000 kr</span></div>
+  <div class="progress-labels"><span>0 kr</span><span class="gold" id="prog-label">—</span><span id="prog-goal-label">125 000 kr</span></div>
 </div>
 
 <!-- Bento: goal ring + KPIs -->
@@ -722,7 +738,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
     <div class="goal-rows">
       <div class="g-row"><span class="g-row-l">Stängt</span><span class="g-row-v" id="g-closed">—</span></div>
       <div class="g-row"><span class="g-row-l">Pipeline</span><span class="g-row-v" id="g-pipe">—</span></div>
-      <div class="g-row"><span class="g-row-l">Mål</span><span class="g-row-v" style="color:var(--dim)">100 000 kr</span></div>
+      <div class="g-row"><span class="g-row-l">Mål</span><span class="g-row-v" id="g-goal" style="color:var(--dim)">125 000 kr</span></div>
     </div>
   </div>
   <div class="bento-kpi glass reveal" style="transition-delay:.15s"><div class="shine"></div><span class="kpi-label">Stängt värde</span><p class="kpi-val" id="k-closed">—</p><p class="kpi-sub" id="k-closed-sub"></p><span class="kpi-tag green" id="k-closed-tag"></span><div class="kpi-bar" id="k-closed-bar" style="background:linear-gradient(90deg,var(--emerald),var(--gold))"></div></div>
@@ -831,50 +847,56 @@ const fK=fmt;
 const ds=new Date().toLocaleDateString('sv-SE',{year:'numeric',month:'long',day:'numeric'});
 document.getElementById('date-now').textContent=ds;
 
-const closed=D.deals.filter(d=>d.status==='closed');
-const meets=D.deals.filter(d=>d.status==='meeting');
-const pitched=D.deals.filter(d=>d.status==='pitched');
-const declined=D.deals.filter(d=>d.status==='declined');
+/* ═══ MONTH HELPERS ═══ */
+function getGoalForMonth(monthKey){
+  const hist=D.meta.monthly_goals_history||[];
+  const entry=hist.find(h=>h.month===monthKey);
+  return entry?entry.goal:D.meta.monthly_goal;
+}
+function monthLabel(key){
+  const [y,m]=key.split('-');
+  const d=new Date(+y,+m-1,1);
+  return d.toLocaleDateString('sv-SE',{month:'long',year:'numeric'});
+}
+function monthKey(date){
+  const d=typeof date==='string'?new Date(date):date;
+  return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');
+}
+function currentMonthKey(){return monthKey(new Date())}
 
-const cV=closed.reduce((s,d)=>s+(d.value||0),0);
-const mV=meets.reduce((s,d)=>s+(d.value||0),0);
-const pV=pitched.reduce((s,d)=>s+(d.value||0),0);
-const pMin=pitched.reduce((s,d)=>s+(d.value_min||d.value||0),0);
-const dV=declined.reduce((s,d)=>s+(d.value||0),0);
-const pipMax=mV+pV,pipMin=mV+pMin;
-const goal=D.meta.monthly_goal;
-const pct=Math.min(cV/goal*100,100);
-const conv=D.deals.length>0?(closed.length/D.deals.length*100):0;
+/* Collect months that have signed deals (for the picker) */
+const signedMonths=[...new Set(
+  D.deals.filter(d=>d.outcome==='signed'&&d.date_closed)
+    .map(d=>monthKey(d.date_closed))
+)].sort().reverse();
 
-document.getElementById('hdr-pipe').textContent='Pipeline: '+fK(pipMin)+(pipMin<pipMax?' – '+fK(pipMax):'')+' kr';
+/* Also include current month always */
+const curMK=currentMonthKey();
+if(!signedMonths.includes(curMK))signedMonths.unshift(curMK);
 
-/* Hero */
-document.getElementById('h-closed').innerHTML=fmt(cV)+'<span class="u"> kr</span>';
-document.getElementById('h-pipe').innerHTML=fK(pipMin)+'<span class="u"> kr</span>';
-document.getElementById('h-remain').innerHTML=fmt(Math.max(goal-cV,0))+'<span class="u"> kr</span>';
-document.getElementById('h-closed-sub').textContent=closed.length+' stängda affärer';
-document.getElementById('h-pipe-sub').innerHTML=(pipMin<pipMax?'upp till '+fK(pipMax)+' kr · ':'')+((meets.length+pitched.length)+' aktiva');
+/* State — active month */
+const savedMonth=localStorage.getItem('vs_month');
+let activeMonth=(savedMonth&&signedMonths.includes(savedMonth))?savedMonth:curMK;
+
+/* Handle URL hash */
+const hashMonth=(location.hash.match(/#month=(\d{4}-\d{2})/)||[])[1];
+if(hashMonth&&signedMonths.includes(hashMonth))activeMonth=hashMonth;
+
+/* ═══ BUILD MONTH PICKER PILLS ═══ */
+const pillsWrap=document.getElementById('month-pills');
+signedMonths.forEach(mk=>{
+  const btn=document.createElement('button');
+  btn.className='mpill'+(mk===activeMonth?' on':'');
+  btn.textContent=monthLabel(mk);
+  btn.dataset.month=mk;
+  btn.addEventListener('click',()=>switchMonth(mk));
+  pillsWrap.appendChild(btn);
+});
 
 /* ═══ SECTION ANIMATION TRIGGERS ═══ */
 const _seen=new Set(),_sfn={};
 function regSec(i,fn){if(!_sfn[i])_sfn[i]=[];_sfn[i].push(fn)}
 function fireSec(i){if(_seen.has(i))return;_seen.add(i);const delay=i>0?500:0;setTimeout(()=>{(_sfn[i]||[]).forEach(fn=>fn())},delay)}
-
-/* Progress bar */
-regSec(0,()=>{setTimeout(()=>{
-  document.getElementById('prog-fill').style.width=pct+'%';
-  document.getElementById('prog-label').textContent=fmt(cV)+' kr stängt';
-},400)});
-
-/* Goal ring */
-regSec(0,()=>{setTimeout(()=>{
-  const c=2*Math.PI*80,off=c*(1-pct/100);
-  document.getElementById('r-fill').style.strokeDashoffset=off;
-  document.getElementById('r-glow').style.strokeDashoffset=off;
-  document.getElementById('ring-pct').textContent=Math.round(pct)+'%';
-  document.getElementById('g-closed').textContent=fmt(cV)+' kr';
-  document.getElementById('g-pipe').textContent=fmt(pipMin)+' kr';
-},500)});
 
 /* Count-up */
 function countUp(el,target,suf,dur=1800){
@@ -882,197 +904,285 @@ function countUp(el,target,suf,dur=1800){
   (function tick(now){const p=Math.min((now-t0)/dur,1),ease=1-Math.pow(1-p,4),v=Math.round(ease*target);el.innerHTML=fmt(v)+(suf||'');if(p<1)requestAnimationFrame(tick)})(t0);
 }
 
-/* KPIs */
-regSec(0,()=>{setTimeout(()=>{
+/* Logo map */
+const LOGOS={brunngard:{src:'logos/brunngard.png'},beslagonline:{src:'logos/beslagonline.png'},klinta:{src:'logos/klinta.avif'},jape:{src:'logos/jape.webp'},velux:{src:'logos/velux.png',raw:true},thefriendlyhome:{src:'logos/thefriendlyhome.jpg',raw:true},tergent:{src:'logos/tergent.jpg',raw:true},villaagarna:{src:'logos/villaagarna.svg'},nibe:{src:'logos/nibe.svg',raw:true}};
+const fmtDate=iso=>iso?new Date(iso).toLocaleDateString('sv-SE',{day:'numeric',month:'short'}).replace('.',''):'';
+
+/* Chart instances — kept to destroy on month switch */
+let chartPipe=null,chartRev=null,chartVal=null,chartLeads=null;
+
+/* ═══ RENDER FOR ACTIVE MONTH ═══ */
+function render(mk,animate){
+  if(animate===undefined)animate=true;
+
+  /* Which deals "closed" (signed) in this month */
+  const closedMonth=D.deals.filter(d=>d.status==='closed'&&d.date_closed&&monthKey(d.date_closed)===mk);
+  /* Pipeline, declined — always all-time (not month-filtered) so funnel stays meaningful */
+  const closed=D.deals.filter(d=>d.status==='closed');
+  const meets=D.deals.filter(d=>d.status==='meeting');
+  const pitched=D.deals.filter(d=>d.status==='pitched');
+  const declined=D.deals.filter(d=>d.status==='declined');
+
+  const cV=closedMonth.reduce((s,d)=>s+(d.final_price||d.value||0),0);
+  const mV=meets.reduce((s,d)=>s+(d.value||0),0);
+  const pV=pitched.reduce((s,d)=>s+(d.value||0),0);
+  const pMin=pitched.reduce((s,d)=>s+(d.value_min||d.value||0),0);
+  const dV=declined.reduce((s,d)=>s+(d.value||0),0);
+  const pipMax=mV+pV,pipMin=mV+pMin;
+  const goal=getGoalForMonth(mk);
+  const pct=Math.min(goal>0?cV/goal*100:0,100);
+  const conv=D.deals.length>0?(closed.length/D.deals.length*100):0;
+  const isCurrent=mk===curMK;
+
+  /* Header month label */
+  const mLbl=monthLabel(mk).replace(/^\w/,c=>c.toUpperCase());
+  const shortMo=new Date(mk+'-01').toLocaleDateString('sv-SE',{month:'long'});
+  document.getElementById('h-closed-label').textContent='Stängt · '+shortMo;
+  document.getElementById('hdr-pipe').textContent='Pipeline: '+fK(pipMin)+(pipMin<pipMax?' – '+fK(pipMax):'')+' kr';
+  document.getElementById('h-remain-sub').textContent='av '+fmt(goal)+' kr månadsmål';
+  document.getElementById('prog-goal-label').textContent=fmt(goal)+' kr';
+  document.getElementById('g-goal').textContent=fmt(goal)+' kr';
+
+  /* No-data state */
+  const hasData=closedMonth.length>0;
+
+  /* Hero */
+  document.getElementById('h-closed').innerHTML=fmt(cV)+'<span class="u"> kr</span>';
+  document.getElementById('h-pipe').innerHTML=isCurrent?fK(pipMin)+'<span class="u"> kr</span>':'<span style="color:var(--dim);font-size:16px">–</span>';
+  document.getElementById('h-remain').innerHTML=fmt(Math.max(goal-cV,0))+'<span class="u"> kr</span>';
+  document.getElementById('h-closed-sub').textContent=closedMonth.length+' stängda affärer';
+  document.getElementById('h-pipe-sub').innerHTML=isCurrent?(pipMin<pipMax?'upp till '+fK(pipMax)+' kr · ':'')+((meets.length+pitched.length)+' aktiva'):'historisk vy';
+
+  /* Progress bar */
+  document.getElementById('prog-fill').style.width=pct+'%';
+  document.getElementById('prog-label').textContent=fmt(cV)+' kr stängt';
+
+  /* Goal ring */
+  const c2=2*Math.PI*80,off=c2*(1-pct/100);
+  document.getElementById('r-fill').style.strokeDashoffset=off;
+  document.getElementById('r-glow').style.strokeDashoffset=off;
+  document.getElementById('ring-pct').textContent=Math.round(pct)+'%';
+  document.getElementById('g-closed').textContent=fmt(cV)+' kr';
+  document.getElementById('g-pipe').textContent=isCurrent?fmt(pipMin)+' kr':'—';
+
+  /* KPIs */
   countUp(document.getElementById('k-closed'),cV,'<span class="u"> kr</span>');
-  document.getElementById('k-closed-sub').textContent=closed.length+' stängda affärer';
+  document.getElementById('k-closed-sub').textContent=closedMonth.length+' stängda affärer';
   document.getElementById('k-closed-tag').textContent='↑ '+Math.round(pct)+'% av mål';
   document.getElementById('k-closed-bar').style.width=Math.min(pct,100)+'%';
   const pe=document.getElementById('k-pipe');
-  if(pipMin<pipMax)pe.innerHTML=fK(pipMin)+'<span class="u"> kr</span><span class="extra">(upp till '+fK(pipMax)+')</span>';
-  else countUp(pe,pipMax,'<span class="u"> kr</span>');
-  document.getElementById('k-pipe-sub').textContent=(meets.length+pitched.length)+' aktiva';
-  document.getElementById('k-pipe-tag').textContent='◆ '+(meets.length+pitched.length)+' deals';
-  document.getElementById('k-pipe-bar').style.width=Math.min(pipMax/300000*100,100)+'%';
+  if(isCurrent){
+    if(pipMin<pipMax)pe.innerHTML=fK(pipMin)+'<span class="u"> kr</span><span class="extra">(upp till '+fK(pipMax)+')</span>';
+    else countUp(pe,pipMax,'<span class="u"> kr</span>');
+    document.getElementById('k-pipe-sub').textContent=(meets.length+pitched.length)+' aktiva';
+    document.getElementById('k-pipe-tag').textContent='◆ '+(meets.length+pitched.length)+' deals';
+    document.getElementById('k-pipe-bar').style.width=Math.min(pipMax/300000*100,100)+'%';
+  }else{
+    pe.innerHTML='<span style="color:var(--dim);font-size:16px">Historisk vy</span>';
+    document.getElementById('k-pipe-sub').textContent='pipeline visas bara för aktuell månad';
+    document.getElementById('k-pipe-tag').textContent='';
+    document.getElementById('k-pipe-bar').style.width='0%';
+  }
   countUp(document.getElementById('k-conv'),Math.round(conv*10)/10,'<span class="u"> %</span>');
   document.getElementById('k-conv-bar').style.width=conv+'%';
   countUp(document.getElementById('k-leads'),D.leads_summary.total,'<span class="u"> st</span>');
   document.getElementById('k-leads-sub').textContent=D.leads_summary.ready_to_contact+' redo att kontakta';
   document.getElementById('k-leads-bar').style.width=(D.leads_summary.ready_to_contact/D.leads_summary.total*100)+'%';
-},700)});
 
-/* Logo map — used by showcase + activity log */
-const LOGOS={brunngard:{src:'logos/brunngard.png'},beslagonline:{src:'logos/beslagonline.png'},klinta:{src:'logos/klinta.avif'},jape:{src:'logos/jape.webp'},velux:{src:'logos/velux.png',raw:true},thefriendlyhome:{src:'logos/thefriendlyhome.jpg',raw:true},tergent:{src:'logos/tergent.jpg',raw:true},villaagarna:{src:'logos/villaagarna.svg'},nibe:{src:'logos/nibe.svg',raw:true}};
+  /* Showcase — deals closed in selected month */
+  const sc=document.getElementById('showcase');
+  sc.innerHTML='';
+  if(!hasData){
+    sc.innerHTML='<p class="no-month-data" style="grid-column:1/-1">Inga stängda affärer i '+mLbl+'.</p>';
+  }else{
+    const scPalette=['green','gold'];let signedIdx=0;
+    closedMonth.forEach((d,i)=>{
+      const isProd=d.outcome==='product_trade';
+      const price=d.final_price||d.value||0;
+      const val=isProd||!price?null:fmt(price)+' kr';
+      const ac=isProd?'blue':scPalette[signedIdx++%scPalette.length];
+      const bc=isProd?'blue':'green';
+      const badge=isProd?'Produktutbyte':'Stängd';
+      const meta=isProd?(fmtDate(d.date_closed)||mLbl)+' · Produktutbyte':'Stängd '+fmtDate(d.date_closed)+(d.contact?' · '+d.contact:'');
+      const logo=LOGOS[d.id]||null;
+      const avInner=logo?'<img src="'+logo.src+'" alt="'+d.name+'">':d.company.charAt(0).toUpperCase();
+      const avCls='sc-av '+(logo?'has-logo':ac);
+      const c=document.createElement('div');c.className='sc glass reveal vis';c.style.transitionDelay=(i*.07)+'s';
+      c.innerHTML='<div class="shine"></div><span class="sc-badge '+bc+'">'+badge+'</span><div class="sc-top"><div class="'+avCls+'">'+avInner+'</div><div><p class="sc-name">'+d.company+'</p><p class="sc-cat">'+d.category+'</p></div></div>'+(val?'<p class="sc-val">'+val+'</p>':'<p class="sc-val prod">Produktutbyte</p>')+'<p class="sc-desc">'+(d.notes||d.close_reason||'')+'</p><p class="sc-meta">'+meta+'</p>';
+      sc.appendChild(c);
+    });
+  }
 
-/* Showcase — auto-genererad från deals.json (status=closed) */
-const scPalette=['green','gold'];
-const fmtDate=iso=>iso?new Date(iso).toLocaleDateString('sv-SE',{day:'numeric',month:'short'}).replace('.',''):'';
-let signedIdx=0;
-const scData=closed.map(d=>{
-  const isProd=d.outcome==='product_trade';
-  const price=d.final_price||d.value||0;
-  const val=isProd||!price?null:fmt(price)+' kr';
-  const ac=isProd?'blue':scPalette[signedIdx++%scPalette.length];
-  const bc=isProd?'blue':'green';
-  const badge=isProd?'Produktutbyte':'Stängd';
-  const meta=isProd
-    ?(fmtDate(d.date_closed)||'April 2026')+' · Produktutbyte'
-    :'Stängd '+fmtDate(d.date_closed)+(d.contact?' · '+d.contact:'');
-  return{name:d.company,cat:d.category,val,desc:d.notes||d.close_reason||'',meta,av:d.company.charAt(0).toUpperCase(),logo:LOGOS[d.id]||null,ac,badge,bc};
-});
-const sc=document.getElementById('showcase');
-scData.forEach((d,i)=>{
-  const c=document.createElement('div');c.className='sc glass reveal';c.style.transitionDelay=(i*.07)+'s';
-  const avInner=d.logo?'<img src="'+d.logo.src+'" alt="'+d.name+'">':d.av;
-  const avCls='sc-av '+(d.logo?'has-logo':d.ac);
-  c.innerHTML='<div class="shine"></div><span class="sc-badge '+d.bc+'">'+d.badge+'</span><div class="sc-top"><div class="'+avCls+'">'+avInner+'</div><div><p class="sc-name">'+d.name+'</p><p class="sc-cat">'+d.cat+'</p></div></div>'+(d.val?'<p class="sc-val">'+d.val+'</p>':'<p class="sc-val prod">Produktutbyte</p>')+'<p class="sc-desc">'+d.desc+'</p><p class="sc-meta">'+d.meta+'</p>';
-  sc.appendChild(c);
-});
-
-/* Funnel */
-regSec(1,()=>{setTimeout(()=>{
-  [{n:'c',d:closed,v:cV},{n:'m',d:meets,v:mV},{n:'p',d:pitched,v:pV},{n:'d',d:declined,v:dV}].forEach(s=>{
+  /* Funnel — always all-time */
+  [{n:'c',d:closed,v:closed.reduce((s,x)=>s+(x.value||0),0)},{n:'m',d:meets,v:mV},{n:'p',d:pitched,v:pV},{n:'d',d:declined,v:dV}].forEach(s=>{
     const ne=document.getElementById('f'+s.n+'-n'),ke=document.getElementById('f'+s.n+'-kr');
-    if(ne)countUp(ne,s.d.length,'',900);if(ke)ke.textContent=s.v>0?fmt(s.v)+' kr':'';
+    if(ne)ne.textContent=s.d.length;if(ke)ke.textContent=s.v>0?fmt(s.v)+' kr':'';
   });
-},600)});
-/* Pre-create bar DOM so pipe card has stable height before section scrolls in */
-const barMx=Math.max(cV,pV,mV,dV,1);
-const barCfg=[{l:'Stängt',v:cV,cl:'var(--emerald-b)'},{l:'Möten',v:mV,cl:'var(--blue)'},{l:'Offert',v:pV,cl:'var(--amber)'},{l:'Avböjd',v:dV,cl:'var(--rose)'}];
-barCfg.forEach(s=>{
-  const r=document.createElement('div');r.className='fb';
-  r.innerHTML='<span class="fb-l">'+s.l+'</span><div class="fb-track"><div class="fb-fill" style="background:'+s.cl+'"></div></div><span class="fb-v">'+(s.v>0?fK(s.v):'')+'</span>';
-  document.getElementById('f-bars').appendChild(r);
-});
-/* Only animate bar fills on section reveal */
-regSec(1,()=>{setTimeout(()=>{
-  document.querySelectorAll('#f-bars .fb-fill').forEach((f,i)=>{
-    setTimeout(()=>f.style.width=(barCfg[i].v/barMx*100)+'%',200+i*100);
+  const allCV=closed.reduce((s,x)=>s+(x.value||0),0);
+  const barMx=Math.max(allCV,pV,mV,dV,1);
+  const barCfg=[{l:'Stängt',v:allCV,cl:'var(--emerald-b)'},{l:'Möten',v:mV,cl:'var(--blue)'},{l:'Offert',v:pV,cl:'var(--amber)'},{l:'Avböjd',v:dV,cl:'var(--rose)'}];
+  const fbContainer=document.getElementById('f-bars');fbContainer.innerHTML='';
+  barCfg.forEach(s=>{
+    const r=document.createElement('div');r.className='fb';
+    r.innerHTML='<span class="fb-l">'+s.l+'</span><div class="fb-track"><div class="fb-fill" style="background:'+s.cl+';width:'+(s.v/barMx*100)+'%"></div></div><span class="fb-v">'+(s.v>0?fK(s.v):'')+'</span>';
+    fbContainer.appendChild(r);
   });
-},900)});
 
-/* Leads */
-regSec(4,()=>{setTimeout(()=>{
+  /* Revenue line chart — scoped to selected month */
+  const rCtxEl=document.getElementById('ch-rev');
+  if(chartRev){chartRev.destroy();chartRev=null;}
+  const rCtx2=rCtxEl.getContext('2d');
+  const rG=rCtx2.createLinearGradient(0,20,0,250);rG.addColorStop(0,'rgba(200,164,78,0.40)');rG.addColorStop(.3,'rgba(110,231,183,0.18)');rG.addColorStop(.6,'rgba(52,211,153,0.06)');rG.addColorStop(1,'rgba(12,8,6,0)');
+  const rL=rCtx2.createLinearGradient(0,0,600,0);rL.addColorStop(0,'#34d399');rL.addColorStop(.5,'#6ee7b7');rL.addColorStop(1,'#c8a44e');
+  const cSorted=[...closedMonth].filter(d=>d.date_closed).sort((a,b)=>new Date(a.date_closed)-new Date(b.date_closed));
+  const rLabels=['Start'],rData=[0];let cum=0;cSorted.forEach(d=>{cum+=(d.final_price||d.value||0);rLabels.push(d.company);rData.push(cum)});
+  // label for rev chart
+  document.querySelector('.rev-card .cc-label').textContent='Kumulativ intäkt · '+mLbl;
+  chartRev=new Chart(rCtx2,{type:'line',data:{labels:rLabels,datasets:[{data:rData,fill:true,backgroundColor:rG,borderColor:rL,borderWidth:3.5,tension:.4,pointRadius:rData.map((_,i)=>i===rData.length-1?8:5),pointBackgroundColor:rData.map((_,i)=>i===rData.length-1?'#c8a44e':'#34d399'),pointBorderColor:'#241d16',pointBorderWidth:3,pointHoverRadius:11,pointHoverBackgroundColor:'#e0be6a',pointHoverBorderColor:'rgba(200,164,78,0.4)',pointHoverBorderWidth:4},{data:rData.map(()=>goal),borderColor:'rgba(200,164,78,0.18)',borderDash:[6,6],borderWidth:1.5,pointRadius:0,fill:false}]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?fmt(ctx.parsed.y)+' kr':'Mål: '+fmt(ctx.parsed.y)+' kr'}}},scales:{x:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10,weight:500}},border:{display:false}},y:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10},callback:v=>fK(v)},border:{display:false},suggestedMax:goal*1.25}},animation:{duration:animate?3000:0,easing:'easeOutQuart'}}});
+
+  /* Value bars chart */
+  const vCtxEl=document.getElementById('ch-val');
+  if(chartVal){chartVal.destroy();chartVal=null;}
+  const vCtx2=vCtxEl.getContext('2d');
+  const mkG=(c1,c2,c3)=>{const g=vCtx2.createLinearGradient(0,0,0,270);g.addColorStop(0,c1);g.addColorStop(.5,c2||c1);g.addColorStop(1,c3||'rgba(12,8,6,0.02)');return g};
+  const gr=[{l:'Stängt',v:cV},{l:'Möten',v:mV},{l:'Offert (min)',v:pMin},{l:'Offert (max)',v:pV},{l:'Mål',v:goal}];
+  const bC=[mkG('#34d399','rgba(52,211,153,0.5)','rgba(52,211,153,0.08)'),mkG('#67e8f9','rgba(103,232,249,0.4)','rgba(103,232,249,0.06)'),mkG('rgba(251,191,36,0.6)','rgba(251,191,36,0.25)','rgba(251,191,36,0.04)'),mkG('#fbbf24','rgba(251,191,36,0.45)','rgba(251,191,36,0.08)'),mkG('rgba(200,164,78,0.3)','rgba(200,164,78,0.1)','rgba(200,164,78,0.02)')];
+  const bB=['#34d399','#67e8f9','rgba(251,191,36,0.4)','#fbbf24','rgba(200,164,78,0.2)'];
+  chartVal=new Chart(vCtx2,{type:'bar',data:{labels:gr.map(g=>g.l),datasets:[{data:gr.map(g=>g.v),backgroundColor:bC,borderColor:bB,borderWidth:1,borderRadius:12,borderSkipped:false,barPercentage:.46}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:ctx=>fmt(ctx.parsed.y)+' kr'}}},scales:{x:{grid:{display:false},ticks:{color:'rgba(240,235,227,0.25)',font:{size:9}},border:{display:false}},y:{grid:{color:'rgba(200,164,78,0.03)'},ticks:{color:'rgba(240,235,227,0.25)',font:{size:10},callback:v=>fK(v)},border:{display:false}}},animation:{duration:animate?2200:0,easing:'easeOutQuart',delay:ctx=>animate?ctx.dataIndex*180:0}}});
+
+  /* Doughnut — pipeline dist (all-time) */
+  const pipeCtxEl=document.getElementById('ch-pipe');
+  if(chartPipe){chartPipe.destroy();chartPipe=null;}
+  chartPipe=new Chart(pipeCtxEl,{type:'doughnut',data:{labels:['Stängda ('+closed.length+')','Möten ('+meets.length+')','Offerter ('+pitched.length+')','Avböjda ('+declined.length+')'],datasets:[{data:[closed.length,meets.length,pitched.length,declined.length],backgroundColor:['#34d399','#67e8f9','#fbbf24','#fb7185'],borderColor:'#241d16',borderWidth:5,hoverOffset:18,hoverBorderColor:'rgba(200,164,78,0.3)'},{data:[closed.length,meets.length,pitched.length,declined.length],backgroundColor:['rgba(52,211,153,0.12)','rgba(103,232,249,0.12)','rgba(251,191,36,0.12)','rgba(251,113,133,0.12)'],borderColor:'transparent',borderWidth:0,weight:.4}]},options:{responsive:true,maintainAspectRatio:false,cutout:'65%',plugins:{legend:LEG,tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?ctx.label+' — '+Math.round(ctx.parsed/D.deals.length*100)+'%':''}}},animation:{duration:animate?2800:0,easing:'easeOutQuart',animateRotate:true,animateScale:true}}});
+
+  /* Leads chart — always the same */
+  const lCtxEl=document.getElementById('ch-leads');
+  if(chartLeads){chartLeads.destroy();chartLeads=null;}
+  const lCtx2=lCtxEl.getContext('2d');
+  const lL=['Nya','Kontaktade','Ej intresserade','Redo att kontakta'];
+  const lV=[D.leads_summary.new,D.leads_summary.contacted,D.leads_summary.not_interested,D.leads_summary.ready_to_contact];
+  const mkLG=(c1,c2)=>{const g=lCtx2.createLinearGradient(0,0,380,0);g.addColorStop(0,c1);g.addColorStop(.6,c2||c1);g.addColorStop(1,c1.replace(/[\d.]+\)$/,'0.08)'));return g};
+  const lC=[mkLG('rgba(52,211,153,0.9)','rgba(110,231,183,0.5)'),mkLG('rgba(103,232,249,0.9)','rgba(103,232,249,0.4)'),mkLG('rgba(251,113,133,0.8)','rgba(251,113,133,0.35)'),mkLG('rgba(200,164,78,0.9)','rgba(224,190,106,0.5)')];
+  chartLeads=new Chart(lCtx2,{type:'bar',data:{labels:lL,datasets:[{data:lV,backgroundColor:lC,borderColor:['#34d399','#67e8f9','#fb7185','#c8a44e'],borderWidth:1,borderRadius:8,barPercentage:.52}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:ctx=>ctx.parsed.x+' leads'}}},scales:{x:{grid:{color:'rgba(200,164,78,0.03)'},ticks:{color:'rgba(240,235,227,0.25)',font:{size:10}},border:{display:false}},y:{grid:{display:false},ticks:{color:'rgba(240,235,227,0.45)',font:{size:11,weight:500}},border:{display:false}}},animation:{duration:animate?2000:0,easing:'easeOutQuart',delay:ctx=>animate?ctx.dataIndex*150:0}}});
+
+  /* Leads strip */
   const ls=D.leads_summary;
-  [['ln-total',ls.total],['ln-new',ls.new],['ln-cont',ls.contacted],['ln-ni',ls.not_interested],['ln-ready',ls.ready_to_contact]].forEach(([id,v])=>countUp(document.getElementById(id),v,'',1400));
-},800)});
+  [['ln-total',ls.total],['ln-new',ls.new],['ln-cont',ls.contacted],['ln-ni',ls.not_interested],['ln-ready',ls.ready_to_contact]].forEach(([id,v])=>{
+    const el=document.getElementById(id);if(el)el.textContent=v;
+  });
 
-/* ═══ INSIGHTS (feedback loop) ═══ */
-const signedDeals=D.deals.filter(d=>d.outcome==='signed');
-const rejectedDeals=D.deals.filter(d=>d.outcome==='rejected');
-const decidedDeals=[...signedDeals,...rejectedDeals,...D.deals.filter(d=>d.outcome==='product_trade')];
-const followupDeals=D.deals.filter(d=>d.followup_window);
-
-// Avg days to close (signed only, both dates present)
-const daysList=signedDeals.filter(d=>d.date_contacted&&d.date_closed).map(d=>{
-  const a=new Date(d.date_contacted),b=new Date(d.date_closed);
-  return Math.round((b-a)/86400000);
-});
-const avgDays=daysList.length?Math.round(daysList.reduce((s,n)=>s+n,0)/daysList.length):0;
-
-// Avg signed price (cash only, exclude product_trade/0)
-const pricedSigned=signedDeals.filter(d=>d.final_price>0);
-const avgPrice=pricedSigned.length?Math.round(pricedSigned.reduce((s,d)=>s+d.final_price,0)/pricedSigned.length):0;
-
-// Win rate = signed / (signed + rejected)
-const winPool=signedDeals.length+rejectedDeals.length;
-const winRate=winPool?Math.round(signedDeals.length/winPool*100):0;
-
-// Negotiation delta: avg (final_price / pitched value) across priced signed
-const deltaList=pricedSigned.filter(d=>d.value>0).map(d=>d.final_price/d.value);
-const avgDelta=deltaList.length?Math.round((deltaList.reduce((s,n)=>s+n,0)/deltaList.length)*100):100;
-
-regSec(3,()=>{setTimeout(()=>{
-  const dtcEl=document.getElementById('ins-dtc');
-  if(dtcEl){
-    if(avgDays>0){countUp(dtcEl,avgDays,'<span class="u"> d</span>',1400);}
-    else{dtcEl.innerHTML='—';}
-    document.getElementById('ins-dtc-sub').textContent=daysList.length?'baserat på '+daysList.length+' stängda affärer':'väntar på första stängning';
-  }
-  const avgEl=document.getElementById('ins-avg');
-  if(avgEl){
-    if(avgPrice>0){countUp(avgEl,avgPrice,'<span class="u"> kr</span>',1600);}
-    else{avgEl.innerHTML='—';}
-    document.getElementById('ins-avg-sub').textContent=pricedSigned.length?pricedSigned.length+' signade paket (ex. produktutbyten)':'inga signade ännu';
-  }
-  const winEl=document.getElementById('ins-win');
-  if(winEl){
-    if(winPool>0){countUp(winEl,winRate,'<span class="u"> %</span>',1400);}
-    else{winEl.innerHTML='—';}
-    document.getElementById('ins-win-sub').textContent=winPool?signedDeals.length+' signade / '+rejectedDeals.length+' avböjda':'inga avgjorda affärer än';
-  }
-  const deltaEl=document.getElementById('ins-delta');
-  if(deltaEl){
-    if(deltaList.length){
-      deltaEl.innerHTML=avgDelta+'<span class="u"> %</span>';
-      deltaEl.classList.add(avgDelta>=100?'green':'gold');
-      document.getElementById('ins-delta-sub').textContent=avgDelta>=100?'vi håller eller över pitchat pris':'vi prutas ned i snitt';
-    }else{
-      deltaEl.innerHTML='—';
-    }
-  }
-
-  // Rejection analysis list
+  /* Insights — always all-time */
+  const signedDeals=D.deals.filter(d=>d.outcome==='signed');
+  const rejectedDeals=D.deals.filter(d=>d.outcome==='rejected');
+  const followupDeals=D.deals.filter(d=>d.followup_window);
+  const daysList=signedDeals.filter(d=>d.date_contacted&&d.date_closed).map(d=>Math.round((new Date(d.date_closed)-new Date(d.date_contacted))/86400000));
+  const avgDays=daysList.length?Math.round(daysList.reduce((s,n)=>s+n,0)/daysList.length):0;
+  const pricedSigned=signedDeals.filter(d=>d.final_price>0);
+  const avgPrice=pricedSigned.length?Math.round(pricedSigned.reduce((s,d)=>s+d.final_price,0)/pricedSigned.length):0;
+  const winPool=signedDeals.length+rejectedDeals.length;
+  const winRate=winPool?Math.round(signedDeals.length/winPool*100):0;
+  const deltaList=pricedSigned.filter(d=>d.value>0).map(d=>d.final_price/d.value);
+  const avgDelta=deltaList.length?Math.round((deltaList.reduce((s,n)=>s+n,0)/deltaList.length)*100):100;
+  const dtcEl=document.getElementById('ins-dtc');if(dtcEl){dtcEl.innerHTML=avgDays>0?fmt(avgDays)+'<span class="u"> d</span>':'—';document.getElementById('ins-dtc-sub').textContent=daysList.length?'baserat på '+daysList.length+' stängda affärer':'väntar på första stängning';}
+  const avgEl=document.getElementById('ins-avg');if(avgEl){avgEl.innerHTML=avgPrice>0?fmt(avgPrice)+'<span class="u"> kr</span>':'—';document.getElementById('ins-avg-sub').textContent=pricedSigned.length?pricedSigned.length+' signade paket (ex. produktutbyten)':'inga signade ännu';}
+  const winEl=document.getElementById('ins-win');if(winEl){winEl.innerHTML=winPool>0?winRate+'<span class="u"> %</span>':'—';document.getElementById('ins-win-sub').textContent=winPool?signedDeals.length+' signade / '+rejectedDeals.length+' avböjda':'inga avgjorda affärer än';}
+  const deltaEl=document.getElementById('ins-delta');if(deltaEl){deltaEl.className='ins-big';if(deltaList.length){deltaEl.innerHTML=avgDelta+'<span class="u"> %</span>';deltaEl.classList.add(avgDelta>=100?'green':'gold');document.getElementById('ins-delta-sub').textContent=avgDelta>=100?'vi håller eller över pitchat pris':'vi prutas ned i snitt';}else{deltaEl.innerHTML='—';}}
   const rList=document.getElementById('ins-rej-list');
   document.getElementById('ins-rej-count').textContent=rejectedDeals.length+' st';
-  if(rejectedDeals.length){
-    rList.innerHTML=rejectedDeals.map(d=>{
-      const dt=d.date_closed||d.date_contacted;
-      const dtTxt=dt?dt.slice(5).split('-').reverse().join('/'):'—';
-      return '<div class="ins-item rose"><div class="ins-item-top"><span class="ins-item-co">'+d.company+'</span><span class="ins-item-meta">'+(d.value?fmt(d.value)+' kr · ':'')+dtTxt+'</span></div><p class="ins-item-reason">'+(d.close_reason||d.notes||'—')+'</p></div>';
-    }).join('');
-  }else{
-    rList.innerHTML='<p class="ins-empty">Inga avböjda affärer ännu.</p>';
-  }
-
-  // Followup prospects list
+  rList.innerHTML=rejectedDeals.length?rejectedDeals.map(d=>{const dt=d.date_closed||d.date_contacted;const dtTxt=dt?dt.slice(5).split('-').reverse().join('/'):'—';return'<div class="ins-item rose"><div class="ins-item-top"><span class="ins-item-co">'+d.company+'</span><span class="ins-item-meta">'+(d.value?fmt(d.value)+' kr · ':'')+dtTxt+'</span></div><p class="ins-item-reason">'+(d.close_reason||d.notes||'—')+'</p></div>';}).join(''):'<p class="ins-empty">Inga avböjda affärer ännu.</p>';
   const fList=document.getElementById('ins-fu-list');
   document.getElementById('ins-fu-count').textContent=followupDeals.length+' st';
-  if(followupDeals.length){
-    fList.innerHTML=followupDeals.map(d=>{
-      return '<div class="ins-item gold"><div class="ins-item-top"><span class="ins-item-co">'+d.company+'</span><span class="ins-item-meta">följ upp: '+d.followup_window+'</span></div><p class="ins-item-reason">'+(d.close_reason||'—')+'</p></div>';
-    }).join('');
-  }else{
-    fList.innerHTML='<p class="ins-empty">Inga framtida prospects taggade än.</p>';
-  }
-},500)});
+  fList.innerHTML=followupDeals.length?followupDeals.map(d=>'<div class="ins-item gold"><div class="ins-item-top"><span class="ins-item-co">'+d.company+'</span><span class="ins-item-meta">följ upp: '+d.followup_window+'</span></div><p class="ins-item-reason">'+(d.close_reason||'—')+'</p></div>').join(''):'<p class="ins-empty">Inga framtida prospects taggade än.</p>';
+}
 
-/* ═══ CHARTS ═══ */
+/* ═══ MONTH SWITCH ═══ */
+function switchMonth(mk){
+  if(mk===activeMonth)return;
+  activeMonth=mk;
+  localStorage.setItem('vs_month',mk);
+  history.replaceState(null,'','#month='+mk);
+  /* Update pill highlights */
+  pillsWrap.querySelectorAll('.mpill').forEach(p=>p.classList.toggle('on',p.dataset.month===mk));
+  /* Fade transition */
+  const targets=['.hero','.progress-section','.bento','.showcase','.mid','.rev','.chart-row','.ins-row','.ins-twin','.leads','.tbl'];
+  const els=targets.flatMap(sel=>[...document.querySelectorAll(sel)]);
+  els.forEach(el=>{el.style.transition='opacity .2s ease';el.style.opacity='0'});
+  setTimeout(()=>{
+    render(mk,false);
+    renderTbl('all',false);
+    els.forEach(el=>{el.style.opacity='1'});
+  },200);
+}
+
+/* ═══ INITIAL RENDER ═══ */
 Chart.defaults.font.family='Outfit';
 Chart.defaults.color='rgba(240,235,227,0.3)';
 const TT={backgroundColor:'rgba(24,19,14,0.95)',titleColor:'#f0ebe3',bodyColor:'rgba(240,235,227,0.55)',borderColor:'rgba(52,211,153,0.18)',borderWidth:1,padding:{x:16,y:12},cornerRadius:12,titleFont:{family:'Gloock',size:13,weight:400},bodyFont:{family:'Outfit',size:11},boxPadding:5,caretSize:5,usePointStyle:true};
 const LEG={position:'bottom',labels:{color:'rgba(240,235,227,0.45)',font:{family:'Outfit',size:11},padding:20,usePointStyle:true,pointStyleWidth:8}};
 
-/* Doughnut — double ring with shadow */
-const pipeCtx=document.getElementById('ch-pipe');
-regSec(1,()=>{new Chart(pipeCtx,{type:'doughnut',data:{labels:['Stängda ('+closed.length+')','Möten ('+meets.length+')','Offerter ('+pitched.length+')','Avböjda ('+declined.length+')'],datasets:[{data:[closed.length,meets.length,pitched.length,declined.length],backgroundColor:['#34d399','#67e8f9','#fbbf24','#fb7185'],borderColor:'#241d16',borderWidth:5,hoverOffset:18,hoverBorderColor:'rgba(200,164,78,0.3)'},{data:[closed.length,meets.length,pitched.length,declined.length],backgroundColor:['rgba(52,211,153,0.12)','rgba(103,232,249,0.12)','rgba(251,191,36,0.12)','rgba(251,113,133,0.12)'],borderColor:'transparent',borderWidth:0,weight:.4}]},options:{responsive:true,maintainAspectRatio:false,cutout:'65%',plugins:{legend:LEG,tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?ctx.label+' — '+Math.round(ctx.parsed/D.deals.length*100)+'%':''}}},animation:{duration:2800,easing:'easeOutQuart',animateRotate:true,animateScale:true}}})});
+/* Pre-render (no animation) for stable DOM before first paint */
+render(activeMonth,false);
 
-/* Revenue line — rich gradient area */
-const rCtx=document.getElementById('ch-rev').getContext('2d');
-const rG=rCtx.createLinearGradient(0,20,0,250);rG.addColorStop(0,'rgba(200,164,78,0.40)');rG.addColorStop(.3,'rgba(110,231,183,0.18)');rG.addColorStop(.6,'rgba(52,211,153,0.06)');rG.addColorStop(1,'rgba(12,8,6,0)');
-const rL=rCtx.createLinearGradient(0,0,600,0);rL.addColorStop(0,'#34d399');rL.addColorStop(.5,'#6ee7b7');rL.addColorStop(1,'#c8a44e');
-const cSorted=[...closed].filter(d=>d.date_closed).sort((a,b)=>new Date(a.date_closed)-new Date(b.date_closed));
-const rLabels=['Start'],rData=[0];let cum=0;cSorted.forEach(d=>{cum+=(d.value||0);rLabels.push(d.company);rData.push(cum)});
+/* ═══ SECTION ANIMATION TRIGGERS ═══ */
+/* Progress bar — animate on section 0 */
+regSec(0,()=>{setTimeout(()=>{
+  const closed0=D.deals.filter(d=>d.status==='closed'&&d.date_closed&&monthKey(d.date_closed)===activeMonth);
+  const cV0=closed0.reduce((s,d)=>s+(d.final_price||d.value||0),0);
+  const goal0=getGoalForMonth(activeMonth);
+  const pct0=Math.min(goal0>0?cV0/goal0*100:0,100);
+  document.getElementById('prog-fill').style.width=pct0+'%';
+  document.getElementById('prog-label').textContent=fmt(cV0)+' kr stängt';
+},400)});
 
-regSec(2,()=>{new Chart(rCtx,{type:'line',data:{labels:rLabels,datasets:[{data:rData,fill:true,backgroundColor:rG,borderColor:rL,borderWidth:3.5,tension:.4,pointRadius:rData.map((_,i)=>i===rData.length-1?8:5),pointBackgroundColor:rData.map((_,i)=>i===rData.length-1?'#c8a44e':'#34d399'),pointBorderColor:'#241d16',pointBorderWidth:3,pointHoverRadius:11,pointHoverBackgroundColor:'#e0be6a',pointHoverBorderColor:'rgba(200,164,78,0.4)',pointHoverBorderWidth:4},{data:rData.map(()=>goal),borderColor:'rgba(200,164,78,0.18)',borderDash:[6,6],borderWidth:1.5,pointRadius:0,fill:false}]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?fmt(ctx.parsed.y)+' kr':'Mål: '+fmt(ctx.parsed.y)+' kr'}}},scales:{x:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10,weight:500}},border:{display:false}},y:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10},callback:v=>fK(v)},border:{display:false},suggestedMax:goal*1.25}},animation:{duration:3000,easing:'easeOutQuart'}}})});
+/* Goal ring animate on section 0 */
+regSec(0,()=>{setTimeout(()=>{
+  const closed0=D.deals.filter(d=>d.status==='closed'&&d.date_closed&&monthKey(d.date_closed)===activeMonth);
+  const cV0=closed0.reduce((s,d)=>s+(d.final_price||d.value||0),0);
+  const goal0=getGoalForMonth(activeMonth);
+  const pct0=Math.min(goal0>0?cV0/goal0*100:0,100);
+  const c=2*Math.PI*80,off=c*(1-pct0/100);
+  document.getElementById('r-fill').style.strokeDashoffset=off;
+  document.getElementById('r-glow').style.strokeDashoffset=off;
+  document.getElementById('ring-pct').textContent=Math.round(pct0)+'%';
+},500)});
 
-/* Value bars — richer gradient fills */
-const vCtx=document.getElementById('ch-val').getContext('2d');
-const mkG=(c1,c2,c3)=>{const g=vCtx.createLinearGradient(0,0,0,270);g.addColorStop(0,c1);g.addColorStop(.5,c2||c1);g.addColorStop(1,c3||'rgba(12,8,6,0.02)');return g};
-const gr=[{l:'Stängt',v:cV},{l:'Möten',v:mV},{l:'Offert (min)',v:pMin},{l:'Offert (max)',v:pV},{l:'Mål',v:goal}];
-const bC=[mkG('#34d399','rgba(52,211,153,0.5)','rgba(52,211,153,0.08)'),mkG('#67e8f9','rgba(103,232,249,0.4)','rgba(103,232,249,0.06)'),mkG('rgba(251,191,36,0.6)','rgba(251,191,36,0.25)','rgba(251,191,36,0.04)'),mkG('#fbbf24','rgba(251,191,36,0.45)','rgba(251,191,36,0.08)'),mkG('rgba(200,164,78,0.3)','rgba(200,164,78,0.1)','rgba(200,164,78,0.02)')];
-const bB=['#34d399','#67e8f9','rgba(251,191,36,0.4)','#fbbf24','rgba(200,164,78,0.2)'];
+/* KPIs count-up on section 0 */
+regSec(0,()=>{setTimeout(()=>{
+  const closed0=D.deals.filter(d=>d.status==='closed'&&d.date_closed&&monthKey(d.date_closed)===activeMonth);
+  const cV0=closed0.reduce((s,d)=>s+(d.final_price||d.value||0),0);
+  const goal0=getGoalForMonth(activeMonth);
+  const pct0=Math.min(goal0>0?cV0/goal0*100:0,100);
+  const meets=D.deals.filter(d=>d.status==='meeting');
+  const pitched=D.deals.filter(d=>d.status==='pitched');
+  const conv=D.deals.length>0?(D.deals.filter(d=>d.status==='closed').length/D.deals.length*100):0;
+  countUp(document.getElementById('k-closed'),cV0,'<span class="u"> kr</span>');
+  document.getElementById('k-closed-tag').textContent='↑ '+Math.round(pct0)+'% av mål';
+  document.getElementById('k-closed-bar').style.width=Math.min(pct0,100)+'%';
+  countUp(document.getElementById('k-conv'),Math.round(conv*10)/10,'<span class="u"> %</span>');
+  document.getElementById('k-conv-bar').style.width=conv+'%';
+  countUp(document.getElementById('k-leads'),D.leads_summary.total,'<span class="u"> st</span>');
+},700)});
 
-regSec(2,()=>{new Chart(vCtx,{type:'bar',data:{labels:gr.map(g=>g.l),datasets:[{data:gr.map(g=>g.v),backgroundColor:bC,borderColor:bB,borderWidth:1,borderRadius:12,borderSkipped:false,barPercentage:.46}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:ctx=>fmt(ctx.parsed.y)+' kr'}}},scales:{x:{grid:{display:false},ticks:{color:'rgba(240,235,227,0.25)',font:{size:9}},border:{display:false}},y:{grid:{color:'rgba(200,164,78,0.03)'},ticks:{color:'rgba(240,235,227,0.25)',font:{size:10},callback:v=>fK(v)},border:{display:false}}},animation:{duration:2200,easing:'easeOutQuart',delay:ctx=>ctx.dataIndex*180}}})});
+/* Leads strip count-up */
+regSec(4,()=>{setTimeout(()=>{
+  const ls=D.leads_summary;
+  [['ln-total',ls.total],['ln-new',ls.new],['ln-cont',ls.contacted],['ln-ni',ls.not_interested],['ln-ready',ls.ready_to_contact]].forEach(([id,v])=>countUp(document.getElementById(id),v,'',1400));
+},800)});
 
-/* Leads chart */
-const lCtx=document.getElementById('ch-leads').getContext('2d');
-const lL=['Nya','Kontaktade','Ej intresserade','Redo att kontakta'];
-const lV=[D.leads_summary.new,D.leads_summary.contacted,D.leads_summary.not_interested,D.leads_summary.ready_to_contact];
-const mkLG=(c1,c2)=>{const g=lCtx.createLinearGradient(0,0,380,0);g.addColorStop(0,c1);g.addColorStop(.6,c2||c1);g.addColorStop(1,c1.replace(/[\d.]+\)$/,'0.08)'));return g};
-const lC=[mkLG('rgba(52,211,153,0.9)','rgba(110,231,183,0.5)'),mkLG('rgba(103,232,249,0.9)','rgba(103,232,249,0.4)'),mkLG('rgba(251,113,133,0.8)','rgba(251,113,133,0.35)'),mkLG('rgba(200,164,78,0.9)','rgba(224,190,106,0.5)')];
-
-regSec(2,()=>{new Chart(lCtx,{type:'bar',data:{labels:lL,datasets:[{data:lV,backgroundColor:lC,borderColor:['#34d399','#67e8f9','#fb7185','#c8a44e'],borderWidth:1,borderRadius:8,barPercentage:.52}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:ctx=>ctx.parsed.x+' leads'}}},scales:{x:{grid:{color:'rgba(200,164,78,0.03)'},ticks:{color:'rgba(240,235,227,0.25)',font:{size:10}},border:{display:false}},y:{grid:{display:false},ticks:{color:'rgba(240,235,227,0.45)',font:{size:11,weight:500}},border:{display:false}}},animation:{duration:2000,easing:'easeOutQuart',delay:ctx=>ctx.dataIndex*150}}})});
+/* Insights count-ups on section 3 */
+regSec(3,()=>{setTimeout(()=>{
+  const signedDeals=D.deals.filter(d=>d.outcome==='signed');
+  const rejectedDeals=D.deals.filter(d=>d.outcome==='rejected');
+  const daysList=signedDeals.filter(d=>d.date_contacted&&d.date_closed).map(d=>Math.round((new Date(d.date_closed)-new Date(d.date_contacted))/86400000));
+  const avgDays=daysList.length?Math.round(daysList.reduce((s,n)=>s+n,0)/daysList.length):0;
+  const pricedSigned=signedDeals.filter(d=>d.final_price>0);
+  const avgPrice=pricedSigned.length?Math.round(pricedSigned.reduce((s,d)=>s+d.final_price,0)/pricedSigned.length):0;
+  const winPool=signedDeals.length+rejectedDeals.length;
+  const winRate=winPool?Math.round(signedDeals.length/winPool*100):0;
+  const dtcEl=document.getElementById('ins-dtc');if(dtcEl&&avgDays>0)countUp(dtcEl,avgDays,'<span class="u"> d</span>',1400);
+  const avgEl=document.getElementById('ins-avg');if(avgEl&&avgPrice>0)countUp(avgEl,avgPrice,'<span class="u"> kr</span>',1600);
+  const winEl=document.getElementById('ins-win');if(winEl&&winPool>0)countUp(winEl,winRate,'<span class="u"> %</span>',1400);
+},500)});
 
 /* ═══ TABLE ═══ */
 const ORD={closed:0,meeting:1,in_discussion:2,pitched:3,declined:4};

@@ -548,11 +548,15 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-04-25",
-    "monthly_goal": 100000,
+    "updated": "2026-05-04",
+    "monthly_goal": 125000,
+    "monthly_goals_history": [
+      {"month": "2026-04", "goal": 100000},
+      {"month": "2026-05", "goal": 125000}
+    ],
     "currency": "SEK",
-    "schema_version": 3,
-    "schema_notes": "v3 adds waiting_on (string|null) + last_event (string|null, pointer till events/YYYY/MM/DD/{id}.md). v2-fält oförändrade."
+    "schema_version": 4,
+    "schema_notes": "v4 adds monthly_goals_history for multi-month view. v3 adds waiting_on + last_event. v2-fält oförändrade."
   },
   "generated_from": "wiki/entities/",
   "generated_at": "2026-04-25T15:49:33.016Z"

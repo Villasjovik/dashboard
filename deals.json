@@ -540,6 +540,27 @@
       "last_event": null
     }
   ],
+    {
+      "id": "pergolux",
+      "company": "Pergolux",
+      "contact": "Tanya Kostigova",
+      "category": "Trädgård & Utomhus",
+      "status": "pitched",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-04-29",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Inbound från Pergolux (norskt pergola-företag). Initialkontakt via Tatjana Kostigova (pranamat.com) 2026-04-29, formell IO skickad av Tanya Kostigova (pergolux.no) 2026-04-30. Deliverables: 3 Reels + Stories. Carin förhandlade om creative direction-klausul, privacy clause och leveransantal. Uppdaterat IO skickat 2026-05-04. Installatörer (Sandeco Hem) föreslagit 14-15 maj — Carin inväntar Tanyas bekräftelse. Kontraktsvärde okänt (bilaga i IO, ej synlig i mail).",
+      "waiting_on": "Tanyas bekräftelse: installationsdatum 14-15/5 + uppdaterat IO signering",
+      "last_event": "2026-05-04 15:58: Carin frågade Tanya om installatörerna kan boka 14-15/5 (800.eml)"
+    }
+  ],
   "leads_summary": {
     "total": 135,
     "new": 68,

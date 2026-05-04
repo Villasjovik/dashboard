@@ -1207,6 +1207,23 @@ const secObs=new IntersectionObserver(entries=>{entries.forEach(e=>{
 })},{threshold:0.15});
 secSnaps.forEach(s=>secObs.observe(s));
 
+/* Mobile fallback: IntersectionObserver triggas inkonsekvent på iOS Safari när
+   .snap-sektionerna kollapsar till min-height:auto (mobile-CSS) — leads-stripa
+   och tabell-rader förblir osynliga (regSec(4) körs aldrig). Fix: efter auth
+   fire alla sektioner explicit utan IO-trigging på mobil. */
+if(window.innerWidth<=700){
+  whenAuth(()=>{
+    secSnaps.forEach((sec,i)=>{
+      if(i===0)return;
+      setTimeout(()=>{
+        if(_seen.has(i))return;
+        sec.querySelectorAll('.reveal:not(.vis)').forEach((el,j)=>setTimeout(()=>el.classList.add('vis'),j*40));
+        fireSec(i);
+      },400+i*180);
+    });
+  });
+}
+
 /* ═══ 3D TILT — responsive with smooth edges ═══ */
 document.querySelectorAll('.bento-kpi,.sc,.cc,.rev-card,.pipe,.bento-goal').forEach(c=>{
   let tiltX=0,tiltY=0,targetX=0,targetY=0,raf=null,active=false;

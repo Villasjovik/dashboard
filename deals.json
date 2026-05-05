@@ -544,20 +544,20 @@
       "company": "Pergolux",
       "contact": "Tanya Kostigova",
       "category": "Trädgård & Utomhus",
-      "status": "contract",
+      "status": "closed",
       "value": null,
       "value_min": null,
       "value_label": null,
       "date_contacted": "2026-04-29",
-      "date_closed": null,
+      "date_closed": "2026-05-05",
       "pitch_url": null,
-      "outcome": null,
+      "outcome": "won",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "Kontrakt signerat och bekräftat av båda parter",
       "followup_window": null,
-      "notes": "Inbound från Pergolux (norskt pergola-företag). Initialkontakt via Tatjana Kostigova (pranamat.com) 2026-04-29, formell IO skickad av Tanya Kostigova (pergolux.no) 2026-04-30. Deliverables: 3 Reels + Stories. Carin förhandlade om creative direction-klausul, privacy clause och leveransantal. Uppdaterat IO skickat 2026-05-04. Installatörer (Sandeco Hem) föreslagit 14-15 maj. 2026-05-04 14:04: Tanya bekräftar allt, beställer pergolan nu (1-2 veckor → leverans ~18-19/5), ber om signerat kontrakt. Kontraktsvärde okänt (bilaga i IO).",
-      "waiting_on": "Tanya bekräftar mottagande och signerar kontraktet",
-      "last_event": "2026-05-04 16:22: Carin skickade signerat avtal ('Agreement') till tanya.kostigova@pergolux.no (801.eml)."
+      "notes": "Inbound från Pergolux (norskt pergola-företag). Initialkontakt via Tatjana Kostigova (pranamat.com) 2026-04-29, formell IO skickad av Tanya Kostigova (pergolux.no) 2026-04-30. Deliverables: 3 Reels + Stories. Carin förhandlade om creative direction-klausul, privacy clause och leveransantal. Uppdaterat IO skickat 2026-05-04. Installatörer (Sandeco Hem) föreslagit 14-15 maj. 2026-05-04 14:04: Tanya bekräftar allt, beställer pergolan nu (1-2 veckor → leverans ~18-19/5), ber om signerat kontrakt. Kontraktsvärde okänt (bilaga i IO). 2026-05-05 13:05: Tanya bekräftade och skickade tillbaka signerat avtal (1946.eml) — deal stängd/won.",
+      "waiting_on": null,
+      "last_event": "2026-05-05 13:39: Carin bekräftade signerade kontrakt, bad Tanya om leverans senast 13/5 (installatörer anländer 14/5). Inväntar svar — tidigare uppskattning var ~18-19/5 (802.eml)."
     }
   ],
   "leads_summary": {
@@ -568,11 +568,17 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-04",
+    "updated": "2026-05-05",
     "monthly_goal": 125000,
     "monthly_goals_history": [
-      {"month": "2026-04", "goal": 100000},
-      {"month": "2026-05", "goal": 125000}
+      {
+        "month": "2026-04",
+        "goal": 100000
+      },
+      {
+        "month": "2026-05",
+        "goal": 125000
+      }
     ],
     "currency": "SEK",
     "schema_version": 4,

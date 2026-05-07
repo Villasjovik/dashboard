@@ -337,8 +337,8 @@
       "close_reason": null,
       "followup_window": null,
       "notes": "Pitch skickad 2026-04-14. Paket: 18 500 / 39 000 / 87 000 (6 mån). Inväntar svar från Shkurte.",
-      "waiting_on": null,
-      "last_event": null
+      "waiting_on": "shkurte-svar",
+      "last_event": "2026-05-07 19:26: Follow-up skickat (858.eml) — Carin frågar om Shkurtes tankar kring ev. samarbete"
     },
     {
       "id": "villaagarna",
@@ -624,7 +624,7 @@
     "currency": "SEK",
     "schema_version": 5,
     "schema_notes": "v4 adds monthly_goals_history for multi-month view. v3 adds waiting_on + last_event. v2-fält oförändrade.",
-    "updated_at": "2026-05-07T19:06:00.000000Z"
+    "updated_at": "2026-05-07T19:26:34.000000Z"
   },
   "generated_from": "wiki/entities/",
   "generated_at": "2026-04-25T15:49:33.016Z"

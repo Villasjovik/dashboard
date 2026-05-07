@@ -83,7 +83,7 @@
     {
       "id": "remylla",
       "company": "Remylla",
-      "contact": null,
+      "contact": "Fredrik Tambour (fredrik.tambour@biototal.se) — vidarebefordrade till Johanna (marknadschef, beslutfattare)",
       "category": "Trädgård & Utomhus",
       "status": "pitched",
       "value": 39000,
@@ -98,7 +98,7 @@
       "followup_window": null,
       "notes": "Inkommande samtal från Remylla (Biototal Norden AB) till Carin 2026-04-27. Pitch byggd på vasa1628-mall: Spår 01 Jordens hjältar / Spår 02 Söndagsritualen / Spår 03 Förvandlingen / Spår 04 Ert upplägg. Pitch deployad och mailad 2026-04-27, väntar svar.",
       "waiting_on": "remylla-svar",
-      "last_event": "2026-04-27: pitch mailad"
+      "last_event": "2026-05-07: Follow-up 1 skickat av Carin — väntar på Johanna (marknadschef)"
     },
     {
       "id": "jape",

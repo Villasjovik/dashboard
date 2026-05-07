@@ -584,20 +584,21 @@
       "company": "Skadedjursbutiken.se",
       "contact": "Sebastian Maltéus (Pest Control Nordic AB)",
       "category": "Hem & Säkerhet",
-      "status": "contacted",
-      "value": null,
+      "status": "pitched",
+      "value": 18500,
       "value_min": 18500,
-      "value_label": "18 500 – 39 000 (TBD)",
+      "value_label": "18 500 – 39 000",
       "date_contacted": "2026-04-13",
+      "date_pitched": "2026-05-07",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/skadedjursbutiken/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": "Carin kallt utskick 2026-04-13 till info@skadedjursbutiken.se (mal-story som vinkel). Sebastian Maltéus svarade 2026-05-07 12:29 (UID 1973) — bekräftar intresse, validerar mal-vinkeln explicit, ber om Carins konkreta idéer. Inga prisnivåer satta ännu.",
-      "waiting_on": "Lucas väljer vinkel/paket → offert till Sebastian",
-      "last_event": "2026-05-07 12:29: Sebastian svarar positivt (UID 1973), ber om konkret upplägg."
+      "notes": "Carin kallt utskick 2026-04-13 till info@skadedjursbutiken.se (mal-story som vinkel). Sebastian Maltéus svarade 2026-05-07 12:29 (UID 1973) — bekräftar intresse, validerar mal-vinkeln explicit, ber om Carins konkreta idéer. Carin skickade pitch 2026-05-07 14:08 (826.eml) — bifogar offert + upplägg via pitchlänk. Mal-story som röd tråd, paket 18 500 kr.",
+      "waiting_on": "sebastians-svar",
+      "last_event": "2026-05-07 14:08: Pitch skickad till Sebastian (826.eml) — upplägg + offert bifogad, pitchlänk villasjovik.github.io/skadedjursbutiken/"
     }
   ],
   "leads_summary": {

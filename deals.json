@@ -578,6 +578,26 @@
       "notes": "Kallt utskick 2026-05-04 från Carin (intro Villa Sjövik + 164k IG, portfolio). Gardinova svarade varmt — ber om fönsterbilder för att bedöma passform. Pitch deployad 2026-05-06 som svar (pitchen ÄR svaret, fönstren visas via miljöbilder). Vinkel: 'Gardiner som passar in som om de alltid funnits där'. Tre spår från Carins mor: Mätningen / Monteringen / Helhetsintrycket. Inga tidigare influencer-samarbeten = potential att bli deras standardleverantör av visuellt innehåll. Litet bolag (2 pers), god omsättning ~9.8 MSEK 2024, Trustpilot 4.9.",
       "waiting_on": "gardinova-svar",
       "last_event": "2026-05-06: Pitch deployad + leverans-mail draftad. Väntar på Lucas-OK för skick."
+    },
+    {
+      "id": "skadedjursbutiken",
+      "company": "Skadedjursbutiken.se",
+      "contact": "Sebastian Maltéus (Pest Control Nordic AB)",
+      "category": "Hem & Säkerhet",
+      "status": "contacted",
+      "value": null,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000 (TBD)",
+      "date_contacted": "2026-04-13",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Carin kallt utskick 2026-04-13 till info@skadedjursbutiken.se (mal-story som vinkel). Sebastian Maltéus svarade 2026-05-07 12:29 (UID 1973) — bekräftar intresse, validerar mal-vinkeln explicit, ber om Carins konkreta idéer. Inga prisnivåer satta ännu.",
+      "waiting_on": "Lucas väljer vinkel/paket → offert till Sebastian",
+      "last_event": "2026-05-07 12:29: Sebastian svarar positivt (UID 1973), ber om konkret upplägg."
     }
   ],
   "leads_summary": {

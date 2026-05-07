@@ -52,7 +52,7 @@
       "date_contacted": "2026-04-27",
       "date_closed": "2026-05-07",
       "pitch_url": "https://villasjovik.github.io/grevinnans-rum/",
-      "outcome": "no_response",
+      "outcome": "ghosted",
       "final_price": null,
       "close_reason": "Svarar inte vid uppringning trots flera försök. Avbryter outreach. Samma beslutsfattare driver Kostersåpa (Grevinnans Rum Gränna AB).",
       "followup_window": null,
@@ -72,7 +72,7 @@
       "date_contacted": "2026-04-27",
       "date_closed": "2026-05-07",
       "pitch_url": "https://villasjovik.github.io/kostersapa/",
-      "outcome": "no_response",
+      "outcome": "ghosted",
       "final_price": null,
       "close_reason": "Svarar inte vid uppringning trots flera försök. Avbryter outreach. Samma beslutsfattare som Grevinnans Rum (Grevinnans Rum Gränna AB).",
       "followup_window": null,
@@ -601,7 +601,7 @@
       }
     ],
     "currency": "SEK",
-    "schema_version": 4,
+    "schema_version": 5,
     "schema_notes": "v4 adds monthly_goals_history for multi-month view. v3 adds waiting_on + last_event. v2-fält oförändrade.",
     "updated_at": "2026-05-06T18:48:10.728290Z"
   },

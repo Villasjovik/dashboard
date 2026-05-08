@@ -556,8 +556,8 @@
       "close_reason": "Kontrakt signerat och bekräftat av båda parter",
       "followup_window": null,
       "notes": "Inbound från Pergolux (norskt pergola-företag). Initialkontakt via Tatjana Kostigova (pranamat.com) 2026-04-29, formell IO skickad av Tanya Kostigova (pergolux.no) 2026-04-30. Deliverables: 3 Reels + Stories. Carin förhandlade om creative direction-klausul, privacy clause och leveransantal. Uppdaterat IO skickat 2026-05-04. Installatörer (Sandeco Hem) föreslagit 14-15 maj. 2026-05-04 14:04: Tanya bekräftar allt, beställer pergolan nu (1-2 veckor → leverans ~18-19/5), ber om signerat kontrakt. Kontraktsvärde okänt (bilaga i IO). 2026-05-05 13:05: Tanya bekräftade och skickade tillbaka signerat avtal (1946.eml) — deal stängd/won.",
-      "waiting_on": "Carin",
-      "last_event": "2026-05-08 12:40: Tanya meddelar produktionsfördröjning på Pro Max-modellen — leverans nu ca mitten av juli. Erbjuder Pro-modellen som ersättning. Carin behöver besluta: acceptera Pro, förhandla kompensation, eller insistera på Pro Max med ny tidplan. Sandeco Hem-installationen 14-15/5 omöjlig med ny leveranstid. Draft klar: draft-pergolux-1997.md (1997.eml)"
+      "waiting_on": "Tanya — Pro/Pro Max-svar + leveransfönster",
+      "last_event": "2026-05-08 12:49: Carin svarade Tanya (864.eml) — bad om specifikationer: skillnad Pro vs Pro Max + exakt leveransfönster i juli. Bollen hos Tanya."
     },
     {
       "id": "gardinova",
@@ -609,7 +609,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-07",
+    "updated": "2026-05-08",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {

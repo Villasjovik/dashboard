@@ -620,6 +620,26 @@
       "notes": "Kallt utskick 2026-05-05. Mika Eklund (info@adea.fi) svarade — bad om 'what kind of things and what would the costs be'. Carin skickade pitch 2026-05-08 13:02 (865.eml) — tre koncept (Det rörliga rummet, Textil i lager, Det stilla hantverket) + priser i EUR (1 700 / 3 500 €). Pitch på engelska. Finskt premium-möbelmärke, ~10k IG-följare, 30+ år i branschen. Byggd från Benders canonical mall.",
       "waiting_on": "mikas-svar",
       "last_event": "2026-05-08 13:02: Pitch skickad till Mika Eklund (865.eml) — villasjovik.github.io/adea/"
+    },
+    {
+      "id": "benders",
+      "company": "Benders Sverige AB",
+      "contact": "Erica Bender Paulsson (Internkommunikatör/Webbredaktör) + Hanna Kvist (cc)",
+      "category": "Mark & Utemiljö",
+      "status": "pitched",
+      "value": 27500,
+      "value_min": 27500,
+      "value_label": "27 500 / 59 000",
+      "date_contacted": "2026-04-26",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/benders/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Carins kalla utskick 2026-04-26 till order@benders.se om gångstig med trampsten. Routades internt till Erica Bender Paulsson (kommunikatör/webbredaktör, trolig familjerelation till grundarfamiljen Bender). Erica svarade 2026-05-08 09:11 — bad om 'tankar eller förslag på hur ett eventuellt samarbete skulle kunna se ut'. Pitch byggd och deployad 2026-05-08. Carin skickade pitch-mail 2026-05-08 13:07 med länk till https://villasjovik.github.io/benders/ + hänvisning till bifogad offert. Tre koncept: Osynliga stigen (Bohusgranit trampsten), Texturkontraster (kullersten), Levande mosaiken (Gräsarmering Drain). Pris avviker från standard: 27 500 kr (engångspaket) / 59 000 kr (kampanjpaket). CC: Hanna Kvist (hanna.kvist@benders.se).",
+      "waiting_on": "Svar från Erica Bender Paulsson (erica.bender@benders.se) + Hanna Kvist (hanna.kvist@benders.se)",
+      "last_event": "2026-05-08 13:07: Pitch-mail skickat (carin-sent/866.eml) — pitch https://villasjovik.github.io/benders/ + offert bifogad"
     }
   ],
   "leads_summary": {

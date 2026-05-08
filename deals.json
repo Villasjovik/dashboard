@@ -251,14 +251,14 @@
       "value_label": null,
       "date_contacted": "2026-04-17",
       "date_closed": null,
-      "pitch_url": null,
+      "pitch_url": "https://villasjovik.github.io/nibe/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
       "notes": "Kampanjförslag 2026. Uppföljning på tidigare samarbete. 35k arvode + 15k Meta Ads. NIBE sagt att de återkommer i slutet av april med svar — ingen follow-up behövs innan dess.",
-      "waiting_on": "Marknadsavdelning efter Stockholm-mässa ~28 april",
-      "last_event": null
+      "waiting_on": "Nästa steg — inväntar Johan/Emma om timing och beslut",
+      "last_event": "2026-05-08 06:51: Johan Edberg svarar på pitch — 'Toppen, tack! Snygg presentation! Proffsigt.' Draft förberett."
     },
     {
       "id": "zaptec",

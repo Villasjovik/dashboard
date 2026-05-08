@@ -599,6 +599,27 @@
       "notes": "Carin kallt utskick 2026-04-13 till info@skadedjursbutiken.se (mal-story som vinkel). Sebastian Maltéus svarade 2026-05-07 12:29 (UID 1973) — bekräftar intresse, validerar mal-vinkeln explicit, ber om Carins konkreta idéer. Carin skickade pitch 2026-05-07 14:08 (826.eml) — bifogar offert + upplägg via pitchlänk. Mal-story som röd tråd, paket 18 500 kr.",
       "waiting_on": "sebastians-svar",
       "last_event": "2026-05-07 14:08: Pitch skickad till Sebastian (826.eml) — upplägg + offert bifogad, pitchlänk villasjovik.github.io/skadedjursbutiken/"
+    },
+    {
+      "id": "adea",
+      "company": "Adea Oy",
+      "contact": "Mika Eklund (info@adea.fi)",
+      "category": "Inredning & Möbler",
+      "status": "pitched",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "1 700 – 3 500 € (≈18 500 – 39 000 kr)",
+      "date_contacted": "2026-05-05",
+      "date_pitched": "2026-05-08",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/adea/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Kallt utskick 2026-05-05. Mika Eklund (info@adea.fi) svarade — bad om 'what kind of things and what would the costs be'. Carin skickade pitch 2026-05-08 13:02 (865.eml) — tre koncept (Det rörliga rummet, Textil i lager, Det stilla hantverket) + priser i EUR (1 700 / 3 500 €). Pitch på engelska. Finskt premium-möbelmärke, ~10k IG-följare, 30+ år i branschen. Byggd från Benders canonical mall.",
+      "waiting_on": "mikas-svar",
+      "last_event": "2026-05-08 13:02: Pitch skickad till Mika Eklund (865.eml) — villasjovik.github.io/adea/"
     }
   ],
   "leads_summary": {
@@ -609,7 +630,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-08",
+    "updated": "2026-05-08T13:02:00",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {

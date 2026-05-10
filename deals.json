@@ -103,7 +103,7 @@
     {
       "id": "jape",
       "company": "JAPE",
-      "contact": "Jeanette Axelsson",
+      "contact": "Jeanette Axelsson + Jack Hanzén (jack@jape.se)",
       "category": "Trädgård & Utomhus",
       "status": "closed",
       "value": 39000,
@@ -117,8 +117,8 @@
       "close_reason": "3-delat paket accepterat efter call 22/4. Full pitch-pris utan prutning. Jeanette var redan varm efter pitch 10/4 — bollen låg hos henne genom hela Nordbygg-veckan och hon kom tillbaka med ja.",
       "followup_window": null,
       "notes": "Signerat 2026-04-22 efter call kl 10:00. 3 videor à 39 000 kr exkl. moms. Pitch skickad 10/4, deal stängd 22/4 (13 dagar).",
-      "waiting_on": null,
-      "last_event": null
+      "waiting_on": "JAPE godkänner produkttexter (Sanera Glas + Tvätt Direkt) inför filmning",
+      "last_event": "2026-05-10: Produkttexter skickade för godkännande (892.eml) — Jeanette + Jack Hanzén"
     },
     {
       "id": "guldkannan",
@@ -640,6 +640,27 @@
       "notes": "Carins kalla utskick 2026-04-26 till order@benders.se om gångstig med trampsten. Routades internt till Erica Bender Paulsson (kommunikatör/webbredaktör, trolig familjerelation till grundarfamiljen Bender). Erica svarade 2026-05-08 09:11 — bad om 'tankar eller förslag på hur ett eventuellt samarbete skulle kunna se ut'. Pitch byggd och deployad 2026-05-08. Carin skickade pitch-mail 2026-05-08 13:07 med länk till https://villasjovik.github.io/benders/ + hänvisning till bifogad offert. Tre koncept: Osynliga stigen (Bohusgranit trampsten), Texturkontraster (kullersten), Levande mosaiken (Gräsarmering Drain). Pris avviker från standard: 27 500 kr (engångspaket) / 59 000 kr (kampanjpaket). CC: Hanna Kvist (hanna.kvist@benders.se).",
       "waiting_on": "Svar från Erica Bender Paulsson (erica.bender@benders.se) + Hanna Kvist (hanna.kvist@benders.se)",
       "last_event": "2026-05-08 13:07: Pitch-mail skickat (carin-sent/866.eml) — pitch https://villasjovik.github.io/benders/ + offert bifogad"
+    },
+    {
+      "id": "archivinci",
+      "company": "ArchiVinci",
+      "contact": "ArchiVinci Team (info@archivinci.com)",
+      "category": "SaaS / AI Tooling",
+      "status": "pitched",
+      "value": 52000,
+      "value_min": 21500,
+      "value_label": "1 950 / 4 750 / 9 500 € (≈22 / 52 / 103 kSEK)",
+      "date_contacted": "2026-05-08",
+      "date_pitched": "2026-05-10",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/archivinci/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Carin cold outreach 2026-05-08 (engelska). ArchiVinci Team svarade 2026-05-09: 'especially interested in Reels/video content side, please share pricing + package options'. London-baserade SaaS (AI Render Platform for Architecture and Design), Wix-hostat publik sajt. Pitch-vinkel: ArchiVinci × Villa Sjöviks design-process — tre koncept (sketch-to-render wow / tutorial-workflow / 10-rooms-variation). 3-paket-modell (Starter/Project/Premium) — Premium ny modell med 3 mån paid media-rättigheter + 1 000 € ads-pilot. Priser i EUR. Byggd från Adea canonical (engelska bas).",
+      "waiting_on": "archivinci-svar",
+      "last_event": "2026-05-10: pitch-page deployed (villasjovik.github.io/archivinci) + leverans-mail i drafts/ för Lucas-granskning"
     }
   ],
   "leads_summary": {
@@ -665,7 +686,8 @@
     "currency": "SEK",
     "schema_version": 5,
     "schema_notes": "v4 adds monthly_goals_history for multi-month view. v3 adds waiting_on + last_event. v2-fält oförändrade.",
-    "updated_at": "2026-05-07T19:26:34.000000Z"
+    "updated_at": "2026-05-07T19:26:34.000000Z",
+    "last_updated": "2026-05-10"
   },
   "generated_from": "wiki/entities/",
   "generated_at": "2026-04-25T15:49:33.016Z"

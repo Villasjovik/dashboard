@@ -117,8 +117,8 @@
       "close_reason": "3-delat paket accepterat efter call 22/4. Full pitch-pris utan prutning. Jeanette var redan varm efter pitch 10/4 — bollen låg hos henne genom hela Nordbygg-veckan och hon kom tillbaka med ja.",
       "followup_window": null,
       "notes": "Signerat 2026-04-22 efter call kl 10:00. 3 videor à 39 000 kr exkl. moms. Pitch skickad 10/4, deal stängd 22/4 (13 dagar).",
-      "waiting_on": "Signerat avtal i retur från Jeanette + godkännande produkttexter (Sanera Glas + Tvätt Direkt) + film (893.eml). Faktura betalning 16/5.",
-      "last_event": "2026-05-10: Avtalspåminnelse + publiceringsschema-fråga skickad (894.eml) — avtal ej returnerat, faktura betalning 16/5."
+      "waiting_on": "Signerat avtal i retur från Jeanette. Faktura betalning 16/5.",
+      "last_event": "2026-05-11: Jack Hanzén godkände film del 1 + produktmanus för Sanera Glas + Tvätt Direkt (2036.eml) — klart att filma resterande."
     },
     {
       "id": "guldkannan",
@@ -671,7 +671,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-08T13:02:00",
+    "updated": "2026-05-11T06:55:00",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {

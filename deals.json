@@ -265,40 +265,40 @@
       "company": "Zaptec",
       "contact": "Jessica Nordengren",
       "category": "Smarta Hem & Appar",
-      "status": "pitched",
+      "status": "declined",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 – 39 000",
       "date_contacted": "2026-04-16",
-      "date_closed": null,
+      "date_closed": "2026-05-12",
       "pitch_url": "https://villasjovik.github.io/zaptec/",
-      "outcome": null,
+      "outcome": "postponed",
       "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": "Pitch skickad 2026-04-16. Regional Marketing Manager Northern Europe svarade positivt på Carins första utskick. Tre spår presenteras: Designintegration, Smart ekonomi, Powers Adventure. Carin har redan Zaptec Go installerad — autentisk vinkel.",
+      "close_reason": "Jessica Nordengren mailade 2026-05-12 12:31 (2051.eml): 'Vi behöver tyvärr tacka nej denna gång. Men jag behåller gärna dina uppgifter framåt då vi ser över vårt innehåll framåt hösten.' Öppning för hösten 2026 — behåller kontakten.",
+      "followup_window": "höst 2026 (innehållsöversyn)",
+      "notes": "Pitch skickad 2026-04-16. Regional Marketing Manager Northern Europe svarade positivt på Carins första utskick. Tre spår presenteras: Designintegration, Smart ekonomi, Powers Adventure. Carin har redan Zaptec Go installerad — autentisk vinkel. 2026-05-12: Jessica tackade nej via mail (2051.eml) men öppnar för höst 2026 — 'behåller gärna dina uppgifter framåt'.",
       "waiting_on": null,
-      "last_event": null
+      "last_event": "2026-05-12 12:31: Jessica Nordengren tackade nej (2051.eml) — öppen för innehållsöversyn hösten 2026."
     },
     {
       "id": "beslagonline",
       "company": "Beslag Online",
       "contact": "Elin Persson",
       "category": "Inredning & Kök",
-      "status": "pitched",
+      "status": "declined",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 – 39 000",
       "date_contacted": "2026-04-15",
-      "date_closed": null,
+      "date_closed": "2026-05-12",
       "pitch_url": "https://villasjovik.github.io/beslagonline/",
-      "outcome": null,
+      "outcome": "rejected",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "Tackade nej 2026-05-12 (detaljer ej loggade — uppdatera vid behov).",
       "followup_window": null,
-      "notes": "Cold outreach 2026-04-15 nådde aldrig fram (mailtrådsglapp). Elin följde upp 2026-04-28 — pitchen skickad i ny version samma dag. Startpaket 18 500 / Kampanjpaket 39 000. Produkter: Besticklåda Robur Ek, Lådmatta 500 Hasselnöt, källsortering, knoppar.",
-      "waiting_on": "Elins återkoppling efter granskning av pitch",
-      "last_event": "2026-04-28: Pitchen byggd om på stenbolaget-mall (4 produkter, nytt hero) och skickad till Elin efter hennes uppföljning."
+      "notes": "Cold outreach 2026-04-15 nådde aldrig fram (mailtrådsglapp). Elin följde upp 2026-04-28 — pitchen skickad i ny version samma dag. Startpaket 18 500 / Kampanjpaket 39 000. Produkter: Besticklåda Robur Ek, Lådmatta 500 Hasselnöt, källsortering, knoppar. 2026-05-12: Tackade nej.",
+      "waiting_on": null,
+      "last_event": "2026-05-12: Beslag Online tackade nej."
     },
     {
       "id": "brunngard",
@@ -671,7 +671,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-11T06:55:00",
+    "updated": "2026-05-12T11:00:00",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -686,8 +686,8 @@
     "currency": "SEK",
     "schema_version": 5,
     "schema_notes": "v4 adds monthly_goals_history for multi-month view. v3 adds waiting_on + last_event. v2-fält oförändrade.",
-    "updated_at": "2026-05-10T17:52:29.000Z",
-    "last_updated": "2026-05-10"
+    "updated_at": "2026-05-12T11:00:00.000Z",
+    "last_updated": "2026-05-12"
   },
   "generated_from": "wiki/entities/",
   "generated_at": "2026-04-25T15:49:33.016Z"

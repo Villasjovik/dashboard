@@ -272,13 +272,13 @@
       "date_contacted": "2026-04-16",
       "date_closed": "2026-05-12",
       "pitch_url": "https://villasjovik.github.io/zaptec/",
-      "outcome": "rejected",
+      "outcome": "postponed",
       "final_price": null,
-      "close_reason": "Jessica Nordengren mailade 2026-05-12 12:31 (2051.eml): 'Vi behöver tyvärr tacka nej denna gång. Men jag behåller gärna dina uppgifter framåt då vi ser över vårt innehåll framåt hösten.' Rakt nej med vänlig ton — ingen utfästelse om återkomst, hon behåller uppgifterna men gör inget aktivt åtagande.",
-      "followup_window": null,
-      "notes": "Pitch skickad 2026-04-16. Regional Marketing Manager Northern Europe svarade positivt på Carins första utskick. Tre spår presenteras: Designintegration, Smart ekonomi, Powers Adventure. Carin har redan Zaptec Go installerad — autentisk vinkel. 2026-05-12: Jessica tackade nej via mail (2051.eml). Vänlig avslutning (behåller uppgifter) men inget konkret reaktiveringslöfte.",
+      "close_reason": "Jessica Nordengren mailade 2026-05-12 12:31 (2051.eml): 'Vi behöver tyvärr tacka nej denna gång. Men jag behåller gärna dina uppgifter framåt då vi ser över vårt innehåll framåt hösten.' Lucas bekräftade 2026-05-12 att Jessica signalerade konkret återkomst hösten 2026 (innehållsöversyn).",
+      "followup_window": "höst 2026 (innehållsöversyn)",
+      "notes": "Pitch skickad 2026-04-16. Regional Marketing Manager Northern Europe svarade positivt på Carins första utskick. Tre spår presenteras: Designintegration, Smart ekonomi, Powers Adventure. Carin har redan Zaptec Go installerad — autentisk vinkel. 2026-05-12: Jessica tackade nej via mail (2051.eml) men öppnar för höst 2026 — reaktiveringsfönster vid Zaptecs innehållsöversyn.",
       "waiting_on": null,
-      "last_event": "2026-05-12 12:31: Jessica Nordengren tackade nej (2051.eml)."
+      "last_event": "2026-05-12 12:31: Jessica Nordengren tackade nej (2051.eml) — öppen för innehållsöversyn hösten 2026."
     },
     {
       "id": "beslagonline",

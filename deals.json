@@ -1,6 +1,26 @@
 {
   "deals": [
     {
+      "id": "bluevua",
+      "company": "Bluevua",
+      "contact": "Bluevua PR Team (pr@bluevua.com) — first contact Mia (support@bluevua.com)",
+      "category": "Hem & Hälsa / Vattenrening",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-05-12",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/bluevua/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Carin skickade cold outreach till support@bluevua.com 2026-05-12 (engelska, standard-paket 18 500 SEK: 1 video + 2 stories + 10 produktfoton). Mia (Bluevua Support) svarade entusiastiskt 2026-05-13 10:09 (UID 2087), loopade in pr@bluevua.com som primary contact, bad om 'specific ideas'. Pitch deployad samma dag — engelsk, 3 koncept (osynliga ämnen / mineraler tillbaka / slutet på engångsflaskor) + canonical 4:e 'Your direction'-spår. Brand-färg #00336D (mörk navy). Produktfokus: ROPOT(UV) flaggskepp $454. PR-teamet är Kina-baserat (qiye.163.com). Mail-draft till pr@bluevua.com ligger i operational/drafts/bluevua-pitch-leverans-mail.md för Lucas-granskning innan IMAP APPEND.",
+      "waiting_on": "Lucas-granskning av mail-draft innan utskick till pr@bluevua.com",
+      "last_event": "2026-05-13: Pitch byggd och deployad (https://villasjovik.github.io/bluevua/). Mail-draft klar för granskning."
+    },
+    {
       "id": "studio-vintrafors",
       "company": "Studio Vintrafors",
       "contact": "Johanna Vintrafors (keramiker, gift med Katarina)",

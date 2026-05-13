@@ -6,9 +6,9 @@
       "contact": "Bluevua PR Team (pr@bluevua.com) — first contact Mia (support@bluevua.com)",
       "category": "Hem & Hälsa / Vattenrening",
       "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 – 39 000",
+      "value": 7000,
+      "value_min": 1650,
+      "value_label": "1 650 / 3 500 / 7 000 €",
       "date_contacted": "2026-05-12",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/bluevua/",
@@ -16,9 +16,9 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": "Carin skickade cold outreach till support@bluevua.com 2026-05-12 (engelska, standard-paket 18 500 SEK: 1 video + 2 stories + 10 produktfoton). Mia (Bluevua Support) svarade entusiastiskt 2026-05-13 10:09 (UID 2087), loopade in pr@bluevua.com som primary contact, bad om 'specific ideas'. Pitch deployad samma dag — engelsk, 3 koncept (osynliga ämnen / mineraler tillbaka / slutet på engångsflaskor) + canonical 4:e 'Your direction'-spår. Brand-färg #00336D (mörk navy). Produktfokus: ROPOT(UV) flaggskepp $454. PR-teamet är Kina-baserat (qiye.163.com). Mail-draft till pr@bluevua.com ligger i operational/drafts/bluevua-pitch-leverans-mail.md för Lucas-granskning innan IMAP APPEND.",
+      "notes": "Carin skickade cold outreach till support@bluevua.com 2026-05-12 (engelska, standard-paket 18 500 SEK: 1 video + 2 stories + 10 produktfoton). Mia (Bluevua Support) svarade entusiastiskt 2026-05-13 10:09 (UID 2087), loopade in pr@bluevua.com som primary contact, bad om 'specific ideas'. Pitch deployad samma dag — engelsk, 3 koncept (osynliga ämnen / mineraler tillbaka / slutet på engångsflaskor) + canonical 4:e 'Your direction'-spår. Brand-färg #00336D (mörk navy). Produktfokus: ROPOT(UV) flaggskepp $454. PR-teamet är Kina-baserat (qiye.163.com). Mail-draft till pr@bluevua.com ligger i operational/drafts/bluevua-pitch-leverans-mail.md för Lucas-granskning innan IMAP APPEND. | 2026-05-13 round 1-5: pitchen genomgick 5 iterationer — riktig inline-SVG-logga från bluevua.com, 3-tier EUR-prising (Starter 1 650 / Project 3 500 / Premium 7 000, alla med Reach Boost-toggle +1 000 €), Premium 7 000 € med struck reg. 9 500 €, Project-ribbon \"RECOMMENDED · TO START WITH\" (inte BEST VALUE), permanenta media rights (ej 3 months), paid media-rättigheter explicit \"full ad usage across all 3 videos, 6 stories and 30 images\", Meta ads pilot €1 000 + 2 retargeting cuts \"shaped from main ad creative\", channel-rubrik \"audience that buys quality\" (köpstark-översättning), ingen VAT-mention, 4 spår inkl. canonical \"Your direction\".",
       "waiting_on": "Lucas-granskning av mail-draft innan utskick till pr@bluevua.com",
-      "last_event": "2026-05-13: Pitch byggd och deployad (https://villasjovik.github.io/bluevua/). Mail-draft klar för granskning."
+      "last_event": "2026-05-13: Pitch färdig efter 5 iterationer. Mail-draft klar för Lucas-granskning innan utskick till pr@bluevua.com."
     },
     {
       "id": "studio-vintrafors",

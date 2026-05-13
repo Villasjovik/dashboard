@@ -6,9 +6,9 @@
       "contact": "Li Szczepanska (Marketing Coordinator, Mirka Scandinavia, Karlstad)",
       "category": "Verktyg & Hantverk / Slipmaskiner",
       "status": "pitched",
-      "value": 79000,
+      "value": 69000,
       "value_min": 18500,
-      "value_label": "18 500 / 39 000 / 79 000",
+      "value_label": "18 500 / 39 000 / 69 000",
       "date_contacted": "2026-05-03",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/mirka/",
@@ -16,9 +16,10 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": "Carin skickade cold outreach 2026-05-03 till Marketing.se@mirka.com. Li Szczepanska (Marketing Coordinator, Mirka Scandinavia, Karlstad) svarade 2026-05-13: 'Vi får väldigt många samarbetsförfrågningar och skulle gärna vilja tacka ja till fler än vi kan :) Men absolut, återkom gärna med förslag.' Pitch byggd och deployad samma dag — 4 spår (Den dammfria utmaningen / Det vetande valet / Säsongens förberedelser / Ert upplägg), 3-tier SEK-pricing 18 500 / 39 000 (reg. 55 000) / 79 000 (reg. 99 000), Räckviddsförstärkning +11 000 SEK, REKOMMENDERAT · ATT BÖRJA MED på Kampanjpaket. Mirka-logo: ikoniska gula block (#FDC100) med svart MIRKA-text, riktig inline-SVG från mirka.com. Bug under build: trasig HTML-comment (`<!-- Sv: Intro ->` istället för `-->`) gjorde body 0px — fixad. Mor's Gemini-vinklar avvisade (bilvård fel audience). Ärendenummer 1091677 preserverat i mail-subject.",
+      "notes": "Carin skickade cold outreach 2026-05-03 till Marketing.se@mirka.com. Li Szczepanska (Marketing Coordinator, Mirka Scandinavia, Karlstad) svarade 2026-05-13: 'Vi får väldigt många samarbetsförfrågningar och skulle gärna vilja tacka ja till fler än vi kan :) Men absolut, återkom gärna med förslag.' Pitch byggd och deployad samma dag — 4 spår (Den dammfria utmaningen / Det vetande valet / Säsongens förberedelser / Ert upplägg), 3-tier SEK-pricing 18 500 / 39 000 (reg. 55 000) / 79 000 (reg. 99 000), Räckviddsförstärkning +11 000 SEK, REKOMMENDERAT · ATT BÖRJA MED på Kampanjpaket. Mirka-logo: ikoniska gula block (#FDC100) med svart MIRKA-text, riktig inline-SVG från mirka.com. Bug under build: trasig HTML-comment (`<!-- Sv: Intro ->` istället för `-->`) gjorde body 0px — fixad. Mor's Gemini-vinklar avvisade (bilvård fel audience). Ärendenummer 1091677 preserverat i mail-subject. | 2026-05-13 round-2: Premium 79 000 → 69 000 SEK (reg. 89 000), ribbon \"REKOMMENDERAT · INSTEG\" (kortare än ATT BÖRJA MED), Reach Boost views 100k → 150k+, logo flickrade pga dual-material z-fight → fixat genom strippa bakgrundsrektangel + crop viewBox till letterforms-bounding-box (40 8 115 22). Loggan nu MIRKA i gult metal-extrusion, flicker-free.",
       "waiting_on": "Lucas-granskning av mail-draft innan utskick till marketing.se@mirka.com",
-      "last_event": "2026-05-13: Pitch byggd och deployad. Mail-draft klar för granskning."
+      "last_event": "2026-05-13: Pitch byggd och deployad. Mail-draft klar för granskning.",
+      "value_max": null
     },
     {
       "id": "bluevua",

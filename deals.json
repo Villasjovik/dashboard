@@ -637,9 +637,9 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": "Carin kallt utskick 2026-04-13 till info@skadedjursbutiken.se (mal-story som vinkel). Sebastian Maltéus svarade 2026-05-07 12:29 (UID 1973) — bekräftar intresse, validerar mal-vinkeln explicit, ber om Carins konkreta idéer. Carin skickade pitch 2026-05-07 14:08 (826.eml) — bifogar offert + upplägg via pitchlänk. Mal-story som röd tråd, paket 18 500 kr.",
-      "waiting_on": "sebastians-svar",
-      "last_event": "2026-05-07 14:08: Pitch skickad till Sebastian (826.eml) — upplägg + offert bifogad, pitchlänk villasjovik.github.io/skadedjursbutiken/"
+      "notes": "Carin kallt utskick 2026-04-13 till info@skadedjursbutiken.se (mal-story som vinkel). Sebastian Maltéus svarade 2026-05-07 12:29 (UID 1973) — bekräftar intresse, validerar mal-vinkeln explicit, ber om Carins konkreta idéer. Carin skickade pitch 2026-05-07 14:08 (826.eml) — bifogar offert + upplägg via pitchlänk. Mal-story som röd tråd, paket 18 500 kr. Sebastian svarade 2026-05-12: vill köra Kampanjpaketet (39 000 kr) men ber om 25 000 kr — first-mover-tonläge. Carin countrade 2026-05-12: möts på 30 000 kr ex moms med motivering om produktionsvärde. Carin follow-up 2026-05-14 (995.eml): kort uppföljning, 'hur går era tankar kring ett ev samarbete?'",
+      "waiting_on": "sebastians-svar-forhandling-30k",
+      "last_event": "2026-05-14 20:08: Carin follow-up (995.eml) — frågar hur tankar kring samarbete går. Prisförhandling pågår: Sebastian 25k → Carin 30k."
     },
     {
       "id": "adea",

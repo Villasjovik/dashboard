@@ -702,6 +702,27 @@
       "notes": "Carin cold outreach 2026-05-08 (engelska). ArchiVinci Team svarade 2026-05-09: 'especially interested in Reels/video content side, please share pricing + package options'. London-baserade SaaS (AI Render Platform for Architecture and Design), Wix-hostat publik sajt. Pitch-vinkel: ArchiVinci × Villa Sjöviks design-process — tre koncept (sketch-to-render wow / tutorial-workflow / 10-rooms-variation). 3-paket-modell (Starter/Project/Premium) — Premium ny modell med 3 mån paid media-rättigheter + 1 000 € ads-pilot. Priser i EUR. Byggd från Adea canonical (engelska bas). | 2026-05-12: Pitch leverans-mail skickat från carin@villasjovik.se — bifogar förslag med pricing + package options, tre format presenterade. | 2026-05-14: Follow-up 1 skickat (996.eml) — frågar om ArchiVinci hunnit titta på förslaget, erbjuder diskussion om paket-alternativ.",
       "waiting_on": "archivinci-svar",
       "last_event": "2026-05-14: Follow-up 1 skickat (996.eml) — kort uppföljning på pitchen levererad 2026-05-12"
+    },
+    {
+      "id": "aquagruppen",
+      "company": "AquaGruppen Sverige",
+      "contact": "Andreas Karlsson (andreas@aquagruppen.se)",
+      "category": "Hem & Bostad / Vattenlösningar",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-05-14",
+      "date_pitched": "2026-05-15",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/aquagruppen/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Carin kallt utskick 2026-05-14 till info@aquagruppen.se. Andreas Karlsson svarade 2026-05-15 — bad om presentation av förslag. Pitch byggd och deployad 2026-05-15 baserad på Benders canonical-mall (senaste 2026-05-08). Tre koncept: Titanium 180 i Villa Sjövik (bestseller-avhärdare, kalkbeläggning före/efter), Vattenprovet från kranen (gratis vattenanalys → skräddarsytt filter), Smart RO 2026 (osmos pre-sale-lansering, PFAS-vinkel). Paket-priser canonical: 18 500 kr startpaket / 39 000 kr kampanjpaket med MEST VÄRDE-ribbon. Karusell utökad med Sioox + Jape (10 brands totalt). Brand-färg #0066b3 (AquaGruppens classic blue). Repo: Villasjovik/aquagruppen.",
+      "waiting_on": "Svar från Andreas Karlsson (andreas@aquagruppen.se)",
+      "last_event": "2026-05-15: Pitch-leverans mail skickat av Carin till andreas@aquagruppen.se. Väntar på svar."
     }
   ],
   "leads_summary": {

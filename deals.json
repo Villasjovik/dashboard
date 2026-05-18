@@ -1,6 +1,27 @@
 {
   "deals": [
     {
+      "id": "vigneron",
+      "company": "Vigneron",
+      "contact": "Jill Stenlund (info@vigneron.se · 010 600 50 15 · även Jill@ncollection.se) — Vigneron / Nordic Collection AB",
+      "category": "Kök & Dryck / Premium Vinförvaring",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-05-16",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/vigneron/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Carin skickade cold outreach 2026-05-16 till info@vigneron.se. Jill Stenlund svarade 2026-05-18 entusiastiskt — 'Vad kul att du hör av dig! 😊', föreslog Teams-möte. Tidsbokning samma dag → tisdag 19/5 kl 11:00 bekräftat (Teams-länk: https://teams.microsoft.com/meet/339722307757531?p=DSyjNHugRilVOp9ROP). Pitch byggd och deployad 2026-05-18 inför mötet imorgon — så Jill har den i inbox innan vi pratar. Hero-tagline: 'Vinet förtjänar sin egen plats — och rummet att bära den.' Aquagruppen-canonical (via COUR Studios 2026-05-18 final-state) som mall — 4 spår, 2 paket, räckvidd-boost-toggle canonical (+10 000 SEK). Vigneron-logga scrapead från storage.googleapis.com (vigneron-experience-black.png, 2500×422 transparent RGBA), potrace-traced → SVG, 3D-extrusion onyx (originalsvart bevarad). Villa Sjövik gold som vanligt. Tre koncept siktar på Vignerons flaggskepp: (1) Storage 200 Dubbelzon — 'Statement i centrum', 303 flaskor som arkitektur i matsal/vardagsrum; (2) Kitchen Collection 60 Dubbelzon — 'Kök som vet sin sak', Best Water Wine Cooler 2023 i vardagskök; (3) Richard Juhlin By Vigneron Champagne Shelf — 'Champagne som expertis', storytelling kring Juhlin-partnerskapet + Champagne Club-medlemskap. Spår 4 = canonical 'Ert upplägg'. Premium-positioning (70+ år apparatsindustri-DNA, 20+ år vinkyls-specialist, distribution via Nordiska Galleriet). Tidigare influencer-samarbete med Vinoteket → vet vad samarbete innebär.",
+      "waiting_on": "Teams-möte imorgon 2026-05-19 kl 11:00 + Jills reaktion efter pitch-leverans (mail-draft i operational/drafts/2026-05-18-vigneron-pitch-leverans.md väntar Lucas-OK)",
+      "last_event": "2026-05-18: Pitch deployad live på https://villasjovik.github.io/vigneron/. Pitch-leverans-mail-draft klar för granskning. Möte bokat imorgon kl 11.",
+      "value_max": null
+    },
+    {
       "id": "cour-studios",
       "company": "COUR Studios",
       "contact": "Hellen Brunnberg (Co-founder & Creative Director, hellen.brunnberg@courstudios.com)",
@@ -18,7 +39,7 @@
       "followup_window": null,
       "notes": "Carin skickade cold outreach 2026-05-17 till christoffer.nyberg@courstudios.com (ämne: 'Samarbete'). Hellen Brunnberg (Co-founder & Creative Director) svarade samma dygn — 'Så otroligt kul att du kontaktar oss!', 'absolut intresserad', bad om konkreta kreativa förslag på 'hur du skulle vilja ta ut oss i miljön'. Pitch deployad 2026-05-18. Aquagruppen-canonical (2026-05-15) som mall — 4 spår, 2 paket utan ads-toggle, MEST VÄRDE-ribbon. COUR-logga scrapead från courstudios.com (300px wordmark, transparent bg) → potrace-traced till SVG, 3D-extrusion med metal #0a0a0a (svart wordmark, originalfärg bevarad). Tre spår: (1) BELLE Waterproof Trench — 'Trenchen som följer dagen', plagget genom Villa Sjöviks dag, vattendetalj, hängd på krok inomhus; (2) NOOR Knitted Dress — 'Kashmir-helgen', samma kashmir-klänning genom en helg, närbild på struktur; (3) BEATE 3L Shell Parka — 'Parka för alla väder', fyra Villa Sjövik-ljus i samma parka, slutbild på krok. Spår 4 = canonical 'Ert upplägg'. Hero-tagline: 'Funktionell elegans, buren genom en hel dag på Villa Sjövik.' Premium mode/dam, hållbart, skandinavisk minimalism. SS26-collection aktuell.",
       "waiting_on": "Hellens svar efter pitch-leverans-mail (utkast i operational/drafts/draft-cour-studios-pitch.md)",
-      "last_event": "2026-05-18: Pitch byggd och deployad live. Mail-draft klar för Lucas-granskning innan IMAP APPEND.",
+      "last_event": "2026-05-18 13:08: Carin svarade Hellen (1180.eml) med kreativt konceptförslag 'Tidlös kvalitet för alla säsonger' — visar tre concept (Trenchen/Parkan/Kashmirklänning) i Villa Sjöviks miljöer. Ingen pitch-URL i mailet. Pitch live på https://villasjovik.github.io/cour-studios/. Pitch-leverans-mail (med URL) ännu ej bekräftat skickat.",
       "value_max": null
     },
     {

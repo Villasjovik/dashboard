@@ -126,9 +126,9 @@
     {
       "id": "grevinnans-rum",
       "company": "Grevinnans Rum",
-      "contact": "info@grevinnansrum.se",
+      "contact": "Karin Egertz (karin@grevinnansrum.se · info@grevinnansrum.se)",
       "category": "Hudvård & Kropp",
-      "status": "active",
+      "status": "pitched",
       "value": 330000,
       "value_min": 270000,
       "value_label": "270 000 – 330 000",
@@ -140,15 +140,15 @@
       "close_reason": null,
       "followup_window": null,
       "notes": "Inkommande svar 2026-04-27 (UID 1822) på kallt utskick från 2026-04-23. 'Vi är intresserade av detta. Kanske även för vårt andra märke Kostersåpa.' Pitch-vinkel: Tre ritualer (En doftande morgon · Vardagslyx vid handfatet · En mjuk kvällsritual). Strömstad-baserat, premium ekologisk hudvård (Algica-serie, Firming Body Oil, Saltvattentvålen No1). ~12k IG följare, ~14× räckviddslyft via Villa Sjövik. Pitch + mailsvar levererat 2026-04-27. | 2026-05-11: Karin svarade (karin@grevinnansrum.se) — svar på Carins mötes-mail 11/5 kl 09:04. Föreslår 18/5 e 13 eller 21-22/5 e 13. Deal reaktiverad. | 2026-05-18: Möte hållet med Karin Egertz. Pitch omstöpt till 12-mån-årssamarbete. Två alternativ: Standardupplägg 22 500 kr/mån (1 video + 2 stories + 50 bilder/mån, totalt 270 000 kr/år) och Med räckvidds-boost 27 500 kr/mån (+5 000 kr/mån i Meta-annonsering → ~1 000 000 visningar/år, totalt 330 000 kr/år). Spår-sektion borttagen.",
-      "waiting_on": "Återkoppling på ny årsoffert (12 mån, 22 500 / 27 500 kr/mån). Möte 2026-05-18 hållet.",
-      "last_event": "2026-05-18: Möte hållet (ej inspelat). Ny pitch reaktiverad som 12-månaders-årssamarbete: Standardupplägg 22 500 kr/mån (1 video + 2 stories + 50 bilder/mån) eller Med räckvidds-boost 27 500 kr/mån (+5 000 kr/mån i Meta-annonsering → ~1 000 000 visningar/år). Ny pitch live, väntar på Karins återkoppling."
+      "waiting_on": "Karins återkoppling på årsoffert (12 mån, 22 500 / 27 500 kr/mån). Pitch-leverans mail skickat 2026-05-18.",
+      "last_event": "2026-05-18 19:34: Pitch-leverans mail skickat till karin@grevinnansrum.se (1211.eml) — båda årsofferter bifogade (Grevinnans Rum + Kostersåpa årssamarbete 2026). Inväntar Karins återkoppling."
     },
     {
       "id": "kostersapa",
       "company": "Kostersåpa",
-      "contact": "info@grevinnansrum.se",
+      "contact": "Karin Egertz (karin@grevinnansrum.se · info@grevinnansrum.se)",
       "category": "Hem & Städ",
-      "status": "active",
+      "status": "pitched",
       "value": 330000,
       "value_min": 270000,
       "value_label": "270 000 – 330 000",
@@ -160,8 +160,8 @@
       "close_reason": null,
       "followup_window": null,
       "notes": "Sister-brand till Grevinnans Rum (samma juridiska bolag — Grevinnans Rum Gränna AB, org.nr 556937-4753). Föreslogs i Grevinnans Rums svar 2026-04-27. Pitch-vinkel: Tre ögonblick av enkel skönhet (Vårens första dag på altanen · En osynlig lyx i köket · Den synliga detaljen). Hushållssåpa: allrengöring, spraysåpa, linoljesåpa, trallsåpa. Mid-premium eko (99–389 kr). Pitch + mailsvar (gemensamt med Grevinnans Rum) levererat 2026-04-27. | 2026-05-18: REAKTIVERAD efter möte. Pitch omstöpt till 12-mån-årssamarbete (samma struktur som Grevinnans Rum). Två alternativ: Standardupplägg 22 500 kr/mån och Med räckvidds-boost 27 500 kr/mån (+5 000 kr/mån i Meta-annonsering, ~1 000 000 visningar/år). Spår-sektion borttagen.",
-      "waiting_on": "Återkoppling på ny årsoffert (12 mån, 22 500 / 27 500 kr/mån). Sister-brand till Grevinnans Rum — samma beslutsfattare (Karin Egertz).",
-      "last_event": "2026-05-18: REAKTIVERAD efter möte med Karin (samma bolag som Grevinnans Rum). Ny pitch som 12-månaders-årssamarbete: Standardupplägg 22 500 kr/mån (1 video + 2 stories + 50 bilder/mån) eller Med räckvidds-boost 27 500 kr/mån (+5 000 kr/mån i Meta-annonsering → ~1 000 000 visningar/år)."
+      "waiting_on": "Karins återkoppling på årsoffert (12 mån, 22 500 / 27 500 kr/mån). Pitch-leverans mail skickat 2026-05-18 (gemensamt med Grevinnans Rum).",
+      "last_event": "2026-05-18 19:34: Pitch-leverans mail skickat till karin@grevinnansrum.se (1211.eml) — båda årsofferter bifogade (Grevinnans Rum + Kostersåpa årssamarbete 2026). Inväntar Karins återkoppling."
     },
     {
       "id": "remylla",
@@ -796,7 +796,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-12T11:00:00",
+    "updated": "2026-05-18T19:34:57",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {

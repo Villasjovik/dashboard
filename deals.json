@@ -1,6 +1,26 @@
 {
   "deals": [
     {
+      "id": "tapwell",
+      "company": "Tapwell",
+      "contact": "Demi Reuterswärd (demi@bricmate.se, marketing)",
+      "category": "Hem & Bad / Premium-dusch & kran",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-05-16",
+      "date_pitched": "2026-05-19",
+      "pitch_url": "https://villasjovik.github.io/tapwell/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Carin skickade cold outreach 2026-05-16 till info@tapwell.se (svensk, standard-paket). Demi Reuterswärd (Bricmate-mail demi@bricmate.se men ansvarar för Tapwell-samarbeten) svarade 2026-05-18 öppet: 'Detta skulle kunna vara intressant, du får gärna berätta mer om dina tankar kring detta!'. KRITISK koncern-insikt: Tapwell AB är MODERBOLAGET (~800 MSEK), Bricmate är dotter. CEO Tapwell Finn Blichfeldt = även ordf Bricmate. Demi sannolikt koncern-gemensam marketing. Pitch deployad 2026-05-19 — svensk canonical (skadedjur-mall), 3 koncept: (1) BOX7200 ED2 krom hero-film 'arkitektonisk linje', (2) ARM7300 Brushed Nickel fristående skulptur, (3) Tapwell+Bricmate crossover (BOX7268 krom + Bricmate granitkeramik-vägg). Krom/silver only enligt Lucas-direktiv. Brand-färg #C8CDD2 chrome-silver override. Channel-stats inkluderar Carins utmärkelse 'Topp 13 i Sverige' (Gecko Trädgård 2023). 2-tier SEK 18 500 / 39 000 — kanske för lågt för premium, Lucas kan justera. Mail-draft till demi@bricmate.se ligger i operational/drafts/2026-05-19-tapwell-pitch-leverans.md.",
+      "waiting_on": "lucas-mail-approval",
+      "last_event": "2026-05-19: Pitch deployad till https://villasjovik.github.io/tapwell/. Mail-draft skapad, väntar Lucas-OK för leverans till Demi."
+    },
+    {
       "id": "okatsune",
       "company": "Okatsune Europe",
       "contact": "Diana de Keijzer (info@okatsune-europe.com)",

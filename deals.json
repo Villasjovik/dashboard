@@ -38,8 +38,8 @@
       "close_reason": null,
       "followup_window": null,
       "notes": "Carin skickade cold outreach 2026-05-17 till christoffer.nyberg@courstudios.com (ämne: 'Samarbete'). Hellen Brunnberg (Co-founder & Creative Director) svarade samma dygn — 'Så otroligt kul att du kontaktar oss!', 'absolut intresserad', bad om konkreta kreativa förslag på 'hur du skulle vilja ta ut oss i miljön'. Pitch deployad 2026-05-18. Aquagruppen-canonical (2026-05-15) som mall — 4 spår, 2 paket utan ads-toggle, MEST VÄRDE-ribbon. COUR-logga scrapead från courstudios.com (300px wordmark, transparent bg) → potrace-traced till SVG, 3D-extrusion med metal #0a0a0a (svart wordmark, originalfärg bevarad). Tre spår: (1) BELLE Waterproof Trench — 'Trenchen som följer dagen', plagget genom Villa Sjöviks dag, vattendetalj, hängd på krok inomhus; (2) NOOR Knitted Dress — 'Kashmir-helgen', samma kashmir-klänning genom en helg, närbild på struktur; (3) BEATE 3L Shell Parka — 'Parka för alla väder', fyra Villa Sjövik-ljus i samma parka, slutbild på krok. Spår 4 = canonical 'Ert upplägg'. Hero-tagline: 'Funktionell elegans, buren genom en hel dag på Villa Sjövik.' Premium mode/dam, hållbart, skandinavisk minimalism. SS26-collection aktuell.",
-      "waiting_on": "Hellens svar på +2 plagg-förfrågan (Blance Knit Crewneck Brown Melange XS/S + Ambre Knitted SS Crewneck Vanilla Melange XS/S)",
-      "last_event": "2026-05-18 22:26: Carin svarade Hellen (1212.eml) — accepterade kläderbyte som ersättning för första samarbetet. Bad om 2 extra plagg utöver redan önskade: Blance Knit Crewneck (Brown Melange) XS/S (slutsåld — frågade om lager finns) + Ambre Knitted SS Crewneck (Vanilla Melange) XS/S. Utlovar text för godkännande innan publicering. Avvaktar Hellens svar.",
+      "waiting_on": "Carins svar + Hellens bekräftelse av slutlig plagg-lista — Blance Knit (Brown Melange) slut, Ambre Knitted SS Crewneck OK. Draft klar: draft-cour-studios-1779175397152.md",
+      "last_event": "2026-05-19 06:51: Hellen svarade (2258.eml) — Blance Knit Crewneck (Brown Melange) XS/S helt slut. Ambre Knitted SS Crewneck inga problem. Frågar om Carin är OK med övriga specat produkter. Draft skapad för Carins svar.",
       "value_max": null
     },
     {
@@ -796,7 +796,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-18T19:34:57",
+    "updated": "2026-05-19T06:51:00",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {

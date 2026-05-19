@@ -786,6 +786,26 @@
       "notes": "Carin kallt utskick 2026-05-14 till info@aquagruppen.se. Andreas Karlsson svarade 2026-05-15 — bad om presentation av förslag. Pitch byggd och deployad 2026-05-15 baserad på Benders canonical-mall (senaste 2026-05-08). Tre koncept: Titanium 180 i Villa Sjövik (bestseller-avhärdare, kalkbeläggning före/efter), Vattenprovet från kranen (gratis vattenanalys → skräddarsytt filter), Smart RO 2026 (osmos pre-sale-lansering, PFAS-vinkel). Paket-priser canonical: 18 500 kr startpaket / 39 000 kr kampanjpaket med MEST VÄRDE-ribbon. Karusell utökad med Sioox + Jape (10 brands totalt). Brand-färg #0066b3 (AquaGruppens classic blue). Repo: Villasjovik/aquagruppen.",
       "waiting_on": "Svar från Andreas Karlsson (andreas@aquagruppen.se)",
       "last_event": "2026-05-15: Pitch-leverans mail skickat av Carin till andreas@aquagruppen.se. Väntar på svar."
+    },
+    {
+      "id": "hults-bruk",
+      "company": "Hults Bruk (Hultafors Group)",
+      "contact": "Anders Haglund (Commercial Director, anders.haglund@hultaforsgroup.com, 0721-988 000)",
+      "category": "Trädgård & Utomhus / Handsmidda verktyg",
+      "status": "lead",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-05-18",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Carin kallt utskick 2026-05-18 till salessupport@hultaforsgroup.com (vidarebefordrat till Anders Haglund, Commercial Director). Anders svarade 2026-05-19 — 'Jag vill gärna diskutera samarbete', föreslog Teams-möte mitten av nästa vecka. Anders på The Bushcraft Show i England 2026-05-19. Carin svarade 2026-05-19 — föreslog Teams-möte 27/5 kl 10:30 eller 16:00. Avvaktar bekräftelse. Hultafors Group ~1 800 anställda, ~$259M omsättning, 70 marknader. Commercial Director = beslutsfattare med mandat. Rekommenderat paket: 39 000 kr (3 videos + stories + 30 miljöbilder) — Hultafors Groups storlek ryms för kampanjpaketet. Vinkel: svensk heritage möter Hults Bruks 325-åriga hantverk (vedklyvning, trädgårdsarbete). Obs: ambassadör-modell (product-for-content) är deras historiska mönster — positionera Carin som content-producer med räckviddsdata, inte brand ambassador.",
+      "waiting_on": "Anders bekräftelse av mötestid 27/5 (10:30 eller 16:00)",
+      "last_event": "2026-05-19: Carin svarade Anders (1217.eml) — föreslog Teams-möte onsdag 27/5 kl 10:30 eller 16:00."
     }
   ],
   "leads_summary": {
@@ -796,7 +816,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-19T06:51:00",
+    "updated": "2026-05-19T10:34:00",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {

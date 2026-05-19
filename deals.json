@@ -15,10 +15,10 @@
       "outcome": null,
       "final_price": null,
       "close_reason": null,
-      "followup_window": null,
-      "notes": "Carin skickade cold outreach 2026-05-16 till info@vigneron.se. Jill Stenlund svarade 2026-05-18 entusiastiskt — 'Vad kul att du hör av dig! 😊', föreslog Teams-möte. Tidsbokning samma dag → tisdag 19/5 kl 11:00 bekräftat (Teams-länk: https://teams.microsoft.com/meet/339722307757531?p=DSyjNHugRilVOp9ROP). Pitch byggd och deployad 2026-05-18 inför mötet imorgon — så Jill har den i inbox innan vi pratar. Hero-tagline: 'Vinet förtjänar sin egen plats — och rummet att bära den.' Aquagruppen-canonical (via COUR Studios 2026-05-18 final-state) som mall — 4 spår, 2 paket, räckvidd-boost-toggle canonical (+10 000 SEK). Vigneron-logga scrapead från storage.googleapis.com (vigneron-experience-black.png, 2500×422 transparent RGBA), potrace-traced → SVG, 3D-extrusion onyx (originalsvart bevarad). Villa Sjövik gold som vanligt. Tre koncept siktar på Vignerons flaggskepp: (1) Storage 200 Dubbelzon — 'Statement i centrum', 303 flaskor som arkitektur i matsal/vardagsrum; (2) Kitchen Collection 60 Dubbelzon — 'Kök som vet sin sak', Best Water Wine Cooler 2023 i vardagskök; (3) Richard Juhlin By Vigneron Champagne Shelf — 'Champagne som expertis', storytelling kring Juhlin-partnerskapet + Champagne Club-medlemskap. Spår 4 = canonical 'Ert upplägg'. Premium-positioning (70+ år apparatsindustri-DNA, 20+ år vinkyls-specialist, distribution via Nordiska Galleriet). Tidigare influencer-samarbete med Vinoteket → vet vad samarbete innebär.",
-      "waiting_on": "Teams-möte imorgon 2026-05-19 kl 11:00 + Jills reaktion efter pitch-leverans (mail-draft i operational/drafts/2026-05-18-vigneron-pitch-leverans.md väntar Lucas-OK)",
-      "last_event": "2026-05-18: Pitch deployad live på https://villasjovik.github.io/vigneron/. Pitch-leverans-mail-draft klar för granskning. Möte bokat imorgon kl 11.",
+      "followup_window": "2026-08-19",
+      "notes": "Carin skickade cold outreach 2026-05-16 till info@vigneron.se. Jill Stenlund svarade 2026-05-18 entusiastiskt — 'Vad kul att du hör av dig! 😊', föreslog Teams-möte. Tidsbokning samma dag → tisdag 19/5 kl 11:00 bekräftat (Teams-länk: https://teams.microsoft.com/meet/339722307757531?p=DSyjNHugRilVOp9ROP). Pitch byggd och deployad 2026-05-18 inför mötet imorgon — så Jill har den i inbox innan vi pratar. Hero-tagline: 'Vinet förtjänar sin egen plats — och rummet att bära den.' Aquagruppen-canonical (via COUR Studios 2026-05-18 final-state) som mall — 4 spår, 2 paket, räckvidd-boost-toggle canonical (+10 000 SEK). Vigneron-logga scrapead från storage.googleapis.com (vigneron-experience-black.png, 2500×422 transparent RGBA), potrace-traced → SVG, 3D-extrusion onyx (originalsvart bevarad). Villa Sjövik gold som vanligt. Tre koncept siktar på Vignerons flaggskepp: (1) Storage 200 Dubbelzon — 'Statement i centrum', 303 flaskor som arkitektur i matsal/vardagsrum; (2) Kitchen Collection 60 Dubbelzon — 'Kök som vet sin sak', Best Water Wine Cooler 2023 i vardagskök; (3) Richard Juhlin By Vigneron Champagne Shelf — 'Champagne som expertis', storytelling kring Juhlin-partnerskapet + Champagne Club-medlemskap. Spår 4 = canonical 'Ert upplägg'. Premium-positioning (70+ år apparatsindustri-DNA, 20+ år vinkyls-specialist, distribution via Nordiska Galleriet). Tidigare influencer-samarbete med Vinoteket → vet vad samarbete innebär. | MÖTE 2026-05-19 kl 11:00 (Teams, Carin + Lucas vs Jill): Jill = dotter i familjebolag (far är ägare). Vigneron-resa: byggde tidigare vinkällare + vitvaror → pivoterade till endast vinkylar → tidigare återförsäljare av andra märken → tog fram eget varumärke senaste 3 åren, går uppåt. JILLS POSITION: 'vi gör inte betalda samarbeten, vi byter dyr vinkyl (~45k) mot exponering'. Lucas/Carin förklarade professionellt att VS endast kör betalt → meta-retargeting/konverterings-koncept etablerades som värdesats → Jill nappade på konceptet. Lucas avslutade med 'genuinitet viktigast, ni jobbar uppenbart med andra utan att betala — vi hör av oss om 3 månader och stämmer av läget'. Jill var GENUIN i tonen (inte säljfluff), bad explicit om offert ändå: 'tror det blir för dyrt men skicka ändå, pdf eller liknande'. Relationen öppen, 3-mån-uppföljning bestämd. Pitch tweakad post-möte: 'Rekommenderat · Pilot för 2026' flyttat till Startpaket (18 500), Kampanj märkt 'Skala efter pilot' (muted ribbon, 39 000 bevaras som anchor), ny sektion 'Effekten bakom — Mer än räckvidd. Konvertering' med 3-stegs-meta-retargeting-flow, CTA bytt till 'Vi stämmer av när ni är redo', steg 03-formulering fixad så Vigneron inte tror de måste producera ads ('annons i Vignerons varumärke — byggd av samma material — visas av oss'). Pitch re-deployd 2026-05-19 13:30. Pitch-leverans-mail väntar Lucas-OK för utskick som Jill bett om.",
+      "waiting_on": "Lucas-OK på pitch-leverans-mail (operational/drafts/2026-05-19-vigneron-post-mote-mail.md) → skicka pitchen som Jill bett om → uppföljning planerad 2026-08-19",
+      "last_event": "2026-05-19: Teams-möte hölls kl 11. Jill = dotter i familjebolag. Vigneron kör inte betalda samarbeten (vill byta vinkyl mot exponering). Lucas/Carin professionellt etablerade meta-retargeting som värdesats. Relationen genuint öppen, 3-mån-uppföljning bestämd. Jill bad om offert ändå. Pitch post-möte-tweakad (Pilot för 2026 + meta-konvertering-sektion + CTA-byte) och re-deployd.",
       "value_max": null
     },
     {
@@ -816,7 +816,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-19T10:34:00",
+    "updated": "2026-05-19T13:29:36",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -831,8 +831,8 @@
     "currency": "SEK",
     "schema_version": 5,
     "schema_notes": "v4 adds monthly_goals_history for multi-month view. v3 adds waiting_on + last_event. v2-fält oförändrade.",
-    "updated_at": "2026-05-12T11:00:00.000Z",
-    "last_updated": "2026-05-12"
+    "updated_at": "2026-05-19T11:29:36.000Z",
+    "last_updated": "2026-05-19"
   },
   "generated_from": "wiki/entities/",
   "generated_at": "2026-04-25T15:49:33.016Z"

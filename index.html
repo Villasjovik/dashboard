@@ -923,7 +923,8 @@ function render(mk,animate){
   const pitched=D.deals.filter(d=>d.status==='pitched');
   const declined=D.deals.filter(d=>d.status==='declined');
 
-  const cV=closedMonth.reduce((s,d)=>s+(d.final_price||d.value||0),0);
+  const isNonCash=o=>o==='product_trade'||o==='barter';
+  const cV=closedMonth.reduce((s,d)=>s+(isNonCash(d.outcome)?0:(d.final_price||d.value||0)),0);
   const mV=meets.reduce((s,d)=>s+(d.value||0),0);
   const pV=pitched.reduce((s,d)=>s+(d.value||0),0);
   const pMin=pitched.reduce((s,d)=>s+(d.value_min||d.value||0),0);
@@ -997,7 +998,7 @@ function render(mk,animate){
   }else{
     const scPalette=['green','gold'];let signedIdx=0;
     closedMonth.forEach((d,i)=>{
-      const isProd=d.outcome==='product_trade';
+      const isProd=isNonCash(d.outcome);
       const price=d.final_price||d.value||0;
       const val=isProd||!price?null:fmt(price)+' kr';
       const ac=isProd?'blue':scPalette[signedIdx++%scPalette.length];
@@ -1035,7 +1036,7 @@ function render(mk,animate){
   const rG=rCtx2.createLinearGradient(0,20,0,250);rG.addColorStop(0,'rgba(200,164,78,0.40)');rG.addColorStop(.3,'rgba(110,231,183,0.18)');rG.addColorStop(.6,'rgba(52,211,153,0.06)');rG.addColorStop(1,'rgba(12,8,6,0)');
   const rL=rCtx2.createLinearGradient(0,0,600,0);rL.addColorStop(0,'#34d399');rL.addColorStop(.5,'#6ee7b7');rL.addColorStop(1,'#c8a44e');
   const cSorted=[...closedMonth].filter(d=>d.date_closed).sort((a,b)=>new Date(a.date_closed)-new Date(b.date_closed));
-  const rLabels=['Start'],rData=[0];let cum=0;cSorted.forEach(d=>{cum+=(d.final_price||d.value||0);rLabels.push(d.company);rData.push(cum)});
+  const rLabels=['Start'],rData=[0];let cum=0;cSorted.forEach(d=>{cum+=(isNonCash(d.outcome)?0:(d.final_price||d.value||0));rLabels.push(d.company);rData.push(cum)});
   // label for rev chart
   document.querySelector('.rev-card .cc-label').textContent='Kumulativ intäkt · '+mLbl;
   chartRev=new Chart(rCtx2,{type:'line',data:{labels:rLabels,datasets:[{data:rData,fill:true,backgroundColor:rG,borderColor:rL,borderWidth:3.5,tension:.4,pointRadius:rData.map((_,i)=>i===rData.length-1?8:5),pointBackgroundColor:rData.map((_,i)=>i===rData.length-1?'#c8a44e':'#34d399'),pointBorderColor:'#241d16',pointBorderWidth:3,pointHoverRadius:11,pointHoverBackgroundColor:'#e0be6a',pointHoverBorderColor:'rgba(200,164,78,0.4)',pointHoverBorderWidth:4},{data:rData.map(()=>goal),borderColor:'rgba(200,164,78,0.18)',borderDash:[6,6],borderWidth:1.5,pointRadius:0,fill:false}]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:ctx=>ctx.datasetIndex===0?fmt(ctx.parsed.y)+' kr':'Mål: '+fmt(ctx.parsed.y)+' kr'}}},scales:{x:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10,weight:500}},border:{display:false}},y:{grid:{color:'rgba(200,164,78,0.04)'},ticks:{color:'rgba(240,235,227,0.3)',font:{size:10},callback:v=>fK(v)},border:{display:false},suggestedMax:goal*1.25}},animation:{duration:animate?3000:0,easing:'easeOutQuart'}}});

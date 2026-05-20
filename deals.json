@@ -1,6 +1,26 @@
 {
   "deals": [
     {
+      "id": "habo",
+      "company": "Habo Gruppen AB",
+      "contact": "info@habo.com (ärende #36027 — SuperOffice ticket)",
+      "category": "Beslag & Inredning / Smart Hem",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 SEK",
+      "date_contacted": "2026-05-16",
+      "date_pitched": "2026-05-20",
+      "pitch_url": "https://villasjovik.github.io/habo/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Carin skickade cold outreach 2026-05-16 till muurikka.se@habo.com (Muurikka-vinkel, grill/sommarsäsong). Auto-confirm från Habo Gruppen samma minut — ärende #36027 öppet i SuperOffice. Ingen mänsklig response ännu. 2026-05-20: Carin pivoterade fokus från Muurikka till tre interiörnära produkter från Habo + Beslag-Design (paraply-pitch så Habo Gruppen kan loopa rätt handläggare). Pitch deployad 2026-05-20: vigneron-canonical (2026-05-19 post-möte), svensk. Tre spår: (1) Tribe 2 Svart 'Säkerhet som arkitektur' — KRITISK: designat av Thomas Sandell (svensk arkitekt) är pitchens guldnyckel, säljs som designstycke inte teknik; (2) Smartbox Tribe 2 Vit 'Den osynliga komforten' — vit detalj i hall/arbetsrum, koder för städhjälp/vänner; (3) Beslag-Design knoppar 'Detaljerna som sätter karaktär' — mässing/svart i köket, kollektion ej låst (Carin väljer). Spår 4 canonical 'Ert upplägg' (öppning för Muurikka/Salix/annat). Paket-strategi (Lucas-override från canonical): Kampanjpaket 39 000 SEK FEATURED med 'Rekommenderat · Trio från start' eftersom Carin redan valt 3 produkter, Startpaket 18 500 SEK muted 'Som pilot'. Räckvidd-boost-toggle +10k SEK canonical. Brand: Habo-logga scrapead från habo.com (habo_logo.svg, röd #BC1F40 originalfärg bevarad), 3D-rendered i metal #BC1F40 mot Villa Sjöviks gold. Habo Gruppen: 1921, HK Jönköping, ~615 MSEK, marknadsledande Nordens beslag/inredning. Mottagare-mail #36027 så Habo-handläggare loopar in rätt brand-team. Lucas-direktiv för copy: ingen filmjargong (inga mikroshots/B-roll/cinematic) — bara känsla, vad tittaren ser, vad känns.",
+      "waiting_on": "Habos handläggare svar (ticket #36027)",
+      "last_event": "2026-05-20: Pitch deployad till https://villasjovik.github.io/habo/. Mail-draft skapad (operational/drafts/2026-05-20-habo-pitch-leverans.md), väntar Lucas-OK för leverans till info@habo.com."
+    },
+    {
       "id": "skeppshult",
       "company": "Skeppshult Gjuteri",
       "contact": "info@skeppshult.com",

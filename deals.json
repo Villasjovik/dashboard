@@ -1,6 +1,26 @@
 {
   "deals": [
     {
+      "id": "bergdalahyttan",
+      "company": "Bergdalahyttan",
+      "contact": "Roger Johansson (roger@bergdalahyttan.se, glasroger@hotmail.com)",
+      "category": "Inredning & Hem / Glashantverk",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-05-20",
+      "date_pitched": "2026-05-21",
+      "pitch_url": "https://villasjovik.github.io/bergdalahyttan/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Roger Johansson (ägare/VD/formgivare, Sveriges enda trädrivna glashytta sedan 1889) svarade öppet på Carins outreach — saknar erfarenhet av influencer-samarbete, bad om förklaring. Pitch deployad 2026-05-21 med fokus på signaturprodukten Blå Kant i tre rum (Vid bordet / Hantverket / I hemmet) + canonical Spår 04. Standard 10/30 miljöbilder paket. Roger driver verksamheten själv = liten budget, kan landa i produktbyte. Mail-draft med pedagogisk förklaring av samarbetsmodellen + möte-CTA — väntar Lucas-OK.",
+      "waiting_on": "Rogers svar på pitch",
+      "last_event": "2026-05-21: pitch deployad + pedagogiskt mail-draft skapad"
+    },
+    {
       "id": "habo",
       "company": "Habo Gruppen AB",
       "contact": "Robin Jonsson (Marknadschef) — robin.jonsson@habo.com / info@habo.com (ärende #36027)",

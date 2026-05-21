@@ -45,7 +45,7 @@
       "company": "Louis Poulsen",
       "contact": "Thea Raben (Creative Consultant, tra@louispoulsen.dk)",
       "category": "Inredning & Design / Premium Belysning",
-      "status": "closed",
+      "status": "on_hold",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 / 39 000",
@@ -57,8 +57,8 @@
       "close_reason": "Carin (mor) väljer att inte skicka betald offert till Louis Poulsen — prioriterar gratis samarbete / produktbyte. Pitchen byggd och sparad som intern referens men aldrig levererad. Eventuellt framtida produktbyte-samarbete via separat dialog.",
       "followup_window": "2-3 veckor om inget svar",
       "notes": "Carin skickade kallt outreach till tra@louispoulsen.dk 2026-05-20. Thea Raben (Creative Consultant) svarade samma dag, frågade om specifika produkter. Carin svarade 2026-05-20 14:48 med tydlig produktinteresse: VL 45 Radiohus Portable Lamp (Brass/glossy white opal glass, LED 2700K 5.4W) × 3, konceptvinkel sommarövergång inomhus/utomhus på terrassen. Globalt danskt design-ikon (grundat 1874), flaggskepp PH-lampa och Artichoke. Omsättning i miljardklassen. Storbrand-deal — följ feedback_pitch_big_brand_strategy: högnivå-pitch, inte detaljerad tre-koncept-lista. | 2026-05-20: Pitch deployad till https://villasjovik.github.io/louis-poulsen/ — VL 45 Radiohus × 3, sommarterass-vinkel. Standard 10/30 miljöbilder paket. Storbrand-strategi: hög-nivå koncept (Terrassljuset / Skymningsstunden / Lampan som följer med) — inte detaljerade shot-lists. Walnut bevel material för Louis Poulsen-wordmark (svart logo renderad i ljus metal för kontrast mot dark hero-bg). Mail-draft: operational/drafts/2026-05-20-louis-poulsen-pitch-leverans.md.",
-      "waiting_on": null,
-      "last_event": "2026-05-21: Carin (mor) valde att inte skicka pitch — föredrar produktbyte över betald offert. Borttagen från aktiv pipeline."
+      "waiting_on": "Carins svar på Theas erbjudande — 1 VL 45 Portable (inte 3). Draft klar.",
+      "last_event": "2026-05-21: Thea Raben svarade — kan erbjuda 1 VL 45 Portable (inte 3 som Carin bad om). Frågar om Carin fortfarande är intresserad. Product trade-spåret aktivt. Draft skapad: operational/drafts/2026-05-21-louis-poulsen-product-trade-svar.md."
     },
     {
       "id": "tapwell",
@@ -77,8 +77,8 @@
       "close_reason": null,
       "followup_window": "2-3 veckor om inget svar",
       "notes": "Carin skickade cold outreach 2026-05-16 till info@tapwell.se (svensk, standard-paket). Demi Reuterswärd (Bricmate-mail demi@bricmate.se men ansvarar för Tapwell-samarbeten) svarade 2026-05-18 öppet: 'Detta skulle kunna vara intressant, du får gärna berätta mer om dina tankar kring detta!'. KRITISK koncern-insikt: Tapwell AB är MODERBOLAGET (~800 MSEK), Bricmate är dotter. CEO Tapwell Finn Blichfeldt = även ordf Bricmate. Demi sannolikt koncern-gemensam marketing. Pitch deployad 2026-05-19 — svensk canonical (skadedjur-mall), 3 koncept: (1) BOX7200 ED2 krom hero-film 'arkitektonisk linje', (2) ARM7300 Brushed Nickel fristående skulptur, (3) Tapwell+Bricmate crossover (BOX7268 krom + Bricmate granitkeramik-vägg). Krom/silver only enligt Lucas-direktiv. Brand-färg #C8CDD2 chrome-silver override. Channel-stats inkluderar Carins utmärkelse 'Topp 13 i Sverige' (Gecko Trädgård 2023). 2-tier SEK 18 500 / 39 000 — kanske för lågt för premium, Lucas kan justera. Mail-draft till demi@bricmate.se ligger i operational/drafts/2026-05-19-tapwell-pitch-leverans.md.",
-      "waiting_on": "demi-svar",
-      "last_event": "2026-05-21: Pitch-leverans mail skickat till Demi Reuterswärd (demi@bricmate.se). Arkiverat: carin-sent/1369.eml. Avvaktar svar."
+      "waiting_on": "demi-svar (pitch + smakprov-feedback)",
+      "last_event": "2026-05-21 ~12:50: Smakprov-mail med AI-genererad TVM300-160 krom-miljöbild skickat manuellt till Demi. Strategi: gratis värdesats innan pitch-beslut. Avvaktar Demis återkoppling."
     },
     {
       "id": "okatsune",

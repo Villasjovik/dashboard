@@ -1,6 +1,26 @@
 {
   "deals": [
     {
+      "id": "einhell",
+      "company": "Einhell Nordic A/S",
+      "contact": "Anna Hørby (Marketing Manager, anna.hoerby@einhell.com, +45 31541281)",
+      "category": "Trädgård & Utomhus / Eldrivna verktyg",
+      "status": "pitched",
+      "value": 118000,
+      "value_min": 22500,
+      "value_label": "22 500 / 118 000",
+      "date_contacted": "2026-05-22",
+      "date_pitched": "2026-05-22",
+      "pitch_url": "https://villasjovik.github.io/einhell/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Anna Hørby (Marketing Manager, Einhell Nordic A/S, Risskov DK) nådde själv ut till Carin med varm dansk förfrågan — bad explicit om oplæg + typiska priser. Pitch deployad 2026-05-22: vigneron-canonical (bergdalahyttan-derivat 2026-05-21), svensk. Tre Power X-Change-spår + canonical Spår 04 'Ert upplägg': (1) Sladdlös vår — GE-CM 36/36 Li gräsklippare + GE-CG 18/100 Li-Solo gräs- och busksax, morgonljus + finish vid stenfoten; (2) Ett verktyg, hela huset — VARRITO multifunktionsverktyg, inne+ute; (3) Höstens stillhet — GE-CL 18 Li E Kit lövblås @ 79.5 dB. PREMIUM-PRISSÄTTNING (höjt från standard): Startpaket 22 500 SEK (1 video/2 stories/10 miljöbilder, 12 mån användarrätt), Säsongspaket 118 000 SEK FEATURED 'Mest värde · Rekommenderat' (4 produktioner maj-okt 2026, 4 videor/8 stories/40 miljöbilder, 12 mån + organic forever, ord. 148 000 struken). Räckvidd-boost-toggle +10k canonical. Brand: Einhell-logga från Wikimedia Commons (Einhell_Germany_logo.svg, original röd #d90000 + svart text), 3D-rendered i metal #d90000 mot Villa Sjöviks gold. Pitch-leverans-mail draft sparad i operational/drafts/2026-05-22-einhell-pitch-leverans.md — väntar Lucas-OK för skick.",
+      "waiting_on": "Lucas-OK på mail-draft + Annas svar på pitch",
+      "last_event": "2026-05-22: Pitch deployad till https://villasjovik.github.io/einhell/ (HTTP 200 verifierad). Einhell-logga från Wikimedia Commons + brand-red 3D-rendering. Mail-draft sparad — väntar Lucas-OK."
+    },
+    {
       "id": "bergdalahyttan",
       "company": "Bergdalahyttan",
       "contact": "Roger Johansson (roger@bergdalahyttan.se, glasroger@hotmail.com)",

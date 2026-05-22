@@ -6,9 +6,9 @@
       "contact": "Anna Hørby (Marketing Manager, anna.hoerby@einhell.com, +45 31541281)",
       "category": "Trädgård & Utomhus / Eldrivna verktyg",
       "status": "pitched",
-      "value": 118000,
+      "value": 47000,
       "value_min": 22500,
-      "value_label": "22 500 / 118 000",
+      "value_label": "22 500 / 47 000",
       "date_contacted": "2026-05-22",
       "date_pitched": "2026-05-22",
       "pitch_url": "https://villasjovik.github.io/einhell/",
@@ -16,9 +16,9 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": "2-3 veckor om inget svar",
-      "notes": "Anna Hørby (Marketing Manager, Einhell Nordic A/S, Risskov DK) nådde själv ut till Carin med varm dansk förfrågan — bad explicit om oplæg + typiska priser. Pitch deployad 2026-05-22: vigneron-canonical (bergdalahyttan-derivat 2026-05-21), svensk. Tre Power X-Change-spår + canonical Spår 04 'Ert upplägg': (1) Sladdlös vår — GE-CM 36/36 Li gräsklippare + GE-CG 18/100 Li-Solo gräs- och busksax, morgonljus + finish vid stenfoten; (2) Ett verktyg, hela huset — VARRITO multifunktionsverktyg, inne+ute; (3) Höstens stillhet — GE-CL 18 Li E Kit lövblås @ 79.5 dB. PREMIUM-PRISSÄTTNING (höjt från standard): Startpaket 22 500 SEK (1 video/2 stories/10 miljöbilder, 12 mån användarrätt), Säsongspaket 118 000 SEK FEATURED 'Mest värde · Rekommenderat' (4 produktioner maj-okt 2026, 4 videor/8 stories/40 miljöbilder, 12 mån + organic forever, ord. 148 000 struken). Räckvidd-boost-toggle +10k canonical. Brand: Einhell-logga från Wikimedia Commons (Einhell_Germany_logo.svg, original röd #d90000 + svart text), 3D-rendered i metal #d90000 mot Villa Sjöviks gold. Pitch-leverans-mail draft sparad i operational/drafts/2026-05-22-einhell-pitch-leverans.md — väntar Lucas-OK för skick.",
+      "notes": "Anna Hørby (Marketing Manager, Einhell Nordic A/S, Risskov DK) nådde själv ut till Carin med varm dansk förfrågan — bad explicit om oplæg + typiska priser. Pitch deployad 2026-05-22: vigneron-canonical (bergdalahyttan-derivat 2026-05-21), svensk. Tre Power X-Change-spår + canonical Spår 04 'Ert upplägg': (1) Sladdlös vår — GE-CM 36/36 Li gräsklippare + GE-CG 18/100 Li-Solo gräs- och busksax, morgonljus + finish vid stenfoten; (2) Ett verktyg, hela huset — VARRITO multifunktionsverktyg, inne+ute; (3) Höstens stillhet — GE-CL 18 Li E Kit lövblås @ 79.5 dB. CANONICAL 3-PACK-RABATT: Startpaket 22 500 SEK (1 video/2 stories/10 miljöbilder, 12 mån användarrätt), Säsongspaket 47 000 SEK FEATURED 'Mest värde · Rekommenderat' (3 produktioner maj-okt 2026, 3 videor/6 stories/30 miljöbilder, 12 mån + organic forever, ord. styckevis 67 500 struken = ~30% paket-rabatt vs canonical vigneron-mönstret). Reach Boost: +10 000 SEK per produktion (max +30k för 3-pack), 150k+ extra visningar via Meta Ads med retargeting. Meta-rail förstärkt: 'Pixel bygger målgrupp av Einhell-tittare' → 'Annonsen följer upp 2-3 ggr'. Brand: Einhell-logga från Wikimedia Commons (original röd #d90000 + svart text), 3D-rendered metal mot Villa Sjöviks gold. Pitch-leverans-mail draft sparad i operational/drafts/2026-05-22-einhell-pitch-leverans.md — väntar Lucas-OK för skick.",
       "waiting_on": "Lucas-OK på mail-draft + Annas svar på pitch",
-      "last_event": "2026-05-22: Pitch deployad till https://villasjovik.github.io/einhell/ (HTTP 200 verifierad). Einhell-logga från Wikimedia Commons + brand-red 3D-rendering. Mail-draft sparad — väntar Lucas-OK."
+      "last_event": "2026-05-22: Pitch deployad + revision 1 (sänkt 118k→47k 3-pack canonical rabatt, Reach Boost per produktion-copy, Meta-rail retargeting-vinkel). HTTP 200 verifierad. Mail-draft väntar Lucas-OK."
     },
     {
       "id": "bergdalahyttan",
@@ -65,7 +65,7 @@
       "company": "Skeppshult Gjuteri",
       "contact": "Pelle Lönnäng (Försäljningschef Sverige, pelle.lonnang@skeppshult.com, +46 70 550 79 79)",
       "category": "Hem & Kök / Gjutjärn",
-      "status": "pitched",
+      "status": "negotiating",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 / 39 000 SEK",
@@ -77,8 +77,8 @@
       "close_reason": null,
       "followup_window": "2-3 veckor om inget svar",
       "notes": "Carin skickade kallt utskick 2026-05-19 till info@skeppshult.com (Skandinaviens sista gjutjärnsgjuteri sedan 1906). Skeppshult svarade 2026-05-20 — intresserade, vill höra mer. Pitch deployad 2026-05-20: svenska, 3 koncept (Söndagssteken/Cocotte 5L+djup form, Den dagliga pannan/Stekpanna 28cm Traditional, Sommarens grillpanna/runda grillpannan+Blini Pan+Spice grinder) + canonical Spår 04 'Ert eget upplägg'. Två paket SEK: Startpaket 18 500 (1 video, 2 stories, 20 miljöbilder, ribbon 'Pilot för 2026'), Projektpaket 39 000 featured (3 videor, 6 stories, 60 miljöbilder). Räckvidd-boost-toggle +10k SEK. NY animerad Meta-kampanj-sektion (sponsored post-mockup) precis innan pricing — första pitchen med den sektionen. Brand: Skeppshult wordmark scrapead från skeppshult.com Group_35.svg, rendered i metal/F2EDE4 mot dark green Villa Sjövik-bg (matchar Okatsune-pattern). Mall: Okatsune-baserad (2026-05-19) — svensk översättning + Meta-kampanj-sektion + 2-paket-pricing istället för 3-tier EUR.",
-      "waiting_on": "Pelle bekräftar mötestid (mån 25/5 kl 10:00 eller tis 26/5 kl 11:00)",
-      "last_event": "2026-05-22: Carin skickade svar på Pelles förfrågan — föreslår möte mån 25/5 kl 10:00 eller tis 26/5 kl 11:00. Arkiverat: carin-sent/1386.eml."
+      "waiting_on": "Samtal tisdag 26 maj kl 11:00 — Carin skickar möteslänk. Draft: drafts/draft-skeppshult-mote-bekraftelse.md",
+      "last_event": "2026-05-22: Pelle bekräftar tisdag 26/5 kl 11:00 (mail 2384.eml). Möte bokat."
     },
     {
       "id": "louis-poulsen",

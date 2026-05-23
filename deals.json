@@ -969,8 +969,8 @@
       "last_event": "2026-05-23: Pitch deployad. Mail-draft sparad. Carin granskar tillsammans med Einhell-mail-drafted parallellt."
     },
     {
-      "id": "gotlands-kalkstensfabrik",
-      "company": "Gotlands Kalkstensfabrik",
+      "id": "stenfabriken",
+      "company": "Stenfabriken (Gotlands Kalkstensfabrik AB)",
       "contact": "support@stenfabriken.se (specifik kontaktperson EJ identifierad — verifieras vid mail-skick)",
       "category": "Inredning & Hem / Natursten",
       "status": "pitched",
@@ -979,14 +979,14 @@
       "value_label": "18 500 / 39 000",
       "date_contacted": null,
       "date_pitched": "2026-05-23",
-      "pitch_url": "https://villasjovik.github.io/gotlands-kalkstensfabrik/",
+      "pitch_url": "https://villasjovik.github.io/stenfabriken/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
       "followup_window": "2-3 veckor om inget svar",
-      "notes": "Gotlands Kalkstensfabrik (familjeägd, Burgsvik på södra Gotland, eget stenbrott vid Hoburgen; signatur Hoburgsmarmor = rödaktig fossilrik polerbar kalksten). Lucas refererade 2026-05-23 till att de svarat på Carins cold outreach — INGEN inkommande mail funnen i mailbox carin@/kontakt@villasjovik.se per 2026-05-23 (varken stenfabriken.se, kalksten, eller burgsvik gav träff i 2026-05 mail-arkivet). VERIFIERA mail-trådens existens innan utskick — Lucas kan ha syftat på outlook eller annan kanal. Pitch ändå byggd 2026-05-23 enligt Lucas instruktion (Einhell-canonical, svensk): tre koncept-spår (Bänkskivan som signatur / Golvet som grund / Trädgården hela året — marksten) + canonical Spår 04 Ert upplägg. Pricing 18.5/39k SEK (familjeföretag-tier, matchar Bergdalahyttan). Reach Boost +10k/+30k. Brand: svart logo via potrace från Wix CDN (officiell stenfabriken.se logga). 3D-render metal data-color=#000000. Mail-draft sparad i operational/drafts/2026-05-23-gotlands-kalkstensfabrik-pitch-leverans.md — väntar Lucas-OK + verifiering av mail-tråd + Carin-granskning innan skick.",
-      "waiting_on": "Verifiering av inkommande mail-tråd + Lucas-OK + Carin-granskning på mail-draft",
-      "last_event": "2026-05-23: Pitch deployad. Mail-draft sparad. FLAGGA: ingen inkommande mail-tråd funnen i arkivet — Lucas behöver bekräfta källan innan utskick."
+      "notes": "Stenfabriken (familjeägd, Burgsvik på södra Gotland, eget stenbrott vid Hoburgen; signatur Hoburgsmarmor = rödaktig fossilrik polerbar kalksten). Lucas refererade 2026-05-23 till att de svarat på Carins cold outreach — INGEN inkommande mail funnen i mailbox carin@/kontakt@villasjovik.se per 2026-05-23 (varken stenfabriken.se, kalksten, eller burgsvik gav träff i 2026-05 mail-arkivet). VERIFIERA mail-trådens existens innan utskick — Lucas kan ha syftat på outlook eller annan kanal. Pitch ändå byggd 2026-05-23 enligt Lucas instruktion (Einhell-canonical, svensk): tre koncept-spår (Bänkskivan som signatur / Golvet som grund / Trädgården hela året — marksten) + canonical Spår 04 Ert upplägg. Pricing 18.5/39k SEK (familjeföretag-tier, matchar Bergdalahyttan). Reach Boost +10k/+30k. Brand: svart logo via potrace från Wix CDN (officiell stenfabriken.se logga). 3D-render metal data-color=#000000. Mail-draft sparad i operational/drafts/2026-05-23-stenfabriken-pitch-leverans.md — väntar Lucas-OK + verifiering av mail-tråd + Carin-granskning innan skick.",
+      "waiting_on": "Lucas-OK + Carin-granskning på mail-draft",
+      "last_event": "2026-05-23 13:30: Pitch rebrandad till Stenfabriken (kundens self-reference i mail-rubrik per Lucas). Repo renamed, URL https://villasjovik.github.io/stenfabriken/. Mail-draft uppdaterad."
     }
   ],
   "leads_summary": {

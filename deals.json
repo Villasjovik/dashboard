@@ -126,20 +126,21 @@
       "company": "Okatsune Europe",
       "contact": "Diana de Keijzer (info@okatsune-europe.com)",
       "category": "Trädgård / Japanska sekatörer & skärverktyg",
-      "status": "pitched",
+      "status": "declined",
       "value": 7000,
       "value_min": 1650,
       "value_label": "1 650 / 3 500 / 7 000 €",
       "date_contacted": "2026-05-18",
       "date_pitched": "2026-05-19",
+      "date_closed": "2026-05-24",
       "pitch_url": "https://villasjovik.github.io/okatsune/",
-      "outcome": null,
+      "outcome": "no_paid_collab",
       "final_price": null,
-      "close_reason": null,
-      "followup_window": "2-3 weeks if no response",
-      "notes": "Carin skickade cold outreach till hello@okatsune-europe.com 2026-05-18 (engelska, standard-paket: 1 video + 2 stories + 10 produktfoton). Diana de Keijzer svarade 2026-05-19 10:46 (UID 2262) — varm, bjuder in till konkreta förslag. Caveat: 'Normally, we do not do paid collaborations' — pitch måste övervinna ovana vid influencer-modellen. Pitch deployad 2026-05-19 — engelsk, 3 koncept (1. A hundred years in my garden / 103 hero film, 2. Three tools one garden / triptyk, 3. Sogetsu in Sweden / 213 ikebana) + canonical 4:e 'Your direction'-spår. Brand-färg #085838 (dark green, Okatsune Europe wordmark). Hookar in i Okatsune 100-årsjubileum 2025-2026 ('A seed planted 100 years ago, blooming all over the world'). Produktfokus: 103 (most popular model, €54), 213 ikebana (€71), snips (€15-17 — 306/307 mest fotogena). 3-tier EUR-pricing identisk med Bluevua-canonical (Starter 1 650 / Project 3 500 / Premium 7 000, alla med Reach Boost +1 000 €). Channel-stats inkluderar nu Carins utmärkelse 'Sweden's Top 13 Garden Influencers' (Gecko Trädgård 2023, https://www.gecko.se/insta). Mail-draft till info@okatsune-europe.com ligger i operational/drafts/2026-05-19-okatsune-pitch-leverans.md för Lucas-granskning innan IMAP APPEND.",
-      "waiting_on": "diana-svar + marketing-team-beslut",
-      "last_event": "2026-05-19: Pitch-leverans mail skickat till Diana de Keijzer (info@okatsune-europe.com). Mail-watcher loggade som 1220.eml. Avvaktar svar."
+      "close_reason": "Declined paid collaboration ('not open to such a collaboration'). Erbjöd produktgåva (saxar) utan obligation — Carin tackade ja 2026-05-24. Relation varm, följer på IG.",
+      "followup_window": null,
+      "notes": "Carin skickade cold outreach till hello@okatsune-europe.com 2026-05-18 (engelska, standard-paket: 1 video + 2 stories + 10 produktfoton). Diana de Keijzer svarade 2026-05-19 10:46 (UID 2262) — varm, bjuder in till konkreta förslag. Caveat: 'Normally, we do not do paid collaborations' — pitch måste övervinna ovana vid influencer-modellen. Pitch deployad 2026-05-19 — engelsk, 3 koncept (1. A hundred years in my garden / 103 hero film, 2. Three tools one garden / triptyk, 3. Sogetsu in Sweden / 213 ikebana) + canonical 4:e 'Your direction'-spår. Brand-färg #085838 (dark green, Okatsune Europe wordmark). Hookar in i Okatsune 100-årsjubileum 2025-2026 ('A seed planted 100 years ago, blooming all over the world'). Produktfokus: 103 (most popular model, €54), 213 ikebana (€71), snips (€15-17 — 306/307 mest fotogena). 3-tier EUR-pricing identisk med Bluevua-canonical (Starter 1 650 / Project 3 500 / Premium 7 000, alla med Reach Boost +1 000 €). Channel-stats inkluderar nu Carins utmärkelse 'Sweden's Top 13 Garden Influencers' (Gecko Trädgård 2023, https://www.gecko.se/insta).",
+      "waiting_on": null,
+      "last_event": "2026-05-24: Carin svarade och tackade ja till gratis-saxar (utan obligation). Adress angiven. Deal avslutad som no_paid_collab. Relation varm — Okatsune följer @villasjovik på IG."
     },
     {
       "id": "vigneron",
@@ -905,7 +906,7 @@
       "followup_window": null,
       "notes": "Carin kallt utskick 2026-05-12 till support@yarbo.com. Adam (Team Yarbo) svarade 2026-05-15 — eskalerar till senior team, hänvisade till influencer@yarbo.com (ticket #197046). Carin skickade pitch 2026-05-16 direkt till influencer@yarbo.com. Pitch på engelska (international canonical) — 3-tier EUR: The Three Seasons €4 500 / The Full Platform €6 900 / Full Campaign €11 900 (inkl. €4 000 paid media + 500k impressions). Track-arkitektur: säsongs-videos (Mower/Trimmer/Leaf Blower/Snow Blower) + UGC vs Cinematic direction-val. Reach Amplification +€900. Modulär yard-robot (klippning, snöröjning, lövblåsning).",
       "waiting_on": "yarbo-senior-team-svar",
-      "last_event": "2026-05-20: Follow-up skickat till influencer@yarbo.com — påminnelse om pitchen (https://villasjovik.github.io/yarbo/)."
+      "last_event": "2026-05-24: Follow-up 2 skickat (breakup-mail) — frågade om intresse kvarstår för säsongs-samarbete, eller om loop ska stängas."
     },
     {
       "id": "aquagruppen",

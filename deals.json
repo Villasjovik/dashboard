@@ -22,6 +22,27 @@
       "tags": ["natursten", "barter-möjlig", "sverige-launch-sept-2026", "varm-relation"]
     },
     {
+      "id": "klima-therm",
+      "company": "Klima-Therm AB",
+      "contact": "Martin Gustavsson (CMO, mgustavsson@klima-therm.com)",
+      "category": "Smarta Hem & Energi / Klimat & Kyla (Portabel AC)",
+      "status": "pitched",
+      "value": 47000,
+      "value_min": 22500,
+      "value_label": "22 500 / 47 000",
+      "date_contacted": "2026-05-21",
+      "date_pitched": "2026-05-25",
+      "pitch_url": "https://villasjovik.github.io/klima-therm/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Martin Gustavsson (CMO) svarade Carins 2026-05-21-outreach VARMT, bad om konkreta förslag och exkluderade Kaisai. Pitch deployad 2026-05-25 (Einhell-canonical 2026-05-22-derivat, svensk) som svar med Midea Portasplit 3,5 kW R32 + Argo Ulisse DCI ECO 4 kW R32 (två andra Klima-Therm-distribuerade portabla AC-varumärken). Tre AC-spår + canonical Spår 04: (1) Rum för rum — portabilitet visualiserad genom 4 svenska rum (vardagsrum/sovrum/kontor/gäst); (2) Från låda till sval bris — setup-resan visuell utan pedagogisk röst, Aeroquip-snabbkopplingen i fokus; (3) Sommarens räddning — värmebölje-drama till kvällsro; (4) Ert upplägg canonical. Pricing: Startpaket 22 500 SEK / Säsongspaket 47 000 SEK FEATURED 'Mest värde · Rekommenderat' (3 produktioner maj-aug 2026). Reach Boost +10k/+30k per produktion. Komplement till befintlig NIBE-värmepump-sponsor (NIBE=fast installerad helår, Klima-Therm=portabel sommarsäsong, ingen kategori-konflikt). Brand: Klimatherm-wordmark scrapead från klima-therm.com och potrace-traced till SVG, 3D-rendered metal data-color=#0F4F8C (Klimatherm-blå). Mail-draft sparad i operational/projekt/villa-sjovik/pitchar/klima-therm/pitch-draft.md — väntar Lucas-OK för skick.",
+      "waiting_on": "Martins svar på pitch",
+      "last_event": "2026-05-25: Pitch deployad — https://villasjovik.github.io/klima-therm/. Mail-draft sparad. Avvaktar Lucas-OK för utskick till Martin Gustavsson (mgustavsson@klima-therm.com).",
+      "tags": ["portabel-ac", "klimat-kyla", "warm-lead-cmo", "komplement-nibe", "sommarsäsong-2026"]
+    },
+    {
       "id": "einhell",
       "company": "Einhell Nordic A/S",
       "contact": "Anna Hørby (Marketing Manager, anna.hoerby@einhell.com, +45 31541281)",

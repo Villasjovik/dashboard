@@ -19,7 +19,12 @@
       "notes": "Carin kallt utskick 2026-05-23 till info@nordstone.se (Northern Legacy svart skiffer som vinkel). Leonna Aho-Ryhänen (Affärsutvecklingschef, Nordstone Ab, finländska, Sverige-launch sept 2026) svarade 2026-05-25 — VARMT, personlig (de reste till Holland tillsammans maj 2023). Explicit 'ingen budget för betalda samarbeten' just nu — budget bunden av sept-launch (katalog/hemsida/PR). Föreslår barter (sten mot synlighet) eller affiliate/campaign code. Pitch deployad 2026-05-25: vigneron-canonical (einhell-derivat 2026-05-22), svensk. Tre spår + canonical Spår 04 'Ert upplägg': (1) Den inglasade pergolan — stengolv som rumsskapande element, ny permanent miljö under byggnation, Northern Legacy svart skiffer estetiskt rätt; (2) Växthusmiljön — marksten ramar in Villa Sjöviks mest fotograferade SoMe-miljö, återkommande organic exponering; (3) Trampsten-guiden — 'så gör du' i grus och gräs, copy-paste-vänlig tutorial-vinkel, hög share/save-potential. Pricing canonical: Startpaket 18 500 SEK FEATURED 'Rekommenderat · Pilot för 2026', Säsongspaket 39 000 SEK muted 'Skala efter pilot'. Reach Boost per-paket-toggle (+10k/+30k) canonical. Meta-flow-sektion canonical. MJUK budget-linje ovanför pricing ('paketen är standard-utgångspunkt — formar gärna upplägg som passar er timing'), INGEN explicit barter-text i pitchen (sparas till samtalet, mönstret från Vigneron-pitchen). Brand: Nordstone-wordmark scrapead från nordstone.se, 3D-rendered chrome (svart originalfärg = osynlig mot mörkgrön bg → chrome canonical för svart/vit-minimalist-brands). Pitch-leverans-mail draft sparad i operational/drafts/2026-05-25-nordstone-pitch-leverans.md — väntar Lucas-OK för skick.",
       "waiting_on": "Leonnas svar på pitch",
       "last_event": "2026-05-25: Pitch-leverans-mail skickat till leonna@nordstone.se (carin@villasjovik.se). Bekräftar 3 konkreta förslag + bild- och filmrättigheter. Pitch: https://villasjovik.github.io/nordstone/",
-      "tags": ["natursten", "barter-möjlig", "sverige-launch-sept-2026", "varm-relation"]
+      "tags": [
+        "natursten",
+        "barter-möjlig",
+        "sverige-launch-sept-2026",
+        "varm-relation"
+      ]
     },
     {
       "id": "klima-therm",
@@ -40,7 +45,13 @@
       "notes": "Martin Gustavsson (CMO) svarade Carins 2026-05-21-outreach VARMT, bad om konkreta förslag och exkluderade Kaisai. Pitch deployad 2026-05-25 (Einhell-canonical 2026-05-22-derivat, svensk) som svar med Midea Portasplit 3,5 kW R32 — äkta split-system utan varmluftsslang (Argo Ulisse droppad efter Lucas-bedömning samma dag — slang-design sämre visuellt). Tre AC-spår + canonical Spår 04: (1) Rum för rum — portabilitet visualiserad genom 4 svenska rum; (2) Från låda till sval bris — setup-resan visuell utan pedagogisk röst; (3) Sommarens räddning — värmebölje-drama till kvällsro; (4) Ert upplägg canonical. Pricing (Lucas-justerat 2026-05-25): Startpaket 18 500 SEK / Säsongspaket 39 000 SEK FEATURED 'Mest värde · Rekommenderat' (3 produktioner maj-aug 2026), ord. 55 500 struken. Reach Boost +10k/+30k per produktion. Komplement till befintlig NIBE-värmepump-sponsor. Brand: Klimatherm-wordmark scrapead från klima-therm.com och potrace-traced till SVG, 3D-rendered metal data-color=#0F4F8C (Klimatherm-blå). Mail-draft sparad i operational/projekt/villa-sjovik/pitchar/klima-therm/pitch-draft.md — väntar Lucas-OK för skick.",
       "waiting_on": "Martins svar på pitch",
       "last_event": "2026-05-25: Pitch-leverans-mail skickat till mgustavsson@klima-therm.com (carin@villasjovik.se). Pitch: https://villasjovik.github.io/klima-therm/",
-      "tags": ["portabel-ac", "klimat-kyla", "warm-lead-cmo", "komplement-nibe", "sommarsäsong-2026"]
+      "tags": [
+        "portabel-ac",
+        "klimat-kyla",
+        "warm-lead-cmo",
+        "komplement-nibe",
+        "sommarsäsong-2026"
+      ]
     },
     {
       "id": "einhell",

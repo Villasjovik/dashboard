@@ -840,7 +840,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 'use strict';
 fetch('./deals.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(D=>{
 
-const ST={closed:{l:'Stängd',c:'b-closed',color:'#34d399'},contract:{l:'Avtal',c:'b-meeting',color:'#6ee7b7'},meeting:{l:'Möte',c:'b-meeting',color:'#67e8f9'},in_discussion:{l:'Dialog',c:'b-discussion',color:'#e0be6a'},active:{l:'Aktiv',c:'b-meeting',color:'#67e8f9'},pitched:{l:'Offert',c:'b-pitched',color:'#fbbf24'},follow_up:{l:'Uppföljning',c:'b-discussion',color:'#e0be6a'},on_hold:{l:'Pausad',c:'b-waiting',color:'#e0be6a'},declined:{l:'Avböjd',c:'b-declined',color:'#fb7185'},lead:{l:'Lead',c:'b-pitched',color:'#a78bfa'}};
+const ST={closed:{l:'Stängd',c:'b-closed',color:'#34d399'},contract:{l:'Avtal',c:'b-meeting',color:'#6ee7b7'},meeting:{l:'Möte',c:'b-meeting',color:'#67e8f9'},in_discussion:{l:'Dialog',c:'b-discussion',color:'#e0be6a'},negotiating:{l:'Förhandling',c:'b-discussion',color:'#f59e0b'},active:{l:'Aktiv',c:'b-meeting',color:'#67e8f9'},pitched:{l:'Offert',c:'b-pitched',color:'#fbbf24'},follow_up:{l:'Uppföljning',c:'b-discussion',color:'#e0be6a'},on_hold:{l:'Pausad',c:'b-waiting',color:'#e0be6a'},declined:{l:'Avböjd',c:'b-declined',color:'#fb7185'},lead:{l:'Lead',c:'b-pitched',color:'#a78bfa'}};
 const fmt=n=>n==null?'—':n.toLocaleString('sv-SE');
 const fK=fmt;
 
@@ -1186,7 +1186,7 @@ regSec(3,()=>{setTimeout(()=>{
 },500)});
 
 /* ═══ TABLE ═══ */
-const ORD={closed:0,meeting:1,in_discussion:2,pitched:3,declined:4};
+const ORD={closed:0,meeting:1,negotiating:1.5,in_discussion:2,pitched:3,declined:4};
 function renderTbl(f,animate){
   if(animate===undefined)animate=true;
   const raw=f==='all'?D.deals:D.deals.filter(d=>d.status===f);

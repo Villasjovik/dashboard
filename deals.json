@@ -1025,7 +1025,7 @@
     {
       "id": "stenfabriken",
       "company": "Stenfabriken (Gotlands Kalkstensfabrik AB)",
-      "contact": "support@stenfabriken.se (specifik kontaktperson EJ identifierad — verifieras vid mail-skick)",
+      "contact": "Simon Lindberg (info@stenfabriken.se)",
       "category": "Inredning & Hem / Natursten",
       "status": "pitched",
       "value": 39000,
@@ -1039,8 +1039,8 @@
       "close_reason": null,
       "followup_window": "2-3 veckor om inget svar",
       "notes": "Stenfabriken (familjeägd, Burgsvik på södra Gotland, eget stenbrott vid Hoburgen; signatur Hoburgsmarmor). Pitch byggd 2026-05-23 (Einhell-canonical, svensk, tre koncept-spår + Spår 04). 18.5/39k SEK familjeföretag-tier. Hero-logga gick igenom flera iterationer 2026-05-25 för att lösa Y-rotation perspektiv-crop (slutfix: canvas 580×330 matchar VS-höjd → shadows alignar). Slutligt mail skickat 2026-05-25 med varmare Carin-formulering — Lucas kalibrerade bort 'dröm'-vinkel som gav fel maktbalans (vi pitchar genomtänkt kampanj de ska köpa, inte ber om favör).",
-      "waiting_on": "Svar från Stenfabriken (support@/info@)",
-      "last_event": "2026-05-25: Pitch-leverans-mail skickat carin@villasjovik.se → support@stenfabriken.se (cc kontakt@villasjovik.se). Pitch: https://villasjovik.github.io/stenfabriken/"
+      "waiting_on": "Svar från Simon Lindberg (info@stenfabriken.se)",
+      "last_event": "2026-05-25: Pitch-leverans-mail skickat carin@villasjovik.se → info@stenfabriken.se (Simon Lindberg). Bekräftat via sent-mail (1520.eml). Pitch: https://villasjovik.github.io/stenfabriken/"
     }
   ],
   "leads_summary": {

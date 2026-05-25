@@ -1,6 +1,33 @@
 {
   "deals": [
     {
+      "id": "hott-sauna",
+      "company": "HOTT Sauna (Baitbox AB)",
+      "contact": "Simon (Co-Founder, support@hottsauna.com)",
+      "category": "Hem & Trädgård / Bastu & Wellness (Portabel vedeldad bastu)",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-05-23",
+      "date_pitched": "2026-05-25",
+      "pitch_url": "https://villasjovik.github.io/hott-sauna/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Simon (Co-Founder Baitbox AB) svarade Carins outreach 2026-05-23 mycket varmt — komplimerade Villa Sjöviks känsla/bildspråk och bad EXPLICIT om hemmamiljö-vinkel (\"vi själva har mest fokus på naturmiljöerna, så hemmamiljö vore fint!\"). Pitch deployad 2026-05-25 (Klima-Therm-canonical-derivat, svensk) med 3 hemma-koncept: (1) Trädgården som spa — vardagslyx på gräsmattan efter trädgårdsdag; (2) Två steg från köket — bastu vid fasaden, hemma-intim närhet; (3) Samma bastu, hela tomten — portabilitet visualiserad inom Villa Sjöviks tomt; (4) Ert upplägg canonical. Pricing: Startpaket 18 500 / Säsongspaket 39 000 SEK FEATURED (3 produktioner maj-sep 2026, bastusäsong + tidig höst), ord. 55 500 struken. Reach Boost +10k/+30k driver direktlänk till hottsauna.com (Shopify). Ny kategori för Villa Sjövik (bastu/wellness) — ingen sponsor-konflikt. Brand: HOTT-wordmark traced från text-SVG via potrace, 3D-rendered metal data-color=#FF2E01 (HOTT flame-orange). og:image regenererad med flam-gradient (gul→orange→röd). Mail-draft sparad i operational/drafts/2026-05-25-hott-sauna-pitch-leverans.md — väntar Lucas-OK för skick.",
+      "waiting_on": "Simons svar på pitch + förslag till samtal",
+      "last_event": "2026-05-25: Pitch deployad live, mail-draft förberedd. Pitch: https://villasjovik.github.io/hott-sauna/",
+      "tags": [
+        "bastu-wellness",
+        "portabel-bastu",
+        "warm-lead-cofounder",
+        "hemma-vinkel",
+        "nordiskt-friluftsliv"
+      ]
+    },
+    {
       "id": "nordstone",
       "company": "Nordstone Ab",
       "contact": "Leonna Aho-Ryhänen (Affärsutvecklingschef, leonna.aho-ryhanen@nordstone.fi)",

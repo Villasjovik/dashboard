@@ -330,20 +330,20 @@
       "company": "Stenbolaget",
       "contact": "Josefine Sjögren (Digital Marketing Manager)",
       "category": "Trädgård & Utomhus",
-      "status": "pitched",
+      "status": "declined",
       "value": 18500,
       "value_min": 18500,
       "value_label": "18 500 / 39 000 + 80 stenar",
       "date_contacted": "2026-04-28",
-      "date_closed": null,
+      "date_closed": "2026-05-26",
       "pitch_url": "https://villasjovik.github.io/stenbolaget/",
-      "outcome": null,
+      "outcome": "no_response",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "Inget svar på pitch sedan 2026-04-28 trots Josefines initiala intresse. Antaget nej per stale-leads-canonical (decommissioned 2026-05-26). Återupptas om Stenbolaget återkommer.",
       "followup_window": null,
-      "notes": "Inkommande svar från Josefine 2026-04-28 på Carins kalla utskick (privat mail). Pitch-vinkel: Trampåstenar som transformation. Glimmerskiffer Steppingstone art-nr 1325050, 332 kr/st retail. 80 st (Stenbolaget tillhandahåller) + 18 500 / 39 000 produktionsersättning. Audience-data inkluderad: 95,2 % kvinnor, 79 % ålder 35–64 — exakt deras retail-kund. Reframing-strategi: stenar är produktionsmaterial, inte ersättning (motverkar Stenbolagets initiala 'matcha produktvärdet till nedslag'-framing). Fall-back: full produkt-trade (~120 stenar) endast som koncession.",
-      "waiting_on": "stenbolaget-svar",
-      "last_event": "2026-04-28: samarbetsförslag mailat till Josefine via Carins privata mail (existerande tråd)"
+      "notes": "Inkommande svar från Josefine 2026-04-28 på Carins kalla utskick (privat mail). Pitch-vinkel: Trampåstenar som transformation. Glimmerskiffer Steppingstone art-nr 1325050, 332 kr/st retail. 80 st (Stenbolaget tillhandahåller) + 18 500 / 39 000 produktionsersättning. Audience-data inkluderad: 95,2 % kvinnor, 79 % ålder 35–64 — exakt deras retail-kund. Reframing-strategi: stenar är produktionsmaterial, inte ersättning (motverkar Stenbolagets initiala 'matcha produktvärdet till nedslag'-framing). Fall-back: full produkt-trade (~120 stenar) endast som koncession. 2026-05-26: Decommissionerad efter ~4 veckor utan respons.",
+      "waiting_on": null,
+      "last_event": "2026-05-26: Markerad declined/no_response — inget svar på pitch sedan 2026-04-28."
     },
     {
       "id": "grevinnans-rum",
@@ -889,21 +889,21 @@
       "company": "Skadedjursbutiken.se",
       "contact": "Sebastian Maltéus (Pest Control Nordic AB)",
       "category": "Hem & Säkerhet",
-      "status": "pitched",
+      "status": "declined",
       "value": 18500,
       "value_min": 18500,
       "value_label": "18 500 – 39 000",
       "date_contacted": "2026-04-13",
       "date_pitched": "2026-05-07",
-      "date_closed": null,
+      "date_closed": "2026-05-26",
       "pitch_url": "https://villasjovik.github.io/skadedjursbutiken/",
-      "outcome": null,
+      "outcome": "no_response",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "Sebastian svarade på pitch 2026-05-12 med motbud 25k (Carin counter 30k). Carin follow-up 2026-05-14 utan respons. Antaget nej per stale-leads-canonical (decommissioned 2026-05-26). Återupptas om Sebastian återkommer.",
       "followup_window": null,
-      "notes": "Carin kallt utskick 2026-04-13 till info@skadedjursbutiken.se (mal-story som vinkel). Sebastian Maltéus svarade 2026-05-07 12:29 (UID 1973) — bekräftar intresse, validerar mal-vinkeln explicit, ber om Carins konkreta idéer. Carin skickade pitch 2026-05-07 14:08 (826.eml) — bifogar offert + upplägg via pitchlänk. Mal-story som röd tråd, paket 18 500 kr. Sebastian svarade 2026-05-12: vill köra Kampanjpaketet (39 000 kr) men ber om 25 000 kr — first-mover-tonläge. Carin countrade 2026-05-12: möts på 30 000 kr ex moms med motivering om produktionsvärde. Carin follow-up 2026-05-14 (995.eml): kort uppföljning, 'hur går era tankar kring ett ev samarbete?'",
-      "waiting_on": "sebastians-svar-forhandling-30k",
-      "last_event": "2026-05-14 20:08: Carin follow-up (995.eml) — frågar hur tankar kring samarbete går. Prisförhandling pågår: Sebastian 25k → Carin 30k."
+      "notes": "Carin kallt utskick 2026-04-13 till info@skadedjursbutiken.se (mal-story som vinkel). Sebastian Maltéus svarade 2026-05-07 12:29 (UID 1973) — bekräftar intresse, validerar mal-vinkeln explicit, ber om Carins konkreta idéer. Carin skickade pitch 2026-05-07 14:08 (826.eml) — bifogar offert + upplägg via pitchlänk. Mal-story som röd tråd, paket 18 500 kr. Sebastian svarade 2026-05-12: vill köra Kampanjpaketet (39 000 kr) men ber om 25 000 kr — first-mover-tonläge. Carin countrade 2026-05-12: möts på 30 000 kr ex moms med motivering om produktionsvärde. Carin follow-up 2026-05-14 (995.eml): kort uppföljning, 'hur går era tankar kring ett ev samarbete?' 2026-05-26: Decommissionerad efter ~11 dagar utan respons på follow-up.",
+      "waiting_on": null,
+      "last_event": "2026-05-26: Markerad declined/no_response — Sebastian svarade inte på Carins 2026-05-14 follow-up efter prisförhandlings-counter (Sebastian 25k vs Carin 30k)."
     },
     {
       "id": "adea",
@@ -1078,7 +1078,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-25T18:30:00",
+    "updated": "2026-05-26T10:15:00",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {

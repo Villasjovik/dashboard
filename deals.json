@@ -1012,9 +1012,9 @@
     {
       "id": "hults-bruk",
       "company": "Hults Bruk (Hultafors Group)",
-      "contact": "Anders Haglund (Commercial Director, anders.haglund@hultaforsgroup.com, 0721-988 000)",
+      "contact": "Anders Haglund (Brand Manager Hultsbruk, anders.haglund@hultaforsgroup.com)",
       "category": "Trädgård & Utomhus / Handsmidda verktyg",
-      "status": "lead",
+      "status": "in_discussion",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 / 39 000",
@@ -1025,9 +1025,10 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": "Carin kallt utskick 2026-05-18 till salessupport@hultaforsgroup.com (vidarebefordrat till Anders Haglund, Commercial Director). Anders svarade 2026-05-19 — 'Jag vill gärna diskutera samarbete', föreslog Teams-möte mitten av nästa vecka. Anders på The Bushcraft Show i England 2026-05-19. Carin svarade 2026-05-19 — föreslog Teams-möte 27/5 kl 10:30 eller 16:00. Avvaktar bekräftelse. Hultafors Group ~1 800 anställda, ~$259M omsättning, 70 marknader. Commercial Director = beslutsfattare med mandat. Rekommenderat paket: 39 000 kr (3 videos + stories + 30 miljöbilder) — Hultafors Groups storlek ryms för kampanjpaketet. Vinkel: svensk heritage möter Hults Bruks 325-åriga hantverk (vedklyvning, trädgårdsarbete). Obs: ambassadör-modell (product-for-content) är deras historiska mönster — positionera Carin som content-producer med räckviddsdata, inte brand ambassador.",
-      "waiting_on": "Teams-möte 27/5 kl 10:30 — Lucas skapar Teams-inbjudan och skickar bekräftelse till Anders",
-      "last_event": "2026-05-19T12:53: Anders Haglund bekräftade 10:30 den 27/5 (2269.eml). Teams-inbjudan ska skickas av Lucas."
+      "notes": "Carin kallt utskick 2026-05-18 till salessupport@hultaforsgroup.com (vidarebefordrat till Anders Haglund, Commercial Director). Anders svarade 2026-05-19 — 'Jag vill gärna diskutera samarbete', föreslog Teams-möte mitten av nästa vecka. Anders på The Bushcraft Show i England 2026-05-19. Carin svarade 2026-05-19 — föreslog Teams-möte 27/5 kl 10:30 eller 16:00. Avvaktar bekräftelse. Hultafors Group ~1 800 anställda, ~$259M omsättning, 70 marknader. Commercial Director = beslutsfattare med mandat. Rekommenderat paket: 39 000 kr (3 videos + stories + 30 miljöbilder) — Hultafors Groups storlek ryms för kampanjpaketet. Vinkel: svensk heritage möter Hults Bruks 325-åriga hantverk (vedklyvning, trädgårdsarbete). Obs: ambassadör-modell (product-for-content) är deras historiska mönster — positionera Carin som content-producer med räckviddsdata, inte brand ambassador. | 2026-05-27 möte hade. Anders Haglund driver re-branding tillbaka till originalnamn 'Hultsbruk' (från 'Hults Bruk'/'Hultafors-yxor'). Europa-lansering okt 2026, USA klar, 330-årsjubileum 2027. VINKEL (canonical): Carin solo som protagonist — professionell vedklyvning, kvinno-narrativ, bryta könsroller. PITCH-FORMAT: icke-standard, använda RIKTIGA Hultsbruks-yxor (när de landar) → Kling AI-animation → ffmpeg frames → integrerad i pitch. META-NARRATIV (Lucas's pris-positionering): 18.5k/39k är inte dyrt om det GENERERAR intäkter — Layer-2 retargeting (25/50/75% viewer-segment + AI Static Ads via Image2). ÖPPEN FRÅGA: konverteringspunkt före okt 2026 (Hultsbruk-hemsida saknas) — pre-launch landningssida? Email-sign-up? BESLUTSKEDJA: Anders signerar pilot själv, större deals upp via Hultafors Group → Latour AB. Transcript: operational/projekt/villa-sjovik/moten/2026-05-27-hultsbruk.transcript.md. Briefing: 2026-05-27-hultsbruk-briefing.html.",
+      "waiting_on": "Maila adress för yx-leverans (draft klar). Bygga icke-standard pitch med riktiga Hultsbruks-yxor som hjälte-objekt — Kling AI-animation + ffmpeg frames. Lucas + Carin resonerar ytterligare en runda innan pitch-bygge.",
+      "last_event": "2026-05-27 10:30–11:23: Teams-möte (1h 40min). Anders bjöd in till fabriks-besök + skickar 2-3 yxor som present innan deal är signerad. Lucas-citat post-möte: 'Han var ju god. Riktigt god.' Stark match-bekräftelse, men budget är tight — pilot-format krävs.",
+      "date_met": "2026-05-27"
     },
     {
       "id": "roomvo",

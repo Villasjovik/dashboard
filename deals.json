@@ -1,6 +1,37 @@
 {
   "deals": [
     {
+      "id": "lasavonnerie-de-nyons",
+      "company": "La Savonnerie de Nyons",
+      "contact": "web team (web@lasavonneriedenyons.com, cc contact@lasavonneriedenyons.com)",
+      "category": "Skönhet & Välmående / Hantverkstvål & Provence-lifestyle",
+      "status": "pitched",
+      "value": 3500,
+      "value_min": 1650,
+      "value_currency": "EUR",
+      "value_label": "1 650 / 3 500 EUR",
+      "date_contacted": "2026-05-27",
+      "date_pitched": "2026-05-28",
+      "pitch_url": "https://villasjovik.github.io/lasavonnerie-de-nyons/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 weeks if no reply",
+      "notes": "French artisanal soap maker from Nyons, Provence (since 1592 traditions, founded 2012, MLSDN.PA on Euronext Growth). Reached out and asked explicitly for pricing + more info in casual EN with emoji. Pitch deployed 2026-05-28 — first international SEK→EUR conversion of the Skeppshult-canonical (latest Swedish design, 2026-05-26). Three tracks built around the BIO Signature trio (Lait d'Ânesse, Argan, Aloe Vera — equal-weighted commercial architecture per their own site): (1) Hands in the soil, then soap — bridge from VS garden to soap craft; (2) From Grasse to Sjövik — trio as Nordic-day scent-architecture, borrowing their own perfumer language; (3) The harvest reward — full BIO line on planting table, rough hands × silken lather; (4) Your own direction (canonical). Heritage spine = 'Since 1592', 'AOC Nyons olive oil / l'or vert de Provence', 'Master perfumers from Grasse'. Avoided lavender-cliché + Glossier-minimal positioning. Pricing EUR: Starter €1 650 / Project €3 500 (featured, reg. 4 950 €). Reach Boost +€900 for 150 000+ guaranteed impressions (Meta Ads) — totals €2 550 / €4 400. Brand logo: heritage red wordmark with olive branch traced from logo-rouge.png via potrace (1400×670 viewBox), 3D-rendered metal data-color=#C8231C (Provence-red, NOT chrome/gold — VS-gold preserved). Favicon: 917×917 PNG scraped from official site. OG image regenerated with Savonnerie wordmark + 'Since 1592 in Nyons — threaded into Villa Sjövik's garden and daily life.' Timing flag: Mother's Day window missed (their campaign wraps May 31), Father's Day mid-June / summer skincare / autumn gifting all signaled as open. Carin co-authored Track 01 (Lucas merged her input → Alt B Hybrid). Pitch-leverans-mail draft created: operational/drafts/draft-lasavonnerie-de-nyons-pitch.md — NOT sent yet, awaits Lucas approval.",
+      "waiting_on": "Lucas approves + sends pitch-leverans mail to web@lasavonneriedenyons.com",
+      "last_event": "2026-05-28: Pitch deployed to https://villasjovik.github.io/lasavonnerie-de-nyons/. Draft mail saved.",
+      "tags": [
+        "international",
+        "english-pitch",
+        "eur-pricing",
+        "skonhet-wellness",
+        "provence-heritage",
+        "artisan-soap",
+        "warm-lead",
+        "first-EN-skeppshult-canonical"
+      ]
+    },
+    {
       "id": "hott-sauna",
       "company": "HOTT Sauna (Baitbox AB)",
       "contact": "Simon (Co-Founder, support@hottsauna.com)",

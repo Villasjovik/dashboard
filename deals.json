@@ -1069,6 +1069,29 @@
       "notes": "Stenfabriken (familjeägd, Burgsvik på södra Gotland, eget stenbrott vid Hoburgen; signatur Hoburgsmarmor). Pitch byggd 2026-05-23 (Einhell-canonical, svensk, tre koncept-spår + Spår 04). 18.5/39k SEK familjeföretag-tier. Hero-logga gick igenom flera iterationer 2026-05-25 för att lösa Y-rotation perspektiv-crop (slutfix: canvas 580×330 matchar VS-höjd → shadows alignar). Slutligt mail skickat 2026-05-25 med varmare Carin-formulering — Lucas kalibrerade bort 'dröm'-vinkel som gav fel maktbalans (vi pitchar genomtänkt kampanj de ska köpa, inte ber om favör).",
       "waiting_on": "Svar från Simon Lindberg (info@stenfabriken.se)",
       "last_event": "2026-05-25: Pitch-leverans-mail skickat carin@villasjovik.se → info@stenfabriken.se (Simon Lindberg). Bekräftat via sent-mail (1520.eml). Pitch: https://villasjovik.github.io/stenfabriken/"
+    },
+    {
+      "id": "1zpresso",
+      "company": "1Zpresso",
+      "contact": "marketing@1zpresso.com (marketing-team)",
+      "category": "Kök & Dryck / Specialty Coffee / Kaffekvarnar",
+      "status": "pitched",
+      "value": 40075,
+      "value_min": 18892,
+      "value_label": "€1 650 / €3 500",
+      "value_native": "EUR",
+      "value_eur": 3500,
+      "value_min_eur": 1650,
+      "date_contacted": "2026-05-26",
+      "date_pitched": "2026-05-28",
+      "pitch_url": "https://villasjovik.github.io/1zpresso/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2 veckor om inget svar",
+      "notes": "Engelsk pitch, EUR-priser. Hero K-Ultra (Iron Grey + wood-knob). 3 koncept: Coffee as quiet / Brewed where it's used / Craft beside craft + spår 04 'Your own direction' (öppnar för ZP6 Special). Reach Boost +€900. Taiwanesisk premium kaffekvarn-tillverkare, marketing-team mailade tillbaka 2026-05-27 med konkreta frågor.",
+      "waiting_on": "1Zpresso marketing-team svar på pitch-leverans (mail-draft `operational/drafts/draft-1zpresso-pitch.md`, väntar Lucas-OK)",
+      "last_event": "2026-05-28: Pitch byggd och deployed. Mail-draft skapad — väntar Lucas-OK för utskick."
     }
   ],
   "leads_summary": {
@@ -1079,7 +1102,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-26T10:15:00",
+    "updated": "2026-05-28T08:53:26",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -1095,8 +1118,8 @@
     "schema_version": 5,
     "schema_notes": "v4 adds monthly_goals_history for multi-month view. v3 adds waiting_on + last_event. v2-fält oförändrade.",
     "updated_at": "2026-05-19T11:29:36.000Z",
-    "last_updated": "2026-05-21"
+    "last_updated": "2026-05-28"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-05-21T00:00:00Z"
+  "generated_at": "2026-05-28T08:53:26Z"
 }

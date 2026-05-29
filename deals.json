@@ -1123,6 +1123,32 @@
       "notes": "Engelsk pitch, EUR-priser. Hero K-Ultra (Iron Grey + wood-knob). 3 koncept: Coffee as quiet / Brewed where it's used / Craft beside craft + spår 04 'Your own direction' (öppnar för ZP6 Special). Reach Boost +€900. Taiwanesisk premium kaffekvarn-tillverkare, marketing-team mailade tillbaka 2026-05-27 med konkreta frågor.",
       "waiting_on": "1Zpresso marketing-team svar på pitch-leverans (mail-draft `operational/drafts/draft-1zpresso-pitch.md`, väntar Lucas-OK)",
       "last_event": "2026-05-28: Pitch byggd och deployed. Mail-draft skapad — väntar Lucas-OK för utskick."
+    },
+    {
+      "id": "navimow-segway",
+      "company": "Navimow Segway",
+      "contact": "Shea",
+      "category": "Trädgård & Utomhus",
+      "status": "negotiating",
+      "value": 25000,
+      "value_min": null,
+      "value_label": "€2 150",
+      "value_currency": "EUR",
+      "date_contacted": "2026-05-29",
+      "date_pitched": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "7 dagar",
+      "notes": "Inbound via noxinfluencer.com (Shea). Deliverables: 1 Reel + 1 Story + 14 dgr länk i bio + 30 dgr usage rights + 30 dgr ads code. Carin svarade 2026-05-29 med €2 150 / 25 000 SEK exkl. moms. Begärde matchande garagetak-tillbehör (garage shelter) som produktleverans.",
+      "waiting_on": "Shea (net.noxinfluencer.com) — svar på prisförfrågan avvaktas",
+      "last_event": "2026-05-29",
+      "tags": [
+        "kategori/tradgard-utomhus",
+        "status/negotiating",
+        "tenant/villa-sjovik"
+      ]
     }
   ],
   "leads_summary": {

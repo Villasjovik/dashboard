@@ -141,6 +141,26 @@
       "last_event": null
     },
     {
+      "id": "nordstone",
+      "company": "Nordstone",
+      "contact": "Leonna Aho-Ryhänen",
+      "category": "Trädgård & Utomhus",
+      "status": "declined",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-05-23",
+      "date_closed": "2026-05-29",
+      "pitch_url": "https://villasjovik.github.io/nordstone/",
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": "Kan inte binda sig till betalda samarbeten just nu — fokus på att bygga synlighet inför Sverige-launch september 2026. 'Vi får höras pånytt i framtiden' — öppen dörr.",
+      "followup_window": "efter september 2026 (Sverige-launch)",
+      "notes": "Personlig relation sedan Holland maj 2023 (Leonna och Carin reste tillsammans). Carin skickade kallt utskick 23/5 → Leonna svarade direkt varmt och föreslog barter/affiliate. Pitch deployad + skickad 25/5. Leonna tackade mjukt nej 29/5.",
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "einhell",
       "company": "Einhell Nordic",
       "contact": "Anna Hørby",

@@ -732,9 +732,9 @@
       "final_price": null,
       "close_reason": "Ingen betald deal. Flera mail från olika avsändare/konton tyder på bred product-seeding-kampanj — Sunseeker letar influencers att skicka gräsklippare till, inte betalt samarbete. Inte en riktig lead för oss.",
       "followup_window": null,
-      "notes": "Avböjt 2026-04-22. Seeding-flow, inte paid collab. Lärdom: inbound från utländska hardware-brands med flera senders = troligtvis produktutskick.",
-      "waiting_on": null,
-      "last_event": null
+      "notes": "Avböjt 2026-04-22. Seeding-flow, inte paid collab. Lärdom: inbound från utländska hardware-brands med flera senders = troligtvis produktutskick. ⚡ RE-ENGAGEMENT 2026-05-29: Ny kontakt Lynn via MCN/noxinfluencer.com erbjöd explicit paid collab. Carin svarade med €2 750 / 32 000 SEK exkl. moms. Avvaktar svar.",
+      "waiting_on": "Lynn (MCN/noxinfluencer.com) — prisförfrågan skickad 2026-05-29",
+      "last_event": "2026-05-29"
     },
     {
       "id": "thefriendlyhome",

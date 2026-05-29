@@ -1501,26 +1501,6 @@
       "last_event": null
     },
     {
-      "id": "hults-bruk",
-      "company": "Hults Bruk (Hultafors Group)",
-      "contact": null,
-      "category": null,
-      "status": "in_discussion",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": "Maila adress för yx-leverans (draft klar). Bygga icke-standard pitch med riktiga Hultsbruks-yxor som hjälte-objekt — Kling AI-animation + ffmpeg frames. Lucas + Carin resonerar ytterligare en runda innan pitch-bygge.",
-      "last_event": null
-    },
-    {
       "id": "mio",
       "company": "Mio",
       "contact": null,
@@ -1568,5 +1548,5 @@
     "last_updated": "2026-05-28"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-05-29T16:55:40.919Z"
+  "generated_at": "2026-05-29T17:00:56.537Z"
 }

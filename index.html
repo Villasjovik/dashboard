@@ -840,7 +840,9 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 'use strict';
 fetch('./deals.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(D=>{
 
-const ST={closed:{l:'Stängd',c:'b-closed',color:'#34d399'},contract:{l:'Avtal',c:'b-meeting',color:'#6ee7b7'},meeting:{l:'Möte',c:'b-meeting',color:'#67e8f9'},in_discussion:{l:'Dialog',c:'b-discussion',color:'#e0be6a'},negotiating:{l:'Förhandling',c:'b-discussion',color:'#f59e0b'},active:{l:'Aktiv',c:'b-meeting',color:'#67e8f9'},pitched:{l:'Offert',c:'b-pitched',color:'#fbbf24'},follow_up:{l:'Uppföljning',c:'b-discussion',color:'#e0be6a'},on_hold:{l:'Pausad',c:'b-waiting',color:'#e0be6a'},declined:{l:'Avböjd',c:'b-declined',color:'#fb7185'},lead:{l:'Lead',c:'b-pitched',color:'#a78bfa'}};
+const ST_MAP={closed:{l:'Stängd',c:'b-closed',color:'#34d399'},contract:{l:'Avtal',c:'b-meeting',color:'#6ee7b7'},meeting:{l:'Möte',c:'b-meeting',color:'#67e8f9'},in_discussion:{l:'Dialog',c:'b-discussion',color:'#e0be6a'},negotiating:{l:'Förhandling',c:'b-discussion',color:'#f59e0b'},active:{l:'Aktiv',c:'b-meeting',color:'#67e8f9'},pitched:{l:'Offert',c:'b-pitched',color:'#fbbf24'},follow_up:{l:'Uppföljning',c:'b-discussion',color:'#e0be6a'},on_hold:{l:'Pausad',c:'b-waiting',color:'#e0be6a'},declined:{l:'Avböjd',c:'b-declined',color:'#fb7185'},lead:{l:'Lead',c:'b-pitched',color:'#a78bfa'},warm_lead:{l:'Varm Lead',c:'b-discussion',color:'#fdba74'},'varm-lead':{l:'Varm Lead',c:'b-discussion',color:'#fdba74'},interested:{l:'Intresserad',c:'b-discussion',color:'#fdba74'},warm:{l:'Varm',c:'b-discussion',color:'#fdba74'},incoming:{l:'Inkommande',c:'b-pitched',color:'#c4b5fd'},contacted:{l:'Kontaktad',c:'b-pitched',color:'#a78bfa'},replied_unclear:{l:'Svar oklart',c:'b-waiting',color:'#fcd34d'}};
+const ST_FALLBACK={l:'Okänd',c:'b-waiting',color:'#9ca3af'};
+const ST=new Proxy(ST_MAP,{get:(t,k)=>{if(k in t)return t[k];if(typeof k==='string'&&k!=='constructor'){console.warn('[VS Dashboard] Unknown status:',k);return ST_FALLBACK;}return t[k];}});
 const fmt=n=>n==null?'—':n.toLocaleString('sv-SE');
 const fK=fmt;
 

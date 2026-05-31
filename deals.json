@@ -983,22 +983,22 @@
     {
       "id": "nordstone",
       "company": "Nordstone",
-      "contact": null,
-      "category": null,
+      "contact": "Leonna Aho-Ryhänen (Affärsutvecklingschef)",
+      "category": "Trädgård & Utomhus / Natursten",
       "status": "declined",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": null,
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-05-23",
       "date_closed": "2026-05-29",
-      "pitch_url": null,
+      "pitch_url": "https://villasjovik.github.io/nordstone/",
       "outcome": "postponed",
       "final_price": null,
-      "close_reason": "Kan inte binda sig till betalda samarbeten just nu — fokus på att bygga synlighet inför Sverige-launch september 2026. 'Vi får höras pånytt i framtiden' — öppen dörr.",
-      "followup_window": null,
-      "notes": null,
+      "close_reason": "Budget möjliggör ej betald kompensation. Nordstone kör bartermodell (sten mot synlighet + kampanjkod/affiliate via webbshop) + PR-byrå Trendgruppen inför höstlansering Hotel Ett Hem Stockholm 2026. Leonna tydlig: betald deal ej möjlig nu, öppen dörr post-launch.",
+      "followup_window": "post-launch höst 2026 / Q1 2027",
+      "notes": "Personlig relation sedan maj 2023 (Holland-resa). Leonna kontaktade proaktivt. Pitch deployad 2026-05-25 (vigneron-canonical, 3 spår). Barter ej aktuellt utan Lucas-beslut.",
       "waiting_on": null,
-      "last_event": null
+      "last_event": "2026-05-31 Leonna bekräftade bartermodell + höstlansering Hotel Ett Hem Stockholm (PR-byrå Trendgruppen). Draft-svar skapat."
     },
     {
       "id": "roselli",
@@ -1529,7 +1529,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-29",
+    "updated": "2026-05-31",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {

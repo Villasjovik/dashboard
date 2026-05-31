@@ -169,16 +169,16 @@
       "value": 49000,
       "value_min": 18500,
       "value_label": "per varumärke",
-      "date_contacted": "2026-05-29",
+      "date_contacted": "2026-05-31",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/dellback/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": "Multi-brand marketplace-pitch: Klepper & Klepper (ankare, efterfrågat av Gustav) + Gotlands Delikatesser + Nordic Crown + The Théa Company. Per-varumärke-prissättning. Mail-draft väntar på Lucas-OK.",
-      "waiting_on": "Lucas godkänner leverans-mail till Gustav",
-      "last_event": null
+      "notes": "Multi-brand marketplace-pitch: Klepper & Klepper (ankare, efterfrågat av Gustav) + Gotlands Delikatesser + Nordic Crown + The Théa Company. Per-varumärke-prissättning.",
+      "waiting_on": "Gustavs svar på pitch",
+      "last_event": "2026-05-31 pitch levererat via mail (Re: Samarbete)"
     },
     {
       "id": "lasavonnerie-de-nyons",

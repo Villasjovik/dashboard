@@ -217,8 +217,8 @@
       "close_reason": null,
       "followup_window": null,
       "notes": null,
-      "waiting_on": "1Zpresso marketing-team svar på pitch-leverans (mail-draft `operational/drafts/draft-1zpresso-pitch.md`, väntar Lucas-OK)",
-      "last_event": null
+      "waiting_on": "1Zpresso marketing-team svar på pitch",
+      "last_event": "2026-06-01 pitch-leverans skickad till marketing@1zpresso.com (Re: Fw: 1Zpresso × Villa Sjövik)"
     },
     {
       "id": "stenfabriken",
@@ -1569,7 +1569,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-05-31",
+    "updated": "2026-06-01",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {

@@ -1001,6 +1001,26 @@
       "last_event": "2026-05-31 Carin öppnade barter-förhandling — sten mot skräddarsytt innehållspaket (1844.eml)"
     },
     {
+      "id": "skotte-kitchen",
+      "company": "Skotte Kitchen (Skotte AB)",
+      "contact": "Linus Östlund (Affärsområdesansvarig, Linus@skotteab.com · 070-276 61 99)",
+      "category": "Trädgård & Utomhus / Modulära utomhuskök",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-06-01",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/skotte-kitchen/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Linus (Affärsområdesansvarig) svarade positivt på kallt utskick (Support@skottekitchen.se) 2026-06-01 — 'absolut intressant', bad om 2–3 konkreta innehållsidéer. Pitch skickad samma dag med 3 produktspår (01 Köket som samlar kvällen / 02 Byggd för väder och vind / 03 Bygg ditt utekök) + Ert upplägg. Skotte tillhandahåller uteköket — priser avser produktion.",
+      "waiting_on": "Linus Östlunds svar på pitch",
+      "last_event": "2026-06-01 pitch levererad via mail (Re: Sv: Skotte Kitchen x Villa Sjövik)"
+    },
+    {
       "id": "gare-landmann",
       "company": "GARE BBQ & Outdoor AB (Landmann)",
       "contact": "Jonas Anteborn (Director/Sales, jonas.anteborn@gare.se)",

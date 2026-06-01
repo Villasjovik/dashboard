@@ -1021,6 +1021,26 @@
       "last_event": "2026-06-01 pitch levererad via mail (Re: Sv: Skotte Kitchen x Villa Sjövik)"
     },
     {
+      "id": "timemore",
+      "company": "TIMEMORE Coffee Equipment",
+      "contact": "Yao Xiao (Senior Marketing Specialist, yao.xiao@timemore.com)",
+      "category": "Kaffe & Livsstil / Kaffetillbehör Premium",
+      "status": "pitched",
+      "value": 3500,
+      "value_min": 1650,
+      "value_label": "€1 650 / €3 500",
+      "date_contacted": "2026-06-01",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/timemore/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Inbound warm lead — Yao Xiao tog personligen över tråden 2026-06-01, substantiellt svar på Carins kalla utskick. Pucks Espresso Accessories Set (Orbital WDT + Gravity Distributor + tamper, Black/Walnut). EUR-prissättning inkl. full usage rights (brand-owned + paid media). 3 koncept: Three steps one morning / Honest Aesthetic Effortless / From bean to bar at home.",
+      "waiting_on": "Yao Xiaos svar på pitch",
+      "last_event": "2026-06-01 pitch levererad via mail (Re: Collaboration Proposal: TIMEMORE × Villa Sjövik)"
+    },
+    {
       "id": "gare-landmann",
       "company": "GARE BBQ & Outdoor AB (Landmann)",
       "contact": "Jonas Anteborn (Director/Sales, jonas.anteborn@gare.se)",

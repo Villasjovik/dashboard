@@ -1188,8 +1188,9 @@ regSec(3,()=>{setTimeout(()=>{
 },500)});
 
 /* ═══ TABLE ═══ */
-/* Sortering: stängda högst upp · alla aktiva som EN kronologisk grupp (nyaste offertdatum/date_pitched först, fallback kontaktdatum) · avböjda + leads i botten */
-const DEAL_TIER=s=>s==='closed'?0:s==='declined'?8:(s==='lead'||s==='warm_lead'||s==='varm-lead')?9:1;
+/* Sortering: STATUS-GRUPPER i ordning — 0=stängda · 1=pending (offert ute/förhandling) · 2=avböjda · 3=leads (tidigt skede). Inom varje grupp: nyaste offertdatum (date_pitched, fallback kontaktdatum) först. */
+const LEAD_ST=['lead','warm_lead','varm-lead','incoming','contacted','interested','warm','replied_unclear'];
+const DEAL_TIER=s=>s==='closed'?0:s==='declined'?2:LEAD_ST.includes(s)?3:1;
 function renderTbl(f,animate){
   if(animate===undefined)animate=true;
   const raw=f==='all'?D.deals:D.deals.filter(d=>d.status===f);

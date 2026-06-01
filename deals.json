@@ -208,7 +208,7 @@
       "status": "pitched",
       "value": 49000,
       "value_min": 18500,
-      "value_label": "per varumärke",
+      "value_label": "18 500 / 49 000 kr per varumärke",
       "date_contacted": "2026-05-29",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/dellback/",
@@ -306,9 +306,9 @@
       "contact": "Michaela Králová",
       "category": "Hälsa & Wellness / Rödljusterapi",
       "status": "pitched",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
+      "value": 37800,
+      "value_min": 17800,
+      "value_label": "17 800 / 37 800 kr",
       "date_contacted": "2026-05-23",
       "date_closed": null,
       "pitch_url": null,
@@ -336,7 +336,7 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": "2-3 veckor om inget svar",
-      "notes": "Inbound warm lead 2026-05-22 (Anna Hørby/Marketing Manager). Pitch deployad samma dag med vigneron-canonical + Power X-Change-vinkel. Premium-prissättning 22 500 / 118 000 SEK.",
+      "notes": "Inbound warm lead 2026-05-22 (Anna Hørby/Marketing Manager). Pitch deployad samma dag med vigneron-canonical + Power X-Change-vinkel. Prissättning 22 500 / 47 000 SEK (Startpaket / Säsongspaket, ord. 67 500 struken).",
       "waiting_on": "Annas svar på pitch",
       "last_event": null
     },
@@ -1588,5 +1588,5 @@
     "last_updated": "2026-05-28"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-01T21:14:08.170Z"
+  "generated_at": "2026-06-01T21:18:53.262Z"
 }

@@ -1001,6 +1001,26 @@
       "last_event": "2026-05-31 Carin öppnade barter-förhandling — sten mot skräddarsytt innehållspaket (1844.eml)"
     },
     {
+      "id": "gare-landmann",
+      "company": "GARE BBQ & Outdoor AB (Landmann)",
+      "contact": "Jonas Anteborn (Director/Sales, jonas.anteborn@gare.se)",
+      "category": "BBQ & Outdoor / Grill & Uteliv",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-06-01",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/landmann/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Kallt utskick 2026-05-30 till support@gare.se — vidarebefordrat internt till Jonas Anteborn (Director/Sales) som svarade 2026-06-01 positivt ('Du får gärna skicka över mer info'). Pitch levererad 2026-06-01. Tre produktspår: 01 Grillen (Rexon 6.1 PTS Cook), 02 Elden (Korreo 70 cortenstål), 03 Värmen (Sirius terrassvärmare). Startpaket 1 video (alla tre vävda) / Kampanjpaket 3 videor (en per produkt). Notering: Landmann SE IG ~2 200 följare vs VS 164k.",
+      "waiting_on": "Jonas Antaborns svar på pitch",
+      "last_event": "2026-06-01 pitch levererad via mail (Re: VB: GARE BBQ & Outdoor (Landmann) x Villa Sjövik)"
+    },
+    {
       "id": "roselli",
       "company": "Roselli",
       "contact": "Giustina Guariglia (Marketing Manager)",

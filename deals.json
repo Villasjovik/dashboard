@@ -865,20 +865,20 @@
       "company": "Skadedjursbutiken",
       "contact": "Sebastian Maltéus",
       "category": "Hem & Säkerhet",
-      "status": "declined",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
+      "status": "negotiating",
+      "value": 30000,
+      "value_min": 25000,
+      "value_label": "25 000 – 30 000",
       "date_contacted": "2026-04-13",
-      "date_closed": "2026-05-26",
+      "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/skadedjursbutiken/",
-      "outcome": "no_response",
+      "outcome": null,
       "final_price": null,
-      "close_reason": "Sebastian svarade på pitch 2026-05-12 med motbud 25k (Carin counter 30k). Carin follow-up 2026-05-14 utan respons. Antaget nej per stale-leads-canonical (decommissioned 2026-05-26). Återupptas om Sebastian återkommer.",
+      "close_reason": "Sebastian återvände 2026-06-01 efter sjukdom — bekräftar att de vill gå vidare. Ber om call denna vecka. Deal återöppnat från stale-decommission 2026-05-26.",
       "followup_window": null,
-      "notes": "Pitch 2026-05-07 — offert 18 500 kr (Paket 1) / 39 000 kr (Kampanj). Sebastian svarade 2026-05-12: vill köra Kampanjpaketet men ber om 25 000 kr. Carin countrade 30 000 kr. Carin follow-up 2026-05-14 — inväntar Sebastians svar.",
-      "waiting_on": null,
-      "last_event": null
+      "notes": "Pitch 2026-05-07 — offert 18 500 kr (Paket 1) / 39 000 kr (Kampanj). Sebastian svarade 2026-05-12: vill köra Kampanjpaketet men ber om 25 000 kr. Carin countrade 30 000 kr. Stale-decommission 2026-05-26. Sebastian återvände 2026-06-01: \"vi går gärna vidare\" + vill ha call denna vecka.",
+      "waiting_on": "Call bokas denna vecka — Carin/Lucas följer upp",
+      "last_event": "2026-06-01 Sebastian bekräftar att de vill gå vidare, ber om call"
     },
     {
       "id": "villaagarna",
@@ -1478,7 +1478,7 @@
       "followup_window": null,
       "notes": null,
       "waiting_on": "Innehållsproduktion startar efter installation 8–9 juni. Brief, kupong och schema mottagna och bekräftade. Skicka kort bekräftelsesvar (draft-pergolux-2620.md).",
-      "last_event": "2026-05-31 Tanya bekräftar flexibelt publiceringsschema — datum kan justeras vid försenad installation. Brief bekräftad skickad 2026-05-28."
+      "last_event": "2026-06-01 Tanya frågade om pergolan kommit — Carin svarade ej mottagen ännu. Leverans fortfarande väntad, installation 8–9 juni."
     },
     {
       "id": "hotel-locarno",

@@ -1188,11 +1188,12 @@ regSec(3,()=>{setTimeout(()=>{
 },500)});
 
 /* ═══ TABLE ═══ */
-const ORD={closed:0,meeting:1,negotiating:1.5,in_discussion:2,pitched:3,declined:4};
+/* Sortering: stängda högst upp · alla aktiva som EN kronologisk grupp (nyaste kontaktdatum först) · avböjda + leads i botten */
+const DEAL_TIER=s=>s==='closed'?0:s==='declined'?8:(s==='lead'||s==='warm_lead'||s==='varm-lead')?9:1;
 function renderTbl(f,animate){
   if(animate===undefined)animate=true;
   const raw=f==='all'?D.deals:D.deals.filter(d=>d.status===f);
-  const deals=[...raw].sort((a,b)=>(ORD[a.status]??9)-(ORD[b.status]??9));
+  const deals=[...raw].sort((a,b)=>{const t=DEAL_TIER(a.status)-DEAL_TIER(b.status);return t!==0?t:(b.date_contacted||'').localeCompare(a.date_contacted||'');});
   const tb=document.getElementById('tbody');tb.innerHTML='';
   deals.forEach((d,i)=>{
     const s=ST[d.status];const tr=document.createElement('tr');

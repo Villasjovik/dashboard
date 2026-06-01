@@ -824,7 +824,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 </div>
 <div class="tbl glass reveal">
   <div class="tbl-hd"><span class="label">Alla affärer</span><div class="pills"><span class="pill on" data-f="all">Alla</span><span class="pill" data-f="closed">Stängda</span><span class="pill" data-f="meeting">Möten</span><span class="pill" data-f="pitched">Offerter</span><span class="pill" data-f="lead">Leads</span><span class="pill" data-f="declined">Avböjda</span></div></div>
-  <table><thead><tr><th>Företag</th><th>Kategori</th><th>Status</th><th>Värde</th><th>Kontaktad</th><th>Pitch</th></tr></thead><tbody id="tbody"></tbody></table>
+  <table><thead><tr><th>Företag</th><th>Kategori</th><th>Status</th><th>Värde</th><th>Offert</th><th>Pitch</th></tr></thead><tbody id="tbody"></tbody></table>
 </div>
 </section>
 
@@ -1188,17 +1188,18 @@ regSec(3,()=>{setTimeout(()=>{
 },500)});
 
 /* ═══ TABLE ═══ */
-/* Sortering: stängda högst upp · alla aktiva som EN kronologisk grupp (nyaste kontaktdatum först) · avböjda + leads i botten */
+/* Sortering: stängda högst upp · alla aktiva som EN kronologisk grupp (nyaste offertdatum/date_pitched först, fallback kontaktdatum) · avböjda + leads i botten */
 const DEAL_TIER=s=>s==='closed'?0:s==='declined'?8:(s==='lead'||s==='warm_lead'||s==='varm-lead')?9:1;
 function renderTbl(f,animate){
   if(animate===undefined)animate=true;
   const raw=f==='all'?D.deals:D.deals.filter(d=>d.status===f);
-  const deals=[...raw].sort((a,b)=>{const t=DEAL_TIER(a.status)-DEAL_TIER(b.status);return t!==0?t:(b.date_contacted||'').localeCompare(a.date_contacted||'');});
+  const PD=d=>d.date_pitched||d.date_contacted||'';
+  const deals=[...raw].sort((a,b)=>{const t=DEAL_TIER(a.status)-DEAL_TIER(b.status);return t!==0?t:PD(b).localeCompare(PD(a));});
   const tb=document.getElementById('tbody');tb.innerHTML='';
   deals.forEach((d,i)=>{
     const s=ST[d.status];const tr=document.createElement('tr');
     tr.style.opacity='0';tr.style.transform='translateY(6px)';
-    tr.innerHTML='<td data-label="Företag"><span class="td-co"><span class="co-dot" style="color:'+s.color+';background:'+s.color+'"></span>'+d.company+'</span></td><td data-label="Kategori">'+d.category+'</td><td data-label="Status"><span class="badge '+s.c+'">'+s.l+'</span>'+(d.waiting_on?'<br><span class="badge b-waiting" style="margin-top:4px">⏳ '+d.waiting_on+'</span>':'')+'</td><td class="td-val" data-label="Värde">'+(d.value_label?d.value_label+' kr':d.value?fmt(d.value)+' kr':'—')+'</td><td data-label="Kontaktad">'+(d.date_contacted?d.date_contacted.slice(5).split('-').reverse().join('/'):'—')+'</td><td data-label="Pitch">'+(d.pitch_url?'<a href="'+d.pitch_url+'" target="_blank" rel="noopener" class="td-link">Visa →</a>':'—')+'</td>';
+    tr.innerHTML='<td data-label="Företag"><span class="td-co"><span class="co-dot" style="color:'+s.color+';background:'+s.color+'"></span>'+d.company+'</span></td><td data-label="Kategori">'+d.category+'</td><td data-label="Status"><span class="badge '+s.c+'">'+s.l+'</span>'+(d.waiting_on?'<br><span class="badge b-waiting" style="margin-top:4px">⏳ '+d.waiting_on+'</span>':'')+'</td><td class="td-val" data-label="Värde">'+(d.value_label?(/[A-Za-zÅÄÖåäö€]/.test(d.value_label)?d.value_label:d.value_label+' kr'):d.value?fmt(d.value)+' kr':'—')+'</td><td data-label="Offert">'+((d.date_pitched||d.date_contacted)?(d.date_pitched||d.date_contacted).slice(5).split('-').reverse().join('/'):'—')+'</td><td data-label="Pitch">'+(d.pitch_url?'<a href="'+d.pitch_url+'" target="_blank" rel="noopener" class="td-link">Visa →</a>':'—')+'</td>';
     tb.appendChild(tr);
     if(animate)setTimeout(()=>{tr.style.transition='opacity .4s var(--ease),transform .4s var(--ease)';tr.style.opacity='1';tr.style.transform='none'},25+i*40);
   });
@@ -1218,7 +1219,7 @@ const evts=[];
 D.deals.forEach(d=>{
   // Event 1: pitch/contact sent
   if(d.date_contacted){
-    evts.push({date:d.date_contacted,mood:'t-amber',text:'<strong>'+d.company+'</strong> — pitch skickad.'+(d.value_label?' '+d.value_label+' kr.':'')});
+    evts.push({date:d.date_contacted,mood:'t-amber',text:'<strong>'+d.company+'</strong> — pitch skickad.'+(d.value_label?(/[A-Za-zÅÄÖåäö€]/.test(d.value_label)?' '+d.value_label+'.':' '+d.value_label+' kr.'):'')});
   }
   // Event 2: outcome (closed or declined)
   if(d.status==='closed'&&(d.date_closed||d.date_contacted)){

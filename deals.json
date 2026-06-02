@@ -1,6 +1,48 @@
 {
   "deals": [
     {
+      "id": "bagin",
+      "company": "BAG'IN",
+      "contact": "Okänd kontaktperson (inkom via Carins privata mail)",
+      "category": "Utemöbler & Trädgård / Vädersäkra möbelskydd",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-02",
+      "date_pitched": "2026-06-02",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/bagin/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Inbound — BAG'IN kontaktade Carin via hennes privata mail (exakt datum ej angivet, loggat 2026-06-02). Vattentäta utemöbelskydd (Classic/Nordic/SunGuard), norskt ursprung/svensk marknad. Pitch byggd + deployad 2026-06-02. Spår 01 Säsongen som inte tar slut, 02 Vattnet rinner bara av (100% vattentät/UV50+), 03 En uteplats i ordning. Startpaket 18 500 / Kampanjpaket 39 000 + Reach Boost. Mail-draft redo för Lucas → Carin → vidarebefordran.",
+      "waiting_on": "Lucas ger pitch till Carin → Carin vidarebefordrar (mail-draft redo, ej skickat)",
+      "last_event": null
+    },
+    {
+      "id": "stockholms-glasbruk",
+      "company": "Stockholms Glasbruk",
+      "contact": "Mimmi (svarade 2026-06-02) · ägare Martin & Aleksandra Ehrensvärd",
+      "category": "Inredning & Design / Konst- & bruksglas (Skansen, sedan 1933)",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-05-27",
+      "date_pitched": "2026-06-02",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/stockholms-glasbruk/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Inbound-svar på Carins kalla outreach 2026-05-27 (info@stockholmsglasbruk.com). Mimmi svarade varmt 2026-06-02 och frågade om villkor/kostnad. Konst- & bruksglas sedan 1933, glashyttan på Skansen; ägare Martin & Aleksandra Ehrensvärd (beslutsfattare). Pitch byggd + deployad 2026-06-02 på Lucas SMS-idéer. Spår 01 Det dukade hemmet (Lind), 02 Modern nostalgi (Krackelerade Skolvasen), 03 Från hyttan till bordet. Logga = typografisk Didot-wordmark (kundens original för låg-res). Startpaket 18 500 / Kampanjpaket 39 000 + Reach Boost. Mail-draft redo — rikta svaret mot Martin/Aleksandra, inte bara Mimmi.",
+      "waiting_on": "Lucas/Carin skickar pitch-svar till Mimmi (mail-draft redo, ej skickat)",
+      "last_event": null
+    },
+    {
       "id": "swedishwild",
       "company": "Swedish Wild",
       "contact": "Johan Löfström <johan@swedishwild.com>",
@@ -1687,5 +1729,5 @@
     "last_updated": "2026-06-02"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-01T22:00:57.235Z"
+  "generated_at": "2026-06-02T14:26:54.000Z"
 }

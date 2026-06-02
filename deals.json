@@ -1,6 +1,27 @@
 {
   "deals": [
     {
+      "id": "swedishwild",
+      "company": "Swedish Wild",
+      "contact": "Johan Löfström <johan@swedishwild.com>",
+      "category": "Premium viltkött / Mat e-handel",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-02",
+      "date_pitched": "2026-06-02",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/swedishwild/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Carins kalla utskick till info@swedishwild.se. Johan Löfström (grundare) svarade positivt 2026-06-02 och frågade explicit efter pris. Pitch byggd och deployad samma dag. Vinkel: svenskt viltkött vildmark→bord, premium gjort självklart. Spår 01 premium på vardagsbordet (renfilé/älgentrecôte), 02 från vildmark till bord (ursprung + samiskt suovas), 03 mer än viltköttet (fjällröding, Kalix löjrom, delikatesser). Startpaket 18 500 / Kampanjpaket 39 000 + Reach Boost.",
+      "waiting_on": "Kundsvar på förslag",
+      "last_event": null
+    },
+    {
       "id": "skotte-kitchen",
       "company": "Skotte Kitchen (Skotte AB)",
       "contact": "Linus Östlund (Affärsområdesansvarig, Linus@skotteab.com / Support@skottekitchen.se)",
@@ -1647,7 +1668,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-06-01",
+    "updated": "2026-06-02",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -1663,7 +1684,7 @@
     "schema_version": 5,
     "schema_notes": "v4 adds monthly_goals_history for multi-month view. v3 adds waiting_on + last_event. v2-fält oförändrade.",
     "updated_at": "2026-05-19T11:29:36.000Z",
-    "last_updated": "2026-05-28"
+    "last_updated": "2026-06-02"
   },
   "generated_from": "wiki/entities/",
   "generated_at": "2026-06-01T22:00:57.235Z"

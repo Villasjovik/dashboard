@@ -320,7 +320,7 @@
       "company": "1Zpresso",
       "contact": "marketing@1zpresso.com",
       "category": "Kök & Dryck / Specialty Coffee / Kaffekvarnar",
-      "status": "pitched",
+      "status": "negotiating",
       "value": 37800,
       "value_min": 17800,
       "value_label": "17 800 / 37 800 kr",
@@ -333,8 +333,8 @@
       "close_reason": null,
       "followup_window": null,
       "notes": null,
-      "waiting_on": "1Zpresso marketing-team svar på pitch",
-      "last_event": null
+      "waiting_on": "Lucas — bestäm om product-for-content accepteras eller om vi håller på betalt. Draft klar: operational/drafts/draft-1zpresso-product-for-content-reply.md",
+      "last_event": "2026-06-02: Svarade på pitch — lutar mot product-for-content samarbete. IG-collaborator-önskemål bekräftat."
     },
     {
       "id": "stenfabriken",

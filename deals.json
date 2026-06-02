@@ -1,6 +1,27 @@
 {
   "deals": [
     {
+      "id": "skotte-kitchen",
+      "company": "Skotte Kitchen (Skotte AB)",
+      "contact": "Linus Östlund (Affärsområdesansvarig, Linus@skotteab.com / Support@skottekitchen.se)",
+      "category": "Trädgård & Utomhus / Modulära utomhuskök",
+      "status": "declined",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-05-30",
+      "date_pitched": "2026-06-01",
+      "date_closed": "2026-06-02",
+      "pitch_url": "https://villasjovik.github.io/skotte-kitchen/",
+      "outcome": "no_budget",
+      "final_price": null,
+      "close_reason": "Ingen budget för betalda samarbeten i år — Linus Östlund 2026-06-02. Komplimenterade pitchen ('Otrolig presentation. Snyggt.'). Potentiell lead för 2027.",
+      "followup_window": "2027-01-15",
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "louis-poulsen",
       "company": "Louis Poulsen",
       "contact": "Thea Raben (Creative Consultant, tra@louispoulsen.dk)",

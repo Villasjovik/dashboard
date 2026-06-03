@@ -1,6 +1,27 @@
 {
   "deals": [
     {
+      "id": "bluegaz",
+      "company": "Bluegaz",
+      "contact": "Niklas Månsson <info@bluegaz.se>",
+      "category": "Grill & uteliv / Gasolgrillar",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-02",
+      "date_pitched": "2026-06-03",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/bluegaz/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Premium gasolgrillar + terrassvärmare (Malmö, del av Roos-gruppen). Flaggskepp Bluegaz Z1 — Bäst i Test år efter år. Sortiment: Z1, nya X1 (2026), Kyoto Kamado, Teide terrassvärmare. Brand-blå #013A71. Egen social räckvidd liten (~12k IG / 2,5k FB) → stor reach-gap som VS (194k) fyller. Niklas svarade förutsättningslöst, flaggade tajt säsong + budget — men budget är ett val, inte hinder (Roos-gruppen). Pitch deployad 2026-06-03, klonad från stockholms-glasbruk-designen (Jun-2-canonical), dark-green/gold-palett behållen. Kund-3D-logga i metal-blå tint #4D8FD6 (true blue #013A71 för mörk på dark-green → ljusare tint för kontrast). Vinkel: Z1 (flaggskepp, Bäst i Test) + evergreen Teide för förlängd säsong (löser säsongsoron). Spår 01 Z1 i full låga, 02 Kvällen som börjar vid grillen, 03 Redo när säsongen vänder (Teide/evergreen). Featured Kampanjpaket 39 000 (ord. 55 500) — korrekt featured trots säsongsflagga, evergreen-vinkeln hanterar det; Startpaket 18 500 kvar som lägre on-ramp. Reach Boost per paket. Mail-draft redo (till Niklas info@bluegaz.se) — EJ skickat.",
+      "waiting_on": "Kundsvar på förslag (mail-draft redo, ej skickat)",
+      "last_event": null
+    },
+    {
       "id": "norlys",
       "company": "Norlys",
       "contact": "Marcus Eriksson <marcus@norlys.se>",

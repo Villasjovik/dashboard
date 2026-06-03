@@ -1,6 +1,27 @@
 {
   "deals": [
     {
+      "id": "weltevree",
+      "company": "Weltevree",
+      "contact": "Bridget van Alphen (Head of Brand) <bridget@weltevree.nl>",
+      "category": "Trädgård & uteliv / Holländsk outdoor-design (premium, EUR)",
+      "status": "pitched",
+      "value": 3500,
+      "value_min": 1650,
+      "value_label": "1 650 / 3 500 €",
+      "date_contacted": "2026-06-02",
+      "date_pitched": "2026-06-03",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/weltevree/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "INBOUND. Holländskt premium outdoor-design-hus (grundat 2007, weltevree.eu). Filosofi: 'life is about what you experience, not what you own' — uppleva naturen året runt. Flaggskepp: Dutchtub, ikonisk vedeldad hot tub (€6 495), prisbelönt, design Floris Schoonderbeek. Sortiment: Outdooroven/XL utekök, Bended-möbler, Fieldchair, Forestry Table, Stringlight/Guidelight-belysning. Nytt 2026: Gardenworks, Picket Chair. IG @weltevree ~32k. Bridget (Head of Brand) svarade 2026-06-03 på Carins kalla outreach — varmt intresserad men frågade rakt ut 'unclear what you want in return' + bjöd in till 'cool creative construction'. KÄRNA: Weltevree har INGEN svensk närvaro (inga retailers/e-tailers/ad-kanal) men vill växa i Sverige → @villasjovik är deras enda möjliga svenska kanal. VINKEL (Lucas valde hybrid): (1) premium nordiskt content de äger för egna globala kanaler + (2) publicering på VS = deras svenska marknadsingång. Engelsk pitch (lang=en), klonad från bluevua international-canonical, EUR ingen moms. Tiers: Starter €1 650 / Project €3 500 (ord. 4 950, featured) / Premium €7 000 (ord. 9 500). Reach Boost +1 000 € toggle. Spår: 01 Dutchtub through the Nordic year, 02 Fire/food/long table, 03 Slow morning outdoors, 04 Your direction. Kund-3D-logga i cream #F2EDE4 (svart wordmark osynlig på dark-green → page-ink cream, Skeppshult-precedent, ej guldad/ej fabricerad färg). VS-logga gold. Favicon + og-image regenererade från Weltevrees egna assets. Mail-draft (engelska, till Bridget) redo — EJ skickat, väntar Lucas-OK.",
+      "waiting_on": "Pitch-leverans-mail till Bridget (draft redo, ej skickat — väntar Lucas-OK)",
+      "last_event": null
+    },
+    {
       "id": "bluegaz",
       "company": "Bluegaz",
       "contact": "Niklas Månsson <info@bluegaz.se>",

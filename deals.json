@@ -1,6 +1,27 @@
 {
   "deals": [
     {
+      "id": "norlys",
+      "company": "Norlys",
+      "contact": "Marcus Eriksson <marcus@norlys.se>",
+      "category": "Utomhusbelysning / Heminredning",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-02",
+      "date_pitched": "2026-06-03",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/norlys/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2-3 veckor om inget svar",
+      "notes": "Premium skandinavisk utomhusbelysning (~30 år). Redirect: Fredrik Brugård (norlys.no) kopplade ihop med Marcus Eriksson (SE-ansvarig, marcus@norlys.se). Pitch byggd + deployad 2026-06-03, klonad från stockholms-glasbruk-designen (Jun-2-canonical), dark-green/gold-palett, kund-3D-logga i koppar #9D5E39. Vinkel: Molde/Frigga/koppar + Ny färgskala-kampanjen. Spår 01 Koppar som mörknar vackert (Molde + kopparlyktor), 02 Frigga i den blå timmen (räfflad kristallglas-kupa), 03 Den nya färgskalan ute (pollare/vägglykta i miljö). Featured Kampanjpaket 39 000 (svag B2B-social = stor reach-gap som VS fyller). Startpaket 18 500 / Kampanjpaket 39 000 (ord. 55 500) + Reach Boost per paket. Mail-draft redo (till Marcus, cc Fredrik) — EJ skickat.",
+      "waiting_on": "Kundsvar på förslag (mail-draft redo, ej skickat)",
+      "last_event": null
+    },
+    {
       "id": "bagin",
       "company": "BAG'IN",
       "contact": "Okänd kontaktperson (inkom via Carins privata mail)",

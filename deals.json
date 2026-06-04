@@ -291,8 +291,8 @@
       "close_reason": null,
       "followup_window": null,
       "notes": null,
-      "waiting_on": "Kundsvar på förslag (mail-draft redo, ej skickat)",
-      "last_event": null
+      "waiting_on": "Kundsvar på pitch-leverans (skickad 2026-06-04)",
+      "last_event": "Pitch-leverans skickad till Niklas 2026-06-04"
     },
     {
       "id": "norlys",
@@ -354,8 +354,8 @@
       "close_reason": null,
       "followup_window": null,
       "notes": null,
-      "waiting_on": "Pitch-leverans-mail till Bridget (draft redo, ej skickat — väntar Lucas-OK)",
-      "last_event": null
+      "waiting_on": "Kundsvar på pitch-leverans (skickad 2026-06-04)",
+      "last_event": "Pitch-leverans skickad till Bridget 2026-06-04"
     },
     {
       "id": "timemore",

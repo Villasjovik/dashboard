@@ -1910,6 +1910,27 @@
       "notes": "Hero: regnvattentunnan (deras egen flaggskeppsframing) → planteringsfat → kalldopp i ek. OBS: badet = KALLBAD i ek, ej varm badtunna. Mors spår validerade mot sortiment. Kontakt David Andersson (UID 2835).",
       "waiting_on": "Offert genererad + live 2026-06-08, EJ skickad — Lucas/mor granskar & skickar (draft i operational/drafts/)",
       "last_event": null
+    },
+    {
+      "id": "toolflex",
+      "company": "Toolflex",
+      "contact": "Anette Perälä",
+      "category": "Förvaring & verktyg / Made-in-Sweden tool storage (Forsheda)",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-07",
+      "date_pitched": "2026-06-08",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/toolflex/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Hero: Toolflex One (modulärt skensystem + patenterad universalhållare), Forsheda/Småland made-in-Sweden. Spår: Trädgårdsredskapen på rad / Grovköket / Patenterade hållaren i närbild. Anette bad om pris/paket/exempel/användningsrätt/Meta-retargeting + 2-3 idéer. Svensk/SEK, klonad varalovs-canonical.",
+      "waiting_on": "Offert genererad + live 2026-06-08, EJ skickad — Lucas dubbelkollar spår + korr-runda → skickar",
+      "last_event": null
     }
   ],
   "leads_summary": {

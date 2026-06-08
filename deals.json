@@ -299,10 +299,10 @@
       "company": "BAG'IN",
       "contact": "Okänd kontaktperson (inkom via Carins privata mail)",
       "category": "Utemöbler & Trädgård / Vädersäkra möbelskydd",
-      "status": "pitched",
-      "value": 39000,
+      "status": "negotiating",
+      "value": 18500,
       "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr",
+      "value_label": "18 500 kr (Startpaket)",
       "date_contacted": "2026-06-02",
       "date_pitched": "2026-06-02",
       "date_closed": null,
@@ -311,9 +311,9 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": "Inbound — BAG'IN kontaktade Carin via hennes privata mail (exakt datum ej angivet, loggat 2026-06-02). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02. Spår 01 Säsongen som inte tar slut (skydda möblerna inför säsongsskifte), 02 Vattnet rinner bara av (100% vattentät, UV50+), 03 En uteplats i ordning (förvaring). Startpaket 18 500 / Kampanjpaket 39 000 + Reach Boost. Mail-draft redo för Lucas → Carin → vidarebefordran.",
-      "waiting_on": "Carin mailar kund själv (pitch-länk levererad till Carin 2026-06-02)",
-      "last_event": null
+      "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08: Bag'in tackade JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår) — bekräftat via Lucas/Carin. Önskar publicering av VIDEON i september 2026 (exakt datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas OMGÅENDE. Fakturering: hela beloppet i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08 (operational/projekt/villa-sjovik/dokument/Samarbetsavtal_VillaSjovik_Bagin.md) — väntar Bag'ins partsuppgifter + signering. OBS: Lucas uppgav acceptansdatum 18.05, men pitchen byggdes först 2026-06-02 — datum att verifiera.",
+      "waiting_on": "Bag'ins partsuppgifter (org.nr, firmatecknare, adress, kontakt) + signering av avtal. Fakturering vid påskrivet avtal.",
+      "last_event": "Samarbetsavtal upprättat 2026-06-08 (Startpaket, faktura vid signering)"
     },
     {
       "id": "bluegaz",

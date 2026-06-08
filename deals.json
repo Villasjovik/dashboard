@@ -834,7 +834,7 @@
       "pitch_url": "https://villasjovik.github.io/habo/",
       "outcome": "postponed",
       "final_price": null,
-      "close_reason": "Robin Jonsson (Marknadschef) svarade 2026-06-08 på Carins follow-up: \\\"Som det ser ut nu så har vi inte möjligheterna nu. Men vi kan väl höras i höst när vi sätter budget för nästa år?\\\" Varm postponement — tidigare antagen no_response (decommission 2026-06-01) var bara sen svarstid. Återkoppla höst 2026 inför budget 2027.",
+      "close_reason": "Robin Jonsson (Marknadschef) svarade 2026-06-08 på Carins follow-up: ”Som det ser ut nu så har vi inte möjligheterna nu. Men vi kan väl höras i höst när vi sätter budget för nästa år?” Varm postponement — tidigare antagen no_response (decommission 2026-06-01) var bara sen svarstid. Återkoppla höst 2026 inför budget 2027.",
       "followup_window": "2026-09-01 — inför budget 2027 (Robin: höras i höst)",
       "notes": null,
       "waiting_on": null,
@@ -1813,5 +1813,5 @@
     "last_updated": "2026-06-02"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-08T12:56:59.914Z"
+  "generated_at": "2026-06-08T12:58:12.327Z"
 }

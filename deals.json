@@ -290,8 +290,8 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": null,
-      "waiting_on": "Pär-svar på förslag (mail-draft redo, Lucas mailar)",
+      "notes": "Spår omarbetade 2026-06-08 (deep-analys): Akryl mot kväll (Kuura-flaggskepp) / Kallt vatten i juli (året-runt-kyla, differentiator) / Tre rum, en tunna (Hanki). Plats-fri canonical copy, bort med sjö-/morgonljus-tema.",
+      "waiting_on": "Offert live + uppdaterad 2026-06-08 — Lucas skickar själv (draft: draft-avantopool-pitch.md om finns)",
       "last_event": null
     },
     {
@@ -1868,6 +1868,48 @@
       "notes": null,
       "waiting_on": null,
       "last_event": null
+    },
+    {
+      "id": "ajax",
+      "company": "Ajax Systems",
+      "contact": "Anastasiia Tarasenko",
+      "category": "Smart säkerhet & larm / Design-driven home security",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-04",
+      "date_pitched": "2026-06-08",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/ajax/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Hero: DoorBell (hem-/konsumentsatsning 2025-26) + Superior KeyPad Outdoor (iF Design Award 2026) + Hub/MotionProtect. Spår: Den osynliga vakten / Vem som står vid dörren / Trygghet ut i trädgården. Mail på engelska (matchar kontaktens språk). Hon bad om audience-fit/demografi/kostnad.",
+      "waiting_on": "Offert genererad + live 2026-06-08, EJ skickad — Lucas/mor granskar & skickar (draft i operational/drafts/)",
+      "last_event": null
+    },
+    {
+      "id": "varalovs",
+      "company": "Varalövs Tunnfabrik",
+      "contact": "David Andersson",
+      "category": "Trädgård & hantverk / Handgjorda ekfat (Ängelholm)",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-06",
+      "date_pitched": "2026-06-08",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/varalovs/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Hero: regnvattentunnan (deras egen flaggskeppsframing) → planteringsfat → kalldopp i ek. OBS: badet = KALLBAD i ek, ej varm badtunna. Mors spår validerade mot sortiment. Kontakt David Andersson (UID 2835).",
+      "waiting_on": "Offert genererad + live 2026-06-08, EJ skickad — Lucas/mor granskar & skickar (draft i operational/drafts/)",
+      "last_event": null
     }
   ],
   "leads_summary": {
@@ -1893,8 +1935,8 @@
     "currency": "SEK",
     "schema_version": 5,
     "schema_notes": "v4 adds monthly_goals_history for multi-month view. v3 adds waiting_on + last_event. v2-fält oförändrade.",
-    "updated_at": "2026-05-19T11:29:36.000Z",
-    "last_updated": "2026-06-02"
+    "updated_at": "2026-06-08",
+    "last_updated": "2026-06-08"
   },
   "generated_from": "wiki/entities/",
   "generated_at": "2026-06-08T13:08:50.310Z"

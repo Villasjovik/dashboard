@@ -421,6 +421,27 @@
       "last_event": null
     },
     {
+      "id": "gare",
+      "company": "GARE BBQ & Outdoor (Landmann)",
+      "contact": "Jonas Anteborn (Director/Sales)",
+      "category": "BBQ & Outdoor",
+      "status": "pitched",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-30",
+      "date_pitched": "2026-06-01",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/landmann/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": null,
+      "waiting_on": "Jonas Antaborns svar på pitch",
+      "last_event": null
+    },
+    {
       "id": "dellback",
       "company": "Dellback (Dellbacks äkta matglädje AB)",
       "contact": "Gustav Dellback",
@@ -628,6 +649,27 @@
       "followup_window": null,
       "notes": "Kampanjförslag 2026. Uppföljning på tidigare samarbete. 35k arvode + 15k Meta Ads. NIBE sagt att de återkommer i slutet av april med svar — ingen follow-up behövs innan dess.",
       "waiting_on": "Hembesök + kontakt från Tord (NIBE) — produktgenomgång planerad",
+      "last_event": null
+    },
+    {
+      "id": "limabacka-kvarn",
+      "company": "Limabacka Kvarn",
+      "contact": "Arvid Ottosson (Försäljningschef)",
+      "category": "Premium Svensk Mat — Mjöl & Bakning",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-31",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -1429,6 +1471,27 @@
       "last_event": null
     },
     {
+      "id": "wastberg",
+      "company": "Wästberg",
+      "contact": "info@wastberg.com",
+      "category": "belysning",
+      "status": "lead",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-02",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "onlinefilter",
       "company": "Onlinefilter AB",
       "contact": "Martin Gerre",
@@ -1573,6 +1636,27 @@
       "followup_window": null,
       "notes": "Carin skickade kallt utskick till Press@tekniskaverken.se 2026-05-27. Sarah Sinclair (VD, adgrabber.io) svarade 2026-06-01 och ber om EG%, räckvidd, cases och prisindikation. adgrabber.io agerar medierådgivare för Bixia/Tekniska Verken.",
       "waiting_on": "Lucas — skicka stats (EG%, räckvidd), cases och prisindikation till sarah@adgrabber.io",
+      "last_event": null
+    },
+    {
+      "id": "halsingelinnevaveri",
+      "company": "Hälsinge Linneväveri",
+      "contact": "Johanna Elveskog (ägare)",
+      "category": "Textil / Linne & Hantverk / Hälsingland",
+      "status": "warm_lead",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-27",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": null,
+      "waiting_on": "Johannas svar på mötesbegäran (telefon 10-15 min)",
       "last_event": null
     },
     {
@@ -1813,5 +1897,5 @@
     "last_updated": "2026-06-02"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-08T12:58:12.327Z"
+  "generated_at": "2026-06-08T13:08:50.310Z"
 }

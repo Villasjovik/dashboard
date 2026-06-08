@@ -1,48 +1,6 @@
 {
   "deals": [
     {
-      "id": "avantopool",
-      "company": "Avantopool (Capa Sweden)",
-      "contact": "Pär Johansson <par@capasweden.se>",
-      "category": "Kallbad & återhämtning / Premium cold-bath pools (Capa Sweden)",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr",
-      "date_contacted": "2026-06-04",
-      "date_pitched": "2026-06-04",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/avantopool/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": "2-3 veckor om inget svar",
-      "notes": "Capa Sweden = svensk distributör av Avantopool (finsktillverkade kompakta kallbadspooler, premium återhämtning). Inbound: Pär Johansson svarade 2026-06-04 på kall outreach — försiktigt intresserad ('kan vara intressant') MEN flaggade att tidigare samarbeten varit 'sisådär'. Pitch byggd konkret runt flaggskeppet Kuura för att motverka skepsisen. Flaggskepp: Kuura (Midnight Opal-akryl, +4–40°C kyl/värme, lakeside-hero), Kinos Plus (premium recovery, pekskärm+WiFi, 3 års garanti), Hanki (kompakt 39kg). Egen social liten (~2 200) → @villasjovik stort lyft + fyller content-gap (studio→lived-in lakeside). Svensk pitch, klonad bluegaz (18,5/39) + porterade fixar (linjär Meta-slider, featured tiltar inåt). Spår: 01 Gryningsdoppet, 02 Kontrasten, 03 Vardagsstyrka, 04 Ert upplägg. Kampanjpaket 39 000 featured. Mail-draft (sv) redo — EJ skickat, Lucas mailar.",
-      "waiting_on": "Pär-svar på förslag (mail-draft redo, Lucas mailar)",
-      "last_event": null
-    },
-    {
-      "id": "staltradgarden",
-      "company": "Stålträdgården (Stålhaven ApS)",
-      "contact": "Mads Jakobsen (E-commerce Director, Texta A/S) <madsjakobsen@texta.dk>",
-      "category": "Trädgård & uteliv / Corten-stål trädgårdsprodukter (DK)",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr",
-      "date_contacted": "2026-06-04",
-      "date_pitched": "2026-06-04",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/staltradgarden/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": "2-3 veckor om inget svar",
-      "notes": "Stålträdgården = svenska storefronten för dansk tillverkare Stålhaven ApS (handsvetsade Corten-stål trädgårdsprodukter, made in DK, 10 års garanti). staltradgarden.se. Inbound: Mads Jakobsen (E-commerce Director, Texta A/S) svarade 2026-06-04 (engelska): dansk brand som söker creators utomlands som sätter ansikte+röst på produkterna — creator MÅSTE synas på kamera + prata. Primärt intresserade av Partnership Ads (boostad video → räckvidd + nya följare + performance-data). Bad om rates. Engelsk pitch byggd kring Carin ON CAMERA + Meta-räckvidd-handle framed som Partnership Ads-boost (exakt Mads önskemål). Flaggskepp: Corten odlingslådor (signatur), runda odlingslådor, spegelfat/mirror pools (cinematiskt), rabattkanter. Spår: 01 Planting my dream raised bed, 02 The garden that ages beautifully, 03 Steel by the water, 04 Your direction. Campaign 39 000 featured. SEK 18,5/39 (per Lucas bluegaz-bas, trots DK-brand). Mail-draft (en) redo — EJ skickat, Lucas mailar.",
-      "waiting_on": "Mads-svar på förslag (mail-draft redo, Lucas mailar)",
-      "last_event": null
-    },
-    {
       "id": "louis-poulsen",
       "company": "Louis Poulsen",
       "contact": "Thea Raben (Creative Consultant, tra@louispoulsen.dk)",
@@ -190,6 +148,27 @@
       "last_event": null
     },
     {
+      "id": "bagin",
+      "company": "BAG'IN",
+      "contact": "Okänd kontaktperson (inkom via Carins privata mail)",
+      "category": "Utemöbler & Trädgård / Vädersäkra möbelskydd",
+      "status": "negotiating",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 kr (Startpaket)",
+      "date_contacted": "2026-06-02",
+      "date_pitched": "2026-06-02",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/bagin/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08 tackade Bag'in JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår). Önskar publicering av videon i september 2026 (datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas omgående. Fakturering i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08. OBS: acceptansdatum uppgivet som 18.05 men pitchen byggdes först 2026-06-02 — verifiera.",
+      "waiting_on": "Bag'ins partsuppgifter (org.nr, firmatecknare, adress, kontakt) + signering av avtal. Fakturering vid påskrivet avtal.",
+      "last_event": null
+    },
+    {
       "id": "navimow-segway",
       "company": "Navimow Segway",
       "contact": "Shea",
@@ -295,25 +274,46 @@
       "last_event": null
     },
     {
-      "id": "bagin",
-      "company": "BAG'IN",
-      "contact": "Okänd kontaktperson (inkom via Carins privata mail)",
-      "category": "Utemöbler & Trädgård / Vädersäkra möbelskydd",
-      "status": "negotiating",
-      "value": 18500,
+      "id": "avantopool",
+      "company": "Avantopool",
+      "contact": "Pär Johansson",
+      "category": "Kallbad & återhämtning / Premium cold-bath pools (Capa Sweden)",
+      "status": "pitched",
+      "value": 39000,
       "value_min": 18500,
-      "value_label": "18 500 kr (Startpaket)",
-      "date_contacted": "2026-06-02",
-      "date_pitched": "2026-06-02",
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-04",
+      "date_pitched": "2026-06-04",
       "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/bagin/",
+      "pitch_url": "https://villasjovik.github.io/avantopool/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08: Bag'in tackade JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår) — bekräftat via Lucas/Carin. Önskar publicering av VIDEON i september 2026 (exakt datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas OMGÅENDE. Fakturering: hela beloppet i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08 (operational/projekt/villa-sjovik/dokument/Samarbetsavtal_VillaSjovik_Bagin.md) — väntar Bag'ins partsuppgifter + signering. OBS: Lucas uppgav acceptansdatum 18.05, men pitchen byggdes först 2026-06-02 — datum att verifiera.",
-      "waiting_on": "Bag'ins partsuppgifter (org.nr, firmatecknare, adress, kontakt) + signering av avtal. Fakturering vid påskrivet avtal.",
-      "last_event": "Samarbetsavtal upprättat 2026-06-08 (Startpaket, faktura vid signering)"
+      "notes": null,
+      "waiting_on": "Pär-svar på förslag (mail-draft redo, Lucas mailar)",
+      "last_event": null
+    },
+    {
+      "id": "staltradgarden",
+      "company": "Stålträdgården",
+      "contact": "Mads Jakobsen (E-commerce Director, Texta A/S)",
+      "category": "Trädgård & uteliv / Corten-stål trädgårdsprodukter (DK)",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-04",
+      "date_pitched": "2026-06-04",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/staltradgarden/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": null,
+      "waiting_on": "Mads-svar på förslag (mail-draft redo, Lucas mailar)",
+      "last_event": null
     },
     {
       "id": "bluegaz",
@@ -334,7 +334,7 @@
       "followup_window": null,
       "notes": null,
       "waiting_on": "Kundsvar på pitch-leverans (skickad 2026-06-04)",
-      "last_event": "Pitch-leverans skickad till Niklas 2026-06-04"
+      "last_event": null
     },
     {
       "id": "norlys",
@@ -396,8 +396,8 @@
       "close_reason": null,
       "followup_window": null,
       "notes": null,
-      "waiting_on": "Kundsvar på pitch-leverans (skickad 2026-06-04)",
-      "last_event": "Pitch-leverans skickad till Bridget 2026-06-04"
+      "waiting_on": "Svar från Bo (bo@weltevree.nl) — content-kontakt under Bridgets frånvaro (mejl skickat 2026-06-08)",
+      "last_event": null
     },
     {
       "id": "timemore",
@@ -830,15 +830,15 @@
       "value_label": "18 500 / 39 000",
       "date_contacted": "2026-05-16",
       "date_pitched": "2026-05-20",
-      "date_closed": "2026-06-01",
+      "date_closed": "2026-06-08",
       "pitch_url": "https://villasjovik.github.io/habo/",
-      "outcome": "no_response",
+      "outcome": "postponed",
       "final_price": null,
-      "close_reason": "Ingen återkoppling från Robin Jonsson (Marknadschef) efter pitch 2026-05-21. Decommissionerad 2026-06-01 per stale-leads — återupptas direkt om Habo Gruppen återkommer.",
-      "followup_window": null,
+      "close_reason": "Robin Jonsson (Marknadschef) svarade 2026-06-08 på Carins follow-up: \"Som det ser ut nu så har vi inte möjligheterna nu. Men vi kan väl höras i höst när vi sätter budget för nästa år?\" Varm postponement — tidigare antagen no_response (decommission 2026-06-01) var bara sen svarstid. Återkoppla höst 2026 inför budget 2027.",
+      "followup_window": "höst 2026 / inför budget 2027",
       "notes": null,
       "waiting_on": null,
-      "last_event": null
+      "last_event": "2026-06-08: Robin svarade på follow-up — tackar nej för nu (inga möjligheter), öppnar för höst 2026 inför budget 2027."
     },
     {
       "id": "tapwell",
@@ -1794,7 +1794,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-06-03",
+    "updated": "2026-06-08",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -1813,5 +1813,5 @@
     "last_updated": "2026-06-02"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-03T14:01:36.839Z"
+  "generated_at": "2026-06-08T12:50:57.375Z"
 }

@@ -78,7 +78,7 @@
       "pitch_url": "https://villasjovik.github.io/norremarks/",
       "outcome": "signed",
       "final_price": 18500,
-      "close_reason": "SGD (Sveriges Golvdistributörer AB, org 556445-3529) signerade samarbetsavtalet 2026-06-09 via Emma Olin (Marknadskoordinator) i Oneflow. Startpaket \\\"Ett spår\\\": 18 500 kr ex moms (1 video + 2 stories + 20 miljöbilder), 50/50-betalning (9 250 + 9 250 kr ex moms), publicering september 2026, full rättighetsöverlåtelse till SGD vid full betalning. Cold outreach 19/4 → inbound 22/4 → signat efter ~7 veckors förhandling.",
+      "close_reason": "SGD (Sveriges Golvdistributörer AB, org 556445-3529) signerade samarbetsavtalet 2026-06-09 via Emma Olin (Marknadskoordinator) i Oneflow. Startpaket \\\\\\\\\\\\\\\"Ett spår\\\\\\\\\\\\\\\": 18 500 kr ex moms (1 video + 2 stories + 20 miljöbilder), 50/50-betalning (9 250 + 9 250 kr ex moms), publicering september 2026, full rättighetsöverlåtelse till SGD vid full betalning. Cold outreach 19/4 → inbound 22/4 → signat efter ~7 veckors förhandling.",
       "followup_window": null,
       "notes": "Skandinaviska mattor (SGD-ägt). Pitch skickad 2026-04-22 efter Emmas positiva svar 22/4 på kallt mail 19/4. 4 video-spår: Så enkelt är det (mätning/beställning), Sovrummets förvandling, Mjukhet i köket, Ert koncept. Paket: 18 500 SEK (1 video) / 39 000 SEK (3 videor). Emma är koordinator — behöver förankra uppåt, därför ingen bokningswidget, bara presentation att vidarebefordra.",
       "waiting_on": "SGD/Emma signerade 2026-06-09. Nästa steg (Villa Sjövik-sida): Carin motsignerar i Oneflow → fakturera 50 % deposition (9 250 kr ex moms, 14 dgr netto) → produktion startar när mattorna mottagits → 20 miljöbilder + 1 video + 2 stories, publicering september 2026.",
@@ -271,6 +271,27 @@
       "followup_window": null,
       "notes": "Pitch 2026-05-07 — offert 18 500 kr (Paket 1) / 39 000 kr (Kampanj). Sebastian svarade 2026-05-12: vill köra Kampanjpaketet men ber om 25 000 kr. Carin countrade 30 000 kr. Carin follow-up 2026-05-14 — inväntar Sebastians svar.",
       "waiting_on": "Sebastians val av mötestid — 4 alternativ skickade (Ti 2/6 11:00, Ti 2/6 13:00, On 3/6 13:00, To 4/6 14:00) via Google Meet",
+      "last_event": null
+    },
+    {
+      "id": "skelleftea-kraft",
+      "company": "Skellefteå Kraft",
+      "contact": "Simon Wiklund (Simon.Wiklund@skekraft.se)",
+      "category": "Energi & Hållbarhet",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-10",
+      "date_pitched": "2026-06-10",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/skelleftea-kraft/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "notes": "Brand-story-pitch (säljer förnybar el + smarta tjänster, inte produkter att styla). Klonad från svenska 2-pakets-mallen (Ørskov), SV/SEK. Mjuk avböjning från Simon (inte just nu, kanske senare; prisfråga) + komplimang om innehållet — pitch levererad med prisbild för framtida bruk, dörren öppen. Startpaket 18 500 / Kampanjpaket 39 000 + Reach Boost-slider. Spår: 01 Villan på grön el, 02 Smart i det tysta, 03 Hemmet i balans (+ Spår 04 Ert upplägg). Kanonisk mörkgrön/guld-tema behållet (passar grön energi, läsbarhet) — sidan recolorades EJ lila trots brand-färg #702082. VIKTIGT: Skellefteå Kraft säljer EJ längre solpaneler/laddboxar (avslutat jan 2026) — pitchen påstår aldrig det.",
+      "waiting_on": "Simon återkommer när det blir aktuellt (mjuk avböjning — årets plan satt)",
       "last_event": null
     },
     {
@@ -2004,7 +2025,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-06-09",
+    "updated": "2026-06-10",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -2023,5 +2044,5 @@
     "last_updated": "2026-06-08"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-09T12:47:36.530Z"
+  "generated_at": "2026-06-10T16:08:59.401Z"
 }

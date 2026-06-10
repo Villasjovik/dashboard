@@ -2015,6 +2015,27 @@
       "notes": null,
       "waiting_on": null,
       "last_event": null
+    },
+    {
+      "id": "stockholm-fragrance",
+      "company": "Stockholm Fragrance",
+      "contact": "Joanna Kaneteg (joanna@stockholmfragrance.com)",
+      "category": "Doft & Skönhet / Fragrance",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-10",
+      "date_pitched": "2026-06-10",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/stockholm-fragrance/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "notes": "Joanna svarade på cold outreach 2026-06-10 17:24. Carin levererade pitch samma dag 20:08.",
+      "waiting_on": "Svar från Joanna Kaneteg",
+      "last_event": null
     }
   ],
   "leads_summary": {
@@ -2040,8 +2061,8 @@
     "currency": "SEK",
     "schema_version": 5,
     "schema_notes": "v4 adds monthly_goals_history for multi-month view. v3 adds waiting_on + last_event. v2-fält oförändrade.",
-    "updated_at": "2026-06-08",
-    "last_updated": "2026-06-08"
+    "updated_at": "2026-06-10",
+    "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
   "generated_at": "2026-06-10T16:08:59.401Z"

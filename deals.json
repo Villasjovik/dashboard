@@ -17,6 +17,27 @@
       "final_price": 0,
       "close_reason": "Carin (mor) väljer att inte skicka betald offert till Louis Poulsen — prioriterar gratis samarbete / produktbyte. Pitchen byggd och sparad som intern referens men aldrig levererad. Eventuellt framtida produktbyte-samarbete via separat dialog.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-20",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-20",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Carin — skicka terms-acceptance-mail (draft klar: operational/drafts/2026-05-29-louis-poulsen-terms-acceptance.md)",
       "last_event": null
@@ -38,6 +59,27 @@
       "final_price": 0,
       "close_reason": "Produktbyte — Hellen skickar plagg mot exponering. Ingen kontant intäkt. Offert (18 500 / 39 000) skickad innan Carin pratat med mor — visade sig att det blir naturaform-utbyte, inte cash-deal.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-17",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-18",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Plagg bekräftade iväg 2026-05-28. Carin fotograferar vid hemkomst — tidigast 2026-06-08. Hellen avvaktar leverans + text för godkännande.",
       "last_event": null
@@ -59,6 +101,21 @@
       "final_price": 0,
       "close_reason": "Kontrakt signerat och bekräftat av båda parter",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-29",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-05",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Innehållsproduktion startar efter installation 8–9 juni. Brief, kupong och schema mottagna och bekräftade. Skicka kort bekräftelsesvar (draft-pergolux-2620.md).",
       "last_event": null
@@ -78,8 +135,23 @@
       "pitch_url": "https://villasjovik.github.io/norremarks/",
       "outcome": "signed",
       "final_price": 18500,
-      "close_reason": "SGD (Sveriges Golvdistributörer AB, org 556445-3529) signerade samarbetsavtalet 2026-06-09 via Emma Olin (Marknadskoordinator) i Oneflow. Startpaket \\\\\\\\\\\\\\\"Ett spår\\\\\\\\\\\\\\\": 18 500 kr ex moms (1 video + 2 stories + 20 miljöbilder), 50/50-betalning (9 250 + 9 250 kr ex moms), publicering september 2026, full rättighetsöverlåtelse till SGD vid full betalning. Cold outreach 19/4 → inbound 22/4 → signat efter ~7 veckors förhandling.",
+      "close_reason": "SGD (Sveriges Golvdistributörer AB, org 556445-3529) signerade samarbetsavtalet 2026-06-09 via Emma Olin (Marknadskoordinator) i Oneflow. Startpaket \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Ett spår\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\": 18 500 kr ex moms (1 video + 2 stories + 20 miljöbilder), 50/50-betalning (9 250 + 9 250 kr ex moms), publicering september 2026, full rättighetsöverlåtelse till SGD vid full betalning. Cold outreach 19/4 → inbound 22/4 → signat efter ~7 veckors förhandling.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-22",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-09",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": "operational/projekt/villa-sjovik/dokument/Samarbetsavtal_VillaSjovik_Norremarks_2026-06-08.pdf",
       "notes": "Skandinaviska mattor (SGD-ägt). Pitch skickad 2026-04-22 efter Emmas positiva svar 22/4 på kallt mail 19/4. 4 video-spår: Så enkelt är det (mätning/beställning), Sovrummets förvandling, Mjukhet i köket, Ert koncept. Paket: 18 500 SEK (1 video) / 39 000 SEK (3 videor). Emma är koordinator — behöver förankra uppåt, därför ingen bokningswidget, bara presentation att vidarebefordra.",
       "waiting_on": "SGD/Emma signerade 2026-06-09. Nästa steg (Villa Sjövik-sida): Carin motsignerar i Oneflow → fakturera 50 % deposition (9 250 kr ex moms, 14 dgr netto) → produktion startar när mattorna mottagits → 20 miljöbilder + 1 video + 2 stories, publicering september 2026.",
       "last_event": null
@@ -101,6 +173,21 @@
       "final_price": 39000,
       "close_reason": "3-delat paket accepterat efter call 22/4. Full pitch-pris utan prutning. Jeanette var redan varm efter pitch 10/4 — bollen låg hos henne genom hela Nordbygg-veckan och hon kom tillbaka med ja.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-09",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-04-22",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": "operational/projekt/villa-sjovik/dokument/Samarbetsavtal_VillaSjovik_JAPE.pdf",
       "notes": "Signerat 2026-04-22 efter call kl 10:00. 3 videor à 39 000 kr exkl. moms. Pitch skickad 10/4, deal stängd 22/4 (13 dagar).",
       "waiting_on": null,
       "last_event": null
@@ -122,6 +209,21 @@
       "final_price": 10000,
       "close_reason": "Förhandlad från 12 000 → 6 000 → 10 000. Kund ville bara foton, motbud utökade scope till foton + film + full nyttjanderätt.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-03-23",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-04-12",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "10 foton + 3 filmklipp + 1 redigerad film. Full nyttjanderätt.",
       "waiting_on": null,
       "last_event": null
@@ -143,6 +245,21 @@
       "final_price": 48000,
       "close_reason": "Full paket accepterat utan prutning. Avtal signerat via Scrive.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-03-20",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-04-07",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": "projekt/villa-sjovik/dokument/Samarbetsavtal_VillaSjovik_SiOOX.pdf",
       "notes": "Avtal signerat via Scrive. Del 1 av 3 filmad. WoodScan-kampanj.",
       "waiting_on": null,
       "last_event": null
@@ -164,6 +281,15 @@
       "final_price": 0,
       "close_reason": "Produktutbyte istället för kontant ersättning.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "closed",
+          "at": "2026-04-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Gratissamarbete (produktutbyte). Detaljer okända.",
       "waiting_on": null,
       "last_event": null
@@ -173,7 +299,7 @@
       "company": "BAG'IN",
       "contact": "Okänd kontaktperson (inkom via Carins privata mail)",
       "category": "Utemöbler & Trädgård / Vädersäkra möbelskydd",
-      "status": "negotiating",
+      "status": "meeting",
       "value": 18500,
       "value_min": 18500,
       "value_label": "18 500 kr (Startpaket)",
@@ -185,6 +311,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08 tackade Bag'in JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår). Önskar publicering av videon i september 2026 (datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas omgående. Fakturering i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08. OBS: acceptansdatum uppgivet som 18.05 men pitchen byggdes först 2026-06-02 — verifiera.",
       "waiting_on": "Bag'ins partsuppgifter (org.nr, firmatecknare, adress, kontakt) + signering av avtal. Fakturering vid påskrivet avtal.",
       "last_event": null
@@ -194,7 +335,7 @@
       "company": "Navimow Segway",
       "contact": "Shea",
       "category": "Trädgård & Utomhus",
-      "status": "negotiating",
+      "status": "meeting",
       "value": 23200,
       "value_min": null,
       "value_label": "23 200 kr",
@@ -206,6 +347,15 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-29",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Shea (net.noxinfluencer.com) — svar på prisförfrågan avvaktas",
       "last_event": null
@@ -215,7 +365,7 @@
       "company": "1Zpresso",
       "contact": "marketing@1zpresso.com",
       "category": "Kök & Dryck / Specialty Coffee / Kaffekvarnar",
-      "status": "negotiating",
+      "status": "meeting",
       "value": 37800,
       "value_min": 17800,
       "value_label": "17 800 / 37 800 kr",
@@ -227,6 +377,27 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-26",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-27",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-28",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas — bestäm om product-for-content accepteras eller om vi håller på betalt. Draft klar: operational/drafts/draft-1zpresso-product-for-content-reply.md",
       "last_event": null
@@ -236,7 +407,7 @@
       "company": "Skeppshult Gjuteri",
       "contact": "pelle.lonnang@skeppshult.com",
       "category": "hem-kök",
-      "status": "negotiating",
+      "status": "meeting",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 / 39 000",
@@ -248,16 +419,31 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": "Möte 2026-06-10: dealen stängd muntligt, Projektpaket 39 000 kr ex moms. Samarbetsavtal skickat via Oneflow (doc 14986006, pending signering). Produktkomplettering skickad av Carin 2026-06-10 (gryta oval 2L, Swing-serie, mortlar). Väntar produktleverans + signering → flippa till won. Meta-budget separat, VD-beslut, pending.",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-21",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
       "waiting_on": "Produktförslag mottaget 2026-06-03 (38 blåmarkerade produkter, ~18 serier). Villa Sjövik svarar Pelle (julbild-fråga + ev. byten) + bygger shoot-lista. Deal muntligt bekräftad (39k), avtal ej signerat. VD-godkännande kvarstår för ev. Meta-budget.",
-      "last_event": "2026-06-10"
+      "last_event": null
     },
     {
       "id": "skadedjursbutiken",
       "company": "Skadedjursbutiken",
       "contact": "Sebastian Maltéus",
       "category": "Hem & Säkerhet",
-      "status": "negotiating",
+      "status": "meeting",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 / 39 000",
@@ -269,8 +455,23 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-13",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-07",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Pitch 2026-05-07 — offert 18 500 kr (Paket 1) / 39 000 kr (Kampanj). Sebastian svarade 2026-05-12: vill köra Kampanjpaketet men ber om 25 000 kr. Carin countrade 30 000 kr. Carin follow-up 2026-05-14 — inväntar Sebastians svar.",
-      "waiting_on": "Sebastians val av mötestid — 4 alternativ skickade (Ti 2/6 11:00, Ti 2/6 13:00, On 3/6 13:00, To 4/6 14:00) via Google Meet",
+      "waiting_on": "Sebastians svar på avslutande uppföljning 2026-06-10 — Carin signalerade 'sista avstämning', bollen hos Sebastian att höra av sig",
       "last_event": null
     },
     {
@@ -290,8 +491,65 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-10",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-10",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Brand-story-pitch (säljer förnybar el + smarta tjänster, inte produkter att styla). Klonad från svenska 2-pakets-mallen (Ørskov), SV/SEK. Mjuk avböjning från Simon (inte just nu, kanske senare; prisfråga) + komplimang om innehållet — pitch levererad med prisbild för framtida bruk, dörren öppen. Startpaket 18 500 / Kampanjpaket 39 000 + Reach Boost-slider. Spår: 01 Villan på grön el, 02 Smart i det tysta, 03 Hemmet i balans (+ Spår 04 Ert upplägg). Kanonisk mörkgrön/guld-tema behållet (passar grön energi, läsbarhet) — sidan recolorades EJ lila trots brand-färg #702082. VIKTIGT: Skellefteå Kraft säljer EJ längre solpaneler/laddboxar (avslutat jan 2026) — pitchen påstår aldrig det.",
       "waiting_on": "Simon återkommer när det blir aktuellt (mjuk avböjning — årets plan satt)",
+      "last_event": null
+    },
+    {
+      "id": "stockholm-fragrance",
+      "company": "Stockholm Fragrance",
+      "contact": "Joanna Kaneteg",
+      "category": "Doft & Livsstil / Aroma Diffusers & Hemparfym",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-10",
+      "date_pitched": "2026-06-10",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/stockholm-fragrance/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-10",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-10",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-10",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Svar från Joanna Kaneteg (joanna@stockholmfragrance.com)",
       "last_event": null
     },
     {
@@ -311,6 +569,27 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-09",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-09",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-09",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Christoph Kobler — svar på samarbetsförslag (pitch levererad)",
       "last_event": null
@@ -332,6 +611,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -353,6 +647,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-07",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -374,6 +683,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-06",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -395,6 +719,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-04",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -416,6 +755,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-04",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-04",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Offert live + uppdaterad 2026-06-08 — Lucas skickar själv (draft: draft-avantopool-pitch.md om finns)",
       "last_event": null
@@ -437,6 +791,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-04",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -458,6 +827,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-04",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-04",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Mads-svar på förslag (mail-draft redo, Lucas mailar)",
       "last_event": null
@@ -479,6 +863,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-03",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Kundsvar på pitch-leverans (skickad 2026-06-04)",
       "last_event": null
@@ -500,6 +899,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-03",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Kundsvar på förslag (mail-draft redo, ej skickat)",
       "last_event": null
@@ -521,6 +935,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Cold outreach till info@swedishwild.se. Johan Löfström (grundare) svarade positivt 2026-06-02 och frågade explicit efter pris. Pitch byggd och deployad samma dag på vildmark→bord-vinkel. Reviderat samma dag till ETT paket — Karusellpaket 10 000 kr (10 miljöbilder som karusell, ingen video) + valfri Reach Boost. Lila Meta-sektionen borttagen.",
       "waiting_on": "Kundsvar på förslag (mail-draft redo, ej skickat)",
       "last_event": null
@@ -542,6 +971,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-03",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Svar från Bo (bo@weltevree.nl) — content-kontakt under Bridgets frånvaro (mejl skickat 2026-06-08)",
       "last_event": null
@@ -563,6 +1007,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": "2-3 veckor om inget svar",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Carin skickade kallt utskick. Yao Xiao (Senior Marketing Specialist, Shanghai HQ) tog över tråden 2026-06-01, svarade substantiellt och frågar om pris, content-koncept och usage rights för Pucks Espresso Accessories Set.",
       "waiting_on": "Yao Xiaos svar på pitch",
       "last_event": null
@@ -584,6 +1043,27 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-30",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Jonas Antaborns svar på pitch",
       "last_event": null
@@ -605,6 +1085,27 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-29",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-29",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-31",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Multi-brand marketplace-pitch: Klepper & Klepper (ankare, efterfrågat av Gustav) + Gotlands Delikatesser + Nordic Crown + The Théa Company. Per-varumärke-prissättning. Pitch levererat 2026-05-31.",
       "waiting_on": "Gustavs svar på pitch",
       "last_event": null
@@ -626,6 +1127,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-27",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-28",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Inväntar svar från kund (web@lasavonneriedenyons.com)",
       "last_event": null
@@ -647,6 +1163,27 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-27",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Carin mailar Mimmi själv (pitch-länk levererad till Carin 2026-06-02)",
       "last_event": null
@@ -668,6 +1205,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "pitched",
+          "at": "2026-05-23",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "contacted",
+          "at": "2026-05-25",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Svar från Simon Lindberg (info@stenfabriken.se)",
       "last_event": null
@@ -689,6 +1241,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": "2-3 veckor om inget svar",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-23",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-25",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Warm lead 2026-05-23 (Simon/Co-Founder Baitbox AB) — komplimerade Villa Sjöviks känsla/bildspråk, bad explicit om hemmamiljö-vinkel (\"vi själva har mest fokus på naturmiljöerna, så hemmamiljö vore fint\"). Pitch deployad 2026-05-25 med 3 koncept centrerade på hemma-kontext (trädgård/fasad/hela tomten). Klima-Therm-canonical-derivat. Priser 18 500 / 39 000.",
       "waiting_on": "Simons svar på pitch + förslag till samtal",
       "last_event": null
@@ -710,6 +1277,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": "2-3 veckor om inget svar",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-22",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-22",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Inbound warm lead 2026-05-22 (Anna Hørby/Marketing Manager). Pitch deployad samma dag med vigneron-canonical + Power X-Change-vinkel. Prissättning 22 500 / 47 000 SEK (Startpaket / Säsongspaket, ord. 67 500 struken).",
       "waiting_on": "Annas svar på pitch",
       "last_event": null
@@ -731,6 +1313,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": "2-3 veckor om inget svar",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-21",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-25",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Warm lead 2026-05-21 (Martin Gustavsson/CMO) — bad om konkreta förslag, exkluderade Kaisai. Pitch deployad 2026-05-25 med portabel AC-vinkel (Midea Portasplit, ett äkta split-system utan varmluftsslang) som komplement till befintlig NIBE-värmepump-sponsor. Single-product pitch — Argo Ulisse droppad efter Lucas-bedömning 2026-05-25 (slang-design sämre visuellt). Priser justerade till 18 500 / 39 000.",
       "waiting_on": "Martins svar på pitch",
       "last_event": null
@@ -752,6 +1349,33 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-05-27",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-30",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Anders Haglunds svar på pitch",
       "last_event": null
@@ -773,6 +1397,27 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-26",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-08",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-08",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Svar från Erica Bender Paulsson på de 2 nya idéerna (natursten mur + stålkant växthus) — 2026-05-22",
       "last_event": null
@@ -794,8 +1439,617 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-17",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Kampanjförslag 2026. Uppföljning på tidigare samarbete. 35k arvode + 15k Meta Ads. NIBE sagt att de återkommer i slutet av april med svar — ingen follow-up behövs innan dess.",
       "waiting_on": "Hembesök + kontakt från Tord (NIBE) — produktgenomgång planerad",
+      "last_event": null
+    },
+    {
+      "id": "dryboy",
+      "company": "Dryboy",
+      "contact": "Eduarda Lopes (eduarda.lopes@dryboy.com)",
+      "category": "Utemöbler & Skydd",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Carin/Lucas (besvara arvodesförfrågan)",
+      "last_event": null
+    },
+    {
+      "id": "jolie",
+      "company": "Jolie (Jolie Skin Co)",
+      "contact": "Pia (talktous@jolieskinco.com)",
+      "category": "Hudvård & Badrum",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas (beslut om Shopify Collabs-modell vs betalt samarbete)",
+      "last_event": null
+    },
+    {
+      "id": "sanova",
+      "company": "Sanova",
+      "contact": "Sara Wistrand",
+      "category": "hem-bad",
+      "status": "contacted",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-17",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-17",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "lucas-godkännande-pitch-riktning",
+      "last_event": null
+    },
+    {
+      "id": "wastberg",
+      "company": "Wästberg",
+      "contact": "info@wastberg.com",
+      "category": "belysning",
+      "status": "cold",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-02",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "onlinefilter",
+      "company": "Onlinefilter AB",
+      "contact": "Martin Gerre",
+      "category": "Hem & Bostad / Vattenlösningar",
+      "status": "cold",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-14",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-14",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas beslutar om resultatbaserat förslag ska tas fram",
+      "last_event": null
+    },
+    {
+      "id": "bloomingville",
+      "company": "Bloomingville",
+      "contact": "Kristina Høgh Borum (Press - Bloomingville A/S)",
+      "category": "inredning",
+      "status": "cold",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-07",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-07",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "sostrene-grene",
+      "company": "Søstrene Grene",
+      "contact": null,
+      "category": null,
+      "status": "cold",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-04-22",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-22",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Mail till collab@sostrenegrene.com (skickat 2026-04-23) — uppföljning ~7 dagar",
+      "last_event": null
+    },
+    {
+      "id": "freshland",
+      "company": "Fresh.Land",
+      "contact": null,
+      "category": "Mat & Livsstil",
+      "status": "cold",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-04-21",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-21",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "IG DM @freshlandofficial (skickat 2026-04-23) — uppföljning ~7 dagar",
+      "last_event": null
+    },
+    {
+      "id": "lundhags",
+      "company": "Lundhags",
+      "contact": "Matilda Zoc (Brav)",
+      "category": "Mode & Friluftsliv",
+      "status": "cold",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-04-21",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "maj 2026 (4-6 veckor från 2026-04-23)",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-21",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Soft hold — omkontakt maj 2026 med specifik moodboard",
+      "last_event": null
+    },
+    {
+      "id": "gasoltuben",
+      "company": "Gasoltuben",
+      "contact": "Oskar Eriksson",
+      "category": "utemiljö & grill",
+      "status": "cold",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-04-06",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-06",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-11",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "bixia",
+      "company": "Bixia (Tekniska Verken)",
+      "contact": "Sarah Sinclair (VD, adgrabber.io — medierådgivare för Bixia)",
+      "category": "Energi & Hållbarhet / Lokalproducerad el",
+      "status": "postponed",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-27",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-27",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Carin skickade kallt utskick till Press@tekniskaverken.se 2026-05-27. Sarah Sinclair (VD, adgrabber.io) svarade 2026-06-01 och ber om EG%, räckvidd, cases och prisindikation. adgrabber.io agerar medierådgivare för Bixia/Tekniska Verken.",
+      "waiting_on": "Lucas — skicka stats (EG%, räckvidd), cases och prisindikation till sarah@adgrabber.io",
+      "last_event": null
+    },
+    {
+      "id": "halsingelinnevaveri",
+      "company": "Hälsinge Linneväveri",
+      "contact": "Johanna Elveskog (ägare)",
+      "category": "Textil / Linne & Hantverk / Hälsingland",
+      "status": "postponed",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-27",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-27",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-30",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Johannas svar på mötesbegäran (telefon 10-15 min)",
+      "last_event": null
+    },
+    {
+      "id": "skargards",
+      "company": "Skargards Hot Tubs",
+      "contact": "Jana (PR & Marketing)",
+      "category": "Hem & Trädgård / Bastu & Wellness (Hot Tubs)",
+      "status": "postponed",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-27",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-27",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Inkommande svar på Carins utskick 2026-05-27. Jana (PR & Marketing, baserad i Tyskland) uttrycker starkt intresse — \"We'd love to explore a potential collaboration\". Frågar om platsfoton för hot tub-placering → tyder på product-gifting/ambassador-collab. Ingen pitch skickad ännu. Väntar på Lucas.",
+      "waiting_on": "Lucas beslutar om collab-typ (betald pitch vs product-placement) + skickar platsfoton till Jana",
+      "last_event": null
+    },
+    {
+      "id": "swiim",
+      "company": "SWIIM.SE (Spa Team Haninge AB)",
+      "contact": "Jonathan (Säljare, jonathan@swiim.se)",
+      "category": "Hem & Livsstil / Spa & Bad (Premium spabad & swimspa)",
+      "status": "postponed",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-24",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-24",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Carin skickade kallt utskick 2026-05-24. Jonathan (Säljare, Haninge) svarade 2026-05-25 — komplimerade Carins Instagram/sociala medier och ställde konkret fråga om samarbetsform (\"vill ni att vi ska köpa content av er och ställa ett spabad på plats?\"). Varm lead — ingen pitch ännu.",
+      "waiting_on": "Lucas bestämmer hur vi svarar på Jonathans fråga om samarbetsform",
+      "last_event": null
+    },
+    {
+      "id": "reolink",
+      "company": "Reolink",
+      "contact": "Maggie Liu (Content Marketing Manager, maggie@reolink.com) + Jeanine C. (jeanine@reolink.com)",
+      "category": "Smart Home / Säkerhetskameror",
+      "status": "postponed",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-21",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-21",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-25",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "huum",
+      "company": "HUUM",
+      "contact": "Catlin Ojamäe",
+      "category": "Hälsa & Livsstil / Bastu & Wellness",
+      "status": "postponed",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "lucas-go-ahead-pitch + svar-på-bastufråga",
+      "last_event": null
+    },
+    {
+      "id": "hotel-locarno",
+      "company": "Hôtel Locarno",
+      "contact": "Damiano Scaringi (Reservations Supervisor, booking@hotellocarno.com)",
+      "category": "Hotell / Hospitality / Rom",
+      "status": "postponed",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": null,
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "replied",
+          "at": "2026-05-22",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "mio",
+      "company": "Mio",
+      "contact": null,
+      "category": null,
+      "status": "postponed",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": null,
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "cold",
+          "at": "2026-05-18",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "frio-nordics",
+      "company": "Frio Nordics / Avintage",
+      "contact": "Barry Hammar",
+      "category": "kök & vinkyl",
+      "status": "replied_unclear",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-16",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-16",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -815,6 +2069,21 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-31",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -836,6 +2105,21 @@
       "final_price": null,
       "close_reason": "Svarade 2026-05-25: levererar normalt ej till Sverige, ger ej produkt — endast 5–15% rabatt för content. Ej betalt samarbete. Beslut att ej gå vidare, mail raderat.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-23",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Kallt utskick 2026-05-23. Svar 2026-05-25 från Lorne Atherton (sales): Sverige ej vanlig marknad, ger ej bort produkt, erbjuder 5–15% rabatt för content — kan skicka till Sverige på dessa villkor. Ej match med standard bartermodell — Lucas avgör om fortsätt/avböj.",
       "waiting_on": null,
       "last_event": null
@@ -857,6 +2141,27 @@
       "final_price": null,
       "close_reason": "no_response",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-23",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -878,6 +2183,21 @@
       "final_price": null,
       "close_reason": "Svarade 2026-05-21 positivt (ville se badrumsbilder + Carins INR-produkter) men beslut att ej gå vidare just nu — mail raderat. Reopenable om vi vill.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-21",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -899,6 +2219,33 @@
       "final_price": null,
       "close_reason": "Ingen återkoppling från Shantelle Canzanese efter pitch 2026-05-25. Decommissionerad 2026-06-01 per stale-leads — återupptas direkt om Roomvo återkommer.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-21",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-22",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-25",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -920,6 +2267,33 @@
       "final_price": null,
       "close_reason": "Ingen återkoppling från Roger Johansson efter pitch 2026-05-21. Decommissionerad 2026-06-01 per stale-leads — återupptas direkt om Roger återkommer.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-20",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-21",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-21",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -941,6 +2315,21 @@
       "final_price": null,
       "close_reason": "Svarade 2026-05-21: begränsad SE-budget, kör affiliate/paid ads istället. Ej betalt samarbete. Beslut att ej gå vidare, mail raderat.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -962,6 +2351,27 @@
       "final_price": null,
       "close_reason": "Diana de Keijzer tackade nej till betalt samarbete (Okatsune kör inte betalda samarbeten) — erbjöd gratis saxar utan obligation, Carin tackade ja 2026-05-24. Relation varm, följer @villasjovik på IG.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-18",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-24",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -983,6 +2393,21 @@
       "final_price": null,
       "close_reason": "Svarade 2026-05-18 (Cassie Babayan): arbetar ej med betalda samarbeten, endast gifting. Beslut att ej gå vidare, mail raderat.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-17",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -1004,6 +2429,21 @@
       "final_price": null,
       "close_reason": "Svarade 2026-05-18 (via Gimmersta): fullbokade på betalda samarbeten, erbjöd tapeter som produktbyte. Beslut att ej gå vidare, mail raderat.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-17",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -1025,6 +2465,33 @@
       "final_price": null,
       "close_reason": "Robin Jonsson (Marknadschef) svarade 2026-06-08 på Carins follow-up: ”Som det ser ut nu så har vi inte möjligheterna nu. Men vi kan väl höras i höst när vi sätter budget för nästa år?” Varm postponement — tidigare antagen no_response (decommission 2026-06-01) var bara sen svarstid. Återkoppla höst 2026 inför budget 2027.",
       "followup_window": "2026-09-01 — inför budget 2027 (Robin: höras i höst)",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-16",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-20",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-21",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": "2026-06-08: Robin svarade på follow-up — tackar nej för nu (inga möjligheter), öppnar för höst 2026 inför budget 2027."
@@ -1044,8 +2511,29 @@
       "pitch_url": "https://villasjovik.github.io/tapwell/",
       "outcome": "rejected",
       "final_price": null,
-      "close_reason": "Demi: ''Tyvärr jobbar vi inte med UGC i dagsläget. Skulle det vara intressant längre fram hör vi gärna av oss!'' Mjukt avslag — dörren öppen för framtiden.",
+      "close_reason": "Demi: 'Tyvärr jobbar vi inte med UGC i dagsläget. Skulle det vara intressant längre fram hör vi gärna av oss!' Mjukt avslag — dörren öppen för framtiden.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-16",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-22",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Demis svar på affärsmodell-förtydligande (mail skickat 2026-05-21 14:32)",
       "last_event": null
@@ -1065,8 +2553,23 @@
       "pitch_url": "https://villasjovik.github.io/vigneron/",
       "outcome": "no_paid_collab",
       "final_price": null,
-      "close_reason": "Jill explicit nej post-möte 2026-05-19: ''vi gör inte betalda samarbeten, byter dyr vinkyl (~45k) mot exponering''. Bad ändå om pitch som referens — Carin levererade samma dag. Räknar inte med affär. 3-mån-uppföljning planerad 2026-08-19 (Lucas avslutade öppet).",
+      "close_reason": "Jill explicit nej post-möte 2026-05-19: 'vi gör inte betalda samarbeten, byter dyr vinkyl (~45k) mot exponering'. Bad ändå om pitch som referens — Carin levererade samma dag. Räknar inte med affär. 3-mån-uppföljning planerad 2026-08-19 (Lucas avslutade öppet).",
       "followup_window": "2026-08-19",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-16",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Jills återkoppling på pitch — uppföljning planerad 2026-08-19",
       "last_event": null
@@ -1088,6 +2591,27 @@
       "final_price": null,
       "close_reason": "Andreas Karlsson tackade nej 2026-05-22 — 'kikat på ert upplägg och tackar nej'. Kort avslag utan specifik motivering.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-14",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-22",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -1109,6 +2633,33 @@
       "final_price": null,
       "close_reason": "Levererar ej till Sverige — logistik + servicecenters begränsade till USA. Steve (Bluevua PR) artigt nej 2026-05-14. Uppskattade pitch-sidan ('gorgeous'). Öppna för EU-expansion i framtiden.",
       "followup_window": "vid EU-expansion (okänt datum)",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-12",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-13",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-13",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-14",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -1130,6 +2681,27 @@
       "final_price": null,
       "close_reason": "Ingen återkoppling från Yarbos senior-team efter pitch 2026-05-16 + breakup-mail 2026-05-24. Decommissionerad 2026-06-01 per stale-leads — återupptas direkt om Yarbo återkommer.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-12",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-16",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Kallt utskick 2026-05-12. Adam (support) svarade 2026-05-15: eskalerar till senior team, hänvisade till influencer@yarbo.com. Pitch skickad 2026-05-16 direkt till influencer@yarbo.com — 3-tier EUR (€4 500 / €6 900 / €11 900), säsongs-videos + UGC vs Cinematic direction-val.",
       "waiting_on": null,
       "last_event": null
@@ -1151,6 +2723,33 @@
       "final_price": null,
       "close_reason": "Avböjde betald pricing — contra-erbjöd affiliate/provision-modell (referral code + commission + complimentary 1-year membership ~$600). Villa Sjövik arbetar inte med affiliate-modell.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-08",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-09",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-10",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-16",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -1172,6 +2771,21 @@
       "final_price": null,
       "close_reason": "Inget svar efter pitch-utskick",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-06",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "gardinova-svar",
       "last_event": null
@@ -1193,6 +2807,33 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": "August 2026",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-05",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-08",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-08",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
       "last_event": null
@@ -1212,8 +2853,41 @@
       "pitch_url": "https://villasjovik.github.io/mirka/",
       "outcome": "declined",
       "final_price": null,
-      "close_reason": "Snäv budget 2026 + målgrupp-mismatch. Li Szczepanska 2026-05-26 16:24: ''Vi har kikat lite mer... har ändå landat i att det just nu inte passar så bra. Snäv budget i år. Målgruppen du har för dina kanaler är inte heller vår primära målgrupp.'' Refererar till ''trevligt samtal i förmiddags'' — live-call dagen-D före nej-mailet. Li lämnade dörren öppen för 2027: ''eventuellt nästa år. Vi kan höras och se status längre fram.''",
+      "close_reason": "Snäv budget 2026 + målgrupp-mismatch. Li Szczepanska 2026-05-26 16:24: 'Vi har kikat lite mer... har ändå landat i att det just nu inte passar så bra. Snäv budget i år. Målgruppen du har för dina kanaler är inte heller vår primära målgrupp.' Refererar till 'trevligt samtal i förmiddags' — live-call dagen-D före nej-mailet. Li lämnade dörren öppen för 2027: 'eventuellt nästa år. Vi kan höras och se status längre fram.'",
       "followup_window": "2027-Q1",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-03",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-13",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-13",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-05-26",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-26",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas-granskning av mail-draft innan utskick till marketing.se@mirka.com",
       "last_event": null
@@ -1233,8 +2907,23 @@
       "pitch_url": "https://villasjovik.github.io/studio-vintrafors/",
       "outcome": "rejected",
       "final_price": null,
-      "close_reason": "Budget för liten i nuläget — drivs av Johanna (keramiker, lärare på sidan) + Katarina (konstnär/illustratör på heltid), gifta. Hantverksdriven, små upplagor. Förslaget ''långt över vad vi har möjlighet att investera i''. Öppna för avskalat samarbete framöver men vi går inte ner i pris (Lucas-regel: skippa hellre än att jobba billigare).",
+      "close_reason": "Budget för liten i nuläget — drivs av Johanna (keramiker, lärare på sidan) + Katarina (konstnär/illustratör på heltid), gifta. Hantverksdriven, små upplagor. Förslaget 'långt över vad vi har möjlighet att investera i'. Öppna för avskalat samarbete framöver men vi går inte ner i pris (Lucas-regel: skippa hellre än att jobba billigare).",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-29",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-04-29",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Kallt utskick 2026-04-28. Johanna svarade positivt 2026-04-29 (UID 1851), bad om priser och utökade scope explicit till multi-produkt (keramik, konstprints, målarböcker, kommande pussel utöver doftljus). Pitch deployad samma dag på vasa1628-mall (canonical), vinkel \"Från två systrars studio i Råå till Villa Sjöviks vardag\", fyra plats-fria produktbaserade spår. Beslutsfattare svarade direkt själv (Johanna + Katarina = systrar) — snabb deal-cykel möjlig.",
       "waiting_on": "studio-vintrafors-svar på samarbetsförslaget",
       "last_event": null
@@ -1256,6 +2945,21 @@
       "final_price": null,
       "close_reason": "Inget svar på pitch sedan 2026-04-28 trots Josefines initiala intresse. Antaget nej per stale-leads-canonical (decommissioned 2026-05-26). Återupptas om Stenbolaget återkommer.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-28",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-26",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Inkommande svar från Josefine Sjögren (Digital Marketing Manager) 2026-04-28 på Carins kalla utskick (privat mail). Pitch-vinkel: Trampåstenar som transformation. Glimmerskiffer Steppingstone art-nr 1325050, 332 kr/st retail. 80 st (Stenbolaget tillhandahåller) + 18 500 / 39 000 produktionsersättning. Audience-data inkluderad: 95,2 % kvinnor, 79 % ålder 35–64. Reframing-strategi: stenar = produktionsmaterial, inte ersättning. Fall-back: full produkt-trade (~120 stenar) endast som koncession.",
       "waiting_on": null,
       "last_event": null
@@ -1277,7 +2981,22 @@
       "final_price": null,
       "close_reason": "Ingen återkoppling på årsofferten (skickad 2026-05-18, follow-up 2026-05-20). Decommissionerad 2026-06-01 per stale-leads — återupptas direkt om Karin återkommer.",
       "followup_window": null,
-      "notes": "Inkommande svar 2026-04-27 (UID 1822) på kallt utskick 23/4. ''Vi är intresserade av detta. Kanske även för vårt andra märke Kostersåpa.'' Sister-brand: Kostersåpa (samma juridiska bolag — Grevinnans Rum Gränna AB). 2026-05-07: stängd som no-response. 2026-05-11: reaktiverad efter Karins svar på Carins mötes-mail. 2026-05-18: Möte hållet med Karin Egertz (ej inspelat). Pitch omstöpt till 12-mån-årssamarbete med två alternativ (22 500 / 27 500 kr/mån). Ny pitch live, väntar på återkoppling.",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-27",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Inkommande svar 2026-04-27 (UID 1822) på kallt utskick 23/4. 'Vi är intresserade av detta. Kanske även för vårt andra märke Kostersåpa.' Sister-brand: Kostersåpa (samma juridiska bolag — Grevinnans Rum Gränna AB). 2026-05-07: stängd som no-response. 2026-05-11: reaktiverad efter Karins svar på Carins mötes-mail. 2026-05-18: Möte hållet med Karin Egertz (ej inspelat). Pitch omstöpt till 12-mån-årssamarbete med två alternativ (22 500 / 27 500 kr/mån). Ny pitch live, väntar på återkoppling.",
       "waiting_on": null,
       "last_event": null
     },
@@ -1298,6 +3017,21 @@
       "final_price": null,
       "close_reason": "Ingen återkoppling på årsofferten (skickad 2026-05-18, gemensamt med Grevinnans Rum). Decommissionerad 2026-06-01 per stale-leads — återupptas direkt om Karin återkommer.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-27",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Sister-brand till Grevinnans Rum (samma juridiska bolag — Grevinnans Rum Gränna AB). Föreslogs av Grevinnans Rum i svar 2026-04-27. Pitch deployad samma dag, mailsvar gemensamt med Grevinnans Rum-pitchen. STÄNGD 2026-05-07: hon svarade inte vid uppringning. REAKTIVERAD 2026-05-18 efter möte med Karin Egertz (samma bolag som Grevinnans Rum). Pitch omstöpt till 12-mån-årssamarbete med samma två alternativ som Grevinnans Rum (22 500 / 27 500 kr/mån). Ny pitch live, väntar på återkoppling.",
       "waiting_on": null,
       "last_event": null
@@ -1319,6 +3053,21 @@
       "final_price": null,
       "close_reason": "Budget 2026 fylld — Fredrik Tambour bekräftar att upplägget ser bra ut men ryms inte i årets marknadsbudget. Ingen möjlighet att stuva om. Intresserad för 2027 — ny budget läggs till Johanna (marknadschef) under höst 2026.",
       "followup_window": "2026-09-01 — inför budget 2027 (Johanna, marknadschef)",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-27",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-11",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Inkommande samtal från Remylla (Biototal Norden AB) till Carin 2026-04-27. Pitch byggd på vasa1628-mall: Jordens hjältar / Söndagsritualen / Förvandlingen / Ert upplägg. Pitch deployad och mailad 2026-04-27. Follow-up 1 skickat 2026-05-07. 2026-05-11: Fredrik Tambour tackade nej för 2026 — budget fylld, ingen omstöpning möjlig. Öppen för 2027.",
       "waiting_on": null,
       "last_event": null
@@ -1340,7 +3089,22 @@
       "final_price": null,
       "close_reason": "Tackade nej — specifik anledning ej loggad. Tidigare timeline: Mattias var varmt intresserad efter pitch 24/4 ('mer än jag hade vågat hoppas på'), bad om att ta internt, mor skickade mötestider 27/4 (719.eml). Ingen mötesbekräftelse loggad mellan 27/4 och 18/5. Lucas-rapport 2026-05-18.",
       "followup_window": null,
-      "notes": "Världens äldsta brännvin (33% ABV, ~497 kr/Systembolaget), återskapat från fynd bärgat 1961 från regalskeppet Vasa (förlist 1628). Inbound 24/4 från Mattias (grundare/ägare) — utforskande midsommar-tanke. Tagline: ''Från djupet 1628 till ett midsommarbord 2026'' (pivoterad från Gustav Vasa/1523 till skeppets egen tidslinje). Röd tråd Nationaldagen 6 juni → midsommarafton 19 juni. 4 spår: Sveriges födelsedag, Midsommarbordet, Sommarens signatur, Ert upplägg. Paket: 18 500 SEK (1 video + 3 miljöbilder) / 39 000 SEK (3 videor + 9 miljöbilder). Producerat i linje med svensk alkohollag (25+, särskild måttfullhet, reklammärkning). Mail skickat 24/4 med länk till pitchsidan.",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-24",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-18",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Världens äldsta brännvin (33% ABV, ~497 kr/Systembolaget), återskapat från fynd bärgat 1961 från regalskeppet Vasa (förlist 1628). Inbound 24/4 från Mattias (grundare/ägare) — utforskande midsommar-tanke. Tagline: 'Från djupet 1628 till ett midsommarbord 2026' (pivoterad från Gustav Vasa/1523 till skeppets egen tidslinje). Röd tråd Nationaldagen 6 juni → midsommarafton 19 juni. 4 spår: Sveriges födelsedag, Midsommarbordet, Sommarens signatur, Ert upplägg. Paket: 18 500 SEK (1 video + 3 miljöbilder) / 39 000 SEK (3 videor + 9 miljöbilder). Producerat i linje med svensk alkohollag (25+, särskild måttfullhet, reklammärkning). Mail skickat 24/4 med länk till pitchsidan.",
       "waiting_on": null,
       "last_event": null
     },
@@ -1361,7 +3125,22 @@
       "final_price": null,
       "close_reason": "Policy mot betalda sociala medie-samarbeten. Erbjuder produktsponsring. Bildproduktions-vinkeln (foton för deras plattformar) ej adresserad av Peter — möjlig öppning kvar.",
       "followup_window": "om policy ändras / bildproduktion-intresse",
-      "notes": "Carin skickade kallt mail 21/4. Peter svarade 22/4. Följer redan @villasjovik. Vänlig ton, ''man ska aldrig säga aldrig''. Draft skickad med bildproduktions-pivot.",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-21",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-04-22",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Carin skickade kallt mail 21/4. Peter svarade 22/4. Följer redan @villasjovik. Vänlig ton, 'man ska aldrig säga aldrig'. Draft skickad med bildproduktions-pivot.",
       "waiting_on": null,
       "last_event": null
     },
@@ -1382,6 +3161,21 @@
       "final_price": null,
       "close_reason": "Connie svarade positivt 17/4 och bad om pris/upplägg, men inget svar på pitchen. Hon indikerade att Micare inte har svensk marknadsföringsbudget ännu. Behåll som varm prospect — återkom när danska bolaget etablerar svenska marknaden.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-17",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-04",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Dansk rengöring/underhåll (Naturren rensepasta, Balsam för zink/skiffer/metall). Inte aktiva på svensk marknad än — pitch formulerad som premiärsamarbete (12 500 DKK fokuspaket, 3-paket grayed out för framtida expansion). Connie svarade positivt och bad om upplägg + pris.",
       "waiting_on": null,
       "last_event": null
@@ -1403,6 +3197,21 @@
       "final_price": null,
       "close_reason": "Jessica Nordengren mailade 2026-05-12 12:31 (2051.eml): 'Vi behöver tyvärr tacka nej denna gång. Men jag behåller gärna dina uppgifter framåt då vi ser över vårt innehåll framåt hösten.' Lucas bekräftade 2026-05-12 att Jessica signalerade konkret återkomst hösten 2026 (innehållsöversyn).",
       "followup_window": "2026-09-01 — innehållsöversyn (Jessica Nordengren)",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-16",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-12",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Pitch skickad 2026-04-16. Regional Marketing Manager Northern Europe svarade positivt på Carins första utskick. Tre spår presenteras: Designintegration, Smart ekonomi, Powers Adventure. Carin har redan Zaptec Go installerad — autentisk vinkel. 2026-05-12: Jessica tackade nej via mail (2051.eml) — öppen för höst 2026.",
       "waiting_on": null,
       "last_event": null
@@ -1424,6 +3233,21 @@
       "final_price": null,
       "close_reason": "Tackade nej 2026-05-12 (detaljer ej loggade — uppdatera vid behov).",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-15",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-12",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Cold outreach 2026-04-15 nådde aldrig fram. Elin följde upp 2026-04-28 — pitchen ombyggd på stenbolaget-mall och skickad samma dag. Startpaket 18 500 / Kampanjpaket 39 000. 2026-05-12 — tackade nej.",
       "waiting_on": null,
       "last_event": null
@@ -1445,6 +3269,21 @@
       "final_price": null,
       "close_reason": "Inget svar efter pitch-utskick",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-15",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Pitch skickad 2026-04-15. Bildpaket 18 500 kr / Komplett 28 500 kr.",
       "waiting_on": null,
       "last_event": null
@@ -1466,6 +3305,21 @@
       "final_price": null,
       "close_reason": "Inget svar efter pitch-utskick",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-14",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Pitch skickad 2026-04-14. Follow-up 1 skickat 2026-05-07. Paket: 18 500 / 39 000 / 87 000 (6 mån). Inväntar svar från Shkurte.",
       "waiting_on": "shkurte-svar",
       "last_event": null
@@ -1487,6 +3341,21 @@
       "final_price": null,
       "close_reason": "Ingen betald deal. Flera mail från olika avsändare/konton tyder på bred product-seeding-kampanj — Sunseeker letar influencers att skicka gräsklippare till, inte betalt samarbete. Inte en riktig lead för oss.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-14",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-04-22",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Avböjt 2026-04-22. Seeding-flow, inte paid collab. Lärdom: inbound från utländska hardware-brands med flera senders = troligtvis produktutskick.",
       "waiting_on": "Lynn (MCN/noxinfluencer.com) — prisförfrågan skickad 2026-05-29",
       "last_event": null
@@ -1508,6 +3377,21 @@
       "final_price": null,
       "close_reason": "Inget svar trots ~22 dagar — kallt mail till info@villaagarna.se nådde aldrig fram till beslutsfattare. Lärdom: undvik info@-adresser vid nystart, hitta direktkontakt till marknadsavdelning eller medlemschef istället.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-12",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-05-04",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Kallt mail skickat till info@villaagarna.se. Break-even 50 signups.",
       "waiting_on": null,
       "last_event": null
@@ -1529,6 +3413,21 @@
       "final_price": null,
       "close_reason": "Pausar samarbeten. E-handeln lyfter inte trots paid ads/flera samarbeten — tidigare samarbete höst 2025 fick fin spridning men genererade inte köp i shopen. Måste 'knäcka koden' för sin marknad först. Varm för återkomst när tillväxt etableras.",
       "followup_window": "2026-09-01 — kolla av (varm för återkomst vid etablerad tillväxt)",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-10",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-04-21",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Catharina svarade 2026-04-21 efter Paris-resa. Hade motbjudit 3 mån × 7 000 kr 12/4, skulle avstämma med mediabyrå 23/4 men beslutade nej tidigare. Trevlig ton, välkomnar återkoppling. Pitch skickad 10/4.",
       "waiting_on": null,
       "last_event": null
@@ -1550,6 +3449,21 @@
       "final_price": null,
       "close_reason": "Tackade nej 2026-04-15. 3-pack (48k) var på bordet — specifik anledning ej angiven.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-07",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-04-15",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Tackade nej 2026-04-15. 3-pack (48k) var på bordet.",
       "waiting_on": null,
       "last_event": null
@@ -1571,6 +3485,21 @@
       "final_price": null,
       "close_reason": "Budget + redan inbokade marknadsinsatser. Varm prospect — öppnade dörr för höst 2026 med 15k budget.",
       "followup_window": "2026-09-01 — 15k budget öppnad (Sandra Jeppsson)",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-01",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "closed",
+          "at": "2026-04-14",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Avböjt pga budget. Möjligt samarbete höst 2026.",
       "waiting_on": null,
       "last_event": null
@@ -1592,6 +3521,15 @@
       "final_price": null,
       "close_reason": "Tackade nej, specifik anledning ej angiven.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-01",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": "Tackade nej.",
       "waiting_on": null,
       "last_event": null
@@ -1613,428 +3551,17 @@
       "final_price": null,
       "close_reason": "Budget möjliggör ej betald kompensation. Nordstone kör bartermodell (sten mot synlighet + kampanjkod/affiliate via webbshop) + PR-byrå Trendgruppen inför höstlansering Hotel Ett Hem Stockholm 2026. Leonna tydlig: betald deal ej möjlig nu, öppen dörr post-launch.",
       "followup_window": null,
+      "stage_history": [
+        {
+          "to": "closed",
+          "at": "2026-05-29",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
       "notes": null,
       "waiting_on": "Leonnas svar på Carins barter-motpitch (marksten + trampsten mot reels/stories)",
-      "last_event": null
-    },
-    {
-      "id": "wastberg",
-      "company": "Wästberg",
-      "contact": "info@wastberg.com",
-      "category": "belysning",
-      "status": "lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-06-02",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "onlinefilter",
-      "company": "Onlinefilter AB",
-      "contact": "Martin Gerre",
-      "category": "Hem & Bostad / Vattenlösningar",
-      "status": "lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-14",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": "Lucas beslutar om resultatbaserat förslag ska tas fram",
-      "last_event": null
-    },
-    {
-      "id": "bloomingville",
-      "company": "Bloomingville",
-      "contact": "Kristina Høgh Borum (Press - Bloomingville A/S)",
-      "category": "inredning",
-      "status": "lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-07",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "sostrene-grene",
-      "company": "Søstrene Grene",
-      "contact": null,
-      "category": null,
-      "status": "lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-04-22",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": "Mail till collab@sostrenegrene.com (skickat 2026-04-23) — uppföljning ~7 dagar",
-      "last_event": null
-    },
-    {
-      "id": "freshland",
-      "company": "Fresh.Land",
-      "contact": null,
-      "category": "Mat & Livsstil",
-      "status": "lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-04-21",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": "IG DM @freshlandofficial (skickat 2026-04-23) — uppföljning ~7 dagar",
-      "last_event": null
-    },
-    {
-      "id": "lundhags",
-      "company": "Lundhags",
-      "contact": "Matilda Zoc (Brav)",
-      "category": "Mode & Friluftsliv",
-      "status": "lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-04-21",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": "maj 2026 (4-6 veckor från 2026-04-23)",
-      "notes": null,
-      "waiting_on": "Soft hold — omkontakt maj 2026 med specifik moodboard",
-      "last_event": null
-    },
-    {
-      "id": "gasoltuben",
-      "company": "Gasoltuben",
-      "contact": "Oskar Eriksson",
-      "category": "utemiljö & grill",
-      "status": "lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-04-06",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "bixia",
-      "company": "Bixia (Tekniska Verken)",
-      "contact": "Sarah Sinclair (VD, adgrabber.io — medierådgivare för Bixia)",
-      "category": "Energi & Hållbarhet / Lokalproducerad el",
-      "status": "warm_lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-27",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": "Carin skickade kallt utskick till Press@tekniskaverken.se 2026-05-27. Sarah Sinclair (VD, adgrabber.io) svarade 2026-06-01 och ber om EG%, räckvidd, cases och prisindikation. adgrabber.io agerar medierådgivare för Bixia/Tekniska Verken.",
-      "waiting_on": "Lucas — skicka stats (EG%, räckvidd), cases och prisindikation till sarah@adgrabber.io",
-      "last_event": null
-    },
-    {
-      "id": "halsingelinnevaveri",
-      "company": "Hälsinge Linneväveri",
-      "contact": "Johanna Elveskog (ägare)",
-      "category": "Textil / Linne & Hantverk / Hälsingland",
-      "status": "warm_lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-27",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": "Johannas svar på mötesbegäran (telefon 10-15 min)",
-      "last_event": null
-    },
-    {
-      "id": "skargards",
-      "company": "Skargards Hot Tubs",
-      "contact": "Jana (PR & Marketing)",
-      "category": "Hem & Trädgård / Bastu & Wellness (Hot Tubs)",
-      "status": "warm_lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-27",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": "Inkommande svar på Carins utskick 2026-05-27. Jana (PR & Marketing, baserad i Tyskland) uttrycker starkt intresse — \"We'd love to explore a potential collaboration\". Frågar om platsfoton för hot tub-placering → tyder på product-gifting/ambassador-collab. Ingen pitch skickad ännu. Väntar på Lucas.",
-      "waiting_on": "Lucas beslutar om collab-typ (betald pitch vs product-placement) + skickar platsfoton till Jana",
-      "last_event": null
-    },
-    {
-      "id": "swiim",
-      "company": "SWIIM.SE (Spa Team Haninge AB)",
-      "contact": "Jonathan (Säljare, jonathan@swiim.se)",
-      "category": "Hem & Livsstil / Spa & Bad (Premium spabad & swimspa)",
-      "status": "warm_lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-24",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": "Carin skickade kallt utskick 2026-05-24. Jonathan (Säljare, Haninge) svarade 2026-05-25 — komplimerade Carins Instagram/sociala medier och ställde konkret fråga om samarbetsform (\"vill ni att vi ska köpa content av er och ställa ett spabad på plats?\"). Varm lead — ingen pitch ännu.",
-      "waiting_on": "Lucas bestämmer hur vi svarar på Jonathans fråga om samarbetsform",
-      "last_event": null
-    },
-    {
-      "id": "reolink",
-      "company": "Reolink",
-      "contact": "Maggie Liu (Content Marketing Manager, maggie@reolink.com) + Jeanine C. (jeanine@reolink.com)",
-      "category": "Smart Home / Säkerhetskameror",
-      "status": "warm_lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-21",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "sanova",
-      "company": "Sanova",
-      "contact": "Sara Wistrand",
-      "category": "hem-bad",
-      "status": "contacted",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-17",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": "lucas-godkännande-pitch-riktning",
-      "last_event": null
-    },
-    {
-      "id": "frio-nordics",
-      "company": "Frio Nordics / Avintage",
-      "contact": "Barry Hammar",
-      "category": "kök & vinkyl",
-      "status": "replied_unclear",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-16",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "dryboy",
-      "company": "Dryboy",
-      "contact": "Eduarda Lopes (eduarda.lopes@dryboy.com)",
-      "category": "Utemöbler & Skydd",
-      "status": "interested",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-15",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": "Carin/Lucas (besvara arvodesförfrågan)",
-      "last_event": null
-    },
-    {
-      "id": "huum",
-      "company": "HUUM",
-      "contact": "Catlin Ojamäe",
-      "category": "Hälsa & Livsstil / Bastu & Wellness",
-      "status": "warm_lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-15",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": "lucas-go-ahead-pitch + svar-på-bastufråga",
-      "last_event": null
-    },
-    {
-      "id": "jolie",
-      "company": "Jolie (Jolie Skin Co)",
-      "contact": "Pia (talktous@jolieskinco.com)",
-      "category": "Hudvård & Badrum",
-      "status": "interested",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-15",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": "Lucas (beslut om Shopify Collabs-modell vs betalt samarbete)",
-      "last_event": null
-    },
-    {
-      "id": "hotel-locarno",
-      "company": "Hôtel Locarno",
-      "contact": "Damiano Scaringi (Reservations Supervisor, booking@hotellocarno.com)",
-      "category": "Hotell / Hospitality / Rom",
-      "status": "warm_lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": null,
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "mio",
-      "company": "Mio",
-      "contact": null,
-      "category": null,
-      "status": "varm-lead",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": null,
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "stockholm-fragrance",
-      "company": "Stockholm Fragrance",
-      "contact": "Joanna Kaneteg (joanna@stockholmfragrance.com)",
-      "category": "Doft & Skönhet / Fragrance",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr",
-      "date_contacted": "2026-06-10",
-      "date_pitched": "2026-06-10",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/stockholm-fragrance/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "notes": "Joanna svarade på cold outreach 2026-06-10 17:24. Carin levererade pitch samma dag 20:08.",
-      "waiting_on": "Svar från Joanna Kaneteg",
       "last_event": null
     }
   ],
@@ -2059,11 +3586,11 @@
       }
     ],
     "currency": "SEK",
-    "schema_version": 5,
+    "schema_version": 6,
     "schema_notes": "v4 adds monthly_goals_history for multi-month view. v3 adds waiting_on + last_event. v2-fält oförändrade.",
     "updated_at": "2026-06-10",
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-10T16:08:59.401Z"
+  "generated_at": "2026-06-10T21:36:06.899Z"
 }

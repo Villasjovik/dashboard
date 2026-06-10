@@ -823,7 +823,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   <div class="lead-c reveal" style="transition-delay:.20s"><p class="lead-n" id="ln-ready" style="color:var(--gold-b)">—</p><p class="lead-l">Redo</p></div>
 </div>
 <div class="tbl glass reveal">
-  <div class="tbl-hd"><span class="label">Alla affärer</span><div class="pills"><span class="pill on" data-f="all">Alla</span><span class="pill" data-f="closed">Stängda</span><span class="pill" data-f="meeting">Möten</span><span class="pill" data-f="pitched">Offerter</span><span class="pill" data-f="lead">Leads</span><span class="pill" data-f="declined">Avböjda</span></div></div>
+  <div class="tbl-hd"><span class="label">Alla affärer</span><div class="pills"><span class="pill on" data-f="all">Alla</span><span class="pill" data-f="closed">Stängda</span><span class="pill" data-f="meeting">Möten</span><span class="pill" data-f="pitched">Offerter</span><span class="pill" data-f="cold">Kalla</span><span class="pill" data-f="postponed">Uppföljning</span><span class="pill" data-f="declined">Avböjda</span></div></div>
   <table><thead><tr><th>Företag</th><th>Kategori</th><th>Status</th><th>Värde</th><th>Offert</th><th>Pitch</th></tr></thead><tbody id="tbody"></tbody></table>
 </div>
 </section>
@@ -840,7 +840,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
 'use strict';
 fetch('./deals.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(D=>{
 
-const ST_MAP={closed:{l:'Stängd',c:'b-closed',color:'#34d399'},contract:{l:'Avtal',c:'b-meeting',color:'#6ee7b7'},meeting:{l:'Möte',c:'b-meeting',color:'#67e8f9'},in_discussion:{l:'Dialog',c:'b-discussion',color:'#e0be6a'},negotiating:{l:'Förhandling',c:'b-discussion',color:'#f59e0b'},active:{l:'Aktiv',c:'b-meeting',color:'#67e8f9'},pitched:{l:'Offert',c:'b-pitched',color:'#fbbf24'},follow_up:{l:'Uppföljning',c:'b-discussion',color:'#e0be6a'},on_hold:{l:'Pausad',c:'b-waiting',color:'#e0be6a'},declined:{l:'Avböjd',c:'b-declined',color:'#fb7185'},lead:{l:'Lead',c:'b-pitched',color:'#a78bfa'},warm_lead:{l:'Varm Lead',c:'b-discussion',color:'#fdba74'},'varm-lead':{l:'Varm Lead',c:'b-discussion',color:'#fdba74'},interested:{l:'Intresserad',c:'b-discussion',color:'#fdba74'},warm:{l:'Varm',c:'b-discussion',color:'#fdba74'},incoming:{l:'Inkommande',c:'b-pitched',color:'#c4b5fd'},contacted:{l:'Kontaktad',c:'b-pitched',color:'#a78bfa'},replied_unclear:{l:'Svar oklart',c:'b-waiting',color:'#fcd34d'}};
+const ST_MAP={closed:{l:'Stängd',c:'b-closed',color:'#34d399'},contract:{l:'Avtal',c:'b-meeting',color:'#6ee7b7'},meeting:{l:'Möte',c:'b-meeting',color:'#67e8f9'},in_discussion:{l:'Dialog',c:'b-discussion',color:'#e0be6a'},negotiating:{l:'Förhandling',c:'b-discussion',color:'#f59e0b'},active:{l:'Aktiv',c:'b-meeting',color:'#67e8f9'},pitched:{l:'Offert',c:'b-pitched',color:'#fbbf24'},follow_up:{l:'Uppföljning',c:'b-discussion',color:'#e0be6a'},on_hold:{l:'Pausad',c:'b-waiting',color:'#e0be6a'},declined:{l:'Avböjd',c:'b-declined',color:'#fb7185'},lead:{l:'Lead',c:'b-pitched',color:'#a78bfa'},warm_lead:{l:'Varm Lead',c:'b-discussion',color:'#fdba74'},'varm-lead':{l:'Varm Lead',c:'b-discussion',color:'#fdba74'},interested:{l:'Intresserad',c:'b-discussion',color:'#fdba74'},warm:{l:'Varm',c:'b-discussion',color:'#fdba74'},incoming:{l:'Inkommande',c:'b-pitched',color:'#c4b5fd'},contacted:{l:'Kontaktad',c:'b-pitched',color:'#a78bfa'},replied_unclear:{l:'Svar oklart',c:'b-waiting',color:'#fcd34d'},cold:{l:'Kall',c:'b-pitched',color:'#a78bfa'},replied:{l:'Svarat',c:'b-discussion',color:'#fdba74'},verbal_agreement:{l:'Muntligt ja',c:'b-meeting',color:'#6ee7b7'},contract_sent:{l:'Avtal skickat',c:'b-meeting',color:'#6ee7b7'},postponed:{l:'Uppföljning',c:'b-waiting',color:'#e0be6a'}};
 const ST_FALLBACK={l:'Okänd',c:'b-waiting',color:'#9ca3af'};
 const ST=new Proxy(ST_MAP,{get:(t,k)=>{if(k in t)return t[k];if(typeof k==='string'&&k!=='constructor'){console.warn('[VS Dashboard] Unknown status:',k);return ST_FALLBACK;}return t[k];}});
 const fmt=n=>n==null?'—':n.toLocaleString('sv-SE');
@@ -1189,7 +1189,7 @@ regSec(3,()=>{setTimeout(()=>{
 
 /* ═══ TABLE ═══ */
 /* Sortering: STATUS-GRUPPER i ordning — 0=stängda · 1=pending (offert ute/förhandling) · 2=avböjda · 3=leads (tidigt skede). Inom varje grupp: nyaste offertdatum (date_pitched, fallback kontaktdatum) först. */
-const LEAD_ST=['lead','warm_lead','varm-lead','incoming','contacted','interested','warm','replied_unclear'];
+const LEAD_ST=['lead','cold','replied','warm_lead','varm-lead','incoming','contacted','interested','warm','replied_unclear','postponed'];
 const DEAL_TIER=s=>s==='closed'?0:s==='declined'?2:LEAD_ST.includes(s)?3:1;
 function renderTbl(f,animate){
   if(animate===undefined)animate=true;

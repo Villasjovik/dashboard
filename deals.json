@@ -248,9 +248,9 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "notes": null,
+      "notes": "Möte 2026-06-10: dealen stängd muntligt, Projektpaket 39 000 kr ex moms. Samarbetsavtal skickat via Oneflow (doc 14986006, pending signering). Produktkomplettering skickad av Carin 2026-06-10 (gryta oval 2L, Swing-serie, mortlar). Väntar produktleverans + signering → flippa till won. Meta-budget separat, VD-beslut, pending.",
       "waiting_on": "Produktförslag mottaget 2026-06-03 (38 blåmarkerade produkter, ~18 serier). Villa Sjövik svarar Pelle (julbild-fråga + ev. byten) + bygger shoot-lista. Deal muntligt bekräftad (39k), avtal ej signerat. VD-godkännande kvarstår för ev. Meta-budget.",
-      "last_event": null
+      "last_event": "2026-06-10"
     },
     {
       "id": "skadedjursbutiken",

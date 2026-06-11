@@ -37,7 +37,7 @@
           "by": "migration"
         }
       ],
-      "signed_evidence": null,
+      "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": null,
       "waiting_on": "Carin — skicka terms-acceptance-mail (draft klar: operational/drafts/2026-05-29-louis-poulsen-terms-acceptance.md)",
       "last_event": null
@@ -79,7 +79,7 @@
           "by": "migration"
         }
       ],
-      "signed_evidence": null,
+      "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": null,
       "waiting_on": "Plagg bekräftade iväg 2026-05-28. Carin fotograferar vid hemkomst — tidigast 2026-06-08. Hellen avvaktar leverans + text för godkännande.",
       "last_event": null
@@ -115,7 +115,7 @@
           "by": "migration"
         }
       ],
-      "signed_evidence": null,
+      "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": null,
       "waiting_on": "Caption-text för Reel 13/06 skickad till Tanya 2026-06-11 för godkännande (§3). Inväntar Tanyas svar. Video skickas separat under dagen.",
       "last_event": null
@@ -223,7 +223,7 @@
           "by": "migration"
         }
       ],
-      "signed_evidence": null,
+      "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": "10 foton + 3 filmklipp + 1 redigerad film. Full nyttjanderätt.",
       "waiting_on": null,
       "last_event": null
@@ -289,7 +289,7 @@
           "by": "migration"
         }
       ],
-      "signed_evidence": null,
+      "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": "Gratissamarbete (produktutbyte). Detaljer okända.",
       "waiting_on": null,
       "last_event": null
@@ -3712,5 +3712,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-11T08:47:37.097Z"
+  "generated_at": "2026-06-11T08:56:49.652Z"
 }

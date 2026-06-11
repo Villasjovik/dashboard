@@ -295,119 +295,11 @@
       "last_event": null
     },
     {
-      "id": "bagin",
-      "company": "BAG'IN",
-      "contact": "Okänd kontaktperson (inkom via Carins privata mail)",
-      "category": "Utemöbler & Trädgård / Vädersäkra möbelskydd",
-      "status": "meeting",
-      "value": 18500,
-      "value_min": 18500,
-      "value_label": "18 500 kr (Startpaket)",
-      "date_contacted": "2026-06-02",
-      "date_pitched": "2026-06-02",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/bagin/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-02",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-02",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08 tackade Bag'in JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår). Önskar publicering av videon i september 2026 (datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas omgående. Fakturering i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08. OBS: acceptansdatum uppgivet som 18.05 men pitchen byggdes först 2026-06-02 — verifiera.",
-      "waiting_on": "Bag'ins partsuppgifter (org.nr, firmatecknare, adress, kontakt) + signering av avtal. Fakturering vid påskrivet avtal.",
-      "last_event": null
-    },
-    {
-      "id": "navimow-segway",
-      "company": "Navimow Segway",
-      "contact": "Shea",
-      "category": "Trädgård & Utomhus",
-      "status": "meeting",
-      "value": 23200,
-      "value_min": null,
-      "value_label": "23 200 kr",
-      "date_contacted": "2026-05-29",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-05-29",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Shea (net.noxinfluencer.com) — svar på prisförfrågan avvaktas",
-      "last_event": null
-    },
-    {
-      "id": "1zpresso",
-      "company": "1Zpresso",
-      "contact": "marketing@1zpresso.com",
-      "category": "Kök & Dryck / Specialty Coffee / Kaffekvarnar",
-      "status": "meeting",
-      "value": 37800,
-      "value_min": 17800,
-      "value_label": "17 800 / 37 800 kr",
-      "date_contacted": "2026-05-26",
-      "date_pitched": "2026-05-28",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/1zpresso/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-05-26",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "replied",
-          "at": "2026-05-27",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-05-28",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Lucas — bestäm om product-for-content accepteras eller om vi håller på betalt. Draft klar: operational/drafts/draft-1zpresso-product-for-content-reply.md",
-      "last_event": null
-    },
-    {
       "id": "skeppshult",
       "company": "Skeppshult Gjuteri",
       "contact": "pelle.lonnang@skeppshult.com",
       "category": "hem-kök",
-      "status": "meeting",
+      "status": "contract_sent",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 / 39 000",
@@ -431,12 +323,60 @@
           "at": "2026-05-21",
           "evidence": null,
           "by": "migration"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-06-11",
+          "evidence": null,
+          "by": "lucas"
         }
       ],
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Pelle svarade 2026-06-11 — bekräftar produkter + invänder mot förskottsbetalning (§4). Föreslår delfakturor (en per film, 13 000 kr/st) eller faktura vid leverans. Draft + reviderat avtal väntar Lucas-OK: operational/drafts/2026-06-11-skeppshult-betalningsvillkor.md",
-      "last_event": "2026-06-11"
+      "last_event": null
+    },
+    {
+      "id": "bagin",
+      "company": "BAG'IN",
+      "contact": "Okänd kontaktperson (inkom via Carins privata mail)",
+      "category": "Utemöbler & Trädgård / Vädersäkra möbelskydd",
+      "status": "verbal_agreement",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 kr (Startpaket)",
+      "date_contacted": "2026-06-02",
+      "date_pitched": "2026-06-02",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/bagin/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-06-11",
+          "evidence": null,
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08 tackade Bag'in JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår). Önskar publicering av videon i september 2026 (datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas omgående. Fakturering i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08. OBS: acceptansdatum uppgivet som 18.05 men pitchen byggdes först 2026-06-02 — verifiera.",
+      "waiting_on": "Bag'ins partsuppgifter (org.nr, firmatecknare, adress, kontakt) + signering av avtal. Fakturering vid påskrivet avtal.",
+      "last_event": null
     },
     {
       "id": "skadedjursbutiken",
@@ -1189,6 +1129,54 @@
       "last_event": null
     },
     {
+      "id": "1zpresso",
+      "company": "1Zpresso",
+      "contact": "marketing@1zpresso.com",
+      "category": "Kök & Dryck / Specialty Coffee / Kaffekvarnar",
+      "status": "pitched",
+      "value": 37800,
+      "value_min": 17800,
+      "value_label": "17 800 / 37 800 kr",
+      "date_contacted": "2026-05-26",
+      "date_pitched": "2026-05-28",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/1zpresso/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-26",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-27",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-28",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-11",
+          "evidence": null,
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas — bestäm om product-for-content accepteras eller om vi håller på betalt. Draft klar: operational/drafts/draft-1zpresso-product-for-content-reply.md",
+      "last_event": null
+    },
+    {
       "id": "stenfabriken",
       "company": "Stenfabriken (Gotlands Kalkstensfabrik AB)",
       "contact": "Simon Lindberg (info@stenfabriken.se)",
@@ -1450,78 +1438,6 @@
       "signed_evidence": null,
       "notes": "Kampanjförslag 2026. Uppföljning på tidigare samarbete. 35k arvode + 15k Meta Ads. NIBE sagt att de återkommer i slutet av april med svar — ingen follow-up behövs innan dess.",
       "waiting_on": "Hembesök + kontakt från Tord (NIBE) — produktgenomgång planerad",
-      "last_event": null
-    },
-    {
-      "id": "dryboy",
-      "company": "Dryboy",
-      "contact": "Eduarda Lopes (eduarda.lopes@dryboy.com)",
-      "category": "Utemöbler & Skydd",
-      "status": "interested",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-15",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-05-15",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "replied",
-          "at": "2026-05-15",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Carin/Lucas (besvara arvodesförfrågan)",
-      "last_event": null
-    },
-    {
-      "id": "jolie",
-      "company": "Jolie (Jolie Skin Co)",
-      "contact": "Pia (talktous@jolieskinco.com)",
-      "category": "Hudvård & Badrum",
-      "status": "interested",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-05-15",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-05-15",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "replied",
-          "at": "2026-05-15",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Lucas (beslut om Shopify Collabs-modell vs betalt samarbete)",
       "last_event": null
     },
     {
@@ -2089,6 +2005,42 @@
       "last_event": null
     },
     {
+      "id": "navimow-segway",
+      "company": "Navimow Segway",
+      "contact": "Shea",
+      "category": "Trädgård & Utomhus",
+      "status": "declined",
+      "value": 23200,
+      "value_min": null,
+      "value_label": "23 200 kr",
+      "date_contacted": "2026-05-29",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": "no_response",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-29",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-11",
+          "evidence": null,
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Shea (net.noxinfluencer.com) — svar på prisförfrågan avvaktas",
+      "last_event": null
+    },
+    {
       "id": "forest-cooperage",
       "company": "Forest Cooperage",
       "contact": "Lorne Atherton — sales@forestcooperage.com | +1 250 642 4899 | 1 877 557 1961",
@@ -2572,6 +2524,90 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Jills återkoppling på pitch — uppföljning planerad 2026-08-19",
+      "last_event": null
+    },
+    {
+      "id": "dryboy",
+      "company": "Dryboy",
+      "contact": "Eduarda Lopes (eduarda.lopes@dryboy.com)",
+      "category": "Utemöbler & Skydd",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": "not_a_fit",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-11",
+          "evidence": null,
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Carin/Lucas (besvara arvodesförfrågan)",
+      "last_event": null
+    },
+    {
+      "id": "jolie",
+      "company": "Jolie (Jolie Skin Co)",
+      "contact": "Pia (talktous@jolieskinco.com)",
+      "category": "Hudvård & Badrum",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-05-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": "not_a_fit",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-15",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-11",
+          "evidence": null,
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas (beslut om Shopify Collabs-modell vs betalt samarbete)",
       "last_event": null
     },
     {
@@ -3556,23 +3592,23 @@
           "to": "replied",
           "at": "2026-06-08",
           "evidence": null,
-          "by": "mail"
+          "by": "lucas"
         },
         {
           "to": "pitched",
           "at": "2026-06-08",
           "evidence": null,
-          "by": "mail"
+          "by": "lucas"
         },
         {
-          "to": "closed",
+          "to": "declined",
           "at": "2026-06-11",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2951.eml",
-          "by": "mail"
+          "by": "lucas"
         }
       ],
       "signed_evidence": null,
-      "notes": "Email-pitch 8/6: 21 miljöbilder för 3 produktkit (MARBLE AND FINE STONE, WOOD CARE, KITCHEN KIT), 12 000 kr exkl. moms. Ej GitHub Pages-pitch — levererat i mailbrödtext. Nystartad, litet bolag, begränsad budget. Produktutbyte är deras normala samarbetsmodell. Återupptas om Ola återkommer.",
+      "notes": "Nystartad. Email-pitch 2026-06-08 (12 000 kr exkl. moms, 21 miljöbilder för 3 produktkit). Warm decline 2026-06-11 — budget för stor just nu, föredrar produktutbyte. Öppen dörr.",
       "waiting_on": null,
       "last_event": null
     },
@@ -3615,7 +3651,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-06-10",
+    "updated": "2026-06-11",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -3634,5 +3670,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-10T21:51:22.426Z"
+  "generated_at": "2026-06-11T07:19:13.221Z"
 }

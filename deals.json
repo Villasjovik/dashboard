@@ -117,7 +117,7 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Innehållsproduktion startar efter installation 8–9 juni. Brief, kupong och schema mottagna och bekräftade. Skicka kort bekräftelsesvar (draft-pergolux-2620.md).",
+      "waiting_on": "Caption-text för Reel 13/06 skickad till Tanya 2026-06-11 för godkännande (§3). Inväntar Tanyas svar. Video skickas separat under dagen.",
       "last_event": null
     },
     {
@@ -379,6 +379,60 @@
       "last_event": null
     },
     {
+      "id": "hultsbruk",
+      "company": "Hultsbruk",
+      "contact": "Anders Haglund (Brand Manager Hultsbruk, Hultafors Group)",
+      "category": "Outdoor / Yxor / Heritage hantverk",
+      "status": "meeting",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-05-19",
+      "date_pitched": "2026-05-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/hultsbruk/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-05-27",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-30",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-05-27",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-05/carin-sent/1673.eml",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Anders Haglunds svar på pitch",
+      "last_event": null
+    },
+    {
       "id": "skadedjursbutiken",
       "company": "Skadedjursbutiken",
       "contact": "Sebastian Maltéus",
@@ -412,42 +466,6 @@
       "signed_evidence": null,
       "notes": "Pitch 2026-05-07 — offert 18 500 kr (Paket 1) / 39 000 kr (Kampanj). Sebastian svarade 2026-05-12: vill köra Kampanjpaketet men ber om 25 000 kr. Carin countrade 30 000 kr. Carin follow-up 2026-05-14 — inväntar Sebastians svar.",
       "waiting_on": "Sebastians svar på avslutande uppföljning 2026-06-10 — Carin signalerade 'sista avstämning', bollen hos Sebastian att höra av sig",
-      "last_event": null
-    },
-    {
-      "id": "skelleftea-kraft",
-      "company": "Skellefteå Kraft",
-      "contact": "Simon Wiklund (Simon.Wiklund@skekraft.se)",
-      "category": "Energi & Hållbarhet",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 – 39 000",
-      "date_contacted": "2026-06-10",
-      "date_pitched": "2026-06-10",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/skelleftea-kraft/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": "2026-09-01",
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-10",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-10",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Brand-story-pitch (säljer förnybar el + smarta tjänster, inte produkter att styla). Klonad från svenska 2-pakets-mallen (Ørskov), SV/SEK. Mjuk avböjning från Simon (inte just nu, kanske senare; prisfråga) + komplimang om innehållet — pitch levererad med prisbild för framtida bruk, dörren öppen. Startpaket 18 500 / Kampanjpaket 39 000 + Reach Boost-slider. Spår: 01 Villan på grön el, 02 Smart i det tysta, 03 Hemmet i balans (+ Spår 04 Ert upplägg). Kanonisk mörkgrön/guld-tema behållet (passar grön energi, läsbarhet) — sidan recolorades EJ lila trots brand-färg #702082. VIKTIGT: Skellefteå Kraft säljer EJ längre solpaneler/laddboxar (avslutat jan 2026) — pitchen påstår aldrig det.",
-      "waiting_on": "Simon återkommer när det blir aktuellt (mjuk avböjning — årets plan satt)",
       "last_event": null
     },
     {
@@ -532,42 +550,6 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Christoph Kobler — svar på samarbetsförslag (pitch levererad)",
-      "last_event": null
-    },
-    {
-      "id": "graccioza",
-      "company": "Graccioza (Sorema)",
-      "contact": "Maria Vasconcelos",
-      "category": "Lyx-badtextil / Premium bath linen (Portugal, Sorema)",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "€1 650 / €3 500 (EUR, ingen moms)",
-      "date_contacted": "2026-06-08",
-      "date_pitched": "2026-06-08",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/graccioza/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-08",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-08",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
       "last_event": null
     },
     {
@@ -748,42 +730,6 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "staltradgarden",
-      "company": "Stålträdgården",
-      "contact": "Mads Jakobsen (E-commerce Director, Texta A/S)",
-      "category": "Trädgård & uteliv / Corten-stål trädgårdsprodukter (DK)",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr",
-      "date_contacted": "2026-06-04",
-      "date_pitched": "2026-06-04",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/staltradgarden/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-04",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-04",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Mads-svar på förslag (mail-draft redo, Lucas mailar)",
       "last_event": null
     },
     {
@@ -1009,48 +955,6 @@
       "last_event": null
     },
     {
-      "id": "dellback",
-      "company": "Dellback (Dellbacks äkta matglädje AB)",
-      "contact": "Gustav Dellback",
-      "category": "Mat & Dryck / Marknadsplats",
-      "status": "pitched",
-      "value": 49000,
-      "value_min": 18500,
-      "value_label": "18 500 / 49 000 kr per varumärke",
-      "date_contacted": "2026-05-29",
-      "date_pitched": "2026-05-31",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/dellback/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-05-29",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "replied",
-          "at": "2026-05-29",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-05-31",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Multi-brand marketplace-pitch: Klepper & Klepper (ankare, efterfrågat av Gustav) + Gotlands Delikatesser + Nordic Crown + The Théa Company. Per-varumärke-prissättning. Pitch levererat 2026-05-31.",
-      "waiting_on": "Gustavs svar på pitch",
-      "last_event": null
-    },
-    {
       "id": "lasavonnerie-de-nyons",
       "company": "La Savonnerie de Nyons",
       "contact": null,
@@ -1084,48 +988,6 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Inväntar svar från kund (web@lasavonneriedenyons.com)",
-      "last_event": null
-    },
-    {
-      "id": "stockholms-glasbruk",
-      "company": "Stockholms Glasbruk",
-      "contact": "Mimmi (svarade 2026-06-02) · ägare Martin & Aleksandra Ehrensvärd",
-      "category": "Inredning & Design / Konst- & bruksglas (Skansen, sedan 1933)",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr",
-      "date_contacted": "2026-05-27",
-      "date_pitched": "2026-06-02",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/stockholms-glasbruk/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-05-27",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-02",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-02",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Carin mailar Mimmi själv (pitch-länk levererad till Carin 2026-06-02)",
       "last_event": null
     },
     {
@@ -1321,96 +1183,6 @@
       "last_event": null
     },
     {
-      "id": "hultsbruk",
-      "company": "Hultsbruk",
-      "contact": "Anders Haglund (Brand Manager Hultsbruk, Hultafors Group)",
-      "category": "Outdoor / Yxor / Heritage hantverk",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000",
-      "date_contacted": "2026-05-19",
-      "date_pitched": "2026-05-30",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/hultsbruk/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-05-19",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "replied",
-          "at": "2026-05-19",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "meeting",
-          "at": "2026-05-27",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-05-30",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Anders Haglunds svar på pitch",
-      "last_event": null
-    },
-    {
-      "id": "benders",
-      "company": "Benders",
-      "contact": "Erica Bender Paulsson (Internkommunikatör/Webbredaktör)",
-      "category": "mark & utemiljö",
-      "status": "pitched",
-      "value": 59000,
-      "value_min": 27500,
-      "value_label": "27 500 / 59 000",
-      "date_contacted": "2026-04-26",
-      "date_pitched": "2026-05-08",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/benders/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-04-26",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "replied",
-          "at": "2026-05-08",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-05-08",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Svar från Erica Bender Paulsson på de 2 nya idéerna (natursten mur + stålkant växthus) — 2026-05-22",
-      "last_event": null
-    },
-    {
       "id": "nibe",
       "company": "NIBE",
       "contact": "Emma Hällgren",
@@ -1438,6 +1210,48 @@
       "signed_evidence": null,
       "notes": "Kampanjförslag 2026. Uppföljning på tidigare samarbete. 35k arvode + 15k Meta Ads. NIBE sagt att de återkommer i slutet av april med svar — ingen follow-up behövs innan dess.",
       "waiting_on": "Hembesök + kontakt från Tord (NIBE) — produktgenomgång planerad",
+      "last_event": null
+    },
+    {
+      "id": "skelleftea-kraft",
+      "company": "Skellefteå Kraft",
+      "contact": "Simon Wiklund (Simon.Wiklund@skekraft.se)",
+      "category": "Energi & Hållbarhet",
+      "status": "interested",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-10",
+      "date_pitched": "2026-06-10",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/skelleftea-kraft/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-10",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-10",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-10",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2931.eml",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Brand-story-pitch (säljer förnybar el + smarta tjänster, inte produkter att styla). Klonad från svenska 2-pakets-mallen (Ørskov), SV/SEK. Mjuk avböjning från Simon (inte just nu, kanske senare; prisfråga) + komplimang om innehållet — pitch levererad med prisbild för framtida bruk, dörren öppen. Startpaket 18 500 / Kampanjpaket 39 000 + Reach Boost-slider. Spår: 01 Villan på grön el, 02 Smart i det tysta, 03 Hemmet i balans (+ Spår 04 Ert upplägg). Kanonisk mörkgrön/guld-tema behållet (passar grön energi, läsbarhet) — sidan recolorades EJ lila trots brand-färg #702082. VIKTIGT: Skellefteå Kraft säljer EJ längre solpaneler/laddboxar (avslutat jan 2026) — pitchen påstår aldrig det.",
+      "waiting_on": "Simon återkommer när det blir aktuellt (mjuk avböjning — årets plan satt)",
       "last_event": null
     },
     {
@@ -1687,6 +1501,54 @@
       "last_event": null
     },
     {
+      "id": "dellback",
+      "company": "Dellback (Dellbacks äkta matglädje AB)",
+      "contact": "Gustav Dellback",
+      "category": "Mat & Dryck / Marknadsplats",
+      "status": "postponed",
+      "value": 49000,
+      "value_min": 18500,
+      "value_label": "18 500 / 49 000 kr per varumärke",
+      "date_contacted": "2026-05-29",
+      "date_pitched": "2026-05-31",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/dellback/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-08-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-29",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-29",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-31",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "postponed",
+          "at": "2026-06-07",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2807.eml",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Multi-brand marketplace-pitch: Klepper & Klepper (ankare, efterfrågat av Gustav) + Gotlands Delikatesser + Nordic Crown + The Théa Company. Per-varumärke-prissättning. Pitch levererat 2026-05-31.",
+      "waiting_on": "Gustavs svar på pitch",
+      "last_event": null
+    },
+    {
       "id": "bixia",
       "company": "Bixia (Tekniska Verken)",
       "contact": "Sarah Sinclair (VD, adgrabber.io — medierådgivare för Bixia)",
@@ -1879,6 +1741,54 @@
       "last_event": null
     },
     {
+      "id": "benders",
+      "company": "Benders",
+      "contact": "Erica Bender Paulsson (Internkommunikatör/Webbredaktör)",
+      "category": "mark & utemiljö",
+      "status": "postponed",
+      "value": 59000,
+      "value_min": 27500,
+      "value_label": "27 500 / 59 000",
+      "date_contacted": "2026-04-26",
+      "date_pitched": "2026-05-08",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/benders/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-26",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-08",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-08",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "postponed",
+          "at": "2026-06-10",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2942.eml",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Svar från Erica Bender Paulsson på de 2 nya idéerna (natursten mur + stålkant växthus) — 2026-05-22",
+      "last_event": null
+    },
+    {
       "id": "hotel-locarno",
       "company": "Hôtel Locarno",
       "contact": "Damiano Scaringi (Reservations Supervisor, booking@hotellocarno.com)",
@@ -1969,6 +1879,90 @@
       "last_event": null
     },
     {
+      "id": "graccioza",
+      "company": "Graccioza (Sorema)",
+      "contact": "Maria Vasconcelos",
+      "category": "Lyx-badtextil / Premium bath linen (Portugal, Sorema)",
+      "status": "declined",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "€1 650 / €3 500 (EUR, ingen moms)",
+      "date_contacted": "2026-06-08",
+      "date_pitched": "2026-06-08",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/graccioza/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": "Nej efter offert — 'decided not to move forward this time'",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-09",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2911.eml",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "staltradgarden",
+      "company": "Stålträdgården",
+      "contact": "Mads Jakobsen (E-commerce Director, Texta A/S)",
+      "category": "Trädgård & uteliv / Corten-stål trädgårdsprodukter (DK)",
+      "status": "declined",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-04",
+      "date_pitched": "2026-06-04",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/staltradgarden/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": "not_a_fit — Carins beslut (Lucas-utsago 2026-06-11)",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-04",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-04",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-11",
+          "evidence": null,
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Mads-svar på förslag (mail-draft redo, Lucas mailar)",
+      "last_event": null
+    },
+    {
       "id": "limabacka-kvarn",
       "company": "Limabacka Kvarn",
       "contact": "Arvid Ottosson (Försäljningschef)",
@@ -2038,6 +2032,54 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Shea (net.noxinfluencer.com) — svar på prisförfrågan avvaktas",
+      "last_event": null
+    },
+    {
+      "id": "stockholms-glasbruk",
+      "company": "Stockholms Glasbruk",
+      "contact": "Mimmi (svarade 2026-06-02) · ägare Martin & Aleksandra Ehrensvärd",
+      "category": "Inredning & Design / Konst- & bruksglas (Skansen, sedan 1933)",
+      "status": "declined",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-05-27",
+      "date_pitched": "2026-06-02",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/stockholms-glasbruk/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": "Nej efter offert — 'tackar nej i dagsläget'",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-27",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-03",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2704.eml",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Carin mailar Mimmi själv (pitch-länk levererad till Carin 2026-06-02)",
       "last_event": null
     },
     {
@@ -3670,5 +3712,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-11T07:19:13.221Z"
+  "generated_at": "2026-06-11T08:47:37.097Z"
 }

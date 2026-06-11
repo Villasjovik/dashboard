@@ -435,8 +435,8 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Produktförslag mottaget 2026-06-03 (38 blåmarkerade produkter, ~18 serier). Villa Sjövik svarar Pelle (julbild-fråga + ev. byten) + bygger shoot-lista. Deal muntligt bekräftad (39k), avtal ej signerat. VD-godkännande kvarstår för ev. Meta-budget.",
-      "last_event": null
+      "waiting_on": "Pelle svarade 2026-06-11 — bekräftar produkter + invänder mot förskottsbetalning (§4). Föreslår delfakturor (en per film, 13 000 kr/st) eller faktura vid leverans. Draft + reviderat avtal väntar Lucas-OK: operational/drafts/2026-06-11-skeppshult-betalningsvillkor.md",
+      "last_event": "2026-06-11"
     },
     {
       "id": "skadedjursbutiken",
@@ -3531,6 +3531,48 @@
       ],
       "signed_evidence": null,
       "notes": "Tackade nej.",
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "act-of-caring",
+      "company": "Act of Caring",
+      "contact": "Ola — hello@actofcaring.com",
+      "category": "Hem & Rengöring / Naturliga Ytskyddsprodukter",
+      "status": "declined",
+      "value": 12000,
+      "value_min": 12000,
+      "value_label": "12 000 kr",
+      "date_contacted": null,
+      "date_pitched": "2026-06-08",
+      "date_closed": "2026-06-11",
+      "pitch_url": null,
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": "Warm decline 2026-06-11 — \"lite för mycket för oss i nuläget\". Nystartad, föredrar produktutbyte. Ola: \"låt mig fundera och återkomma\" — öppen dörr utan konkret datum.",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "replied",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "mail"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "mail"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-11",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2951.eml",
+          "by": "mail"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Email-pitch 8/6: 21 miljöbilder för 3 produktkit (MARBLE AND FINE STONE, WOOD CARE, KITCHEN KIT), 12 000 kr exkl. moms. Ej GitHub Pages-pitch — levererat i mailbrödtext. Nystartad, litet bolag, begränsad budget. Produktutbyte är deras normala samarbetsmodell. Återupptas om Ola återkommer.",
       "waiting_on": null,
       "last_event": null
     },

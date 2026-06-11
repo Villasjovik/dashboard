@@ -3660,13 +3660,13 @@
       "company": "Nordstone",
       "contact": null,
       "category": null,
-      "status": "declined",
+      "status": "negotiating",
       "value": null,
       "value_min": null,
       "value_label": null,
       "date_contacted": null,
       "date_pitched": null,
-      "date_closed": "2026-05-29",
+      "date_closed": null,
       "pitch_url": null,
       "outcome": "postponed",
       "final_price": null,
@@ -3678,12 +3678,18 @@
           "at": "2026-05-29",
           "evidence": null,
           "by": "migration"
+        },
+        {
+          "to": "negotiating",
+          "at": "2026-06-11",
+          "evidence": "Teams-möte 14:10 bokad, Leonna svarar på Carins barter-motpitch",
+          "by": "mail-2958"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Leonnas svar på Carins barter-motpitch (marksten + trampsten mot reels/stories)",
-      "last_event": null
+      "waiting_on": "Utfall av Teams-möte 2026-06-11 14:10 — barter-förhandling (sten mot content-paket)",
+      "last_event": "2026-06-11"
     }
   ],
   "leads_summary": {

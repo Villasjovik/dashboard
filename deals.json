@@ -117,9 +117,8 @@
       ],
       "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": null,
-      "waiting_on": "Carin svarade Tanya 11/6 (2476.eml): bekräftade @pergolux.se → PERGOLUX, bad om kupongkod-detaljer (⚠️ villasjovikLUX redan känd från brief 28/5), Reel + Story skickas för godkännande under 11/6. Väntar: video-godkännande från Tanya + ev. svar om kupong.",
-      "last_event": null,
-      "last_updated": "2026-06-11"
+      "waiting_on": "Tanya bekräftade kupongkod 11/6 (2957.eml): villasjovikLUX = 5% off, ingen utgångsdatum. Reel + Story ska skickas till Tanya under 11/6 för godkännande (§3) innan publicering 13/06.",
+      "last_event": null
     },
     {
       "id": "norremarks",
@@ -335,7 +334,7 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Pelle godkände 50/50-modell 2026-06-11 (mail 2956.eml). Lucas uppdaterar Oneflow-avtal med reviderade betalningsvillkor (50% vid signering, 50% vid leverans av första video) → skickar nytt avtal till Pelle för signering. Väntar signering.",
-      "last_event": "Pelle öppnade avtalet (Oneflow doc 15004310) för första gången — 2026-06-11T11:08:51Z"
+      "last_event": null
     },
     {
       "id": "bagin",
@@ -377,6 +376,36 @@
       "signed_evidence": null,
       "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08 tackade Bag'in JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår). Önskar publicering av videon i september 2026 (datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas omgående. Fakturering i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08. OBS: acceptansdatum uppgivet som 18.05 men pitchen byggdes först 2026-06-02 — verifiera.",
       "waiting_on": "Bag'ins partsuppgifter (org.nr, firmatecknare, adress, kontakt) + signering av avtal. Fakturering vid påskrivet avtal.",
+      "last_event": null
+    },
+    {
+      "id": "nordstone",
+      "company": "Nordstone",
+      "contact": null,
+      "category": null,
+      "status": "verbal_agreement",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": null,
+      "date_pitched": null,
+      "date_closed": "2026-05-29",
+      "pitch_url": null,
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": "Budget möjliggör ej betald kompensation. Nordstone kör bartermodell (sten mot synlighet + kampanjkod/affiliate via webbshop) + PR-byrå Trendgruppen inför höstlansering Hotel Ett Hem Stockholm 2026. Leonna tydlig: betald deal ej möjlig nu, öppen dörr post-launch.",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "closed",
+          "at": "2026-05-29",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Väntar på formell barter-bekräftelse / stenleverans. Mötet 2026-06-11 höllt, Carin delade leveransadress — muntlig deal sannolikt klar.",
       "last_event": null
     },
     {
@@ -551,6 +580,42 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Christoph Kobler — svar på samarbetsförslag (pitch levererad)",
+      "last_event": null
+    },
+    {
+      "id": "jars-ceramistes",
+      "company": "Jars Céramistes",
+      "contact": "Iris Dauvergne (Chargée de projet Marketing et Communication)",
+      "category": "Inredning & Bordskultur / Premium Keramik",
+      "status": "pitched",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-08",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-08",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2954.eml",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-11",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2954.eml",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "iris",
       "last_event": null
     },
     {
@@ -1040,42 +1105,6 @@
       "last_event": null
     },
     {
-      "id": "stenfabriken",
-      "company": "Stenfabriken (Gotlands Kalkstensfabrik AB)",
-      "contact": "Simon Lindberg (info@stenfabriken.se)",
-      "category": "Inredning & Hem / Natursten",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000",
-      "date_contacted": "2026-05-25",
-      "date_pitched": "2026-05-23",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/stenfabriken/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "pitched",
-          "at": "2026-05-23",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "contacted",
-          "at": "2026-05-25",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Svar från Simon Lindberg (info@stenfabriken.se)",
-      "last_event": null
-    },
-    {
       "id": "hott-sauna",
       "company": "HOTT Sauna (Baitbox AB)",
       "contact": "Simon (Co-Founder)",
@@ -1253,6 +1282,48 @@
       "signed_evidence": null,
       "notes": "Brand-story-pitch (säljer förnybar el + smarta tjänster, inte produkter att styla). Klonad från svenska 2-pakets-mallen (Ørskov), SV/SEK. Mjuk avböjning från Simon (inte just nu, kanske senare; prisfråga) + komplimang om innehållet — pitch levererad med prisbild för framtida bruk, dörren öppen. Startpaket 18 500 / Kampanjpaket 39 000 + Reach Boost-slider. Spår: 01 Villan på grön el, 02 Smart i det tysta, 03 Hemmet i balans (+ Spår 04 Ert upplägg). Kanonisk mörkgrön/guld-tema behållet (passar grön energi, läsbarhet) — sidan recolorades EJ lila trots brand-färg #702082. VIKTIGT: Skellefteå Kraft säljer EJ längre solpaneler/laddboxar (avslutat jan 2026) — pitchen påstår aldrig det.",
       "waiting_on": "Simon återkommer när det blir aktuellt (mjuk avböjning — årets plan satt)",
+      "last_event": null
+    },
+    {
+      "id": "stenfabriken",
+      "company": "Stenfabriken (Gotlands Kalkstensfabrik AB)",
+      "contact": "Simon Lindberg (info@stenfabriken.se)",
+      "category": "Inredning & Hem / Natursten",
+      "status": "interested",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-05-25",
+      "date_pitched": "2026-05-23",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/stenfabriken/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "pitched",
+          "at": "2026-05-23",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "contacted",
+          "at": "2026-05-25",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-11",
+          "evidence": null,
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Svar från Simon Lindberg (info@stenfabriken.se)",
       "last_event": null
     },
     {
@@ -3654,84 +3725,6 @@
       "notes": "Nystartad. Email-pitch 2026-06-08 (12 000 kr exkl. moms, 21 miljöbilder för 3 produktkit). Warm decline 2026-06-11 — budget för stor just nu, föredrar produktutbyte. Öppen dörr.",
       "waiting_on": null,
       "last_event": null
-    },
-    {
-      "id": "nordstone",
-      "company": "Nordstone",
-      "contact": null,
-      "category": null,
-      "status": "negotiating",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": null,
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": "postponed",
-      "final_price": null,
-      "close_reason": "Budget möjliggör ej betald kompensation. Nordstone kör bartermodell (sten mot synlighet + kampanjkod/affiliate via webbshop) + PR-byrå Trendgruppen inför höstlansering Hotel Ett Hem Stockholm 2026. Leonna tydlig: betald deal ej möjlig nu, öppen dörr post-launch.",
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "closed",
-          "at": "2026-05-29",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "negotiating",
-          "at": "2026-06-11",
-          "evidence": "Teams-möte 14:10 bokad, Leonna svarar på Carins barter-motpitch",
-          "by": "mail-2958"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Utfall av Teams-möte 2026-06-11 14:10 — barter-förhandling (sten mot content-paket)",
-      "last_event": "2026-06-11"
-    },
-    {
-      "id": "jars-ceramistes",
-      "company": "Jars Céramistes",
-      "contact": "Iris Dauvergne",
-      "category": "Inredning & Bordskultur / Premium Keramik",
-      "status": "pitched",
-      "value": 13200,
-      "value_min": 13200,
-      "value_label": "€1 200 exkl. produkter (≈13 200 kr)",
-      "date_contacted": "2026-06-08",
-      "date_pitched": "2026-06-11",
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-08",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2954.eml",
-          "by": "claude"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-11",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2954.eml",
-          "by": "claude"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-11",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2478.eml",
-          "by": "claude"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Offert skickad inline i mail (ej pitch-page) — €1 200 exkl. produkter, 15 miljöbilder, 194K räckvidd, 14 dagars betalning. Iris Dauvergne = Marketing & Comms PM. ⚠️ Avviker från canonical: inline mail + pris under rek. minimum (€1 650).",
-      "waiting_on": "iris",
-      "last_event": "2026-06-11"
     }
   ],
   "leads_summary": {
@@ -3761,5 +3754,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-11T08:56:49.652Z"
+  "generated_at": "2026-06-11T11:55:38.371Z"
 }

@@ -3731,6 +3731,36 @@
       "notes": "Nystartad. Email-pitch 2026-06-08 (12 000 kr exkl. moms, 21 miljöbilder för 3 produktkit). Warm decline 2026-06-11 — budget för stor just nu, föredrar produktutbyte. Öppen dörr.",
       "waiting_on": null,
       "last_event": null
+    },
+    {
+      "id": "navimow-inlymedia",
+      "company": "Navimow (via inlymedia.co)",
+      "contact": "Randy Chen <randy@inlymedia.co>",
+      "category": "Trädgård & Utomhus",
+      "status": "contacted",
+      "value": 25000,
+      "value_min": null,
+      "value_label": "25 000 kr",
+      "date_contacted": "2026-06-08",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-08",
+          "evidence": "Carin svarade Randy med pris 25 000 SEK för 1 IG Reel",
+          "by": "auto"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Inbound från Randy Chen (inlymedia.co, agency för Navimow). Frågade om IG Reel-pris. Carin svarade 2026-06-08: 25 000 SEK. Follow-up 2026-06-11: utökat erbjudande med 2 Reels.",
+      "waiting_on": "Randy — svar på priserbjudande (1 eller 2 Reels)",
+      "last_event": "follow-up skickat 2026-06-11"
     }
   ],
   "leads_summary": {

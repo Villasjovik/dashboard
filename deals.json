@@ -117,8 +117,9 @@
       ],
       "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": null,
-      "waiting_on": "Caption godkänd av Tanya 2026-06-11 med två justeringar: (1) @pergolux.se → PERGOLUX, (2) lägg till kupongkod villasjovikLUX. Video skickas till Tanya för godkännande under 11/6 (§3). Draft reply: draft-pergolux-2955.md.",
-      "last_event": null
+      "waiting_on": "Carin svarade Tanya 11/6 (2476.eml): bekräftade @pergolux.se → PERGOLUX, bad om kupongkod-detaljer (⚠️ villasjovikLUX redan känd från brief 28/5), Reel + Story skickas för godkännande under 11/6. Väntar: video-godkännande från Tanya + ev. svar om kupong.",
+      "last_event": null,
+      "last_updated": "2026-06-11"
     },
     {
       "id": "norremarks",

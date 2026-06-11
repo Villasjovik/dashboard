@@ -401,6 +401,12 @@
           "at": "2026-05-29",
           "evidence": null,
           "by": "migration"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-06-11",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2479.eml",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
@@ -3754,5 +3760,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-11T11:55:38.371Z"
+  "generated_at": "2026-06-11T11:56:19.038Z"
 }

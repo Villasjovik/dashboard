@@ -3690,6 +3690,48 @@
       "notes": null,
       "waiting_on": "Utfall av Teams-möte 2026-06-11 14:10 — barter-förhandling (sten mot content-paket)",
       "last_event": "2026-06-11"
+    },
+    {
+      "id": "jars-ceramistes",
+      "company": "Jars Céramistes",
+      "contact": "Iris Dauvergne",
+      "category": "Inredning & Bordskultur / Premium Keramik",
+      "status": "pitched",
+      "value": 13200,
+      "value_min": 13200,
+      "value_label": "€1 200 exkl. produkter (≈13 200 kr)",
+      "date_contacted": "2026-06-08",
+      "date_pitched": "2026-06-11",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-08",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2954.eml",
+          "by": "claude"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-11",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2954.eml",
+          "by": "claude"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-11",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2478.eml",
+          "by": "claude"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Offert skickad inline i mail (ej pitch-page) — €1 200 exkl. produkter, 15 miljöbilder, 194K räckvidd, 14 dagars betalning. Iris Dauvergne = Marketing & Comms PM. ⚠️ Avviker från canonical: inline mail + pris under rek. minimum (€1 650).",
+      "waiting_on": "iris",
+      "last_event": "2026-06-11"
     }
   ],
   "leads_summary": {

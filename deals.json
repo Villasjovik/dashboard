@@ -505,6 +505,47 @@
       "last_event": null
     },
     {
+      "id": "restmo",
+      "company": "Restmo",
+      "contact": "Restmo — restmo260204@gmail.com",
+      "category": "Trädgård / Bevattning & Utomhus",
+      "status": "pitched",
+      "value": 3500,
+      "value_min": 1650,
+      "value_label": "EUR · Starter 1 650 – Campaign 3 500",
+      "date_contacted": "2026-06-11",
+      "date_pitched": "2026-06-12",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/restmo/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "replied",
+          "at": "2026-06-11",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2480.eml",
+          "by": "migration"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-12",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2970.eml",
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-12",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Inbound från Instagram 2026-06-10. Premium WATERING-tillbehör (metallmunstycken, vattningsstavar, gräsmattesprinklers) — US-baserat (Houston, TX), restmo.online. Carin svarade 2026-06-11 och klargjorde betalmodell. RESTMO svarade 2026-06-12: bekräftar betalmodell, önskar 1 Collab Reel som primärleverans + ev. foto-inlägg, ber om priser/paketrekommendation. ENGELSK internationell pitch deployad 2026-06-12 (EUR-priser, sakai-ichimonji-mall): https://villasjovik.github.io/restmo/. Hero-vinkel 'the garden you actually live in' — 3 spår mappade till watering wand / 2-in-1 green hose nozzle / metall-lawn-sprinklers. Logo: PNG → potrace-3D (chrome). Obs: kontaktmail är gmail, Amazon/Walmart-positioned. Standard paketframing behållen (Starter 1 video / Campaign 3 videor) — Collab Reel-önskemålet erkänns men inga villkor uppfanns.",
+      "waiting_on": "lucas_send",
+      "last_event": null
+    },
+    {
       "id": "sakai-ichimonji",
       "company": "Sakai Ichimonji Mitsuhide",
       "contact": "Bradley Jolly (International PR Lead, Sakai Ichimonji Mitsuhide)",
@@ -586,6 +627,48 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Svar från Joanna Kaneteg (joanna@stockholmfragrance.com)",
+      "last_event": null
+    },
+    {
+      "id": "dottir-nordic-design",
+      "company": "Dottir Nordic Design",
+      "contact": "Jens Peter (jpj@dottirnordicdesign.com)",
+      "category": "inredning",
+      "status": "pitched",
+      "value": 3500,
+      "value_min": 1650,
+      "value_label": "EUR (featured Campaign 3 500 € / entry Starter 1 650 €)",
+      "date_contacted": "2026-06-09",
+      "date_pitched": "2026-06-12",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/dottir-nordic-design/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-09",
+          "evidence": "Carin skickade kallt utskick till hello@dottirnordicdesign.com",
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-12",
+          "evidence": "Jens Peter svarade positivt, frågar om commercial setup och hur VS arbetar (2979.eml)",
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-12",
+          "evidence": "pitch live + draft",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "lucas_send",
       "last_event": null
     },
     {
@@ -1459,42 +1542,6 @@
       "last_event": null
     },
     {
-      "id": "restmo",
-      "company": "Restmo",
-      "contact": "Restmo — restmo260204@gmail.com",
-      "category": "Trädgård / Bevattning & Utomhus",
-      "status": "interested",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-06-11",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "replied",
-          "at": "2026-06-11",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2480.eml",
-          "by": "migration"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-12",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2970.eml",
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Inbound från Instagram 2026-06-10. Trädgårdsvarumärke (sprinklers + misters). Carin svarade 2026-06-11 och klargjorde betalmodell. RESTMO svarade 2026-06-12: bekräftar betalmodell, specificerar 1 Collab Reel som primärlevrans + ev. foto-inlägg. Ber om priser och paketrekommendation. Varm lead — redo för pitch. Obs: kontaktmail är gmail, Amazon-positioned.",
-      "waiting_on": "lucas_pitch",
-      "last_event": null
-    },
-    {
       "id": "skelleftea-kraft",
       "company": "Skellefteå Kraft",
       "contact": "Simon Wiklund (Simon.Wiklund@skekraft.se)",
@@ -1576,42 +1623,6 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Svar från Simon Lindberg (info@stenfabriken.se)",
-      "last_event": null
-    },
-    {
-      "id": "dottir-nordic-design",
-      "company": "Dottir Nordic Design",
-      "contact": "Jens Peter (jpj@dottirnordicdesign.com)",
-      "category": "inredning",
-      "status": "replied",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-06-09",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-09",
-          "evidence": "Carin skickade kallt utskick till hello@dottirnordicdesign.com",
-          "by": "migration"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-12",
-          "evidence": "Jens Peter svarade positivt, frågar om commercial setup och hur VS arbetar (2979.eml)",
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
       "last_event": null
     },
     {
@@ -4042,5 +4053,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-12T10:07:05.573Z"
+  "generated_at": "2026-06-12T10:22:27.741Z"
 }

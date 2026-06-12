@@ -746,14 +746,14 @@
         {
           "to": "pitched",
           "at": "2026-06-12",
-          "evidence": "pitch live https://villasjovik.github.io/essem-design/ + leverans-mail draft",
+          "evidence": "pitch live https://villasjovik.github.io/essem-design/ + leverans-mail skickat 2026-06-12 (2487.eml)",
           "by": "migration"
         }
       ],
       "signed_evidence": null,
-      "notes": "CEO Robert Bladh svarade 2026-06-12 på Carins kallt utskick (2026-06-09) med frågor om följardemografi + pris. Pitch-page byggd och live (villasjovik.github.io/essem-design) — 3 produkter valda av Lucas: Classic Tamburmajor, Klara spegel, Ekoxe stövelknekt (alla svart). Standardpaket 18 500 / Kampanjpaket 39 000. Leverans-mail draft klar — inväntar Lucas att skicka.",
-      "waiting_on": "lucas_send",
-      "last_event": null
+      "notes": "CEO Robert Bladh svarade 2026-06-12 på Carins kallt utskick (2026-06-09) med frågor om följardemografi + pris. Pitch-page byggd och live (villasjovik.github.io/essem-design) — 3 produkter valda av Lucas: Classic Tamburmajor, Klara spegel, Ekoxe stövelknekt (alla svart). Standardpaket 18 500 / Kampanjpaket 39 000. Leverans-mail skickat 2026-06-12 (2487.eml) — bollen hos Robert.",
+      "waiting_on": "robert_reply",
+      "last_event": "2026-06-12"
     },
     {
       "id": "orskov",

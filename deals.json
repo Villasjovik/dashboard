@@ -538,12 +538,18 @@
           "to": "pitched",
           "at": "2026-06-12",
           "by": "deal-keeper"
+        },
+        {
+          "to": "pitch_delivered",
+          "at": "2026-06-12",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2489.eml",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
-      "notes": "Inbound från Instagram 2026-06-10. Premium WATERING-tillbehör (metallmunstycken, vattningsstavar, gräsmattesprinklers) — US-baserat (Houston, TX), restmo.online. Carin svarade 2026-06-11 och klargjorde betalmodell. RESTMO svarade 2026-06-12: bekräftar betalmodell, önskar 1 Collab Reel som primärleverans + ev. foto-inlägg, ber om priser/paketrekommendation. ENGELSK internationell pitch deployad 2026-06-12 (EUR-priser, sakai-ichimonji-mall): https://villasjovik.github.io/restmo/. Hero-vinkel 'the garden you actually live in' — 3 spår mappade till watering wand / 2-in-1 green hose nozzle / metall-lawn-sprinklers. Logo: PNG → potrace-3D (chrome). Obs: kontaktmail är gmail, Amazon/Walmart-positioned. Standard paketframing behållen (Starter 1 video / Campaign 3 videor) — Collab Reel-önskemålet erkänns men inga villkor uppfanns.",
-      "waiting_on": "lucas_send",
-      "last_event": null
+      "notes": "Inbound från Instagram 2026-06-10. Premium WATERING-tillbehör (metallmunstycken, vattningsstavar, gräsmattesprinklers) — US-baserat (Houston, TX), restmo.online. Carin svarade 2026-06-11 och klargjorde betalmodell. RESTMO svarade 2026-06-12: bekräftar betalmodell, önskar 1 Collab Reel som primärleverans + ev. foto-inlägg, ber om priser/paketrekommendation. ENGELSK internationell pitch deployad 2026-06-12 (EUR-priser, sakai-ichimonji-mall): https://villasjovik.github.io/restmo/. Hero-vinkel 'the garden you actually live in' — 3 spår mappade till watering wand / 2-in-1 green hose nozzle / metall-lawn-sprinklers. Logo: PNG → potrace-3D (chrome). Obs: kontaktmail är gmail, Amazon/Walmart-positioned. Standard paketframing behållen (Starter 1 video / Campaign 3 videor) — Collab Reel-önskemålet erkänns men inga villkor uppfanns. Pitch-leverans-mail skickat 2026-06-12 (2489.eml) — pitchlänk + Campaign-paket-rekommendation, boll hos Restmo.",
+      "waiting_on": "restmo_reply",
+      "last_event": "2026-06-12"
     },
     {
       "id": "sakai-ichimonji",

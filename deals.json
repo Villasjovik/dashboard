@@ -960,42 +960,6 @@
       "last_event": null
     },
     {
-      "id": "toolflex",
-      "company": "Toolflex",
-      "contact": "Anette Perälä",
-      "category": "Förvaring & verktyg / Made-in-Sweden tool storage (Forsheda)",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr",
-      "date_contacted": "2026-06-07",
-      "date_pitched": "2026-06-08",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/toolflex/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-07",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-08",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
       "id": "varalovs",
       "company": "Varalövs Tunnfabrik",
       "contact": "David Andersson",
@@ -2284,6 +2248,48 @@
           "at": "2026-06-09",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2911.eml",
           "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "toolflex",
+      "company": "Toolflex",
+      "contact": "Anette Perälä",
+      "category": "Förvaring & verktyg / Made-in-Sweden tool storage (Forsheda)",
+      "status": "declined",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-07",
+      "date_pitched": "2026-06-08",
+      "date_closed": "2026-06-12",
+      "pitch_url": "https://villasjovik.github.io/toolflex/",
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "March 2027",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-07",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-12",
+          "evidence": "events/2026/06/12/mail-2981.md",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
@@ -4053,5 +4059,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-12T10:24:07.173Z"
+  "generated_at": "2026-06-12T11:10:16.972Z"
 }

@@ -588,6 +588,48 @@
       "last_event": null
     },
     {
+      "id": "skelleftea-kraft",
+      "company": "Skellefteå Kraft",
+      "contact": "Simon Wiklund (Simon.Wiklund@skekraft.se)",
+      "category": "Energi & Hållbarhet",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-10",
+      "date_pitched": "2026-06-10",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/skelleftea-kraft/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-10",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-10",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2931.eml",
+          "by": "lucas"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-10",
+          "evidence": "operational/drafts/skelleftea-kraft-pitch-leverans.md",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Brand-story-pitch (säljer förnybar el + smarta tjänster, inte produkter att styla). Klonad från svenska 2-pakets-mallen (Ørskov), SV/SEK. Mjuk avböjning från Simon (inte just nu, kanske senare; prisfråga) + komplimang om innehållet — pitch levererad med prisbild för framtida bruk, dörren öppen. Startpaket 18 500 / Kampanjpaket 39 000 + Reach Boost-slider. Spår: 01 Villan på grön el, 02 Smart i det tysta, 03 Hemmet i balans (+ Spår 04 Ert upplägg). Kanonisk mörkgrön/guld-tema behållet (passar grön energi, läsbarhet) — sidan recolorades EJ lila trots brand-färg #702082. VIKTIGT: Skellefteå Kraft säljer EJ längre solpaneler/laddboxar (avslutat jan 2026) — pitchen påstår aldrig det.",
+      "waiting_on": "Simon — svar på levererad pitch/prisbild (flaggade höst-timing). Flippas till postponed om/när han bekräftar att det dröjer; avancerar om han kör nu.",
+      "last_event": null
+    },
+    {
       "id": "stockholm-fragrance",
       "company": "Stockholm Fragrance",
       "contact": "Joanna Kaneteg",
@@ -1539,48 +1581,6 @@
       "signed_evidence": null,
       "notes": "Kampanjförslag 2026. Uppföljning på tidigare samarbete. 35k arvode + 15k Meta Ads. NIBE sagt att de återkommer i slutet av april med svar — ingen follow-up behövs innan dess.",
       "waiting_on": "Hembesök + kontakt från Tord (NIBE) — produktgenomgång planerad",
-      "last_event": null
-    },
-    {
-      "id": "skelleftea-kraft",
-      "company": "Skellefteå Kraft",
-      "contact": "Simon Wiklund (Simon.Wiklund@skekraft.se)",
-      "category": "Energi & Hållbarhet",
-      "status": "interested",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 – 39 000",
-      "date_contacted": "2026-06-10",
-      "date_pitched": "2026-06-10",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/skelleftea-kraft/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": "2026-09-01",
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-10",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-10",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-10",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2931.eml",
-          "by": "lucas"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Brand-story-pitch (säljer förnybar el + smarta tjänster, inte produkter att styla). Klonad från svenska 2-pakets-mallen (Ørskov), SV/SEK. Mjuk avböjning från Simon (inte just nu, kanske senare; prisfråga) + komplimang om innehållet — pitch levererad med prisbild för framtida bruk, dörren öppen. Startpaket 18 500 / Kampanjpaket 39 000 + Reach Boost-slider. Spår: 01 Villan på grön el, 02 Smart i det tysta, 03 Hemmet i balans (+ Spår 04 Ert upplägg). Kanonisk mörkgrön/guld-tema behållet (passar grön energi, läsbarhet) — sidan recolorades EJ lila trots brand-färg #702082. VIKTIGT: Skellefteå Kraft säljer EJ längre solpaneler/laddboxar (avslutat jan 2026) — pitchen påstår aldrig det.",
-      "waiting_on": "Simon återkommer när det blir aktuellt (mjuk avböjning — årets plan satt)",
       "last_event": null
     },
     {
@@ -4053,5 +4053,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-12T10:22:27.741Z"
+  "generated_at": "2026-06-12T10:24:07.173Z"
 }

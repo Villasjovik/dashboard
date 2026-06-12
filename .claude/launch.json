@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dashboard",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "/Users/lucasm4max/Desktop/Claude/projekt/villa-sjovik/dashboard", "-p", "8123", "--no-clipboard"],
+      "port": 8123
+    }
+  ]
+}

@@ -704,13 +704,13 @@
         {
           "to": "pitched",
           "at": "2026-06-12",
-          "evidence": "pitch live + draft",
+          "evidence": "Pitch-leverans-mail skickat in-thread till Jens Peter (2488.eml)",
           "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "lucas_send",
+      "waiting_on": null,
       "last_event": null
     },
     {

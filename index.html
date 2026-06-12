@@ -1300,7 +1300,10 @@ tlEl.querySelectorAll('.tl-pill').forEach(pill=>{
 });
 
 /* ═══ INTERSECTION OBSERVER — runs AFTER all dynamic content ═══ */
-const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');revObs.unobserve(e.target)}})},{threshold:0.1});
+/* threshold måste vara 0 + viewport-relativ rootMargin: procent-thresholds (t.ex. 0.15)
+   blir ONÅBARA när elementet är högre än viewport/threshold — tabellen med 100+ deals
+   är ~8000px → max ~11% kan synas samtidigt → observern triggade aldrig. */
+const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');revObs.unobserve(e.target)}})},{threshold:0,rootMargin:'0px 0px -5% 0px'});
 document.querySelectorAll('.reveal').forEach(el=>{if(!el.closest('.snap:first-of-type'))revObs.observe(el)});
 // First section reveals + anims deferred until after login
 whenAuth(()=>{
@@ -1320,7 +1323,7 @@ const secObs=new IntersectionObserver(entries=>{entries.forEach(e=>{
       fireSec(idx);
     }
   }
-})},{threshold:0.15});
+})},{threshold:0,rootMargin:'0px 0px -15% 0px'});
 secSnaps.forEach(s=>secObs.observe(s));
 
 /* Mobile fallback: IntersectionObserver triggas inkonsekvent på iOS Safari när
@@ -1651,7 +1654,7 @@ gsap.to('#scroll-orb',{y:-120,ease:'none',scrollTrigger:{trigger:'body',start:'t
         if(idx>=0)updateNav(idx);
       }
     });
-  },{threshold:0.2});
+  },{threshold:0,rootMargin:'-45% 0px -45% 0px'});
   sections.forEach(s=>obs.observe(s));
 
   /* Force scroll to true top (0) when user scrolls into section 1.

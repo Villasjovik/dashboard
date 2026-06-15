@@ -835,6 +835,48 @@
       "last_event": null
     },
     {
+      "id": "vedum",
+      "company": "Vedum Kök & Bad",
+      "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
+      "category": "Kök & Bad / Inredning",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-07",
+      "date_pitched": "2026-06-08",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-07",
+          "evidence": null,
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-08",
+          "evidence": "operational/projekt/villa-sjovik/leads/mail-audit-2026-06-08/inbox-all.txt",
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml (blockquote)",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni.",
+      "waiting_on": "Jenny Andersson — svar på email-pitch (8 juni) + follow-up 15 juni",
+      "last_event": null
+    },
+    {
       "id": "varalovs",
       "company": "Varalövs Tunnfabrik",
       "contact": "David Andersson",
@@ -4119,50 +4161,6 @@
       "notes": "Nystartad. Email-pitch 2026-06-08 (12 000 kr exkl. moms, 21 miljöbilder för 3 produktkit). Warm decline 2026-06-11 — budget för stor just nu, föredrar produktutbyte. Öppen dörr.",
       "waiting_on": null,
       "last_event": null
-    },
-    {
-      "id": "vedum",
-      "company": "Vedum Kök & Bad",
-      "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet; CC: Alexandra Lindelöf (alexandra.lindelof@vedum.se)",
-      "category": "Kök & Bad / Inredning",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 – 39 000",
-      "date_contacted": "2026-06-07",
-      "date_pitched": "2026-06-08",
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-07",
-          "evidence": null,
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-08",
-          "evidence": "operational/projekt/villa-sjovik/leads/mail-audit-2026-06-08/inbox-all.txt",
-          "by": "auto"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-08",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml (blockquote: pitch skickad 8 juni med bilagor)",
-          "by": "carin"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-specifikation (tvättstuge-projekt). INGEN GitHub Pages-pitch genererad (Lucas parkerade 8/6 innan Carin skickade email-pitchen ändå). Jenny Andersson = besluts­fattare (varumärkeskommunikation). CC: Alexandra Lindelöf. Follow-up skickat 15 juni: 'Jag tänkte bara höra hur era tankar går kring ett ev samarbete?'",
-      "waiting_on": "Jenny Andersson — svar på email-pitch (8 juni) + follow-up 15 juni",
-      "last_event": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml",
-      "schema_version": 2,
-      "contact_email": "jenny.andersson@vedum.se"
     }
   ],
   "leads_summary": {
@@ -4192,5 +4190,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-15T10:34:00.023Z"
+  "generated_at": "2026-06-15T10:50:08.926Z"
 }

@@ -81,7 +81,7 @@
       ],
       "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": null,
-      "waiting_on": "Hellen godkänt text 2026-06-15 (3023.eml) med en kommentar — REA ska framhävas positivt (\"otrolig rea nu på vår och sommar kollektion\" + \"rea på tidigare säsong\"), aldrig \"lagerrensning/utförsäljning\". Carin uppdaterar text + publicerar.",
+      "waiting_on": "Carin skickade reviderad text till Hellen 2026-06-15 (2521.eml) — REA omformulerad positivt per Hellens feedback. Väntar Hellens slutgodkännande innan publicering.",
       "last_event": null
     },
     {
@@ -117,7 +117,7 @@
       ],
       "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": null,
-      "waiting_on": "Tanya visar Reel + Stories för sin supervisor (2968.eml, 11/6 kl 20:27). Väntar besked om godkännande §3 innan publicering 13/06. Max 2 × 48h per §3.",
+      "waiting_on": "Carin ska fixa Stories-revision — lägga till kort video-klipp med produktprat + personlig upplevelse (Tanyas supervisors feedback, 12/6). Ad code skickat 15/6 (2522.eml), whitelisting pågår, Tanya bekräftar.",
       "last_event": null
     },
     {
@@ -505,108 +505,6 @@
       "last_event": null
     },
     {
-      "id": "restmo",
-      "company": "Restmo",
-      "contact": "Restmo — restmo260204@gmail.com",
-      "category": "Trädgård / Bevattning & Utomhus",
-      "status": "negotiating",
-      "value": 3500,
-      "value_min": 1650,
-      "value_label": "EUR · Starter 1 650 – Campaign 3 500",
-      "date_contacted": "2026-06-11",
-      "date_pitched": "2026-06-12",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/restmo/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "replied",
-          "at": "2026-06-11",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2480.eml",
-          "by": "migration"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-12",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2970.eml",
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-12",
-          "by": "deal-keeper"
-        },
-        {
-          "to": "pitch_delivered",
-          "at": "2026-06-12",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2489.eml",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "negotiating",
-          "at": "2026-06-15",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3008.eml",
-          "by": "mail-watcher",
-          "note": "Restmo gillar pitchen, ber om audience-distribution-data (primärmarknad US)"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Inbound från Instagram 2026-06-10. Premium WATERING-tillbehör (metallmunstycken, vattningsstavar, gräsmattesprinklers) — US-baserat (Houston, TX), restmo.online. Carin svarade 2026-06-11 och klargjorde betalmodell. RESTMO svarade 2026-06-12: bekräftar betalmodell, önskar 1 Collab Reel + ev. foto-inlägg, ber om priser/paket. ENGELSK internationell pitch deployad 2026-06-12 (EUR-priser): https://villasjovik.github.io/restmo/. Pitch-leverans-mail 2026-06-12. RESTMO svarade 2026-06-15 (3008.eml): gillar pitchen och riktningen, ber om geografisk audience-distribution — primärmarknad US. Carin svarade 2026-06-15 (2516.eml): delade audience-breakdown (~10% USA, ~30% Sverige) + hänvisade till bifogad statistik. Boll hos Restmo.",
-      "waiting_on": "Restmos svar på audience-data (skickad 2026-06-15)",
-      "last_event": "2026-06-15"
-    },
-    {
-      "id": "sakai-ichimonji",
-      "company": "Sakai Ichimonji Mitsuhide",
-      "contact": "Bradley Jolly (International PR Lead, Sakai Ichimonji Mitsuhide)",
-      "category": "Kök / Japanska knivar",
-      "status": "interested",
-      "value": 3500,
-      "value_min": 1650,
-      "value_label": null,
-      "date_contacted": "2026-06-10",
-      "date_pitched": "2026-06-10",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/sakai-ichimonji/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-10",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-10",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-10",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-15",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3007.eml",
-          "by": "mail-watcher"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Bradley Jolly (International Content and Communications) svarade 2026-06-15 (3007.eml). Mycket positiv: \"I do very much like this idea at this stage.\" Tar det till japansk president för godkännande. Oro för EUR-JPY-kurs men erkänner PPP-hänsyn. Tre informationsbehov för att bygga case inför presidenten: (1) Carins kulinariska erfarenhet — avgör vilka knivar som skickas, (2) video från tidigare partnerskap, (3) ev. säljdata (förstår om konfidentiellt). Vill boka alignment-call EFTER att de bestämt sig att gå vidare. Bradley noterar: dom kör normalt enbart word-of-mouth men ser potential i nordisk hemmamarknaden.",
-      "waiting_on": "Bradley Jolly — inväntar svar efter intern prövning hos japansk president; Bradley behöver: (1) Carins kulinariska bakgrund, (2) video från tidigare samarbete, (3) ev. säljdata. Svar-draft 3007 prep 2026-06-15.",
-      "last_event": "2026-06-15"
-    },
-    {
       "id": "skelleftea-kraft",
       "company": "Skellefteå Kraft",
       "contact": "Simon Wiklund (Simon.Wiklund@skekraft.se)",
@@ -723,7 +621,7 @@
         {
           "to": "pitched",
           "at": "2026-06-12",
-          "evidence": "Pitch-leverans-mail skickat in-thread till Jens Peter (2488.eml)",
+          "evidence": "pitch live + draft",
           "by": "deal-keeper"
         }
       ],
@@ -731,54 +629,6 @@
       "notes": null,
       "waiting_on": null,
       "last_event": null
-    },
-    {
-      "id": "essem-design",
-      "company": "Essem Design",
-      "contact": "Robert Bladh — robert@essem.se",
-      "category": "Inredning / Speglar & Hall",
-      "status": "declined",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 – 39 000",
-      "date_contacted": "2026-06-09",
-      "date_pitched": "2026-06-12",
-      "date_closed": "2026-06-15",
-      "pitch_url": "https://villasjovik.github.io/essem-design/",
-      "outcome": "declined",
-      "final_price": null,
-      "close_reason": "soft_pass_no_timeline",
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-09",
-          "evidence": "Carins cold outreach mail till hello@essem.se",
-          "by": "migration"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-12",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2969.eml",
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-12",
-          "evidence": "pitch live https://villasjovik.github.io/essem-design/ + leverans-mail skickat 2026-06-12 (2487.eml)",
-          "by": "migration"
-        },
-        {
-          "to": "declined",
-          "at": "2026-06-15",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3021.eml — 'Jag hör av mig om jag tycker det låter intressant'",
-          "by": "auto"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "CEO Robert Bladh svarade 2026-06-12 på Carins kallt utskick (2026-06-09) med frågor om följardemografi + pris. Pitch-page byggd och live (villasjovik.github.io/essem-design) — 3 produkter valda av Lucas: Classic Tamburmajor, Klara spegel, Ekoxe stövelknekt (alla svart). Standardpaket 18 500 / Kampanjpaket 39 000. Leverans-mail skickat 2026-06-12 (2487.eml). Svar 2026-06-15: 'Jag hör av mig om jag tycker det låter intressant' — passiv soft pass utan tidsram.",
-      "waiting_on": null,
-      "last_event": "2026-06-15"
     },
     {
       "id": "orskov",
@@ -1093,48 +943,6 @@
       "last_event": null
     },
     {
-      "id": "furnipart",
-      "company": "Furnipart",
-      "contact": "Louise Berg Christensen",
-      "category": "Designbeslag / Danish furniture handles & knobs",
-      "status": "declined",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "€1 650 / €3 500 (EUR, ingen moms)",
-      "date_contacted": "2026-06-04",
-      "date_pitched": "2026-06-08",
-      "date_closed": "2026-06-15",
-      "pitch_url": "https://villasjovik.github.io/furnipart/",
-      "outcome": "no",
-      "final_price": null,
-      "close_reason": "priorities",
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-04",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-08",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "declined",
-          "at": "2026-06-15",
-          "evidence": "mail 3016.eml — Louise Berg Christensen (Digital Marketing Manager)",
-          "by": "auto"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Varm avböjning — 'not a reflection of your profile or the quality of the concept'. Hänvisar till current priorities. Öppnar för framtida samarbete utan konkret tidsram.",
-      "waiting_on": null,
-      "last_event": "2026-06-15"
-    },
-    {
       "id": "bluegaz",
       "company": "Bluegaz",
       "contact": "Niklas Månsson",
@@ -1240,48 +1048,6 @@
       "signed_evidence": null,
       "notes": "Cold outreach till info@swedishwild.se. Johan Löfström (grundare) svarade positivt 2026-06-02 och frågade explicit efter pris. Pitch byggd och deployad samma dag på vildmark→bord-vinkel. Reviderat samma dag till ETT paket — Karusellpaket 10 000 kr (10 miljöbilder som karusell, ingen video) + valfri Reach Boost. Lila Meta-sektionen borttagen.",
       "waiting_on": "Kundsvar på förslag (mail-draft redo, ej skickat)",
-      "last_event": null
-    },
-    {
-      "id": "weltevree",
-      "company": "Weltevree",
-      "contact": "Bridget van Alphen (Head of Brand) / Bo Wiegeraad (content, aktiv kontakt)",
-      "category": "Trädgård & uteliv / Holländsk outdoor-design (premium)",
-      "status": "interested",
-      "value": 3500,
-      "value_min": 1650,
-      "value_label": "1 650 / 3 500 € (EUR, ingen moms)",
-      "date_contacted": "2026-06-02",
-      "date_pitched": "2026-06-03",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/weltevree/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-02",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-03",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-15",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3014.eml",
-          "by": "auto"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Draft-svar till Bo klart — väntar Lucas-OK för skickning. Bo ny till kollaborationen, inte primär beslutsfattare — Bridget återvänder snart.",
       "last_event": null
     },
     {
@@ -1582,6 +1348,143 @@
       "signed_evidence": null,
       "notes": "Kampanjförslag 2026. Uppföljning på tidigare samarbete. 35k arvode + 15k Meta Ads. NIBE sagt att de återkommer i slutet av april med svar — ingen follow-up behövs innan dess.",
       "waiting_on": "Hembesök + kontakt från Tord (NIBE) — produktgenomgång planerad",
+      "last_event": null
+    },
+    {
+      "id": "mollerhoj",
+      "company": "Møllerhøj",
+      "contact": null,
+      "category": "Trädgård & Utomhus",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "sakai-ichimonji",
+      "company": "Sakai Ichimonji Mitsuhide",
+      "contact": "Bradley Jolly (International PR Lead, Sakai Ichimonji Mitsuhide)",
+      "category": "Kök / Japanska knivar",
+      "status": "interested",
+      "value": 3500,
+      "value_min": 1650,
+      "value_label": null,
+      "date_contacted": "2026-06-10",
+      "date_pitched": "2026-06-10",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/sakai-ichimonji/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-10",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-10",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-10",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Bradley Jolly — inväntar svar efter intern prövning hos japansk president; Bradley behöver: (1) Carins kulinariska bakgrund, (2) video från tidigare samarbete, (3) ev. säljdata. Svar-draft 3007 prep 2026-06-15.",
+      "last_event": null
+    },
+    {
+      "id": "cocoon-fine-rugs",
+      "company": "Cocoon Fine Rugs",
+      "contact": "Ruchita Raut (Brand Manager)",
+      "category": "Inredning & Design / Lyxmattor",
+      "status": "interested",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-06-08",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-08",
+          "evidence": "carin@ skickade kallt outreach-mail till mail@cocooncarpets.com",
+          "by": "lucas"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-15",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3013.eml — Brand Manager Ruchita Raut svarar 'interested in exploring further', frågar barter vs betalt",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas — beslutar paket + prisvinkel, sedan pitch",
+      "last_event": null
+    },
+    {
+      "id": "weltevree",
+      "company": "Weltevree",
+      "contact": "Bridget van Alphen (Head of Brand)",
+      "category": "Trädgård & uteliv / Holländsk outdoor-design (premium)",
+      "status": "interested",
+      "value": 3500,
+      "value_min": 1650,
+      "value_label": "1 650 / 3 500 € (EUR, ingen moms)",
+      "date_contacted": "2026-06-02",
+      "date_pitched": "2026-06-03",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/weltevree/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-03",
+          "evidence": null,
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Draft-svar till Bo klart — väntar Lucas-OK för skickning. Bo ny till kollaborationen, inte primär beslutsfattare — Bridget återvänder snart.",
       "last_event": null
     },
     {
@@ -2251,6 +2154,113 @@
       "last_event": null
     },
     {
+      "id": "restmo",
+      "company": "Restmo",
+      "contact": "Restmo — restmo260204@gmail.com",
+      "category": "Trädgård / Bevattning & Utomhus",
+      "status": "declined",
+      "value": 3500,
+      "value_min": 1650,
+      "value_label": "EUR · Starter 1 650 – Campaign 3 500",
+      "date_contacted": "2026-06-11",
+      "date_pitched": "2026-06-12",
+      "date_closed": "2026-06-15",
+      "pitch_url": "https://villasjovik.github.io/restmo/",
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": "US-marknadsfokus + begränsad Europa-lager/distribution — pausar, vill återkoppla när Europa-lagret expanderar",
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "replied",
+          "at": "2026-06-11",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2480.eml",
+          "by": "migration"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-12",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2970.eml",
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-12",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-12",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2489.eml",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-06-15",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3008.eml",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-15",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3010.eml",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Inbound från Instagram 2026-06-10. Premium WATERING-tillbehör (metallmunstycken, vattningsstavar, gräsmattesprinklers) — US-baserat (Houston, TX), restmo.online. Carin svarade 2026-06-11 och klargjorde betalmodell. RESTMO svarade 2026-06-12: bekräftar betalmodell, önskar 1 Collab Reel som primärleverans + ev. foto-inlägg, ber om priser/paketrekommendation. ENGELSK internationell pitch deployad 2026-06-12 (EUR-priser, sakai-ichimonji-mall): https://villasjovik.github.io/restmo/. Hero-vinkel 'the garden you actually live in' — 3 spår mappade till watering wand / 2-in-1 green hose nozzle / metall-lawn-sprinklers. Logo: PNG → potrace-3D (chrome). Obs: kontaktmail är gmail, Amazon/Walmart-positioned. Standard paketframing behållen (Starter 1 video / Campaign 3 videor) — Collab Reel-önskemålet erkänns men inga villkor uppfanns. Pitch-leverans-mail skickat 2026-06-12 (2489.eml) — pitchlänk + Campaign-rekommendation, boll hos Restmo.",
+      "waiting_on": "Inget aktivt — Restmo tackade mjukt nej 2026-06-15 (3010.eml). Höst-recheck 2026-09-01 om Europa-lager expanderat.",
+      "last_event": null
+    },
+    {
+      "id": "essem-design",
+      "company": "Essem Design",
+      "contact": "Robert Bladh — robert@essem.se",
+      "category": "Inredning / Speglar & Hall",
+      "status": "declined",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-09",
+      "date_pitched": "2026-06-12",
+      "date_closed": "2026-06-15",
+      "pitch_url": "https://villasjovik.github.io/essem-design/",
+      "outcome": "declined",
+      "final_price": null,
+      "close_reason": "soft_pass_no_timeline",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-09",
+          "evidence": "Carins cold outreach mail till hello@essem.se",
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-12",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2969.eml",
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-12",
+          "evidence": "pitch live https://villasjovik.github.io/essem-design/ + leverans-mail skickat 2026-06-12 (2487.eml)",
+          "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-15",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3021.eml — 'Jag hör av mig om jag tycker det låter intressant'",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "CEO Robert Bladh svarade 2026-06-12 på Carins kallt utskick (2026-06-09) med frågor om följardemografi + pris. Pitch-page byggd och live (villasjovik.github.io/essem-design) — 3 produkter valda av Lucas: Classic Tamburmajor, Klara spegel, Ekoxe stövelknekt (alla svart). Standardpaket 18 500 / Kampanjpaket 39 000. Leverans-mail skickat 2026-06-12 (2487.eml). Svar 2026-06-15: 'Jag hör av mig om jag tycker det låter intressant' — passiv soft pass utan tidsram.",
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "graccioza",
       "company": "Graccioza (Sorema)",
       "contact": "Maria Vasconcelos",
@@ -2327,6 +2337,48 @@
           "at": "2026-06-12",
           "evidence": "events/2026/06/12/mail-2981.md",
           "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "furnipart",
+      "company": "Furnipart",
+      "contact": "Louise Berg Christensen",
+      "category": "Designbeslag / Danish furniture handles & knobs",
+      "status": "declined",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "€1 650 / €3 500 (EUR, ingen moms)",
+      "date_contacted": "2026-06-04",
+      "date_pitched": "2026-06-08",
+      "date_closed": "2026-06-15",
+      "pitch_url": "https://villasjovik.github.io/furnipart/",
+      "outcome": "no",
+      "final_price": null,
+      "close_reason": "priorities",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-04",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-15",
+          "evidence": "mail 3016.eml — Louise Berg Christensen",
+          "by": "migration"
         }
       ],
       "signed_evidence": null,
@@ -4067,6 +4119,50 @@
       "notes": "Nystartad. Email-pitch 2026-06-08 (12 000 kr exkl. moms, 21 miljöbilder för 3 produktkit). Warm decline 2026-06-11 — budget för stor just nu, föredrar produktutbyte. Öppen dörr.",
       "waiting_on": null,
       "last_event": null
+    },
+    {
+      "id": "vedum",
+      "company": "Vedum Kök & Bad",
+      "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet; CC: Alexandra Lindelöf (alexandra.lindelof@vedum.se)",
+      "category": "Kök & Bad / Inredning",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-07",
+      "date_pitched": "2026-06-08",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-07",
+          "evidence": null,
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-08",
+          "evidence": "operational/projekt/villa-sjovik/leads/mail-audit-2026-06-08/inbox-all.txt",
+          "by": "auto"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml (blockquote: pitch skickad 8 juni med bilagor)",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-specifikation (tvättstuge-projekt). INGEN GitHub Pages-pitch genererad (Lucas parkerade 8/6 innan Carin skickade email-pitchen ändå). Jenny Andersson = besluts­fattare (varumärkeskommunikation). CC: Alexandra Lindelöf. Follow-up skickat 15 juni: 'Jag tänkte bara höra hur era tankar går kring ett ev samarbete?'",
+      "waiting_on": "Jenny Andersson — svar på email-pitch (8 juni) + follow-up 15 juni",
+      "last_event": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml",
+      "schema_version": 2,
+      "contact_email": "jenny.andersson@vedum.se"
     }
   ],
   "leads_summary": {
@@ -4077,7 +4173,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-06-12",
+    "updated": "2026-06-15",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -4096,5 +4192,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-12T11:10:16.972Z"
+  "generated_at": "2026-06-15T10:34:00.023Z"
 }

@@ -1091,17 +1091,17 @@
       "company": "Furnipart",
       "contact": "Louise Berg Christensen",
       "category": "Designbeslag / Danish furniture handles & knobs",
-      "status": "pitched",
+      "status": "declined",
       "value": 39000,
       "value_min": 18500,
       "value_label": "€1 650 / €3 500 (EUR, ingen moms)",
       "date_contacted": "2026-06-04",
       "date_pitched": "2026-06-08",
-      "date_closed": null,
+      "date_closed": "2026-06-15",
       "pitch_url": "https://villasjovik.github.io/furnipart/",
-      "outcome": null,
+      "outcome": "no",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "priorities",
       "followup_window": null,
       "stage_history": [
         {
@@ -1115,12 +1115,18 @@
           "at": "2026-06-08",
           "evidence": null,
           "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-15",
+          "evidence": "mail 3016.eml — Louise Berg Christensen (Digital Marketing Manager)",
+          "by": "auto"
         }
       ],
       "signed_evidence": null,
-      "notes": null,
+      "notes": "Varm avböjning — 'not a reflection of your profile or the quality of the concept'. Hänvisar till current priorities. Öppnar för framtida samarbete utan konkret tidsram.",
       "waiting_on": null,
-      "last_event": null
+      "last_event": "2026-06-15"
     },
     {
       "id": "bluegaz",

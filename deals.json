@@ -2228,6 +2228,7 @@
         {
           "to": "pitched",
           "at": "2026-06-12",
+          "evidence": null,
           "by": "deal-keeper"
         },
         {
@@ -4190,5 +4191,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-15T10:50:08.926Z"
+  "generated_at": "2026-06-15T11:31:01.522Z"
 }

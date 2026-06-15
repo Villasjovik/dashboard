@@ -737,17 +737,17 @@
       "company": "Essem Design",
       "contact": "Robert Bladh — robert@essem.se",
       "category": "Inredning / Speglar & Hall",
-      "status": "pitched",
+      "status": "declined",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 – 39 000",
       "date_contacted": "2026-06-09",
       "date_pitched": "2026-06-12",
-      "date_closed": null,
+      "date_closed": "2026-06-15",
       "pitch_url": "https://villasjovik.github.io/essem-design/",
-      "outcome": null,
+      "outcome": "declined",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "soft_pass_no_timeline",
       "followup_window": null,
       "stage_history": [
         {
@@ -767,12 +767,18 @@
           "at": "2026-06-12",
           "evidence": "pitch live https://villasjovik.github.io/essem-design/ + leverans-mail skickat 2026-06-12 (2487.eml)",
           "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-15",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3021.eml — 'Jag hör av mig om jag tycker det låter intressant'",
+          "by": "auto"
         }
       ],
       "signed_evidence": null,
-      "notes": "CEO Robert Bladh svarade 2026-06-12 på Carins kallt utskick (2026-06-09) med frågor om följardemografi + pris. Pitch-page byggd och live (villasjovik.github.io/essem-design) — 3 produkter valda av Lucas: Classic Tamburmajor, Klara spegel, Ekoxe stövelknekt (alla svart). Standardpaket 18 500 / Kampanjpaket 39 000. Leverans-mail skickat 2026-06-12 (2487.eml) — bollen hos Robert.",
-      "waiting_on": "robert_reply",
-      "last_event": "2026-06-12"
+      "notes": "CEO Robert Bladh svarade 2026-06-12 på Carins kallt utskick (2026-06-09) med frågor om följardemografi + pris. Pitch-page byggd och live (villasjovik.github.io/essem-design) — 3 produkter valda av Lucas: Classic Tamburmajor, Klara spegel, Ekoxe stövelknekt (alla svart). Standardpaket 18 500 / Kampanjpaket 39 000. Leverans-mail skickat 2026-06-12 (2487.eml). Svar 2026-06-15: 'Jag hör av mig om jag tycker det låter intressant' — passiv soft pass utan tidsram.",
+      "waiting_on": null,
+      "last_event": "2026-06-15"
     },
     {
       "id": "orskov",

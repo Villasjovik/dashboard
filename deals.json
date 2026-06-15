@@ -1572,6 +1572,42 @@
       "last_event": null
     },
     {
+      "id": "mesa-ceramics",
+      "company": "Mesa Ceramics",
+      "contact": "Inês Rebelo de Sousa (New Products & Marketing Manager)",
+      "category": "Inredning & Design / Keramik",
+      "status": "replied",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "cold outreach (skapad vid utskick)",
+          "by": "lucas"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-15",
+          "evidence": "events/2026/06/15/mail-3045.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "sanova",
       "company": "Sanova",
       "contact": "Sara Wistrand",
@@ -4191,5 +4227,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-15T11:31:01.522Z"
+  "generated_at": "2026-06-15T13:52:36.684Z"
 }

@@ -1233,9 +1233,9 @@
     {
       "id": "weltevree",
       "company": "Weltevree",
-      "contact": "Bridget van Alphen (Head of Brand)",
+      "contact": "Bridget van Alphen (Head of Brand) / Bo Wiegeraad (content, aktiv kontakt)",
       "category": "Trädgård & uteliv / Holländsk outdoor-design (premium)",
-      "status": "pitched",
+      "status": "interested",
       "value": 3500,
       "value_min": 1650,
       "value_label": "1 650 / 3 500 € (EUR, ingen moms)",
@@ -1259,11 +1259,17 @@
           "at": "2026-06-03",
           "evidence": null,
           "by": "migration"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-15",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3014.eml",
+          "by": "auto"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Svar från Bo (bo@weltevree.nl) — content-kontakt under Bridgets frånvaro (mejl skickat 2026-06-08)",
+      "waiting_on": "Draft-svar till Bo klart — väntar Lucas-OK för skickning. Bo ny till kollaborationen, inte primär beslutsfattare — Bridget återvänder snart.",
       "last_event": null
     },
     {

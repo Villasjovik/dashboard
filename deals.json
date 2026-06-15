@@ -509,7 +509,7 @@
       "company": "Restmo",
       "contact": "Restmo — restmo260204@gmail.com",
       "category": "Trädgård / Bevattning & Utomhus",
-      "status": "pitched",
+      "status": "negotiating",
       "value": 3500,
       "value_min": 1650,
       "value_label": "EUR · Starter 1 650 – Campaign 3 500",
@@ -544,12 +544,19 @@
           "at": "2026-06-12",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2489.eml",
           "by": "mail-watcher"
+        },
+        {
+          "to": "negotiating",
+          "at": "2026-06-15",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3008.eml",
+          "by": "mail-watcher",
+          "note": "Restmo gillar pitchen, ber om audience-distribution-data (primärmarknad US)"
         }
       ],
       "signed_evidence": null,
-      "notes": "Inbound från Instagram 2026-06-10. Premium WATERING-tillbehör (metallmunstycken, vattningsstavar, gräsmattesprinklers) — US-baserat (Houston, TX), restmo.online. Carin svarade 2026-06-11 och klargjorde betalmodell. RESTMO svarade 2026-06-12: bekräftar betalmodell, önskar 1 Collab Reel som primärleverans + ev. foto-inlägg, ber om priser/paketrekommendation. ENGELSK internationell pitch deployad 2026-06-12 (EUR-priser, sakai-ichimonji-mall): https://villasjovik.github.io/restmo/. Hero-vinkel 'the garden you actually live in' — 3 spår mappade till watering wand / 2-in-1 green hose nozzle / metall-lawn-sprinklers. Logo: PNG → potrace-3D (chrome). Obs: kontaktmail är gmail, Amazon/Walmart-positioned. Standard paketframing behållen (Starter 1 video / Campaign 3 videor) — Collab Reel-önskemålet erkänns men inga villkor uppfanns. Pitch-leverans-mail skickat 2026-06-12 (2489.eml) — pitchlänk + Campaign-paket-rekommendation, boll hos Restmo.",
-      "waiting_on": "restmo_reply",
-      "last_event": "2026-06-12"
+      "notes": "Inbound från Instagram 2026-06-10. Premium WATERING-tillbehör (metallmunstycken, vattningsstavar, gräsmattesprinklers) — US-baserat (Houston, TX), restmo.online. Carin svarade 2026-06-11 och klargjorde betalmodell. RESTMO svarade 2026-06-12: bekräftar betalmodell, önskar 1 Collab Reel + ev. foto-inlägg, ber om priser/paket. ENGELSK internationell pitch deployad 2026-06-12 (EUR-priser): https://villasjovik.github.io/restmo/. Pitch-leverans-mail 2026-06-12. RESTMO svarade 2026-06-15 (3008.eml): gillar pitchen och riktningen, ber om geografisk audience-distribution — primärmarknad US. Draft skapad med [PLATSHÅLLARE] för Instagram Insights-data (Lucas/Carin fyller i).",
+      "waiting_on": "carin_audience_data",
+      "last_event": "2026-06-15"
     },
     {
       "id": "sakai-ichimonji",

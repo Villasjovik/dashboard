@@ -556,7 +556,7 @@
       "company": "Sakai Ichimonji Mitsuhide",
       "contact": "Bradley Jolly (International PR Lead, Sakai Ichimonji Mitsuhide)",
       "category": "Kök / Japanska knivar",
-      "status": "pitched",
+      "status": "interested",
       "value": 3500,
       "value_min": 1650,
       "value_label": null,
@@ -586,12 +586,18 @@
           "at": "2026-06-10",
           "evidence": null,
           "by": "migration"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-15",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3007.eml",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Bradley Jolly — svar på relationship-first-mail (publik-demografi delad, pitch lågmält inkluderad)",
-      "last_event": null
+      "notes": "Bradley Jolly (International Content and Communications) svarade 2026-06-15 (3007.eml). Mycket positiv: \"I do very much like this idea at this stage.\" Tar det till japansk president för godkännande. Oro för EUR-JPY-kurs men erkänner PPP-hänsyn. Tre informationsbehov för att bygga case inför presidenten: (1) Carins kulinariska erfarenhet — avgör vilka knivar som skickas, (2) video från tidigare partnerskap, (3) ev. säljdata (förstår om konfidentiellt). Vill boka alignment-call EFTER att de bestämt sig att gå vidare. Bradley noterar: dom kör normalt enbart word-of-mouth men ser potential i nordisk hemmamarknaden.",
+      "waiting_on": "Bradley Jolly — inväntar svar efter intern prövning hos japansk president; Bradley behöver: (1) Carins kulinariska bakgrund, (2) video från tidigare samarbete, (3) ev. säljdata. Svar-draft 3007 prep 2026-06-15.",
+      "last_event": "2026-06-15"
     },
     {
       "id": "skelleftea-kraft",

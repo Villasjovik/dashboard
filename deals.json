@@ -1706,14 +1706,14 @@
       "company": "Mesa Ceramics",
       "contact": "Inês Rebelo de Sousa (New Products & Marketing Manager)",
       "category": "Inredning & Bordskultur / Premium Stengods",
-      "status": "replied",
+      "status": "pitched",
       "value": 39000,
       "value_min": 18500,
       "value_label": null,
       "date_contacted": "2026-06-06",
-      "date_pitched": null,
+      "date_pitched": "2026-06-16",
       "date_closed": null,
-      "pitch_url": null,
+      "pitch_url": "https://villasjovik.github.io/mesa-ceramics/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
@@ -1730,11 +1730,17 @@
           "at": "2026-06-15",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3045.eml",
           "by": "deal-keeper"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-16",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2620.eml — pitch-sida skickad i svar till Inês fråga om paket + priser",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "lucas",
+      "waiting_on": "customer",
       "last_event": null
     },
     {

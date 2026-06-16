@@ -4158,6 +4158,42 @@
       "last_event": null
     },
     {
+      "id": "prhome",
+      "company": "PR Home of Scandinavia",
+      "contact": "Åsa Kjellberg (Art Director & Content Creator, Asa.Kjellberg@prhome.se)",
+      "category": "Belysning & Inredning / Skandinavisk Design",
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2578.eml",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-16",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3071.eml",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Kallt utskick 2026-06-15 till info@prhome.se. Åsa Kjellberg (Art Director & Content Creator) svarade 2026-06-16 — intresserade men minimal budget. Erbjuder produktbyte (samarbetspartnern behåller produkterna), noll kontant ersättning. Frågar om det ändå kan fungera. Liknande situation som 1zpresso.",
+      "waiting_on": "Lucas — beslutar om produktbyte accepteras. Draft klar: operational/projekt/villa-sjovik/drafts/draft-prhome-1781597386026.md",
+      "last_event": "2026-06-16"
+    },
+    {
       "id": "act-of-caring",
       "company": "Act of Caring",
       "contact": "Ola — hello@actofcaring.com",

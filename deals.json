@@ -153,8 +153,8 @@
       ],
       "signed_evidence": "operational/projekt/villa-sjovik/dokument/Samarbetsavtal_VillaSjovik_Norremarks_2026-06-08.pdf",
       "notes": "Skandinaviska mattor (SGD-ägt). Pitch skickad 2026-04-22 efter Emmas positiva svar 22/4 på kallt mail 19/4. 4 video-spår: Så enkelt är det (mätning/beställning), Sovrummets förvandling, Mjukhet i köket, Ert koncept. Paket: 18 500 SEK (1 video) / 39 000 SEK (3 videor). Emma är koordinator — behöver förankra uppåt, därför ingen bokningswidget, bara presentation att vidarebefordra.",
-      "waiting_on": "SGD skickar mattorna (leveranskoordinering initierad 2026-06-16 av Emma Olin, via intern kollega Marcus, Carin CC:ad, 3070.eml). Carin bekräftar leveransadress → inväntar mattleverans → produktion av 20 miljöbilder + 1 video + 2 stories → fakturerar del 2 (9 250 kr ex moms) vid content-leverans → publicering september 2026. OBS: Verifiera att 50%-deposition (9 250 kr ex moms) fakturerats och att Carin motsignerat i Oneflow.",
-      "last_event": "2026-06-16"
+      "waiting_on": "Carin behöver svara Marcus Gustavsson (SVEGAB) om vecka 27-tillgänglighet (leverans v26 slutet) + bekräfta att HASM013400 färg 907 = Hasmark naturgräs 907 är rätt (svar: ja). Därefter: invänta mattleverans → produktion av 20 miljöbilder + 1 video + 2 stories → fakturerar del 2 (9 250 kr ex moms) vid content-leverans → publicering september 2026. OBS: Verifiera att 50%-deposition (9 250 kr ex moms) fakturerats och att Carin motsignerat i Oneflow.",
+      "last_event": null
     },
     {
       "id": "jape",
@@ -333,7 +333,7 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Pelle godkände 50/50-modell 2026-06-11 (mail 2956.eml). Lucas uppdaterar Oneflow-avtal med reviderade betalningsvillkor (50% vid signering, 50% vid leverans av första video) → skickar nytt avtal till Pelle för signering. Väntar signering.",
+      "waiting_on": "Reviderat avtal (50/50-villkor) skickat av Carin 2026-06-15 (2612.eml). Väntar Pelles signering av Oneflow-doc 15004310.",
       "last_event": null
     },
     {
@@ -1393,6 +1393,29 @@
       "last_event": null
     },
     {
+      "id": "espegard",
+      "company": "Espegard",
+      "contact": "Jakob Storm Leth",
+      "category": "Trädgård & Utomhus / Eldstäder & Bålpannor",
+      "status": "interested",
+      "value": 18500,
+      "value_min": 12000,
+      "value_label": "12 000 / 18 500 kr",
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas-beslut om prissättning och nästa steg — Jakob frågar om pris",
+      "last_event": null
+    },
+    {
       "id": "mollerhoj",
       "company": "Møllerhøj",
       "contact": null,
@@ -1413,6 +1436,42 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "teministeriet",
+      "company": "Teministeriet",
+      "contact": "Maria Dam (Witt Denmark)",
+      "category": "Mat & Dryck / Te / Skandinavisk Design",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "Carin skickade kallt utskick till info@teministeriet.com (164k audience-pitch)",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-16",
+          "evidence": "events/2026/06/16/mail-3064.md — Lærke (Witt Denmark) svarade, ber om statistik + kampanjexempel + priser",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas — bekräfta att svaret/offerten ska gå till Maria Dam (Witt Denmark, mdh@wittdenmark.com), inte info@teministeriet.com; besluta paket/pris",
       "last_event": null
     },
     {
@@ -1450,6 +1509,12 @@
           "at": "2026-06-10",
           "evidence": null,
           "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-15",
+          "evidence": "events/2026/06/15/mail-2613.md",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
@@ -1491,6 +1556,42 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas — beslutar paket + prisvinkel, sedan pitch",
+      "last_event": null
+    },
+    {
+      "id": "fine-little-day",
+      "company": "Fine Little Day",
+      "contact": "Josefin Axstrin",
+      "category": "Hem & Inredning / Textil / Skandinavisk Design",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-04",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-04",
+          "evidence": "Carin skickade kallt utskick till press@finelittleday.com",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-16",
+          "evidence": "Josefin Axstrin (Sales Manager) svarade — \"Vad roligt\", välkomnar idéer om upplägg",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas — godkänn pitch-upplägg och bestäm paket/pris innan idéer skickas till Josefin",
       "last_event": null
     },
     {
@@ -1572,15 +1673,38 @@
       "last_event": null
     },
     {
+      "id": "prhome",
+      "company": "PR Home of Scandinavia",
+      "contact": "Åsa Kjellberg (Art Director & Content Creator, Asa.Kjellberg@prhome.se)",
+      "category": "Belysning & Inredning / Skandinavisk Design",
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas — beslutar om produktbyte accepteras. Draft klar: operational/projekt/villa-sjovik/drafts/draft-prhome-1781597386026.md",
+      "last_event": null
+    },
+    {
       "id": "mesa-ceramics",
       "company": "Mesa Ceramics",
       "contact": "Inês Rebelo de Sousa (New Products & Marketing Manager)",
-      "category": "Inredning & Design / Keramik",
+      "category": "Inredning & Bordskultur / Premium Stengods",
       "status": "replied",
       "value": 39000,
       "value_min": 18500,
       "value_label": null,
-      "date_contacted": "2026-06-15",
+      "date_contacted": "2026-06-06",
       "date_pitched": null,
       "date_closed": null,
       "pitch_url": null,
@@ -1591,20 +1715,20 @@
       "stage_history": [
         {
           "to": "contacted",
-          "at": "2026-06-15",
-          "evidence": "cold outreach (skapad vid utskick)",
-          "by": "lucas"
+          "at": "2026-06-06",
+          "evidence": "cold outreach — ämne: Mesa Ceramics × Villa Sjövik — 164k Swedish home audience",
+          "by": "deal-keeper"
         },
         {
           "to": "replied",
           "at": "2026-06-15",
-          "evidence": "events/2026/06/15/mail-3045.md",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3045.eml",
           "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": null,
+      "waiting_on": "lucas",
       "last_event": null
     },
     {
@@ -2224,6 +2348,228 @@
           "at": "2026-05-16",
           "evidence": null,
           "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "byjema",
+      "company": "byJEMA",
+      "contact": "byJEMA",
+      "category": "Inredning & Design",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": "2026-06-15",
+      "pitch_url": null,
+      "outcome": "declined",
+      "final_price": null,
+      "close_reason": "Tackar nej — ingår inga nya influencer-/ambassadörssamarbeten just nu",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "cold outreach (skapad vid utskick)",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "kallans",
+      "company": "Kallans",
+      "contact": "Kallans",
+      "category": "Inredning & Design",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": "2026-06-15",
+      "pitch_url": null,
+      "outcome": "declined",
+      "final_price": null,
+      "close_reason": "Tackar nej — jobbar inte med denna typ av samarbeten, ej rätt matchning",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "cold outreach (skapad vid utskick)",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "mosaic-factory",
+      "company": "Mosaic Factory",
+      "contact": "Mosaic Factory",
+      "category": "Inredning & Design / Mosaik",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": "2026-06-15",
+      "pitch_url": null,
+      "outcome": "declined",
+      "final_price": null,
+      "close_reason": "Declined — handles all marketing in-house",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "cold outreach (skapad vid utskick)",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "nordiska-kok",
+      "company": "Nordiska Kök",
+      "contact": "Nordiska Kök",
+      "category": "Kök & Inredning",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": "2026-06-15",
+      "pitch_url": null,
+      "outcome": "declined",
+      "final_price": null,
+      "close_reason": "Tackar nej — gör inte rabatt-mot-poster-samarbeten, valt annan marknadsväg",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "cold outreach (skapad vid utskick)",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "ren-logik",
+      "company": "Ren Logik",
+      "contact": "Viktoria Widengren — viktoria@renlogik.se",
+      "category": "Hem & Rengöring / Diskmedel och Städprodukter",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": "2026-06-16",
+      "pitch_url": null,
+      "outcome": "closed",
+      "final_price": null,
+      "close_reason": "Budget decline 2026-06-16 — \"helt tomt i kassan\". Viktoria bekräftar \"fantastisk match\" men ingen budget just nu.",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "operational/projekt/villa-sjovik/leads/send-log-2026-06-15.jsonl",
+          "by": "lucas"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-16",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3063.eml",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Kallt outreach 2026-06-15 till info@renlogik.se. Viktoria Widengren svarade 2026-06-16: \"fantastisk match men tomt i kassan.\" Budget decline utan explicit follow-up-invitation.",
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "the-mallows",
+      "company": "The Mallows",
+      "contact": "Kamma Bro (Marketing Manager)",
+      "category": "Konfektyr / Danska marshmallows",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": "gifting_only",
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "replied",
+          "at": "2026-06-16",
+          "evidence": "events/2026/06/16/mail-3076.md",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-16",
+          "evidence": "events/2026/06/16/mail-3078.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "vinga-home",
+      "company": "Vinga Home",
+      "contact": "Vinga Home",
+      "category": "Hem & Inredning",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": "2026-06-15",
+      "pitch_url": null,
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": "Tackar nej för nuvarande — söker inga nya partners (mer aktivitet vinterhalvåret)",
+      "followup_window": "2026-11-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "cold outreach (skapad vid utskick)",
+          "by": "lucas"
         }
       ],
       "signed_evidence": null,
@@ -4158,42 +4504,6 @@
       "last_event": null
     },
     {
-      "id": "prhome",
-      "company": "PR Home of Scandinavia",
-      "contact": "Åsa Kjellberg (Art Director & Content Creator, Asa.Kjellberg@prhome.se)",
-      "category": "Belysning & Inredning / Skandinavisk Design",
-      "status": "replied",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-06-15",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-15",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2578.eml",
-          "by": "carin"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-16",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3071.eml",
-          "by": "deal-keeper"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Kallt utskick 2026-06-15 till info@prhome.se. Åsa Kjellberg (Art Director & Content Creator) svarade 2026-06-16 — intresserade men minimal budget. Erbjuder produktbyte (samarbetspartnern behåller produkterna), noll kontant ersättning. Frågar om det ändå kan fungera. Liknande situation som 1zpresso.",
-      "waiting_on": "Lucas — beslutar om produktbyte accepteras. Draft klar: operational/projekt/villa-sjovik/drafts/draft-prhome-1781597386026.md",
-      "last_event": "2026-06-16"
-    },
-    {
       "id": "act-of-caring",
       "company": "Act of Caring",
       "contact": "Ola — hello@actofcaring.com",
@@ -4244,7 +4554,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-06-15",
+    "updated": "2026-06-16",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -4263,5 +4573,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-15T13:52:36.684Z"
+  "generated_at": "2026-06-16T11:51:51.333Z"
 }

@@ -153,7 +153,7 @@
       ],
       "signed_evidence": "operational/projekt/villa-sjovik/dokument/Samarbetsavtal_VillaSjovik_Norremarks_2026-06-08.pdf",
       "notes": "Skandinaviska mattor (SGD-ägt). Pitch skickad 2026-04-22 efter Emmas positiva svar 22/4 på kallt mail 19/4. 4 video-spår: Så enkelt är det (mätning/beställning), Sovrummets förvandling, Mjukhet i köket, Ert koncept. Paket: 18 500 SEK (1 video) / 39 000 SEK (3 videor). Emma är koordinator — behöver förankra uppåt, därför ingen bokningswidget, bara presentation att vidarebefordra.",
-      "waiting_on": "⚠️ OBS — mattval ändrat 2026-06-16: Carin korrigerade matrumsmattan till HASM015400 (Hasmark ljus natur 015) i svar till Marcus (2619.eml). Emma hade specificerat HASM013400 (naturgräs 907) — Emma är CC:ad men ändringen bör bekräftas med henne. Nästa steg: invänta mattleverans v26 slut → ta emot v27 → verifiera rätt mattor levererats → produktion 20 miljöbilder + 1 video + 2 stories → fakturera del 2 (9 250 kr ex moms) vid content-leverans → publicering september 2026. OBS: Verifiera att 50%-deposition fakturerats och att Carin motsignerat i Oneflow.",
+      "waiting_on": "✅ Marcus bekräftade mattbytet (HASM015400 Hasmark ljus natur 015) i 3092.eml 2026-06-16. ⚠️ Emma (CC:ad) har ännu inte explicit bekräftat — avvakta inkommande. Nästa steg: invänta mattleverans slutet v26 → ta emot v27 → verifiera rätt mattor levererats → produktion 20 miljöbilder + 1 video + 2 stories → fakturera del 2 (9 250 kr ex moms) vid content-leverans → publicering september 2026. OBS: Verifiera att 50%-deposition fakturerats och att Carin motsignerat i Oneflow.",
       "last_event": null
     },
     {
@@ -379,6 +379,54 @@
       "last_event": null
     },
     {
+      "id": "skadedjursbutiken",
+      "company": "Skadedjursbutiken",
+      "contact": "Sebastian Maltéus",
+      "category": "Hem & Säkerhet",
+      "status": "verbal_agreement",
+      "value": 39000,
+      "value_min": 39000,
+      "value_label": "39 000",
+      "date_contacted": "2026-04-13",
+      "date_pitched": "2026-05-07",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/skadedjursbutiken/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-13",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-07",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-06-16",
+          "evidence": "Sebastian ringde Carin — muntligt möte",
+          "by": "carin"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-06-16",
+          "evidence": "Muntligt överens om Kampanjpaket 39 000 ex moms — produkter snigelmedel, myrmedel, mal",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Pitch 2026-05-07 (18 500 / 39 000). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket 39 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 genererad + pushad (samma URL), gamla designen arkiverad som skadedjursbutiken_0. Samarbetsavtal upprättat — en faktura vid signering, publicering bestäms gemensamt. Väntar Carins granskning, därefter utskick via OneFlow.",
+      "waiting_on": "Carins granskning av avtalet (2026-06-16), därefter utskick av offert + avtal via OneFlow-länk. Status till contract_sent vid utskick; closed först vid signering.",
+      "last_event": null
+    },
+    {
       "id": "nordstone",
       "company": "Nordstone",
       "contact": null,
@@ -466,42 +514,6 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Anders Haglunds svar på pitch",
-      "last_event": null
-    },
-    {
-      "id": "skadedjursbutiken",
-      "company": "Skadedjursbutiken",
-      "contact": "Sebastian Maltéus",
-      "category": "Hem & Säkerhet",
-      "status": "meeting",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000",
-      "date_contacted": "2026-04-13",
-      "date_pitched": "2026-05-07",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/skadedjursbutiken/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-04-13",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-05-07",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Pitch 2026-05-07 — offert 18 500 kr (Paket 1) / 39 000 kr (Kampanj). Sebastian svarade 2026-05-12: vill köra Kampanjpaketet men ber om 25 000 kr. Carin countrade 30 000 kr. Carin follow-up 2026-05-14 — inväntar Sebastians svar.",
-      "waiting_on": "Sebastians svar på avslutande uppföljning 2026-06-10 — Carin signalerade 'sista avstämning', bollen hos Sebastian att höra av sig",
       "last_event": null
     },
     {
@@ -835,18 +847,18 @@
       "last_event": null
     },
     {
-      "id": "vedum",
-      "company": "Vedum Kök & Bad",
-      "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
-      "category": "Kök & Bad / Inredning",
-      "status": "replied",
+      "id": "mesa-ceramics",
+      "company": "Mesa Ceramics",
+      "contact": "Inês Rebelo de Sousa (New Products & Marketing Manager)",
+      "category": "Inredning & Bordskultur / Premium Stengods",
+      "status": "pitched",
       "value": 39000,
       "value_min": 18500,
-      "value_label": "18 500 – 39 000",
-      "date_contacted": "2026-06-07",
-      "date_pitched": "2026-06-08",
+      "value_label": null,
+      "date_contacted": "2026-06-06",
+      "date_pitched": "2026-06-16",
       "date_closed": null,
-      "pitch_url": null,
+      "pitch_url": "https://villasjovik.github.io/mesa-ceramics/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
@@ -854,32 +866,26 @@
       "stage_history": [
         {
           "to": "contacted",
-          "at": "2026-06-07",
-          "evidence": null,
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-08",
-          "evidence": "operational/projekt/villa-sjovik/leads/mail-audit-2026-06-08/inbox-all.txt",
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-08",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml (blockquote)",
-          "by": "carin"
+          "at": "2026-06-06",
+          "evidence": "cold outreach — ämne: Mesa Ceramics × Villa Sjövik — 164k Swedish home audience",
+          "by": "deal-keeper"
         },
         {
           "to": "replied",
+          "at": "2026-06-15",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3045.eml",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "pitched",
           "at": "2026-06-16",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3087.eml",
-          "by": "jenny"
+          "evidence": "events/2026/06/16/mail-2620.md",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
-      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Motiv: koppla mot Bad-återförsäljarsortimentet. Carin svarade 16 juni (2618.eml): bekräftar basfärger/Edit-luckan, föreslår möte i veckan. Väntar på Jennys svar.",
-      "waiting_on": "Jenny bekräftar möte i veckan (Carin föreslog 2026-06-16, 2618.eml)",
+      "notes": null,
+      "waiting_on": "customer",
       "last_event": null
     },
     {
@@ -1410,7 +1416,7 @@
       "date_contacted": "2026-06-15",
       "date_pitched": null,
       "date_closed": null,
-      "pitch_url": null,
+      "pitch_url": "https://villasjovik.github.io/espegard/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
@@ -1445,6 +1451,29 @@
       "last_event": null
     },
     {
+      "id": "mysoda",
+      "company": "Mysoda",
+      "contact": "Emma",
+      "category": "Hem & Kök / Kolsyremaskiner",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas-beslut — Mysoda erbjuder BARA produktsamarbete (gifted Glassy), explicit nej till betalt just nu. Acceptera produktcollab eller tacka artigt nej?",
+      "last_event": null
+    },
+    {
       "id": "teministeriet",
       "company": "Teministeriet",
       "contact": "Maria Dam (Witt Denmark)",
@@ -1456,7 +1485,7 @@
       "date_contacted": "2026-06-15",
       "date_pitched": null,
       "date_closed": null,
-      "pitch_url": null,
+      "pitch_url": "https://villasjovik.github.io/teministeriet/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
@@ -1702,18 +1731,18 @@
       "last_event": null
     },
     {
-      "id": "mesa-ceramics",
-      "company": "Mesa Ceramics",
-      "contact": "Inês Rebelo de Sousa (New Products & Marketing Manager)",
-      "category": "Inredning & Bordskultur / Premium Stengods",
-      "status": "pitched",
+      "id": "vedum",
+      "company": "Vedum Kök & Bad",
+      "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
+      "category": "Kök & Bad / Inredning",
+      "status": "replied",
       "value": 39000,
       "value_min": 18500,
-      "value_label": null,
-      "date_contacted": "2026-06-06",
-      "date_pitched": "2026-06-16",
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-07",
+      "date_pitched": "2026-06-08",
       "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/mesa-ceramics/",
+      "pitch_url": null,
       "outcome": null,
       "final_price": null,
       "close_reason": null,
@@ -1721,26 +1750,32 @@
       "stage_history": [
         {
           "to": "contacted",
-          "at": "2026-06-06",
-          "evidence": "cold outreach — ämne: Mesa Ceramics × Villa Sjövik — 164k Swedish home audience",
-          "by": "deal-keeper"
+          "at": "2026-06-07",
+          "evidence": null,
+          "by": "carin"
         },
         {
-          "to": "replied",
-          "at": "2026-06-15",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3045.eml",
-          "by": "deal-keeper"
+          "to": "interested",
+          "at": "2026-06-08",
+          "evidence": "operational/projekt/villa-sjovik/leads/mail-audit-2026-06-08/inbox-all.txt",
+          "by": "migration"
         },
         {
           "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml (blockquote)",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
           "at": "2026-06-16",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2620.eml — pitch-sida skickad i svar till Inês fråga om paket + priser",
-          "by": "deal-keeper"
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3087.eml",
+          "by": "migration"
         }
       ],
       "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "customer",
+      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Motiv: koppla mot Bad-återförsäljarsortimentet. Carin svarade 16 juni (2618.eml): bekräftar basfärger/Edit-luckan, föreslår möte i veckan. Väntar på Jennys svar.",
+      "waiting_on": "Jenny bekräftar möte i veckan (Carin föreslog 2026-06-16, 2618.eml)",
       "last_event": null
     },
     {
@@ -4585,5 +4620,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-16T11:51:51.333Z"
+  "generated_at": "2026-06-16T18:06:34.111Z"
 }

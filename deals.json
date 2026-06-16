@@ -839,7 +839,7 @@
       "company": "Vedum Kök & Bad",
       "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
       "category": "Kök & Bad / Inredning",
-      "status": "pitched",
+      "status": "replied",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 – 39 000",
@@ -869,11 +869,17 @@
           "at": "2026-06-08",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml (blockquote)",
           "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-16",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3087.eml",
+          "by": "jenny"
         }
       ],
       "signed_evidence": null,
-      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni.",
-      "waiting_on": "Jenny Andersson — svar på email-pitch (8 juni) + follow-up 15 juni",
+      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Motiv: koppla projektet till deras Bad-återförsäljarsortiment. Draft-svar redo.",
+      "waiting_on": "Carin skickar draft-svar om basfärger (3087.eml, 16 juni)",
       "last_event": null
     },
     {

@@ -337,6 +337,60 @@
       "last_event": null
     },
     {
+      "id": "skadedjursbutiken",
+      "company": "Skadedjursbutiken",
+      "contact": "Sebastian Maltéus",
+      "category": "Hem & Säkerhet",
+      "status": "contract_sent",
+      "value": 39000,
+      "value_min": 39000,
+      "value_label": "39 000",
+      "date_contacted": "2026-04-13",
+      "date_pitched": "2026-05-07",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/skadedjursbutiken/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-13",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-07",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-06-16",
+          "evidence": "Sebastian ringde Carin — muntligt möte",
+          "by": "carin"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-06-16",
+          "evidence": "Muntligt överens om Kampanjpaket 39 000 ex moms — produkter snigelmedel, myrmedel, mal",
+          "by": "carin"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-06-16",
+          "evidence": "Avtal skickat via Oneflow (doc 15067684) till sebastian@pestcontrolnordic.com",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Pitch 2026-05-07 (18 500 / 39 000). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket 39 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 genererad + pushad (samma URL), gamla designen arkiverad som skadedjursbutiken_0. Samarbetsavtal upprättat — en faktura vid signering, publicering bestäms gemensamt. Carin godkände 2026-06-16 och skickade pitchen via GitHub-länk; avtalet skickat via Oneflow (doc 15067684) till Sebastian samma dag — pending signering.",
+      "waiting_on": "Sebastians signering av avtalet i Oneflow (doc 15067684, skickat 2026-06-16 till sebastian@pestcontrolnordic.com). closed sätts först vid signering (signed_evidence).",
+      "last_event": null
+    },
+    {
       "id": "bagin",
       "company": "BAG'IN",
       "contact": "Okänd kontaktperson (inkom via Carins privata mail)",
@@ -376,54 +430,6 @@
       "signed_evidence": null,
       "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08 tackade Bag'in JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår). Önskar publicering av videon i september 2026 (datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas omgående. Fakturering i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08. OBS: acceptansdatum uppgivet som 18.05 men pitchen byggdes först 2026-06-02 — verifiera.",
       "waiting_on": "Bag'ins partsuppgifter (org.nr, firmatecknare, adress, kontakt) + signering av avtal. Fakturering vid påskrivet avtal.",
-      "last_event": null
-    },
-    {
-      "id": "skadedjursbutiken",
-      "company": "Skadedjursbutiken",
-      "contact": "Sebastian Maltéus",
-      "category": "Hem & Säkerhet",
-      "status": "verbal_agreement",
-      "value": 39000,
-      "value_min": 39000,
-      "value_label": "39 000",
-      "date_contacted": "2026-04-13",
-      "date_pitched": "2026-05-07",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/skadedjursbutiken/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-04-13",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-05-07",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "meeting",
-          "at": "2026-06-16",
-          "evidence": "Sebastian ringde Carin — muntligt möte",
-          "by": "carin"
-        },
-        {
-          "to": "verbal_agreement",
-          "at": "2026-06-16",
-          "evidence": "Muntligt överens om Kampanjpaket 39 000 ex moms — produkter snigelmedel, myrmedel, mal",
-          "by": "carin"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Pitch 2026-05-07 (18 500 / 39 000). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket 39 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 genererad + pushad (samma URL), gamla designen arkiverad som skadedjursbutiken_0. Samarbetsavtal upprättat — en faktura vid signering, publicering bestäms gemensamt. Väntar Carins granskning, därefter utskick via OneFlow.",
-      "waiting_on": "Carins granskning av avtalet (2026-06-16), därefter utskick av offert + avtal via OneFlow-länk. Status till contract_sent vid utskick; closed först vid signering.",
       "last_event": null
     },
     {
@@ -4620,5 +4626,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-16T18:06:34.111Z"
+  "generated_at": "2026-06-16T19:39:25.690Z"
 }

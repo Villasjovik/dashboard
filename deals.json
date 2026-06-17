@@ -971,9 +971,9 @@
       "contact": "Iris Dauvergne (Chargée de projet Marketing et Communication)",
       "category": "Inredning & Bordskultur / Premium Keramik",
       "status": "pitched",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
+      "value": 13000,
+      "value_min": 13000,
+      "value_label": "13 000 kr",
       "date_contacted": "2026-06-08",
       "date_pitched": null,
       "date_closed": null,
@@ -4940,5 +4940,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-17T14:54:35.189Z"
+  "generated_at": "2026-06-17T14:57:56.864Z"
 }

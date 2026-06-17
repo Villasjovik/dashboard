@@ -523,6 +523,90 @@
       "last_event": null
     },
     {
+      "id": "design-by-us",
+      "company": "Design By Us",
+      "contact": "Debora Ingvarsdóttir Mikkelsen (debora@design-by-us.com)",
+      "category": "belysning & inredning / danskt premiumdesign",
+      "status": "pitched",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Single Film / The Series)",
+      "date_contacted": "2026-06-17",
+      "date_pitched": "2026-06-17",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/design-by-us/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-17",
+          "evidence": "Carin skickade kallt utskick till rikke@design-by-us.com (2697.eml)",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-17",
+          "evidence": "Debora Ingvarsdóttir Mikkelsen svarade — Rikke vidarebefordrade internt, Debora tar över och ber om content ideas (3126.eml)",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-17",
+          "evidence": "events/2026/06/17/mail-2755.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "kupilka",
+      "company": "Kupilka",
+      "contact": "Laura Bondavalli",
+      "category": "Friluft & Eko-köksutrustning / Nordic Survival Gear",
+      "status": "pitched",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Single Film / The Series)",
+      "date_contacted": "2026-06-16",
+      "date_pitched": "2026-06-17",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/kupilka/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-16",
+          "evidence": null,
+          "by": "mail-watcher"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3127.eml",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-17",
+          "evidence": "events/2026/06/17/mail-2756.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Pitch byggd + svarsdraft klar (engelska, reply-all Laura + Roswi). Inväntar bara Lucas-OK för utskick.",
+      "last_event": null
+    },
+    {
       "id": "espegard",
       "company": "Espegard",
       "contact": "Jakob Storm Leth",
@@ -1499,7 +1583,7 @@
       "date_contacted": "2026-04-17",
       "date_pitched": null,
       "date_closed": null,
-      "pitch_url": null,
+      "pitch_url": "https://villasjovik.github.io/nibe/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
@@ -1535,48 +1619,6 @@
       "close_reason": null,
       "followup_window": null,
       "stage_history": null,
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "design-by-us",
-      "company": "Design By Us",
-      "contact": "Debora Ingvarsdóttir Mikkelsen (debora@design-by-us.com)",
-      "category": "belysning & inredning / danskt premiumdesign",
-      "status": "pitched",
-      "value": 18500,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Single Film / The Series)",
-      "date_contacted": "2026-06-17",
-      "date_pitched": "2026-06-17",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/design-by-us/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-17",
-          "evidence": "Carin skickade kallt utskick till rikke@design-by-us.com (2697.eml)",
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-17",
-          "evidence": "Debora Ingvarsdóttir Mikkelsen svarade — Rikke vidarebefordrade internt, Debora tar över och ber om content ideas (3126.eml)",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-17",
-          "evidence": "Carin svarade Debora med pitch-länk + content ideas (2755.eml)",
-          "by": "mail-watcher"
-        }
-      ],
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
@@ -1824,42 +1866,6 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas beslutar om pitch ska skapas",
-      "last_event": null
-    },
-    {
-      "id": "kupilka",
-      "company": "Kupilka",
-      "contact": "Laura Bondavalli",
-      "category": "Friluft & Eko-köksutrustning / Nordic Survival Gear",
-      "status": "replied",
-      "value": 18500,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Single Film / The Series)",
-      "date_contacted": "2026-06-16",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/kupilka/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-16",
-          "evidence": null,
-          "by": "mail-watcher"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-17",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3127.eml",
-          "by": "mail-watcher"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Pitch byggd + svarsdraft klar (engelska, reply-all Laura + Roswi). Inväntar bara Lucas-OK för utskick.",
       "last_event": null
     },
     {
@@ -4934,5 +4940,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-17T14:38:39.338Z"
+  "generated_at": "2026-06-17T14:52:40.039Z"
 }

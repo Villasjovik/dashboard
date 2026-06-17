@@ -578,7 +578,7 @@
         {
           "to": "pitched",
           "at": "2026-06-17",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2753.eml — Carin skickade pitch in-thread till Maria Dam (mdh@wittdenmark.com), länk: https://villasjovik.github.io/teministeriet/",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2753.eml — pitch skickad in-thread till Maria Dam (mdh@wittdenmark.com)",
           "by": "carin"
         }
       ],
@@ -1526,7 +1526,7 @@
       "value": 18500,
       "value_min": 18500,
       "value_label": "18 500 / 39 000 kr",
-      "date_contacted": "2026-06-17",
+      "date_contacted": null,
       "date_pitched": "2026-06-17",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/samuel-groves/",
@@ -1548,11 +1548,11 @@
       "status": "interested",
       "value": 18500,
       "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Campaign Package / 3-pack)",
+      "value_label": "18 500 / 39 000 kr (Single Film / The Series)",
       "date_contacted": "2026-06-17",
       "date_pitched": null,
       "date_closed": null,
-      "pitch_url": null,
+      "pitch_url": "https://villasjovik.github.io/design-by-us/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
@@ -1785,18 +1785,54 @@
       "last_event": null
     },
     {
+      "id": "telldus",
+      "company": "Telldus Technologies AB",
+      "contact": "Ulf Ivarsson",
+      "category": "Smart Hem / Teknik & Automation",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-04-07",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-07",
+          "evidence": "Carin skickade kallt outreach till info@telldus.com",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-17",
+          "evidence": "Ulf Ivarsson svarade in-thread med genuint intresse — \"Det skulle vara intressant att följa upp\"",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas beslutar om pitch ska skapas",
+      "last_event": null
+    },
+    {
       "id": "kupilka",
       "company": "Kupilka",
       "contact": "Laura Bondavalli",
       "category": "Friluft & Eko-köksutrustning / Nordic Survival Gear",
       "status": "replied",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Single Film / The Series)",
       "date_contacted": "2026-06-16",
       "date_pitched": null,
       "date_closed": null,
-      "pitch_url": null,
+      "pitch_url": "https://villasjovik.github.io/kupilka/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
@@ -1817,7 +1853,7 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Varm lead — Lucas granskar briefing, bestämmer pitch-paket + prisvinkel. Ingen draft klar än.",
+      "waiting_on": "Pitch byggd + svarsdraft klar (engelska, reply-all Laura + Roswi). Inväntar bara Lucas-OK för utskick.",
       "last_event": null
     },
     {
@@ -4892,5 +4928,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-17T14:14:42.179Z"
+  "generated_at": "2026-06-17T14:33:25.265Z"
 }

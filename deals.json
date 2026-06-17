@@ -117,7 +117,7 @@
       ],
       "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": null,
-      "waiting_on": "Stories-revision återstår — Carin ska lägga till kort video-klipp med produktprat + personlig upplevelse (Tanyas supervisors feedback, 12/6). Stories ska skickas till Tanya för godkännande INNAN publicering (påmint 16/6, Carin bekräftade). Facebook-whitelisting pågår på Pergolux-sidan.",
+      "waiting_on": "Stories-revision återstår — Carin ska lägga till kort video-klipp med produktprat + personlig upplevelse (Tanyas supervisors feedback, 12/6). Stories-revision ska skickas till Tanya för godkännande INNAN publicering. Facebook-whitelisting pågår på Pergolux-sidan.",
       "last_event": null
     },
     {
@@ -383,18 +383,12 @@
           "at": "2026-06-16",
           "evidence": "Avtal skickat via Oneflow (doc 15067684) till sebastian@pestcontrolnordic.com",
           "by": "carin"
-        },
-        {
-          "to": "contract_sent",
-          "at": "2026-06-17",
-          "evidence": "Sebastian svarade (3129.eml): bekräftar vilja att köra igång men hävdar prisöverenskommelse 30 000 kr — diskrepans mot loggat verbal agreement (39 000 kr). Offert behöver rättas.",
-          "by": "sebastian"
         }
       ],
       "signed_evidence": null,
-      "notes": "Pitch 2026-05-07 (18 500 / 39 000). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket 39 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 genererad + pushad (samma URL), gamla designen arkiverad som skadedjursbutiken_0. Samarbetsavtal upprättat — en faktura vid signering, publicering bestäms gemensamt. Carin godkände 2026-06-16 och skickade pitchen via GitHub-länk; avtalet skickat via Oneflow (doc 15067684) till Sebastian samma dag — pending signering. 2026-06-17: Sebastian öppnade avtalet i Oneflow för första gången (09:00) — pending signering. 2026-06-17: Sebastian svarade (3129.eml) — glad för samarbetet men hävdar att de kom överens om 30 000 kr, inte offertens belopp. Prisdiskrepans mot det loggade verbala avtalet (39 000 kr, 2026-06-16). Carin måste avgöra vilket belopp som gäller — draft (draft-skadedjursbutiken-1781699993649.md) sparad, inväntar Carins bekräftelse.",
+      "notes": "Pitch 2026-05-07 (18 500 / 39 000). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket 39 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 genererad + pushad (samma URL), gamla designen arkiverad som skadedjursbutiken_0. Samarbetsavtal upprättat — en faktura vid signering, publicering bestäms gemensamt. Carin godkände 2026-06-16 och skickade pitchen via GitHub-länk; avtalet skickat via Oneflow (doc 15067684) till Sebastian samma dag — pending signering.",
       "waiting_on": "Carin bekräftar rätt pris (Sebastian hävdar 30 000 kr, loggat verbal agreement = 39 000 kr, 2026-06-16). Sedan: uppdaterad offert till Sebastian + avtals-signering i Oneflow (doc 15067684).",
-      "last_event": "2026-06-17"
+      "last_event": null
     },
     {
       "id": "bagin",
@@ -1417,6 +1411,42 @@
       "last_event": null
     },
     {
+      "id": "design-by-us",
+      "company": "Design By Us",
+      "contact": "Debora Ingvarsdóttir Mikkelsen (debora@design-by-us.com)",
+      "category": "belysning & inredning / danskt premiumdesign",
+      "status": "interested",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Campaign Package / 3-pack)",
+      "date_contacted": "2026-06-17",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-17",
+          "evidence": "Carin skickade kallt utskick till rikke@design-by-us.com (2697.eml)",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-17",
+          "evidence": "Debora Ingvarsdóttir Mikkelsen svarade — Rikke vidarebefordrade internt, Debora tar över och ber om content ideas (3126.eml)",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "espegard",
       "company": "Espegard",
       "contact": "Jakob Storm Leth",
@@ -1720,6 +1750,42 @@
       "last_event": null
     },
     {
+      "id": "kupilka",
+      "company": "Kupilka",
+      "contact": "Laura Bondavalli",
+      "category": "Friluft & Eko-köksutrustning / Nordic Survival Gear",
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-16",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-16",
+          "evidence": null,
+          "by": "mail-watcher"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3127.eml",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Varm lead — Lucas granskar briefing, bestämmer pitch-paket + prisvinkel. Ingen draft klar än.",
+      "last_event": null
+    },
+    {
       "id": "prhome",
       "company": "PR Home of Scandinavia",
       "contact": "Åsa Kjellberg (Art Director & Content Creator, Asa.Kjellberg@prhome.se)",
@@ -1740,6 +1806,29 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas — beslutar om produktbyte accepteras. Draft klar: operational/projekt/villa-sjovik/drafts/draft-prhome-1781597386026.md",
+      "last_event": null
+    },
+    {
+      "id": "blankens",
+      "company": "Blankens",
+      "contact": "Thilda Isaksson",
+      "category": "Mode & Accessoarer / Skor & Väskor",
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-14",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas-beslut — pitch behöver byggas (Thilda ber om konkreta förslag)",
       "last_event": null
     },
     {
@@ -1788,6 +1877,52 @@
       "signed_evidence": null,
       "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Motiv: koppla mot Bad-återförsäljarsortimentet. Carin svarade 16 juni (2618.eml): bekräftar basfärger/Edit-luckan, föreslår möte i veckan. Väntar på Jennys svar.",
       "waiting_on": "Jenny bekräftar möte i veckan (Carin föreslog 2026-06-16, 2618.eml)",
+      "last_event": null
+    },
+    {
+      "id": "creative-story",
+      "company": "Creative Story",
+      "contact": null,
+      "category": "Hantverk & DIY / Symaskiner & Sytillbehör",
+      "status": "contacted",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 kr (Startpaket)",
+      "date_contacted": "2026-06-16",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/creative-story/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Carin mailar via privat mail (offert klar). Inväntar svar.",
+      "last_event": null
+    },
+    {
+      "id": "halsingesapa",
+      "company": "Hälsingesåpa",
+      "contact": null,
+      "category": "Hem & Städ / Såpa & Rengöring",
+      "status": "contacted",
+      "value": 18500,
+      "value_min": 12000,
+      "value_label": "12 000 / 18 500 kr",
+      "date_contacted": "2026-06-16",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/halsingesapa/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Carin mailar via privat mail (offert klar). Inväntar svar.",
       "last_event": null
     },
     {
@@ -1842,6 +1977,66 @@
           "to": "contacted",
           "at": "2026-06-16",
           "evidence": "kallt outreach carin@villasjovik.se → cr@cnife.com, ämne \"Chroma Type 301 (F.A. Porsche) × Villa Sjövik\"",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "koksbryggeriet",
+      "company": "Det Lilla Köksbryggeriet",
+      "contact": "Frida Jönsson",
+      "category": "kök/hembryggning",
+      "status": "contacted",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": null,
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-16",
+          "evidence": "kallt outreach carin@villasjovik.se → info@koksbryggeriet.se, ämne \"Det Lilla Köksbryggeriet x Villa Sjövik\"",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "wilfa",
+      "company": "Wilfa Sverige",
+      "contact": "Desirée (support — inte beslutfattare, hänvisade till rätt avdelning)",
+      "category": "kök/kaffemaskiner",
+      "status": "contacted",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": null,
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-16",
+          "evidence": "kallt outreach carin@villasjovik.se → support@wilfa.se, ämne \"Nivona x Villa Sjövik\" (OBS: felaktigt ämne — se notering)",
           "by": "carin"
         }
       ],
@@ -4643,7 +4838,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-06-16",
+    "updated": "2026-06-17",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -4662,5 +4857,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-16T20:15:27.839Z"
+  "generated_at": "2026-06-17T13:31:59.619Z"
 }

@@ -1545,12 +1545,12 @@
       "company": "Design By Us",
       "contact": "Debora Ingvarsdóttir Mikkelsen (debora@design-by-us.com)",
       "category": "belysning & inredning / danskt premiumdesign",
-      "status": "interested",
+      "status": "pitched",
       "value": 18500,
       "value_min": 18500,
       "value_label": "18 500 / 39 000 kr (Single Film / The Series)",
       "date_contacted": "2026-06-17",
-      "date_pitched": null,
+      "date_pitched": "2026-06-17",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/design-by-us/",
       "outcome": null,
@@ -1568,6 +1568,12 @@
           "to": "interested",
           "at": "2026-06-17",
           "evidence": "Debora Ingvarsdóttir Mikkelsen svarade — Rikke vidarebefordrade internt, Debora tar över och ber om content ideas (3126.eml)",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-17",
+          "evidence": "Carin svarade Debora med pitch-länk + content ideas (2755.eml)",
           "by": "mail-watcher"
         }
       ],

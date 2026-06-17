@@ -1838,13 +1838,13 @@
       "contact": "Ulf Ivarsson",
       "category": "Smart Hem / Teknik & Automation",
       "status": "interested",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
       "date_contacted": "2026-04-07",
       "date_pitched": null,
       "date_closed": null,
-      "pitch_url": null,
+      "pitch_url": "https://villasjovik.github.io/telldus/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
@@ -1865,7 +1865,7 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Lucas beslutar om pitch ska skapas",
+      "waiting_on": "Pitch byggd + svarsdraft klar (svenska). Lucas granskar live + planerat svar innan utskick.",
       "last_event": null
     },
     {
@@ -4940,5 +4940,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-17T15:00:05.648Z"
+  "generated_at": "2026-06-17T15:31:00.968Z"
 }

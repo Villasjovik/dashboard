@@ -528,9 +528,9 @@
       "contact": "Debora Ingvarsdóttir Mikkelsen (debora@design-by-us.com)",
       "category": "belysning & inredning / danskt premiumdesign",
       "status": "pitched",
-      "value": 18500,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Single Film / The Series)",
+      "value": 37800,
+      "value_min": 17800,
+      "value_label": "17 800 / 37 800 kr (Single Film / The Series)",
       "date_contacted": "2026-06-17",
       "date_pitched": "2026-06-17",
       "date_closed": null,
@@ -570,7 +570,7 @@
       "contact": "Laura Bondavalli",
       "category": "Friluft & Eko-köksutrustning / Nordic Survival Gear",
       "status": "pitched",
-      "value": 18500,
+      "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 / 39 000 kr (Single Film / The Series)",
       "date_contacted": "2026-06-16",
@@ -4940,5 +4940,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-17T14:57:56.864Z"
+  "generated_at": "2026-06-17T15:00:05.648Z"
 }

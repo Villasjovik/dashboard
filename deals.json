@@ -1759,7 +1759,7 @@
       "company": "Vedum Kök & Bad",
       "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
       "category": "Kök & Bad / Inredning",
-      "status": "interested",
+      "status": "meeting",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 – 39 000",
@@ -1801,11 +1801,17 @@
           "at": "2026-06-17",
           "evidence": "events/2026/06/17/mail-3139.md",
           "by": "deal-keeper"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-06-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3139.eml",
+          "by": "jenny"
         }
       ],
       "signed_evidence": null,
-      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Motiv: koppla mot Bad-återförsäljarsortimentet. Carin svarade 16 juni (2618.eml): bekräftar basfärger/Edit-luckan, föreslår möte i veckan. Väntar på Jennys svar.",
-      "waiting_on": "Jenny bekräftar möte i veckan (Carin föreslog 2026-06-16, 2618.eml)",
+      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Motiv: koppla mot Bad-återförsäljarsortimentet. Carin svarade 16 juni (2618.eml): bekräftar basfärger/Edit-luckan, föreslår möte i veckan. Väntar på Jennys svar. Jenny bekräftade möte 17 juni (3139.eml): möts 18 juni kl 10:00. Jenny sista dag innan semester (tillbaka v.30).",
+      "waiting_on": "Möte 2026-06-18 kl 10:00 med Jenny (sista dag innan semester, tillbaka v.30)",
       "last_event": null
     },
     {

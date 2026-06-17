@@ -387,7 +387,7 @@
       ],
       "signed_evidence": null,
       "notes": "Pitch 2026-05-07 (Startpaket 18 500 / Kampanjpaket 39 000 ord.). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket till 30 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 + avtal gick FÖRST ut med fel pris 39 000; Sebastian påpekade 2026-06-17 (mail) att överenskommet pris är 30 000 → offert (GitHub), avtal-PDF och deals korrigerade till 30 000. Avtalet skickades först via Oneflow (doc 15067684) 2026-06-16 med fel pris 39 000 → doc slängd 2026-06-17 och korrigerat avtal omskickat som doc 15081653 (30 000). En faktura vid signering, publicering bestäms gemensamt.",
-      "waiting_on": "Carin bekräftar rätt pris (Sebastian hävdar 30 000 kr, loggat verbal agreement = 39 000 kr, 2026-06-16). Sedan: uppdaterad offert till Sebastian + avtals-signering i Oneflow (doc 15067684).",
+      "waiting_on": "Sebastians signering av det korrigerade avtalet i Oneflow (doc 15081653, 30 000 kr, skickat 2026-06-17). Pris bekräftat 30 000 (Lucas + Sebastians mail). closed sätts först vid signering (signed_evidence).",
       "last_event": null
     },
     {
@@ -4886,5 +4886,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-17T14:14:10.566Z"
+  "generated_at": "2026-06-17T14:14:42.179Z"
 }

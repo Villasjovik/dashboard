@@ -383,11 +383,17 @@
           "at": "2026-06-16",
           "evidence": "Avtal skickat via Oneflow (doc 15067684) till sebastian@pestcontrolnordic.com",
           "by": "carin"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-06-17",
+          "evidence": "Sebastian svarade (3129.eml): bekräftar vilja att köra igång men hävdar prisöverenskommelse 30 000 kr — diskrepans mot loggat verbal agreement (39 000 kr). Offert behöver rättas.",
+          "by": "sebastian"
         }
       ],
       "signed_evidence": null,
-      "notes": "Pitch 2026-05-07 (18 500 / 39 000). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket 39 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 genererad + pushad (samma URL), gamla designen arkiverad som skadedjursbutiken_0. Samarbetsavtal upprättat — en faktura vid signering, publicering bestäms gemensamt. Carin godkände 2026-06-16 och skickade pitchen via GitHub-länk; avtalet skickat via Oneflow (doc 15067684) till Sebastian samma dag — pending signering. 2026-06-17: Sebastian öppnade avtalet i Oneflow för första gången (09:00) — pending signering.",
-      "waiting_on": "Sebastians signering av avtalet i Oneflow (doc 15067684, skickat 2026-06-16 till sebastian@pestcontrolnordic.com). closed sätts först vid signering (signed_evidence).",
+      "notes": "Pitch 2026-05-07 (18 500 / 39 000). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket 39 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 genererad + pushad (samma URL), gamla designen arkiverad som skadedjursbutiken_0. Samarbetsavtal upprättat — en faktura vid signering, publicering bestäms gemensamt. Carin godkände 2026-06-16 och skickade pitchen via GitHub-länk; avtalet skickat via Oneflow (doc 15067684) till Sebastian samma dag — pending signering. 2026-06-17: Sebastian öppnade avtalet i Oneflow för första gången (09:00) — pending signering. 2026-06-17: Sebastian svarade (3129.eml) — glad för samarbetet men hävdar att de kom överens om 30 000 kr, inte offertens belopp. Prisdiskrepans mot det loggade verbala avtalet (39 000 kr, 2026-06-16). Carin måste avgöra vilket belopp som gäller — draft (draft-skadedjursbutiken-1781699993649.md) sparad, inväntar Carins bekräftelse.",
+      "waiting_on": "Carin bekräftar rätt pris (Sebastian hävdar 30 000 kr, loggat verbal agreement = 39 000 kr, 2026-06-16). Sedan: uppdaterad offert till Sebastian + avtals-signering i Oneflow (doc 15067684).",
       "last_event": "2026-06-17"
     },
     {

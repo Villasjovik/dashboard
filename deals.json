@@ -117,7 +117,7 @@
       ],
       "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": null,
-      "waiting_on": "Carin ska fixa Stories-revision — lägga till kort video-klipp med produktprat + personlig upplevelse (Tanyas supervisors feedback, 12/6). Ad code bekräftat korrekt av Tanya 15/6 (3027.eml), whitelisting pågår på Pergolux-sidan.",
+      "waiting_on": "Stories-revision återstår — Carin ska lägga till kort video-klipp med produktprat + personlig upplevelse (Tanyas supervisors feedback, 12/6). Stories ska skickas till Tanya för godkännande INNAN publicering (påmint 16/6, Carin bekräftade). Facebook-whitelisting pågår på Pergolux-sidan.",
       "last_event": null
     },
     {
@@ -386,9 +386,9 @@
         }
       ],
       "signed_evidence": null,
-      "notes": "Pitch 2026-05-07 (18 500 / 39 000). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket 39 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 genererad + pushad (samma URL), gamla designen arkiverad som skadedjursbutiken_0. Samarbetsavtal upprättat — en faktura vid signering, publicering bestäms gemensamt. Carin godkände 2026-06-16 och skickade pitchen via GitHub-länk; avtalet skickat via Oneflow (doc 15067684) till Sebastian samma dag — pending signering.",
+      "notes": "Pitch 2026-05-07 (18 500 / 39 000). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket 39 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 genererad + pushad (samma URL), gamla designen arkiverad som skadedjursbutiken_0. Samarbetsavtal upprättat — en faktura vid signering, publicering bestäms gemensamt. Carin godkände 2026-06-16 och skickade pitchen via GitHub-länk; avtalet skickat via Oneflow (doc 15067684) till Sebastian samma dag — pending signering. 2026-06-17: Sebastian öppnade avtalet i Oneflow för första gången (09:00) — pending signering.",
       "waiting_on": "Sebastians signering av avtalet i Oneflow (doc 15067684, skickat 2026-06-16 till sebastian@pestcontrolnordic.com). closed sätts först vid signering (signed_evidence).",
-      "last_event": null
+      "last_event": "2026-06-17"
     },
     {
       "id": "bagin",
@@ -1812,6 +1812,36 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "lucas-godkännande-pitch-riktning",
+      "last_event": null
+    },
+    {
+      "id": "cnife",
+      "company": "Cnife / Chroma Type 301",
+      "contact": "Christian Romanowski (Directör/GF — tillverkaren själv)",
+      "category": "kök/knivar-premium",
+      "status": "contacted",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": null,
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-16",
+          "evidence": "kallt outreach carin@villasjovik.se → cr@cnife.com, ämne \"Chroma Type 301 (F.A. Porsche) × Villa Sjövik\"",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -4626,5 +4656,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-16T19:39:25.690Z"
+  "generated_at": "2026-06-16T20:15:27.839Z"
 }

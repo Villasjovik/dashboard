@@ -1755,6 +1755,60 @@
       "last_event": null
     },
     {
+      "id": "vedum",
+      "company": "Vedum Kök & Bad",
+      "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
+      "category": "Kök & Bad / Inredning",
+      "status": "interested",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-07",
+      "date_pitched": "2026-06-08",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-07",
+          "evidence": null,
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-08",
+          "evidence": "operational/projekt/villa-sjovik/leads/mail-audit-2026-06-08/inbox-all.txt",
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml (blockquote)",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-16",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3087.eml",
+          "by": "migration"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-17",
+          "evidence": "events/2026/06/17/mail-3139.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Motiv: koppla mot Bad-återförsäljarsortimentet. Carin svarade 16 juni (2618.eml): bekräftar basfärger/Edit-luckan, föreslår möte i veckan. Väntar på Jennys svar.",
+      "waiting_on": "Jenny bekräftar möte i veckan (Carin föreslog 2026-06-16, 2618.eml)",
+      "last_event": null
+    },
+    {
       "id": "weltevree",
       "company": "Weltevree",
       "contact": "Bridget van Alphen (Head of Brand)",
@@ -1912,54 +1966,6 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas-beslut — pitch behöver byggas (Thilda ber om konkreta förslag)",
-      "last_event": null
-    },
-    {
-      "id": "vedum",
-      "company": "Vedum Kök & Bad",
-      "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
-      "category": "Kök & Bad / Inredning",
-      "status": "replied",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 – 39 000",
-      "date_contacted": "2026-06-07",
-      "date_pitched": "2026-06-08",
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-07",
-          "evidence": null,
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-08",
-          "evidence": "operational/projekt/villa-sjovik/leads/mail-audit-2026-06-08/inbox-all.txt",
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-08",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml (blockquote)",
-          "by": "carin"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-16",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3087.eml",
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Motiv: koppla mot Bad-återförsäljarsortimentet. Carin svarade 16 juni (2618.eml): bekräftar basfärger/Edit-luckan, föreslår möte i veckan. Väntar på Jennys svar.",
-      "waiting_on": "Jenny bekräftar möte i veckan (Carin föreslog 2026-06-16, 2618.eml)",
       "last_event": null
     },
     {
@@ -4940,5 +4946,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-17T15:31:00.968Z"
+  "generated_at": "2026-06-17T16:03:00.594Z"
 }

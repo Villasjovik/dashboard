@@ -574,6 +574,12 @@
           "at": "2026-06-16",
           "evidence": "events/2026/06/16/mail-3064.md — Lærke (Witt Denmark) svarade, ber om statistik + kampanjexempel + priser",
           "by": "lucas"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2753.eml — Carin skickade pitch in-thread till Maria Dam (mdh@wittdenmark.com), länk: https://villasjovik.github.io/teministeriet/",
+          "by": "carin"
         }
       ],
       "signed_evidence": null,

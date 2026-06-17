@@ -381,12 +381,12 @@
         {
           "to": "contract_sent",
           "at": "2026-06-16",
-          "evidence": "Avtal skickat via Oneflow (doc 15067684) till sebastian@pestcontrolnordic.com",
+          "evidence": "Avtal först skickat via Oneflow doc 15067684 (39 000, fel) → slängd; korrigerat avtal omskickat som doc 15081653 (30 000) 2026-06-17",
           "by": "carin"
         }
       ],
       "signed_evidence": null,
-      "notes": "Pitch 2026-05-07 (Startpaket 18 500 / Kampanjpaket 39 000 ord.). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket till 30 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 + avtal gick FÖRST ut med fel pris 39 000; Sebastian påpekade 2026-06-17 (mail) att överenskommet pris är 30 000 → offert (GitHub), avtal-PDF och deals korrigerade till 30 000. Avtalet skickades via Oneflow (doc 15067684) 2026-06-16 med fel pris → måste dras tillbaka och skickas om med 30 000. En faktura vid signering, publicering bestäms gemensamt.",
+      "notes": "Pitch 2026-05-07 (Startpaket 18 500 / Kampanjpaket 39 000 ord.). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket till 30 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 + avtal gick FÖRST ut med fel pris 39 000; Sebastian påpekade 2026-06-17 (mail) att överenskommet pris är 30 000 → offert (GitHub), avtal-PDF och deals korrigerade till 30 000. Avtalet skickades först via Oneflow (doc 15067684) 2026-06-16 med fel pris 39 000 → doc slängd 2026-06-17 och korrigerat avtal omskickat som doc 15081653 (30 000). En faktura vid signering, publicering bestäms gemensamt.",
       "waiting_on": "Carin bekräftar rätt pris (Sebastian hävdar 30 000 kr, loggat verbal agreement = 39 000 kr, 2026-06-16). Sedan: uppdaterad offert till Sebastian + avtals-signering i Oneflow (doc 15067684).",
       "last_event": null
     },
@@ -1509,6 +1509,29 @@
       "signed_evidence": null,
       "notes": "Kampanjförslag 2026. Uppföljning på tidigare samarbete. 35k arvode + 15k Meta Ads. NIBE sagt att de återkommer i slutet av april med svar — ingen follow-up behövs innan dess.",
       "waiting_on": "Hembesök + kontakt från Tord (NIBE) — produktgenomgång planerad",
+      "last_event": null
+    },
+    {
+      "id": "samuel-groves",
+      "company": "Samuel Groves",
+      "contact": null,
+      "category": null,
+      "status": "pitched",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": null,
+      "date_pitched": "2026-06-17",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/samuel-groves/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -4863,5 +4886,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-17T14:13:15.457Z"
+  "generated_at": "2026-06-17T14:14:10.566Z"
 }

@@ -5174,6 +5174,42 @@
       "notes": "Nystartad. Email-pitch 2026-06-08 (12 000 kr exkl. moms, 21 miljöbilder för 3 produktkit). Warm decline 2026-06-11 — budget för stor just nu, föredrar produktutbyte. Öppen dörr.",
       "waiting_on": null,
       "last_event": null
+    },
+    {
+      "id": "rosendahl-copenhagen",
+      "company": "Rosendahl Copenhagen",
+      "contact": "Helena Walfridsson Ekblad (Trendgruppen, PR-byrå)",
+      "category": "Hem & Inredning / Glas & Porslin",
+      "status": "verbal_agreement",
+      "value": 0,
+      "value_min": null,
+      "value_label": "Gifting",
+      "date_contacted": "2026-05-30",
+      "date_pitched": "2026-05-30",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-30",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-05/carin-sent/1844.eml",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-06-09",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2878.eml",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Gifting-deal via Trendgruppen (PR-byrå). Inga betalda samarbeten. Carin väljer Rosendahl Copenhagen-glas för dukning i växthuset. 63 cl + 81 cl ej tillgängliga — Carin föreslår fler av övriga storlekar (draft-svar 2026-06-18). Leveransadress bekräftad: Forsavägen 17B, 647 52 Åkers Styckebruk.",
+      "waiting_on": "Helena bekräftar beställning + leverans av glasen",
+      "last_event": null
     }
   ],
   "leads_summary": {

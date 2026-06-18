@@ -569,18 +569,18 @@
       "company": "Kupilka",
       "contact": "Laura Bondavalli",
       "category": "Friluft & Eko-köksutrustning / Nordic Survival Gear",
-      "status": "pitched",
+      "status": "declined",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 / 39 000 kr (Single Film / The Series)",
       "date_contacted": "2026-06-16",
       "date_pitched": "2026-06-17",
-      "date_closed": null,
+      "date_closed": "2026-06-18",
       "pitch_url": "https://villasjovik.github.io/kupilka/",
-      "outcome": null,
+      "outcome": "declined",
       "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
+      "close_reason": "Varm avböjning — prisnivån överstiger nuvarande budget. Hoppas återkomma om ett–två år (Laura Bondavalli, 2026-06-18).",
+      "followup_window": "2027-06-01",
       "stage_history": [
         {
           "to": "contacted",
@@ -599,11 +599,17 @@
           "at": "2026-06-17",
           "evidence": "events/2026/06/17/mail-2756.md",
           "by": "deal-keeper"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-18",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3150.eml",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Pitch skickad 2026-06-17 (carin-sent/2756.eml). Inväntar Lauras + Roswis svar.",
+      "waiting_on": null,
       "last_event": null
     },
     {

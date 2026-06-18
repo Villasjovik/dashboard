@@ -1,6 +1,48 @@
 {
   "deals": [
     {
+      "id": "aviken",
+      "company": "Åviken / Order Nordic AB",
+      "contact": "Ida Behm (Ida.Behm@order.se)",
+      "category": "Hem & Kök / Köksapparater",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "date_contacted": "2026-06-15",
+      "date_pitched": "2026-06-18",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/aviken/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "Carin skickade kallt utskick till info@aviken.com",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-17",
+          "evidence": "Ida Behm (Marketing Manager) bad om kostnadsförslag, primärt videomaterial (carin/3141.eml)",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-18",
+          "evidence": "Pitch byggd och deployad: https://villasjovik.github.io/aviken/ — INTE levererad till Ida ännu (Lucas granskar live-sidan själv).",
+          "by": "pitch-smith"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Video-fokus enligt Idas önskemål — reklamfilmen som hjälte i hero + pris. Hävstång: Åviken saknar egen levande konsumentkanal trots starkt arv (sedan 1955). Produktförankrade spår: Elegance 910.6 Sound (flaggskepp/ljudsignal) / Belgiskt Classic 902 (sommarvåffel #waffleswithåviken) / 907 Diamond (Bäst i test→känsla). Produkterna-sektion med 4 riktiga aviken.com-foton. Verifiera m. Ida före offert-lås: modellnr/priser, Stories-destination (ingen DTC-shop), hashtag-stavning.",
+      "waiting_on": "Lucas — granska live-pitch innan leverans till Ida",
+      "last_event": null
+    },
+    {
       "id": "englesson",
       "company": "Englesson Sverige AB",
       "contact": "Fredrik (info@englesson.com)",

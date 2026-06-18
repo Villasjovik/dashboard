@@ -1,90 +1,6 @@
 {
   "deals": [
     {
-      "id": "aviken",
-      "company": "Åviken / Order Nordic AB",
-      "contact": "Ida Behm (Ida.Behm@order.se)",
-      "category": "Hem & Kök / Köksapparater",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
-      "date_contacted": "2026-06-15",
-      "date_pitched": "2026-06-18",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/aviken/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-15",
-          "evidence": "Carin skickade kallt utskick till info@aviken.com",
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-17",
-          "evidence": "Ida Behm (Marketing Manager) bad om kostnadsförslag, primärt videomaterial (carin/3141.eml)",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-18",
-          "evidence": "Pitch byggd och deployad: https://villasjovik.github.io/aviken/ — INTE levererad till Ida ännu (Lucas granskar live-sidan själv).",
-          "by": "pitch-smith"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Video-fokus enligt Idas önskemål — reklamfilmen som hjälte i hero + pris. Hävstång: Åviken saknar egen levande konsumentkanal trots starkt arv (sedan 1955). Produktförankrade spår: Elegance 910.6 Sound (flaggskepp/ljudsignal) / Belgiskt Classic 902 (sommarvåffel #waffleswithåviken) / 907 Diamond (Bäst i test→känsla). Produkterna-sektion med 4 riktiga aviken.com-foton. Verifiera m. Ida före offert-lås: modellnr/priser, Stories-destination (ingen DTC-shop), hashtag-stavning.",
-      "waiting_on": "Lucas — granska live-pitch innan leverans till Ida",
-      "last_event": null
-    },
-    {
-      "id": "englesson",
-      "company": "Englesson Sverige AB",
-      "contact": "Fredrik (info@englesson.com)",
-      "category": "Inredning & Möbler / Svenskt Hantverk",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
-      "date_contacted": "2026-06-17",
-      "date_pitched": "2026-06-18",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/englesson/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-17",
-          "evidence": "Carin skickade kallt outreach (send-log-2026-06-17.jsonl uid 2527)",
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-18",
-          "evidence": "Fredrik svarade in-thread — positivt, bad om 2-3 content-idéer, upplägg och investering. Lyfte dubbelvärdet (content till egna kanaler + räckvidd).",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-18",
-          "evidence": "Pitch byggd och deployad: https://villasjovik.github.io/englesson/ — INTE levererad till Fredrik ännu (Lucas granskar live-sidan själv).",
-          "by": "pitch-smith"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Produktförankrade spår (Mocha-lansering / Howard-signatur / Camden-jubileum) + Produkterna-sektion med riktiga studiobilder. Video som hjälte (Åviken-mönster). Dubbelvärde explicit (räckvidd + ägt bildpaket) — Fredriks egen ask. Reach-vinkel: @englessonfurniture ~17k → Villa Sjövik 194k.",
-      "waiting_on": "Lucas — granska live-pitch innan leverans till Fredrik",
-      "last_event": null
-    },
-    {
       "id": "louis-poulsen",
       "company": "Louis Poulsen",
       "contact": "Thea Raben (Creative Consultant, tra@louispoulsen.dk)",
@@ -238,6 +154,60 @@
       "signed_evidence": "operational/projekt/villa-sjovik/dokument/Samarbetsavtal_VillaSjovik_Norremarks_2026-06-08.pdf",
       "notes": "Skandinaviska mattor (SGD-ägt). Pitch skickad 2026-04-22 efter Emmas positiva svar 22/4 på kallt mail 19/4. 4 video-spår: Så enkelt är det (mätning/beställning), Sovrummets förvandling, Mjukhet i köket, Ert koncept. Paket: 18 500 SEK (1 video) / 39 000 SEK (3 videor). Emma är koordinator — behöver förankra uppåt, därför ingen bokningswidget, bara presentation att vidarebefordra.",
       "waiting_on": "✅ Marcus bekräftade mattbytet (HASM015400 Hasmark ljus natur 015) i 3092.eml 2026-06-16. ⚠️ Emma (CC:ad) har ännu inte explicit bekräftat — avvakta inkommande. Nästa steg: invänta mattleverans slutet v26 → ta emot v27 → verifiera rätt mattor levererats → produktion 20 miljöbilder + 1 video + 2 stories → fakturera del 2 (9 250 kr ex moms) vid content-leverans → publicering september 2026. OBS: Verifiera att 50%-deposition fakturerats och att Carin motsignerat i Oneflow.",
+      "last_event": null
+    },
+    {
+      "id": "skadedjursbutiken",
+      "company": "Skadedjursbutiken",
+      "contact": "Sebastian Maltéus",
+      "category": "Hem & Säkerhet",
+      "status": "closed",
+      "value": 30000,
+      "value_min": 30000,
+      "value_label": "30 000",
+      "date_contacted": "2026-04-13",
+      "date_pitched": "2026-05-07",
+      "date_closed": "2026-06-18",
+      "pitch_url": "https://villasjovik.github.io/skadedjursbutiken/",
+      "outcome": "won",
+      "final_price": 30000,
+      "close_reason": "signed",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-13",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-07",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-06-16",
+          "evidence": "Sebastian ringde Carin — muntligt möte",
+          "by": "carin"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-06-16",
+          "evidence": "Muntligt överens om Kampanjpaket 30 000 ex moms (korrigerat 2026-06-17 från felaktigt loggat 39 000 per Sebastians mail) — produkter snigelmedel, myrmedel, mal",
+          "by": "carin"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-06-16",
+          "evidence": "Avtal först skickat via Oneflow doc 15067684 (39 000, fel) → slängd; korrigerat avtal omskickat som doc 15081653 (30 000) 2026-06-17",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Pitch 2026-05-07 (Startpaket 18 500 / Kampanjpaket 39 000 ord.). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket till 30 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 + avtal gick FÖRST ut med fel pris 39 000; Sebastian påpekade 2026-06-17 (mail) att överenskommet pris är 30 000 → offert (GitHub), avtal-PDF och deals korrigerade till 30 000. Avtalet skickades först via Oneflow (doc 15067684) 2026-06-16 med fel pris 39 000 → doc slängd 2026-06-17 och korrigerat avtal omskickat som doc 15081653 (30 000). SIGNERAT 2026-06-18: alla parter (Sebastian + Carin) signerade Oneflow doc 15081653 (30 000 kr ex moms) — Oneflow-notis 14:03. En faktura vid signering, publicering bestäms gemensamt.",
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -421,69 +391,63 @@
       "last_event": null
     },
     {
-      "id": "skadedjursbutiken",
-      "company": "Skadedjursbutiken",
-      "contact": "Sebastian Maltéus",
-      "category": "Hem & Säkerhet",
-      "status": "closed",
-      "value": 30000,
-      "value_min": 30000,
-      "value_label": "30 000",
-      "date_contacted": "2026-04-13",
-      "date_pitched": "2026-05-07",
-      "date_closed": "2026-06-18",
-      "pitch_url": "https://villasjovik.github.io/skadedjursbutiken/",
-      "outcome": "won",
-      "final_price": 30000,
-      "close_reason": "signed",
-      "followup_window": null,
+      "id": "vedum",
+      "company": "Vedum Kök & Bad",
+      "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
+      "category": "Kök & Bad / Inredning",
+      "status": "verbal_agreement",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-07",
+      "date_pitched": "2026-06-08",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
       "stage_history": [
         {
           "to": "contacted",
-          "at": "2026-04-13",
+          "at": "2026-06-07",
           "evidence": null,
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-08",
+          "evidence": "operational/projekt/villa-sjovik/leads/mail-audit-2026-06-08/inbox-all.txt",
           "by": "migration"
         },
         {
           "to": "pitched",
-          "at": "2026-05-07",
-          "evidence": null,
+          "at": "2026-06-08",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml (blockquote)",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-16",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3087.eml",
           "by": "migration"
         },
         {
           "to": "meeting",
-          "at": "2026-06-16",
-          "evidence": "Sebastian ringde Carin — muntligt möte",
-          "by": "carin"
+          "at": "2026-06-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3139.eml",
+          "by": "migration"
         },
         {
           "to": "verbal_agreement",
-          "at": "2026-06-16",
-          "evidence": "Muntligt överens om Kampanjpaket 30 000 ex moms (korrigerat 2026-06-17 från felaktigt loggat 39 000 per Sebastians mail) — produkter snigelmedel, myrmedel, mal",
-          "by": "carin"
-        },
-        {
-          "to": "contract_sent",
-          "at": "2026-06-16",
-          "evidence": "Avtal först skickat via Oneflow doc 15067684 (39 000, fel) → slängd; korrigerat avtal omskickat som doc 15081653 (30 000) 2026-06-17",
-          "by": "carin"
-        },
-        {
-          "to": "customer_signed",
           "at": "2026-06-18",
-          "evidence": "Sebastian Maltéus signerade via Oneflow doc 15081653 (30 000 kr) — Oneflow-notis 13:51. Väntar Carin Norbergs signering (Part A).",
-          "by": "deal-keeper"
-        },
-        {
-          "to": "closed",
-          "at": "2026-06-18",
-          "evidence": "Alla parter signerade Oneflow doc 15081653 (30 000 kr) — notis 2026-06-18 14:03",
-          "by": "deal-keeper"
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3154.eml",
+          "by": "migration"
         }
       ],
-      "signed_evidence": "Oneflow doc 15081653 — alla parter signerade 2026-06-18 14:03 (Oneflow-notis)",
-      "notes": "Pitch 2026-05-07 (Startpaket 18 500 / Kampanjpaket 39 000 ord.). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket till 30 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 + avtal gick FÖRST ut med fel pris 39 000; Sebastian påpekade 2026-06-17 (mail) att överenskommet pris är 30 000 → offert (GitHub), avtal-PDF och deals korrigerade till 30 000. Avtalet skickades först via Oneflow (doc 15067684) 2026-06-16 med fel pris 39 000 → doc slängd 2026-06-17 och korrigerat avtal omskickat som doc 15081653 (30 000). Alla parter signerade 2026-06-18 (Carin + Sebastian) — Oneflow-notis 14:03. En faktura vid signering, publicering bestäms gemensamt.",
-      "waiting_on": null,
+      "signed_evidence": null,
+      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Carin bekräftade 16 juni (2618.eml). Möte 18 juni kl 10:00. Jenny summerade 18 juni (3154.eml): barter-upplägg överenskommet — Edit-baskulör + laminatbänkskiva, stommar från mässa, leverans sept/okt, bilder nov. Inväntar internt besked. Jenny bekräftar (3161.eml, kl 12:33): återkoppling kommer efter semestern — Carin svarade \"Ser fram emot att höra av dig!\" (2759.eml, kl 13:50).",
+      "waiting_on": "Inväntar internt besked från Jenny (tillbaka v.30). Planeringsmöte i Bromma (Lovisa) när klartecken ges.",
       "last_event": null
     },
     {
@@ -616,102 +580,6 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Anders Haglunds svar på pitch",
-      "last_event": null
-    },
-    {
-      "id": "design-by-us",
-      "company": "Design By Us",
-      "contact": "Debora Ingvarsdóttir Mikkelsen (debora@design-by-us.com)",
-      "category": "belysning & inredning / danskt premiumdesign",
-      "status": "declined",
-      "value": 37800,
-      "value_min": 17800,
-      "value_label": "17 800 / 37 800 kr (Single Film / The Series)",
-      "date_contacted": "2026-06-17",
-      "date_pitched": "2026-06-17",
-      "date_closed": "2026-06-18",
-      "pitch_url": "https://villasjovik.github.io/design-by-us/",
-      "outcome": "declined",
-      "final_price": null,
-      "close_reason": "no_paid_budget",
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-17",
-          "evidence": "Carin skickade kallt utskick till rikke@design-by-us.com (2697.eml)",
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-17",
-          "evidence": "Debora Ingvarsdóttir Mikkelsen svarade — Rikke vidarebefordrade internt, Debora tar över och ber om content ideas (3126.eml)",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-17",
-          "evidence": "events/2026/06/17/mail-2755.md",
-          "by": "deal-keeper"
-        },
-        {
-          "to": "declined",
-          "at": "2026-06-18",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3151.eml — no budget for paid influencer collaborations, offered product-only only",
-          "by": "mail-watcher"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "kupilka",
-      "company": "Kupilka",
-      "contact": "Laura Bondavalli",
-      "category": "Friluft & Eko-köksutrustning / Nordic Survival Gear",
-      "status": "declined",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Single Film / The Series)",
-      "date_contacted": "2026-06-16",
-      "date_pitched": "2026-06-17",
-      "date_closed": "2026-06-18",
-      "pitch_url": "https://villasjovik.github.io/kupilka/",
-      "outcome": "declined",
-      "final_price": null,
-      "close_reason": "Varm avböjning — prisnivån överstiger nuvarande budget. Hoppas återkomma om ett–två år (Laura Bondavalli, 2026-06-18).",
-      "followup_window": "2027-06-01",
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-16",
-          "evidence": null,
-          "by": "mail-watcher"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-17",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3127.eml",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-17",
-          "evidence": "events/2026/06/17/mail-2756.md",
-          "by": "deal-keeper"
-        },
-        {
-          "to": "declined",
-          "at": "2026-06-18",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3150.eml",
-          "by": "deal-keeper"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
       "last_event": null
     },
     {
@@ -1102,18 +970,12 @@
           "at": "2026-06-11",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2954.eml",
           "by": "deal-keeper"
-        },
-        {
-          "to": "meeting_requested",
-          "at": "2026-06-18",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3162.eml",
-          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "carin",
-      "last_event": "2026-06-18 — Iris vill ha en snabb chat nästa vecka"
+      "last_event": null
     },
     {
       "id": "mesa-ceramics",
@@ -1716,6 +1578,48 @@
       "last_event": null
     },
     {
+      "id": "telldus",
+      "company": "Telldus Technologies AB",
+      "contact": "Ulf Ivarsson",
+      "category": "Smart Hem / Teknik & Automation",
+      "status": "pitched",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "date_contacted": "2026-04-07",
+      "date_pitched": "2026-06-18",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/telldus/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-07",
+          "evidence": "Carin skickade kallt outreach till info@telldus.com",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-17",
+          "evidence": "Ulf Ivarsson svarade in-thread med genuint intresse — \"Det skulle vara intressant att följa upp\"",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-18",
+          "evidence": "events/2026/06/18/mail-2760.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Väntar på svar från Ulf Ivarsson (pitch skickad 2026-06-18)",
+      "last_event": null
+    },
+    {
       "id": "samuel-groves",
       "company": "Samuel Groves",
       "contact": null,
@@ -1736,6 +1640,42 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "aviken",
+      "company": "Åviken / Order Nordic AB",
+      "contact": "Ida.Behm@order.se",
+      "category": "Hem & Kök / Köksapparater",
+      "status": "interested",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/aviken/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "Carin skickade kallt utskick till info@aviken.com",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3141.eml — Ida Behm (Marketing Manager) ber om kostnadsförslag, primärt videomaterial",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas — granska live-pitch innan leverans till Ida",
       "last_event": null
     },
     {
@@ -1782,6 +1722,42 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas-beslut — Mysoda erbjuder BARA produktsamarbete (gifted Glassy), explicit nej till betalt just nu. Acceptera produktcollab eller tacka artigt nej?",
+      "last_event": null
+    },
+    {
+      "id": "parlanskonfektyr",
+      "company": "Pärlans Konfektyr",
+      "contact": "sofia@parlanskonfektyr.se",
+      "category": "Konfektyr & Livsstil / Handgjorda karameller",
+      "status": "interested",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/parlans-konfektyr/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "Carin skickade kallt utskick till press@parlanskonfektyr.se",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-18",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3147.eml — Sofia Hammarberg (Communications & brand marketing) svarar entusiastiskt, ber om mer info om samarbetsupplägget",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas godkänner briefing → Carin bygger pitch med vinkel vintage/mysig hemmiljö",
       "last_event": null
     },
     {
@@ -1869,72 +1845,6 @@
       "last_event": null
     },
     {
-      "id": "vedum",
-      "company": "Vedum Kök & Bad",
-      "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
-      "category": "Kök & Bad / Inredning",
-      "status": "verbal_agreement",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 – 39 000",
-      "date_contacted": "2026-06-07",
-      "date_pitched": "2026-06-08",
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": "2026-09-01",
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-07",
-          "evidence": null,
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-08",
-          "evidence": "operational/projekt/villa-sjovik/leads/mail-audit-2026-06-08/inbox-all.txt",
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-08",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml (blockquote)",
-          "by": "carin"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-16",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3087.eml",
-          "by": "migration"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-17",
-          "evidence": "events/2026/06/17/mail-3139.md",
-          "by": "deal-keeper"
-        },
-        {
-          "to": "meeting",
-          "at": "2026-06-17",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3139.eml",
-          "by": "jenny"
-        },
-        {
-          "to": "verbal_agreement",
-          "at": "2026-06-18",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3154.eml",
-          "by": "jenny"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Carin bekräftade 16 juni (2618.eml). Möte 18 juni kl 10:00. Jenny summerade 18 juni (3154.eml): barter-upplägg — Edit-baskulör + laminatbänkskiva, stommar från mässa, leverans sept/okt, bilder nov. Carin fakturerar arvode = Vedums faktura. Inväntar internt besked från Jenny.",
-      "waiting_on": "Inväntar internt besked från Jenny (tillbaka v.30). Planeringsmöte i Bromma (Lovisa) när klartecken ges.",
-      "last_event": "2026-06-18"
-    },
-    {
       "id": "weltevree",
       "company": "Weltevree",
       "contact": "Bridget van Alphen (Head of Brand)",
@@ -2013,18 +1923,18 @@
       "last_event": null
     },
     {
-      "id": "telldus",
-      "company": "Telldus Technologies AB",
-      "contact": "Ulf Ivarsson",
-      "category": "Smart Hem / Teknik & Automation",
-      "status": "pitched",
+      "id": "englesson",
+      "company": "Englesson",
+      "contact": "Fredrik (info@englesson.com)",
+      "category": "Inredning & Möbler / Svenskt Hantverk",
+      "status": "replied",
       "value": 18500,
       "value_min": 18500,
       "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
-      "date_contacted": "2026-04-07",
-      "date_pitched": "2026-06-18",
+      "date_contacted": "2026-06-17",
+      "date_pitched": null,
       "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/telldus/",
+      "pitch_url": "https://villasjovik.github.io/englesson/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
@@ -2032,26 +1942,20 @@
       "stage_history": [
         {
           "to": "contacted",
-          "at": "2026-04-07",
-          "evidence": "Carin skickade kallt outreach till info@telldus.com",
-          "by": "carin"
-        },
-        {
-          "to": "interested",
           "at": "2026-06-17",
-          "evidence": "Ulf Ivarsson svarade in-thread med genuint intresse — \"Det skulle vara intressant att följa upp\"",
+          "evidence": "send-log-2026-06-17.jsonl uid 2527",
           "by": "mail-watcher"
         },
         {
-          "to": "pitched",
+          "to": "replied",
           "at": "2026-06-18",
-          "evidence": "Carin skickade pitch-mail in-thread till ulf.ivarsson@telldus.com med länk https://villasjovik.github.io/telldus/ (2760.eml)",
-          "by": "carin"
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3166.eml",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": null,
+      "waiting_on": "Lucas — granska live-pitch innan leverans till Fredrik",
       "last_event": null
     },
     {
@@ -2101,6 +2005,72 @@
       "last_event": null
     },
     {
+      "id": "legnoart",
+      "company": "Legnoart",
+      "contact": "Tamara Hoch",
+      "category": "Hem & Inredning / Servering & Kök",
+      "status": "replied",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "date_contacted": "2026-06-08",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/legnoart/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-08",
+          "evidence": "Carin skickade pitch-mail till info@legnoart.it",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-18",
+          "evidence": "Tamara Hoch (AK Trading) svarade — ber om konkreta samarbetsförslag",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas",
+      "last_event": null
+    },
+    {
+      "id": "gullberg-jansson",
+      "company": "Gullberg & Jansson",
+      "contact": "Julia Svenmo",
+      "category": "Pool & Utomhus / Poolrobotar",
+      "status": "contacted",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-17",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-17",
+          "evidence": "Carin skickade kallt utskick till info@gullbergjansson.se",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "lucas",
+      "last_event": null
+    },
+    {
       "id": "creative-story",
       "company": "Creative Story",
       "contact": null,
@@ -2144,6 +2114,29 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Carin mailar via privat mail (offert klar). Inväntar svar.",
+      "last_event": null
+    },
+    {
+      "id": "flos",
+      "company": "Flos",
+      "contact": "Silvia Delaini",
+      "category": "Belysning / Premium lighting design",
+      "status": "contacted",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-01",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -2853,6 +2846,138 @@
           "at": "2026-05-16",
           "evidence": null,
           "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "design-by-us",
+      "company": "Design By Us",
+      "contact": "Debora Ingvarsdóttir Mikkelsen (debora@design-by-us.com)",
+      "category": "belysning & inredning / danskt premiumdesign",
+      "status": "declined",
+      "value": 37800,
+      "value_min": 17800,
+      "value_label": "17 800 / 37 800 kr (Single Film / The Series)",
+      "date_contacted": "2026-06-17",
+      "date_pitched": "2026-06-17",
+      "date_closed": "2026-06-18",
+      "pitch_url": "https://villasjovik.github.io/design-by-us/",
+      "outcome": "declined",
+      "final_price": null,
+      "close_reason": "no_paid_budget",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-17",
+          "evidence": "Carin skickade kallt utskick till rikke@design-by-us.com (2697.eml)",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-17",
+          "evidence": "Debora Ingvarsdóttir Mikkelsen svarade — Rikke vidarebefordrade internt, Debora tar över och ber om content ideas (3126.eml)",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-17",
+          "evidence": "events/2026/06/17/mail-2755.md",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-18",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3151.eml — inget budget för betalda influencer-samarbeten, erbjöd product-only",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "vaarnii",
+      "company": "Vaarnii",
+      "contact": "Saara Argillander (Head of Marketing)",
+      "category": "möbler",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-17",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-17",
+          "evidence": "cold pitch email till press@vaarnii.com",
+          "by": "carin"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-18",
+          "evidence": "mjukt avslag från Saara Argillander (Head of Marketing) — planer på plats, budget begränsad som ung brand",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "kupilka",
+      "company": "Kupilka",
+      "contact": "Laura Bondavalli",
+      "category": "Friluft & Eko-köksutrustning / Nordic Survival Gear",
+      "status": "declined",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Single Film / The Series)",
+      "date_contacted": "2026-06-16",
+      "date_pitched": "2026-06-17",
+      "date_closed": "2026-06-18",
+      "pitch_url": "https://villasjovik.github.io/kupilka/",
+      "outcome": "declined",
+      "final_price": null,
+      "close_reason": "Varm avböjning — prisnivån överstiger nuvarande budget. Hoppas återkomma om ett–två år (Laura Bondavalli, 2026-06-18).",
+      "followup_window": "2027-06-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-16",
+          "evidence": null,
+          "by": "mail-watcher"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3127.eml",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-17",
+          "evidence": "events/2026/06/17/mail-2756.md",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-18",
+          "evidence": "events/2026/06/18/mail-3150.md",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
@@ -5059,7 +5184,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-06-17",
+    "updated": "2026-06-18",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -5078,5 +5203,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-17T16:03:00.594Z"
+  "generated_at": "2026-06-18T16:01:51.931Z"
 }

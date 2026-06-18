@@ -1006,12 +1006,18 @@
           "at": "2026-06-11",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2954.eml",
           "by": "deal-keeper"
+        },
+        {
+          "to": "meeting_requested",
+          "at": "2026-06-18",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3162.eml",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "iris",
-      "last_event": null
+      "waiting_on": "carin",
+      "last_event": "2026-06-18 — Iris vill ha en snabb chat nästa vecka"
     },
     {
       "id": "mesa-ceramics",

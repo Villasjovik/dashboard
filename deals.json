@@ -383,11 +383,17 @@
           "at": "2026-06-16",
           "evidence": "Avtal först skickat via Oneflow doc 15067684 (39 000, fel) → slängd; korrigerat avtal omskickat som doc 15081653 (30 000) 2026-06-17",
           "by": "carin"
+        },
+        {
+          "to": "customer_signed",
+          "at": "2026-06-18",
+          "evidence": "Sebastian Maltéus signerade via Oneflow doc 15081653 (30 000 kr) — Oneflow-notis 13:51. Väntar Carin Norbergs signering (Part A).",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
-      "notes": "Pitch 2026-05-07 (Startpaket 18 500 / Kampanjpaket 39 000 ord.). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket till 30 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 + avtal gick FÖRST ut med fel pris 39 000; Sebastian påpekade 2026-06-17 (mail) att överenskommet pris är 30 000 → offert (GitHub), avtal-PDF och deals korrigerade till 30 000. Avtalet skickades först via Oneflow (doc 15067684) 2026-06-16 med fel pris 39 000 → doc slängd 2026-06-17 och korrigerat avtal omskickat som doc 15081653 (30 000). En faktura vid signering, publicering bestäms gemensamt.",
-      "waiting_on": "Sebastians signering av det korrigerade avtalet i Oneflow (doc 15081653, 30 000 kr, skickat 2026-06-17). Pris bekräftat 30 000 (Lucas + Sebastians mail). closed sätts först vid signering (signed_evidence).",
+      "notes": "Pitch 2026-05-07 (Startpaket 18 500 / Kampanjpaket 39 000 ord.). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket till 30 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 + avtal gick FÖRST ut med fel pris 39 000; Sebastian påpekade 2026-06-17 (mail) att överenskommet pris är 30 000 → offert (GitHub), avtal-PDF och deals korrigerade till 30 000. Avtalet skickades först via Oneflow (doc 15067684) 2026-06-16 med fel pris 39 000 → doc slängd 2026-06-17 och korrigerat avtal omskickat som doc 15081653 (30 000). Sebastian signerade 2026-06-18 (Oneflow-notis 13:51) — Carin signerar Part A för att stänga dealen. En faktura vid signering, publicering bestäms gemensamt.",
+      "waiting_on": "⚡ AKTION: Carin signerar Part A i Oneflow (doc 15081653, 30 000 kr) — Sebastian Maltéus signerade 2026-06-18 kl 13:51. closed sätts vid Carins signering.",
       "last_event": null
     },
     {

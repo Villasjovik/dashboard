@@ -1650,7 +1650,7 @@
       "status": "interested",
       "value": 18500,
       "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "value_label": "18 500 / 39 000 kr (Enskild film / Kampanjpaket)",
       "date_contacted": "2026-06-15",
       "date_pitched": null,
       "date_closed": null,
@@ -1732,7 +1732,7 @@
       "status": "interested",
       "value": 18500,
       "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "value_label": "18 500 / 39 000 kr (Enskild film / Kampanjpaket)",
       "date_contacted": "2026-06-15",
       "date_pitched": null,
       "date_closed": null,
@@ -1930,7 +1930,7 @@
       "status": "replied",
       "value": 18500,
       "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "value_label": "18 500 / 39 000 kr (Enskild film / Kampanjpaket)",
       "date_contacted": "2026-06-17",
       "date_pitched": null,
       "date_closed": null,
@@ -2012,7 +2012,7 @@
       "status": "replied",
       "value": 18500,
       "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "value_label": "18 500 / 39 000 kr (Enskild film / Kampanjpaket)",
       "date_contacted": "2026-06-08",
       "date_pitched": null,
       "date_closed": null,
@@ -5203,5 +5203,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-18T16:01:51.931Z"
+  "generated_at": "2026-06-18T16:31:21.200Z"
 }

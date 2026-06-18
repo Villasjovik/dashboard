@@ -341,17 +341,17 @@
       "company": "Skadedjursbutiken",
       "contact": "Sebastian Maltéus",
       "category": "Hem & Säkerhet",
-      "status": "contract_sent",
+      "status": "closed",
       "value": 30000,
       "value_min": 30000,
       "value_label": "30 000",
       "date_contacted": "2026-04-13",
       "date_pitched": "2026-05-07",
-      "date_closed": null,
+      "date_closed": "2026-06-18",
       "pitch_url": "https://villasjovik.github.io/skadedjursbutiken/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
+      "outcome": "won",
+      "final_price": 30000,
+      "close_reason": "signed",
       "followup_window": null,
       "stage_history": [
         {
@@ -389,11 +389,17 @@
           "at": "2026-06-18",
           "evidence": "Sebastian Maltéus signerade via Oneflow doc 15081653 (30 000 kr) — Oneflow-notis 13:51. Väntar Carin Norbergs signering (Part A).",
           "by": "deal-keeper"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-18",
+          "evidence": "Alla parter signerade Oneflow doc 15081653 (30 000 kr) — notis 2026-06-18 14:03",
+          "by": "deal-keeper"
         }
       ],
-      "signed_evidence": null,
-      "notes": "Pitch 2026-05-07 (Startpaket 18 500 / Kampanjpaket 39 000 ord.). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket till 30 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 + avtal gick FÖRST ut med fel pris 39 000; Sebastian påpekade 2026-06-17 (mail) att överenskommet pris är 30 000 → offert (GitHub), avtal-PDF och deals korrigerade till 30 000. Avtalet skickades först via Oneflow (doc 15067684) 2026-06-16 med fel pris 39 000 → doc slängd 2026-06-17 och korrigerat avtal omskickat som doc 15081653 (30 000). Sebastian signerade 2026-06-18 (Oneflow-notis 13:51) — Carin signerar Part A för att stänga dealen. En faktura vid signering, publicering bestäms gemensamt.",
-      "waiting_on": "⚡ AKTION: Carin signerar Part A i Oneflow (doc 15081653, 30 000 kr) — Sebastian Maltéus signerade 2026-06-18 kl 13:51. closed sätts vid Carins signering.",
+      "signed_evidence": "Oneflow doc 15081653 — alla parter signerade 2026-06-18 14:03 (Oneflow-notis)",
+      "notes": "Pitch 2026-05-07 (Startpaket 18 500 / Kampanjpaket 39 000 ord.). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket till 30 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 + avtal gick FÖRST ut med fel pris 39 000; Sebastian påpekade 2026-06-17 (mail) att överenskommet pris är 30 000 → offert (GitHub), avtal-PDF och deals korrigerade till 30 000. Avtalet skickades först via Oneflow (doc 15067684) 2026-06-16 med fel pris 39 000 → doc slängd 2026-06-17 och korrigerat avtal omskickat som doc 15081653 (30 000). Alla parter signerade 2026-06-18 (Carin + Sebastian) — Oneflow-notis 14:03. En faktura vid signering, publicering bestäms gemensamt.",
+      "waiting_on": null,
       "last_event": null
     },
     {

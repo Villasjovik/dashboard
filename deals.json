@@ -1933,12 +1933,12 @@
       "company": "Telldus Technologies AB",
       "contact": "Ulf Ivarsson",
       "category": "Smart Hem / Teknik & Automation",
-      "status": "interested",
+      "status": "pitched",
       "value": 18500,
       "value_min": 18500,
       "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
       "date_contacted": "2026-04-07",
-      "date_pitched": null,
+      "date_pitched": "2026-06-18",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/telldus/",
       "outcome": null,
@@ -1957,11 +1957,17 @@
           "at": "2026-06-17",
           "evidence": "Ulf Ivarsson svarade in-thread med genuint intresse — \"Det skulle vara intressant att följa upp\"",
           "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-18",
+          "evidence": "Carin skickade pitch-mail in-thread till ulf.ivarsson@telldus.com med länk https://villasjovik.github.io/telldus/ (2760.eml)",
+          "by": "carin"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Pitch byggd + svarsdraft klar (svenska). Lucas granskar live + planerat svar innan utskick.",
+      "waiting_on": null,
       "last_event": null
     },
     {

@@ -1,6 +1,48 @@
 {
   "deals": [
     {
+      "id": "englesson",
+      "company": "Englesson Sverige AB",
+      "contact": "Fredrik (info@englesson.com)",
+      "category": "Inredning & Möbler / Svenskt Hantverk",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "date_contacted": "2026-06-17",
+      "date_pitched": "2026-06-18",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/englesson/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-17",
+          "evidence": "Carin skickade kallt outreach (send-log-2026-06-17.jsonl uid 2527)",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-18",
+          "evidence": "Fredrik svarade in-thread — positivt, bad om 2-3 content-idéer, upplägg och investering. Lyfte dubbelvärdet (content till egna kanaler + räckvidd).",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-18",
+          "evidence": "Pitch byggd och deployad: https://villasjovik.github.io/englesson/ — INTE levererad till Fredrik ännu (Lucas granskar live-sidan själv).",
+          "by": "pitch-smith"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Produktförankrade spår (Mocha-lansering / Howard-signatur / Camden-jubileum) + Produkterna-sektion med riktiga studiobilder. Video som hjälte (Åviken-mönster). Dubbelvärde explicit (räckvidd + ägt bildpaket) — Fredriks egen ask. Reach-vinkel: @englessonfurniture ~17k → Villa Sjövik 194k.",
+      "waiting_on": "Lucas — granska live-pitch innan leverans till Fredrik",
+      "last_event": null
+    },
+    {
       "id": "louis-poulsen",
       "company": "Louis Poulsen",
       "contact": "Thea Raben (Creative Consultant, tra@louispoulsen.dk)",

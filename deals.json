@@ -1771,7 +1771,7 @@
       "company": "Vedum Kök & Bad",
       "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
       "category": "Kök & Bad / Inredning",
-      "status": "meeting",
+      "status": "verbal_agreement",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 – 39 000",
@@ -1782,7 +1782,7 @@
       "outcome": null,
       "final_price": null,
       "close_reason": null,
-      "followup_window": null,
+      "followup_window": "2026-09-01",
       "stage_history": [
         {
           "to": "contacted",
@@ -1819,12 +1819,18 @@
           "at": "2026-06-17",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3139.eml",
           "by": "jenny"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-06-18",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3154.eml",
+          "by": "jenny"
         }
       ],
       "signed_evidence": null,
-      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Motiv: koppla mot Bad-återförsäljarsortimentet. Carin svarade 16 juni (2618.eml): bekräftar basfärger/Edit-luckan, föreslår möte i veckan. Jenny bekräftade möte 17 juni (3139.eml): möts 18 juni kl 10:00. Jenny sista dag innan semester — tillbaka v.30. Mötet hölls 18 juni kl 10:00; Carin skickade inline-bild kl 10:21 (2758.eml). Outcome okänt — Jenny nu på semester.",
-      "waiting_on": "Mötet höllt 2026-06-18. Outcome okänt — Jenny på semester. Följ upp v.30.",
-      "last_event": null
+      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Carin bekräftade 16 juni (2618.eml). Möte 18 juni kl 10:00. Jenny summerade 18 juni (3154.eml): barter-upplägg — Edit-baskulör + laminatbänkskiva, stommar från mässa, leverans sept/okt, bilder nov. Carin fakturerar arvode = Vedums faktura. Inväntar internt besked från Jenny.",
+      "waiting_on": "Inväntar internt besked från Jenny (tillbaka v.30). Planeringsmöte i Bromma (Lovisa) när klartecken ges.",
+      "last_event": "2026-06-18"
     },
     {
       "id": "weltevree",

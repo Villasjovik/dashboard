@@ -5204,12 +5204,19 @@
           "at": "2026-06-09",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2878.eml",
           "by": "deal-keeper"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-06-20",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3183.eml",
+          "by": "deal-keeper",
+          "annotation": "Helena bekräftar: Sara beställer 12 glas av varje storlek"
         }
       ],
       "signed_evidence": null,
-      "notes": "Gifting-deal via Trendgruppen (PR-byrå). Inga betalda samarbeten. Carin väljer Rosendahl Copenhagen-glas för dukning i växthuset. 63 cl + 81 cl ej tillgängliga — Carin föreslår fler av övriga storlekar (draft-svar 2026-06-18). Leveransadress bekräftad: Forsavägen 17B, 647 52 Åkers Styckebruk.",
-      "waiting_on": "Helena bekräftar beställning + leverans av glasen",
-      "last_event": null
+      "notes": "Gifting-deal via Trendgruppen (PR-byrå). Inga betalda samarbeten. Carin väljer Rosendahl Copenhagen-glas för dukning i växthuset. 63 cl + 81 cl ej tillgängliga — Carin föreslår fler av övriga storlekar. Helena bekräftad 2026-06-20: Sara beställer 12 av varje. Leveransadress: Forsavägen 17B, 647 52 Åkers Styckebruk.",
+      "waiting_on": "Sara (Trendgruppen) beställer glasen (12 av varje) — inväntar leverans + content-publicering i växthuset",
+      "last_event": "2026-06-20"
     }
   ],
   "leads_summary": {

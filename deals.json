@@ -2882,17 +2882,17 @@
       "company": "Design By Us",
       "contact": "Debora Ingvarsdóttir Mikkelsen (debora@design-by-us.com)",
       "category": "belysning & inredning / danskt premiumdesign",
-      "status": "declined",
-      "value": 37800,
-      "value_min": 17800,
-      "value_label": "17 800 / 37 800 kr (Single Film / The Series)",
+      "status": "closed",
+      "value": 0,
+      "value_min": 0,
+      "value_label": "Produktbyte",
       "date_contacted": "2026-06-17",
       "date_pitched": "2026-06-17",
-      "date_closed": "2026-06-18",
+      "date_closed": "2026-06-22",
       "pitch_url": "https://villasjovik.github.io/design-by-us/",
-      "outcome": "declined",
+      "outcome": "product_trade",
       "final_price": null,
-      "close_reason": "no_paid_budget",
+      "close_reason": "no_paid_budget — Carin accepterade product-only 2026-06-22 (2773.eml)",
       "followup_window": null,
       "stage_history": [
         {
@@ -2918,12 +2918,18 @@
           "at": "2026-06-18",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3151.eml — inget budget för betalda influencer-samarbeten, erbjöd product-only",
           "by": "mail-watcher"
+        },
+        {
+          "to": "product_trade_accepted",
+          "at": "2026-06-22",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2773.eml — Carin accepterade product-only erbjudande. OBS: Produktlistan i mailet var TOM.",
+          "by": "carin"
         }
       ],
       "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
+      "notes": "⚠️ UPPFÖLJNING KRÄVS: Mail 2773.eml skickades med TOM produktlista. Debora vet ej vilka produkter Carin vill ha. Carin behöver maila igen med specifika produkter (DISCO·RAMA, Marble Art, Trip?).",
+      "waiting_on": "Carin followup med produktlista till debora@design-by-us.com",
+      "last_event": "2026-06-22"
     },
     {
       "id": "vaarnii",

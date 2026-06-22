@@ -1,6 +1,54 @@
 {
   "deals": [
     {
+      "id": "design-by-us",
+      "company": "Design By Us",
+      "contact": "Debora Ingvarsdóttir Mikkelsen (debora@design-by-us.com)",
+      "category": "belysning & inredning / danskt premiumdesign",
+      "status": "closed",
+      "value": 0,
+      "value_min": 0,
+      "value_label": "Produktbyte",
+      "date_contacted": "2026-06-17",
+      "date_pitched": "2026-06-17",
+      "date_closed": "2026-06-22",
+      "pitch_url": "https://villasjovik.github.io/design-by-us/",
+      "outcome": "product_trade",
+      "final_price": null,
+      "close_reason": "no_paid_budget — Carin accepterade product-only 2026-06-22 (2773.eml)",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-17",
+          "evidence": "Carin skickade kallt utskick till rikke@design-by-us.com (2697.eml)",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-17",
+          "evidence": "Debora Ingvarsdóttir Mikkelsen svarade — Rikke vidarebefordrade internt, Debora tar över och ber om content ideas (3126.eml)",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-17",
+          "evidence": "events/2026/06/17/mail-2755.md",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-18",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3151.eml — inget budget för betalda influencer-samarbeten, erbjöd product-only",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Carin followup med produktlista till debora@design-by-us.com",
+      "last_event": null
+    },
+    {
       "id": "louis-poulsen",
       "company": "Louis Poulsen",
       "contact": "Thea Raben (Creative Consultant, tra@louispoulsen.dk)",
@@ -40,6 +88,48 @@
       "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": null,
       "waiting_on": "Carin — skicka terms-acceptance-mail (draft klar: operational/drafts/2026-05-29-louis-poulsen-terms-acceptance.md)",
+      "last_event": null
+    },
+    {
+      "id": "skeppshult",
+      "company": "Skeppshult Gjuteri",
+      "contact": "pelle.lonnang@skeppshult.com",
+      "category": "hem-kök",
+      "status": "closed",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-05-19",
+      "date_pitched": "2026-05-21",
+      "date_closed": "2026-06-22",
+      "pitch_url": "https://villasjovik.github.io/skeppshult/",
+      "outcome": "won",
+      "final_price": 39000,
+      "close_reason": "Avtal signerat av alla parter (Oneflow doc 15004310)",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-21",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-06-11",
+          "evidence": null,
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": "Oneflow doc 15004310 — alla parter signerade 2026-06-22 11:43 (Carin kontrasignerade; notis 3209.eml)",
+      "notes": null,
+      "waiting_on": "Skicka faktura 19 500 kr (50% del 1) till pelle.lonnang@skeppshult.com",
       "last_event": null
     },
     {
@@ -349,60 +439,6 @@
       "last_event": null
     },
     {
-      "id": "skeppshult",
-      "company": "Skeppshult Gjuteri",
-      "contact": "pelle.lonnang@skeppshult.com",
-      "category": "hem-kök",
-      "status": "won",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000",
-      "date_contacted": "2026-05-19",
-      "date_pitched": "2026-05-21",
-      "date_closed": "2026-06-22",
-      "pitch_url": "https://villasjovik.github.io/skeppshult/",
-      "outcome": "won",
-      "final_price": 39000,
-      "close_reason": "Avtal signerat av alla parter (Oneflow doc 15004310)",
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-05-19",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-05-21",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "contract_sent",
-          "at": "2026-06-11",
-          "evidence": null,
-          "by": "lucas"
-        },
-        {
-          "to": "customer_signed",
-          "at": "2026-06-22",
-          "evidence": "Oneflow-notis 3202.eml — Pelle Lönnäng signerade doc 15004310",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "won",
-          "at": "2026-06-22",
-          "evidence": "Oneflow-notis 3209.eml — alla parter signerade doc 15004310",
-          "by": "mail-watcher"
-        }
-      ],
-      "signed_evidence": "Oneflow-notis 3209.eml — alla parter signerade doc 15004310 2026-06-22T11:43Z",
-      "notes": null,
-      "waiting_on": "Skicka faktura 19 500 kr (50% del 1) till pelle.lonnang@skeppshult.com",
-      "last_event": "2026-06-22"
-    },
-    {
       "id": "vedum",
       "company": "Vedum Kök & Bad",
       "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
@@ -541,6 +577,29 @@
       "last_event": null
     },
     {
+      "id": "rosendahl-copenhagen",
+      "company": "Rosendahl Copenhagen",
+      "contact": null,
+      "category": null,
+      "status": "verbal_agreement",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": null,
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Sara (Trendgruppen) beställer glasen (12 av varje) — inväntar leverans + content-publicering i växthuset",
+      "last_event": null
+    },
+    {
       "id": "hultsbruk",
       "company": "Hultsbruk",
       "contact": "Anders Haglund (Brand Manager Hultsbruk, Hultafors Group)",
@@ -592,6 +651,48 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Anders Haglunds svar på pitch",
+      "last_event": null
+    },
+    {
+      "id": "irislights",
+      "company": "Irislights / Home Structures Sweden AB",
+      "contact": "info@homestructures.se",
+      "category": "Inredning & Design / Belysning",
+      "status": "pitched",
+      "value": 10000,
+      "value_min": 10000,
+      "value_label": "10 000 kr",
+      "date_contacted": "2026-06-17",
+      "date_pitched": "2026-06-22",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-17",
+          "evidence": "Carin skickade kallt mail till info@irislights.com",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-22",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2768.eml — Veronica Peiró (Home Structures) frågade om priser",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-22",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2768.eml — Carin skickade direkt mail-offert: 7 miljöbilder + sociala, 10 000 kr ex moms, 14 dagar",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Veronica Peiró (Home Structures) — inväntar svar på mail-offert 10 000 kr",
       "last_event": null
     },
     {
@@ -982,24 +1083,12 @@
           "at": "2026-06-11",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2954.eml",
           "by": "deal-keeper"
-        },
-        {
-          "to": "meeting_scheduling",
-          "at": "2026-06-22",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3194.eml",
-          "by": "deal-keeper"
-        },
-        {
-          "to": "meeting_confirmed",
-          "at": "2026-06-22",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2769.eml",
-          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
-      "last_event": "2026-06-22: Carin bekräftade onsdag 25/6 kl 14:00 via Google Meet (meet.google.com/etr-jkau-imu). Möte bokat."
+      "last_event": null
     },
     {
       "id": "mesa-ceramics",
@@ -2006,6 +2095,29 @@
       "last_event": null
     },
     {
+      "id": "startrading",
+      "company": "Star Trading",
+      "contact": "Emelie Russo",
+      "category": "Jul- & Dekorationsbelysning",
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas att besluta om pitch-strategi och paket-val — briefing klar 2026-06-22",
+      "last_event": null
+    },
+    {
       "id": "blankens",
       "company": "Blankens",
       "contact": "Thilda Isaksson",
@@ -2026,7 +2138,7 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Thildas reaktion på tvåstegs-skissen (Carin svarade 2026-06-20)",
-      "last_event": "Carin skickade tvåstegs-skiss (sommar + höst) 2026-06-20 — inväntar Thildas svar"
+      "last_event": null
     },
     {
       "id": "legnoart",
@@ -2878,58 +2990,46 @@
       "last_event": null
     },
     {
-      "id": "design-by-us",
-      "company": "Design By Us",
-      "contact": "Debora Ingvarsdóttir Mikkelsen (debora@design-by-us.com)",
-      "category": "belysning & inredning / danskt premiumdesign",
-      "status": "closed",
-      "value": 0,
-      "value_min": 0,
-      "value_label": "Produktbyte",
+      "id": "chhatwal-jonsson",
+      "company": "Chhatwal & Jonsson AB",
+      "contact": "Stig Jonsson — stig@chhatwal-jonsson.se",
+      "category": "Inredning & Design / Mattor",
+      "status": "declined",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
       "date_contacted": "2026-06-17",
       "date_pitched": "2026-06-17",
       "date_closed": "2026-06-22",
-      "pitch_url": "https://villasjovik.github.io/design-by-us/",
-      "outcome": "product_trade",
+      "pitch_url": null,
+      "outcome": "postponed",
       "final_price": null,
-      "close_reason": "no_paid_budget — Carin accepterade product-only 2026-06-22 (2773.eml)",
-      "followup_window": null,
+      "close_reason": "Stig Jonsson svarade 2026-06-22: \"Inga nya samarbeten just nu men vi kan höras av senare i höst.\" Varm postponement — öppnar för höst 2026.",
+      "followup_window": "2026-09-01 — höst 2026 (Stig: höras av senare i höst)",
       "stage_history": [
         {
           "to": "contacted",
           "at": "2026-06-17",
-          "evidence": "Carin skickade kallt utskick till rikke@design-by-us.com (2697.eml)",
+          "evidence": "Carin skickade kallt mail-pitch till info@chhatwal-jonsson.se",
           "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-17",
-          "evidence": "Debora Ingvarsdóttir Mikkelsen svarade — Rikke vidarebefordrade internt, Debora tar över och ber om content ideas (3126.eml)",
-          "by": "mail-watcher"
         },
         {
           "to": "pitched",
           "at": "2026-06-17",
-          "evidence": "events/2026/06/17/mail-2755.md",
-          "by": "deal-keeper"
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent — Kampanjpaket via mail (video + 10 bilder + stories)",
+          "by": "carin"
         },
         {
           "to": "declined",
-          "at": "2026-06-18",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3151.eml — inget budget för betalda influencer-samarbeten, erbjöd product-only",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "product_trade_accepted",
           "at": "2026-06-22",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2773.eml — Carin accepterade product-only erbjudande. OBS: Produktlistan i mailet var TOM.",
-          "by": "carin"
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3198.eml — Stig: 'Inga nya samarbeten just nu men vi kan höras av senare i höst.'",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
-      "notes": "⚠️ UPPFÖLJNING KRÄVS: Mail 2773.eml skickades med TOM produktlista. Debora vet ej vilka produkter Carin vill ha. Carin behöver maila igen med specifika produkter (DISCO·RAMA, Marble Art, Trip?).",
-      "waiting_on": "Carin followup med produktlista till debora@design-by-us.com",
-      "last_event": "2026-06-22"
+      "notes": null,
+      "waiting_on": null,
+      "last_event": "2026-06-22: Stig tackade nej för nu, öppnar för höst 2026."
     },
     {
       "id": "vaarnii",
@@ -5204,133 +5304,6 @@
       "notes": "Nystartad. Email-pitch 2026-06-08 (12 000 kr exkl. moms, 21 miljöbilder för 3 produktkit). Warm decline 2026-06-11 — budget för stor just nu, föredrar produktutbyte. Öppen dörr.",
       "waiting_on": null,
       "last_event": null
-    },
-    {
-      "id": "rosendahl-copenhagen",
-      "company": "Rosendahl Copenhagen",
-      "contact": "Helena Walfridsson Ekblad (Trendgruppen, PR-byrå)",
-      "category": "Hem & Inredning / Glas & Porslin",
-      "status": "verbal_agreement",
-      "value": 0,
-      "value_min": null,
-      "value_label": "Gifting",
-      "date_contacted": "2026-05-30",
-      "date_pitched": "2026-05-30",
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-05-30",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-05/carin-sent/1844.eml",
-          "by": "deal-keeper"
-        },
-        {
-          "to": "verbal_agreement",
-          "at": "2026-06-09",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2878.eml",
-          "by": "deal-keeper"
-        },
-        {
-          "to": "verbal_agreement",
-          "at": "2026-06-20",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3183.eml",
-          "by": "deal-keeper",
-          "annotation": "Helena bekräftar: Sara beställer 12 glas av varje storlek"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Gifting-deal via Trendgruppen (PR-byrå). Inga betalda samarbeten. Carin väljer Rosendahl Copenhagen-glas för dukning i växthuset. 63 cl + 81 cl ej tillgängliga — Carin föreslår fler av övriga storlekar. Helena bekräftad 2026-06-20: Sara beställer 12 av varje. Leveransadress: Forsavägen 17B, 647 52 Åkers Styckebruk.",
-      "waiting_on": "Sara (Trendgruppen) beställer glasen (12 av varje) — inväntar leverans + content-publicering i växthuset",
-      "last_event": "2026-06-20"
-    },
-    {
-      "id": "irislights",
-      "company": "Irislights / Home Structures Sweden AB",
-      "contact": "Veronica Peiró (info@homestructures.se)",
-      "category": "Inredning & Design / Belysning",
-      "status": "pitched",
-      "value": 10000,
-      "value_min": 10000,
-      "value_label": "10 000 kr",
-      "date_contacted": "2026-06-17",
-      "date_pitched": "2026-06-22",
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-17",
-          "evidence": "Carin skickade kallt mail till info@irislights.com",
-          "by": "carin"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-22",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2768.eml — Veronica Peiró (Home Structures) frågade om priser",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-22",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2768.eml — Carin skickade mail-offert: 7 miljöbilder + sociala, 10 000 kr ex moms, 14 dagar",
-          "by": "mail-watcher"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Irislights = bomullsbolls-ljusslingor med varm handgjord känsla. Home Structures Sweden AB är svensk kontakt/distributör (Vikingagatan 24, Stockholm). Ingen GitHub Pages-pitch byggd — direkt mail-offert. Veronica bad om priser efter kallt mail 17/6 till info@irislights.com.",
-      "waiting_on": "Veronica Peiró (Home Structures) — inväntar svar på mail-offert 10 000 kr",
-      "last_event": "2026-06-22"
-    },
-    {
-      "id": "chhatwal-jonsson",
-      "company": "Chhatwal & Jonsson AB",
-      "contact": "Stig Jonsson — stig@chhatwal-jonsson.se",
-      "category": "Inredning & Design / Mattor",
-      "status": "declined",
-      "value": 18500,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000",
-      "date_contacted": "2026-06-17",
-      "date_pitched": "2026-06-17",
-      "date_closed": "2026-06-22",
-      "pitch_url": null,
-      "outcome": "postponed",
-      "final_price": null,
-      "close_reason": "Stig Jonsson svarade 2026-06-22: \"Inga nya samarbeten just nu men vi kan höras av senare i höst.\" Varm postponement — öppnar för höst 2026.",
-      "followup_window": "2026-09-01 — höst 2026 (Stig: höras av senare i höst)",
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-17",
-          "evidence": "Carin skickade kallt mail-pitch till info@chhatwal-jonsson.se",
-          "by": "carin"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-17",
-          "evidence": "Kampanjpaket via mail (video + 10 bilder + stories)",
-          "by": "carin"
-        },
-        {
-          "to": "declined",
-          "at": "2026-06-22",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3198.eml",
-          "by": "mail-watcher"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Skandinavisk designbyrå — handvävda mattor, nordisk form + indiskt hantverk. Lidingö. Email-pitch 2026-06-17. Stig Jonsson (co-founder) svarade 2026-06-22 med varm postponement: höras i höst.",
-      "waiting_on": null,
-      "last_event": "2026-06-22: Stig tackade nej för nu, öppnar för höst 2026."
     }
   ],
   "leads_summary": {
@@ -5360,5 +5333,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-18T16:31:21.200Z"
+  "generated_at": "2026-06-22T12:09:45.156Z"
 }

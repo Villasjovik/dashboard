@@ -5271,6 +5271,48 @@
       "notes": "Irislights = bomullsbolls-ljusslingor med varm handgjord känsla. Home Structures Sweden AB är svensk kontakt/distributör (Vikingagatan 24, Stockholm). Ingen GitHub Pages-pitch byggd — direkt mail-offert. Veronica bad om priser efter kallt mail 17/6 till info@irislights.com.",
       "waiting_on": "Veronica Peiró (Home Structures) — inväntar svar på mail-offert 10 000 kr",
       "last_event": "2026-06-22"
+    },
+    {
+      "id": "chhatwal-jonsson",
+      "company": "Chhatwal & Jonsson AB",
+      "contact": "Stig Jonsson — stig@chhatwal-jonsson.se",
+      "category": "Inredning & Design / Mattor",
+      "status": "declined",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-06-17",
+      "date_pitched": "2026-06-17",
+      "date_closed": "2026-06-22",
+      "pitch_url": null,
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": "Stig Jonsson svarade 2026-06-22: \"Inga nya samarbeten just nu men vi kan höras av senare i höst.\" Varm postponement — öppnar för höst 2026.",
+      "followup_window": "2026-09-01 — höst 2026 (Stig: höras av senare i höst)",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-17",
+          "evidence": "Carin skickade kallt mail-pitch till info@chhatwal-jonsson.se",
+          "by": "carin"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-17",
+          "evidence": "Kampanjpaket via mail (video + 10 bilder + stories)",
+          "by": "carin"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-22",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3198.eml",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Skandinavisk designbyrå — handvävda mattor, nordisk form + indiskt hantverk. Lidingö. Email-pitch 2026-06-17. Stig Jonsson (co-founder) svarade 2026-06-22 med varm postponement: höras i höst.",
+      "waiting_on": null,
+      "last_event": "2026-06-22: Stig tackade nej för nu, öppnar för höst 2026."
     }
   ],
   "leads_summary": {

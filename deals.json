@@ -353,17 +353,17 @@
       "company": "Skeppshult Gjuteri",
       "contact": "pelle.lonnang@skeppshult.com",
       "category": "hem-kök",
-      "status": "contract_sent",
+      "status": "won",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 / 39 000",
       "date_contacted": "2026-05-19",
       "date_pitched": "2026-05-21",
-      "date_closed": null,
+      "date_closed": "2026-06-22",
       "pitch_url": "https://villasjovik.github.io/skeppshult/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
+      "outcome": "won",
+      "final_price": 39000,
+      "close_reason": "Avtal signerat av alla parter (Oneflow doc 15004310)",
       "followup_window": null,
       "stage_history": [
         {
@@ -389,11 +389,17 @@
           "at": "2026-06-22",
           "evidence": "Oneflow-notis 3202.eml — Pelle Lönnäng signerade doc 15004310",
           "by": "mail-watcher"
+        },
+        {
+          "to": "won",
+          "at": "2026-06-22",
+          "evidence": "Oneflow-notis 3209.eml — alla parter signerade doc 15004310",
+          "by": "mail-watcher"
         }
       ],
-      "signed_evidence": null,
+      "signed_evidence": "Oneflow-notis 3209.eml — alla parter signerade doc 15004310 2026-06-22T11:43Z",
       "notes": null,
-      "waiting_on": "Carin måste kontrasignera Oneflow-doc 15004310 → app.oneflow.com. Faktura bekräftad till pelle.lonnang@skeppshult.com (3207.eml 2026-06-22). Vid signering: uppdatera → won, date_closed, final_price 39000, skicka faktura 19 500 kr.",
+      "waiting_on": "Skicka faktura 19 500 kr (50% del 1) till pelle.lonnang@skeppshult.com",
       "last_event": "2026-06-22"
     },
     {

@@ -976,12 +976,18 @@
           "at": "2026-06-22",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3194.eml",
           "by": "deal-keeper"
+        },
+        {
+          "to": "meeting_confirmed",
+          "at": "2026-06-22",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2769.eml",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "carin",
-      "last_event": "2026-06-22: Iris counter-proposed Tuesday 2 PM or Wednesday. Draft svar skapat."
+      "waiting_on": null,
+      "last_event": "2026-06-22: Carin bekräftade onsdag 25/6 kl 14:00 via Google Meet (meet.google.com/etr-jkau-imu). Möte bokat."
     },
     {
       "id": "mesa-ceramics",

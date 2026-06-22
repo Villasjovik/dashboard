@@ -383,12 +383,18 @@
           "at": "2026-06-11",
           "evidence": null,
           "by": "lucas"
+        },
+        {
+          "to": "customer_signed",
+          "at": "2026-06-22",
+          "evidence": "Oneflow-notis 3202.eml — Pelle Lönnäng signerade doc 15004310",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Reviderat avtal (50/50-villkor) skickat av Carin 2026-06-15 (2612.eml). Väntar Pelles signering av Oneflow-doc 15004310.",
-      "last_event": null
+      "waiting_on": "Pelle Lönnäng signerade Oneflow-doc 15004310 2026-06-22. CARIN MÅSTE KONTRASIGNERA → app.oneflow.com (doc 15004310).",
+      "last_event": "2026-06-22"
     },
     {
       "id": "vedum",

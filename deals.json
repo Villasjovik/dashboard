@@ -2099,12 +2099,12 @@
       "company": "Star Trading",
       "contact": "Emelie Russo",
       "category": "Jul- & Dekorationsbelysning",
-      "status": "replied",
+      "status": "pitched",
       "value": 39000,
       "value_min": 18500,
       "value_label": "18 500 / 39 000 kr",
       "date_contacted": "2026-06-15",
-      "date_pitched": null,
+      "date_pitched": "2026-06-23",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/startrading/",
       "outcome": null,
@@ -2114,7 +2114,7 @@
       "stage_history": null,
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Pitch deployad live 2026-06-22 (kvalitetsprodukter — Pagod/Betlehem/Anno/Elias). Inväntar kund-svar.",
+      "waiting_on": null,
       "last_event": null
     },
     {

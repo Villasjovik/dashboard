@@ -2040,12 +2040,12 @@
       "company": "Englesson",
       "contact": "Fredrik (info@englesson.com)",
       "category": "Inredning & Möbler / Svenskt Hantverk",
-      "status": "replied",
+      "status": "pitched",
       "value": 18500,
       "value_min": 18500,
       "value_label": "18 500 / 39 000 kr (Enskild film / Kampanjpaket)",
       "date_contacted": "2026-06-17",
-      "date_pitched": null,
+      "date_pitched": "2026-06-23",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/englesson/",
       "outcome": null,
@@ -2064,11 +2064,17 @@
           "at": "2026-06-18",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3166.eml",
           "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2852.eml",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Lucas — granska live-pitch innan leverans till Fredrik",
+      "waiting_on": null,
       "last_event": null
     },
     {

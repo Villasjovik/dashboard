@@ -573,8 +573,8 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Stenleverans pågår v.26 — Carin bekräftade 2026-06-22 (2772.eml). Stenar skickas från Nordstones lager denna vecka. Content-produktion startar vid leverans.",
-      "last_event": null
+      "waiting_on": "Stenar levereras v.26. Content-publicering planerad slutet av juli — Leonna på semester 29.6–17.7 och vill hinna dela innehållet på Nordstones IG när hon är tillbaka. Carin bekräftar exakt datum när stenarna är på plats och projekt startat.",
+      "last_event": "2026-06-23"
     },
     {
       "id": "rosendahl-copenhagen",
@@ -2114,7 +2114,7 @@
       "stage_history": null,
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Lucas-OK att deploya pitch — pitch byggd lokalt (ej deployad) 2026-06-22",
+      "waiting_on": "Pitch deployad live 2026-06-22 (kvalitetsprodukter — Pagod/Betlehem/Anno/Elias). Inväntar kund-svar.",
       "last_event": null
     },
     {
@@ -5314,7 +5314,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-06-22",
+    "updated": "2026-06-23",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -5333,5 +5333,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-22T18:28:24.870Z"
+  "generated_at": "2026-06-23T01:38:03.339Z"
 }

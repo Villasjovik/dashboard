@@ -5328,6 +5328,42 @@
       "notes": "Nystartad. Email-pitch 2026-06-08 (12 000 kr exkl. moms, 21 miljöbilder för 3 produktkit). Warm decline 2026-06-11 — budget för stor just nu, föredrar produktutbyte. Öppen dörr.",
       "waiting_on": null,
       "last_event": null
+    },
+    {
+      "id": "klockargardens",
+      "company": "Klockargårdens i Norberg",
+      "contact": "Helene — info@klockargardens.se",
+      "category": "Okänd / Lokal butik eller gårdsmiljö",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-12",
+      "date_pitched": null,
+      "date_closed": "2026-06-24",
+      "pitch_url": null,
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": "Warm decline 2026-06-24 — semestrar och sjuk personal. Helene ber om återkoppling i höst.",
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-12",
+          "evidence": null,
+          "by": "carin"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-24",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3279.eml",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Kall outreach 2026-06-12 (standard VS-presentation). Helene svarade 2026-06-24: semestrar + sjuk personal, ber om återkoppling i höst. Kallt utskick utan GitHub Pages-pitch.",
+      "waiting_on": null,
+      "last_event": "2026-06-24"
     }
   ],
   "leads_summary": {

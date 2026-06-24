@@ -1725,11 +1725,17 @@
           "at": "2026-06-18",
           "evidence": "events/2026/06/18/mail-2760.md",
           "by": "deal-keeper"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-24",
+          "evidence": "Carl-Henrik bekräftade möte 2026-06-24 kl 15:00 (arkiv/mail/3264.eml) — \"Ja precis, menade 15.00 idag onsdag.\"",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Carl-Henrik Ivarsson missade mötet 2026-06-23 15:00 (10 min sen), ber om ombokning till 2026-06-24 15:00. Carin följde upp med Ulf 2026-06-23 (inloggningsproblem, bad Ulf ringa).",
+      "waiting_on": "Möte bekräftat 2026-06-24 kl 15:00 — Carl-Henrik Ivarsson bekräftade (arkiv/3264.eml). Väntar post-möte-återkoppling.",
       "last_event": null
     },
     {

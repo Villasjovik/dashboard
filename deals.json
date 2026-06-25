@@ -738,6 +738,48 @@
       "last_event": null
     },
     {
+      "id": "muubs",
+      "company": "Muubs",
+      "contact": "Anna Mølgaard (Brand Engagement Assistant)",
+      "category": "inredning",
+      "status": "pitched",
+      "value": 37800,
+      "value_min": 17800,
+      "value_label": null,
+      "date_contacted": "2026-06-17",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/muubs/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-17",
+          "evidence": "Carin skickade kallt utskick till marketing@designconceptdenmark.dk",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-24",
+          "evidence": "Anna Mølgaard svarade substantiellt — ber om contentidéer, produktval, fees och usage rights inför intern diskussion",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-25",
+          "evidence": "Engelsk EUR-pitch byggd och deployad — https://villasjovik.github.io/muubs/. EJ skickad (Lucas granskar live-sidan själv, inget mail per task).",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "aviken",
       "company": "Åviken / Order Nordic AB",
       "contact": "Ida.Behm@order.se",
@@ -3086,29 +3128,6 @@
       "last_event": null
     },
     {
-      "id": "classic-collection",
-      "company": "Classic Collection",
-      "contact": "Cecilia Dahlgren",
-      "category": "Hem & Inredning / Textil / Mattor & Kuddar",
-      "status": "declined",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-06-17",
-      "date_pitched": null,
-      "date_closed": "2026-06-25",
-      "pitch_url": null,
-      "outcome": "postponed",
-      "final_price": null,
-      "close_reason": "Warm decline 2026-06-25 — Cecilia Dahlgren på semester, ber om återkontakt efter sommaren.",
-      "followup_window": "2026-09-01",
-      "stage_history": null,
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
       "id": "chhatwal-jonsson",
       "company": "Chhatwal & Jonsson AB",
       "contact": "Stig Jonsson — stig@chhatwal-jonsson.se",
@@ -3149,6 +3168,29 @@
       "notes": null,
       "waiting_on": null,
       "last_event": "2026-06-22: Stig tackade nej för nu, öppnar för höst 2026."
+    },
+    {
+      "id": "classic-collection",
+      "company": "Classic Collection",
+      "contact": "Cecilia Dahlgren",
+      "category": "Hem & Inredning / Textil / Mattor & Kuddar",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-17",
+      "date_pitched": null,
+      "date_closed": "2026-06-25",
+      "pitch_url": null,
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": "Warm decline 2026-06-25 — Cecilia Dahlgren på semester, ber om återkontakt efter sommaren.",
+      "followup_window": "2026-09-01",
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
     },
     {
       "id": "vaarnii",
@@ -5511,5 +5553,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-25T08:35:23.783Z"
+  "generated_at": "2026-06-25T10:46:36.120Z"
 }

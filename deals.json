@@ -2256,6 +2256,36 @@
       "last_event": null
     },
     {
+      "id": "fargbygge",
+      "company": "Färgbygge",
+      "contact": "Johanna",
+      "category": "Hem & Bostad / Färg & Ytbehandling",
+      "status": "contacted",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-24",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-24",
+          "evidence": "Carin skickade kallt utskick till info@fargbygge.com",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "lucas",
+      "last_event": null
+    },
+    {
       "id": "gullberg-jansson",
       "company": "Gullberg & Jansson",
       "contact": "Julia Svenmo",
@@ -3121,6 +3151,29 @@
       "final_price": null,
       "close_reason": "Warm decline 2026-06-25 — Tiia Eronen (marketing) på sommarsemester, ber om återkoppling i augusti.",
       "followup_window": "2026-08-01",
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "friis-holm",
+      "company": "Friis-Holm Chokolade",
+      "contact": "Peter Husted Sylvest (marketing)",
+      "category": "Mat & Dryck / Choklad (bean-to-bar)",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-22",
+      "date_pitched": null,
+      "date_closed": "2026-06-25",
+      "pitch_url": null,
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": "Warm decline 2026-06-25 — i dialog med potentiell ny svensk distributionspartner + pågående rebrand/grafisk uppdatering; vill återuppta dialogen tidig oktober.",
+      "followup_window": "2026-10-01",
       "stage_history": null,
       "signed_evidence": null,
       "notes": null,
@@ -5553,5 +5606,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-25T10:46:36.120Z"
+  "generated_at": "2026-06-25T13:37:05.737Z"
 }

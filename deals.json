@@ -574,7 +574,7 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Stenar levereras v.26 (bekräftat). Timeline bekräftad: content publiceras efter 2026-07-17 (Leonnas semesterslut). Carin skickar material för godkännande INNAN 17.7. Nästa steg: Carin bekräftar när stenarna är på plats och projekt kan starta.",
-      "last_event": "2026-06-23"
+      "last_event": null
     },
     {
       "id": "rosendahl-copenhagen",
@@ -654,6 +654,48 @@
       "last_event": null
     },
     {
+      "id": "englesson",
+      "company": "Englesson",
+      "contact": "Fredrik (info@englesson.com)",
+      "category": "Inredning & Möbler / Svenskt Hantverk",
+      "status": "pitched",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Enskild film / Kampanjpaket)",
+      "date_contacted": "2026-06-17",
+      "date_pitched": "2026-06-23",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/englesson/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-17",
+          "evidence": "send-log-2026-06-17.jsonl uid 2527",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-18",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3166.eml",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "events/2026/06/23/mail-2852.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "irislights",
       "company": "Irislights / Home Structures Sweden AB",
       "contact": "info@homestructures.se",
@@ -696,6 +738,48 @@
       "last_event": null
     },
     {
+      "id": "aviken",
+      "company": "Åviken / Order Nordic AB",
+      "contact": "Ida.Behm@order.se",
+      "category": "Hem & Kök / Köksapparater",
+      "status": "pitched",
+      "value": 10000,
+      "value_min": 10000,
+      "value_label": "10 000 kr (ett paket · 1 UGC-video + 10 bilder + 1 story)",
+      "date_contacted": "2026-06-15",
+      "date_pitched": "2026-06-23",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/aviken/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "Carin skickade kallt utskick till info@aviken.com",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3141.eml — Ida Behm (Marketing Manager) ber om kostnadsförslag, primärt videomaterial",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2854.eml — pitch-länk https://villasjovik.github.io/aviken/ levererad till Ida Behm",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Ida Behm — återkoppling på pitch",
+      "last_event": null
+    },
+    {
       "id": "espegard",
       "company": "Espegard",
       "contact": "Jakob Storm Leth",
@@ -716,6 +800,48 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Offert skickad 2026-06-17 in-thread, inväntar svar",
+      "last_event": null
+    },
+    {
+      "id": "parlanskonfektyr",
+      "company": "Pärlans Konfektyr",
+      "contact": "sofia@parlanskonfektyr.se",
+      "category": "Konfektyr & Livsstil / Handgjorda karameller",
+      "status": "pitched",
+      "value": 10000,
+      "value_min": 10000,
+      "value_label": "10 000 kr (ett paket · 1 UGC-video + 10 bilder + 1 story)",
+      "date_contacted": "2026-06-15",
+      "date_pitched": "2026-06-23",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/parlans-konfektyr/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-15",
+          "evidence": "Carin skickade kallt utskick till press@parlanskonfektyr.se",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-18",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3147.eml — Sofia Hammarberg (Communications & brand marketing) svarar entusiastiskt, ber om mer info om samarbetsupplägget",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2853.eml — Carin skickade pitch-länk villasjovik.github.io/parlans-konfektyr/ till press@parlanskonfektyr.se",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Svar från Sofia Hammarberg — pitch skickad 2026-06-23",
       "last_event": null
     },
     {
@@ -1728,14 +1854,50 @@
         },
         {
           "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "Mötes-bekräftelse skickad till carl-henrik.ivarsson@telldus.com (arkiv/mail/2776.eml). Carl-Henrik Ivarsson (annan kontakt än Ulf) ville ha möte — Carin bekräftade Teams-möte 15:00.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "Carl-Henrik missade mötet (10 min sen). Begärde ombokning till 2026-06-24 15:00 (arkiv/mail/3235.eml). Draft-svar klart, status oförändrad.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "Carin svarade Carl-Henrik (arkiv/mail/2787.eml) — pratade med kollegan, fredagsmöte 2026-06-27 kl 9 bokat. Erbjöd 2026-06-24 kl 9 som alternativ. Väntar bekräftelse.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "Carin klarlade tiderna (arkiv/mail/2850.eml) — blandade ihop 09:00/15:00. Frågar om Carl-Henrik vill ha 2026-06-24 kl 15:00 (hans ursprungliga begäran). Väntar svar.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
           "at": "2026-06-24",
           "evidence": "Carl-Henrik bekräftade möte 2026-06-24 kl 15:00 (arkiv/mail/3264.eml) — \"Ja precis, menade 15.00 idag onsdag.\"",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-24",
+          "evidence": "Carin svarade Carl-Henriks bekräftelse (carin-sent/2856.eml) — rutinbekräftelse, tom kropp, möte kl 15:00 bekräftat från båda håll.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-24",
+          "evidence": "Carl-Henrik skickade Google Meet-länk (arkiv/3275.eml) — platformbyte från Teams till Meet. Möte kl 15:00 startas av Carl-Henrik.",
           "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Möte bekräftat 2026-06-24 kl 15:00 — Carl-Henrik Ivarsson bekräftade (arkiv/3264.eml). Väntar post-möte-återkoppling.",
+      "waiting_on": "Möte 2026-06-24 kl 15:00 — Google Meet-länk skickad av Carl-Henrik (arkiv/3275.eml). Väntar post-möte-återkoppling.",
       "last_event": null
     },
     {
@@ -1756,48 +1918,6 @@
       "close_reason": null,
       "followup_window": null,
       "stage_history": null,
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "aviken",
-      "company": "Åviken / Order Nordic AB",
-      "contact": "Ida.Behm@order.se",
-      "category": "Hem & Kök / Köksapparater",
-      "status": "pitched",
-      "value": 10000,
-      "value_min": 10000,
-      "value_label": "10 000 kr (ett paket · 1 UGC-video + 10 bilder + 1 story)",
-      "date_contacted": "2026-06-15",
-      "date_pitched": "2026-06-23",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/aviken/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-15",
-          "evidence": "Carin skickade kallt utskick till info@aviken.com",
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-17",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3141.eml — Ida Behm (Marketing Manager) ber om kostnadsförslag, primärt videomaterial",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-23",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2854.eml — pitch-länk https://villasjovik.github.io/aviken/ levererad till Ida Behm",
-          "by": "carin"
-        }
-      ],
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
@@ -1847,48 +1967,6 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas-beslut — Mysoda erbjuder BARA produktsamarbete (gifted Glassy), explicit nej till betalt just nu. Acceptera produktcollab eller tacka artigt nej?",
-      "last_event": null
-    },
-    {
-      "id": "parlanskonfektyr",
-      "company": "Pärlans Konfektyr",
-      "contact": "sofia@parlanskonfektyr.se",
-      "category": "Konfektyr & Livsstil / Handgjorda karameller",
-      "status": "pitched",
-      "value": 10000,
-      "value_min": 10000,
-      "value_label": "10 000 kr (ett paket · 1 UGC-video + 10 bilder + 1 story)",
-      "date_contacted": "2026-06-15",
-      "date_pitched": "2026-06-23",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/parlans-konfektyr/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-15",
-          "evidence": "Carin skickade kallt utskick till press@parlanskonfektyr.se",
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-18",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3147.eml — Sofia Hammarberg (Communications & brand marketing) svarar entusiastiskt, ber om mer info om samarbetsupplägget",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-23",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2853.eml — Carin skickade pitch-länk villasjovik.github.io/parlans-konfektyr/ till press@parlanskonfektyr.se",
-          "by": "carin"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Svar från Sofia Hammarberg — pitch skickad 2026-06-23",
       "last_event": null
     },
     {
@@ -2054,48 +2132,6 @@
       "last_event": null
     },
     {
-      "id": "englesson",
-      "company": "Englesson",
-      "contact": "Fredrik (info@englesson.com)",
-      "category": "Inredning & Möbler / Svenskt Hantverk",
-      "status": "pitched",
-      "value": 18500,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Enskild film / Kampanjpaket)",
-      "date_contacted": "2026-06-17",
-      "date_pitched": "2026-06-23",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/englesson/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-17",
-          "evidence": "send-log-2026-06-17.jsonl uid 2527",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-18",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3166.eml",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-23",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2852.eml",
-          "by": "mail-watcher"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
       "id": "prhome",
       "company": "PR Home of Scandinavia",
       "contact": "Åsa Kjellberg (Art Director & Content Creator, Asa.Kjellberg@prhome.se)",
@@ -2117,29 +2153,6 @@
       "notes": null,
       "waiting_on": "Lucas — beslutar om produktbyte accepteras. Draft klar: operational/projekt/villa-sjovik/drafts/draft-prhome-1781597386026.md",
       "last_event": null
-    },
-    {
-      "id": "startrading",
-      "company": "Star Trading",
-      "contact": "Emelie Russo",
-      "category": "Jul- & Dekorationsbelysning",
-      "status": "declined",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr",
-      "date_contacted": "2026-06-15",
-      "date_pitched": "2026-06-23",
-      "date_closed": "2026-06-24",
-      "pitch_url": "https://villasjovik.github.io/startrading/",
-      "outcome": "declined",
-      "final_price": null,
-      "close_reason": "Emelie Russo svarade 2026-06-24: \"tar detta vidare och återkommer om aktuellt\" — mjukt avslag utan tidsram. Emelie är Coordinator, ej slutbeslutsfattare.",
-      "followup_window": null,
-      "stage_history": null,
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3270.eml"
     },
     {
       "id": "blankens",
@@ -3014,6 +3027,65 @@
       "last_event": null
     },
     {
+      "id": "byarums-bruk",
+      "company": "Byarums Bruk AB",
+      "contact": "Joakim Ståhl",
+      "category": "trädgård & utemiljö",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-23",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": "nöjda med nuvarande marknadsföring och budget",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-23",
+          "evidence": "Carin skickade kallt outreach-mail till byarum@byarumsbruk.se",
+          "by": "carin"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-24",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3259.eml — Joakim Ståhl tackade nej: nöjda med nuvarande marknadsföring och budget",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "johanna-gullichsen",
+      "company": "Johanna Gullichsen",
+      "contact": "Tiia Eronen (marketing)",
+      "category": "Hem & Inredning / Textil / Skandinavisk Design",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-23",
+      "date_pitched": null,
+      "date_closed": "2026-06-25",
+      "pitch_url": null,
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": "Warm decline 2026-06-25 — Tiia Eronen (marketing) på sommarsemester, ber om återkoppling i augusti.",
+      "followup_window": "2026-08-01",
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "chhatwal-jonsson",
       "company": "Chhatwal & Jonsson AB",
       "contact": "Stig Jonsson — stig@chhatwal-jonsson.se",
@@ -3296,6 +3368,42 @@
       "last_event": null
     },
     {
+      "id": "startrading",
+      "company": "Star Trading",
+      "contact": "Emelie Russo",
+      "category": "Jul- & Dekorationsbelysning",
+      "status": "declined",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr",
+      "date_contacted": "2026-06-15",
+      "date_pitched": "2026-06-23",
+      "date_closed": "2026-06-24",
+      "pitch_url": "https://villasjovik.github.io/startrading/",
+      "outcome": "declined",
+      "final_price": null,
+      "close_reason": "Emelie Russo svarade 2026-06-24: \"tar detta vidare och återkommer om aktuellt\" — mjukt avslag utan tidsram. Emelie är Coordinator, ej slutbeslutsfattare.",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "events/2026/06/23/mail-2851.md",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-24",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3270.eml",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "the-mallows",
       "company": "The Mallows",
       "contact": "Kamma Bro (Marketing Manager)",
@@ -3356,6 +3464,29 @@
           "by": "lucas"
         }
       ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "klockargardens",
+      "company": "Klockargårdens i Norberg",
+      "contact": "Helene",
+      "category": "Okänd / Lokal butik eller gårdsmiljö",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-12",
+      "date_pitched": null,
+      "date_closed": "2026-06-24",
+      "pitch_url": null,
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": "Warm decline 2026-06-24 — semestrar och sjuk personal. Helene ber om återkoppling i höst.",
+      "followup_window": "2026-09-01",
+      "stage_history": null,
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
@@ -5110,7 +5241,7 @@
       ],
       "signed_evidence": null,
       "notes": "Avböjt 2026-04-22. Seeding-flow, inte paid collab. Lärdom: inbound från utländska hardware-brands med flera senders = troligtvis produktutskick.",
-      "waiting_on": "Lynn (MCN/noxinfluencer.com) — prisförfrågan skickad 2026-05-29",
+      "waiting_on": "Svar från Lynn (MCN/noxinfluencer.com) på counter-offer — $2 000 USD om gräsklipparen behålles (skickad 2026-06-25)",
       "last_event": null
     },
     {
@@ -5328,42 +5459,6 @@
       "notes": "Nystartad. Email-pitch 2026-06-08 (12 000 kr exkl. moms, 21 miljöbilder för 3 produktkit). Warm decline 2026-06-11 — budget för stor just nu, föredrar produktutbyte. Öppen dörr.",
       "waiting_on": null,
       "last_event": null
-    },
-    {
-      "id": "klockargardens",
-      "company": "Klockargårdens i Norberg",
-      "contact": "Helene — info@klockargardens.se",
-      "category": "Okänd / Lokal butik eller gårdsmiljö",
-      "status": "declined",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-06-12",
-      "date_pitched": null,
-      "date_closed": "2026-06-24",
-      "pitch_url": null,
-      "outcome": "postponed",
-      "final_price": null,
-      "close_reason": "Warm decline 2026-06-24 — semestrar och sjuk personal. Helene ber om återkoppling i höst.",
-      "followup_window": "2026-09-01",
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-12",
-          "evidence": null,
-          "by": "carin"
-        },
-        {
-          "to": "declined",
-          "at": "2026-06-24",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3279.eml",
-          "by": "mail-watcher"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Kall outreach 2026-06-12 (standard VS-presentation). Helene svarade 2026-06-24: semestrar + sjuk personal, ber om återkoppling i höst. Kallt utskick utan GitHub Pages-pitch.",
-      "waiting_on": null,
-      "last_event": "2026-06-24"
     }
   ],
   "leads_summary": {
@@ -5374,7 +5469,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-06-23",
+    "updated": "2026-06-25",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -5393,5 +5488,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-23T01:38:03.339Z"
+  "generated_at": "2026-06-25T08:35:23.783Z"
 }

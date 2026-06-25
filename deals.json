@@ -654,6 +654,42 @@
       "last_event": null
     },
     {
+      "id": "fargbygge",
+      "company": "Färgbygge",
+      "contact": "Johanna",
+      "category": "Hem & Bostad / Färg & Ytbehandling",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500–39 000 SEK",
+      "date_contacted": "2026-06-24",
+      "date_pitched": "2026-06-25",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/fargbygge/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-24",
+          "evidence": "Carin skickade kallt utskick till info@fargbygge.com",
+          "by": "carin"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-25",
+          "evidence": "Pitch byggd + deployad live (villasjovik.github.io/fargbygge), CLT Finish + Slamfärg-vinkel. Leverans-mail ej skickat — väntar Lucas-OK.",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Vinkel — CLT Finish (hjälteprodukt, live hero-banner på fargbygge.se) + Slamfärg (säsongsprodukt, fasad-högsäsong juni). 3 spår: Det ljusa träet (CLT, retail pull-through + nå slutkund) / Sommarfasaden (slamfärg, säsongstopp + konvertering) / Det naturliga valet (hållbarhetsprofil, premiumpositionering) + Ert val (flex). Genomgående: 194k + 2 Stories → köpsida. Tvåpaket: Enskild film 18 500 / Hela serien 39 000 (featured). Pitch byggd, deployad, väntar på Lucas-OK för leverans-mail till Johanna.",
+      "waiting_on": "lucas",
+      "last_event": null
+    },
+    {
       "id": "englesson",
       "company": "Englesson",
       "contact": "Fredrik (info@englesson.com)",
@@ -2256,10 +2292,10 @@
       "last_event": null
     },
     {
-      "id": "fargbygge",
-      "company": "Färgbygge",
-      "contact": "Johanna",
-      "category": "Hem & Bostad / Färg & Ytbehandling",
+      "id": "marrakech-design",
+      "company": "Marrakech Design",
+      "contact": "Inga-Lill Ovin",
+      "category": "Inredning & Golv / Klinkers & Cementplattor",
       "status": "contacted",
       "value": null,
       "value_min": null,
@@ -2272,17 +2308,10 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-24",
-          "evidence": "Carin skickade kallt utskick till info@fargbygge.com",
-          "by": "carin"
-        }
-      ],
+      "stage_history": null,
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "lucas",
+      "waiting_on": "Inga-Lill Ovin svarade 2026-06-25 med kvalificerande frågor — väntar på Carins svar",
       "last_event": null
     },
     {
@@ -5606,5 +5635,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-25T13:37:05.737Z"
+  "generated_at": "2026-06-25T14:01:56.304Z"
 }

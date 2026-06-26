@@ -129,7 +129,7 @@
       ],
       "signed_evidence": "Oneflow doc 15004310 — alla parter signerade 2026-06-22 11:43 (Carin kontrasignerade; notis 3209.eml)",
       "notes": null,
-      "waiting_on": "Skicka faktura 19 500 kr (50% del 1) till pelle.lonnang@skeppshult.com",
+      "waiting_on": "Publicera film del 1 i helgen med länk till skeppshult.com i stories + skicka faktura 19 500 kr (50% del 1) till pelle.lonnang@skeppshult.com",
       "last_event": null
     },
     {
@@ -651,42 +651,6 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Anders Haglunds svar på pitch",
-      "last_event": null
-    },
-    {
-      "id": "fargbygge",
-      "company": "Färgbygge",
-      "contact": "Johanna",
-      "category": "Hem & Bostad / Färg & Ytbehandling",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500–39 000 SEK",
-      "date_contacted": "2026-06-24",
-      "date_pitched": "2026-06-25",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/fargbygge/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-24",
-          "evidence": "Carin skickade kallt utskick till info@fargbygge.com",
-          "by": "carin"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-25",
-          "evidence": "Pitch byggd + deployad live (villasjovik.github.io/fargbygge), CLT Finish + Slamfärg-vinkel. Leverans-mail ej skickat — väntar Lucas-OK.",
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Vinkel — CLT Finish (hjälteprodukt, live hero-banner på fargbygge.se) + Slamfärg (säsongsprodukt, fasad-högsäsong juni). 3 spår: Det ljusa träet (CLT, retail pull-through + nå slutkund) / Sommarfasaden (slamfärg, säsongstopp + konvertering) / Det naturliga valet (hållbarhetsprofil, premiumpositionering) + Ert val (flex). Genomgående: 194k + 2 Stories → köpsida. Tvåpaket: Enskild film 18 500 / Hela serien 39 000 (featured). Pitch byggd, deployad, väntar på Lucas-OK för leverans-mail till Johanna.",
-      "waiting_on": "lucas",
       "last_event": null
     },
     {
@@ -3124,6 +3088,65 @@
       ],
       "signed_evidence": null,
       "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "coat",
+      "company": "COAT Paints",
+      "contact": "Tamah (COAT Team)",
+      "category": "Hem & Bostad / Färg & Ytbehandling (UK)",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-24",
+      "date_pitched": null,
+      "date_closed": "2026-06-25",
+      "pitch_url": "https://villasjovik.github.io/coat/",
+      "outcome": "rejected",
+      "final_price": null,
+      "close_reason": "Carin valde bort 2026-06-25 — inga produkter hon ville jobba med, och COAT kör ett partner-/affiliate-program (= minimal betalning). Pitch byggd men ALDRIG skickad.",
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "fargbygge",
+      "company": "Färgbygge",
+      "contact": "Johanna",
+      "category": "Hem & Bostad / Färg & Ytbehandling",
+      "status": "declined",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500–39 000 SEK",
+      "date_contacted": "2026-06-24",
+      "date_pitched": "2026-06-25",
+      "date_closed": "2026-06-25",
+      "pitch_url": "https://villasjovik.github.io/fargbygge/",
+      "outcome": "rejected",
+      "final_price": null,
+      "close_reason": "Carin valde bort 2026-06-25 — hittade inga produkter hon ville jobba med (CLT Finish/slamfärg passade inte hennes estetik). Pitch byggd men ALDRIG skickad.",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-24",
+          "evidence": "Carin skickade kallt utskick till info@fargbygge.com",
+          "by": "carin"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-25",
+          "evidence": "Pitch byggd + deployad live (villasjovik.github.io/fargbygge), CLT Finish + Slamfärg-vinkel. Leverans-mail ej skickat — väntar Lucas-OK.",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Vinkel — CLT Finish (hjälteprodukt, live hero-banner på fargbygge.se) + Slamfärg (säsongsprodukt, fasad-högsäsong juni). 3 spår: Det ljusa träet (CLT, retail pull-through + nå slutkund) / Sommarfasaden (slamfärg, säsongstopp + konvertering) / Det naturliga valet (hållbarhetsprofil, premiumpositionering) + Ert val (flex). Genomgående: 194k + 2 Stories → köpsida. Tvåpaket: Enskild film 18 500 / Hela serien 39 000 (featured). Pitch byggd, deployad, väntar på Lucas-OK för leverans-mail till Johanna.",
       "waiting_on": null,
       "last_event": null
     },
@@ -5616,7 +5639,7 @@
     "ready_to_contact": 8
   },
   "meta": {
-    "updated": "2026-06-25",
+    "updated": "2026-06-26",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -5635,5 +5658,5 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-25T14:01:56.304Z"
+  "generated_at": "2026-06-26T07:29:24.093Z"
 }

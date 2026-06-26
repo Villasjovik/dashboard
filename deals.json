@@ -769,14 +769,14 @@
     {
       "id": "muubs",
       "company": "Muubs",
-      "contact": "Anna Mølgaard (Brand Engagement Assistant)",
+      "contact": "Anna Mølgaard (amg@designconceptdenmark.dk)",
       "category": "inredning",
       "status": "pitched",
       "value": 37800,
       "value_min": 17800,
-      "value_label": null,
+      "value_label": "EUR 1 650–3 500 (@ 10.8 SEK)",
       "date_contacted": "2026-06-17",
-      "date_pitched": null,
+      "date_pitched": "2026-06-26",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/muubs/",
       "outcome": null,
@@ -801,12 +801,18 @@
           "at": "2026-06-25",
           "evidence": "Engelsk EUR-pitch byggd och deployad — https://villasjovik.github.io/muubs/. EJ skickad (Lucas granskar live-sidan själv, inget mail per task).",
           "by": "deal-keeper"
+        },
+        {
+          "to": "pitch_sent",
+          "at": "2026-06-26",
+          "evidence": "Carin skickade pitch-leverans-mail till amg@designconceptdenmark.dk med länk till https://villasjovik.github.io/muubs/ (capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/3058.eml)",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
+      "notes": "Återkommande relation — Muubs och VS har samarbetat tidigare. Pitch på engelska med EUR-priser. Boston sideboard som hjälteprodukt. Muubs skickar pjäserna att behålla + betald produktion.",
+      "waiting_on": "Svar från Anna Mølgaard / intern process Design Concept Denmark",
+      "last_event": "2026-06-26"
     },
     {
       "id": "aviken",

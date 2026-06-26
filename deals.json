@@ -501,7 +501,7 @@
     {
       "id": "bagin",
       "company": "BAG'IN",
-      "contact": "Okänd kontaktperson (inkom via Carins privata mail)",
+      "contact": "Jenny Grimsrud (jenny@mspa.no) — GardenStore Int. AB",
       "category": "Utemöbler & Trädgård / Vädersäkra möbelskydd",
       "status": "verbal_agreement",
       "value": 18500,
@@ -536,8 +536,8 @@
         }
       ],
       "signed_evidence": null,
-      "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08 tackade Bag'in JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår). Önskar publicering av videon i september 2026 (datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas omgående. Fakturering i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08. OBS: acceptansdatum uppgivet som 18.05 men pitchen byggdes först 2026-06-02 — verifiera.",
-      "waiting_on": "Bag'ins partsuppgifter (org.nr, firmatecknare, adress, kontakt) + signering av avtal. Fakturering vid påskrivet avtal.",
+      "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08 tackade Bag'in JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår). Önskar publicering av videon i september 2026 (datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas omgående. Fakturering i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08. 2026-06-26: Jenny Grimsrud (Bag'in/GardenStore) återkom med partsuppgifter via Carins privata mail — avtalsmotparten är det SVENSKA bolaget GardenStore Int. AB (org 559441-2636, VAT SE559441263601, Simbagatan 20, 131 54 Nacka), INTE norska Gardenstore AS som stod i första avtalet. Konsekvens: svensk B2B → 25% moms tillkommer (Carin är momsregistrerad) → faktura 18 500 + 4 625 = 23 125 kr, skickas till hugo@gardenstore.no. Korrigerat avtal (§1) renderat om 2026-06-26 och skickas på nytt via Oneflow (löser att Jenny ej kunde fylla i den platta PDF:en). OBS: acceptansdatum uppgivet som 18.05 men pitchen byggdes först 2026-06-02 — verifiera.",
+      "waiting_on": "Signering av korrigerat avtal via Oneflow (Lucas/Carin skickar). Vid signering: faktura 18 500 + 25% moms = 23 125 kr till hugo@gardenstore.no, 14 dgr netto. Carin ska även meddela Jenny vilken Bag'in-storlek hon behöver (separat).",
       "last_event": null
     },
     {

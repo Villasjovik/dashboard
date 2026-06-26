@@ -1261,7 +1261,7 @@
       "value_min": 13000,
       "value_label": "13 000 kr",
       "date_contacted": "2026-06-08",
-      "date_pitched": null,
+      "date_pitched": "2026-06-26",
       "date_closed": null,
       "pitch_url": null,
       "outcome": null,
@@ -1280,11 +1280,29 @@
           "at": "2026-06-11",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/2954.eml",
           "by": "deal-keeper"
+        },
+        {
+          "to": "meeting_scheduling",
+          "at": "2026-06-22",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3194.eml",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "meeting_confirmed",
+          "at": "2026-06-22",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2769.eml",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-26",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/3048.eml",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": null,
+      "waiting_on": "iris",
       "last_event": null
     },
     {

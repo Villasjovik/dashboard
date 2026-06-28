@@ -16,7 +16,7 @@
       "outcome": "product_trade",
       "final_price": null,
       "close_reason": "no_paid_budget — Carin accepterade product-only 2026-06-22 (2773.eml)",
-      "followup_window": null,
+      "followup_window": "2026-08",
       "stage_history": [
         {
           "to": "contacted",
@@ -45,7 +45,7 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Carin followup med produktlista till debora@design-by-us.com",
+      "waiting_on": "Follow-up med produktlista i augusti — Carin återkommer efter sommaren (3149.eml)",
       "last_event": null
     },
     {

@@ -5735,6 +5735,60 @@
       "notes": "Nystartad. Email-pitch 2026-06-08 (12 000 kr exkl. moms, 21 miljöbilder för 3 produktkit). Warm decline 2026-06-11 — budget för stor just nu, föredrar produktutbyte. Öppen dörr.",
       "waiting_on": null,
       "last_event": null
+    },
+    {
+      "id": "telldus",
+      "company": "Telldus Technologies AB",
+      "contact": "Carl-Henrik Ivarsson (carl-henrik.ivarsson@telldus.com) / Ulf Ivarsson (ulf.ivarsson@telldus.com)",
+      "category": "Smart Hem / Teknik & Automation",
+      "status": "replied",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "date_contacted": "2026-04-07",
+      "date_pitched": "2026-06-18",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/telldus/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-07",
+          "evidence": "Carin skickade kallt outreach till info@telldus.com",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-17",
+          "evidence": "Ulf Ivarsson svarade in-thread med genuint intresse",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-18",
+          "evidence": "Pitch deployad + svarsdraft klar (telldus-pitch-reply-2026-06-17.md)",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-06-24",
+          "evidence": "Möte kl 15:00 via Google Meet bekräftat (arkiv/3275.eml)",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-29",
+          "evidence": "Carl-Henrik frågar om kanal-publicering + Meta-räckvidd post-möte (arkiv/3446.eml). Draft svar: telldus-svar-carl-henrik-2026-06-29.md",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Ulf Ivarsson (original kontakt) + Carl-Henrik Ivarsson (mötes-kontakt, möjlig relation). Möte genomfört 2026-06-24. Carl-Henrik frågar om publicering på @villasjovik ingår utan Meta-räckvidd — JA, alltid. Meta-reach = tillval +10 000 kr (150 000+ extra visningar via betald retargeting).",
+      "waiting_on": "Lucas OK:ar draft (telldus-svar-carl-henrik-2026-06-29.md) → Carin skickar svar till Carl-Henrik",
+      "last_event": "2026-06-29: Carl-Henrik frågar om kanal-publicering utan Meta-räckvidd (arkiv/3446.eml)"
     }
   ],
   "leads_summary": {

@@ -1910,7 +1910,7 @@
       "company": "Telldus Technologies AB",
       "contact": "Ulf Ivarsson",
       "category": "Smart Hem / Teknik & Automation",
-      "status": "pitched",
+      "status": "replied",
       "value": 18500,
       "value_min": 18500,
       "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
@@ -1982,12 +1982,24 @@
           "at": "2026-06-24",
           "evidence": "Carl-Henrik skickade Google Meet-länk (arkiv/3275.eml) — platformbyte från Teams till Meet. Möte kl 15:00 startas av Carl-Henrik.",
           "by": "mail-watcher"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-29",
+          "evidence": "Carl-Henrik frågar post-möte om kanal-publicering + Meta-räckvidd (arkiv/3446.eml). Missförstod att publicering krävde Meta-tillvalet.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-29",
+          "evidence": "Carin svarade Carl-Henrik in-thread (carin-sent/3184.eml) — publicering på @villasjovik ALLTID ingår, full äganderätt (ej tidsbegränsad), Meta = rekommenderat valfritt +10 000 kr. Lucas skickade manuellt.",
+          "by": "lucas"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Möte 2026-06-24 kl 15:00 — Google Meet-länk skickad av Carl-Henrik (arkiv/3275.eml). Väntar post-möte-återkoppling.",
-      "last_event": null
+      "waiting_on": "Väntar Telldus beslut om samarbete (Carl-Henrik / Ulf) efter klargörande svar 2026-06-29",
+      "last_event": "2026-06-29: Carin svarade Carl-Henrik (carin-sent/3184.eml) — klargör att @villasjovik-publicering ALLTID ingår, full äganderätt på material, Meta = valfritt tillval"
     },
     {
       "id": "samuel-groves",

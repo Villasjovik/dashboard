@@ -1994,12 +1994,18 @@
           "at": "2026-06-29",
           "evidence": "Carin svarade Carl-Henrik in-thread (carin-sent/3184.eml) — publicering på @villasjovik ALLTID ingår, full äganderätt (ej tidsbegränsad), Meta = rekommenderat valfritt +10 000 kr. Lucas skickade manuellt.",
           "by": "lucas"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-29",
+          "evidence": "Carl-Henrik kvitterar Carins svar (arkiv/3450.eml) — 'Tack för snabb uppkoppling! Jag tar med mig detta i briefen.' Intern beslutsberedning pågår.",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Väntar Telldus beslut om samarbete (Carl-Henrik / Ulf) efter klargörande svar 2026-06-29",
-      "last_event": "2026-06-29: Carin svarade Carl-Henrik (carin-sent/3184.eml) — klargör att @villasjovik-publicering ALLTID ingår, full äganderätt på material, Meta = valfritt tillval"
+      "waiting_on": "Väntar Telldus beslut om samarbete (Carl-Henrik / Ulf) — intern brief-process pågår efter 2026-06-29",
+      "last_event": "2026-06-29: Carl-Henrik bekräftar mottagit info (arkiv/3450.eml) — 'tar med i briefen'. Internt beslut pågår."
     },
     {
       "id": "samuel-groves",

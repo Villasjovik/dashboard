@@ -16,7 +16,7 @@
       "outcome": "product_trade",
       "final_price": null,
       "close_reason": "no_paid_budget — Carin accepterade product-only 2026-06-22 (2773.eml)",
-      "followup_window": "2026-08",
+      "followup_window": null,
       "stage_history": [
         {
           "to": "contacted",
@@ -207,7 +207,7 @@
       ],
       "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": null,
-      "waiting_on": "Stories 29/6 publiceras idag — Tanya påminner (3432.eml): inkludera kupong villasjovikLUX, länk https://mdsh.io/ddb24lh0ba, CTA + posta vid peak-timmar. Nästa leverans: Reel 8/7, Stories 14/7. IO-update (Pro Max→Pro + Carousel vs 3 Reels) ännu ej hanterad.",
+      "waiting_on": "Stories 29/6 bekräftade av Carin (3168.eml) — kupong villasjovikLUX + länk + CTA + peak-timmar. Nästa leverans: Reel 8/7, Stories 14/7. IO-update (Pro Max→Pro + Carousel vs 3 Reels) ännu ej hanterad.",
       "last_event": null
     },
     {
@@ -243,7 +243,7 @@
       ],
       "signed_evidence": "operational/projekt/villa-sjovik/dokument/Samarbetsavtal_VillaSjovik_Norremarks_2026-06-08.pdf",
       "notes": "Skandinaviska mattor (SGD-ägt). Pitch skickad 2026-04-22 efter Emmas positiva svar 22/4 på kallt mail 19/4. 4 video-spår: Så enkelt är det (mätning/beställning), Sovrummets förvandling, Mjukhet i köket, Ert koncept. Paket: 18 500 SEK (1 video) / 39 000 SEK (3 videor). Emma är koordinator — behöver förankra uppåt, därför ingen bokningswidget, bara presentation att vidarebefordra.",
-      "waiting_on": "✅ Marcus bekräftade mattbytet (HASM015400 Hasmark ljus natur 015) i 3092.eml 2026-06-16. ⚠️ Emma (CC:ad) har ännu inte explicit bekräftat — avvakta inkommande. Nästa steg: invänta mattleverans slutet v26 → ta emot v27 → verifiera rätt mattor levererats → produktion 20 miljöbilder + 1 video + 2 stories → fakturera del 2 (9 250 kr ex moms) vid content-leverans → publicering september 2026. OBS: Verifiera att 50%-deposition fakturerats och att Carin motsignerat i Oneflow.",
+      "waiting_on": "✅ Mattleverans 2026-06-30 bekräftad (Carin till Emma 2026-06-29). Nästa steg: ta emot mattor → verifiera rätt mattor levererats → produktion 20 miljöbilder + 1 video + 2 stories → fakturera del 2 (9 250 kr ex moms) vid content-leverans → publicering september 2026. OBS: Verifiera att 50%-deposition fakturerats och att Carin motsignerat i Oneflow.",
       "last_event": null
     },
     {
@@ -660,6 +660,444 @@
       "last_event": null
     },
     {
+      "id": "telldus",
+      "company": "Telldus Technologies AB",
+      "contact": "Ulf Ivarsson",
+      "category": "Smart Hem / Teknik & Automation",
+      "status": "meeting",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "date_contacted": "2026-04-07",
+      "date_pitched": "2026-06-18",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/telldus/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-04-07",
+          "evidence": "Carin skickade kallt outreach till info@telldus.com",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-17",
+          "evidence": "Ulf Ivarsson svarade in-thread med genuint intresse — \"Det skulle vara intressant att följa upp\"",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-18",
+          "evidence": "events/2026/06/18/mail-2760.md",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "Mötes-bekräftelse skickad till carl-henrik.ivarsson@telldus.com (arkiv/mail/2776.eml). Carl-Henrik Ivarsson (annan kontakt än Ulf) ville ha möte — Carin bekräftade Teams-möte 15:00.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "Carl-Henrik missade mötet (10 min sen). Begärde ombokning till 2026-06-24 15:00 (arkiv/mail/3235.eml). Draft-svar klart, status oförändrad.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "Carin svarade Carl-Henrik (arkiv/mail/2787.eml) — pratade med kollegan, fredagsmöte 2026-06-27 kl 9 bokat. Erbjöd 2026-06-24 kl 9 som alternativ. Väntar bekräftelse.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-23",
+          "evidence": "Carin klarlade tiderna (arkiv/mail/2850.eml) — blandade ihop 09:00/15:00. Frågar om Carl-Henrik vill ha 2026-06-24 kl 15:00 (hans ursprungliga begäran). Väntar svar.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-24",
+          "evidence": "Carl-Henrik bekräftade möte 2026-06-24 kl 15:00 (arkiv/mail/3264.eml) — \"Ja precis, menade 15.00 idag onsdag.\"",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-24",
+          "evidence": "Carin svarade Carl-Henriks bekräftelse (carin-sent/2856.eml) — rutinbekräftelse, tom kropp, möte kl 15:00 bekräftat från båda håll.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-24",
+          "evidence": "Carl-Henrik skickade Google Meet-länk (arkiv/3275.eml) — platformbyte från Teams till Meet. Möte kl 15:00 startas av Carl-Henrik.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-29",
+          "evidence": "Carl-Henrik frågar post-möte om kanal-publicering + Meta-räckvidd (arkiv/3446.eml). Svar — publicering i @villasjovik ALLTID ingår; Meta-reach = tillval. Draft klar (telldus-svar-carl-henrik-2026-06-29.md).",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-29",
+          "evidence": "Carin (Lucas OK) svarade Carl-Henrik in-thread (carin-sent/3184.eml) — klargjorde att publicering på @villasjovik ALLTID ingår, full äganderätt på allt material (ej tidsbegränsad licens), Meta = valfritt tillval. Skickat manuellt av Lucas.",
+          "by": "lucas"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-29",
+          "evidence": "Carl-Henrik kvitterar Carins svar (arkiv/3450.eml) — \"Tack för snabb uppkoppling! Jag tar med mig detta i briefen.\" Intern beslutsberedning pågår.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-06-30",
+          "evidence": "Carl-Henrik Ivarsson ber om möte med Carin för att Ulf ska gå igenom sina tankar kring produktionen — \"Har du tid imorgon?\" Ulf CC:ad (ulf.ivarsson@telldus.com). Arkiv: 3463.eml.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-06-30",
+          "evidence": "Carin bekräftade mötestid 09:00 (2026-07-01) med Teams-länk till Carl-Henrik (carin-sent/3234.eml).",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Carin bekräftar tid med Carl-Henrik för möte med Ulf (imorgon 2026-07-01). Draft: draft-telldus-carl-henrik-2026-06-30.md",
+      "last_event": null
+    },
+    {
+      "id": "lupiners-gard",
+      "company": "Lupiners Gård",
+      "contact": "Hanna (info@lupinersgard.se)",
+      "category": "Inredning & Hemtextil",
+      "status": "pitched",
+      "value": 11000,
+      "value_min": 11000,
+      "value_label": "11 000",
+      "date_contacted": "2026-06-30",
+      "date_pitched": "2026-06-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/lupiners-gard/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Hannas reaktion på det slimmade samarbetsförslaget (innehåll + fakturasumma)",
+      "last_event": null
+    },
+    {
+      "id": "reichenbach",
+      "company": "Reichenbach Porzellan",
+      "contact": "Isabell Geithe (ige@porzellanmanufaktur.net) — forwards to CEO Rigo Geithe",
+      "category": "Inredning & Servis",
+      "status": "pitched",
+      "value": 37800,
+      "value_min": 17820,
+      "value_label": "€1 650 – €3 500 (EUR)",
+      "date_contacted": "2026-06-30",
+      "date_pitched": "2026-06-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/reichenbach/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Isabell forwards the proposal internally to CEO Rigo Geithe",
+      "last_event": null
+    },
+    {
+      "id": "crofts",
+      "company": "Crofts & Assinder",
+      "contact": "Kathryn Hall (kathryn@crofts.co.uk)",
+      "category": "Inredning & Beslag",
+      "status": "pitched",
+      "value": 37800,
+      "value_min": 17820,
+      "value_label": "€1 650 – €3 500",
+      "date_contacted": "2026-06-29",
+      "date_pitched": "2026-06-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/crofts/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Kathryn Halls reaktion på samarbetsförslaget (hon bad om kostnader + initiala tankar)",
+      "last_event": null
+    },
+    {
+      "id": "heatscope",
+      "company": "Heatscope",
+      "contact": "Tobias Corsman (Sales, BPE Nordic / Heatscope Nordic)",
+      "category": "Trädgård & Utomhus / Infraröda designvärmeelement (premium)",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-29",
+      "date_pitched": "2026-06-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/heatscope/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Pitch byggd + pushad 2026-06-30 (villasjovik.github.io/heatscope). Mail ej skickat — Lucas granskar.",
+      "last_event": null
+    },
+    {
+      "id": "skandilock",
+      "company": "Skandilock",
+      "contact": "Emilia Borgvall (emilia@skandilock.com)",
+      "category": "Inredning & Hemtextil",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-29",
+      "date_pitched": "2026-06-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/skandilock/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-23",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-30",
+          "evidence": "https://villasjovik.github.io/skandilock/",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Emilias reaktion på samarbetsförslaget",
+      "last_event": null
+    },
+    {
+      "id": "ceramiche-bucci",
+      "company": "Ceramiche Bucci",
+      "contact": "Laura (info@ceramichebucci.com)",
+      "category": "inredning & hantverk / italiensk stoneware-keramik",
+      "status": "pitched",
+      "value": 37800,
+      "value_min": 17820,
+      "value_label": "€1,650 – €3,500",
+      "date_contacted": "2026-06-25",
+      "date_pitched": "2026-06-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/ceramiche-bucci/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-25",
+          "evidence": "cold outreach — ämne: Ceramiche Bucci × Villa Sjövik — 164k Swedish home audience (carin@villasjovik.se → info@ceramichebucci.com)",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-29",
+          "evidence": "3427.eml — Laura svarade: 'thanks for contacting us... Could you please send us more details?'",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Laura: reaktion på samarbetsförslaget (EUR-pitch, full dukning som lead-koncept)",
+      "last_event": null
+    },
+    {
+      "id": "kulta",
+      "company": "KULTA Limewash Paints",
+      "contact": "Ilze (info@newkulta.com)",
+      "category": "Inredning & Färg / Limewash / Väggfärg",
+      "status": "pitched",
+      "value": 12000,
+      "value_min": 12000,
+      "value_label": "€1 100",
+      "date_contacted": "2026-06-25",
+      "date_pitched": "2026-06-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/kulta/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-25",
+          "evidence": "Carin skickade kallt outreach till info@newkulta.com",
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-30",
+          "evidence": "Ilze svarar, frågar om villkor/pris/tidslinje — konkret intresse",
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-30",
+          "evidence": "Slim single EUR pitch (~€1 100) deployad till villasjovik.github.io/kulta — svarar på alla fyra frågor (villkor, motprestation, pris, tidslinje)",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Ilze's reaction to the collaboration proposal (villasjovik.github.io/kulta). Slim single EUR package (~€1 100) sent answering her four asks (terms, what KULTA gives, pricing, timeline).",
+      "last_event": null
+    },
+    {
+      "id": "lucks",
+      "company": "Lucks",
+      "contact": "Cassandra (lucks@lucks.se)",
+      "category": "Kök & Interiör",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-25",
+      "date_pitched": "2026-06-26",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/lucks/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Pitch byggd 2026-06-26, live. Mail ej skickat — Lucas granskar.",
+      "last_event": null
+    },
+    {
+      "id": "tica-copenhagen",
+      "company": "tica | copenhagen ApS",
+      "contact": "tina@tica-copenhagen.dk",
+      "category": "Hem & Interiör / Dörrmattor & Inredningsdetaljer",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-25",
+      "date_pitched": "2026-06-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/tica-copenhagen/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-25",
+          "evidence": "Carin skickade kallt utskick till tina@tica-copenhagen.dk",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-29",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3412.eml — Tina Bremholm svarar positivt ('bestemt interessant') och ber om budget-info. OBS: se röd flagg om riktnings-missförstånd.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-30",
+          "evidence": "Samarbetsförslag deployat — villasjovik.github.io/tica-copenhagen/ (entré-som-system-vinkel, Startpaket-nivå, svensk SEK-pitch).",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Tinas reaktion på samarbetsförslaget (hon frågade om budget/pris — pitchen svarar med Startpaket-nivå)",
+      "last_event": null
+    },
+    {
+      "id": "gebenna",
+      "company": "Gebenna Sverige",
+      "contact": "Kristina Skantze (kristina@gebenna.com)",
+      "category": "Inredning & Färg / Kalkfärg & Dekorfärg",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-24",
+      "date_pitched": "2026-06-26",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/gebenna/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Pitch byggd 2026-06-26, live. Mail ej skickat — Lucas granskar.",
+      "last_event": null
+    },
+    {
+      "id": "pure-original",
+      "company": "Pure & Original",
+      "contact": "Danielle Duijn (danielle.duijn@pure-original.nl)",
+      "category": "Hem & Inredning / Mineralfärg (Nederländskt premium)",
+      "status": "pitched",
+      "value": 37800,
+      "value_min": 17820,
+      "value_label": "€1,650 – €3,500",
+      "date_contacted": "2026-06-24",
+      "date_pitched": "2026-06-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/pure-original/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-24",
+          "evidence": "carin@villasjovik.se → info@pure-original.nl, kallt utskick (2911.eml)",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "munka",
       "company": "Munka Sweden",
       "contact": "Fredrik Strömblad",
@@ -680,7 +1118,7 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Fredriks reaktion efter att ha sett portföljen på villasjovik.se/portfolio",
-      "last_event": "2026-06-26: Carin svarade på portfölj-frågan — skickade villasjovik.se/portfolio (\"Då missförstod jag dig. Du kan se några av mina tidigare arbeten på min hemsida.\")"
+      "last_event": null
     },
     {
       "id": "englesson",
@@ -767,58 +1205,27 @@
       "last_event": null
     },
     {
-      "id": "muubs",
-      "company": "Muubs",
-      "contact": "Anna Mølgaard (amg@designconceptdenmark.dk)",
-      "category": "inredning",
-      "status": "declined",
-      "value": 37800,
-      "value_min": 17800,
-      "value_label": "EUR 1 650–3 500 (@ 10.8 SEK)",
-      "date_contacted": "2026-06-17",
-      "date_pitched": "2026-06-26",
-      "date_closed": "2026-06-29",
-      "pitch_url": "https://villasjovik.github.io/muubs/",
-      "outcome": "declined_gifting_only",
+      "id": "ilmolino",
+      "company": "Il Molino",
+      "contact": "Alex Falcini (alex@ilmolino.se)",
+      "category": "Mat & Dryck / Kaffe / Espresso Premium",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-16",
+      "date_pitched": "2026-06-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/ilmolino/",
+      "outcome": null,
       "final_price": null,
-      "close_reason": "gifting_only",
+      "close_reason": null,
       "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-17",
-          "evidence": "Carin skickade kallt utskick till marketing@designconceptdenmark.dk",
-          "by": "carin"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-24",
-          "evidence": "Anna Mølgaard svarade substantiellt — ber om contentidéer, produktval, fees och usage rights inför intern diskussion",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-25",
-          "evidence": "Engelsk EUR-pitch byggd och deployad — https://villasjovik.github.io/muubs/. EJ skickad (Lucas granskar live-sidan själv, inget mail per task).",
-          "by": "deal-keeper"
-        },
-        {
-          "to": "pitch_sent",
-          "at": "2026-06-26",
-          "evidence": "Carin skickade pitch-leverans-mail till amg@designconceptdenmark.dk med länk till https://villasjovik.github.io/muubs/ (capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/3058.eml)",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "declined",
-          "at": "2026-06-29",
-          "evidence": "Anna Mølgaard svarade: enbart gifting-samarbeten, ingen budget för betald produktion (3422.eml). Betald deal stängs.",
-          "by": "mail-watcher"
-        }
-      ],
+      "stage_history": null,
       "signed_evidence": null,
-      "notes": "Återkommande relation — Muubs och VS har samarbetat tidigare. Pitch på engelska med EUR-priser. Boston sideboard som hjälteprodukt. Muubs skickar pjäserna att behålla + betald produktion.",
-      "waiting_on": null,
-      "last_event": "2026-06-26"
+      "notes": null,
+      "waiting_on": "Alex Falcinis reaktion på pitchen (samarbetsförslag-svar in-thread \"Passalacqua x Villa Sjövik\")",
+      "last_event": null
     },
     {
       "id": "aviken",
@@ -1306,6 +1713,29 @@
       "last_event": null
     },
     {
+      "id": "sklo",
+      "company": "SkLO",
+      "contact": "Marta Paetzke (marta@sklo.com)",
+      "category": "Inredning & Glaskonst",
+      "status": "pitched",
+      "value": 37800,
+      "value_min": 17820,
+      "value_label": "€1,650 – €3,500",
+      "date_contacted": "2026-06-08",
+      "date_pitched": "2026-06-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/sklo/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Martas reaktion på pitchen + svar på hennes fem frågor (mekanik, modell, produkter/retur, tidigare exempel, idéerna)",
+      "last_event": null
+    },
+    {
       "id": "mesa-ceramics",
       "company": "Mesa Ceramics",
       "contact": "Inês Rebelo de Sousa (New Products & Marketing Manager)",
@@ -1603,6 +2033,48 @@
       "signed_evidence": null,
       "notes": "Cold outreach till info@swedishwild.se. Johan Löfström (grundare) svarade positivt 2026-06-02 och frågade explicit efter pris. Pitch byggd och deployad samma dag på vildmark→bord-vinkel. Reviderat samma dag till ETT paket — Karusellpaket 10 000 kr (10 miljöbilder som karusell, ingen video) + valfri Reach Boost. Lila Meta-sektionen borttagen.",
       "waiting_on": "Kundsvar på förslag (mail-draft redo, ej skickat)",
+      "last_event": null
+    },
+    {
+      "id": "weltevree",
+      "company": "Weltevree",
+      "contact": "Bridget van Alphen (Head of Brand)",
+      "category": "Trädgård & uteliv / Holländsk outdoor-design (premium)",
+      "status": "pitched",
+      "value": 37800,
+      "value_min": 17800,
+      "value_label": "17 800 / 37 800 kr",
+      "date_contacted": "2026-06-02",
+      "date_pitched": "2026-06-03",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/weltevree/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-03",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-30",
+          "evidence": "events/2026/06/30/mail-3236.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -1906,114 +2378,6 @@
       "last_event": null
     },
     {
-      "id": "telldus",
-      "company": "Telldus Technologies AB",
-      "contact": "Ulf Ivarsson",
-      "category": "Smart Hem / Teknik & Automation",
-      "status": "meeting",
-      "value": 18500,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
-      "date_contacted": "2026-04-07",
-      "date_pitched": "2026-06-18",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/telldus/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-04-07",
-          "evidence": "Carin skickade kallt outreach till info@telldus.com",
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-17",
-          "evidence": "Ulf Ivarsson svarade in-thread med genuint intresse — \"Det skulle vara intressant att följa upp\"",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-18",
-          "evidence": "events/2026/06/18/mail-2760.md",
-          "by": "deal-keeper"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-23",
-          "evidence": "Mötes-bekräftelse skickad till carl-henrik.ivarsson@telldus.com (arkiv/mail/2776.eml). Carl-Henrik Ivarsson (annan kontakt än Ulf) ville ha möte — Carin bekräftade Teams-möte 15:00.",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-23",
-          "evidence": "Carl-Henrik missade mötet (10 min sen). Begärde ombokning till 2026-06-24 15:00 (arkiv/mail/3235.eml). Draft-svar klart, status oförändrad.",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-23",
-          "evidence": "Carin svarade Carl-Henrik (arkiv/mail/2787.eml) — pratade med kollegan, fredagsmöte 2026-06-27 kl 9 bokat. Erbjöd 2026-06-24 kl 9 som alternativ. Väntar bekräftelse.",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-23",
-          "evidence": "Carin klarlade tiderna (arkiv/mail/2850.eml) — blandade ihop 09:00/15:00. Frågar om Carl-Henrik vill ha 2026-06-24 kl 15:00 (hans ursprungliga begäran). Väntar svar.",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-24",
-          "evidence": "Carl-Henrik bekräftade möte 2026-06-24 kl 15:00 (arkiv/mail/3264.eml) — \"Ja precis, menade 15.00 idag onsdag.\"",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-24",
-          "evidence": "Carin svarade Carl-Henriks bekräftelse (carin-sent/2856.eml) — rutinbekräftelse, tom kropp, möte kl 15:00 bekräftat från båda håll.",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-24",
-          "evidence": "Carl-Henrik skickade Google Meet-länk (arkiv/3275.eml) — platformbyte från Teams till Meet. Möte kl 15:00 startas av Carl-Henrik.",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-29",
-          "evidence": "Carl-Henrik frågar post-möte om kanal-publicering + Meta-räckvidd (arkiv/3446.eml). Missförstod att publicering krävde Meta-tillvalet.",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-29",
-          "evidence": "Carin svarade Carl-Henrik in-thread (carin-sent/3184.eml) — publicering på @villasjovik ALLTID ingår, full äganderätt (ej tidsbegränsad), Meta = rekommenderat valfritt +10 000 kr. Lucas skickade manuellt.",
-          "by": "lucas"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-29",
-          "evidence": "Carl-Henrik kvitterar Carins svar (arkiv/3450.eml) — 'Tack för snabb uppkoppling! Jag tar med mig detta i briefen.' Intern beslutsberedning pågår.",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "meeting",
-          "at": "2026-06-30",
-          "evidence": "Carl-Henrik begär möte med Carin för att Ulf ska gå igenom sina tankar kring produktionen. Ulf CC:ad. 'Har du tid imorgon?' (arkiv/3463.eml).",
-          "by": "mail-watcher"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Carin bekräftar tid med Carl-Henrik för möte med Ulf (imorgon 2026-07-01). Draft: draft-telldus-carl-henrik-2026-06-30.md",
-      "last_event": "2026-06-30: Carl-Henrik begär möte — Ulf vill gå igenom tankar om produktionen (arkiv/3463.eml)"
-    },
-    {
       "id": "samuel-groves",
       "company": "Samuel Groves",
       "contact": null,
@@ -2037,6 +2401,52 @@
       "last_event": null
     },
     {
+      "id": "purus",
+      "company": "Purus AB",
+      "contact": "Richard Lagerlöf",
+      "category": "Hem & Bostad / Rostfri Inredning (Tvättstuga)",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-29",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas (telefon med Richard)",
+      "last_event": null
+    },
+    {
+      "id": "wood-on-wall",
+      "company": "Wood on Wall",
+      "contact": "Filip Elfström",
+      "category": "Hem & Inredning / Träpaneler (handgjorda smalribbiga paneler)",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-29",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas — svar på Filips klargöringsfråga (betalt samarbete, ej gratispaneler)",
+      "last_event": null
+    },
+    {
       "id": "copenhagen-bath",
       "company": "Copenhagen Bath",
       "contact": "Morten Thomsen",
@@ -2057,6 +2467,42 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas beslutar nästa steg — Morten frågar vad VS gör + vad de förväntar sig i utbyte (3352.eml 2026-06-26)",
+      "last_event": null
+    },
+    {
+      "id": "new-terracotta",
+      "company": "New Terracotta",
+      "contact": "Catarina Ribeiro Neto",
+      "category": "Inredning & Dekor / Kakel & Keramik",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-24",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-24",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2930.eml",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-29",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3441.eml",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -2226,42 +2672,6 @@
       "last_event": null
     },
     {
-      "id": "weltevree",
-      "company": "Weltevree",
-      "contact": "Bridget van Alphen (Head of Brand)",
-      "category": "Trädgård & uteliv / Holländsk outdoor-design (premium)",
-      "status": "interested",
-      "value": 37800,
-      "value_min": 17800,
-      "value_label": "17 800 / 37 800 kr",
-      "date_contacted": "2026-06-02",
-      "date_pitched": "2026-06-03",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/weltevree/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-02",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-03",
-          "evidence": null,
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Draft-svar till Bridget klart (2026-06-29) — väntar Lucas-OK för skickning. Bridget tillbaka från OOO, ber om mer specificitet. Draft: operational/drafts/draft-weltevree-bridget-reply-2026-06-29.md",
-      "last_event": null
-    },
-    {
       "id": "stenfabriken",
       "company": "Stenfabriken (Gotlands Kalkstensfabrik AB)",
       "contact": "Simon Lindberg (info@stenfabriken.se)",
@@ -2301,6 +2711,42 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Svar från Simon Lindberg (info@stenfabriken.se)",
+      "last_event": null
+    },
+    {
+      "id": "lupinersgard",
+      "company": "Lupiners Gård",
+      "contact": "Hanna — info@lupinersgard.se",
+      "category": "Hem & Inredning / Fårskinn / Hantverk",
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-30",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-30",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/outreach-lupinersgard.eml",
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-30",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3468.eml",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas — godkänn pitch-vinkel och paket, bygg sedan pitch-sida",
       "last_event": null
     },
     {
@@ -3422,6 +3868,54 @@
       "close_reason": "Warm decline 2026-06-25 — Cecilia Dahlgren på semester, ber om återkontakt efter sommaren.",
       "followup_window": "2026-09-01",
       "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "muubs",
+      "company": "Muubs",
+      "contact": "Anna Mølgaard (Brand Engagement Assistant)",
+      "category": "inredning",
+      "status": "declined",
+      "value": 37800,
+      "value_min": 17800,
+      "value_label": null,
+      "date_contacted": "2026-06-17",
+      "date_pitched": "2026-06-26",
+      "date_closed": "2026-06-29",
+      "pitch_url": "https://villasjovik.github.io/muubs/",
+      "outcome": "declined_gifting_only",
+      "final_price": null,
+      "close_reason": "gifting_only",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-17",
+          "evidence": "Carin skickade kallt utskick till marketing@designconceptdenmark.dk",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-24",
+          "evidence": "Anna Mølgaard svarade substantiellt — ber om contentidéer, produktval, fees och usage rights inför intern diskussion",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-25",
+          "evidence": "Engelsk EUR-pitch byggd och deployad — https://villasjovik.github.io/muubs/. EJ skickad (Lucas granskar live-sidan själv, inget mail per task).",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "declined",
+          "at": "2026-06-29",
+          "evidence": "Anna Mølgaard svarade — enbart gifting-samarbeten, ingen budget för betald produktion (3422.eml). Betald deal stängs.",
+          "by": "mail-watcher"
+        }
+      ],
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
@@ -5759,60 +6253,6 @@
       "notes": "Nystartad. Email-pitch 2026-06-08 (12 000 kr exkl. moms, 21 miljöbilder för 3 produktkit). Warm decline 2026-06-11 — budget för stor just nu, föredrar produktutbyte. Öppen dörr.",
       "waiting_on": null,
       "last_event": null
-    },
-    {
-      "id": "telldus",
-      "company": "Telldus Technologies AB",
-      "contact": "Carl-Henrik Ivarsson (carl-henrik.ivarsson@telldus.com) / Ulf Ivarsson (ulf.ivarsson@telldus.com)",
-      "category": "Smart Hem / Teknik & Automation",
-      "status": "replied",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
-      "date_contacted": "2026-04-07",
-      "date_pitched": "2026-06-18",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/telldus/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-04-07",
-          "evidence": "Carin skickade kallt outreach till info@telldus.com",
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-17",
-          "evidence": "Ulf Ivarsson svarade in-thread med genuint intresse",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-18",
-          "evidence": "Pitch deployad + svarsdraft klar (telldus-pitch-reply-2026-06-17.md)",
-          "by": "deal-keeper"
-        },
-        {
-          "to": "meeting",
-          "at": "2026-06-24",
-          "evidence": "Möte kl 15:00 via Google Meet bekräftat (arkiv/3275.eml)",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-29",
-          "evidence": "Carl-Henrik frågar om kanal-publicering + Meta-räckvidd post-möte (arkiv/3446.eml). Draft svar: telldus-svar-carl-henrik-2026-06-29.md",
-          "by": "mail-watcher"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Ulf Ivarsson (original kontakt) + Carl-Henrik Ivarsson (mötes-kontakt, möjlig relation). Möte genomfört 2026-06-24. Carl-Henrik frågar om publicering på @villasjovik ingår utan Meta-räckvidd — JA, alltid. Meta-reach = tillval +10 000 kr (150 000+ extra visningar via betald retargeting).",
-      "waiting_on": "Lucas OK:ar draft (telldus-svar-carl-henrik-2026-06-29.md) → Carin skickar svar till Carl-Henrik",
-      "last_event": "2026-06-29: Carl-Henrik frågar om kanal-publicering utan Meta-räckvidd (arkiv/3446.eml)"
     }
   ],
   "leads_summary": {
@@ -5825,7 +6265,7 @@
     "ready_to_contact": 226
   },
   "meta": {
-    "updated": "2026-06-26",
+    "updated": "2026-06-30",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -5844,12 +6284,12 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-26T10:36:03.373Z",
+  "generated_at": "2026-06-30T12:29:18.060Z",
   "funnel_block": {
     "stages": {
-      "kontaktad": 1536,
-      "svarat": 156,
-      "pitchad": 38,
+      "kontaktad": 1552,
+      "svarat": 172,
+      "pitchad": 52,
       "vunnen": 11,
       "forlorad": 115,
       "uppfoljning": 10
@@ -5857,9 +6297,9 @@
     "kpis": {
       "konvertering_pct": 0.7,
       "win_rate_pct": 13.9,
-      "svarsfrekvens_pct": 10.2,
-      "pitch_frekvens_pct": 24.4,
-      "pipeline_health": 67
+      "svarsfrekvens_pct": 11.1,
+      "pitch_frekvens_pct": 30.2,
+      "pipeline_health": 83
     },
     "generated": "2026-06-28"
   }

@@ -744,6 +744,7 @@ tr:hover td{background:rgba(52,211,153,0.035);padding-left:34px;box-shadow:inset
   <div class="bento-kpi glass reveal" style="transition-delay:.15s"><div class="shine"></div><span class="kpi-label">Stängt värde</span><p class="kpi-val" id="k-closed">—</p><p class="kpi-sub" id="k-closed-sub"></p><span class="kpi-tag green" id="k-closed-tag"></span><div class="kpi-bar" id="k-closed-bar" style="background:linear-gradient(90deg,var(--emerald),var(--gold))"></div></div>
   <div class="bento-kpi glass reveal" style="transition-delay:.20s"><div class="shine"></div><span class="kpi-label">Pipeline</span><p class="kpi-val" id="k-pipe">—</p><p class="kpi-sub" id="k-pipe-sub"></p><span class="kpi-tag gold" id="k-pipe-tag"></span><div class="kpi-bar" id="k-pipe-bar" style="background:linear-gradient(90deg,var(--teal),var(--blue))"></div></div>
   <div class="bento-kpi glass reveal" style="transition-delay:.25s"><div class="shine"></div><span class="kpi-label">Konvertering</span><p class="kpi-val" id="k-conv">—</p><p class="kpi-sub">Stängda / alla kontaktade</p><div class="kpi-bar" id="k-conv-bar" style="background:linear-gradient(90deg,var(--emerald-b),var(--gold))"></div></div>
+  <div class="bento-kpi glass reveal" style="transition-delay:.28s"><div class="shine"></div><span class="kpi-label">Win-rate</span><p class="kpi-val" id="k-winrate">—</p><p class="kpi-sub">Stängda / avgjorda deals</p><div class="kpi-bar" id="k-winrate-bar" style="background:linear-gradient(90deg,var(--teal),var(--emerald-b))"></div></div>
   <div class="bento-kpi glass reveal" style="transition-delay:.30s"><div class="shine"></div><span class="kpi-label">Prospekt i listan</span><p class="kpi-val" id="k-leads">—</p><p class="kpi-sub" id="k-leads-sub"></p><div class="kpi-bar" id="k-leads-bar" style="background:linear-gradient(90deg,var(--amber),rgba(251,191,36,0.3))"></div></div>
 </section>
 </section>
@@ -934,7 +935,7 @@ function render(mk,animate){
   const pipMax=mV+pV,pipMin=mV+pMin;
   const goal=getGoalForMonth(mk);
   const pct=Math.min(goal>0?cV/goal*100:0,100);
-  const conv=D.deals.length>0?(closed.length/D.deals.length*100):0;
+  const conv=(D.funnel_block&&D.funnel_block.kpis&&typeof D.funnel_block.kpis.konvertering_pct==='number')?D.funnel_block.kpis.konvertering_pct:(D.deals.length>0?(closed.length/D.deals.length*100):0);
   const isCurrent=mk===curMK;
 
   /* Header month label */
@@ -988,6 +989,8 @@ function render(mk,animate){
   }
   countUp(document.getElementById('k-conv'),Math.round(conv*10)/10,'<span class="u"> %</span>');
   document.getElementById('k-conv-bar').style.width=conv+'%';
+  const winrate=(D.funnel_block&&D.funnel_block.kpis&&typeof D.funnel_block.kpis.win_rate_pct==='number')?D.funnel_block.kpis.win_rate_pct:0;
+  const wrEl=document.getElementById('k-winrate'); if(wrEl){countUp(wrEl,Math.round(winrate*10)/10,'<span class="u"> %</span>'); const wrB=document.getElementById('k-winrate-bar'); if(wrB)wrB.style.width=winrate+'%';}
   countUp(document.getElementById('k-leads'),D.leads_summary.total,'<span class="u"> st</span>');
   document.getElementById('k-leads-sub').textContent=D.leads_summary.ready_to_contact+' redo att kontakta';
   document.getElementById('k-leads-bar').style.width=(D.leads_summary.ready_to_contact/D.leads_summary.total*100)+'%';
@@ -1157,12 +1160,14 @@ regSec(0,()=>{setTimeout(()=>{
   const pct0=Math.min(goal0>0?cV0/goal0*100:0,100);
   const meets=D.deals.filter(d=>d.status==='meeting');
   const pitched=D.deals.filter(d=>d.status==='pitched');
-  const conv=D.deals.length>0?(D.deals.filter(d=>d.status==='closed').length/D.deals.length*100):0;
+  const conv=(D.funnel_block&&D.funnel_block.kpis&&typeof D.funnel_block.kpis.konvertering_pct==='number')?D.funnel_block.kpis.konvertering_pct:(D.deals.length>0?(D.deals.filter(d=>d.status==='closed').length/D.deals.length*100):0);
   countUp(document.getElementById('k-closed'),cV0,'<span class="u"> kr</span>');
   document.getElementById('k-closed-tag').textContent='↑ '+Math.round(pct0)+'% av mål';
   document.getElementById('k-closed-bar').style.width=Math.min(pct0,100)+'%';
   countUp(document.getElementById('k-conv'),Math.round(conv*10)/10,'<span class="u"> %</span>');
   document.getElementById('k-conv-bar').style.width=conv+'%';
+  const winrate=(D.funnel_block&&D.funnel_block.kpis&&typeof D.funnel_block.kpis.win_rate_pct==='number')?D.funnel_block.kpis.win_rate_pct:0;
+  const wrEl=document.getElementById('k-winrate'); if(wrEl){countUp(wrEl,Math.round(winrate*10)/10,'<span class="u"> %</span>'); const wrB=document.getElementById('k-winrate-bar'); if(wrB)wrB.style.width=winrate+'%';}
   countUp(document.getElementById('k-leads'),D.leads_summary.total,'<span class="u"> st</span>');
 },700)});
 

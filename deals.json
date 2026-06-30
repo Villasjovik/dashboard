@@ -5816,11 +5816,13 @@
     }
   ],
   "leads_summary": {
-    "total": 135,
-    "new": 68,
-    "contacted": 40,
-    "not_interested": 25,
-    "ready_to_contact": 8
+    "total": 1653,
+    "new": 226,
+    "contacted": 1380,
+    "replied": 0,
+    "not_interested": 42,
+    "bounced": 5,
+    "ready_to_contact": 226
   },
   "meta": {
     "updated": "2026-06-26",
@@ -5842,5 +5844,23 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-26T10:36:03.373Z"
+  "generated_at": "2026-06-26T10:36:03.373Z",
+  "funnel_block": {
+    "stages": {
+      "kontaktad": 1536,
+      "svarat": 156,
+      "pitchad": 38,
+      "vunnen": 11,
+      "forlorad": 115,
+      "uppfoljning": 10
+    },
+    "kpis": {
+      "konvertering_pct": 0.7,
+      "win_rate_pct": 13.9,
+      "svarsfrekvens_pct": 10.2,
+      "pitch_frekvens_pct": 24.4,
+      "pipeline_health": 67
+    },
+    "generated": "2026-06-28"
+  }
 }

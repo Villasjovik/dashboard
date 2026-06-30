@@ -1910,7 +1910,7 @@
       "company": "Telldus Technologies AB",
       "contact": "Ulf Ivarsson",
       "category": "Smart Hem / Teknik & Automation",
-      "status": "replied",
+      "status": "meeting",
       "value": 18500,
       "value_min": 18500,
       "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
@@ -2000,12 +2000,18 @@
           "at": "2026-06-29",
           "evidence": "Carl-Henrik kvitterar Carins svar (arkiv/3450.eml) — 'Tack för snabb uppkoppling! Jag tar med mig detta i briefen.' Intern beslutsberedning pågår.",
           "by": "mail-watcher"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-06-30",
+          "evidence": "Carl-Henrik begär möte med Carin för att Ulf ska gå igenom sina tankar kring produktionen. Ulf CC:ad. 'Har du tid imorgon?' (arkiv/3463.eml).",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Väntar Telldus beslut om samarbete (Carl-Henrik / Ulf) — intern brief-process pågår efter 2026-06-29",
-      "last_event": "2026-06-29: Carl-Henrik bekräftar mottagit info (arkiv/3450.eml) — 'tar med i briefen'. Internt beslut pågår."
+      "waiting_on": "Carin bekräftar tid med Carl-Henrik för möte med Ulf (imorgon 2026-07-01). Draft: draft-telldus-carl-henrik-2026-06-30.md",
+      "last_event": "2026-06-30: Carl-Henrik begär möte — Ulf vill gå igenom tankar om produktionen (arkiv/3463.eml)"
     },
     {
       "id": "samuel-groves",

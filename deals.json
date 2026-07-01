@@ -99,7 +99,7 @@
       ],
       "signed_evidence": "Oneflow doc 15184024 — alla parter signerade 2026-06-30 23:22 (Jenny Grimsrud has signed 22:27 → All parties have signed 23:22, Carin kontrasignerade). Notis 'All parties have signed - GardenStore Int. AB' i carin@villasjovik.se inbox.",
       "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08 tackade Bag'in JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår). Önskar publicering av videon i september 2026 (datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas omgående. Fakturering i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08. 2026-06-26: Jenny Grimsrud återkom med partsuppgifter via Carins privata mail — avtalsmotparten är det SVENSKA bolaget GardenStore Int. AB (org 559441-2636, Simbagatan 20, 131 54 Nacka), ej norska Gardenstore AS. Konsekvens: svensk B2B → 25% moms tillkommer (Carin momsregistrerad) → faktura 23 125 kr till hugo@gardenstore.no. §1 korrigerat + PDF renderad om 2026-06-26. OBS: acceptansdatum uppgivet som 18.05 men pitchen byggdes först 2026-06-02 — verifiera. Avtal SKICKAT via Oneflow 2026-06-26 (doc 15184024, Pending, senast 2026-07-10). Storlekar meddelade av Carin till GardenStore 2026-06-26.",
-      "waiting_on": "SIGNERAT 2026-06-30. Nästa steg: (1) skicka faktura 23 125 kr (18 500 + 25 % moms) till hugo@gardenstore.no, 14 dgr netto [Lucas-OK innan utskick]. (2) GardenStore levererar produkter till Åkers Styckebruk (storlekar meddelade 2026-06-26). (3) Produktion 1 video + 10 miljöbilder + 2 stories → publicering i Villa Sjöviks kanaler september 2026 (datum bestäms gemensamt).",
+      "waiting_on": "SIGNERAT 2026-06-30. (1) ✅ Faktura 23 125 kr (18 500 + 25 % moms) skickad av Carin till hugo@gardenstore.no 2026-07-01, 14 dgr netto. (2) GardenStore levererar produkter till Åkers Styckebruk (storlekar meddelade 2026-06-26) — inväntar leverans. (3) Produktion 1 video + 10 miljöbilder + 2 stories → publicering i Villa Sjöviks kanaler september 2026 (datum bestäms gemensamt).",
       "last_event": null
     },
     {
@@ -157,7 +157,7 @@
       "date_pitched": "2026-05-21",
       "date_closed": "2026-06-22",
       "pitch_url": "https://villasjovik.github.io/skeppshult/",
-      "outcome": "won",
+      "outcome": "signed",
       "final_price": 39000,
       "close_reason": "Avtal signerat av alla parter (Oneflow doc 15004310)",
       "followup_window": null,
@@ -313,9 +313,9 @@
       "date_pitched": "2026-05-07",
       "date_closed": "2026-06-18",
       "pitch_url": "https://villasjovik.github.io/skadedjursbutiken/",
-      "outcome": "won",
+      "outcome": "signed",
       "final_price": 30000,
-      "close_reason": "signed",
+      "close_reason": "Avtal signerat av alla parter 2026-06-18 (Oneflow doc 15081653, Kampanjpaket 30 000 kr ex moms).",
       "followup_window": null,
       "stage_history": [
         {
@@ -349,7 +349,7 @@
           "by": "carin"
         }
       ],
-      "signed_evidence": null,
+      "signed_evidence": "Oneflow doc 15081653 — alla parter signerade 2026-06-18 14:03 (Sebastian Maltéus + Carin kontrasignerade; notis 'All parties have signed - Samarbetsavtal', 3165.eml)",
       "notes": "Pitch 2026-05-07 (Startpaket 18 500 / Kampanjpaket 39 000 ord.). 2026-06-16: Sebastian ringde Carin — muntligt överens om Kampanjpaket till 30 000 kr ex moms med produkterna snigelmedel, myrmedel, mal (förebyggande hemvård: trädgård/uteplats/garderob). Offert v2 + avtal gick FÖRST ut med fel pris 39 000; Sebastian påpekade 2026-06-17 (mail) att överenskommet pris är 30 000 → offert (GitHub), avtal-PDF och deals korrigerade till 30 000. Avtalet skickades först via Oneflow (doc 15067684) 2026-06-16 med fel pris 39 000 → doc slängd 2026-06-17 och korrigerat avtal omskickat som doc 15081653 (30 000). SIGNERAT 2026-06-18: alla parter (Sebastian + Carin) signerade Oneflow doc 15081653 (30 000 kr ex moms) — Oneflow-notis 14:03. En faktura vid signering, publicering bestäms gemensamt.",
       "waiting_on": null,
       "last_event": null
@@ -2788,6 +2788,42 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas — godkänn pitch-vinkel och paket, bygg sedan pitch-sida",
+      "last_event": null
+    },
+    {
+      "id": "lo-and-co",
+      "company": "Lo & Co Interiors",
+      "contact": "Claudia Klemich (Marketing, marketing@loandcointeriors.com)",
+      "category": "Inredning & Design / Beslag & Hårdvara",
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-28",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-28",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-07-01",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3502.eml",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -6361,11 +6397,11 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-01T07:53:21.845Z",
+  "generated_at": "2026-07-01T08:52:31.054Z",
   "funnel_block": {
     "stages": {
-      "kontaktad": 1554,
-      "svarat": 174,
+      "kontaktad": 1555,
+      "svarat": 175,
       "pitchad": 51,
       "vunnen": 12,
       "forlorad": 115,
@@ -6374,9 +6410,9 @@
     "kpis": {
       "konvertering_pct": 0.8,
       "win_rate_pct": 15,
-      "svarsfrekvens_pct": 11.2,
-      "pitch_frekvens_pct": 29.3,
-      "pipeline_health": 84
+      "svarsfrekvens_pct": 11.3,
+      "pitch_frekvens_pct": 29.1,
+      "pipeline_health": 85
     },
     "generated": "2026-06-28"
   }

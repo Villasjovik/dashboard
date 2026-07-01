@@ -49,6 +49,60 @@
       "last_event": null
     },
     {
+      "id": "bagin",
+      "company": "BAG'IN",
+      "contact": "Jenny Grimsrud (jenny@mspa.no) — GardenStore Int. AB",
+      "category": "Utemöbler & Trädgård / Vädersäkra möbelskydd",
+      "status": "closed",
+      "value": 18500,
+      "value_min": 18500,
+      "value_label": "18 500 kr (Startpaket)",
+      "date_contacted": "2026-06-02",
+      "date_pitched": "2026-06-02",
+      "date_closed": "2026-06-30",
+      "pitch_url": "https://villasjovik.github.io/bagin/",
+      "outcome": "signed",
+      "final_price": 18500,
+      "close_reason": "Alla parter signerade Oneflow doc 15184024 den 2026-06-30 23:22 (Jenny Grimsrud 22:27 + Carin kontrasignerade). Startpaket 18 500 kr ex moms — faktura 23 125 kr inkl 25 % svensk moms till hugo@gardenstore.no.",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-02",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-06-11",
+          "evidence": null,
+          "by": "lucas"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-06-26",
+          "evidence": "Oneflow doc 15184024 (Pending, senast 2026-07-10)",
+          "by": "lucas"
+        },
+        {
+          "to": "closed",
+          "at": "2026-06-30",
+          "evidence": "Alla parter signerade Oneflow doc 15184024 kl 23:22 (Jenny 22:27 + Carin kontrasignerade); notis 'All parties have signed - GardenStore Int. AB' i carin@ inbox",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": "Oneflow doc 15184024 — alla parter signerade 2026-06-30 23:22 (Jenny Grimsrud has signed 22:27 → All parties have signed 23:22, Carin kontrasignerade). Notis 'All parties have signed - GardenStore Int. AB' i carin@villasjovik.se inbox.",
+      "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08 tackade Bag'in JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår). Önskar publicering av videon i september 2026 (datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas omgående. Fakturering i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08. 2026-06-26: Jenny Grimsrud återkom med partsuppgifter via Carins privata mail — avtalsmotparten är det SVENSKA bolaget GardenStore Int. AB (org 559441-2636, Simbagatan 20, 131 54 Nacka), ej norska Gardenstore AS. Konsekvens: svensk B2B → 25% moms tillkommer (Carin momsregistrerad) → faktura 23 125 kr till hugo@gardenstore.no. §1 korrigerat + PDF renderad om 2026-06-26. OBS: acceptansdatum uppgivet som 18.05 men pitchen byggdes först 2026-06-02 — verifiera. Avtal SKICKAT via Oneflow 2026-06-26 (doc 15184024, Pending, senast 2026-07-10). Storlekar meddelade av Carin till GardenStore 2026-06-26.",
+      "waiting_on": "SIGNERAT 2026-06-30. Nästa steg: (1) skicka faktura 23 125 kr (18 500 + 25 % moms) till hugo@gardenstore.no, 14 dgr netto [Lucas-OK innan utskick]. (2) GardenStore levererar produkter till Åkers Styckebruk (storlekar meddelade 2026-06-26). (3) Produktion 1 video + 10 miljöbilder + 2 stories → publicering i Villa Sjöviks kanaler september 2026 (datum bestäms gemensamt).",
+      "last_event": null
+    },
+    {
       "id": "louis-poulsen",
       "company": "Louis Poulsen",
       "contact": "Thea Raben (Creative Consultant, tra@louispoulsen.dk)",
@@ -499,54 +553,6 @@
       "last_event": null
     },
     {
-      "id": "bagin",
-      "company": "BAG'IN",
-      "contact": "Jenny Grimsrud (jenny@mspa.no) — GardenStore Int. AB",
-      "category": "Utemöbler & Trädgård / Vädersäkra möbelskydd",
-      "status": "verbal_agreement",
-      "value": 18500,
-      "value_min": 18500,
-      "value_label": "18 500 kr (Startpaket)",
-      "date_contacted": "2026-06-02",
-      "date_pitched": "2026-06-02",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/bagin/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-02",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-02",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "verbal_agreement",
-          "at": "2026-06-11",
-          "evidence": null,
-          "by": "lucas"
-        },
-        {
-          "to": "contract_sent",
-          "at": "2026-06-26",
-          "evidence": "Oneflow doc 15184024 (Pending, senast 2026-07-10)",
-          "by": "lucas"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Inbound via Carins privata mail (utanför mail-watcher). Vattentäta utemöbelskydd. Pitch byggd + deployad 2026-06-02 (Startpaket 18 500 / Kampanjpaket 39 000). 2026-06-08 tackade Bag'in JA till STARTPAKETET (1 video, 2 stories, 10 miljöbilder, full nyttjanderätt, styling/filmning/redigering ingår). Önskar publicering av videon i september 2026 (datum bestäms gemensamt). 10 miljöbilder levereras i förväg och får användas omgående. Fakturering i EN faktura vid signering, 14 dagar netto. Samarbetsavtal upprättat 2026-06-08. 2026-06-26: Jenny Grimsrud återkom med partsuppgifter via Carins privata mail — avtalsmotparten är det SVENSKA bolaget GardenStore Int. AB (org 559441-2636, Simbagatan 20, 131 54 Nacka), ej norska Gardenstore AS. Konsekvens: svensk B2B → 25% moms tillkommer (Carin momsregistrerad) → faktura 23 125 kr till hugo@gardenstore.no. §1 korrigerat + PDF renderad om 2026-06-26. OBS: acceptansdatum uppgivet som 18.05 men pitchen byggdes först 2026-06-02 — verifiera. Avtal SKICKAT via Oneflow 2026-06-26 (doc 15184024, Pending, senast 2026-07-10). Storlekar meddelade av Carin till GardenStore 2026-06-26.",
-      "waiting_on": "Jennys signering i Oneflow (doc 15184024, Pending, senast 2026-07-10). Parallellt: GardenStore skickar produkter (storlekar meddelade 2026-06-26). Vid signering: faktura 18 500 + 25% moms = 23 125 kr till hugo@gardenstore.no, 14 dgr netto.",
-      "last_event": null
-    },
-    {
       "id": "nordstone",
       "company": "Nordstone",
       "contact": null,
@@ -766,11 +772,23 @@
           "at": "2026-06-30",
           "evidence": "Carin bekräftade mötestid 09:00 (2026-07-01) med Teams-länk till Carl-Henrik (carin-sent/3234.eml).",
           "by": "mail-watcher"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-06-30",
+          "evidence": "Carl-Henrik svarar att 10:00 funkar bättre än 09:00 (arkiv/3482.eml) — bekräftelse-draft klar (draft-telldus-tidbekraftelse-2026-06-30.md).",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-06-30",
+          "evidence": "Carin svarade Carl-Henrik (carin-sent/3237.eml) — bekräftade 30-minuterslucka kl 10:00–10:30, frågade om det fungerar eller om de vill hitta annan tid. Väntar Carls svar.",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Carin bekräftar tid med Carl-Henrik för möte med Ulf (imorgon 2026-07-01). Draft: draft-telldus-carl-henrik-2026-06-30.md",
+      "waiting_on": "Carl-Henrik bekräftar om 30-minutersluckan 10:00–10:30 (2026-07-01) fungerar (carin-sent/3237.eml).",
       "last_event": null
     },
     {
@@ -2401,6 +2419,29 @@
       "last_event": null
     },
     {
+      "id": "furhoffs",
+      "company": "Furhoffs Rostfria",
+      "contact": "Peter Larsson",
+      "category": "Hem & Inredning / Kök & Bad / Rostfritt Stål",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-29",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas beslutar om offert ska skickas — Peter frågar om pris (faktura vs. produktbyte)",
+      "last_event": null
+    },
+    {
       "id": "purus",
       "company": "Purus AB",
       "contact": "Richard Lagerlöf",
@@ -2829,6 +2870,42 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas",
+      "last_event": null
+    },
+    {
+      "id": "vansta-tradgard",
+      "company": "Vansta Trädgård Scandinavia AB",
+      "contact": "Berenike Munthe",
+      "category": "Trädgård & Utomhus / Orangerier & Växthus",
+      "status": "contacted",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-29",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-29",
+          "evidence": "Carin skickade kall outreach till info@vanstatradgard.se",
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-30",
+          "evidence": "Berenike Munthe (CEO) svarade substantiellt — öppen för samarbete, förklarar policy. 3481.eml",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas bedömer om bytesbaserat upplägg (produkt mot content) är aktuellt",
       "last_event": null
     },
     {
@@ -6265,7 +6342,7 @@
     "ready_to_contact": 226
   },
   "meta": {
-    "updated": "2026-06-30",
+    "updated": "2026-07-01",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -6284,22 +6361,22 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-06-30T12:29:18.060Z",
+  "generated_at": "2026-07-01T07:53:21.845Z",
   "funnel_block": {
     "stages": {
-      "kontaktad": 1552,
-      "svarat": 172,
-      "pitchad": 52,
-      "vunnen": 11,
+      "kontaktad": 1554,
+      "svarat": 174,
+      "pitchad": 51,
+      "vunnen": 12,
       "forlorad": 115,
       "uppfoljning": 10
     },
     "kpis": {
-      "konvertering_pct": 0.7,
-      "win_rate_pct": 13.9,
-      "svarsfrekvens_pct": 11.1,
-      "pitch_frekvens_pct": 30.2,
-      "pipeline_health": 83
+      "konvertering_pct": 0.8,
+      "win_rate_pct": 15,
+      "svarsfrekvens_pct": 11.2,
+      "pitch_frekvens_pct": 29.3,
+      "pipeline_health": 84
     },
     "generated": "2026-06-28"
   }

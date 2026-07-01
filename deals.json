@@ -623,11 +623,17 @@
           "at": "2026-07-01",
           "evidence": "Carin skickade följebrev till Ulf (carin-sent/3259.eml, subj \"Avtal\") — INGEN bilaga; texten säger att avtalet kommer separat via Oneflow (endast till firmatecknaren Ulf), som ombeds vidarebefordra till Carl-Henrik. Själva avtalet = Samarbetsavtal_VillaSjovik_Telldus.pdf (39 000 kr Hela serien, 50/50). Verifiera att RÄTT PDF laddas upp i Oneflow innan signering.",
           "by": "mail-watcher"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-07-01",
+          "evidence": "Ulf Ivarsson bekräftade (arkiv/3509.eml, RE: Avtal) — 'Det fixar vi' — kommer vidarebefordra Oneflow-avtalet till Carl-Henrik. Inväntar signatur.",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Avtal skickat 2026-07-01 till Ulf Ivarsson (firmatecknare) via mail + Oneflow. Carl-Henrik (kännedom) ombedd att vidarebefordra från Ulf. Inväntar signatur.",
+      "waiting_on": "Ulf bekräftade 2026-07-01 att han vidarebefordrar Oneflow till Carl-Henrik. Inväntar signatur.",
       "last_event": null
     },
     {

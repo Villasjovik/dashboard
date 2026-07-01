@@ -557,7 +557,7 @@
       "company": "Telldus Technologies AB",
       "contact": "Ulf Ivarsson",
       "category": "Smart Hem / Teknik & Automation",
-      "status": "verbal_agreement",
+      "status": "avtal",
       "value": 39000,
       "value_min": 39000,
       "value_label": "39 000 kr (Hela serien / Kampanjpaket)",
@@ -677,11 +677,17 @@
           "at": "2026-07-01",
           "evidence": "Möte Carin × Ulf/Carl-Henrik — Telldus tackade muntligt ja till Kampanjpaketet \"Hela serien\" (39 000 kr ex moms). Rapporterat av Lucas 2026-07-01. Nästa: avtal skapas.",
           "by": "lucas"
+        },
+        {
+          "to": "avtal",
+          "at": "2026-07-01",
+          "evidence": "Carin skickade avtalsmail till Ulf Ivarsson + Carl-Henrik Ivarsson (carin-sent/3259.eml) — kontraktet levererat separat via Oneflow till Ulf (firmatecknare), Carl-Henrik för kännedom. Inväntar Ulfs signatur.",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "MUNTLIGT JA på Kampanjpaketet \"Hela serien\" (39 000 kr ex moms) efter mötet 2026-06-30/07-01. Nästa steg: skapa samarbetsavtal → skicka till Ulf Ivarsson (firmatecknare, signerar) + Carl-Henrik Ivarsson (kännedom). Oneflow osäkert för Telldus → ev. mejl-leverans med vidarebefordran. Betalningsvillkor att bekräfta med Lucas.",
+      "waiting_on": "Avtal skickat 2026-07-01 till Ulf Ivarsson (firmatecknare) via mail + Oneflow. Carl-Henrik (kännedom) ombedd att vidarebefordra från Ulf. Inväntar signatur.",
       "last_event": null
     },
     {

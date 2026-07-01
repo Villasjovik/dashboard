@@ -493,71 +493,11 @@
       "last_event": null
     },
     {
-      "id": "vedum",
-      "company": "Vedum Kök & Bad",
-      "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
-      "category": "Kök & Bad / Inredning",
-      "status": "verbal_agreement",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 – 39 000",
-      "date_contacted": "2026-06-07",
-      "date_pitched": "2026-06-08",
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": "2026-09-01",
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-06-07",
-          "evidence": null,
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-06-08",
-          "evidence": "operational/projekt/villa-sjovik/leads/mail-audit-2026-06-08/inbox-all.txt",
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-06-08",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml (blockquote)",
-          "by": "carin"
-        },
-        {
-          "to": "replied",
-          "at": "2026-06-16",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3087.eml",
-          "by": "migration"
-        },
-        {
-          "to": "meeting",
-          "at": "2026-06-17",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3139.eml",
-          "by": "migration"
-        },
-        {
-          "to": "verbal_agreement",
-          "at": "2026-06-18",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3154.eml",
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Carin bekräftade 16 juni (2618.eml). Möte 18 juni kl 10:00. Jenny summerade 18 juni (3154.eml): barter-upplägg överenskommet — Edit-baskulör + laminatbänkskiva, stommar från mässa, leverans sept/okt, bilder nov. Inväntar internt besked. Jenny bekräftar (3161.eml, kl 12:33): återkoppling kommer efter semestern — Carin svarade \"Ser fram emot att höra av dig!\" (2759.eml, kl 13:50).",
-      "waiting_on": "Inväntar internt besked från Jenny (tillbaka v.30). Planeringsmöte i Bromma (Lovisa) när klartecken ges.",
-      "last_event": null
-    },
-    {
       "id": "telldus",
       "company": "Telldus Technologies AB",
       "contact": "Ulf Ivarsson",
       "category": "Smart Hem / Teknik & Automation",
-      "status": "avtal",
+      "status": "contract_sent",
       "value": 39000,
       "value_min": 39000,
       "value_label": "39 000 kr (Hela serien / Kampanjpaket)",
@@ -679,15 +619,75 @@
           "by": "lucas"
         },
         {
-          "to": "avtal",
+          "to": "contract_sent",
           "at": "2026-07-01",
-          "evidence": "Carin skickade avtalsmail till Ulf Ivarsson + Carl-Henrik Ivarsson (carin-sent/3259.eml) — kontraktet levererat separat via Oneflow till Ulf (firmatecknare), Carl-Henrik för kännedom. Inväntar Ulfs signatur.",
+          "evidence": "Carin skickade följebrev till Ulf (carin-sent/3259.eml, subj \"Avtal\") — INGEN bilaga; texten säger att avtalet kommer separat via Oneflow (endast till firmatecknaren Ulf), som ombeds vidarebefordra till Carl-Henrik. Själva avtalet = Samarbetsavtal_VillaSjovik_Telldus.pdf (39 000 kr Hela serien, 50/50). Verifiera att RÄTT PDF laddas upp i Oneflow innan signering.",
           "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Avtal skickat 2026-07-01 till Ulf Ivarsson (firmatecknare) via mail + Oneflow. Carl-Henrik (kännedom) ombedd att vidarebefordra från Ulf. Inväntar signatur.",
+      "last_event": null
+    },
+    {
+      "id": "vedum",
+      "company": "Vedum Kök & Bad",
+      "contact": "Jenny Andersson (jenny.andersson@vedum.se) — Ansvarig varumärkeskommunikation och identitet",
+      "category": "Kök & Bad / Inredning",
+      "status": "verbal_agreement",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000",
+      "date_contacted": "2026-06-07",
+      "date_pitched": "2026-06-08",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": "2026-09-01",
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-07",
+          "evidence": null,
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-06-08",
+          "evidence": "operational/projekt/villa-sjovik/leads/mail-audit-2026-06-08/inbox-all.txt",
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-06-08",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2523.eml (blockquote)",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-16",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3087.eml",
+          "by": "migration"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-06-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3139.eml",
+          "by": "migration"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-06-18",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin/3154.eml",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Carin bekräftade 16 juni (2618.eml). Möte 18 juni kl 10:00. Jenny summerade 18 juni (3154.eml): barter-upplägg överenskommet — Edit-baskulör + laminatbänkskiva, stommar från mässa, leverans sept/okt, bilder nov. Inväntar internt besked. Jenny bekräftar (3161.eml, kl 12:33): återkoppling kommer efter semestern — Carin svarade \"Ser fram emot att höra av dig!\" (2759.eml, kl 13:50).",
+      "waiting_on": "Inväntar internt besked från Jenny (tillbaka v.30). Planeringsmöte i Bromma (Lovisa) när klartecken ges.",
       "last_event": null
     },
     {
@@ -6409,7 +6409,7 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-01T08:57:10.658Z",
+  "generated_at": "2026-07-01T09:27:46.348Z",
   "funnel_block": {
     "stages": {
       "kontaktad": 1555,

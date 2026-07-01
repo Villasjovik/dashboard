@@ -553,127 +553,14 @@
       "last_event": null
     },
     {
-      "id": "nordstone",
-      "company": "Nordstone",
-      "contact": null,
-      "category": null,
-      "status": "verbal_agreement",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": null,
-      "date_pitched": null,
-      "date_closed": "2026-05-29",
-      "pitch_url": null,
-      "outcome": "postponed",
-      "final_price": null,
-      "close_reason": "Budget möjliggör ej betald kompensation. Nordstone kör bartermodell (sten mot synlighet + kampanjkod/affiliate via webbshop) + PR-byrå Trendgruppen inför höstlansering Hotel Ett Hem Stockholm 2026. Leonna tydlig: betald deal ej möjlig nu, öppen dörr post-launch.",
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "closed",
-          "at": "2026-05-29",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "verbal_agreement",
-          "at": "2026-06-11",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2479.eml",
-          "by": "deal-keeper"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Stenar levereras v.26 (bekräftat). Timeline bekräftad: content publiceras efter 2026-07-17 (Leonnas semesterslut). Carin skickar material för godkännande INNAN 17.7. Nästa steg: Carin bekräftar när stenarna är på plats och projekt kan starta.",
-      "last_event": null
-    },
-    {
-      "id": "rosendahl-copenhagen",
-      "company": "Rosendahl Copenhagen",
-      "contact": null,
-      "category": null,
-      "status": "verbal_agreement",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": null,
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": null,
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Glasen beställda 2026-06-22 (Sara/Trendgruppen) — inväntar leverans + content-publicering i växthuset",
-      "last_event": null
-    },
-    {
-      "id": "hultsbruk",
-      "company": "Hultsbruk",
-      "contact": "Anders Haglund (Brand Manager Hultsbruk, Hultafors Group)",
-      "category": "Outdoor / Yxor / Heritage hantverk",
-      "status": "meeting",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000",
-      "date_contacted": "2026-05-19",
-      "date_pitched": "2026-05-30",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/hultsbruk/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-05-19",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "replied",
-          "at": "2026-05-19",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "meeting",
-          "at": "2026-05-27",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-05-30",
-          "evidence": null,
-          "by": "migration"
-        },
-        {
-          "to": "meeting",
-          "at": "2026-05-27",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-05/carin-sent/1673.eml",
-          "by": "lucas"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Anders Haglunds svar på pitch",
-      "last_event": null
-    },
-    {
       "id": "telldus",
       "company": "Telldus Technologies AB",
       "contact": "Ulf Ivarsson",
       "category": "Smart Hem / Teknik & Automation",
-      "status": "meeting",
-      "value": 18500,
-      "value_min": 18500,
-      "value_label": "18 500 / 39 000 kr (Enskild film / Hela serien)",
+      "status": "verbal_agreement",
+      "value": 39000,
+      "value_min": 39000,
+      "value_label": "39 000 kr (Hela serien / Kampanjpaket)",
       "date_contacted": "2026-04-07",
       "date_pitched": "2026-06-18",
       "date_closed": null,
@@ -784,11 +671,130 @@
           "at": "2026-06-30",
           "evidence": "Carin svarade Carl-Henrik (carin-sent/3237.eml) — bekräftade 30-minuterslucka kl 10:00–10:30, frågade om det fungerar eller om de vill hitta annan tid. Väntar Carls svar.",
           "by": "mail-watcher"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-07-01",
+          "evidence": "Möte Carin × Ulf/Carl-Henrik — Telldus tackade muntligt ja till Kampanjpaketet \"Hela serien\" (39 000 kr ex moms). Rapporterat av Lucas 2026-07-01. Nästa: avtal skapas.",
+          "by": "lucas"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Carl-Henrik bekräftar om 30-minutersluckan 10:00–10:30 (2026-07-01) fungerar (carin-sent/3237.eml).",
+      "waiting_on": "MUNTLIGT JA på Kampanjpaketet \"Hela serien\" (39 000 kr ex moms) efter mötet 2026-06-30/07-01. Nästa steg: skapa samarbetsavtal → skicka till Ulf Ivarsson (firmatecknare, signerar) + Carl-Henrik Ivarsson (kännedom). Oneflow osäkert för Telldus → ev. mejl-leverans med vidarebefordran. Betalningsvillkor att bekräfta med Lucas.",
+      "last_event": null
+    },
+    {
+      "id": "nordstone",
+      "company": "Nordstone",
+      "contact": null,
+      "category": null,
+      "status": "verbal_agreement",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": null,
+      "date_pitched": null,
+      "date_closed": "2026-05-29",
+      "pitch_url": null,
+      "outcome": "postponed",
+      "final_price": null,
+      "close_reason": "Budget möjliggör ej betald kompensation. Nordstone kör bartermodell (sten mot synlighet + kampanjkod/affiliate via webbshop) + PR-byrå Trendgruppen inför höstlansering Hotel Ett Hem Stockholm 2026. Leonna tydlig: betald deal ej möjlig nu, öppen dörr post-launch.",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "closed",
+          "at": "2026-05-29",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-06-11",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-06/carin-sent/2479.eml",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Stenar levereras v.26 (bekräftat). Timeline bekräftad: content publiceras efter 2026-07-17 (Leonnas semesterslut). Carin skickar material för godkännande INNAN 17.7. Nästa steg: Carin bekräftar när stenarna är på plats och projekt kan starta.",
+      "last_event": null
+    },
+    {
+      "id": "rosendahl-copenhagen",
+      "company": "Rosendahl Copenhagen",
+      "contact": null,
+      "category": null,
+      "status": "verbal_agreement",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": null,
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Glasen beställda 2026-06-22 (Sara/Trendgruppen) — inväntar leverans + content-publicering i växthuset",
+      "last_event": null
+    },
+    {
+      "id": "hultsbruk",
+      "company": "Hultsbruk",
+      "contact": "Anders Haglund (Brand Manager Hultsbruk, Hultafors Group)",
+      "category": "Outdoor / Yxor / Heritage hantverk",
+      "status": "meeting",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 / 39 000",
+      "date_contacted": "2026-05-19",
+      "date_pitched": "2026-05-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/hultsbruk/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-05-19",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-05-27",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-05-30",
+          "evidence": null,
+          "by": "migration"
+        },
+        {
+          "to": "meeting",
+          "at": "2026-05-27",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-05/carin-sent/1673.eml",
+          "by": "lucas"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Anders Haglunds svar på pitch",
       "last_event": null
     },
     {
@@ -6397,7 +6403,7 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-01T08:52:31.054Z",
+  "generated_at": "2026-07-01T08:57:10.658Z",
   "funnel_block": {
     "stages": {
       "kontaktad": 1555,

@@ -641,11 +641,17 @@
           "at": "2026-07-02",
           "evidence": "Ulf svarade på avtalet (arkiv/2026-07/carin/3550.eml) — har läst igenom, synpunkt om Pkt 4 (betalningsstruktur, oklart om konkret invändning), fråga om innebörden av Pkt 6/2 (produktionsmetod-klausulen). Status kvar contract_sent. Draft-svar: draft-telldus-1782475513000.md.",
           "by": "mail-watcher"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-07-02",
+          "evidence": "Carin svarade Ulf in-thread (carin-sent/3310.eml, subj 'Re: Avtal') — klargjorde Pkt 4 (50/50: 50% vid signering, 50% vid leverans av första kampanjvideo) och Pkt 6/2 (AI-verktyg kan komma att användas för kvalitetsförhöjning; om Telldus föredrar ingen AI → arbetar manuellt, men önskemål måste meddelas INNAN produktion). Väntar Ulfs bekräftelse + signering.",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Ulf har frågor om Pkt 4 + Pkt 6/2 i avtalet. Draft-svar förberett (draft-telldus-1782475513000.md) — Lucas OK:ar, Carin svarar in-thread.",
+      "waiting_on": "Väntar Ulfs bekräftelse på klargjorda villkor (Pkt 4: 50/50 fakturering, Pkt 6: produktion/AI-verktyg) — sedan signering via Oneflow.",
       "last_event": "2026-07-02"
     },
     {

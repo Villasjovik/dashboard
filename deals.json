@@ -653,11 +653,17 @@
           "at": "2026-07-02",
           "evidence": "Ulf svarade (arkiv/2026-07/carin/3554.eml) — 'Det blir bra' — godkänner Carins förklaringar av Pkt 4 (50/50) och Pkt 6 (produktionsmetod/AI). Ber om uppdaterat avtalsutkast. Draft-svar: draft-telldus-uppdaterat-avtal-1782996908766.md.",
           "by": "mail-watcher"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-07-02",
+          "evidence": "Carin skickade korrigerat avtalsutkast in-thread (carin-sent/3311.eml, subj \"Re: Avtal\") — §4.2 (50/50) och §6/2 nu tydliggjorda i dokumentet, nytt Oneflow-utskick. Inväntar Ulfs/Carl-Henriks signatur.",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Carin uppdaterar avtalsutkastet (50/50-villkor tydliggjorda) och skickar ny version via Oneflow för signering.",
+      "waiting_on": "Ulf/Carl-Henrik signerar det uppdaterade avtalet via Oneflow.",
       "last_event": "2026-07-02"
     },
     {

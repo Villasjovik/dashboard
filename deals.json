@@ -6390,6 +6390,36 @@
       "notes": "Nystartad. Email-pitch 2026-06-08 (12 000 kr exkl. moms, 21 miljöbilder för 3 produktkit). Warm decline 2026-06-11 — budget för stor just nu, föredrar produktutbyte. Öppen dörr.",
       "waiting_on": null,
       "last_event": null
+    },
+    {
+      "id": "aspera-tradgard",
+      "company": "Aspera Trädgård och Landskap",
+      "contact": "Håkan (info@asperatradgard.se)",
+      "category": "Trädgård & Utomhus / Trädgårdsdesign & Vattenelement",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000 kr",
+      "date_contacted": "2026-07-01",
+      "date_pitched": "2026-07-01",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "pitched",
+          "at": "2026-07-01",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3308.eml",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Offert i mailkroppen (ej pitch-page). Alt 1: 18 500 kr — 1 inlägg + miljöbilder + Stories. Alt 2 (rek.): 39 000 kr — 3 inlägg strategiskt fördelade + Stories + bildbank + visningsträdgård. Exkl. moms. Carin intresserad av vattentrappa, Ashdown (vattenkonst) och naturdamm. 'Den utlovade offerten' — prior kontakt finns men datum okänt.",
+      "waiting_on": "håkan",
+      "last_event": "2026-07-01"
     }
   ],
   "leads_summary": {

@@ -659,11 +659,17 @@
           "at": "2026-07-02",
           "evidence": "Carin skickade korrigerat avtalsutkast in-thread (carin-sent/3311.eml, subj \"Re: Avtal\") — §4.2 (50/50) och §6/2 nu tydliggjorda i dokumentet, nytt Oneflow-utskick. Inväntar Ulfs/Carl-Henriks signatur.",
           "by": "mail-watcher"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-07-02",
+          "evidence": "Ulf Ivarsson öppnade det korrigerade avtalet (Oneflow doc 15256438) för första gången kl 13:26 — positiv signal, granskar dokumentet. Inväntar signatur. Arkiv: capture/arkiv/mail/villa-sjovik/2026-07/carin/3557.eml.",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Ulf/Carl-Henrik signerar det uppdaterade avtalet via Oneflow.",
+      "waiting_on": "Ulf/Carl-Henrik signerar det uppdaterade avtalet via Oneflow (doc 15256438).",
       "last_event": "2026-07-02"
     },
     {

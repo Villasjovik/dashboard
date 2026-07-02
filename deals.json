@@ -629,12 +629,18 @@
           "at": "2026-07-01",
           "evidence": "Ulf Ivarsson bekräftade (arkiv/3509.eml, RE: Avtal) — 'Det fixar vi' — kommer vidarebefordra Oneflow-avtalet till Carl-Henrik. Inväntar signatur.",
           "by": "mail-watcher"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-07-02",
+          "evidence": "Oneflow doc 15243842: Ulf Ivarsson öppnade avtalet för första gången (notis arkiv/2026-07/carin/3544.eml). Positiv signal — granskar dokumentet. Inväntar signatur.",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Ulf bekräftade 2026-07-01 att han vidarebefordrar Oneflow till Carl-Henrik. Inväntar signatur.",
-      "last_event": null
+      "waiting_on": "Ulf öppnade Oneflow-avtalet (doc 15243842) 2026-07-02 — inväntar hans signatur. Han vidarebefordrar till Carl-Henrik.",
+      "last_event": "2026-07-02"
     },
     {
       "id": "vedum",

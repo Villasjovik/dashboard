@@ -647,11 +647,17 @@
           "at": "2026-07-02",
           "evidence": "Carin svarade Ulf in-thread (carin-sent/3310.eml, subj 'Re: Avtal') — klargjorde Pkt 4 (50/50: 50% vid signering, 50% vid leverans av första kampanjvideo) och Pkt 6/2 (AI-verktyg kan komma att användas för kvalitetsförhöjning; om Telldus föredrar ingen AI → arbetar manuellt, men önskemål måste meddelas INNAN produktion). Väntar Ulfs bekräftelse + signering.",
           "by": "mail-watcher"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-07-02",
+          "evidence": "Ulf svarade (arkiv/2026-07/carin/3554.eml) — 'Det blir bra' — godkänner Carins förklaringar av Pkt 4 (50/50) och Pkt 6 (produktionsmetod/AI). Ber om uppdaterat avtalsutkast. Draft-svar: draft-telldus-uppdaterat-avtal-1782996908766.md.",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Väntar Ulfs bekräftelse på klargjorda villkor (Pkt 4: 50/50 fakturering, Pkt 6: produktion/AI-verktyg) — sedan signering via Oneflow.",
+      "waiting_on": "Carin uppdaterar avtalsutkastet (50/50-villkor tydliggjorda) och skickar ny version via Oneflow för signering.",
       "last_event": "2026-07-02"
     },
     {

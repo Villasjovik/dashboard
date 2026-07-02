@@ -635,11 +635,17 @@
           "at": "2026-07-02",
           "evidence": "Oneflow doc 15243842: Ulf Ivarsson öppnade avtalet för första gången (notis arkiv/2026-07/carin/3544.eml). Positiv signal — granskar dokumentet. Inväntar signatur.",
           "by": "mail-watcher"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-07-02",
+          "evidence": "Ulf svarade på avtalet (arkiv/2026-07/carin/3550.eml) — har läst igenom, synpunkt om Pkt 4 (betalningsstruktur, oklart om konkret invändning), fråga om innebörden av Pkt 6/2 (produktionsmetod-klausulen). Status kvar contract_sent. Draft-svar: draft-telldus-1782475513000.md.",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Ulf öppnade Oneflow-avtalet (doc 15243842) 2026-07-02 — inväntar hans signatur. Han vidarebefordrar till Carl-Henrik.",
+      "waiting_on": "Ulf har frågor om Pkt 4 + Pkt 6/2 i avtalet. Draft-svar förberett (draft-telldus-1782475513000.md) — Lucas OK:ar, Carin svarar in-thread.",
       "last_event": "2026-07-02"
     },
     {

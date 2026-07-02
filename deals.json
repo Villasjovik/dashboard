@@ -2082,17 +2082,17 @@
       "company": "Weltevree",
       "contact": "Bridget van Alphen (Head of Brand)",
       "category": "Trädgård & uteliv / Holländsk outdoor-design (premium)",
-      "status": "pitched",
+      "status": "declined",
       "value": 37800,
       "value_min": 17800,
       "value_label": "17 800 / 37 800 kr",
       "date_contacted": "2026-06-02",
       "date_pitched": "2026-06-03",
-      "date_closed": null,
+      "date_closed": "2026-07-02",
       "pitch_url": "https://villasjovik.github.io/weltevree/",
-      "outcome": null,
+      "outcome": "rejected",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "barter-only",
       "followup_window": null,
       "stage_history": [
         {
@@ -2111,6 +2111,12 @@
           "to": "pitched",
           "at": "2026-06-30",
           "evidence": "events/2026/06/30/mail-3236.md",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "declined",
+          "at": "2026-07-02",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3540.eml",
           "by": "deal-keeper"
         }
       ],

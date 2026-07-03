@@ -497,17 +497,17 @@
       "company": "Telldus Technologies AB",
       "contact": "Ulf Ivarsson",
       "category": "Smart Hem / Teknik & Automation",
-      "status": "contract_sent",
+      "status": "signed",
       "value": 39000,
       "value_min": 39000,
       "value_label": "39 000 kr (Hela serien / Kampanjpaket)",
       "date_contacted": "2026-04-07",
       "date_pitched": "2026-06-18",
-      "date_closed": null,
+      "date_closed": "2026-07-03",
       "pitch_url": "https://villasjovik.github.io/telldus/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
+      "outcome": "signed",
+      "final_price": 39000,
+      "close_reason": "Ulf Ivarsson signerade från Telldus sida 2026-07-03 (arkiv/2026-07/carin/3570.eml, RE: Avtal) — 'Då är det signerat från vår sida'. Oneflow doc 15256438. Kampanjpaket 'Hela serien', 39 000 kr ex moms, 50/50 fakturering.",
       "followup_window": null,
       "stage_history": [
         {
@@ -665,12 +665,24 @@
           "at": "2026-07-02",
           "evidence": "Ulf Ivarsson öppnade det korrigerade avtalet (Oneflow doc 15256438) för första gången kl 13:26 — positiv signal, granskar dokumentet. Inväntar signatur. Arkiv: capture/arkiv/mail/villa-sjovik/2026-07/carin/3557.eml.",
           "by": "mail-watcher"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-07-02",
+          "evidence": "Carin bekräftade Carl-Henriks besök (carin-sent/3315.eml, subj \"Re: Imorgon?\") — \"Det låter toppen. Varmt välkommen!\" + delade mobilnummer 070-65 66 596. Besök bekräftat 2026-07-03 runt lunch.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "signed",
+          "at": "2026-07-03",
+          "evidence": "Ulf Ivarsson bekräftar signering från Telldus sida (arkiv/2026-07/carin/3570.eml, RE: Avtal) — 'Då är det signerat från vår sida/ulf i'. Oneflow doc 15256438. Deal closed.",
+          "by": "mail-watcher"
         }
       ],
-      "signed_evidence": null,
+      "signed_evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3570.eml",
       "notes": null,
-      "waiting_on": "Ulf/Carl-Henrik signerar det uppdaterade avtalet via Oneflow (doc 15256438).",
-      "last_event": "2026-07-02"
+      "waiting_on": null,
+      "last_event": "2026-07-03"
     },
     {
       "id": "vedum",

@@ -1097,7 +1097,11 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Samarbetsförslag skickat in-thread 2026-07-06 — väntar svar.",
-      "last_event": null
+      "last_event": {
+        "type": "pitch_delivered",
+        "at": "2026-07-06",
+        "note": "Pitch-mail skickat in-thread till Ilze (info@newkulta.com) med länk villasjovik.github.io/kulta/ + mötesinbjudan. Arkiv: capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3338.eml"
+      }
     },
     {
       "id": "lucks",

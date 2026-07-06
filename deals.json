@@ -920,14 +920,27 @@
       "value_min": 17820,
       "value_label": "€1 650 – €3 500 (EUR)",
       "date_contacted": "2026-06-30",
-      "date_pitched": "2026-06-30",
+      "date_pitched": "2026-07-06",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/reichenbach/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "stage_history": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-30",
+          "evidence": "Carin skickade kallt utskick till ige@porzellanmanufaktur.net — Isabell svarade samma dag och bad om 'ideas with the pricing' att vidarebefordra till CEO Rigo Geithe",
+          "by": "carin"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-06",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3339.eml — Carin skickade pitch-länk https://villasjovik.github.io/reichenbach/ in-thread. 3 spår (Koi Koi 2026, Made in Germany, Shelf to Table), mötesinbjudan, EUR-priser på sidan.",
+          "by": "carin"
+        }
+      ],
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Samarbetsförslag skickat in-thread 2026-07-06 — väntar svar.",

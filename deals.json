@@ -1,6 +1,36 @@
 {
   "deals": [
     {
+      "id": "nuura",
+      "company": "Nuura",
+      "contact": "Sebastian Francis Atkins (sfa@nuura.com)",
+      "category": "Belysning / Danskt premiumdesign",
+      "status": "interested",
+      "value": 0,
+      "value_min": 0,
+      "value_label": "Samarbetsinlägg (inbound)",
+      "date_contacted": "2026-07-06",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "interested",
+          "at": "2026-07-06",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3619.eml — Nuura erbjuder samarbetsinlägg för bilder från Villa Sjövik",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Inbound collab — Nuura har bilder från hemmet, vill göra samarbetsinlägg. Förhandlar om timing (tisdag/torsdag nästa vecka).",
+      "waiting_on": "Carins val av dag (tisdag eller torsdag nästa vecka) — draft redo",
+      "last_event": null
+    },
+    {
       "id": "design-by-us",
       "company": "Design By Us",
       "contact": "Debora Ingvarsdóttir Mikkelsen (debora@design-by-us.com)",

@@ -5,7 +5,7 @@
       "company": "Nuura",
       "contact": "Sebastian Francis Atkins (sfa@nuura.com)",
       "category": "Belysning / Danskt premiumdesign",
-      "status": "interested",
+      "status": "verbal_agreement",
       "value": 0,
       "value_min": 0,
       "value_label": "Samarbetsinlägg (inbound)",
@@ -23,12 +23,18 @@
           "at": "2026-07-06",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3619.eml — Nuura erbjuder samarbetsinlägg för bilder från Villa Sjövik",
           "by": "deal-keeper"
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-07-07",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3640.eml — Sebastian bekräftar: \"Vi poster på tirsdag\"",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
-      "notes": "Inbound collab — Nuura har bilder från hemmet, vill göra samarbetsinlägg. Förhandlar om timing (tisdag/torsdag nästa vecka).",
-      "waiting_on": "Carins val av dag (tisdag eller torsdag nästa vecka) — draft redo",
-      "last_event": null
+      "notes": "Inbound collab — Nuura har bilder från hemmet. Samarbetsinlägg bekräftat tisdag 2026-07-08.",
+      "waiting_on": "Samarbetsinlägget publiceras 2026-07-08 (tisdag)",
+      "last_event": "2026-07-07"
     },
     {
       "id": "design-by-us",

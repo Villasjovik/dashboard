@@ -1039,17 +1039,17 @@
       "company": "Ceramiche Bucci",
       "contact": "Laura (info@ceramichebucci.com)",
       "category": "inredning & hantverk / italiensk stoneware-keramik",
-      "status": "pitched",
+      "status": "declined",
       "value": 37800,
       "value_min": 17820,
       "value_label": "€1,650 – €3,500",
       "date_contacted": "2026-06-25",
       "date_pitched": "2026-07-06",
-      "date_closed": null,
+      "date_closed": "2026-07-07",
       "pitch_url": "https://villasjovik.github.io/ceramiche-bucci/",
-      "outcome": null,
+      "outcome": "declined",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "no_budget",
       "followup_window": null,
       "stage_history": [
         {
@@ -1069,12 +1069,18 @@
           "at": "2026-07-06",
           "evidence": "3332.eml — Carin skickade pitch-mail med länk villasjovik.github.io/ceramiche-bucci/ (Re: 164k Swedish home audience)",
           "by": "carin"
+        },
+        {
+          "to": "declined",
+          "at": "2026-07-07",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3642.eml — Laura: 'we do not have any budget available at this time'",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Samarbetsförslag skickat in-thread 2026-07-06 — väntar svar.",
-      "last_event": null
+      "waiting_on": null,
+      "last_event": "2026-07-07"
     },
     {
       "id": "kulta",

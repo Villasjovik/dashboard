@@ -991,12 +991,12 @@
       "outcome": null,
       "final_price": null,
       "close_reason": null,
-      "followup_window": null,
+      "followup_window": "Början av aug 2026 — Tobias + Victor tillbaka från semester",
       "stage_history": null,
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Samarbetsförslag skickat in-thread 2026-07-06 — väntar svar.",
-      "last_event": "Pitch mail skickat 2026-07-06"
+      "waiting_on": "Johannes (info@) 2026-07-08: Tobias + Victor på semester — återkommer i början av aug 2026.",
+      "last_event": "2026-07-08: Johannes svarar — Tobias+Victor semester, tar kontakt i aug"
     },
     {
       "id": "skandilock",

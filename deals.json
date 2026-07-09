@@ -6637,6 +6637,29 @@
       "date_pitched": "2026-07-06",
       "pitch_url": "https://villasjovik.github.io/bobi/",
       "waiting_on": "Standard 2-paket (30/90 bilder) byggt 2026-07-06 — Mirja på semester till aug, mail ej skickat"
+    },
+    {
+      "id": "feuerring",
+      "company": "Feuerring",
+      "contact": "Martina Kummer (kummer@access-media.ch) — Access Media",
+      "category": "Trädgård & Utomhus / Design-eldprodukter (premium)",
+      "status": "pitched",
+      "value": 37800,
+      "value_min": 17820,
+      "value_label": "€1 650 – €3 500",
+      "date_contacted": "2026-07-08",
+      "date_pitched": "2026-07-09",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/feuerring/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Möte bokat tis 14 juli 17:30 — offert bifogas mötesbekräftelsen",
+      "last_event": null
     }
   ],
   "leads_summary": {

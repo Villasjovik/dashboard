@@ -6660,6 +6660,29 @@
       "notes": null,
       "waiting_on": "Pitch skickad in-thread 2026-07-09 (villasjovik.github.io/feuerring/). Möte tis 14 juli 17:30 (digitalt, Carin+Lucas) — Martina/Access Media skickar kalenderinbjudan.",
       "last_event": null
+    },
+    {
+      "id": "compass-pools",
+      "company": "Compass Pools",
+      "contact": "Michal Haverl (Compass Pools)",
+      "category": "Trädgård & Utomhus / Pool (barter)",
+      "status": "pitched",
+      "value": 0,
+      "value_min": 0,
+      "value_label": "Barter (~300–450k pool-värde)",
+      "date_contacted": "2026-07-08",
+      "date_pitched": "2026-07-09",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/compass-pools/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": "Barter: pool-paket mot 24-mån-kampanj. Ej skickat — granskas.",
+      "waiting_on": "Barter-offert byggd (v1) — granskas innan skick. Michal svarade positivt.",
+      "last_event": null
     }
   ],
   "leads_summary": {

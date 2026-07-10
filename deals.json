@@ -3012,8 +3012,8 @@
       "stage_history": null,
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Thildas reaktion på tvåstegs-skissen (Carin svarade 2026-06-20)",
-      "last_event": null
+      "waiting_on": "Follow-up skickat 2026-07-09 — inväntar Thildas reaktion på tvåstegs-skissen",
+      "last_event": "2026-07-09"
     },
     {
       "id": "legnoart",
@@ -6669,7 +6669,7 @@
       "status": "pitched",
       "value": 0,
       "value_min": 0,
-      "value_label": "Barter (~300–450k pool-värde)",
+      "value_label": "Barter (~500–700k pool-värde, 4×8)",
       "date_contacted": "2026-07-08",
       "date_pitched": "2026-07-09",
       "date_closed": null,
@@ -6680,7 +6680,7 @@
       "followup_window": null,
       "stage_history": null,
       "signed_evidence": null,
-      "notes": "Barter: pool-paket mot 24-mån-kampanj. Ej skickat — granskas.",
+      "notes": "Barter: 4×8 färdig-pool (ej modell-spec) mot 24-mån-kampanj. Ej skickat — granskas.",
       "waiting_on": "Barter-offert byggd (v1) — granskas innan skick. Michal svarade positivt.",
       "last_event": null
     }

@@ -5693,17 +5693,17 @@
       "company": "Gardinova",
       "contact": "Teamet på Gardinova (sannolikt Fredrik)",
       "category": "inredning",
-      "status": "declined",
+      "status": "contacted",
       "value": 39000,
       "value_min": 18500,
       "value_label": null,
-      "date_contacted": "2026-05-06",
+      "date_contacted": "2026-07-13",
       "date_pitched": null,
-      "date_closed": "2026-05-15",
+      "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/gardinova/",
-      "outcome": "no_response",
+      "outcome": null,
       "final_price": null,
-      "close_reason": "Inget svar efter pitch-utskick",
+      "close_reason": null,
       "followup_window": null,
       "stage_history": [
         {
@@ -5717,12 +5717,18 @@
           "at": "2026-05-15",
           "evidence": null,
           "by": "migration"
+        },
+        {
+          "to": "contacted",
+          "at": "2026-07-13",
+          "evidence": "Energifyllt samtal + bilder på kök/matrum/vardagsrum/TV-rum skickade via WeTransfer",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "gardinova-svar",
-      "last_event": null
+      "waiting_on": "gardinova-svar-pa-bilder",
+      "last_event": "2026-07-13"
     },
     {
       "id": "adea",
@@ -6680,8 +6686,8 @@
       "followup_window": null,
       "stage_history": null,
       "signed_evidence": null,
-      "notes": "Barter: 4×8 färdig-pool (ej modell-spec) mot 24-mån-kampanj. Ej skickat — granskas.",
-      "waiting_on": "Barter-offert byggd (v1) — granskas innan skick. Michal svarade positivt.",
+      "notes": "Barter: 4×8 färdig-pool (ej modell-spec) mot 24-mån exklusiv kampanj. V2-design + omformad värde-ankar-copy finaliserad, live 2026-07-13. Ej skickat — Lucas granskar.",
+      "waiting_on": "Pitch v2 live (V2-design-port + värde-ankar uttrycker värde ej faktura). Pending Lucas-granskning; leveransmail till Michal (bad om detaljer + kostnad) redo, skickas på Lucas-OK.",
       "last_event": null
     }
   ],

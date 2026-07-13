@@ -6603,10 +6603,17 @@
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "stage_history": null,
+      "stage_history": [
+        {
+          "to": "pitched",
+          "at": "2026-07-13",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3689.eml — pitchlänk villasjovik.github.io/unidrain/ levererad till johannes.walter@jafo.eu",
+          "by": "mail-watcher"
+        }
+      ],
       "signed_evidence": null,
       "notes": null,
-      "last_event": null,
+      "last_event": "2026-07-13",
       "date_closed": null,
       "id": "unidrain",
       "company": "Unidrain / Jafo AB",
@@ -6617,9 +6624,9 @@
       "value_min": 18500,
       "value_label": "18 500 – 39 000",
       "date_contacted": "2026-06-30",
-      "date_pitched": "2026-07-06",
+      "date_pitched": "2026-07-13",
       "pitch_url": "https://villasjovik.github.io/unidrain/",
-      "waiting_on": "Pitch OMBYGGD 2026-07-10 (fel produkter Empire/Walcot bytta → kanonisk 3+1 spår kring linjära golvbrunnen/GlassLine + Reframe). Leverans-mail till Johannes draftat — HOLD för batch-skick (Lucas OK)."
+      "waiting_on": "Avvaktar svar från Johannes Walter (pitch levererad 2026-07-13)"
     },
     {
       "outcome": null,

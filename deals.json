@@ -6671,8 +6671,9 @@
       "stage_history": null,
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Pitch skickad in-thread 2026-07-09 (villasjovik.github.io/feuerring/). Möte tis 14 juli 17:30 (digitalt, Carin+Lucas) — Martina/Access Media skickar kalenderinbjudan.",
-      "last_event": null
+      "waiting_on": "Möte 14 juli uppskjutet (Martina: familjeärende). Föreslår v30: tors 23 juli fm ELLER mån 27 juli em. Draft-svar sparad (draft-feuerring-1784019654800.md) — Lucas väljer datum och skickar.",
+      "last_event": "2026-07-14",
+      "followup_window": "2026-07-23"
     },
     {
       "id": "cathara-design",

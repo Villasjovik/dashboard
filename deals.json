@@ -6667,36 +6667,48 @@
       "outcome": null,
       "final_price": null,
       "close_reason": null,
-      "followup_window": null,
+      "followup_window": "2026-07-23",
       "stage_history": null,
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Möte 14 juli uppskjutet (Martina: familjeärende). Föreslår v30: tors 23 juli fm ELLER mån 27 juli em. Draft-svar sparad (draft-feuerring-1784019654800.md) — Lucas väljer datum och skickar.",
-      "last_event": "2026-07-14",
-      "followup_window": "2026-07-23"
+      "last_event": "2026-07-14"
     },
     {
       "id": "cathara-design",
       "company": "CATHARA-design",
       "contact": "Thomas Binke (mail@cathara.com)",
       "category": "Trädgård & Utomhus / Design-eldprodukter (premium)",
-      "status": "pitched",
+      "status": "declined",
       "value": 12000,
       "value_min": 10000,
       "value_label": "10 000 – 12 000 kr",
       "date_contacted": "2026-07-08",
       "date_pitched": "2026-07-13",
-      "date_closed": null,
+      "date_closed": "2026-07-14",
       "pitch_url": "https://villasjovik.github.io/cathara-design/",
-      "outcome": null,
+      "outcome": "declined",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "payment_model_mismatch",
       "followup_window": null,
-      "stage_history": null,
+      "stage_history": [
+        {
+          "to": "pitched",
+          "at": "2026-07-13",
+          "evidence": "Pitch levererad in-thread med länk villasjovik.github.io/cathara-design/",
+          "by": "carin"
+        },
+        {
+          "to": "declined",
+          "at": "2026-07-14",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3813.eml — Thomas: betalar bara om kampanjen genererat konkreta beställningar (20-30 orders) — payment_model_mismatch",
+          "by": "deal-keeper"
+        }
+      ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Pitch levererad in-thread 2026-07-13 (villasjovik.github.io/cathara-design) — väntar svar/möte.",
-      "last_event": null
+      "waiting_on": null,
+      "last_event": "2026-07-14"
     },
     {
       "id": "compass-pools",

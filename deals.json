@@ -1863,9 +1863,9 @@
         }
       ],
       "signed_evidence": null,
-      "notes": "Iris föreslår julbordskoncept (Q4). Erbjuder produkter: BOL WABI BLANC X2, BOL ÉCUME X2, WABI BLANCHE X4, ASSIETTE DESSERT DASHI X4. Vill mötas nästa vecka. Carin svarade 2026-07-01: accepterar B-grade-produkter, frågade om publiceringsdatum.",
-      "waiting_on": "iris",
-      "last_event": "2026-07-01"
+      "notes": "Iris föreslår julbordskoncept (Q4). Erbjuder produkter: BOL WABI BLANC X2, BOL ÉCUME X2, WABI BLANCHE X4, ASSIETTE DESSERT DASHI X4. Carin accepterar B-grade-produkter. Iris bekräftar 2026-07-16: skickar produkter så snart som möjligt, september/oktober perfekt för bilder.",
+      "waiting_on": "carin",
+      "last_event": "2026-07-16"
     },
     {
       "id": "sklo",

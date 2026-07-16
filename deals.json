@@ -1860,10 +1860,16 @@
           "at": "2026-07-01",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3511.eml",
           "by": "deal-keeper"
+        },
+        {
+          "to": "negotiating",
+          "at": "2026-07-16",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3866.eml",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
-      "notes": "Iris föreslår julbordskoncept (Q4). Erbjuder produkter: BOL WABI BLANC X2, BOL ÉCUME X2, WABI BLANCHE X4, ASSIETTE DESSERT DASHI X4. Carin accepterar B-grade-produkter. Iris bekräftar 2026-07-16: skickar produkter så snart som möjligt, september/oktober perfekt för bilder.",
+      "notes": "Iris föreslår julbordskoncept (Q4). Erbjuder produkter: BOL WABI BLANC X2, BOL ÉCUME X2, WABI BLANCHE X4, ASSIETTE DESSERT DASHI X4. Carin accepterar B-grade-produkter. Iris bekräftar 2026-07-16: skickar produkter så snart som möjligt, september/oktober perfekt för bilder. Iris frågar om leveransadress och telefonnummer (3866). Svar krävs.",
       "waiting_on": "carin",
       "last_event": "2026-07-16"
     },

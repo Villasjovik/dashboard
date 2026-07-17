@@ -1000,11 +1000,17 @@
           "at": "2026-07-17",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3938.eml",
           "by": "carin"
+        },
+        {
+          "to": "negotiating",
+          "at": "2026-07-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3907.eml",
+          "by": "joeri-hottentot"
         }
       ],
       "signed_evidence": null,
-      "notes": "Inbound-lead. Carin svarade Joeris prisförfrågan med €1 200/20 lifestyle-bilder (14 dgr netto) direkt i mail — ej GitHub Pages-pitch. Joeri specificerade: Dutch Heritage, inomhus, utan nordisk touch.",
-      "waiting_on": "Svar från Joeri Hottentot (Van De Zotte) — offert skickad in-thread 2026-07-17 (3938.eml).",
+      "notes": "Inbound-lead. Carin svarade Joeris prisförfrågan med €1 200/20 lifestyle-bilder (14 dgr netto) direkt i mail — ej GitHub Pages-pitch. Joeri specificerade: Dutch Heritage, inomhus, utan nordisk touch. 2026-07-17: Joeri svarade med scope-klargörande (5 reed diffusers × 5 foton = 25 foton, önskar även video) men invänder mot priset — 'way higher than we usually pay our photographers'. Inte hårt avslag, scope-engagemanget tyder på fortsatt intresse. Draft redo för Lucas.",
+      "waiting_on": "Draft förberedd 2026-07-17 — Lucas godkänner/justerar och carin@ skickar (3907.eml).",
       "last_event": null
     },
     {

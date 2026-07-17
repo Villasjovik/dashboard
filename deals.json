@@ -1824,7 +1824,7 @@
       "company": "Jars Céramistes",
       "contact": "Iris Dauvergne (Chargée de projet Marketing et Communication)",
       "category": "Inredning & Bordskultur / Premium Keramik",
-      "status": "negotiating",
+      "status": "contract_sent",
       "value": 13000,
       "value_min": 13000,
       "value_label": "13 000 kr",
@@ -1872,11 +1872,17 @@
           "at": "2026-07-17",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3850.eml",
           "by": "deal-keeper"
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-07-17",
+          "evidence": "Oneflow doc 15384296 — Iris Dauvergne öppnade avtalet för första gången 2026-07-17T13:44:12Z (capture/arkiv/mail/villa-sjovik/2026-07/carin/3906.eml)",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
-      "notes": "Iris föreslår julbordskoncept (Q4). Erbjuder produkter: BOL WABI BLANC X2, BOL ÉCUME X2, WABI BLANCHE X4, ASSIETTE DESSERT DASHI X4. Carin accepterar B-grade-produkter. Iris bekräftar 2026-07-16: skickar produkter så snart som möjligt, september/oktober perfekt för bilder. 2026-07-17: Carin skickade leveransdetaljer (Forsavägen 17B, 647 52 Åkers styckebruk, +46706566596). Bekräftade sept/okt för publicering. Avtal skickas av Carin separat samma dag.",
-      "waiting_on": "carin",
+      "notes": "Iris föreslår julbordskoncept (Q4). Erbjuder produkter: BOL WABI BLANC X2, BOL ÉCUME X2, WABI BLANCHE X4, ASSIETTE DESSERT DASHI X4. Carin accepterar B-grade-produkter. Iris bekräftar 2026-07-16: skickar produkter så snart som möjligt, september/oktober perfekt för bilder. 2026-07-17: Carin skickade leveransdetaljer (Forsavägen 17B, 647 52 Åkers styckebruk, +46706566596). Bekräftade sept/okt för publicering. Avtal skickas av Carin separat samma dag. Oneflow-notis 2026-07-17T13:44:12Z: Iris öppnade avtalet för första gången (doc 15384296). Väntar signatur.",
+      "waiting_on": "iris",
       "last_event": "2026-07-17"
     },
     {

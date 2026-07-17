@@ -392,7 +392,7 @@
     },
     {
       "id": "telldus",
-      "company": "telldus",
+      "company": "Telldus Technologies AB",
       "contact": "Ulf Ivarsson",
       "category": "Smart Hem / Teknik & Automation",
       "status": "closed",
@@ -2800,7 +2800,7 @@
     },
     {
       "id": "frezoli-lighting",
-      "company": "frezoli-lighting",
+      "company": "Frezoli Lighting",
       "contact": null,
       "category": null,
       "status": "interested",
@@ -2823,7 +2823,7 @@
     },
     {
       "id": "royal-delft",
-      "company": "royal-delft",
+      "company": "Royal Delft",
       "contact": "Sophie van de Ven (Marketing Manager)",
       "category": "Porslin & Hantverk / Heritage / Delftware",
       "status": "interested",
@@ -2876,7 +2876,7 @@
     },
     {
       "id": "revisage",
-      "company": "revisage",
+      "company": "Revisage",
       "contact": "Marko Tomic",
       "category": "Trädgård & Utomhus / Designbrunnar & Vattenfunktioner (AT)",
       "status": "interested",
@@ -2899,7 +2899,7 @@
     },
     {
       "id": "escale",
-      "company": "escale",
+      "company": "ESCALE Möbel- und Leuchten GmbH",
       "contact": "Leonhard Bopp",
       "category": "Belysning & Design",
       "status": "interested",
@@ -2945,7 +2945,7 @@
     },
     {
       "id": "josephinenhutte",
-      "company": "josephinenhutte",
+      "company": "Josephinenhütte",
       "contact": "Lauritz Amann (la@josephinen.com)",
       "category": "Dryck & Bordskultur / Premium Kristallglas (österrikiskt hantverk)",
       "status": "interested",
@@ -2968,7 +2968,7 @@
     },
     {
       "id": "lumond",
-      "company": "lumond",
+      "company": "Lumond",
       "contact": "Jacob Fraind",
       "category": "Inredning & Livsstil / Keramik & Ljus",
       "status": "interested",
@@ -2991,7 +2991,7 @@
     },
     {
       "id": "tojo",
-      "company": "tojo",
+      "company": "Tojo Möbel GmbH",
       "contact": "Maik Seybold",
       "category": "Möbler & Inredning / Sängar & Sovrum",
       "status": "interested",
@@ -3086,7 +3086,7 @@
     },
     {
       "id": "hill-ceramic",
-      "company": "hill-ceramic",
+      "company": "Hill Ceramic",
       "contact": null,
       "category": "Inredning & Renovering / Premium Klinker & Badrum",
       "status": "interested",
@@ -3109,7 +3109,7 @@
     },
     {
       "id": "wildlife-garden",
-      "company": "wildlife-garden",
+      "company": "Wildlife Garden",
       "contact": "marketing@wildlifegarden.se",
       "category": "Natur & Trädgård / Djurvänlig Trädgård",
       "status": "interested",
@@ -3155,7 +3155,7 @@
     },
     {
       "id": "lyfe-nordic",
-      "company": "lyfe-nordic",
+      "company": "Lyfe Nordic",
       "contact": "Alexander Bica",
       "category": "Hälsa & Wellness / Recovery Tech (Rödljusterapi & Longevity)",
       "status": "interested",
@@ -3277,7 +3277,7 @@
     },
     {
       "id": "stala",
-      "company": "stala",
+      "company": "Stala",
       "contact": "anne.kanervo@stala.com",
       "category": "Kök & Badrum / Rostfria Diskbänkar",
       "status": "interested",
@@ -3501,7 +3501,7 @@
     },
     {
       "id": "van-beton",
-      "company": "van-beton",
+      "company": "Van Beton",
       "contact": "Hilde (efternamn okänt)",
       "category": "Målarfärg / Mineral / Inredning",
       "status": "interested",
@@ -3590,7 +3590,7 @@
     },
     {
       "id": "maze-interior",
-      "company": "maze-interior",
+      "company": "Maze Interior",
       "contact": "Ellinor Beckman",
       "category": "inredning",
       "status": "interested",
@@ -3785,7 +3785,7 @@
     },
     {
       "id": "cuvee-candles",
-      "company": "cuvee-candles",
+      "company": "CUVÉE CANDLES",
       "contact": null,
       "category": null,
       "status": "interested",
@@ -3808,7 +3808,7 @@
     },
     {
       "id": "snooze-project",
-      "company": "snooze-project",
+      "company": "Snooze Project",
       "contact": null,
       "category": null,
       "status": "interested",
@@ -3831,7 +3831,7 @@
     },
     {
       "id": "wallribbon",
-      "company": "wallribbon",
+      "company": "WallRibbon",
       "contact": "Tilde Göransson",
       "category": "inredning",
       "status": "interested",
@@ -3890,7 +3890,7 @@
     },
     {
       "id": "empel-collections",
-      "company": "empel-collections",
+      "company": "Empel Collections",
       "contact": "Ron van Empel",
       "category": "Belysning / Exklusiv premiumbelysning (NL)",
       "status": "replied",
@@ -3913,7 +3913,7 @@
     },
     {
       "id": "rb73",
-      "company": "rb73",
+      "company": "RB73",
       "contact": null,
       "category": null,
       "status": "replied",
@@ -3972,7 +3972,7 @@
     },
     {
       "id": "gunsberg-creation",
-      "company": "gunsberg-creation",
+      "company": "Günsberg Creation GmbH",
       "contact": "beatrix@guensberg.at",
       "category": "Doft & Design / Litteraturinspirerade ljus",
       "status": "replied",
@@ -4002,7 +4002,7 @@
     },
     {
       "id": "moller-design",
-      "company": "moller-design",
+      "company": "Möller Design",
       "contact": null,
       "category": null,
       "status": "replied",
@@ -4025,7 +4025,7 @@
     },
     {
       "id": "shw-schmiedetechnik",
-      "company": "shw-schmiedetechnik",
+      "company": "SHW Schmiedetechnik",
       "contact": null,
       "category": null,
       "status": "replied",
@@ -4048,7 +4048,7 @@
     },
     {
       "id": "fundamental-berlin",
-      "company": "fundamental-berlin",
+      "company": "Fundamental Berlin",
       "contact": null,
       "category": null,
       "status": "replied",
@@ -4107,7 +4107,7 @@
     },
     {
       "id": "stahlkunst",
-      "company": "stahlkunst",
+      "company": "Stahlkunst",
       "contact": null,
       "category": null,
       "status": "replied",
@@ -4886,7 +4886,7 @@
     },
     {
       "id": "macro-design",
-      "company": "macro-design",
+      "company": "Macro Design",
       "contact": "tahmine.sawstrom@macrodesign.se",
       "category": "Badrum & Duschväggar / Inredning",
       "status": "postponed",
@@ -5993,7 +5993,7 @@
     },
     {
       "id": "greengate",
-      "company": "greengate",
+      "company": "GreenGate",
       "contact": "Stephanie Stjerne Vallentin-Hansen (Design & Marketing)",
       "category": "Hem & Inredning / Danskt porslin & dukning",
       "status": "declined",
@@ -6466,7 +6466,7 @@
     },
     {
       "id": "woud",
-      "company": "woud",
+      "company": "WOUD",
       "contact": "Emilie Heilskov Pedersen (Head of Marketing)",
       "category": "Möbler & Hem / Dansk Design",
       "status": "declined",
@@ -8383,7 +8383,7 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-17T13:57:22.917Z",
+  "generated_at": "2026-07-17T14:24:17.272Z",
   "funnel_block": {
     "stages": {
       "kontaktad": 1619,

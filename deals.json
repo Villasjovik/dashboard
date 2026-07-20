@@ -1042,11 +1042,17 @@
           "at": "2026-07-13",
           "evidence": "Carin skickade pitchlänken in-thread till Michal (carin-sent/3694.eml) — barter-förklaring + mötes-CTA. Subj: 'Re: Compass Pools × Villa Sjövik — 194k Swedish & Nordic home audience'.",
           "by": "carin"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-20",
+          "evidence": "Michal Haverl svarade med due diligence-request: ber om (1) samarbetshistorik + visuella resultat och (2) follower breakdown (ålder, geografi, kön). Positiv ton — vill vidare men behöver underlag. Arkiv: 3932.eml.",
+          "by": "michal"
         }
       ],
       "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Svar/möte från Michal Haverl (Compass Pools) — pitch levererad in-thread 2026-07-13.",
+      "notes": "2026-07-20: Michal due-diligence — ber om samarbetshistorik/resultat + follower-demografi (ålder/geo/kön) innan möte bokas. Draft redo (drafts/draft-compass-pools-1753004228000.md).",
+      "waiting_on": "Carin skickar svar: samarbetshistorik + follower breakdown (Instagram Insights) — draft klar 2026-07-20.",
       "last_event": null
     },
     {

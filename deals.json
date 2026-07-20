@@ -885,7 +885,7 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Stenar levereras v.26 (bekräftat). Timeline bekräftad: content publiceras efter 2026-07-17 (Leonnas semesterslut). Carin skickar material för godkännande INNAN 17.7. Nästa steg: Carin bekräftar när stenarna är på plats och projekt kan starta.",
+      "waiting_on": "Carin publicerar första inlägget (innergård + natursten-fokus) torsdag 2026-07-24. Leonna bekräftade 2026-07-20 (3931.eml): \"Passar perfekt\". Text skickas till Leonna för godkännande innan publicering. Nästa steg: Leonna delar på Nordstones IG vid publicering.",
       "last_event": null
     },
     {
@@ -1000,18 +1000,12 @@
           "at": "2026-07-17",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3938.eml",
           "by": "carin"
-        },
-        {
-          "to": "negotiating",
-          "at": "2026-07-17",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3907.eml",
-          "by": "joeri-hottentot"
         }
       ],
       "signed_evidence": null,
-      "notes": "Inbound-lead. Carin svarade Joeris prisförfrågan med €1 200/20 lifestyle-bilder (14 dgr netto) direkt i mail — ej GitHub Pages-pitch. Joeri specificerade: Dutch Heritage, inomhus, utan nordisk touch. 2026-07-17: Joeri svarade med scope-klargörande (5 reed diffusers × 5 foton = 25 foton, önskar även video) men invänder mot priset — \"way higher than we usually pay our photographers\". Inte hårt avslag, scope-engagemanget tyder på fortsatt intresse. 2026-07-17: Carin svarade Joeris prispush (3941.eml) — öppen för att mötas på pris, bad Joeri ange sin budget.",
+      "notes": "Inbound-lead. Carin svarade Joeris prisförfrågan med €1 200/20 lifestyle-bilder (14 dgr netto) direkt i mail — ej GitHub Pages-pitch. Joeri specificerade: Dutch Heritage, inomhus, utan nordisk touch. 2026-07-17: Joeri invänder mot priset (way higher than usual) men konkretiserar scope: 25 foton + video. Draft redo.",
       "waiting_on": "Väntar på Joeris budgetbesked (frågades av Carin 2026-07-17 via 3941.eml).",
-      "last_event": "2026-07-17: Carin follow-up — budget-förfrågan till Joeri (3941.eml)"
+      "last_event": null
     },
     {
       "id": "compass-pools",
@@ -8389,7 +8383,7 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-17T14:24:17.272Z",
+  "generated_at": "2026-07-17T17:40:54.331Z",
   "funnel_block": {
     "stages": {
       "kontaktad": 1619,

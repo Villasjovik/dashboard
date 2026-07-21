@@ -1111,12 +1111,12 @@
     {
       "id": "rb73",
       "company": "RB73",
-      "contact": null,
+      "contact": "Raoul Bartholomeus",
       "category": null,
-      "status": "pitched",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
+      "status": "interested",
+      "value": 16500,
+      "value_min": 16500,
+      "value_label": "Karusellpaket €1550 (barter)",
       "date_contacted": "2026-07-16",
       "date_pitched": "2026-07-21",
       "date_closed": null,
@@ -1127,9 +1127,9 @@
       "followup_window": null,
       "stage_history": null,
       "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
+      "notes": "Barter-förslag 2026-07-21: Quaruba XL 4-sided MOBILE (€2290 normalt) stannar på VS efter shoot i utbyte mot Karusellpaket (€1550). Produktvärde > paketpris. Fri frakt. Carin självreglerar.",
+      "waiting_on": "Carin — beslut om barter-villkor",
+      "last_event": "2026-07-21"
     },
     {
       "id": "van-de-zotte",

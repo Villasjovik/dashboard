@@ -1008,6 +1008,42 @@
       "last_event": null
     },
     {
+      "id": "liroma",
+      "company": "Liroma Red Light Therapy",
+      "contact": "Falko Wouters",
+      "category": "Hälsa & Wellness / Rödljusterapi-paneler (konsument, NL)",
+      "status": "pitched",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-17",
+      "date_pitched": "2026-07-21",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/liroma/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3911.eml",
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-21",
+          "evidence": "events/2026/07/21/mail-3954.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "brand-van-egmond",
       "company": "Brand van Egmond",
       "contact": "Leo Goryachev (Digital Marketing & Communications Manager)",
@@ -8540,12 +8576,12 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-21T10:50:43.267Z",
+  "generated_at": "2026-07-21T10:53:01.314Z",
   "funnel_block": {
     "stages": {
-      "kontaktad": 1623,
-      "svarat": 243,
-      "pitchad": 63,
+      "kontaktad": 1624,
+      "svarat": 244,
+      "pitchad": 64,
       "vunnen": 13,
       "forlorad": 130,
       "uppfoljning": 11
@@ -8554,8 +8590,8 @@
       "konvertering_pct": 0.8,
       "win_rate_pct": 13.5,
       "svarsfrekvens_pct": 15,
-      "pitch_frekvens_pct": 25.9,
-      "pipeline_health": 136
+      "pitch_frekvens_pct": 26.2,
+      "pipeline_health": 137
     },
     "generated": "2026-06-28"
   }

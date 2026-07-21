@@ -966,6 +966,71 @@
       "last_event": null
     },
     {
+      "id": "brand-van-egmond",
+      "company": "Brand van Egmond",
+      "contact": "Leo Goryachev (Digital Marketing & Communications Manager)",
+      "category": "Inredning & Design / Handsmidda Ljuskronor (Holländskt Lyxhantverk)",
+      "status": "pitched",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-16",
+      "date_pitched": "2026-07-21",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/brand-van-egmond/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-16",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/outreach-brand-van-egmond",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-07-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3877.eml",
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-21",
+          "evidence": "events/2026/07/21/mail-3951.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "frezoli-lighting",
+      "company": "Frezoli Lighting",
+      "contact": null,
+      "category": null,
+      "status": "pitched",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-16",
+      "date_pitched": "2026-07-21",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/frezoli/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Inväntar svar från Jossinda Vissenberg (efter sommarsemester)",
+      "last_event": null
+    },
+    {
       "id": "van-de-zotte",
       "company": "Van De Zotte — Dutch Perfumes",
       "contact": "Joeri Hottentot (grundare / ägare)",
@@ -1005,6 +1070,36 @@
       "signed_evidence": null,
       "notes": "Inbound-lead. Carin svarade Joeris prisförfrågan med €1 200/20 lifestyle-bilder (14 dgr netto) direkt i mail — ej GitHub Pages-pitch. Joeri specificerade: Dutch Heritage, inomhus, utan nordisk touch. 2026-07-17: Joeri invänder mot priset (way higher than usual) men konkretiserar scope: 25 foton + video. Draft redo.",
       "waiting_on": "Väntar på Joeris budgetbesked (frågades av Carin 2026-07-17 via 3941.eml).",
+      "last_event": null
+    },
+    {
+      "id": "iconic-home",
+      "company": "ICONIC HOME (Designscape Creative GmbH)",
+      "contact": "Rebekka Thiel (Social Media) — info@iconichome.com",
+      "category": "Inredning — Designobjekt & Doftvaser (3D-printade)",
+      "status": "pitched",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-13",
+      "date_pitched": "2026-07-21",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/iconic-home/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "pitched",
+          "at": "2026-07-21",
+          "evidence": "events/2026/07/21/mail-3949.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Väntar på svar från Rebekka Thiel — pitch skickad 2026-07-21",
       "last_event": null
     },
     {
@@ -2823,72 +2918,6 @@
       "last_event": null
     },
     {
-      "id": "brand-van-egmond",
-      "company": "Brand van Egmond",
-      "contact": "Leo Goryachev (Digital Marketing & Communications Manager)",
-      "category": "Inredning & Design / Handsmidda Ljuskronor (Holländskt Lyxhantverk)",
-      "status": "interested",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-07-16",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/brand-van-egmond/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-07-16",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/outreach-brand-van-egmond",
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-07-17",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3877.eml",
-          "by": "migration"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "frezoli-lighting",
-      "company": "Frezoli Lighting",
-      "contact": "Jossinda Vissenberg (Sales Manager)",
-      "category": "Belysning / Premium Hantverk / Artisanal Dutch Design",
-      "status": "pitched",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-07-16",
-      "date_pitched": "2026-07-21",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/frezoli/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "pitched",
-          "at": "2026-07-21",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3950.eml",
-          "by": "carin"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Inväntar svar från Jossinda Vissenberg (efter sommarsemester)",
-      "last_event": null
-    },
-    {
       "id": "royal-delft",
       "company": "Royal Delft",
       "contact": "Sophie van de Ven (Marketing Manager)",
@@ -2985,29 +3014,6 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "iconic-home",
-      "company": "ICONIC HOME (Designscape Creative GmbH)",
-      "contact": "Rebekka Thiel (Social Media) — info@iconichome.com",
-      "category": "Inredning — Designobjekt & Doftvaser (3D-printade)",
-      "status": "pitched",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-07-13",
-      "date_pitched": "2026-07-21",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/iconic-home/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": null,
-      "signed_evidence": null,
-      "notes": "Pitch skickad 2026-07-21 in-thread (ticket #2026071319000577). Innehåller pitch-url + förklaring av multi-room-approach + möte-CTA.",
-      "waiting_on": "Väntar på svar från Rebekka Thiel — pitch skickad 2026-07-21",
       "last_event": null
     },
     {
@@ -8486,12 +8492,12 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-21T10:41:06.881Z",
+  "generated_at": "2026-07-21T10:46:21.534Z",
   "funnel_block": {
     "stages": {
       "kontaktad": 1622,
       "svarat": 242,
-      "pitchad": 58,
+      "pitchad": 61,
       "vunnen": 13,
       "forlorad": 130,
       "uppfoljning": 11
@@ -8500,7 +8506,7 @@
       "konvertering_pct": 0.8,
       "win_rate_pct": 13.5,
       "svarsfrekvens_pct": 14.9,
-      "pitch_frekvens_pct": 24,
+      "pitch_frekvens_pct": 25.2,
       "pipeline_health": 135
     },
     "generated": "2026-06-28"

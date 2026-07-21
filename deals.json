@@ -966,6 +966,48 @@
       "last_event": null
     },
     {
+      "id": "bga",
+      "company": "BGA",
+      "contact": "Ola (Kundtjänst)",
+      "category": "Inredning & Dekor / Ramar, Speglar & Posters",
+      "status": "pitched",
+      "value": 18500,
+      "value_min": 16500,
+      "value_label": "16 500 / 18 500 kr",
+      "date_contacted": "2026-07-19",
+      "date_pitched": "2026-07-21",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/bga/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-19",
+          "evidence": "Carin skickade kallt utskick till info@bga.se",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-07-20",
+          "evidence": "Ola (Kundtjänst) svarade via Dixa — frågar om samarbetsupplägg",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-21",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3953.eml",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "brand-van-egmond",
       "company": "Brand van Egmond",
       "contact": "Leo Goryachev (Digital Marketing & Communications Manager)",
@@ -1028,6 +1070,29 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Inväntar svar från Jossinda Vissenberg (efter sommarsemester)",
+      "last_event": null
+    },
+    {
+      "id": "rb73",
+      "company": "RB73",
+      "contact": null,
+      "category": null,
+      "status": "pitched",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-16",
+      "date_pitched": "2026-07-21",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/rb73/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -1197,11 +1262,17 @@
           "at": "2026-07-13",
           "evidence": "Carin skickade pitchlänken in-thread till Michal (carin-sent/3694.eml) — barter-förklaring + mötes-CTA. Subj: 'Re: Compass Pools × Villa Sjövik — 194k Swedish & Nordic home audience'.",
           "by": "carin"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-21",
+          "evidence": "Carin svarade Michals due-diligence in-thread (svar på carin/3932.eml): collab-results (Hillerstorp 233k / gardeners_own 82,5k / SIOOX 67,9k views) + follower-demografi ur riktiga IG Insights (95 % kvinnor, 77 % 45+, SE 30 / DE 8,3 / NO 7,8 / DK 4,8 %), mötes-CTA denna vecka. Sänt via send-compass-reply-2026-07-21.mjs (log: sent).",
+          "by": "carin"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Carin skickar svar: samarbetshistorik + follower breakdown (Instagram Insights) — draft klar 2026-07-20.",
+      "waiting_on": "DD-svar skickat 2026-07-21 (samarbeten + follower-demografi, mötes-CTA denna vecka). Väntar på mötesbokning/svar från Michal.",
       "last_event": null
     },
     {
@@ -3933,48 +4004,6 @@
       "close_reason": null,
       "followup_window": null,
       "stage_history": null,
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
-      "id": "rb73",
-      "company": "RB73",
-      "contact": "Raoul Bartholomeus (info@rb73.eu)",
-      "category": "Trädgård & Utomhus / Design-eldstäder (premium, NL)",
-      "status": "pitched",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-07-16",
-      "date_pitched": "2026-07-21",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/rb73/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-07-16",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3842.eml",
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-07-17",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3886.eml",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-07-21",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3952.eml",
-          "by": "deal-keeper"
-        }
-      ],
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
@@ -8511,12 +8540,12 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-21T10:46:21.534Z",
+  "generated_at": "2026-07-21T10:50:43.267Z",
   "funnel_block": {
     "stages": {
-      "kontaktad": 1622,
-      "svarat": 242,
-      "pitchad": 61,
+      "kontaktad": 1623,
+      "svarat": 243,
+      "pitchad": 63,
       "vunnen": 13,
       "forlorad": 130,
       "uppfoljning": 11
@@ -8524,9 +8553,9 @@
     "kpis": {
       "konvertering_pct": 0.8,
       "win_rate_pct": 13.5,
-      "svarsfrekvens_pct": 14.9,
-      "pitch_frekvens_pct": 25.2,
-      "pipeline_health": 135
+      "svarsfrekvens_pct": 15,
+      "pitch_frekvens_pct": 25.9,
+      "pipeline_health": 136
     },
     "generated": "2026-06-28"
   }

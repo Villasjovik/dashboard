@@ -3941,21 +3941,40 @@
     {
       "id": "rb73",
       "company": "RB73",
-      "contact": null,
-      "category": null,
-      "status": "replied",
+      "contact": "Raoul Bartholomeus (info@rb73.eu)",
+      "category": "Trädgård & Utomhus / Design-eldstäder (premium, NL)",
+      "status": "pitched",
       "value": null,
       "value_min": null,
       "value_label": null,
       "date_contacted": "2026-07-16",
-      "date_pitched": null,
+      "date_pitched": "2026-07-21",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/rb73/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "stage_history": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-16",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3842.eml",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-07-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3886.eml",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-21",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3952.eml",
+          "by": "deal-keeper"
+        }
+      ],
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,

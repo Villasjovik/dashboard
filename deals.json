@@ -1004,8 +1004,8 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": null,
-      "last_event": null
+      "waiting_on": "BGA-svar på draft (produktupplägg + möte)",
+      "last_event": "Ola (Kundtjänst) svarade på pitch 2026-07-21 — frågar om produktupplägg (kostnadsfri leverans?)"
     },
     {
       "id": "liroma",

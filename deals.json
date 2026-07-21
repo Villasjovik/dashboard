@@ -1088,12 +1088,12 @@
     {
       "id": "frezoli-lighting",
       "company": "Frezoli Lighting",
-      "contact": null,
-      "category": null,
-      "status": "pitched",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
+      "contact": "Jossinda Vissenberg, Sales Manager (info@frezoli.com)",
+      "category": "belysning / premium hantverk / Nederländerna",
+      "status": "interested",
+      "value": 20000,
+      "value_min": 18500,
+      "value_label": "Internationellt startpaket ~1 850–2 200 EUR",
       "date_contacted": "2026-07-16",
       "date_pitched": "2026-07-21",
       "date_closed": null,
@@ -1101,12 +1101,19 @@
       "outcome": null,
       "final_price": null,
       "close_reason": null,
-      "followup_window": null,
-      "stage_history": null,
+      "followup_window": "Vecka 40 (2026-09-28 – 2026-10-04) — Teams-möte bokat",
+      "stage_history": [
+        {
+          "to": "interested",
+          "at": "2026-07-21",
+          "evidence": "Jossinda Vissenberg svarade på pitch — intresserad, vill invänta november; ber om Teams-möte vecka 40 innan semestern (3946.eml)",
+          "by": "mail-watcher"
+        }
+      ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Inväntar svar från Jossinda Vissenberg (efter sommarsemester)",
-      "last_event": null
+      "waiting_on": "Jossinda på semester — kontakta vecka 40 för Teams-möte",
+      "last_event": "2026-07-21"
     },
     {
       "id": "rb73",

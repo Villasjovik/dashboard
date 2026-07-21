@@ -1008,6 +1008,66 @@
       "last_event": null
     },
     {
+      "id": "josephinenhutte",
+      "company": "Josephinenhütte",
+      "contact": "Lauritz Amann (la@josephinen.com)",
+      "category": "Dryck & Bordskultur / Premium Kristallglas (österrikiskt hantverk)",
+      "status": "pitched",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-13",
+      "date_pitched": "2026-07-21",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/josephinenhutte/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "pitched",
+          "at": "2026-07-21",
+          "evidence": "events/2026/07/21/mail-3947.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Inväntar svar från Lauritz Amann",
+      "last_event": null
+    },
+    {
+      "id": "lumond",
+      "company": "Lumond",
+      "contact": "Jacob Fraind",
+      "category": "Inredning & Livsstil / Keramik & Ljus",
+      "status": "pitched",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-13",
+      "date_pitched": "2026-07-21",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/lumond/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "pitched",
+          "at": "2026-07-21",
+          "evidence": "events/2026/07/21/mail-3948.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "compass-pools",
       "company": "Compass Pools Europe",
       "contact": "Michal Haverl (Compass Pools)",
@@ -1042,16 +1102,10 @@
           "at": "2026-07-13",
           "evidence": "Carin skickade pitchlänken in-thread till Michal (carin-sent/3694.eml) — barter-förklaring + mötes-CTA. Subj: 'Re: Compass Pools × Villa Sjövik — 194k Swedish & Nordic home audience'.",
           "by": "carin"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-07-20",
-          "evidence": "Michal Haverl svarade med due diligence-request: ber om (1) samarbetshistorik + visuella resultat och (2) follower breakdown (ålder, geografi, kön). Positiv ton — vill vidare men behöver underlag. Arkiv: 3932.eml.",
-          "by": "michal"
         }
       ],
       "signed_evidence": null,
-      "notes": "2026-07-20: Michal due-diligence — ber om samarbetshistorik/resultat + follower-demografi (ålder/geo/kön) innan möte bokas. Draft redo (drafts/draft-compass-pools-1753004228000.md).",
+      "notes": null,
       "waiting_on": "Carin skickar svar: samarbetshistorik + follower breakdown (Instagram Insights) — draft klar 2026-07-20.",
       "last_event": null
     },
@@ -2950,52 +3004,6 @@
       "last_event": null
     },
     {
-      "id": "josephinenhutte",
-      "company": "Josephinenhütte",
-      "contact": "Lauritz Amann (la@josephinen.com)",
-      "category": "Dryck & Bordskultur / Premium Kristallglas (österrikiskt hantverk)",
-      "status": "pitched",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-07-13",
-      "date_pitched": "2026-07-21",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/josephinenhutte/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": null,
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Inväntar svar från Lauritz Amann",
-      "last_event": null
-    },
-    {
-      "id": "lumond",
-      "company": "Lumond",
-      "contact": "Jacob Fraind",
-      "category": "Inredning & Livsstil / Keramik & Ljus",
-      "status": "interested",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-07-13",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/lumond/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
-    },
-    {
       "id": "tojo",
       "company": "Tojo Möbel GmbH",
       "contact": "Maik Seybold",
@@ -3929,7 +3937,7 @@
       "date_contacted": "2026-07-16",
       "date_pitched": null,
       "date_closed": null,
-      "pitch_url": null,
+      "pitch_url": "https://villasjovik.github.io/rb73/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
@@ -4204,6 +4212,29 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas — besluta prismodell, produktfråga (betalt vs sponsrad kåpa), nätbutik-strategi, artikel-fråga. Se flaggor nedan.",
+      "last_event": null
+    },
+    {
+      "id": "oliver-furniture",
+      "company": "Oliver Furniture A/S",
+      "contact": null,
+      "category": null,
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-06-29",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -4891,6 +4922,29 @@
       "last_event": null
     },
     {
+      "id": "het-lichtlab",
+      "company": "Het Lichtlab",
+      "contact": null,
+      "category": null,
+      "status": "cold",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": null,
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/het-lichtlab/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
       "id": "macro-design",
       "company": "Macro Design",
       "contact": "tahmine.sawstrom@macrodesign.se",
@@ -5319,6 +5373,42 @@
           "to": "declined",
           "at": "2026-07-17",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3872.eml",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "berbel",
+      "company": "berbel Ablufttechnik GmbH",
+      "contact": "Julia Mackenbach — j.mackenbach@berbel.de (Teamlead Communication & Content Marketing DACH)",
+      "category": "Kök & Hushåll / Köksfläktar / Ventilation",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-13",
+      "date_pitched": null,
+      "date_closed": "2026-07-19",
+      "pitch_url": null,
+      "outcome": "rejected",
+      "final_price": null,
+      "close_reason": "\"We don't have the capacity to take on any additional influencer or social media collaborations at the moment.\" Inget konkret datum → avvisat, ej postponed.",
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-13",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/berbel-outreach.eml",
+          "by": "migration"
+        },
+        {
+          "to": "declined",
+          "at": "2026-07-19",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3923.eml",
           "by": "migration"
         }
       ],
@@ -8370,7 +8460,7 @@
     "ready_to_contact": 226
   },
   "meta": {
-    "updated": "2026-07-17",
+    "updated": "2026-07-21",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -8389,22 +8479,22 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-17T17:40:54.331Z",
+  "generated_at": "2026-07-21T10:41:06.881Z",
   "funnel_block": {
     "stages": {
-      "kontaktad": 1619,
-      "svarat": 239,
-      "pitchad": 56,
+      "kontaktad": 1622,
+      "svarat": 242,
+      "pitchad": 58,
       "vunnen": 13,
-      "forlorad": 129,
+      "forlorad": 130,
       "uppfoljning": 11
     },
     "kpis": {
       "konvertering_pct": 0.8,
-      "win_rate_pct": 13.7,
-      "svarsfrekvens_pct": 14.8,
-      "pitch_frekvens_pct": 23.4,
-      "pipeline_health": 133
+      "win_rate_pct": 13.5,
+      "svarsfrekvens_pct": 14.9,
+      "pitch_frekvens_pct": 24,
+      "pipeline_health": 135
     },
     "generated": "2026-06-28"
   }

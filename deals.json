@@ -2861,24 +2861,31 @@
     {
       "id": "frezoli-lighting",
       "company": "Frezoli Lighting",
-      "contact": null,
-      "category": null,
-      "status": "interested",
+      "contact": "Jossinda Vissenberg (Sales Manager)",
+      "category": "Belysning / Premium Hantverk / Artisanal Dutch Design",
+      "status": "pitched",
       "value": null,
       "value_min": null,
       "value_label": null,
       "date_contacted": "2026-07-16",
-      "date_pitched": null,
+      "date_pitched": "2026-07-21",
       "date_closed": null,
       "pitch_url": "https://villasjovik.github.io/frezoli/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "stage_history": null,
+      "stage_history": [
+        {
+          "to": "pitched",
+          "at": "2026-07-21",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3950.eml",
+          "by": "carin"
+        }
+      ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": null,
+      "waiting_on": "Inväntar svar från Jossinda Vissenberg (efter sommarsemester)",
       "last_event": null
     },
     {

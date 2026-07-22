@@ -885,7 +885,7 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Text godkänd av Leonna 2026-07-22 (3980.eml) med tillägg om finländskt ursprung + hållbarhet. Carin lägger in tillägget → publicering torsdag 2026-07-24. Nästa: Leonna delar på Nordstones IG. Andra inlägget + ev. Instagram-live diskuteras efter publicering.",
+      "waiting_on": "Carin lade in Leonnas tillägg (finländskt ursprung + hållbarhet) i texten 2026-07-22 (4084.eml). Väntar på Leonnas beslut: (1) publiceringsdatum (satt till torsdag 2026-07-24), (2) detaljer om Instagram-live-förslaget (tidpunkt, längd mm).",
       "last_event": null
     },
     {
@@ -1004,8 +1004,8 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "BGA-svar på draft (produktupplägg + möte)",
-      "last_event": "Ola (Kundtjänst) svarade på pitch 2026-07-21 — frågar om produktupplägg (kostnadsfri leverans?)"
+      "waiting_on": "BGA-svar efter produktklarifikation 2026-07-21 (3957.eml)",
+      "last_event": null
     },
     {
       "id": "liroma",
@@ -1084,65 +1084,6 @@
       "notes": null,
       "waiting_on": null,
       "last_event": null
-    },
-    {
-      "id": "frezoli-lighting",
-      "company": "Frezoli Lighting",
-      "contact": "Jossinda Vissenberg, Sales Manager (info@frezoli.com)",
-      "category": "belysning / premium hantverk / Nederländerna",
-      "status": "interested",
-      "value": 20000,
-      "value_min": 18500,
-      "value_label": "Internationellt startpaket ~1 850–2 200 EUR",
-      "date_contacted": "2026-07-16",
-      "date_pitched": "2026-07-21",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/frezoli/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": "Teams-möte tors 2026-10-01 kl 10:00 — bekräftat av Jossinda",
-      "stage_history": [
-        {
-          "to": "interested",
-          "at": "2026-07-21",
-          "evidence": "Jossinda Vissenberg svarade på pitch — intresserad, vill invänta november; ber om Teams-möte vecka 40 innan semestern (3946.eml)",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "interested",
-          "at": "2026-07-22",
-          "evidence": "Jossinda föreslår Teams-möte tors 1 okt kl 10:00 (3977.eml)",
-          "by": "mail-watcher"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Carin bekräftar mötet — Teams tors 2026-10-01 kl 10:00",
-      "last_event": "2026-07-22"
-    },
-    {
-      "id": "rb73",
-      "company": "RB73",
-      "contact": "Raoul Bartholomeus",
-      "category": null,
-      "status": "interested",
-      "value": 16500,
-      "value_min": 16500,
-      "value_label": "Karusellpaket €1550 (barter)",
-      "date_contacted": "2026-07-16",
-      "date_pitched": "2026-07-21",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/rb73/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": null,
-      "signed_evidence": null,
-      "notes": "Barter-förslag 2026-07-21: Quaruba XL 4-sided MOBILE (€2290 normalt) stannar på VS efter shoot i utbyte mot Karusellpaket (€1550). Produktvärde > paketpris. Fri frakt. Carin självreglerar.",
-      "waiting_on": "Carin — beslut om barter-villkor",
-      "last_event": "2026-07-21"
     },
     {
       "id": "van-de-zotte",
@@ -3038,6 +2979,52 @@
       "last_event": null
     },
     {
+      "id": "frezoli-lighting",
+      "company": "Frezoli Lighting",
+      "contact": null,
+      "category": null,
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-16",
+      "date_pitched": "2026-07-21",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/frezoli/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Teams-möte 2026-10-01 kl 10:00 — bekräftat av båda parter",
+      "last_event": null
+    },
+    {
+      "id": "rb73",
+      "company": "RB73",
+      "contact": null,
+      "category": null,
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-16",
+      "date_pitched": "2026-07-21",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/rb73/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Raoul — svar på förhandling (Carin frågade hur de kan mötas halvvägs mot Karusellpaketet)",
+      "last_event": null
+    },
+    {
       "id": "royal-delft",
       "company": "Royal Delft",
       "contact": "Sophie van de Ven (Marketing Manager)",
@@ -3134,6 +3121,29 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "theolfactiveavenue",
+      "company": "The Olfactive Avenue",
+      "contact": "Melanie Schmitt (Geschäftsführerin / grundare)",
+      "category": "Doftljus & hemparfym",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-13",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Kundbriefing klar 2026-07-22 — Melanie ber om prisinfo + contentexempel. Väntar på Lucas för pitch-beslut.",
       "last_event": null
     },
     {
@@ -8570,7 +8580,7 @@
     "ready_to_contact": 226
   },
   "meta": {
-    "updated": "2026-07-21",
+    "updated": "2026-07-22",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -8589,12 +8599,12 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-21T10:53:01.314Z",
+  "generated_at": "2026-07-22T07:13:04.302Z",
   "funnel_block": {
     "stages": {
-      "kontaktad": 1624,
-      "svarat": 244,
-      "pitchad": 64,
+      "kontaktad": 1625,
+      "svarat": 245,
+      "pitchad": 62,
       "vunnen": 13,
       "forlorad": 130,
       "uppfoljning": 11
@@ -8602,9 +8612,9 @@
     "kpis": {
       "konvertering_pct": 0.8,
       "win_rate_pct": 13.5,
-      "svarsfrekvens_pct": 15,
-      "pitch_frekvens_pct": 26.2,
-      "pipeline_health": 137
+      "svarsfrekvens_pct": 15.1,
+      "pitch_frekvens_pct": 25.3,
+      "pipeline_health": 138
     },
     "generated": "2026-06-28"
   }

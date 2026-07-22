@@ -1,6 +1,48 @@
 {
   "deals": [
     {
+      "id": "brusletto",
+      "company": "Brusletto × Ultimate Nordic",
+      "contact": "Simen Opsahl Andersen (E-Commerce Manager, Ultimate Nordic a/s) — simen.andersen@ultimatenordic.no",
+      "category": "Kök & Hantverk / Norska knivar & Heritage-bestick",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000 kr",
+      "date_contacted": "2026-07-21",
+      "date_pitched": "2026-07-22",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/ultimate-nordic/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-21",
+          "evidence": "Carin skickade kallt utskick till service@brusletto.no",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-07-22",
+          "evidence": "Simen Opsahl Andersen (E-Commerce Manager) frågade direkt: 'Hva er prisen på en slik pakke?' (norska)",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-22",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/4133.eml — pitch https://villasjovik.github.io/ultimate-nordic/ levererad",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Distributör: Ultimate Nordic a/s (Oslo) hanterar Brusletto. Simen frågar direkt om pris efter kallt utskick till service@brusletto.no → internt vidarebefordrad. Pitch byggd kring Hällmark-exemplet (utekök + pizzaugn) men gäller valfritt varumärke i portföljen. Fulla rättigheter inkluderade — material kan användas av återförsäljare och egna kanaler.",
+      "waiting_on": "Simen Andersen — återkoppling på pitch",
+      "last_event": null
+    },
+    {
       "id": "design-by-us",
       "company": "Design By Us",
       "contact": "Debora Ingvarsdóttir Mikkelsen (debora@design-by-us.com)",

@@ -1520,7 +1520,7 @@
     {
       "id": "kulta",
       "company": "KULTA Limewash Paints",
-      "contact": "Ilze (info@newkulta.com)",
+      "contact": "Roberts Kelpis, GM (info@newkulta.com) — tidigare Ilze",
       "category": "Inredning & Färg / Limewash / Väggfärg",
       "status": "pitched",
       "value": 12000,
@@ -1552,12 +1552,18 @@
           "at": "2026-06-30",
           "evidence": "Slim single EUR pitch (~€1 100) deployad till villasjovik.github.io/kulta — svarar på alla fyra frågor (villkor, motprestation, pris, tidslinje)",
           "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-22",
+          "evidence": "Roberts Kelpis (GM) svarar positivt — frågar om autenticitet + publik. Status kvar pitched.",
+          "by": "auto"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Samarbetsförslag skickat in-thread 2026-07-06 — väntar svar.",
-      "last_event": null
+      "waiting_on": "Roberts Kelpis (GM) svarade 2026-07-22 med kvalificeringsfrågor — draft klar, väntar Lucas-OK.",
+      "last_event": "2026-07-22: Roberts Kelpis (GM) svarar med kvalificeringsfrågor om autenticitet och publik."
     },
     {
       "id": "lucks",

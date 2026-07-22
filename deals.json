@@ -3117,24 +3117,43 @@
     {
       "id": "oase",
       "company": "OASE",
-      "contact": "Joanna Saunders",
-      "category": "Trädgård & Utomhus",
-      "status": "interested",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
+      "contact": "Joanna Saunders (Global Social Media & Partnerships Lead, OASE) — j.saunders@oase.com",
+      "category": "Trädgård & Utomhus / Dekorativa vattenfunktioner & vattenmiljöer",
+      "status": "pitched",
+      "value": 53460,
+      "value_min": 5400,
+      "value_label": "€500 – €4 950",
       "date_contacted": "2026-07-15",
-      "date_pitched": null,
+      "date_pitched": "2026-07-22",
       "date_closed": null,
-      "pitch_url": null,
+      "pitch_url": "https://villasjovik.github.io/oase/",
       "outcome": null,
       "final_price": null,
       "close_reason": null,
       "followup_window": null,
-      "stage_history": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-15",
+          "evidence": "Carin skickade kallt utskick till info@oase-livingwater.com",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-07-16",
+          "evidence": "Joanna Saunders svarade: 'This sounds extremely interesting and we'd love to hear your content ideas.' Frågade om VS har damm/vattenfunktion redan.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-22",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/4142.eml — pitch https://villasjovik.github.io/oase/ levererad, frågan besvarad (börjar från noll, PE 1000 Organic + Copper Fountain Bowls)",
+          "by": "carin"
+        }
+      ],
       "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
+      "notes": "Global brand (HQ Oberhausen, DE), 22 dotterbolag. Joanna = Global Social Media & Partnerships Lead. Snabb respons (< 24h på kallt mail). Konceptet: bygga damm från noll med PE 1000 Organic preformed pond + Copper Fountain Bowls — autentisk \"från noll\"-resa. EUR-prissättning (tyska HQ). Pitch på engelska.",
+      "waiting_on": "Joanna Saunders — återkoppling på pitch + intresse för möte",
       "last_event": null
     },
     {

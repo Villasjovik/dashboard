@@ -1162,17 +1162,17 @@
       "company": "Josephinenhütte",
       "contact": "Lauritz Amann (la@josephinen.com)",
       "category": "Dryck & Bordskultur / Premium Kristallglas (österrikiskt hantverk)",
-      "status": "pitched",
+      "status": "declined",
       "value": null,
       "value_min": null,
       "value_label": null,
       "date_contacted": "2026-07-13",
       "date_pitched": "2026-07-21",
-      "date_closed": null,
+      "date_closed": "2026-07-22",
       "pitch_url": "https://villasjovik.github.io/josephinenhutte/",
-      "outcome": null,
+      "outcome": "declined",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "not_fit",
       "followup_window": null,
       "stage_history": [
         {
@@ -1180,11 +1180,17 @@
           "at": "2026-07-21",
           "evidence": "events/2026/07/21/mail-3947.md",
           "by": "deal-keeper"
+        },
+        {
+          "to": "declined",
+          "at": "2026-07-22",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3988.eml",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Inväntar svar från Lauritz Amann",
+      "notes": "Lauritz avvisade 2026-07-22 (kommunikationsriktning ej rätt fit). Nämnde att de delat pitchen med sin Meta-reklamansvarige — möjligt att denne hör av sig, men ingen kontaktinfo eller datum gavs.",
+      "waiting_on": null,
       "last_event": null
     },
     {

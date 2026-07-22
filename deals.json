@@ -1101,19 +1101,25 @@
       "outcome": null,
       "final_price": null,
       "close_reason": null,
-      "followup_window": "Vecka 40 (2026-09-28 – 2026-10-04) — Teams-möte bokat",
+      "followup_window": "Teams-möte tors 2026-10-01 kl 10:00 — bekräftat av Jossinda",
       "stage_history": [
         {
           "to": "interested",
           "at": "2026-07-21",
           "evidence": "Jossinda Vissenberg svarade på pitch — intresserad, vill invänta november; ber om Teams-möte vecka 40 innan semestern (3946.eml)",
           "by": "mail-watcher"
+        },
+        {
+          "to": "interested",
+          "at": "2026-07-22",
+          "evidence": "Jossinda föreslår Teams-möte tors 1 okt kl 10:00 (3977.eml)",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Jossinda på semester — kontakta vecka 40 för Teams-möte",
-      "last_event": "2026-07-21"
+      "waiting_on": "Carin bekräftar mötet — Teams tors 2026-10-01 kl 10:00",
+      "last_event": "2026-07-22"
     },
     {
       "id": "rb73",

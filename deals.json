@@ -970,17 +970,17 @@
       "company": "BGA",
       "contact": "Ola (Kundtjänst)",
       "category": "Inredning & Dekor / Ramar, Speglar & Posters",
-      "status": "pitched",
+      "status": "rejected",
       "value": 18500,
       "value_min": 16500,
       "value_label": "16 500 / 18 500 kr",
       "date_contacted": "2026-07-19",
       "date_pitched": "2026-07-21",
-      "date_closed": null,
+      "date_closed": "2026-07-22",
       "pitch_url": "https://villasjovik.github.io/bga/",
-      "outcome": null,
+      "outcome": "rejected",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "Ola (Kundtjänst) eskalerar internt men utan tidsram — 'återkommer om vi ser att det finns ett intresse' (3998.eml, 2026-07-22). Ingen konkret uppföljningsplan.",
       "followup_window": null,
       "stage_history": [
         {
@@ -1000,11 +1000,17 @@
           "at": "2026-07-21",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/3953.eml",
           "by": "mail-watcher"
+        },
+        {
+          "to": "rejected",
+          "at": "2026-07-22",
+          "evidence": "Ola (Kundtjänst) eskalerar internt — 'återkommer om intresse finns', ingen tidsram (3998.eml)",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "BGA-svar efter produktklarifikation 2026-07-21 (3957.eml)",
+      "waiting_on": null,
       "last_event": null
     },
     {

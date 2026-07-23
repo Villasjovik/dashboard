@@ -3072,7 +3072,7 @@
       "company": "RB73",
       "contact": "Raoul Bartholomeus (ägare/VD) — info@rb73.eu",
       "category": "Trädgård & Utomhus / Corten-stål designeldstäder (premium, NL)",
-      "status": "replied",
+      "status": "negotiating",
       "value": 16500,
       "value_min": 16500,
       "value_label": "~1 550 EUR / 16 500 kr (Karusellpaket)",
@@ -3114,12 +3114,18 @@
           "at": "2026-07-23",
           "evidence": "Raoul nytt motbud: eldstad stannar (kostnad €2070) + 10% provision via kod Villasjovik26, 12 mån",
           "by": "mail-watcher"
+        },
+        {
+          "to": "negotiating",
+          "at": "2026-07-23",
+          "evidence": "Carin svarar — tackar nej till provision-modell, föreslår ren barter: eldstad mot organisk exponering + imagery-rättigheter (4195.eml)",
+          "by": "carin"
         }
       ],
       "signed_evidence": null,
-      "notes": "Raoul = trolig ägare/VD, litet bolag Eersel NL. Förhandling: Raoul vill inte betala kontant. Senaste motbud 2026-07-23: eldstad (€1895+€175 frakt) stannar på VS + 10% affiliateprovision via kod Villasjovik26 i 12 mån. Hans logik: €2070 > €1550 karusellpaket → han ger mer i produktvärde än hon begär i kontant. Riskpunkten: provision = osäkert belopp beroende på konverteringsgrad. Carin/Lucas behöver besluta om hybriderbjudande (lite kontant + eldstaden) eller acceptera provision-modellen.",
-      "waiting_on": "Draft klar — Lucas bedömer: acceptera provision-modell / föreslå hybrid (kontant + eldstad) / tacka nej",
-      "last_event": "2026-07-23T11:47:18Z"
+      "notes": "Raoul = trolig ägare/VD, litet bolag Eersel NL. Förhandling: Raoul vill inte betala kontant. Raouls senaste bud (2026-07-23): eldstad (€1895+€175 frakt=€2070) stannar på VS + 10% affiliateprovision via kod Villasjovik26 i 12 mån. Carins svar (2026-07-23): tackar nej till provision och rabattkoder — vill inte göra traditionell reklam. Föreslår ren barter: eldstad i utbyte mot organisk exponering + lifestyle-imagery Raoul får använda fritt.",
+      "waiting_on": "Raoul svarar på Carins barter-förslag (eldstad mot organisk exponering + imagery-rättigheter)",
+      "last_event": "2026-07-23T12:32:38Z"
     },
     {
       "id": "royal-delft",

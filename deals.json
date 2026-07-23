@@ -798,11 +798,18 @@
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/4040.eml",
           "by": "deal-keeper",
           "note": "Iris bekräftar avtalsmottagning. Föreslår content-kalender: bilder oktober, IG december. Produkter avsänds nästa vecka."
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-07-23",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/4296.eml",
+          "by": "deal-keeper",
+          "note": "Carin bekräftade tvåstegsstrategin: bilder i oktober, IG i december. Ball tillbaka hos Iris (avvaktar signatur)."
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "carin",
+      "waiting_on": "iris",
       "last_event": null
     },
     {

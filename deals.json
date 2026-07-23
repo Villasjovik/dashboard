@@ -1335,12 +1335,12 @@
       "outcome": null,
       "final_price": null,
       "close_reason": null,
-      "followup_window": "2026-07-23",
+      "followup_window": "2026-07-30",
       "stage_history": null,
       "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Möte bekräftat: tors 23 juli 2026 kl. 09:00. Carin bekräftade 2026-07-14 (3698.eml). Inväntar mötet.",
-      "last_event": null
+      "notes": "2026-07-23: Mötet genomfördes kl. 09:00. Martina skickade post-möte follow-up 09:56 (4026.eml) med Feuerring Places (feuerring.ch/en/places) + The Cooks Atelier France som referenser. Draft på svar skapad.",
+      "waiting_on": "Post-möte: Martina delade Feuerring Places-referensmaterial. Draft klar, inväntar Lucas OK + intern behandling hos access-media/Feuerring.",
+      "last_event": "2026-07-23"
     },
     {
       "id": "bobi",

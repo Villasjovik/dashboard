@@ -1060,7 +1060,7 @@
       "company": "Liroma Red Light Therapy",
       "contact": "Falko Wouters",
       "category": "Hälsa & Wellness / Rödljusterapi-paneler (konsument, NL)",
-      "status": "pitched",
+      "status": "replied",
       "value": null,
       "value_min": null,
       "value_label": null,
@@ -1084,12 +1084,18 @@
           "at": "2026-07-21",
           "evidence": "events/2026/07/21/mail-3954.md",
           "by": "deal-keeper"
+        },
+        {
+          "to": "replied",
+          "at": "2026-07-23",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/4033.eml",
+          "by": "auto"
         }
       ],
       "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
-      "last_event": null
+      "notes": "Counter-offer 2026-07-23: RL600 ej möjlig — erbjuder RL240 istället. Avböjer betalda priser; föreslår affiliatemodell (kommission + rabattkod). Fortfarande öppen för samarbete.",
+      "waiting_on": "Lucas/Carin: ta ställning till RL240 och affiliatemodell",
+      "last_event": "2026-07-23"
     },
     {
       "id": "brand-van-egmond",

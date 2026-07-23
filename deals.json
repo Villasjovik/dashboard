@@ -791,11 +791,18 @@
           "at": "2026-07-17",
           "evidence": "Oneflow doc 15384296 — skickat till Iris Dauvergne 2026-07-17, signeringsfönster t.o.m. 2026-07-31",
           "by": "lucas"
+        },
+        {
+          "to": "replied",
+          "at": "2026-07-23",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/4040.eml",
+          "by": "deal-keeper",
+          "note": "Iris bekräftar avtalsmottagning. Föreslår content-kalender: bilder oktober, IG december. Produkter avsänds nästa vecka."
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "iris",
+      "waiting_on": "carin",
       "last_event": null
     },
     {

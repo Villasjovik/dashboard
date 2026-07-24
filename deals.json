@@ -805,11 +805,18 @@
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/4296.eml",
           "by": "deal-keeper",
           "note": "Carin bekräftade tvåstegsstrategin: bilder i oktober, IG i december. Ball tillbaka hos Iris (avvaktar signatur)."
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-07-24",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/4061.eml",
+          "by": "deal-keeper",
+          "note": "Iris ber om att modifiera avtalet för att spegla ny tidslinje (bilder oktober, IG december) — vill sedan signera och Carin får keramiken. Bollen hos Carin/Lucas att uppdatera Oneflow-avtalet."
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "iris",
+      "waiting_on": "carin",
       "last_event": null
     },
     {

@@ -671,6 +671,12 @@
           "at": "2026-07-03",
           "evidence": "events/2026/07/03/mail-3587.md",
           "by": "deal-keeper"
+        },
+        {
+          "to": "film_delivered",
+          "at": "2026-07-26",
+          "evidence": "Carin skickade film 1-utkastet till Carl-Henrik in-thread (carin-sent/4399.eml, subj \"Re: Första filmen – så har vi tänkt\") — WeTransfer-länk we.tl/t-Rr1mNzPNQpRLKwiZ (~1v). Väntar Telldus feedback/godkännande inför publicering.",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3570.eml",

@@ -1,6 +1,42 @@
 {
   "deals": [
     {
+      "id": "serein",
+      "company": "Serein",
+      "contact": "Kim Sandvig (CEO) — post@serein.no",
+      "category": "Ljus & Doft / Bad & Kropp — norskt premiumvarumärke",
+      "status": "replied",
+      "value": 18500,
+      "value_min": 16500,
+      "value_label": "16 500 – 39 000 kr (ej prisatt)",
+      "date_contacted": "2026-07-21",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-21",
+          "evidence": "Carin skickade kallt utskick till post@serein.no — capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/4003.eml",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-07-26",
+          "evidence": "Kim Sandvig (CEO) svarade positivt 09:57: lanserar på svenska marknaden 'veldig snart', bad om konkreta idéer",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Carin svarade 2026-07-26 11:33 med konkreta konceptidéer: 15–20 miljöbilder + dedikerat inlägg till 194k följare, koncept 'Det lilla vardagslyxet' + 'Känsla & Styling'. Ingen formell pitch-URL ännu. Perfekt timing — Serein öppnar för svenska marknaden nu.",
+      "waiting_on": "Kim Sandvig (CEO) — svar på konceptförslag skickat 2026-07-26",
+      "last_event": null
+    },
+    {
       "id": "brusletto",
       "company": "Brusletto × Ultimate Nordic",
       "contact": "Simen Opsahl Andersen (E-Commerce Manager, Ultimate Nordic a/s) — simen.andersen@ultimatenordic.no",

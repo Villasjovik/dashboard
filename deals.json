@@ -3284,7 +3284,7 @@
       "company": "ESCALE Möbel- und Leuchten GmbH",
       "contact": "Leonhard Bopp",
       "category": "Belysning & Design",
-      "status": "interested",
+      "status": "postponed",
       "value": null,
       "value_min": null,
       "value_label": null,
@@ -3295,12 +3295,12 @@
       "outcome": null,
       "final_price": null,
       "close_reason": null,
-      "followup_window": null,
+      "followup_window": "2026-Q4",
       "stage_history": null,
       "signed_evidence": null,
-      "notes": null,
+      "notes": "CEO Leonhard Bopp återvände 2026-07-26 efter Carins avslutning — intresserad av samarbete inför vinterseason när budgetläget förbättrats. Frågar om samarbetsidéer nu.",
       "waiting_on": null,
-      "last_event": null
+      "last_event": "2026-07-26"
     },
     {
       "id": "theolfactiveavenue",

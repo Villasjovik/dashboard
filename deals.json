@@ -677,6 +677,12 @@
           "at": "2026-07-26",
           "evidence": "Carin skickade film 1-utkastet till Carl-Henrik in-thread (carin-sent/4399.eml, subj \"Re: Första filmen – så har vi tänkt\") — WeTransfer-länk we.tl/t-Rr1mNzPNQpRLKwiZ (~1v). Väntar Telldus feedback/godkännande inför publicering.",
           "by": "mail-watcher"
+        },
+        {
+          "to": "film_approved",
+          "at": "2026-07-27",
+          "evidence": "Carl-Henrik Ivarsson godkänner film 1-utkastet (arkiv/mail/villa-sjovik/2026-07/carin/4112.eml, subj \"Sv: Första filmen – så har vi tänkt\") — \"Snyggt! Jag gillar den. Tycker vi håller det på den nivån vi har nu.\" Ber Ulf granska, prel publicering 2026-07-28. PS: vill ha Carins genuina kundperspektiv på smart hem-problem/irritation. Draft-svar: draft-telldus-film1-godkand-2026-07-27.md.",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/3570.eml",

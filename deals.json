@@ -854,11 +854,18 @@
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/4061.eml",
           "by": "deal-keeper",
           "note": "Iris ber om att modifiera avtalet för att spegla ny tidslinje (bilder oktober, IG december) — vill sedan signera och Carin får keramiken. Bollen hos Carin/Lucas att uppdatera Oneflow-avtalet."
+        },
+        {
+          "to": "contract_sent",
+          "at": "2026-07-27",
+          "evidence": "Oneflow doc 15436883 — avtal v2 skickat av Lucas; Iris Dauvergne öppnade 2026-07-27 06:44 UTC. Arkiverat: capture/arkiv/mail/villa-sjovik/2026-07/carin/4107.eml",
+          "by": "deal-keeper",
+          "note": "Avtal v2 (ny tidslinje §3.4, full rättighetsöverlåtelse §7) skickat via Oneflow (doc 15436883). Iris öppnade för första gången — väntar signatur."
         }
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "carin",
+      "waiting_on": "iris",
       "last_event": null
     },
     {

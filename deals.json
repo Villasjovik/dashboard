@@ -988,11 +988,18 @@
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/4151.eml",
           "by": "jenny",
           "note": "Internbesked klart — go-ahead bekräftat efter semester. Nästa steg: planeringsmöte Bromma."
+        },
+        {
+          "to": "verbal_agreement",
+          "at": "2026-07-28",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/4153.eml",
+          "by": "jenny",
+          "note": "Jenny loopar in Jan Pettersson för att boka tid hos säljare i Bromma. Svar på Carins förslag nästa onsdag."
         }
       ],
       "signed_evidence": null,
-      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Carin bekräftade 16 juni (2618.eml). Möte 18 juni kl 10:00. Jenny summerade 18 juni (3154.eml): barter-upplägg överenskommet — Edit-baskulör + laminatbänkskiva, stommar från mässa, leverans sept/okt, bilder nov. Inväntar internt besked. Jenny bekräftar (3161.eml, kl 12:33): återkoppling kommer efter semestern — Carin svarade \"Ser fram emot att höra av dig!\" (2759.eml, kl 13:50). Jenny återkommer 2026-07-28 (4151.eml): \"Vi vill gärna gå vidare med samarbetet.\" Nästa steg = planeringsmöte i Bromma hos kollega. Intern grön signal klar.",
-      "waiting_on": "Grön signal given 2026-07-28. Boka planeringsmöte i Bromma hos Jennys kollegor (Lovisa nämndes i juni). Inväntar Carins svar på bokningsförfrågan.",
+      "notes": "Email-baserad pitch skickad 8 juni med bilagor: före/efter-bilder + offert-spec (tvättstuge-projekt). Ingen GitHub Pages-pitch genererad. Lucas parkerade 8/6 men Carin skickade email-pitchen ändå. Follow-up 15 juni. Jenny svarade 16 juni — frågar om Carin kan göra tvättstugan i Vedums basfärger (ramluckan Edit). Carin bekräftade 16 juni (2618.eml). Möte 18 juni kl 10:00. Jenny summerade 18 juni (3154.eml): barter-upplägg överenskommet — Edit-baskulör + laminatbänkskiva, stommar från mässa, leverans sept/okt, bilder nov. Inväntar internt besked. Jenny bekräftar (3161.eml, kl 12:33): återkoppling kommer efter semestern — Carin svarade \"Ser fram emot att höra av dig!\" (2759.eml, kl 13:50). Jenny återkommer 2026-07-28 (4151.eml): \"Vi vill gärna gå vidare med samarbetet.\" Nästa steg = planeringsmöte i Bromma hos kollega. Intern grön signal klar. Jenny svarar Carin (4153.eml, 2026-07-28): Loopar in kollegan Jan Pettersson (jan.pettersson@vedum.se) för att kolla tillgänglighet hos säljare i Bromma. Svar på Carins förslag om nästa onsdag.",
+      "waiting_on": "Inväntar Jan Pettersson (jan.pettersson@vedum.se) med bekräftad tid hos säljare i Bromma. Jenny loopade in honom 2026-07-28 (4153.eml) som svar på Carins förslag om nästa onsdag.",
       "last_event": "2026-07-28"
     },
     {

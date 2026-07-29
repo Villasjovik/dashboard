@@ -8866,6 +8866,48 @@
       "notes": "Content-deal, inte reach-deal. ROM 7 bad explicit om content de kan använda i sin norska marknadsföring. Pitch: 1 200 EUR — 1 produktionsvideo (ad creative) + 10 produkt-/livsstilsfoton + permanenta media rights. Ingen publicering i VS kanaler.",
       "waiting_on": "ROM 7 — svar på pitch skickad 2026-07-29",
       "last_event": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/4613.eml"
+    },
+    {
+      "id": "mifuko",
+      "company": "Mifuko",
+      "contact": "Aino Martikainen (Marketing & Communications Assistant) — aino.martikainen@mifuko.fi",
+      "category": "Inredning & Accessoarer / Fair Trade Hantverk — finskt varumärke",
+      "status": "replied",
+      "value": 11500,
+      "value_min": 10000,
+      "value_label": "10 000 – 12 000 kr (slim-paket, exkl. moms)",
+      "date_contacted": "2026-06-23",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-23",
+          "evidence": "Carin skickade kallt utskick till hello@mifuko.fi — 'Mifuko × Villa Sjövik — 164k Swedish home audience'",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-06-30",
+          "evidence": "Aino Martikainen svarade: entusiastisk ('stora fans under lång tid'), ber om anpassat paket/prislista pga begränsad marknadsbudget. CC: Mari Martikainen.",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "replied",
+          "at": "2026-07-29",
+          "evidence": "Aino följde upp efter 29 dagar — koll om första svaret nått fram, 'fortfarande väldigt taggade' — capture/arkiv/mail/villa-sjovik/2026-07/carin/4218.eml",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Litet finländskt fair trade-företag (Kiondo-korgar, handvävda i Kenya). Aino ej slutgiltig beslutsfattare men förhandlingsbehörig. Budget begränsad — slim-paket rekommenderat (~10–12k, 1 video + 10 bilder + 1 story, ingen Meta-boost). Produkten stämmer estetiskt perfekt med VS. Aino följde upp proaktivt efter 29 dagar utan svar — starkt intressesignal. Draft-svar väntar på Lucas-OK.",
+      "waiting_on": "Svar från Carin — draft skapad 2026-07-29",
+      "last_event": null
     }
   ],
   "leads_summary": {

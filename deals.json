@@ -1416,12 +1416,24 @@
         {
           "to": "contacted",
           "at": "2026-07-21",
-          "evidence": ">-",
-          "by": "migration"
+          "evidence": "Carin kallt utskick till post@rom7.no (194k-vinkel) — citerat i capture/arkiv/mail/villa-sjovik/2026-07/carin/3986.eml",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-07-22",
+          "evidence": "ROM 7 svarade och bad om pris för content-paketet enbart — capture/arkiv/mail/villa-sjovik/2026-07/carin/3986.eml",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-29",
+          "evidence": "events/2026/07/29/mail-4613.md",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
-      "notes": ">-",
+      "notes": "Content-deal, inte reach-deal. ROM7 svarade 2026-07-22 att de INTE vill ha exponering mot VS-publiken — de vill köpa content + rättigheter till egen marknadsföring i Norge. Pitch skickad 2026-07-29: ETT paket (1 200 EUR), 1 produktionsvideo som ad creative + 10 produkt-/livsstilsfoton + permanenta media rights, ingen publicering i VS kanaler.",
       "waiting_on": "ROM 7 — svar på pitch skickad 2026-07-29",
       "last_event": null
     },
@@ -6794,7 +6806,7 @@
         }
       ],
       "signed_evidence": null,
-      "notes": ">",
+      "notes": "Lauritz avvisade 2026-07-22 (kommunikationsriktning ej rätt fit). Nämnde att de delat pitchen med sin Meta-reklamansvarige — möjligt att denne hör av sig, men ingen kontaktinfo eller datum gavs.",
       "waiting_on": null,
       "last_event": null
     },
@@ -10047,7 +10059,7 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-30T11:10:30.863Z",
+  "generated_at": "2026-07-30T11:34:28.290Z",
   "funnel_block": {
     "stages": {
       "kontaktad": 1678,

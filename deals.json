@@ -315,7 +315,7 @@
       ],
       "signed_evidence": "events/2026/06/11/claude-session-closed-utsago-legacy-5.md",
       "notes": null,
-      "waiting_on": "⏳ (1) Bollen hos Tanya: föreslå specifika nya postningsdatum + bekräfta §3-godkännande Stories 14/7. Caption MÅSTE inkludera: PERGOLUX + kupong villasjovikLUX + länk https://mdsh.io/ddb24lh0ba. (2) Markis-samarbete: Tanya ber om foto av installationsplatsen (4031.eml, 23/7) — Carin skickar foto → Tanya rekommenderar bäst alternativ. Supervisor-OK + IO fortfarande pending. ✅ August-brief mottagen 22/7 (3991.eml).",
+      "waiting_on": "⏳ (1) Bollen hos Tanya: föreslå specifika nya postningsdatum + bekräfta §3-godkännande Stories 14/7. Caption MÅSTE inkludera: PERGOLUX + kupong villasjovikLUX + länk https://mdsh.io/ddb24lh0ba. (2) Markis-samarbete: Carin skickade fasadfoto 30/7 (4835.eml) — bollen hos Tanya att rekommendera bäst markis-alternativ. Supervisor-OK + IO fortfarande pending. ✅ August-brief mottagen 22/7 (3991.eml).",
       "last_event": null
     },
     {
@@ -1001,6 +1001,29 @@
       "last_event": null
     },
     {
+      "id": "filtrera",
+      "company": "Filtrera.se",
+      "contact": "Gustav Andersson (info@filtrera.se, 072 964 14 70) — VD/ägare (oklart roll, trolig beslutsfattare)",
+      "category": "Vattenrening",
+      "status": "pitched",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-30",
+      "date_pitched": "2026-07-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/filtrera/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Svar på offert — leveransmail skickat 2026-07-30",
+      "last_event": null
+    },
+    {
       "id": "corten-house",
       "company": "Corten House",
       "contact": "Julien CHAPUY (julien.chapuy@corten-house.com) — Chief Operating Officer",
@@ -1183,6 +1206,12 @@
           "to": "contacted",
           "at": "2026-07-28",
           "evidence": "kallt outreach via support@ruuvi.com (carin@)",
+          "by": "migration"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-30",
+          "evidence": "Pitch-mail skickat till ruuvi@ruuvi.com med länk https://villasjovik.github.io/ruuvi/ (4830.eml)",
           "by": "migration"
         }
       ],
@@ -1434,29 +1463,6 @@
       "stage_history": null,
       "signed_evidence": null,
       "notes": "Återöppnad 2026-07-30: Hennas hinder är produktionskapacitet, inte budget. Pitchen är byggd som content-only-produktion (€1 200) — inget publiceras på VS kanaler, materialet är deras att äga. Skickas som svar in-thread.",
-      "waiting_on": "Svar på offert — leveransmail skickat 2026-07-30",
-      "last_event": null
-    },
-    {
-      "id": "panacea-redlight",
-      "company": "Panacea Red Light (Panacea Light Therapy)",
-      "contact": "Zelda",
-      "category": "Hälsa & Wellness / Rödljusterapi",
-      "status": "pitched",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-07-17",
-      "date_pitched": "2026-07-30",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/panacea-redlight/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": null,
-      "signed_evidence": null,
-      "notes": null,
       "waiting_on": "Svar på offert — leveransmail skickat 2026-07-30",
       "last_event": null
     },
@@ -3337,29 +3343,6 @@
       "last_event": null
     },
     {
-      "id": "filtrera",
-      "company": "Filtrera.se",
-      "contact": "Gustav Andersson (info@filtrera.se, 072 964 14 70) — VD/ägare (oklart roll, trolig beslutsfattare)",
-      "category": "Vattenrening",
-      "status": "pitched",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-07-30",
-      "date_pitched": "2026-07-30",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/filtrera/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": null,
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Svar på offert — leveransmail skickat 2026-07-30",
-      "last_event": null
-    },
-    {
       "id": "samuel-groves",
       "company": "Samuel Groves",
       "contact": null,
@@ -3508,6 +3491,29 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas — granska + skicka draften (operational/drafts/2026-07-30-martens-meijer-mote.md). Bollen ligger hos oss.",
+      "last_event": null
+    },
+    {
+      "id": "studio-hka",
+      "company": "Studio HKA",
+      "contact": "Hannes Backer (hannesbacker@studiohka.nl)",
+      "category": "Inredning & Belysning / Hantverkslampor",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-24",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -4601,6 +4607,29 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Lucas — bestäm om barter (produkt-för-content) accepteras för Anour. Mönster i belysningskategorin: Design By Us + Louis Poulsen = Carin har accepterat barter. Kristian ber om konkreta exempel om barter funkar.",
+      "last_event": null
+    },
+    {
+      "id": "panacea-redlight",
+      "company": "Panacea Red Light (Panacea Light Therapy)",
+      "contact": "Zelda",
+      "category": "Hälsa & Wellness / Rödljusterapi",
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-17",
+      "date_pitched": "2026-07-30",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/panacea-redlight/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Zelda avböjde budget — föreslog affiliate 10%. Draft klart 2026-07-30, inväntar Carins OK.",
       "last_event": null
     },
     {
@@ -10066,12 +10095,12 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-30T13:35:16.203Z",
+  "generated_at": "2026-07-30T18:48:41.285Z",
   "funnel_block": {
     "stages": {
-      "kontaktad": 1678,
-      "svarat": 298,
-      "pitchad": 80,
+      "kontaktad": 1679,
+      "svarat": 299,
+      "pitchad": 79,
       "vunnen": 14,
       "forlorad": 155,
       "uppfoljning": 13
@@ -10080,8 +10109,8 @@
       "konvertering_pct": 0.8,
       "win_rate_pct": 11.5,
       "svarsfrekvens_pct": 17.8,
-      "pitch_frekvens_pct": 26.8,
-      "pipeline_health": 163
+      "pitch_frekvens_pct": 26.4,
+      "pipeline_health": 164
     },
     "generated": "2026-06-28"
   }

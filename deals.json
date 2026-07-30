@@ -4029,7 +4029,7 @@
       "company": "Møllerhøj",
       "contact": null,
       "category": "Trädgård & Utomhus",
-      "status": "interested",
+      "status": "avtal",
       "value": null,
       "value_min": null,
       "value_label": null,
@@ -4043,9 +4043,9 @@
       "followup_window": null,
       "stage_history": null,
       "signed_evidence": null,
-      "notes": null,
+      "notes": "Barter-samarbete genomfört. Produkter (hortensior) levererade och mottagna 2026-07-30. Fakturauppgifter klara: Gartneriet Møllerhøj, Anderupvej 70, 5270 Odense N, DK · org.nr 27295452 · maria@50008.dk. Faktura ej ännu utfärdad.",
       "waiting_on": null,
-      "last_event": null
+      "last_event": "2026-07-30"
     },
     {
       "id": "mysoda",

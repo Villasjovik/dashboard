@@ -1268,29 +1268,6 @@
       "last_event": null
     },
     {
-      "id": "manufaktur-kissenliebe",
-      "company": "Manufaktur Kissenliebe",
-      "contact": "Hanife Bayir",
-      "category": "Inredning / Textil",
-      "status": "pitched",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-07-23",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": null,
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Hanife Bayir — svar på priser skickade 2026-07-27",
-      "last_event": null
-    },
-    {
       "id": "dreieriet",
       "company": "Dreieriet Keramikk",
       "contact": "post@dreieriet.no",
@@ -6389,6 +6366,36 @@
       "last_event": null
     },
     {
+      "id": "manufaktur-kissenliebe",
+      "company": "Manufaktur Kissenliebe",
+      "contact": "Hanife Bayir",
+      "category": "Inredning / Textil",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-23",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "declined",
+          "at": "2026-07-30",
+          "evidence": "events/2026/07/30/mail-4259.md",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Hanife Bayir — svar på priser skickade 2026-07-27",
+      "last_event": null
+    },
+    {
       "id": "rosenrot",
       "company": "Rosenrot Naturkosmetik",
       "contact": "Karolin Rothe",
@@ -10059,22 +10066,22 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-30T11:34:28.290Z",
+  "generated_at": "2026-07-30T13:20:20.112Z",
   "funnel_block": {
     "stages": {
       "kontaktad": 1678,
       "svarat": 298,
-      "pitchad": 81,
+      "pitchad": 80,
       "vunnen": 14,
-      "forlorad": 154,
+      "forlorad": 155,
       "uppfoljning": 13
     },
     "kpis": {
       "konvertering_pct": 0.8,
-      "win_rate_pct": 11.6,
+      "win_rate_pct": 11.5,
       "svarsfrekvens_pct": 17.8,
-      "pitch_frekvens_pct": 27.2,
-      "pipeline_health": 164
+      "pitch_frekvens_pct": 26.8,
+      "pipeline_health": 163
     },
     "generated": "2026-06-28"
   }

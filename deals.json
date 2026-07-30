@@ -1264,7 +1264,7 @@
       "stage_history": null,
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Väntar på svar från Karin den Dulk — pitch-mail skickat 2026-07-30 (4818.eml).",
+      "waiting_on": "Svar på offert — leveransmail skickat 2026-07-30",
       "last_event": null
     },
     {
@@ -10066,7 +10066,7 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-07-30T13:28:59.290Z",
+  "generated_at": "2026-07-30T13:35:16.203Z",
   "funnel_block": {
     "stages": {
       "kontaktad": 1678,

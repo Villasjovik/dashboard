@@ -8908,6 +8908,48 @@
       "notes": "Litet finländskt fair trade-företag (Kiondo-korgar, handvävda i Kenya). Aino ej slutgiltig beslutsfattare men förhandlingsbehörig. Budget begränsad — slim-paket rekommenderat (~10–12k, 1 video + 10 bilder + 1 story, ingen Meta-boost). Produkten stämmer estetiskt perfekt med VS. Aino följde upp proaktivt efter 29 dagar utan svar — starkt intressesignal. Draft-svar väntar på Lucas-OK.",
       "waiting_on": "Svar från Carin — draft skapad 2026-07-29",
       "last_event": null
+    },
+    {
+      "id": "manufaktur-kissenliebe",
+      "company": "Manufaktur Kissenliebe",
+      "contact": "Hanife Bayir (ägare) — info@manufaktur-kissenliebe.com",
+      "category": "Inredning / Textil — handgjorda dekorativa kuddar (DE-primärt)",
+      "status": "pitched",
+      "value": 12960,
+      "value_min": 12960,
+      "value_label": "€1 200 (≈ 12 960 kr)",
+      "date_contacted": "2026-07-23",
+      "date_pitched": "2026-07-27",
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-23",
+          "evidence": "Carin skickade kallt utskick till info@manufaktur-kissenliebe.com",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-07-24",
+          "evidence": "Hanife Bayir svarade positivt — gillar estetiken, frågar om kostnader och vad hon behöver bidra med",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-07-27",
+          "evidence": "Carin skickade priser via mail: €1 200 (14 dagar) + kuddar, 15 bilder, feature till 194k följare sen augusti — thread i capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/4716.eml",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Mikro-brand, soloprenör (228 IG-följare). Tar egna foton — sälj media-rights som professionellt komplement. Ingen GitHub Pages-pitch — priser levererade direkt i mail 2026-07-27. Late August-timing motiverad av höst/textil-säsong. Follow-up 1 skickat 2026-07-30 (4716.eml).",
+      "waiting_on": "Hanife Bayir — svar på priser skickade 2026-07-27",
+      "last_event": null
     }
   ],
   "leads_summary": {

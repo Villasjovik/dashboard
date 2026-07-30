@@ -6376,11 +6376,11 @@
       "value_label": null,
       "date_contacted": "2026-07-23",
       "date_pitched": null,
-      "date_closed": null,
+      "date_closed": "2026-07-30",
       "pitch_url": null,
-      "outcome": null,
+      "outcome": "rejected",
       "final_price": null,
-      "close_reason": null,
+      "close_reason": "no_delivery_to_sweden",
       "followup_window": null,
       "stage_history": [
         {
@@ -6392,7 +6392,7 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Hanife Bayir — svar på priser skickade 2026-07-27",
+      "waiting_on": null,
       "last_event": null
     },
     {

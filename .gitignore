@@ -1,1 +1,4 @@
 .pipeline.lock
+*.bak
+*.pre-*
+.claude/

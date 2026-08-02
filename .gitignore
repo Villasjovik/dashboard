@@ -2,3 +2,5 @@
 *.bak
 *.pre-*
 .claude/
+build-public-deals.mjs
+deals.public.json

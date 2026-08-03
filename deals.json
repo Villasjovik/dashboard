@@ -4277,8 +4277,8 @@
       ],
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Carin bekräftade telefonsamtal — Thilda ringer från bilen idag 2026-08-03. Avvaktar utfall av samtalet (pitch eller mer info behövs).",
-      "last_event": null
+      "waiting_on": "Samtal genomfört 2026-08-03. Produktönskelista (sommar + höst) skickad av Carin — inväntar Thildas bekräftelse på produktsändning. Nästa steg: pitch när produkter är bekräftade.",
+      "last_event": "2026-08-03: Post-call produktönskelista skickad (5024.eml)"
     },
     {
       "id": "sakai-ichimonji",

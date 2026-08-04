@@ -10153,6 +10153,48 @@
       "notes": "Ärlig backning 2026-07-30 (norsk andel ~8-9%, deras Norge-only-fokus). Följ upp i SAMMA tråd när de öppnar export / vår norska andel vuxit — förtroendestrategi per Lucas.",
       "waiting_on": "Lucas — granska + skicka det ärliga nej-mailet (operational/drafts/2026-07-30-und-honest-decline.md).",
       "last_event": null
+    },
+    {
+      "id": "garda-johan",
+      "company": "Gårda Johan",
+      "contact": "Morgan Hörnell (VD) — morgan.hornell@gardajohan.se",
+      "category": "Trädgård & Utomhus / Markbeläggning & Täckbark",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000 kr",
+      "date_contacted": "2026-08-03",
+      "date_pitched": "2026-08-04",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/garda-johan/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-08-03",
+          "evidence": "Carin skickade uppföljning till Morgan Hörnell (VD) — ämne: Stora Planteringsveckan 5–13 september",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-08-03",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4364.eml — Morgan Hörnell: 'Berätta mer! Låter intressant'",
+          "by": "mail-watcher"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-08-04",
+          "evidence": "Pitch byggd + deployad: https://villasjovik.github.io/garda-johan/",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Tackbark-kampanj kopplad till Stora Planteringsveckan 5–13 sep 2026. Startpaket (18 500) fokuserar på täckbark; Kampanjpaket (39 000, ord. 55 500) väver in täckbark + Bank Bergen + storsäck planteringsjord som tre separata egna kampanjer i ett paket. Referenser: Husqvarna, Segway, Sioo:x, Hillerstorp, JAPE, Pergolux.",
+      "waiting_on": "Mail-draft skickat till Lucas för granskning (operational/drafts/draft-garda-johan-pitch.md) — inväntar Morgans svar på förslaget.",
+      "last_event": null
     }
   ],
   "leads_summary": {

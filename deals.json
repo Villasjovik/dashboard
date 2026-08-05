@@ -10201,11 +10201,17 @@
           "at": "2026-08-05",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4408.eml — Morgan Hörnell: 'Måndag passar dåligt, tisdag är bättre'",
           "by": "mail-watcher"
+        },
+        {
+          "to": "meeting_booked",
+          "at": "2026-08-05",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4417.eml — Morgan Hörnell: 'Passar bra, det bokar vi' — möte bekräftat tisdag 11 aug kl. 10.30",
+          "by": "mail-watcher"
         }
       ],
       "signed_evidence": null,
       "notes": "Tackbark-kampanj kopplad till Stora Planteringsveckan 5–13 sep 2026. Startpaket (18 500) fokuserar på täckbark; Kampanjpaket (39 000, ord. 55 500) väver in täckbark + Bank Bergen + storsäck planteringsjord som tre separata egna kampanjer i ett paket. Referenser: Husqvarna, Segway, Sioo:x, Hillerstorp, JAPE, Pergolux.",
-      "waiting_on": "Draft skickad: Carin bekräftar tisdag 11 aug — inväntar svar med klockslag.",
+      "waiting_on": "Möte bokat: tisdag 11 aug kl. 10.30 — Morgan bekräftad.",
       "last_event": null
     }
   ],

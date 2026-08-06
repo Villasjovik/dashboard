@@ -214,7 +214,7 @@
       "outcome": "signed",
       "final_price": 39000,
       "close_reason": "Avtal signerat av alla parter (Oneflow doc 15004310)",
-      "followup_window": null,
+      "followup_window": "efter v35 (2026-08-25+) — Pelle på event i Stockholm Clarion Sign v35, återkommer efter det",
       "stage_history": [
         {
           "to": "contacted",
@@ -1001,6 +1001,48 @@
       "last_event": null
     },
     {
+      "id": "bio-stefan",
+      "company": "BIO Stefan",
+      "contact": "Erwin Sabic",
+      "category": "Utomhuskök / Trädgård & Utemiljö",
+      "status": "pitched",
+      "value": 0,
+      "value_min": 0,
+      "value_label": "Barter — ord. €7 000",
+      "date_contacted": "2026-07-30",
+      "date_pitched": "2026-08-06",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/bio-stefan/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-30",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/outreach.eml",
+          "by": "carin"
+        },
+        {
+          "to": "interested",
+          "at": "2026-07-30",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/4243.eml",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-08-06",
+          "evidence": "operational/drafts/offert-send-log-2026-08-06.jsonl",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Svar på offert — leveransmail skickat 2026-08-06",
+      "last_event": null
+    },
+    {
       "id": "filtrera",
       "company": "Filtrera.se",
       "contact": "Gustav Andersson (info@filtrera.se, 072 964 14 70) — VD/ägare (oklart roll, trolig beslutsfattare)",
@@ -1044,6 +1086,29 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Svar på offert — leveransmail skickat 2026-07-30",
+      "last_event": null
+    },
+    {
+      "id": "ichigo-vienna",
+      "company": "ICHIGO.Vienna",
+      "contact": "Martina Zupanc Oberdorfer (Grundare & Designer)",
+      "category": "Glas & Kristall / Premium mundblåst kristall (AT)",
+      "status": "pitched",
+      "value": 37800,
+      "value_min": 16740,
+      "value_label": "€1 550 – €3 500",
+      "date_contacted": "2026-07-29",
+      "date_pitched": "2026-08-06",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/ichigo-vienna/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": "Varm lead — Martina (grundare/designer, full beslutsmakt) svarade på kallt utskick och bad om T&C + idéer. Offert levererad 2026-08-06 (pitch live).",
+      "waiting_on": "Svar på offert — leveransmail skickat 2026-08-06",
       "last_event": null
     },
     {
@@ -1136,7 +1201,7 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Svar nästa vecka (v.33) — Norge-siffror besvarade 2026-08-05",
-      "last_event": "2026-08-05: Carin svarade (5033.eml) — Norge 4:e marknad, ~8% av följare. Kristian återkommer v.33"
+      "last_event": null
     },
     {
       "id": "holmblad-water",
@@ -1221,6 +1286,29 @@
       "last_event": null
     },
     {
+      "id": "bruchert-karner",
+      "company": "Brüchert + Kärner",
+      "contact": "Carolin Droege (Marketing) — droege@schoene-tueren.com",
+      "category": "Interiör / Dörrar — Fanerade och lackerade innerdörrar",
+      "status": "pitched",
+      "value": 12960,
+      "value_min": 12960,
+      "value_label": "€1 200",
+      "date_contacted": "2026-07-27",
+      "date_pitched": "2026-08-06",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/bruchert-karner/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": "Cold outreach 2026-07-27. Carolin Droege (Marketing) svarade 2026-07-31: intresserade men liten budget, vill ha prislista och idéer. Köper normalt content från återförsäljare. Potentiell content-only-tier. Lucas bedömer nästa steg.",
+      "waiting_on": "Svar på offert — leveransmail skickat 2026-08-06",
+      "last_event": null
+    },
+    {
       "id": "eber-designturen",
       "company": "Eber Designtüren",
       "contact": "Thomas Eber (t.eber@designtueren.de) — Ägare / Manufaktur e.K.",
@@ -1294,6 +1382,94 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Svar på offert — leveransmail skickat 2026-07-30",
+      "last_event": null
+    },
+    {
+      "id": "flamengo",
+      "company": "Flamengo",
+      "contact": "Cindy (CEO & HR Strategist, cindy@flamengolife.nl)",
+      "category": "Hem & Hälsa / Wellness & Recovery",
+      "status": "pitched",
+      "value": 37800,
+      "value_min": 16740,
+      "value_label": "€1 550 – €3 500",
+      "date_contacted": "2026-07-24",
+      "date_pitched": "2026-08-06",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/flamengo/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-24",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/outreach-flamengo.eml",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "replied",
+          "at": "2026-07-31",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/4297.eml",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-08-06",
+          "evidence": "operational/drafts/offert-send-log-2026-08-06.jsonl",
+          "by": "carin"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Svar på offert — leveransmail skickat 2026-08-06",
+      "last_event": null
+    },
+    {
+      "id": "martens-meijer",
+      "company": "Martens & Meijer",
+      "contact": "Jeffrey Westening",
+      "category": "Hem & Inredning / Speglar & Belysning (NL)",
+      "status": "pitched",
+      "value": 37800,
+      "value_min": 16740,
+      "value_label": "€1 550 – €3 500",
+      "date_contacted": "2026-07-24",
+      "date_pitched": "2026-08-06",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/martens-meijer/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Svar på offert — leveransmail skickat 2026-08-06",
+      "last_event": null
+    },
+    {
+      "id": "studio-hka",
+      "company": "Studio HKA",
+      "contact": "Hannes Backer (hannesbacker@studiohka.nl)",
+      "category": "Inredning & Belysning / Hantverkslampor",
+      "status": "pitched",
+      "value": 19980,
+      "value_min": 12960,
+      "value_label": "€1 200 – €1 850",
+      "date_contacted": "2026-07-24",
+      "date_pitched": "2026-08-06",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/studio-hka/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Svar på offert — leveransmail skickat 2026-08-06",
       "last_event": null
     },
     {
@@ -1708,7 +1884,7 @@
       "stage_history": null,
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Martina pratar med grundarna efter positivt möte 2026-07-23 — besked väntat inom ~1 vecka (≈2026-07-30).",
+      "waiting_on": "Statusuppföljning skickad 2026-08-06 efter tystnad sedan mötet 2026-07-23. Väntar besked från Martina Kummer (access|media) som förankrar hos grundarna.",
       "last_event": null
     },
     {
@@ -3182,6 +3358,60 @@
       "last_event": null
     },
     {
+      "id": "garda-johan",
+      "company": "Gårda Johan",
+      "contact": "Morgan Hörnell (VD)",
+      "category": "Trädgård & Utomhus / Markbeläggning & Täckbark",
+      "status": "pitched",
+      "value": 39000,
+      "value_min": 18500,
+      "value_label": "18 500 – 39 000 kr",
+      "date_contacted": "2026-05-23",
+      "date_pitched": "2026-08-04",
+      "date_closed": null,
+      "pitch_url": "https://villasjovik.github.io/garda-johan/",
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-05-23",
+          "evidence": "leads-XLSX rad 981 (info@gardajohan.se)",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "replied",
+          "at": "2026-08-03",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4364.eml",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-08-04",
+          "evidence": "Pitch byggd + deployad: https://villasjovik.github.io/garda-johan/",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-08-04",
+          "evidence": "events/2026/08/04/mail-5027.md",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "pitched",
+          "at": "2026-08-04",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4391.eml — Morgan svarar på pitch: på semester v.32, vill mötas v.33",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Möte bokat: tisdag 11 aug kl. 10.30 — Morgan bekräftad.",
+      "last_event": null
+    },
+    {
       "id": "hott-sauna",
       "company": "HOTT Sauna (Baitbox AB)",
       "contact": "Simon (Co-Founder)",
@@ -3343,42 +3573,6 @@
       "last_event": null
     },
     {
-      "id": "bio-stefan",
-      "company": "BIO Stefan",
-      "contact": "Erwin Sabic",
-      "category": "Utomhuskök / Trädgård & Utemiljö",
-      "status": "interested",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-07-30",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-07-30",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent/outreach.eml",
-          "by": "carin"
-        },
-        {
-          "to": "interested",
-          "at": "2026-07-30",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/4243.eml",
-          "by": "deal-keeper"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Lucas — besluta content-only pitch-strategi: prismodell (lån vs. permanent kök), logistikupplägg AT→SE, ROM 7-mallen som strukturbas. BIO Stefan ber om 2-3 idéer + fee + usage rights-spec.",
-      "last_event": null
-    },
-    {
       "id": "edelkastan",
       "company": "Edelkastan",
       "contact": "Alfons Hannes Pirker (office@edelkastan.at)",
@@ -3399,6 +3593,75 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Alfons Hannes Pirker frågar \"how does it work?\" — väntar på Lucas att besluta om nästa steg (content-idéer + pitchsida).",
+      "last_event": null
+    },
+    {
+      "id": "heatsense-dk",
+      "company": "Heat Sense",
+      "contact": "Jakob Christiansen (info@heatsense.dk)",
+      "category": "Hälsa & Wellness / Rödljusterapi & Infraröd återhämtning (DK)",
+      "status": "interested",
+      "value": 16500,
+      "value_min": 13200,
+      "value_label": "~€1 200 – €1 550 / 13 200 – 16 500 SEK",
+      "date_contacted": "2026-07-28",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Jakob (info@heatsense.dk) 2026-08-03: svarade positivt på Carins kalla utskick — bjöd in till mer info. Väntar på Lucas beslut om pitch ska byggas.",
+      "last_event": null
+    },
+    {
+      "id": "profin",
+      "company": "Profin",
+      "contact": "Jenni Sipola",
+      "category": "Hem & Interiör / Skjutglasväggar & Arkitekturglas",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-28",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Jenni (jenni.sipola@profin.fi) 2026-08-03: svarade på Carins kalla utskick men missförstod — ställde installations-frågor (nybygge/renovering/storlek). Väntar på Lucas beslut om hur man klarar ut att VS erbjuder ett innehållssamarbete, inte köper produkt.",
+      "last_event": null
+    },
+    {
+      "id": "thinka",
+      "company": "Thinka",
+      "contact": "Mascha",
+      "category": "Smarta Hem / KNX-HomeKit-integration",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-28",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -3425,14 +3688,14 @@
       "last_event": null
     },
     {
-      "id": "gardomo",
-      "company": "GarDomo",
-      "contact": "Henric Plutte (henric.plutte@gardomo.de)",
-      "category": "Trädgård — Designgarage / Förvaringslösningar / Gartenhäuser",
+      "id": "spa-ambiente",
+      "company": "Spa Ambiente",
+      "contact": "Marc Veigel",
+      "category": "Badrum & Design / Premium badrumsdetaljer (DE)",
       "status": "interested",
       "value": null,
       "value_min": null,
-      "value_label": null,
+      "value_label": "Ej prisatt",
       "date_contacted": "2026-07-27",
       "date_pitched": null,
       "date_closed": null,
@@ -3444,53 +3707,7 @@
       "stage_history": null,
       "signed_evidence": null,
       "notes": null,
-      "waiting_on": "Lucas — granska + skicka draften (operational/drafts/2026-07-30-gardomo-samtal.md). Bollen ligger hos oss.",
-      "last_event": null
-    },
-    {
-      "id": "martens-meijer",
-      "company": "Martens & Meijer",
-      "contact": "Jeffrey Westening",
-      "category": "Hem & Inredning / Speglar & Belysning (NL)",
-      "status": "interested",
-      "value": 18500,
-      "value_min": 18500,
-      "value_label": "18 500 – 39 000 kr",
-      "date_contacted": "2026-07-24",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": null,
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": "Lucas — granska + skicka draften (operational/drafts/2026-07-30-martens-meijer-mote.md). Bollen ligger hos oss.",
-      "last_event": null
-    },
-    {
-      "id": "studio-hka",
-      "company": "Studio HKA",
-      "contact": "Hannes Backer (hannesbacker@studiohka.nl)",
-      "category": "Inredning & Belysning / Hantverkslampor",
-      "status": "interested",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-07-24",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": null,
-      "signed_evidence": null,
-      "notes": null,
-      "waiting_on": null,
+      "waiting_on": "Carin skickar badrumsfoton + mått + media kit — Marc vill se badrummet innan de bestämmer konfiguration",
       "last_event": null
     },
     {
@@ -3514,6 +3731,112 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "griffwerk",
+      "company": "Griffwerk GmbH",
+      "contact": "Tim",
+      "category": "Inredning & Beslag / Dörrhandtag & Beslag (Tyskt premiumdesign)",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-23",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "provida-organics",
+      "company": "Provida Organics",
+      "contact": "Maxime Lagarde (roll okänd — svarade från service@provida.de)",
+      "category": "Hudvård / Ekologisk Kosmetika — Demeter-certifierad naturkosmetik (DE)",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-23",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-23",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/outbound-provida-organics.eml",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Carin skickade kallt utskick 2026-07-23. Maxime Lagarde svarade 2026-08-04: frågar om detaljoffert, usage rights (video + foton, duration, kanaler), Meta Ads-tillägg och 2–3 content-idéer. Varm lead — väntar Lucas GO.",
+      "waiting_on": "Lucas godkänner brief + beslutar paket/vinkel/content idéer — sedan pitch",
+      "last_event": null
+    },
+    {
+      "id": "narvi",
+      "company": "Narvi Oy",
+      "contact": "Jesse Hämäläinen (Sales Director, marknadsföring)",
+      "category": "Hem & Trädgård / Bastu & Wellness (Bastuaggregat & vedeldad eldstad)",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-22",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-22",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin/outbound-narvi.eml",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Carin skickade kallt utskick 2026-07-22 till jenni.heinonen@narvi.fi. Jenni forwarded internt till Jesse Hämäläinen (marknadsföring) + Jesse Silaste (Sverige-ansvarig). Jesse Hämäläinen (Sales Director) svarade 2026-08-04: 'Det här är absolut intressant för oss, kom gärna med förslag.' Varm lead — väntar på Lucas GO.",
+      "waiting_on": "Lucas godkänner brief + beslutar paket/vinkel — sedan pitch",
+      "last_event": null
+    },
+    {
+      "id": "warma-uunit",
+      "company": "Warma-Uunit Oy",
+      "contact": "Kaisa Tuominen (warmauunit@warmauunit.com) — VD/CEO",
+      "category": "Uppvärmning — Varaavat tulisijat & Tiled Stoves",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-22",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": "Carin sände kallt utskick 2026-07-22. VD:n Kaisa Tuominen svarade 2026-08-03 och frågade om samarbetsstruktur (barter vs. betald kampanj). Varm lead — inväntar Lucas direktiv.",
+      "waiting_on": "lucas",
       "last_event": null
     },
     {
@@ -3559,6 +3882,42 @@
       "stage_history": null,
       "signed_evidence": null,
       "notes": "Enum-normalisering 2026-07-30 (offert-sweepen): status warm_lead -> interested enligt STATUS_MIGRATION_V2. Ren enum-rename, inget affarsbeslut andrat. Utan detta quarantinerade deals-from-entities dealen ur dashboarden.",
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "thors-design",
+      "company": "Thors Design",
+      "contact": "Nanna Thor (nanna@thors-design.dk)",
+      "category": "Trädgård & Utomhus — Skulpturala designmöbler (danskt hantverk)",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-17",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-17",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-07/carin-sent (ämne: Thors Design × Villa Sjövik — 194k Swedish & Nordic home audience, till carsten@thors-design.dk)",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "replied",
+          "at": "2026-08-03",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4376.eml",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
       "waiting_on": null,
       "last_event": null
     },
@@ -3649,6 +4008,29 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "lucas",
+      "last_event": null
+    },
+    {
+      "id": "eclat",
+      "company": "ÉCLAT GmbH",
+      "contact": "Marie Bohlen (Marketing Managerin)",
+      "category": "Doftljus & hemparfym / tyskt premiumvarumärke",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-15",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
       "last_event": null
     },
     {
@@ -3836,6 +4218,36 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "arcticwood",
+      "company": "Arctic Wood AB",
+      "contact": "Anneli Davis (Försäljning och kommunikation)",
+      "category": "Hem & Trädgård / Bastu & Wellness — byggsatser utomhusbastu & fritidsbyggnader",
+      "status": "interested",
+      "value": null,
+      "value_min": null,
+      "value_label": "Barter-deal (sauna mot content) — inget pris ännu",
+      "date_contacted": "2026-06-30",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-06-30",
+          "evidence": "leads/sent-recipients.json (info@arcticwood.se)",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Carin skickade kallt utskick 2026-06-30 till info@arcticwood.se om wellness-projekt (utomhusbastu). Anneli Davis (Försäljning och kommunikation) svarade 2026-08-05 — glad att vara tillbaka från semester, nyfiken på upplägget, ber om ett samtal. Barter-deal: sauna mot content-dokumentation + mediafil till Arcticwood.",
+      "waiting_on": "Carin ringer Anneli Davis — Lucas godkänner innan call?",
       "last_event": null
     },
     {
@@ -4278,7 +4690,7 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": "Samtal genomfört 2026-08-03. Produktönskelista (sommar + höst) skickad av Carin — inväntar Thildas bekräftelse på produktsändning. Nästa steg: pitch när produkter är bekräftade.",
-      "last_event": "2026-08-03: Post-call produktönskelista skickad (5024.eml)"
+      "last_event": null
     },
     {
       "id": "sakai-ichimonji",
@@ -4476,15 +4888,87 @@
       "last_event": null
     },
     {
-      "id": "ichigo-vienna",
-      "company": "ICHIGO.Vienna",
-      "contact": "Martina Zupanc Oberdorfer (Grundare & Designer)",
-      "category": "Glas & Kristall / Premium mundblåst kristall (AT)",
+      "id": "aneby-bark",
+      "company": "Aneby Bark",
+      "contact": "John Hjalmarsson",
+      "category": "Trädgård & Utomhus / Täckbark & Marktäckning",
       "status": "replied",
       "value": null,
       "value_min": null,
       "value_label": null,
-      "date_contacted": "2026-07-29",
+      "date_contacted": "2026-08-03",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-08-03",
+          "evidence": "Kallt utskick Stora Planteringsveckan — capture/arkiv/mail/villa-sjovik/2026-08/carin-sent/5014.eml",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-08-05",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4416.eml",
+          "by": "mail-watcher"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "John återkommer v.33 (11–15 aug)",
+      "last_event": null
+    },
+    {
+      "id": "instantgarden",
+      "company": "Instant Garden",
+      "contact": "David Wiberg (info@instantgarden.se) — Kundtjänst",
+      "category": "Trädgård & Utomhus / E-handel växter och trädgårdsprodukter",
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-08-03",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-08-03",
+          "evidence": "operational/projekt/villa-sjovik/leads/SE-bark-master-2026-08-03.json",
+          "by": "migration"
+        },
+        {
+          "to": "replied",
+          "at": "2026-08-05",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4412.eml",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "David/InstantGarden — bekräfta tid för telefonsamtal. OBS: David är Kundtjänst — oklart om han är beslutsfattare. Fråga kan lyftas i samtalet.",
+      "last_event": null
+    },
+    {
+      "id": "olympia-express",
+      "company": "Olympia Express",
+      "contact": "s.matiz@olympia-express.ch",
+      "category": "Kök & Dryck / Specialty Coffee / Espressomaskiner",
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-31",
       "date_pitched": null,
       "date_closed": null,
       "pitch_url": null,
@@ -4494,8 +4978,77 @@
       "followup_window": null,
       "stage_history": null,
       "signed_evidence": null,
-      "notes": "Varm lead — Martina (grundare/designer, full beslutsmakt) svarade på kallt utskick och ber om T&C + idéer. Ingen pitch byggd ännu.",
-      "waiting_on": "Lucas beslutar paket & idéer — briefing klar, pitch ej byggd",
+      "notes": null,
+      "waiting_on": "Lucas — bestäm pitch-vinkel + hur vi hanterar deras discount-modell (ingen gratis maskin)",
+      "last_event": null
+    },
+    {
+      "id": "muovi-simola",
+      "company": "Muovi-Simola Oy",
+      "contact": "Juha Simola",
+      "category": "Trädgård & Utomhus / Pool & Baddammar",
+      "status": "replied",
+      "value": null,
+      "value_min": 18500,
+      "value_label": null,
+      "date_contacted": "2026-07-28",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas — besluta vinkel + godkänna idéförslag innan svar skickas",
+      "last_event": null
+    },
+    {
+      "id": "puttipaja",
+      "company": "Puttipaja",
+      "contact": "Anna (roll okänd)",
+      "category": "Outdoor candles & lyktor",
+      "status": "replied",
+      "value": null,
+      "value_min": 18500,
+      "value_label": null,
+      "date_contacted": "2026-07-28",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas — granska briefing, besluta nästa steg (3 konceptidéer till Anna)",
+      "last_event": null
+    },
+    {
+      "id": "zensehome",
+      "company": "ZenseHome",
+      "contact": "Marc Münzer",
+      "category": "Smart Hem / Belysning & Styrning",
+      "status": "replied",
+      "value": null,
+      "value_min": 18500,
+      "value_label": null,
+      "date_contacted": "2026-07-28",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Marc Münzer — ber om bilder på nuvarande eluttag/strömbrytare för kompatibilitetstest; Carin/Lucas beslutar om svar + pitch",
       "last_event": null
     },
     {
@@ -4578,6 +5131,42 @@
       "signed_evidence": null,
       "notes": null,
       "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "kamseen",
+      "company": "Kamseen",
+      "contact": "Ruchi Mishra",
+      "category": "Doft & Livsstil / Handgjorda Sojaljus & Hemparfym (NO)",
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-21",
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "contacted",
+          "at": "2026-07-21",
+          "evidence": "carin kallt utskick (arkiv/mail/villa-sjovik/2026-08/carin/4360.eml thread)",
+          "by": "carin"
+        },
+        {
+          "to": "replied",
+          "at": "2026-08-03",
+          "evidence": "Ruchi Mishra svarade — \"This sounds interesting. Kindly send me your media kit.\"",
+          "by": "migration"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas — besluta paket + skicka media kit till kundeservice@kamseen.no",
       "last_event": null
     },
     {
@@ -5100,6 +5689,65 @@
       "last_event": null
     },
     {
+      "id": "lotus-vita",
+      "company": "Lotus Vita",
+      "contact": "Cora Roßocha (Social Media Marketing Manager)",
+      "category": "Hem & Hälsa / Vattenfilter & Dricksvattenrening",
+      "status": "replied",
+      "value": null,
+      "value_min": 18500,
+      "value_label": null,
+      "date_contacted": null,
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": null,
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": "Lucas — granska briefing, besluta nästa steg (3 konceptidéer + media kit + prissättning till Cora)",
+      "last_event": null
+    },
+    {
+      "id": "lovely-linen",
+      "company": "Lovely Linen",
+      "contact": "Katrin Lindkvist (katrin@perpr.se, +46 763 36 59 28) via PerPR AB",
+      "category": "Hem & Inredning — Sängkläder / Bäddinredning",
+      "status": "replied",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": null,
+      "date_pitched": null,
+      "date_closed": null,
+      "pitch_url": null,
+      "outcome": "pending",
+      "final_price": null,
+      "close_reason": null,
+      "followup_window": null,
+      "stage_history": [
+        {
+          "to": "replied",
+          "at": "2026-08-05",
+          "evidence": "events/2026/08/05/mail-4407.md",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "replied",
+          "at": "2026-08-05",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4407.eml",
+          "by": "deal-keeper"
+        }
+      ],
+      "signed_evidence": null,
+      "notes": "Inbound produktsamarbete via PerPR. Carin beskrev content-upplägget 2026-08-05 (karusell, blandat rörligt+bilder, Lovely Linen får materialet). Katrin bekräftade \"Toppen, tack!\" och tar det vidare till Lovely Linen — återkommer inom kort. Väntar nu på Katrins/Lovely Linens besked om produktutskick.",
+      "waiting_on": "katrin",
+      "last_event": null
+    },
+    {
       "id": "vallox",
       "company": "Vallox Oy",
       "contact": "Elina Paavilainen (Marketing and Communication Manager)",
@@ -5133,29 +5781,6 @@
       "signed_evidence": null,
       "notes": "Redirect-svar registrerat i wiki/entities/redirects.md 2026-07-29. Followup-fönster satt 2026-08-11 (dagen efter Elinas återkomst) i offert-sweepen 2026-07-30.",
       "waiting_on": "Elina Paavilainen (Marketing & Communication Manager) är på semester och åter 2026-08-10. Anu Kataja vidarebefordrade Carins pitch internt men gav inget direktmail. Avvakta inkommande från Elina — annars sök direktkontakt 2026-08-11.",
-      "last_event": null
-    },
-    {
-      "id": "bruchert-karner",
-      "company": "Brüchert + Kärner",
-      "contact": "Carolin Droege (Marketing) — droege@schoene-tueren.com",
-      "category": "Interiör / Dörrar — Fanerade och lackerade innerdörrar",
-      "status": "contacted",
-      "value": null,
-      "value_min": null,
-      "value_label": null,
-      "date_contacted": "2026-07-27",
-      "date_pitched": null,
-      "date_closed": null,
-      "pitch_url": null,
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": null,
-      "signed_evidence": null,
-      "notes": "Cold outreach 2026-07-27. Carolin Droege (Marketing) svarade 2026-07-31: intresserade men liten budget, vill ha prislista och idéer. Köper normalt content från återförsäljare. Potentiell content-only-tier. Lucas bedömer nästa steg.",
-      "waiting_on": null,
       "last_event": null
     },
     {
@@ -6335,6 +6960,29 @@
       "outcome": "declined",
       "final_price": null,
       "close_reason": "Declined 2026-07-29 — B2B-only, projekt-uppdrag i Helsingfors/Åbo-regionen, säljer ej till konsumenter. Influencer-marknadsföring passar inte deras affärsmodell. Inget framtida trigger-datum.",
+      "followup_window": null,
+      "stage_history": null,
+      "signed_evidence": null,
+      "notes": null,
+      "waiting_on": null,
+      "last_event": null
+    },
+    {
+      "id": "gardomo",
+      "company": "GarDomo",
+      "contact": "Henric Plutte (henric.plutte@gardomo.de)",
+      "category": "Trädgård — Designgarage / Förvaringslösningar / Gartenhäuser",
+      "status": "declined",
+      "value": null,
+      "value_min": null,
+      "value_label": null,
+      "date_contacted": "2026-07-27",
+      "date_pitched": null,
+      "date_closed": "2026-08-06",
+      "pitch_url": null,
+      "outcome": "rejected",
+      "final_price": null,
+      "close_reason": "Carin ville inte gå vidare — Lucas beslut 2026-08-06. Kontaktas inte igen.",
       "followup_window": null,
       "stage_history": null,
       "signed_evidence": null,
@@ -10153,66 +10801,6 @@
       "notes": "Ärlig backning 2026-07-30 (norsk andel ~8-9%, deras Norge-only-fokus). Följ upp i SAMMA tråd när de öppnar export / vår norska andel vuxit — förtroendestrategi per Lucas.",
       "waiting_on": "Lucas — granska + skicka det ärliga nej-mailet (operational/drafts/2026-07-30-und-honest-decline.md).",
       "last_event": null
-    },
-    {
-      "id": "garda-johan",
-      "company": "Gårda Johan",
-      "contact": "Morgan Hörnell (VD) — morgan.hornell@gardajohan.se",
-      "category": "Trädgård & Utomhus / Markbeläggning & Täckbark",
-      "status": "pitched",
-      "value": 39000,
-      "value_min": 18500,
-      "value_label": "18 500 – 39 000 kr",
-      "date_contacted": "2026-08-03",
-      "date_pitched": "2026-08-04",
-      "date_closed": null,
-      "pitch_url": "https://villasjovik.github.io/garda-johan/",
-      "outcome": null,
-      "final_price": null,
-      "close_reason": null,
-      "followup_window": null,
-      "stage_history": [
-        {
-          "to": "contacted",
-          "at": "2026-08-03",
-          "evidence": "Carin skickade uppföljning till Morgan Hörnell (VD) — ämne: Stora Planteringsveckan 5–13 september",
-          "by": "carin"
-        },
-        {
-          "to": "replied",
-          "at": "2026-08-03",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4364.eml — Morgan Hörnell: 'Berätta mer! Låter intressant'",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-08-04",
-          "evidence": "Pitch byggd + deployad: https://villasjovik.github.io/garda-johan/",
-          "by": "deal-keeper"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-08-04",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4391.eml — Morgan Hörnell: 'Jag är på semester denna vecka, hur ser det ut för dig i nästa vecka?'",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "pitched",
-          "at": "2026-08-05",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4408.eml — Morgan Hörnell: 'Måndag passar dåligt, tisdag är bättre'",
-          "by": "mail-watcher"
-        },
-        {
-          "to": "meeting_booked",
-          "at": "2026-08-05",
-          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4417.eml — Morgan Hörnell: 'Passar bra, det bokar vi' — möte bekräftat tisdag 11 aug kl. 10.30",
-          "by": "mail-watcher"
-        }
-      ],
-      "signed_evidence": null,
-      "notes": "Tackbark-kampanj kopplad till Stora Planteringsveckan 5–13 sep 2026. Startpaket (18 500) fokuserar på täckbark; Kampanjpaket (39 000, ord. 55 500) väver in täckbark + Bank Bergen + storsäck planteringsjord som tre separata egna kampanjer i ett paket. Referenser: Husqvarna, Segway, Sioo:x, Hillerstorp, JAPE, Pergolux.",
-      "waiting_on": "Möte bokat: tisdag 11 aug kl. 10.30 — Morgan bekräftad.",
-      "last_event": null
     }
   ],
   "leads_summary": {
@@ -10225,7 +10813,7 @@
     "ready_to_contact": 226
   },
   "meta": {
-    "updated": "2026-08-03",
+    "updated": "2026-08-06",
     "monthly_goal": 125000,
     "monthly_goals_history": [
       {
@@ -10244,22 +10832,22 @@
     "last_updated": "2026-06-10"
   },
   "generated_from": "wiki/entities/",
-  "generated_at": "2026-08-03T07:54:28.925Z",
+  "generated_at": "2026-08-06T13:43:05.000Z",
   "funnel_block": {
     "stages": {
-      "kontaktad": 1682,
-      "svarat": 302,
-      "pitchad": 78,
+      "kontaktad": 1704,
+      "svarat": 324,
+      "pitchad": 85,
       "vunnen": 14,
-      "forlorad": 157,
+      "forlorad": 158,
       "uppfoljning": 13
     },
     "kpis": {
       "konvertering_pct": 0.8,
-      "win_rate_pct": 11.3,
-      "svarsfrekvens_pct": 18,
-      "pitch_frekvens_pct": 25.8,
-      "pipeline_health": 165
+      "win_rate_pct": 11.2,
+      "svarsfrekvens_pct": 19,
+      "pitch_frekvens_pct": 26.2,
+      "pipeline_health": 186
     },
     "generated": "2026-06-28"
   }

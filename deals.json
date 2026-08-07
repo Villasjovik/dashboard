@@ -5727,7 +5727,7 @@
       "outcome": "pending",
       "final_price": null,
       "close_reason": null,
-      "followup_window": null,
+      "followup_window": "2026-08-14",
       "stage_history": [
         {
           "to": "replied",
@@ -5740,10 +5740,24 @@
           "at": "2026-08-05",
           "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4407.eml",
           "by": "deal-keeper"
+        },
+        {
+          "to": "replied",
+          "at": "2026-08-07",
+          "note": "Katrin (PerPR) uppdaterar: tagit det vidare till Lovely Linen men semestrar drar ut processen. Hör av sig nästa vecka (v33).",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin/4511.eml",
+          "by": "deal-keeper"
+        },
+        {
+          "to": "replied",
+          "at": "2026-08-07",
+          "note": "Carin artighetskvitterade Katrins v33-uppdatering. Inga åtgärder nödvändiga — väntar på Katrin.",
+          "evidence": "capture/arkiv/mail/villa-sjovik/2026-08/carin-sent/5349.eml",
+          "by": "deal-keeper"
         }
       ],
       "signed_evidence": null,
-      "notes": "Inbound produktsamarbete via PerPR. Carin beskrev content-upplägget 2026-08-05 (karusell, blandat rörligt+bilder, Lovely Linen får materialet). Katrin bekräftade \"Toppen, tack!\" och tar det vidare till Lovely Linen — återkommer inom kort. Väntar nu på Katrins/Lovely Linens besked om produktutskick.",
+      "notes": "Inbound produktsamarbete via PerPR. Carin beskrev content-upplägget 2026-08-05 (karusell, blandat rörligt+bilder, Lovely Linen får materialet). Katrin bekräftar 2026-08-07 att hon tagit det vidare men semestrar drar ut — hör av sig v33 (fr.o.m. 2026-08-11). Väntar på Katrins/Lovely Linens besked om produktutskick.",
       "waiting_on": "katrin",
       "last_event": null
     },
